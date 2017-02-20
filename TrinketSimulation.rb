@@ -34,6 +34,7 @@ end
 
 def SimcLogToCSV(infile, outfile)
   puts "Converting #{infile} to CSV..."
+  templateDPS = 0
   sims = { }
 
   # Read results
@@ -42,15 +43,14 @@ def SimcLogToCSV(infile, outfile)
       if line.start_with?('Player:') then
         name = line.split()[1]
         dps = results.gets.split()[1]
-        ItemLevels.each do |ilvl|
-          if name.end_with?("_#{ilvl}") then
-            name.chomp!("_#{ilvl}")
-            if sims[name] then
-              sims[name].merge!(ilvl => dps)
-            else
-              sims[name] = { ilvl => dps }
-            end
+        if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
+          if sims[data[1]] then
+            sims[data[1]].merge!(data[2] => dps)
+          else
+            sims[data[1]] = { data[2] => dps }
           end
+        elsif name == 'Template'
+          templateDPS = dps
         end
       end
     end
@@ -61,7 +61,8 @@ def SimcLogToCSV(infile, outfile)
     sims.each do |name, values|
       csv.write name
       values.sort.each do |ilvl, dps|
-        csv.write ",#{dps}"
+        dps_inc = dps.to_f - templateDPS.to_f
+        csv.write ",#{dps_inc}"
       end
       csv.write "\n"
     end

@@ -1,5 +1,5 @@
 Template = File.basename(__FILE__, ".rb")
-ItemLevels = [885, 880, 875]
+ItemLevels = [860, 865, 870, 875, 880, 885, 890, 895, 900, 905, 910, 915, 920, 925]
 TrinketIDs = {
   "DraughtOfSouls" => 140808, 
   "ConvergenceOfFates" => 140806,
