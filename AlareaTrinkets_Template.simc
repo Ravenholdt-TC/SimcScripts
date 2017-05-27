@@ -1,6 +1,7 @@
 threads=3
 target_error=0.1
 single_actor_batch=1
+process_priority=low
 html=scripts/AlareaTrinkets.html
 output=scripts/AlareaTrinkets.txt
 
