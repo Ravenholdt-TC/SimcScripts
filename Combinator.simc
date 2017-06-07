@@ -68,19 +68,19 @@ copy=$(tbuild)_T20H_Boots_Bracers,$(tbuild)_T20H
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid,$(tbuild)_T19M
+copy=$(tbuild)_T19M2+T20H2,$(tbuild)_T19M
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
 legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Boots,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Boots,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Bracers,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Bracers,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Boots_Bracers,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Boots_Bracers,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
@@ -124,14 +124,14 @@ copy=$(tbuild)_T19M_Bracers_Hands,$(tbuild)_T19M
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Hands,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Hands,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Boots_Hands,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Boots_Hands,$(tbuild)_T19M2+T20H2
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Bracers_Hands,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Bracers_Hands,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
