@@ -36,7 +36,10 @@ end
 print 'Profile: '
 index = gets.to_i
 unless profiles.has_key?(index)
-  raise 'Invalid profile index entered!'
+  puts 'ERROR: Invalid profile index entered!'
+  puts 'Press enter to quit...'
+  gets
+  exit
 end
 puts
 
@@ -47,7 +50,10 @@ puts 'Example: xxx00xx'
 print 'Talents: '
 talentstring = gets
 unless talentstring.match(/\A[0-3xX]{7}\Z/)
-  raise 'Invalid talent string!'
+  puts 'ERROR: Invalid talent string!'
+  puts 'Press enter to quit...'
+  gets
+  exit
 end
 talentdata = []
 talentstring.chomp.each_char do |tier|
