@@ -1,6 +1,6 @@
 # Usage:
 #  1. This assumes that your files are placed within a "scripts" folder in
-#     the SimulationCraft directory. 
+#     the SimulationCraft directory.
 #  2. Create a "Template" simulation profile file for your character called
 #     "{PROFILE}_Template.simc". (Copy AlareaTrinkets_Template.simc and modify.)
 #     Make sure that "trinket1=empty" and "trinket2=empty".
@@ -72,7 +72,7 @@ end
 def CalculateTrinkets()
   GenerateSimcProfile()
   system "cd .. && simc scripts/#{Template}.simc"
-  SimcLogToCSV("#{Template}.txt", "#{Template}.csv")
+  SimcLogToCSV("#{Template}.log", "#{Template}.csv")
   puts 'Done! Press enter to quit...'
   gets
 end
