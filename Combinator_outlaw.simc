@@ -122,19 +122,19 @@ copy=$(tbuild)_T20H_Insignia_Bracers,$(tbuild)_T20H
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
 
-copy=$(tbuild)_2pc_Hybrid,$(tbuild)_T19M
+copy=$(tbuild)_T19M2+T20H2,$(tbuild)_T19M
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
 legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Insignia,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Insignia,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Bracers,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Bracers,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Insignia_Bracers,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Insignia_Bracers,$(tbuild)_T19M2+T20H2
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
 
@@ -178,14 +178,14 @@ copy=$(tbuild)_T19M_Bracers_Cloak,$(tbuild)_T19M
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Mantle_Cloak,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Mantle_Cloak,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Insignia_Cloak,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Insignia_Cloak,$(tbuild)_T19M2+T20H2
 finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
 back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
 
-copy=$(tbuild)_2pc_Hybrid_Bracers_Cloak,$(tbuild)_2pc_Hybrid
+copy=$(tbuild)_T19M2+T20H2_Bracers_Cloak,$(tbuild)_T19M2+T20H2
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
