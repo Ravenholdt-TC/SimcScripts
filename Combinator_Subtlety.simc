@@ -1,10 +1,3 @@
-ptr=1
-threads=3
-process_priority=low
-single_actor_batch=1
-fixed_time=1
-output=scripts/Combinator.log
-
 rogue="$(tbuild)_T19M"
 level=110
 race=night_elf
