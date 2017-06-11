@@ -26,7 +26,7 @@ end
 puts 'Please choose the Combinator profile you want to simulate:'
 profiles = {}
 index = 1
-Dir.glob('Combinator_[a-zA-Z]*\.simc').each do |combfile|
+Dir.glob('Combinator_[a-zA-Z0-9]*\.simc').each do |combfile|
   if profile = combfile.match(/Combinator_([a-zA-Z0-9]*)\.simc/)
     profiles[index] = profile[1]
     puts "#{index}: #{profile[1]}"

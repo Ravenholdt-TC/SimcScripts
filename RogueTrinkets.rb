@@ -1,7 +1,7 @@
 Template = File.basename(__FILE__, ".rb")
-ItemLevels = [860, 865, 870, 875, 880, 885, 890, 895, 900, 905, 910, 915, 920, 925]
+ItemLevels = [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955]
 TrinketIDs = {
-  "DraughtOfSouls" => 140808, 
+  "DraughtOfSouls" => 140808,
   "ConvergenceOfFates" => 140806,
   "EntwinedElementalFoci" => 140796,
   "NightbloomingFrond" => 140802,
@@ -35,7 +35,12 @@ TrinketIDs = {
   "FaultyCountermeasure" => 137539,
   "ToeKneesPromise" => 142164,
   "TinyOozelingInAJar" => 137439,
-  "DevilsaursBite" => 140026
+  "DevilsaursBite" => 140026,
+  "SpecterOfBetrayal" => 151190,
+  "EngineOfEradication" => 147015,
+  "UmbralMoonglaives" => 147012,
+  "VialOfCeaselessToxins" => 147011,
+  "InfernalCinders" => 147009
 }
 BonusIDs = {
   "EyeOfGuarm_Mastery" => 605,
