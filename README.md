@@ -16,7 +16,7 @@ Usage:
 2. Create a Ruby file that sets the required constants for this file called
    `{PROFILE}.rb`.
    (You copy RogueTrinkets.rb and modify.)
-3. Run your ruby file, e.g. by double clicking on it.
+3. Run the ruby file created in step 2, e.g. by double clicking on it.
 
 Requires constants Template, ItemLevels, TrinketIDs and (optionally) BonusIDs to be set.
 
