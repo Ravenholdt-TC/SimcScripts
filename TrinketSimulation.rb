@@ -1,16 +1,3 @@
-# Usage:
-#  1. This assumes that your files are placed within a "scripts" folder in
-#     the SimulationCraft directory.
-#  2. Create a "Template" simulation profile file for your character called
-#     "{PROFILE}_Template.simc". (Copy AlareaTrinkets_Template.simc and modify.)
-#     Make sure that "trinket1=empty" and "trinket2=empty".
-#  3. Create a Ruby file that sets the required constants for this file called
-#     "{PROFILE}.rb". (Copy AlareaTrinkets.rb and modify.)
-#  4. Run your ruby file, e.g. by double clicking on it.
-
-# Requires constants Template, ItemLevels, TrinketIDs and (optionally) BonusIDs to be set.
-# See AlareaTrinkets.rb for an example.
-
 def GenerateSimcProfile()
   File.open("#{Template}_Template.simc", 'r') do |template|
     File.open("#{Template}.simc", 'w') do |out|
