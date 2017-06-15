@@ -1,26 +1,8 @@
-def GenerateSimcProfile()
-  File.open("#{Template}_Template.simc", 'r') do |template|
-    File.open("#{Template}.simc", 'w') do |out|
-      while line = template.gets
-        out.puts line
-      end
-      ItemLevels.each do |ilvl|
-        TrinketIDs.each do |name, id|
-          bonus = ""
-          if bid = BonusIDs[name] then
-            bonus = ",bonus_id=#{bid}"
-          end
-          out.puts "copy=#{name}_#{ilvl},Template"
-          out.puts "trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
-        end
-      end
-    end
-  end
-  puts "Simulation profile for #{Template} generated!"
-end
+require_relative 'SimcConfig'
+require_relative 'Interactive'
 
 def SimcLogToCSV(infile, outfile)
-  puts "Converting #{infile} to CSV..."
+  puts "Converting #{infile} to #{outfile}..."
   templateDPS = 0
   sims = { }
 
@@ -57,9 +39,33 @@ def SimcLogToCSV(infile, outfile)
 end
 
 def CalculateTrinkets()
-  GenerateSimcProfile()
-  system "cd .. && simc scripts/SimcGlobalConfig.simc scripts/SimcTrinketConfig.simc target_error=0.05 scripts/#{Template}.simc"
-  SimcLogToCSV("#{Template}.log", "#{Template}.csv")
+  template = "#{Template}_" + Interactive.SelectTemplate("#{Template}")
+  simcfile = "#{SimcConfig::GeneratedFolder}/#{template}.simc"
+  File.open("#{template}.simc", 'r') do |template|
+    File.open(simcfile, 'w') do |out|
+      while line = template.gets
+        out.puts line
+      end
+      ItemLevels.each do |ilvl|
+        TrinketIDs.each do |name, id|
+          bonus = ""
+          if bid = BonusIDs[name] then
+            bonus = ",bonus_id=#{bid}"
+          end
+          out.puts "copy=#{name}_#{ilvl},Template"
+          out.puts "trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
+        end
+      end
+    end
+  end
+  puts "Simulation profile for #{template} generated!"
+
+  logfile = "#{SimcConfig::LogsFolder}/#{template}.log"
+  csvfile = "#{SimcConfig::ReportsFolder}/#{template}.csv"
+  system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc "+
+    "output=#{logfile} html=#{SimcConfig::ReportsFolder}/#{template}.html " + simcfile
+  SimcLogToCSV(logfile, csvfile)
+
   puts 'Done! Press enter to quit...'
   gets
 end

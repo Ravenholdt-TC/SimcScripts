@@ -1,4 +1,3 @@
-threads=7
 process_priority=low
 target_error=0.2
 optimal_raid=1
@@ -6,5 +5,3 @@ fixed_time=1
 single_actor_batch=1
 max_time=300
 vary_combat_length=0.2
-
-output=scripts/Combinator.log

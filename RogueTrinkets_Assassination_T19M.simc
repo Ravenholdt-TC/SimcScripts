@@ -1,6 +1,3 @@
-html=scripts/RogueTrinkets_Assassination_T19M.html
-output=scripts/RogueTrinkets_Assassination_T19M.log
-
 rogue="Template"
 #rogue="Rogue_Assassination_T19M_NH"
 spec=assassination

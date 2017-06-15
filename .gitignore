@@ -1,3 +1,7 @@
 *.log
 *.html
 *.csv
+
+generated/*.simc
+
+SimcConfig.rb
