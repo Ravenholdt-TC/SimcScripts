@@ -15,4 +15,7 @@ module SimcConfig
 
   # Where generated simc files will be saved
   GeneratedFolder = 'generated'
+
+  # Where templates for the scripts are placed
+  ProfilesFolder = 'profiles'
 end

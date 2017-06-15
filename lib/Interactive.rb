@@ -1,3 +1,5 @@
+require_relative '../SimcConfig'
+
 module Interactive
   # Offers all simc templates matching prefix_*.simc
   # Returns the * part
@@ -5,8 +7,8 @@ module Interactive
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
-    Dir.glob("#{prefix}_[_a-zA-Z0-9]*\.simc").each do |file|
-      if profile = file.match(/#{prefix}_([_a-zA-Z0-9]*)\.simc/)
+    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}_[_a-zA-Z0-9]*\.simc").each do |file|
+      if profile = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}_([_a-zA-Z0-9]*)\.simc/)
         profiles[index] = profile[1]
         puts "#{index}: #{profile[1]}"
         index += 1

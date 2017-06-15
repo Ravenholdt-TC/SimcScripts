@@ -1,5 +1,5 @@
 require_relative 'SimcConfig'
-require_relative 'Interactive'
+require_relative 'lib/Interactive'
 
 def SimcLogToCSV(infile, outfile)
   puts "Adding data from #{infile} to #{outfile}..."
@@ -42,9 +42,9 @@ talentdata[0].each do |t1|
             talentdata[6].each do |t7|
               puts "Simulating talent string #{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}..."
               logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}.log"
-              system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcCombinatorConfig.simc "+
+              system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcCombinatorConfig.simc " +
                 "output=#{logfile} " +
-                "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} Combinator_#{profile}.simc"
+                "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} #{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc"
               SimcLogToCSV(logfile, csvfile)
             end
           end

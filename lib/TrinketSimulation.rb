@@ -1,4 +1,4 @@
-require_relative 'SimcConfig'
+require_relative '../SimcConfig'
 require_relative 'Interactive'
 
 def SimcLogToCSV(infile, outfile)
@@ -41,7 +41,7 @@ end
 def CalculateTrinkets()
   template = "#{Template}_" + Interactive.SelectTemplate("#{Template}")
   simcfile = "#{SimcConfig::GeneratedFolder}/#{template}.simc"
-  File.open("#{template}.simc", 'r') do |template|
+  File.open("#{SimcConfig::ProfilesFolder}/#{template}.simc", 'r') do |template|
     File.open(simcfile, 'w') do |out|
       while line = template.gets
         out.puts line

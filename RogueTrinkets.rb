@@ -49,5 +49,5 @@ BonusIDs = {
   "EyeOfGuarm_Crit" => 603
 }
 
-require_relative 'TrinketSimulation'
+require_relative 'lib/TrinketSimulation'
 CalculateTrinkets()

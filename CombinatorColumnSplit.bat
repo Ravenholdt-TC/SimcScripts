@@ -1,1 +1,0 @@
-CombinatorColumnSplit.rb %*

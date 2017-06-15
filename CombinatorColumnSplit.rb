@@ -1,5 +1,5 @@
 lines = []
-filebase = File.basename(ARGV[0], ".csv")
+filebase = ARGV[0].chomp('.csv')
 File.open(ARGV[0], 'r') do |file|
   while line = file.gets
     if data = line.match(/\A(\d+)_([^_]+)_?([^,]*),(.*)\Z/)
