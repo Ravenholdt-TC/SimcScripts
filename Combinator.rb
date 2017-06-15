@@ -86,7 +86,7 @@ talentdata[0].each do |t1|
           talentdata[5].each do |t6|
             talentdata[6].each do |t7|
               puts "Simulating talent string #{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}..."
-              system "cd .. && simc $(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} scripts/CombinatorConfig.simc scripts/Combinator_#{profiles[index]}.simc"
+              system "cd .. && simc $(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} scripts/SimcGlobalConfig.simc scripts/SimcCombinatorConfig.simc scripts/Combinator_#{profiles[index]}.simc"
               SimcLogToCSV('Combinator.log', 'Combinator.csv')
             end
           end

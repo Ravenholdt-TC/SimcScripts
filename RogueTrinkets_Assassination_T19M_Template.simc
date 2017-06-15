@@ -1,10 +1,5 @@
-threads=3
-target_error=0.1
-single_actor_batch=1
-process_priority=low
-fixed_time=1
-html=scripts/RogueTrinkets.html
-output=scripts/RogueTrinkets.log
+html=scripts/RogueTrinkets_Assassination_T19M.html
+output=scripts/RogueTrinkets_Assassination_T19M.log
 
 rogue="Template"
 #rogue="Rogue_Assassination_T19M_NH"

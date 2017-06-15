@@ -9,7 +9,7 @@ artifact=43:0:0:0:0:323:4:324:4:325:4:326:4:327:4:328:4:329:4:330:4:331:4:332:1:
 spec=assassination
 
 # Default consumables
-potion=prolonged_power
+potion=old_war
 flask=seventh_demon
 food=lavish_suramar_feast
 augmentation=defiled

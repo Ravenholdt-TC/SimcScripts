@@ -1,0 +1,2 @@
+# Put here any override for the Trinket Simulation
+target_error=0.1

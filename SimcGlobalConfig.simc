@@ -1,4 +1,4 @@
-threads=3
+threads=7
 process_priority=low
 target_error=0.2
 optimal_raid=1

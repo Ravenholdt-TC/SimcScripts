@@ -58,7 +58,7 @@ end
 
 def CalculateTrinkets()
   GenerateSimcProfile()
-  system "cd .. && simc scripts/TrinketSimulationConfig.simc scripts/#{Template}.simc"
+  system "cd .. && simc scripts/SimcGlobalConfig.simc scripts/SimcTrinketConfig.simc target_error=0.05 scripts/#{Template}.simc"
   SimcLogToCSV("#{Template}.log", "#{Template}.csv")
   puts 'Done! Press enter to quit...'
   gets

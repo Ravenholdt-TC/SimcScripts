@@ -1,5 +1,5 @@
-html=scripts/RogueTrinkets.html
-output=scripts/RogueTrinkets.log
+html=scripts/RogueTrinkets_Outlaw_T19M.html
+output=scripts/RogueTrinkets_Outlaw_T19M.log
 
 # rogue="Rogue_Subtlety_T19M_NH"
 rogue="Template"
