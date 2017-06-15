@@ -23,6 +23,8 @@ Requires constants Template, ItemLevels, TrinketIDs and (optionally) BonusIDs to
 The result is a CSV file containing the DPS increases for each Trinket and Item Level
 compared to the Template profile.
 
+General simulation parameters can be set in `TrinketSimulationConfig.simc`.
+
 ## Combinator
 
 This script will run a template for whatever talent permutation you would like to
