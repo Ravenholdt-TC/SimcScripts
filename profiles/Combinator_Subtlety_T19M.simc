@@ -14,6 +14,7 @@ flask=seventh_demon
 food=lavish_suramar_feast
 augmentation=defiled
 
+# Base
 head=doomblade_cowl,id=138332,bonus_id=3519
 neck=zealous_timestone_pendant,id=140894,bonus_id=3445/1507,enchant=mark_of_the_hidden_satyr
 shoulders=mantle_of_the_torn_sky,id=140864,bonus_id=3519
@@ -31,24 +32,30 @@ trinket2=convergence_of_fates,id=140806,bonus_id=3519
 main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140824/140823/140824,relic_id=3519/3519/3519
 off_hand=fangs_of_the_devourer,id=128479,gem_id=0/0/0/0
 
-copy=$(tbuild)_T19M_Mantle_Boots,$(tbuild)_T19M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
-copy=$(tbuild)_T19M_Mantle_Bracers,$(tbuild)_T19M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-
-copy=$(tbuild)_T19M_Boots_Bracers,$(tbuild)_T19M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-
+# Tiers Base
 copy=$(tbuild)_T20H,$(tbuild)_T19M
 head=fanged_slayers_helm,id=147172,bonus_id=1497/3562
 back=fanged_slayers_shroud,id=147170,bonus_id=1497/3562,enchant=binding_of_agility
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
 legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
 
+copy=$(tbuild)_T19M2+T20H2,$(tbuild)_T19M
+chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
+legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
+
+copy=$(tbuild)_T19M2+T20H4,$(tbuild)_T20H
+shoulder=doomblade_spaulders,id=138338,bonus_id=3519
+hands=doomblade_gauntlets,id=138329,bonus_id=3519
+
+copy=$(tbuild)_T19M4+T20H2,$(tbuild)_T19M
+shoulder=fanged_slayers_shoulderpads,id=147174,bonus_id=1497/3562
+hands=fanged_slayers_handguards,id=147171,bonus_id=1497/3562
+
+
+# Legendaries
+
+# T20H
 copy=$(tbuild)_T20H_Mantle_Boots,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
@@ -58,38 +65,6 @@ shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 
 copy=$(tbuild)_T20H_Boots_Bracers,$(tbuild)_T20H
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-
-copy=$(tbuild)_T19M2+T20H2,$(tbuild)_T19M
-chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
-legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
-
-copy=$(tbuild)_T19M2+T20H2_Mantle_Boots,$(tbuild)_T19M2+T20H2
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-
-copy=$(tbuild)_T19M2+T20H2_Mantle_Bracers,$(tbuild)_T19M2+T20H2
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-
-copy=$(tbuild)_T19M2+T20H2_Boots_Bracers,$(tbuild)_T19M2+T20H2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-
-copy=$(tbuild)_T19M2+T20H4,$(tbuild)_T20H
-shoulder=doomblade_spaulders,id=138338,bonus_id=3519
-hands=doomblade_gauntlets,id=138329,bonus_id=3519
-
-copy=$(tbuild)_T19M2+T20H4_Boots_Bracers,$(tbuild)_T19M2+T20H4
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-
-copy=$(tbuild)_T19M4+T20H2,$(tbuild)_T19M
-shoulder=fanged_slayers_shoulderpads,id=147174,bonus_id=1497/3562
-hands=fanged_slayers_handguards,id=147171,bonus_id=1497/3562
-
-copy=$(tbuild)_T19M4+T20H2_Boots_Bracers,$(tbuild)_T19M4+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
@@ -105,6 +80,24 @@ copy=$(tbuild)_T20H_Bracers_Hands,$(tbuild)_T20H
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
+copy=$(tbuild)_T20H_Insignia_Bracers,$(tbuild)_T20H
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+
+
+# T19M
+copy=$(tbuild)_T19M_Mantle_Boots,$(tbuild)_T19M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+
+copy=$(tbuild)_T19M_Mantle_Bracers,$(tbuild)_T19M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+
+copy=$(tbuild)_T19M_Boots_Bracers,$(tbuild)_T19M
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+
 copy=$(tbuild)_T19M_Mantle_Hands,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
@@ -116,6 +109,24 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3530
 copy=$(tbuild)_T19M_Bracers_Hands,$(tbuild)_T19M
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
+
+copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+
+
+# T19M2+T20H2
+copy=$(tbuild)_T19M2+T20H2_Mantle_Boots,$(tbuild)_T19M2+T20H2
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+
+copy=$(tbuild)_T19M2+T20H2_Mantle_Bracers,$(tbuild)_T19M2+T20H2
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+
+copy=$(tbuild)_T19M2+T20H2_Boots_Bracers,$(tbuild)_T19M2+T20H2
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Hands,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -129,18 +140,26 @@ copy=$(tbuild)_T19M2+T20H2_Bracers_Hands,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
-copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
-copy=$(tbuild)_T20H_Insignia_Bracers,$(tbuild)_T20H
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
 copy=$(tbuild)_T19M2+T20H2_Insignia_Bracers,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+
+
+# T19M2+T20H4
+copy=$(tbuild)_T19M2+T20H4_Boots_Bracers,$(tbuild)_T19M2+T20H4
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+
 copy=$(tbuild)_T19M2+T20H4_Insignia_Bracers,$(tbuild)_T19M2+T20H4
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+
+
+# T19M4+T20H2
+copy=$(tbuild)_T19M4+T20H2_Boots_Bracers,$(tbuild)_T19M4+T20H2
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+
 copy=$(tbuild)_T19M4+T20H2_Insignia_Bracers,$(tbuild)_T19M4+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
