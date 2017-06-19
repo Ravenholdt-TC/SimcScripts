@@ -1,5 +1,6 @@
 require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
+require_relative 'lib/SimcHelper'
 
 def SimcLogToCSV(infile, outfile)
   puts "Adding data from #{infile} to #{outfile}..."
@@ -32,6 +33,7 @@ talentdata = Interactive.SelectTalentPermutations()
 csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvfile)
 
+SimcHelper.GenerateSimcConfig()
 puts 'Starting simulations, this may take a while!'
 talentdata[0].each do |t1|
   talentdata[1].each do |t2|
@@ -43,7 +45,7 @@ talentdata[0].each do |t1|
               puts "Simulating talent string #{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}..."
               logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}.log"
               system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcCombinatorConfig.simc " +
-                "output=#{logfile} " +
+                "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
                 "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} #{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc"
               SimcLogToCSV(logfile, csvfile)
             end

@@ -10,6 +10,9 @@ to `SimcConfig.rb` and change the parameters to match your setup and needs.
 
 General simulation settings are set in `SimcGlobalConfig.simc`.
 
+If you want to access SimC default profiles, you can use the variable `$(simc_profiles_path)`
+in your simc profiles.
+
 ## TrinketSimulation
 
 This documentation is based on the `RogueTrinkets.rb` simulation. If you want to simulate

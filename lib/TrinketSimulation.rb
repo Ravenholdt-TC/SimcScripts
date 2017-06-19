@@ -1,5 +1,6 @@
 require_relative '../SimcConfig'
 require_relative 'Interactive'
+require_relative 'SimcHelper'
 
 def SimcLogToCSV(infile, outfile)
   puts "Converting #{infile} to #{outfile}..."
@@ -62,8 +63,9 @@ def CalculateTrinkets()
 
   logfile = "#{SimcConfig::LogsFolder}/#{template}.log"
   csvfile = "#{SimcConfig::ReportsFolder}/#{template}.csv"
-  system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc "+
-    "output=#{logfile} html=#{SimcConfig::ReportsFolder}/#{template}.html " + simcfile
+  SimcHelper.GenerateSimcConfig()
+  system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc " +
+    "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} html=#{SimcConfig::ReportsFolder}/#{template}.html " + simcfile
   SimcLogToCSV(logfile, csvfile)
 
   puts 'Done! Press enter to quit...'
