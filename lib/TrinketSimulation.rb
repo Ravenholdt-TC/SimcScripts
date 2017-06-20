@@ -15,9 +15,9 @@ def SimcLogToCSV(infile, outfile)
         dps = results.gets.split()[1]
         if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
           if sims[data[1]] then
-            sims[data[1]].merge!(data[2] => dps)
+            sims[data[1]].merge!(data[2].to_i => dps)
           else
-            sims[data[1]] = { data[2] => dps }
+            sims[data[1]] = { data[2].to_i => dps }
           end
         elsif name == 'Template'
           templateDPS = dps
