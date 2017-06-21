@@ -1,6 +1,10 @@
 $(simc_profiles_path)/Tier19M_NH/Rogue_Subtlety_T19M_NH.simc
 name="Template"
 
+#Legendaries
+shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
+wrists=denial_of_the_halfgiants,id=137100,ilevel=970
+
 main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=900/900/900
 
 artifact_override=soul_shadows:4
