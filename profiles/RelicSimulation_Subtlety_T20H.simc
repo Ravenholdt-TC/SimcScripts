@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier20H/Rogue_Subtlety_Dark_T20H.simc
 name="Template"
 
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=900/900/900
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=900
 
 artifact_override=soul_shadows:4
 artifact_override=fortunes_bite:4
@@ -12,27 +12,47 @@ artifact_override=energetic_stabbing:4
 artifact_override=weak_point:4
 artifact_override=the_quiet_knife:4
 
-# Relic Item Levels
-copy=RelicItemLevel_5,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=905/900/900
-copy=RelicItemLevel_10,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=910/900/900
-copy=RelicItemLevel_15,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=915/900/900
-copy=RelicItemLevel_20,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=920/900/900
-copy=RelicItemLevel_25,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=925/900/900
-copy=RelicItemLevel_30,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=930/900/900
-copy=RelicItemLevel_35,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=935/900/900
-copy=RelicItemLevel_40,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=940/900/900
-copy=RelicItemLevel_45,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=945/900/900
-copy=RelicItemLevel_50,Template
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=140826/140822/140826,relic_ilevel=950/900/900
+# Weapon Item Levels
+copy=WeaponItemLevel_1,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=901
+copy=WeaponItemLevel_2,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=902
+copy=WeaponItemLevel_3,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=903
+copy=WeaponItemLevel_4,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=904
+copy=WeaponItemLevel_5,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=905
+copy=WeaponItemLevel_6,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=906
+copy=WeaponItemLevel_7,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=907
+copy=WeaponItemLevel_8,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=908
+copy=WeaponItemLevel_9,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=909
+copy=WeaponItemLevel_10,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=910
+copy=WeaponItemLevel_11,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=911
+copy=WeaponItemLevel_12,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=912
+copy=WeaponItemLevel_13,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=913
+copy=WeaponItemLevel_14,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=914
+copy=WeaponItemLevel_15,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=915
+copy=WeaponItemLevel_16,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=916
+copy=WeaponItemLevel_17,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=917
+copy=WeaponItemLevel_18,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=918
+copy=WeaponItemLevel_19,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=919
+copy=WeaponItemLevel_20,Template
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=920
 
 # 1 Relics
 copy=SoulShadows_1,Template

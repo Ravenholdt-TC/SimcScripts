@@ -5,7 +5,7 @@ name="Template"
 shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
 wrists=greenskins_waterlogged_wristcuffs,id=137099,ilevel=970
 
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=900/900/900
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=900
 
 artifact_override=black_powder:4
 artifact_override=blade_dancer:4
@@ -17,27 +17,47 @@ artifact_override=fortune_strikes:4
 artifact_override=fortunes_boon:4
 artifact_override=sabermetrics:4
 
-# Relic Item Levels
-copy=RelicItemLevel_5,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=905/900/900
-copy=RelicItemLevel_10,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=910/900/900
-copy=RelicItemLevel_15,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=915/900/900
-copy=RelicItemLevel_20,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=920/900/900
-copy=RelicItemLevel_25,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=925/900/900
-copy=RelicItemLevel_30,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=930/900/900
-copy=RelicItemLevel_35,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=935/900/900
-copy=RelicItemLevel_40,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=940/900/900
-copy=RelicItemLevel_45,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=945/900/900
-copy=RelicItemLevel_50,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,relic_ilevel=950/900/900
+# Weapon Item Levels
+copy=WeaponItemLevel_1,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=901
+copy=WeaponItemLevel_2,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=902
+copy=WeaponItemLevel_3,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=903
+copy=WeaponItemLevel_4,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=904
+copy=WeaponItemLevel_5,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=905
+copy=WeaponItemLevel_6,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=906
+copy=WeaponItemLevel_7,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=907
+copy=WeaponItemLevel_8,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=908
+copy=WeaponItemLevel_9,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=909
+copy=WeaponItemLevel_10,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=910
+copy=WeaponItemLevel_11,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=911
+copy=WeaponItemLevel_12,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=912
+copy=WeaponItemLevel_13,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=913
+copy=WeaponItemLevel_14,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=914
+copy=WeaponItemLevel_15,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=915
+copy=WeaponItemLevel_16,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=916
+copy=WeaponItemLevel_17,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=917
+copy=WeaponItemLevel_18,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=918
+copy=WeaponItemLevel_19,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=919
+copy=WeaponItemLevel_20,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=920
 
 # 1 Relics
 copy=BlackPowder_1,Template

@@ -39,8 +39,8 @@ Usage:
    `profiles` folder.
    Make sure the base SimC profile is named "Template".
    Make sure you set all artifact traits to 4. (e.g. `artifact_override=master_assassin:4`)
-   It may help to set all relic item levels to a predefined value. (e.g. `relic_ilevel=900/900/900`)
-2. Create additional profiles that increase one relic item level or one trait. These additional
+   It may help to set the weapon item level to a predefined value. (e.g. `ilevel=900`)
+2. Create additional profiles that increase weapon item level or one trait. These additional
    profile names should follow the pattern `<NAME>_<AMOUNT>` without special characters.
    (For an example look at the existing profiles in the profiles folder.)
 3. Run `RelicSimulation.rb`. It will ask you to select a profile.
