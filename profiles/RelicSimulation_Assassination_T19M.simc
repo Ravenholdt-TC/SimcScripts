@@ -47,8 +47,6 @@ copy=GushingWound_1,Template
 artifact_override=gushing_wound:5
 copy=MasterAssassin_1,Template
 artifact_override=master_assassin:5
-copy=PoisonKnives_1,Template
-artifact_override=poison_knives:5
 copy=Strangler_1,Template
 artifact_override=strangler:5
 
@@ -65,8 +63,6 @@ copy=GushingWound_2,Template
 artifact_override=gushing_wound:6
 copy=MasterAssassin_2,Template
 artifact_override=master_assassin:6
-copy=PoisonKnives_2,Template
-artifact_override=poison_knives:6
 copy=Strangler_2,Template
 artifact_override=strangler:6
 
@@ -83,7 +79,5 @@ copy=GushingWound_3,Template
 artifact_override=gushing_wound:7
 copy=MasterAssassin_3,Template
 artifact_override=master_assassin:7
-copy=PoisonKnives_3,Template
-artifact_override=poison_knives:7
 copy=Strangler_3,Template
 artifact_override=strangler:7

@@ -38,8 +38,6 @@ main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=140819/140817/140841,rel
 # 1 Relics
 copy=BlackPowder_1,Template
 artifact_override=black_powder:5
-copy=BladeDancer_1,Template
-artifact_override=blade_dancer:5
 copy=FatesThirst_1,Template
 artifact_override=fates_thirst:5
 copy=FortunesStrike_1,Template
@@ -58,8 +56,6 @@ artifact_override=sabermetrics:5
 # 2 Relics
 copy=BlackPowder_2,Template
 artifact_override=black_powder:6
-copy=BladeDancer_2,Template
-artifact_override=blade_dancer:6
 copy=FatesThirst_2,Template
 artifact_override=fates_thirst:6
 copy=FortunesStrike_2,Template
@@ -78,8 +74,6 @@ artifact_override=sabermetrics:6
 # 3 Relics
 copy=BlackPowder_3,Template
 artifact_override=black_powder:7
-copy=BladeDancer_3,Template
-artifact_override=blade_dancer:7
 copy=FatesThirst_3,Template
 artifact_override=fates_thirst:7
 copy=FortunesStrike_3,Template
