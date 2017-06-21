@@ -32,13 +32,35 @@ compared to the Template profile.
 
 Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
 
+## RelicSimulation
+
+Usage:
+1. Create a simulation profile file called `RelicSimulation_<PROFILENAME>.simc` in the
+   `profiles` folder.
+   Make sure the base SimC profile is named "Template".
+   Make sure you set all artifact traits to 4. (e.g. `artifact_override=master_assassin:4`)
+   It may help to set all relic item levels to a predefined value. (e.g. `relic_ilevel=900/900/900`)
+2. Create additional profiles that increase one relic item level or one trait. These additional
+   profile names should follow the pattern `<NAME>_<AMOUNT>` without special characters.
+   (For an example look at the existing profiles in the profiles folder.)
+3. Run `RelicSimulation.rb`. It will ask you to select a profile.
+4. Wait for the simulation to run until it says it's done.
+5. The resulting CSV and HTML file will be in the `reports` folder.
+
+The result is a CSV file containing the DPS increases for each Relic or Relic Item Level
+compared to the Template profile. Its structure has been created to fit what we import
+using Google Charts on the Ravenholdt-TC website. Thus, the CSV content includes annotations
+and zero values to fill for an equal amount of columns.
+
+Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
+
 ## Combinator
 
 This script will run a template for whatever talent permutation you would like to
 investigate. It is an interactive script prompting for any input required.
 
 All you have to do is create a `Combinator_<PROFILENAME>.simc` file in `profiles` with
-the line:
+your profile and the line:
 ```
 talents=$(tbuild)
 ```
