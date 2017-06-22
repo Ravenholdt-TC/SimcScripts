@@ -57,109 +57,121 @@ hands=doomblade_gauntlets,id=138329,bonus_id=3519
 
 # T19M
 copy=$(tbuild)_T19M_Mantle_Boots,$(tbuild)_T19M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T19M_Mantle_Bracers,$(tbuild)_T19M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
 
 copy=$(tbuild)_T19M_Boots_Bracers,$(tbuild)_T19M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T19M_Mantle_Hands,$(tbuild)_T19M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T19M_Boots_Hands,$(tbuild)_T19M
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T19M_Bracers_Hands,$(tbuild)_T19M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M
 copy=$(tbuild)_T20M_Mantle_Boots,$(tbuild)_T20M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M_Mantle_Bracers,$(tbuild)_T20M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
 
 copy=$(tbuild)_T20M_Boots_Bracers,$(tbuild)_T20M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M_Mantle_Hands,$(tbuild)_T20M
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M_Boots_Hands,$(tbuild)_T20M
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M_Bracers_Hands,$(tbuild)_T20M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M_Insignia_Bracers,$(tbuild)_T20M
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T20M_Mantle_Insignia,$(tbuild)_T20M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M2+T19M2
 copy=$(tbuild)_T20M2+T19M2_Mantle_Boots,$(tbuild)_T20M2+T19M2
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Mantle_Bracers,$(tbuild)_T20M2+T19M2
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Boots_Bracers,$(tbuild)_T20M2+T19M2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Mantle_Hands,$(tbuild)_T20M2+T19M2
-shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Boots_Hands,$(tbuild)_T20M2+T19M2
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Bracers_Hands,$(tbuild)_T20M2+T19M2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-hands=the_first_of_the_dead,id=151818,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Insignia_Bracers,$(tbuild)_T20M2+T19M2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T20M2+T19M2_Mantle_Insignia,$(tbuild)_T20M2+T19M2
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M2+T19M4
 copy=$(tbuild)_T20M2+T19M4_Boots_Bracers,$(tbuild)_T20M2+T19M4
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M4_Insignia_Bracers,$(tbuild)_T20M2+T19M4
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M4+T19M2
 copy=$(tbuild)_T20M4+T19M2_Boots_Bracers,$(tbuild)_T20M4+T19M2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-feet=shadow_satyrs_walk,id=137032,bonus_id=3530
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M4+T19M2_Insignia_Bracers,$(tbuild)_T20M4+T19M2
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
