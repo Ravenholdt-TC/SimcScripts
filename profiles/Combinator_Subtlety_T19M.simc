@@ -82,11 +82,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
 copy=$(tbuild)_T20H_Insignia_Bracers,$(tbuild)_T20H
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T20H_Mantle_Insignia,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 
 # T19M
@@ -116,11 +116,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
 copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 
 # T19M2+T20H2
@@ -150,11 +150,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H2_Insignia_Bracers,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T20M2+T19M2_Mantle_Insignia,$(tbuild)_T20M2+T19M2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 
 # T19M2+T20H4
@@ -164,7 +164,7 @@ feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H4_Insignia_Bracers,$(tbuild)_T19M2+T20H4
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 
 # T19M4+T20H2
@@ -174,4 +174,4 @@ feet=shadow_satyrs_walk,id=137032,bonus_id=3530
 
 copy=$(tbuild)_T19M4+T20H2_Insignia_Bracers,$(tbuild)_T19M4+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery

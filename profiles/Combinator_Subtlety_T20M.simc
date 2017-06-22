@@ -14,13 +14,13 @@ flask=seventh_demon
 food=lavish_suramar_feast
 augmentation=defiled
 
-# Base
+# Base (REMEMBER TO REMOVE LEGENDARIES)
 head=fanged_slayers_helm,id=147172,bonus_id=1512/3563
 neck=locket_of_splintered_souls,id=147014,bonus_id=1512/3563,enchant=mark_of_the_hidden_satyr
-shoulders=mantle_of_the_master_assassin,id=144236,bonus_id=3570
+shoulder=dripping_arcfin_shoulderpads,id=147037,bonus_id=3563/1512
 back=shroud_of_the_drowned_adherent,id=146985,bonus_id=1512/3563,enchant=binding_of_agility
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1512/3563
-wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
+wrists=sinew_stitched_wristguards,id=147041,bonus_id=3563/1512
 hands=fanged_slayers_handguards,id=147171,bonus_id=1512/3563
 waist=waistguard_of_profane_duplicity,id=147347,bonus_id=1522/3563
 legs=fanged_slayers_legguards,id=147173,bonus_id=1512/3563
@@ -82,11 +82,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M
@@ -116,11 +116,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M_Insignia_Bracers,$(tbuild)_T20M
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T20M_Mantle_Insignia,$(tbuild)_T20M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M2+T19M2
@@ -150,11 +150,11 @@ hands=the_first_of_the_dead,id=151818,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M2_Insignia_Bracers,$(tbuild)_T20M2+T19M2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T20M2+T19M2_Mantle_Insignia,$(tbuild)_T20M2+T19M2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M2+T19M4
@@ -164,7 +164,7 @@ feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M2+T19M4_Insignia_Bracers,$(tbuild)_T20M2+T19M4
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
 
 # T20M4+T19M2
@@ -174,4 +174,4 @@ feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 
 copy=$(tbuild)_T20M4+T19M2_Insignia_Bracers,$(tbuild)_T20M4+T19M2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
-finger1=insignia_of_ravenholdt,id=137049,ilevel=970,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery

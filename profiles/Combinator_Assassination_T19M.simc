@@ -69,7 +69,7 @@ feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T19M_Mantle_Head,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -98,7 +98,7 @@ feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T20H_Mantle_Insignia,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T20H_Mantle_Head,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -127,7 +127,7 @@ feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Insignia,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Head,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -147,12 +147,12 @@ wrists=zoldyck_family_training_shackles,id=137098,bonus_id=3530
 feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H4_Boots_Insignia,$(tbuild)_T19M2+T20H4
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H4_Insignia_Bracers,$(tbuild)_T19M2+T20H4
 wrists=zoldyck_family_training_shackles,id=137098,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
 # T19M4+T20H2
 copy=$(tbuild)_T19M4+T20H2_Boots_Bracers,$(tbuild)_T19M4+T20H2
@@ -160,9 +160,9 @@ wrists=zoldyck_family_training_shackles,id=137098,bonus_id=3530
 feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M4+T20H2_Boots_Insignia,$(tbuild)_T19M4+T20H2
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 feet=duskwalkers_footpads,id=137030,bonus_id=3530
 
 copy=$(tbuild)_T19M4+T20H2_Insignia_Bracers,$(tbuild)_T19M4+T20H2
 wrists=zoldyck_family_training_shackles,id=137098,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=137049,ilevel=940,gems=150mastery,enchant=binding_of_mastery
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery

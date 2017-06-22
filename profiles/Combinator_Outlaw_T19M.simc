@@ -33,7 +33,7 @@ off_hand=the_dreadblades,id=134552
 
 copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T19M_Mantle_Bracers,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -41,7 +41,7 @@ wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 
 copy=$(tbuild)_T19M_Insignia_Bracers,$(tbuild)_T19M
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T20H,$(tbuild)_T19M
 head=fanged_slayers_helm,id=147172,bonus_id=1497/3562
@@ -51,7 +51,7 @@ legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
 
 copy=$(tbuild)_T20H_Mantle_Insignia,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T20H_Mantle_Bracers,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -59,7 +59,7 @@ wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 
 copy=$(tbuild)_T20H_Insignia_Bracers,$(tbuild)_T20H
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T19M2+T20H2,$(tbuild)_T19M
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
@@ -67,7 +67,7 @@ legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Insignia,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Bracers,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
@@ -75,7 +75,7 @@ wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
 
 copy=$(tbuild)_T19M2+T20H2_Insignia_Bracers,$(tbuild)_T19M2+T20H2
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T19M2+T20H4,$(tbuild)_T20H
 shoulder=doomblade_spaulders,id=138338,bonus_id=3519
@@ -83,7 +83,7 @@ back=doomblade_shadowwrap,id=138371,bonus_id=3519,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M2+T20H4_Insignia_Bracers,$(tbuild)_T19M2+T20H4
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T19M4+T20H2,$(tbuild)_T19M
 shoulder=fanged_slayers_shoulderpads,id=147174,bonus_id=1497/3562
@@ -91,40 +91,40 @@ back=fanged_slayers_shroud,id=147170,bonus_id=1497/3562,enchant=binding_of_agili
 
 copy=$(tbuild)_T19M4+T20H2_Insignia_Bracers,$(tbuild)_T19M4+T20H2
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
 
 copy=$(tbuild)_T20H_Mantle_Cloak,$(tbuild)_T20H
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H_Insignia_Cloak,$(tbuild)_T20H
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H_Bracers_Cloak,$(tbuild)_T20H
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M_Mantle_Cloak,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M_Insignia_Cloak,$(tbuild)_T19M
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M_Bracers_Cloak,$(tbuild)_T19M
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M2+T20H2_Mantle_Cloak,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M2+T20H2_Insignia_Cloak,$(tbuild)_T19M2+T20H2
-finger1=insignia_of_ravenholdt,id=,id=137049,enchant_id=5430,bonus_id=3455/1811,gem_id=130247
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,enchant_id=5430,gem_id=130247
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
 
 copy=$(tbuild)_T19M2+T20H2_Bracers_Cloak,$(tbuild)_T19M2+T20H2
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3530
-back=The_Curse_of_Restlessness,id=151817,bonus_id=3530
+back=The_Curse_of_Restlessness,id=151817,bonus_id=3530,enchant=binding_of_agility
