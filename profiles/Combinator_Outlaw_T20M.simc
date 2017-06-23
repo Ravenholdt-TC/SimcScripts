@@ -20,7 +20,7 @@ neck=string_of_extracted_incisors,id=147013,bonus_id=1512/3563,enchant=mark_of_t
 shoulder=dripping_arcfin_shoulderpads,id=147037,bonus_id=3563/1512
 back=cloak_of_stifling_brimstone,id=146984,bonus_id=1512/3563,enchant=binding_of_agility
 chest=fanged_slayers_chestguard,id=147169,bonus_id=1512/3563
-wrists=sinew_stitched_wristguards,id=147041,bonus_id=3563/1512
+wrists=sinewstitched_wristguards,id=147041,bonus_id=3563/1512
 hands=fanged_slayers_handguards,id=147171,bonus_id=1512/3563
 waist=waistguard_of_profane_duplicity,id=147347,bonus_id=1522/3563
 legs=fanged_slayers_legguards,id=147173,bonus_id=1512/3563
