@@ -65,7 +65,9 @@ def CalculateTrinkets()
   csvfile = "#{SimcConfig::ReportsFolder}/#{template}.csv"
   SimcHelper.GenerateSimcConfig()
   system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc " +
-    "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} html=#{SimcConfig::ReportsFolder}/#{template}.html " + simcfile
+    "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
+    # "html=#{SimcConfig::ReportsFolder}/#{template}.html " +
+    simcfile
   SimcLogToCSV(logfile, csvfile)
 
   puts 'Done! Press enter to quit...'

@@ -53,7 +53,8 @@ logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}.log"
 csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}.csv"
 SimcHelper.GenerateSimcConfig()
 system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcRelicConfig.simc " +
-  "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} html=#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}.html " +
+  "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
+  # "html=#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}.html " +
   "#{SimcConfig::ProfilesFolder}/RelicSimulation_#{template}.simc"
 SimcLogToCSV(logfile, csvfile)
 
