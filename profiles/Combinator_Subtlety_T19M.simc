@@ -152,7 +152,7 @@ copy=$(tbuild)_T19M2+T20H2_Insignia_Bracers,$(tbuild)_T19M2+T20H2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
-copy=$(tbuild)_T20M2+T19M2_Mantle_Insignia,$(tbuild)_T20M2+T19M2
+copy=$(tbuild)_T19M2+T20H2_Mantle_Insignia,$(tbuild)_T19M2+T20H2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3530,gems=150mastery,enchant=binding_of_mastery
 
