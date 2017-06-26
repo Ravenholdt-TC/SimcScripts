@@ -88,6 +88,13 @@ copy=$(tbuild)_T19M_Mantle_Insignia,$(tbuild)_T19M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
+copy=$(tbuild)_T19M_Vigor_Bracers,$(tbuild)_T19M
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T19M_Mantle_Vigor,$(tbuild)_T19M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
 
 # T20M
 copy=$(tbuild)_T20M_Mantle_Boots,$(tbuild)_T20M
@@ -122,6 +129,13 @@ copy=$(tbuild)_T20M_Mantle_Insignia,$(tbuild)_T20M
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
+copy=$(tbuild)_T20M_Vigor_Bracers,$(tbuild)_T20M
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T20M_Mantle_Vigor,$(tbuild)_T20M
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
 
 # T20M2+T19M2
 copy=$(tbuild)_T20M2+T19M2_Mantle_Boots,$(tbuild)_T20M2+T19M2
@@ -156,6 +170,13 @@ copy=$(tbuild)_T20M2+T19M2_Mantle_Insignia,$(tbuild)_T20M2+T19M2
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
+copy=$(tbuild)_T20M2+T19M2_Vigor_Bracers,$(tbuild)_T20M2+T19M2
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T20M2+T19M2_Mantle_Vigor,$(tbuild)_T20M2+T19M2
+shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
 
 # T20M2+T19M4
 copy=$(tbuild)_T20M2+T19M4_Boots_Bracers,$(tbuild)_T20M2+T19M4
@@ -166,6 +187,9 @@ copy=$(tbuild)_T20M2+T19M4_Insignia_Bracers,$(tbuild)_T20M2+T19M4
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
 
+copy=$(tbuild)_T20M2+T19M4_Vigor_Bracers,$(tbuild)_T20M2+T19M4
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
 
 # T20M4+T19M2
 copy=$(tbuild)_T20M4+T19M2_Boots_Bracers,$(tbuild)_T20M4+T19M2
@@ -175,3 +199,7 @@ feet=shadow_satyrs_walk,id=137032,bonus_id=3570
 copy=$(tbuild)_T20M4+T19M2_Insignia_Bracers,$(tbuild)_T20M4+T19M2
 wrists=denial_of_the_halfgiants,id=137100,bonus_id=3570
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery
+
+copy=$(tbuild)_T20M4+T19M2_Vigor_Bracers,$(tbuild)_T20M4+T19M2
+wrists=denial_of_the_halfgiants,id=137100,bonus_id=3530
+finger1=soul_of_the_shadowblade,id=150936,gems=150mastery,enchant=binding_of_mastery
