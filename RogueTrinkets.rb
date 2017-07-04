@@ -40,7 +40,9 @@ TrinketIDs = {
   "EngineOfEradication" => 147015,
   "UmbralMoonglaives" => 147012,
   "VialOfCeaselessToxins" => 147011,
-  "InfernalCinders" => 147009
+  "InfernalCinders" => 147009,
+  "CradleOfAnguish" => 147010,
+  "TomeOfUnravelingSanity" => 147019
 }
 BonusIDs = {
   "EyeOfGuarm_Mastery" => 605,
