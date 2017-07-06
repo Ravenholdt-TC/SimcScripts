@@ -8,8 +8,8 @@ File.open(ARGV[0], 'r') do |file|
       else
         legos = 'None'
       end
-      fullname = data[0].split(',')[0]
-      lines.push("#{fullname},#{data[1]},#{data[2]},\"#{legos}\",#{data[4]}")
+      #fullname = data[0].split(',')[0]
+      lines.push("#{data[1]},#{data[2]},\"#{legos}\",#{data[4]}")
     end
   end
 end
