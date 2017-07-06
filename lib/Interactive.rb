@@ -1,9 +1,22 @@
 require_relative '../SimcConfig'
 
 module Interactive
+  # SPECIAL NOTE: By default these function check for existing cmd arguments first.
+  # You can disable that behavior by setting the optional parameter to false.
+
+  # Fetch next cmd argument or wait for input
+  def Interactive.GetInputOrArg(checkArgs=true)
+    arg = ARGV.shift if checkArgs else nil
+    unless arg
+      return gets
+    end
+    puts arg
+    return arg
+  end
+
   # Offers all simc templates matching prefix_*.simc
   # Returns the * part
-  def Interactive.SelectTemplate(prefix)
+  def Interactive.SelectTemplate(prefix, checkArgs=true)
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
@@ -15,7 +28,7 @@ module Interactive
       end
     end
     print 'Profile: '
-    index = gets.to_i
+    index = GetInputOrArg(checkArgs).to_i
     unless profiles.has_key?(index)
       puts 'ERROR: Invalid profile index entered!'
       puts 'Press enter to quit...'
@@ -28,12 +41,12 @@ module Interactive
 
   # Ask for talent permutation input string
   # Returns array of arrays with talents for each row
-  def Interactive.SelectTalentPermutations()
+  def Interactive.SelectTalentPermutations(checkArgs=true)
     puts 'Please select the talents for permutation:'
     puts 'Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation'
     puts 'Example: xxx00xx'
     print 'Talents: '
-    talentstring = gets
+    talentstring = GetInputOrArg(checkArgs)
     unless talentstring.match(/\A[0-3xX]{7}\Z/)
       puts 'ERROR: Invalid talent string!'
       puts 'Press enter to quit...'
@@ -53,11 +66,11 @@ module Interactive
   end
 
   # Asks if the specified file should be removed and does so by default (no answer)
-  def Interactive.RemoveFileWithQuestion(file)
+  def Interactive.RemoveFileWithQuestion(file, checkArgs=true)
     if File.exist?(file)
       puts "Do you want to delete the existing #{file} file? If you type \"n\", results will be appended."
       print 'Y/n: '
-      deletefile = gets
+      deletefile = GetInputOrArg(checkArgs)
       unless deletefile.chomp.downcase.eql? 'n'
         File.delete(file)
         puts 'Old file deleted!'

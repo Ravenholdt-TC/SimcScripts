@@ -71,5 +71,5 @@ def CalculateTrinkets()
   SimcLogToCSV(logfile, csvfile)
 
   puts 'Done! Press enter to quit...'
-  gets
+  Interactive.GetInputOrArg()
 end

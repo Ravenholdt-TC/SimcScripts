@@ -1,34 +1,11 @@
 REM T19M
-(
-  echo 1
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
-
-(
-  echo 3
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
-
-(
-  echo 5
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
+RogueTrinkets.rb 1 q
+RogueTrinkets.rb 3 q
+RogueTrinkets.rb 5 q
 
 REM T20H
-(
-  echo 2
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
+RogueTrinkets.rb 2 q
+RogueTrinkets.rb 4 q
+RogueTrinkets.rb 6 q
 
-(
-  echo 4
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
-
-(
-  echo 6
-) > trinketSimulationInput\.txt
-RogueTrinkets.rb < trinketSimulationInput.txt
-
-del trinketSimulationInput.txt
 @pause

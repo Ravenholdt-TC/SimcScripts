@@ -1,40 +1,11 @@
 REM T19M
-(
-  echo 1
-  echo xxx00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
-
-(
-  echo 3
-  echo x3x00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
-
-(
-  echo 5
-  echo xxx00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
+Combinator.rb 1 xxx00xx y q
+Combinator.rb 3 x3x00xx y q
+Combinator.rb 5 xxx00xx y q
 
 REM T20M
-(
-  echo 2
-  echo xxx00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
+Combinator.rb 2 xxx00xx y q
+Combinator.rb 4 xxx00xx y q
+Combinator.rb 6 xxx00xx y q
 
-(
-  echo 4
-  echo x3x00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
-
-(
-  echo 6
-  echo xxx00xx
-) > combinatorInput.txt
-Combinator.rb < combinatorInput.txt
-
-del combinatorInput.txt
 @pause

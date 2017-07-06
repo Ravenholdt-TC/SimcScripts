@@ -57,4 +57,4 @@ talentdata[0].each do |t1|
 end
 puts
 puts 'Done! Press enter to quit...'
-gets
+Interactive.GetInputOrArg()

@@ -1,34 +1,11 @@
 REM T19M
-(
-  echo 1
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
-
-(
-  echo 3
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
-
-(
-  echo 5
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
+RelicSimulation.rb 1 q
+RelicSimulation.rb 3 q
+RelicSimulation.rb 5 q
 
 REM T20H
-(
-  echo 2
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
+RelicSimulation.rb 2 q
+RelicSimulation.rb 4 q
+RelicSimulation.rb 6 q
 
-(
-  echo 4
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
-
-(
-  echo 6
-) > relicSimulationInput\.txt
-RelicSimulation.rb < relicSimulationInput.txt
-
-del relicSimulationInput.txt
 @pause
