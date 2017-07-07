@@ -6,9 +6,9 @@ module Interactive
 
   # Fetch next cmd argument or wait for input
   def Interactive.GetInputOrArg(checkArgs=true)
-    arg = ARGV.shift if checkArgs else nil
+    arg = checkArgs ? ARGV.shift : nil
     unless arg
-      return gets
+      return gets.chomp
     end
     puts arg
     return arg
@@ -28,7 +28,12 @@ module Interactive
       end
     end
     print 'Profile: '
-    index = GetInputOrArg(checkArgs).to_i
+    input = GetInputOrArg(checkArgs)
+    if profiles.has_value?(input)
+      puts
+      return input
+    end
+    index = input.to_i
     unless profiles.has_key?(index)
       puts 'ERROR: Invalid profile index entered!'
       puts 'Press enter to quit...'
@@ -54,7 +59,7 @@ module Interactive
       exit
     end
     talentdata = []
-    talentstring.chomp.each_char do |tier|
+    talentstring.each_char do |tier|
       if tier.downcase.eql? 'x'
         talentdata.push((1..3).to_a)
       else
@@ -71,7 +76,7 @@ module Interactive
       puts "Do you want to delete the existing #{file} file? If you type \"n\", results will be appended."
       print 'Y/n: '
       deletefile = GetInputOrArg(checkArgs)
-      unless deletefile.chomp.downcase.eql? 'n'
+      unless deletefile.downcase.eql? 'n'
         File.delete(file)
         puts 'Old file deleted!'
       end

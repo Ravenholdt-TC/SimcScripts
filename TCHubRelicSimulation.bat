@@ -1,11 +1,11 @@
 REM T19M
-RelicSimulation.rb 1 q
-RelicSimulation.rb 3 q
-RelicSimulation.rb 5 q
+RelicSimulation.rb Assassination_T19M q
+RelicSimulation.rb Outlaw_T19M q
+RelicSimulation.rb Subtlety_T19M q
 
 REM T20H
-RelicSimulation.rb 2 q
-RelicSimulation.rb 4 q
-RelicSimulation.rb 6 q
+RelicSimulation.rb Assassination_T20H q
+RelicSimulation.rb Outlaw_T20H q
+RelicSimulation.rb Subtlety_T20H q
 
 @pause

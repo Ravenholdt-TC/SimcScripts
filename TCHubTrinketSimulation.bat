@@ -1,11 +1,11 @@
 REM T19M
-RogueTrinkets.rb 1 q
-RogueTrinkets.rb 3 q
-RogueTrinkets.rb 5 q
+RogueTrinkets.rb Assassination_T19M q
+RogueTrinkets.rb Outlaw_T19M q
+RogueTrinkets.rb Subtlety_T19M q
 
 REM T20H
-RogueTrinkets.rb 2 q
-RogueTrinkets.rb 4 q
-RogueTrinkets.rb 6 q
+RogueTrinkets.rb Assassination_T20H q
+RogueTrinkets.rb Outlaw_T20H q
+RogueTrinkets.rb Subtlety_T20H q
 
 @pause
