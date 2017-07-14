@@ -1,9 +1,5 @@
-$(simc_profiles_path)/Tier19M_NH/Rogue_Assassination_T19M_NH.simc
+$(simc_profiles_path)/Tier20H/Rogue_Assassination_T20H.simc
 name="Template"
-
-#Legendaries
-shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
-wrists=zoldyck_family_training_shackles,id=137098,ilevel=970
 
 main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=900
 
