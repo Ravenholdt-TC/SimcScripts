@@ -74,6 +74,6 @@ Then, you can run the `Combinator.rb` script.
 Log files for each combination will be written to the `logs` folder. The resulting CSV
 file can be found in `reports`.
 
-Since I upload the results into a Google spreadsheet for display, I created another
-script for better CSV column splitting as well. Just head into the `reports` folder and
+Since we upload some results to a website for display, I created another
+script for better CSV column splitting. Just head into the `reports` folder and
 drag and drop the `Combinator_<PROFILENAME>.csv` file onto `CombinatorColumnSplit.bat`.

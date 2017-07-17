@@ -61,12 +61,14 @@ def CalculateTrinkets()
   end
   puts "Simulation profile for #{template} generated!"
 
-  logfile = "#{SimcConfig::LogsFolder}/#{template}.log"
-  csvfile = "#{SimcConfig::ReportsFolder}/#{template}.csv"
+  fightstyle = Interactive.SelectTemplate('Fightstyle')
+  logfile = "#{SimcConfig::LogsFolder}/#{template}_#{fightstyle}.log"
+  csvfile = "#{SimcConfig::ReportsFolder}/#{template}_#{fightstyle}.csv"
   SimcHelper.GenerateSimcConfig()
   system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc " +
     "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
-    # "html=#{SimcConfig::ReportsFolder}/#{template}.html " +
+    # "html=#{SimcConfig::ReportsFolder}/#{template}_#{fightstyle}.html " +
+    "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc " +
     simcfile
   SimcLogToCSV(logfile, csvfile)
 

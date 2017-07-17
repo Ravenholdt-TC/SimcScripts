@@ -49,12 +49,14 @@ def SimcLogToCSV(infile, outfile)
 end
 
 template = Interactive.SelectTemplate('RelicSimulation')
-logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}.log"
-csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}.csv"
+fightstyle = Interactive.SelectTemplate('Fightstyle')
+logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}.log"
+csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
 SimcHelper.GenerateSimcConfig()
 system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcRelicConfig.simc " +
   "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
-  # "html=#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}.html " +
+  # "html=#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.html " +
+  "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc " +
   "#{SimcConfig::ProfilesFolder}/RelicSimulation_#{template}.simc"
 SimcLogToCSV(logfile, csvfile)
 

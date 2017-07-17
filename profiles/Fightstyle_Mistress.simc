@@ -1,0 +1,9 @@
+enemy=Mistress
+raid_events+=/adds,count=3,first=15,cooldown=10,duration=10
+raid_events+=/adds,count=4,first=45,cooldown=60,duration=10,last=120
+raid_events+=/adds,count=4,first=55,cooldown=60,duration=5,last=120
+raid_events+=/adds,count=4,first=380,cooldown=60,duration=10,last=390
+raid_events+=/adds,count=4,first=390,cooldown=60,duration=10,last=400
+raid_events+=/adds,count=4,first=400,cooldown=60,duration=10,last=410
+raid_events+=/adds,count=4,first=410,cooldown=60,duration=10,last=420
+raid_events+=/adds,count=4,first=420,cooldown=60,duration=10,last=430

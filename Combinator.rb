@@ -27,10 +27,11 @@ def SimcLogToCSV(infile, outfile)
 end
 
 profile = Interactive.SelectTemplate('Combinator')
+fightstyle = Interactive.SelectTemplate('Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
-csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}.csv"
+csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
 Interactive.RemoveFileWithQuestion(csvfile)
 
 SimcHelper.GenerateSimcConfig()
@@ -43,9 +44,10 @@ talentdata[0].each do |t1|
           talentdata[5].each do |t6|
             talentdata[6].each do |t7|
               puts "Simulating talent string #{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}..."
-              logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}.log"
+              logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}.log"
               system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcCombinatorConfig.simc " +
                 "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
+                "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc " +
                 "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} #{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc"
               SimcLogToCSV(logfile, csvfile)
             end
