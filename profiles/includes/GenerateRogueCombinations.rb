@@ -27,7 +27,7 @@ Legendaries = {
                     'Insignia' => 'insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility',
                     'Vigor' => 'soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility'},
         'trinket1' => {'KJBW' => 'kiljaedens_burning_wish,id=144259,bonus_id=3570'},
-        'back' => {'Cloak' => 'the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}'},
+        'back' => {'Cloak' => 'the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility'},
     },
     'Subtlety' => {
         #'neck' => {'Prydaz' => 'prydaz__xavarics_magnum_opus,id=132444,bonus_id=3570,enchant=mark_of_the_trained_soldier,gems=150mastery'},

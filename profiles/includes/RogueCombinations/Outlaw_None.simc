@@ -28,7 +28,7 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Mantle_Cloak,$(tbuild)_None
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Belt_Boots,$(tbuild)_None
 waist=cinidaria_the_symbiote,id=133976,bonus_id=3570
@@ -56,7 +56,7 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Belt_Cloak,$(tbuild)_None
 waist=cinidaria_the_symbiote,id=133976,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Boots_Bracers,$(tbuild)_None
 feet=thraxis_tricksy_treads,id=137031,bonus_id=3570
@@ -80,7 +80,7 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Boots_Cloak,$(tbuild)_None
 feet=thraxis_tricksy_treads,id=137031,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Bracers_Hands,$(tbuild)_None
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3570
@@ -100,7 +100,7 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Bracers_Cloak,$(tbuild)_None
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Hands_Insignia,$(tbuild)_None
 hands=shivarran_symmetry,id=141321,bonus_id=3570
@@ -116,7 +116,7 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Hands_Cloak,$(tbuild)_None
 hands=shivarran_symmetry,id=141321,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Insignia_KJBW,$(tbuild)_None
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
@@ -128,11 +128,11 @@ trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
 
 copy=$(tbuild)_None_Insignia_Cloak,$(tbuild)_None
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Vigor_Cloak,$(tbuild)_None
 finger1=soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_None_Insignia_Vigor,$(tbuild)_None
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
@@ -140,5 +140,5 @@ finger2=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,encha
 
 copy=$(tbuild)_None_KJBW_Cloak,$(tbuild)_None
 trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 

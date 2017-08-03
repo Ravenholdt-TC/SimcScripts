@@ -60,7 +60,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 shoulder=mantle_of_the_master_assassin,id=144236,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Belt_Boots,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -116,7 +116,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 waist=cinidaria_the_symbiote,id=133976,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Boots_Bracers,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -164,7 +164,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 feet=thraxis_tricksy_treads,id=137031,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Bracers_Hands,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -204,7 +204,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 wrists=greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Hands_Insignia,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -236,7 +236,7 @@ head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 shoulder=fanged_slayers_shoulderpads,id=147174,ilevel=915
 hands=shivarran_symmetry,id=141321,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Insignia_KJBW,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -260,7 +260,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 finger1=insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Vigor_Cloak,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -268,7 +268,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 finger1=soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4_Insignia_Vigor,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
@@ -284,7 +284,7 @@ hands=fanged_slayers_handguards,id=147171,ilevel=915
 head=fanged_slayers_helm,id=147172,ilevel=915
 legs=fanged_slayers_legguards,id=147173,ilevel=915
 trinket1=kiljaedens_burning_wish,id=144259,bonus_id=3570
-back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility}
+back=the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility
 
 copy=$(tbuild)_T20H4,$(tbuild)_None
 chest=fanged_slayers_chestguard,id=147169,ilevel=915
