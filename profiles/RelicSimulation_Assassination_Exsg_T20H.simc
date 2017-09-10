@@ -3,6 +3,9 @@ name="Template"
 
 main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=900
 
+#Reset crucible
+crucible=
+
 artifact_override=toxic_blades:4
 artifact_override=serrated_edge:4
 artifact_override=master_alchemist:4
@@ -70,6 +73,27 @@ artifact_override=master_assassin:5
 copy=Strangler_1,Template
 artifact_override=strangler:5
 
+copy=TormentTheWeak_1,Template
+crucible=1780:1
+copy=Shadowbind_1,Template
+crucible=1778:1
+copy=ChaoticDarkness_1,Template
+crucible=1779:1
+copy=DarkSorrows_1,Template
+crucible=1781:1
+copy=MasterOfShadows_1,Template
+crucible=1771:1
+copy=MurderousIntent_1,Template
+crucible=1774:1
+copy=Shocklight_1,Template
+crucible=1777:1
+copy=LightSpeed_1,Template
+crucible=1770:1
+copy=SecureInTheLight_1,Template
+crucible=1782:1
+copy=InfusionOfLight_1,Template
+crucible=1783:1
+
 # 2 Relic
 copy=ToxicBlades_2,Template
 artifact_override=toxic_blades:6
@@ -86,6 +110,27 @@ artifact_override=master_assassin:6
 copy=Strangler_2,Template
 artifact_override=strangler:6
 
+copy=TormentTheWeak_2,Template
+crucible=1780:2
+copy=Shadowbind_2,Template
+crucible=1778:2
+copy=ChaoticDarkness_2,Template
+crucible=1779:2
+copy=DarkSorrows_2,Template
+crucible=1781:2
+copy=MasterOfShadows_2,Template
+crucible=1771:2
+copy=MurderousIntent_2,Template
+crucible=1774:2
+copy=Shocklight_2,Template
+crucible=1777:2
+copy=LightSpeed_2,Template
+crucible=1770:2
+copy=SecureInTheLight_2,Template
+crucible=1782:2
+copy=InfusionOfLight_2,Template
+crucible=1783:2
+
 # 3 Relic
 copy=ToxicBlades_3,Template
 artifact_override=toxic_blades:7
@@ -101,3 +146,24 @@ copy=MasterAssassin_3,Template
 artifact_override=master_assassin:7
 copy=Strangler_3,Template
 artifact_override=strangler:7
+
+copy=TormentTheWeak_3,Template
+crucible=1780:3
+copy=Shadowbind_3,Template
+crucible=1778:3
+copy=ChaoticDarkness_3,Template
+crucible=1779:3
+copy=DarkSorrows_3,Template
+crucible=1781:3
+copy=MasterOfShadows_3,Template
+crucible=1771:3
+copy=MurderousIntent_3,Template
+crucible=1774:3
+copy=Shocklight_3,Template
+crucible=1777:3
+copy=LightSpeed_3,Template
+crucible=1770:3
+copy=SecureInTheLight_3,Template
+crucible=1782:3
+copy=InfusionOfLight_3,Template
+crucible=1783:3
