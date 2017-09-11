@@ -18,46 +18,20 @@ artifact_override=fortunes_boon:4
 artifact_override=sabermetrics:4
 
 # Weapon Item Levels
-copy=WeaponItemLevel_1,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=901
-copy=WeaponItemLevel_2,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=902
 copy=WeaponItemLevel_3,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=903
-copy=WeaponItemLevel_4,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=904
-copy=WeaponItemLevel_5,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=905
 copy=WeaponItemLevel_6,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=906
-copy=WeaponItemLevel_7,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=907
-copy=WeaponItemLevel_8,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=908
 copy=WeaponItemLevel_9,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=909
-copy=WeaponItemLevel_10,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=910
-copy=WeaponItemLevel_11,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=911
 copy=WeaponItemLevel_12,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=912
-copy=WeaponItemLevel_13,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=913
-copy=WeaponItemLevel_14,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=914
 copy=WeaponItemLevel_15,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=915
-copy=WeaponItemLevel_16,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=916
-copy=WeaponItemLevel_17,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=917
 copy=WeaponItemLevel_18,Template
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=918
-copy=WeaponItemLevel_19,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=919
-copy=WeaponItemLevel_20,Template
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=920
+copy=WeaponItemLevel_21,Template
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=921
 
 # 1 Relics
 copy=BlackPowder_1,Template

@@ -2,6 +2,10 @@ require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
 require_relative 'lib/SimcHelper'
 
+# For interpolation to generate graphs that look more linear
+WeaponItemLevelName = 'WeaponItemLevel'
+WeaponItemLevelSteps = 3
+
 def SimcLogToCSV(infile, outfile)
   puts "Converting #{infile} to #{outfile}..."
   templateDPS = 0
@@ -12,7 +16,7 @@ def SimcLogToCSV(infile, outfile)
     while line = results.gets
       if line.start_with?('Player:') then
         name = line.split()[1]
-        dps = results.gets.split()[1]
+        dps = results.gets.split()[1].to_f
         if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
           if sims[data[1]] then
             sims[data[1]].merge!(data[2].to_i => dps)
@@ -23,6 +27,24 @@ def SimcLogToCSV(infile, outfile)
           templateDPS = dps
         end
       end
+    end
+  end
+
+  # Interpolate between Weapon Item Level Steps
+  sims[WeaponItemLevelName].sort.each do |amount, dps|
+    if amount == WeaponItemLevelSteps then
+      prevStepDPS = templateDPS
+    elsif amount % WeaponItemLevelSteps == 0 then
+      prevStepDPS = sims[WeaponItemLevelName][amount - WeaponItemLevelSteps]
+    else
+      # Not a step value, delete from storage
+      sims[WeaponItemLevelName].delete(amount)
+      next
+    end
+    # Write interpolated values
+    range_inc = (dps - prevStepDPS) / WeaponItemLevelSteps
+    (1..(WeaponItemLevelSteps) - 1).each do |i|
+      sims[WeaponItemLevelName].merge!((amount - WeaponItemLevelSteps + i) => (prevStepDPS + i * range_inc))
     end
   end
 
@@ -37,7 +59,7 @@ def SimcLogToCSV(infile, outfile)
     sims.each do |name, values|
       csv.write name
       values.sort.each do |amount, dps|
-        dps_inc = dps.to_f - templateDPS.to_f
+        dps_inc = dps - templateDPS
         csv.write ",#{dps_inc},\"#{amount}\""
       end
       ((values.length + 1)..max_columns).each do |i|
