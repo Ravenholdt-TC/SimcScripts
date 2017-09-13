@@ -12,11 +12,10 @@ TrinketIDs = {
   "BloodthirstyInstict" => 139329,
   "EyeOfCommand" => 142167,
   "ChaosTalisman" => 137459,
-  "EyeOfGuarm_Mastery" => 142506,
-  "EyeOfGuarm_Versatility" => 142506,
-  "EyeOfGuarm_Haste" => 142506,
-  "EyeOfGuarm_Crit" => 142506,
-  "EtherealUrn" => 142166,
+  "Stat_Mastery" => 142506,
+  "Stat_Versatility" => 142506,
+  "Stat_Haste" => 142506,
+  "Stat_Crit" => 142506,
   "UnstableArcanocrystal" => 141482,
   "TirathonsBetrayal" => 137537,
   "SixFeatherFan" => 141585,
@@ -45,10 +44,10 @@ TrinketIDs = {
   "TomeOfUnravelingSanity" => 147019
 }
 BonusIDs = {
-  "EyeOfGuarm_Mastery" => 605,
-  "EyeOfGuarm_Versatility" => 607,
-  "EyeOfGuarm_Haste" => 604,
-  "EyeOfGuarm_Crit" => 603
+  "Stat_Mastery" => 605,
+  "Stat_Versatility" => 607,
+  "Stat_Haste" => 604,
+  "Stat_Crit" => 603
 }
 
 require_relative 'lib/TrinketSimulation'
