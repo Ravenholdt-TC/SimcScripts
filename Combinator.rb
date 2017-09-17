@@ -8,10 +8,20 @@ def SimcLogToCSV(infile, outfile)
 
   # Read results
   File.open(infile, 'r') do |results|
+    inProfilesets = false
     while line = results.gets
       if line.start_with?('Player:') then
         name = line.split()[1]
         dps = results.gets.split()[1]
+        sims[name] = dps
+      elsif line.start_with?('Profilesets ') then
+        inProfilesets = true
+      elsif inProfilesets && line.chomp.empty?
+        inProfilesets = false
+      elsif inProfilesets then
+        parts = line.split()
+        name = parts[2]
+        dps = parts[0].to_f
         sims[name] = dps
       end
     end

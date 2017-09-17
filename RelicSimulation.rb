@@ -13,6 +13,7 @@ def SimcLogToCSV(infile, outfile)
 
   # Read results
   File.open(infile, 'r') do |results|
+    inProfilesets = false
     while line = results.gets
       if line.start_with?('Player:') then
         name = line.split()[1]
@@ -26,25 +27,42 @@ def SimcLogToCSV(infile, outfile)
         elsif name == 'Template'
           templateDPS = dps
         end
+      elsif line.start_with?('Profilesets ') then
+        inProfilesets = true
+      elsif inProfilesets && line.chomp.empty?
+        inProfilesets = false
+      elsif inProfilesets then
+        parts = line.split()
+        name = parts[2]
+        dps = parts[0].to_f
+        if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
+          if sims[data[1]] then
+            sims[data[1]].merge!(data[2].to_i => dps)
+          else
+            sims[data[1]] = { data[2].to_i => dps }
+          end
+        end
       end
     end
   end
 
   # Interpolate between Weapon Item Level Steps
-  sims[WeaponItemLevelName].sort.each do |amount, dps|
-    if amount == WeaponItemLevelSteps then
-      prevStepDPS = templateDPS
-    elsif amount % WeaponItemLevelSteps == 0 then
-      prevStepDPS = sims[WeaponItemLevelName][amount - WeaponItemLevelSteps]
-    else
-      # Not a step value, delete from storage
-      sims[WeaponItemLevelName].delete(amount)
-      next
-    end
-    # Write interpolated values
-    range_inc = (dps - prevStepDPS) / WeaponItemLevelSteps
-    (1..(WeaponItemLevelSteps) - 1).each do |i|
-      sims[WeaponItemLevelName].merge!((amount - WeaponItemLevelSteps + i) => (prevStepDPS + i * range_inc))
+  if sims[WeaponItemLevelName] then
+    sims[WeaponItemLevelName].sort.each do |amount, dps|
+      if amount == WeaponItemLevelSteps then
+        prevStepDPS = templateDPS
+      elsif amount % WeaponItemLevelSteps == 0 then
+        prevStepDPS = sims[WeaponItemLevelName][amount - WeaponItemLevelSteps]
+      else
+        # Not a step value, delete from storage
+        sims[WeaponItemLevelName].delete(amount)
+        next
+      end
+      # Write interpolated values
+      range_inc = (dps - prevStepDPS) / WeaponItemLevelSteps
+      (1..(WeaponItemLevelSteps) - 1).each do |i|
+        sims[WeaponItemLevelName].merge!((amount - WeaponItemLevelSteps + i) => (prevStepDPS + i * range_inc))
+      end
     end
   end
 

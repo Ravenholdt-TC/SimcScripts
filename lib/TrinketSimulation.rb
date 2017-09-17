@@ -9,6 +9,7 @@ def SimcLogToCSV(infile, outfile)
 
   # Read results
   File.open(infile, 'r') do |results|
+    inProfilesets = false
     while line = results.gets
       if line.start_with?('Player:') then
         name = line.split()[1]
@@ -21,6 +22,21 @@ def SimcLogToCSV(infile, outfile)
           end
         elsif name == 'Template'
           templateDPS = dps
+        end
+      elsif line.start_with?('Profilesets ') then
+        inProfilesets = true
+      elsif inProfilesets && line.chomp.empty?
+        inProfilesets = false
+      elsif inProfilesets then
+        parts = line.split()
+        name = parts[2]
+        dps = parts[0].to_f
+        if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
+          if sims[data[1]] then
+            sims[data[1]].merge!(data[2].to_i => dps)
+          else
+            sims[data[1]] = { data[2].to_i => dps }
+          end
         end
       end
     end
@@ -53,8 +69,7 @@ def CalculateTrinkets()
           if bid = BonusIDs[name] then
             bonus = ",bonus_id=#{bid}"
           end
-          out.puts "copy=#{name}_#{ilvl},Template"
-          out.puts "trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
+          out.puts "profileset.#{name}_#{ilvl}=trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
         end
       end
     end
