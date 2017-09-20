@@ -1,40 +1,7 @@
 require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
+require_relative 'lib/JSONParser'
 require_relative 'lib/SimcHelper'
-
-def SimcLogToCSV(infile, outfile)
-  puts "Adding data from #{infile} to #{outfile}..."
-  sims = { }
-
-  # Read results
-  File.open(infile, 'r') do |results|
-    inProfilesets = false
-    while line = results.gets
-      if line.start_with?('Player:') then
-        name = line.split()[1]
-        dps = results.gets.split()[1]
-        sims[name] = dps
-      elsif line.start_with?('Profilesets ') then
-        inProfilesets = true
-      elsif inProfilesets && line.chomp.empty?
-        inProfilesets = false
-      elsif inProfilesets then
-        parts = line.split()
-        name = parts[2]
-        dps = parts[0].to_f
-        sims[name] = dps
-      end
-    end
-  end
-
-  # Write to CSV
-  File.open(outfile, 'a') do |csv|
-    sims.each do |name, value|
-      csv.write "#{name},#{value}"
-      csv.write "\n"
-    end
-  end
-end
 
 profile = Interactive.SelectTemplate('Combinator')
 fightstyle = Interactive.SelectTemplate('Fightstyle')
@@ -44,7 +11,6 @@ talentdata = Interactive.SelectTalentPermutations()
 csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
 Interactive.RemoveFileWithQuestion(csvfile)
 
-SimcHelper.GenerateSimcConfig()
 puts 'Starting simulations, this may take a while!'
 talentdata[0].each do |t1|
   talentdata[1].each do |t2|
@@ -54,12 +20,26 @@ talentdata[0].each do |t1|
           talentdata[5].each do |t6|
             talentdata[6].each do |t7|
               puts "Simulating talent string #{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}..."
-              logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}.log"
-              system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcCombinatorConfig.simc " +
-                "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
-                "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc " +
-                "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7} #{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc"
-              SimcLogToCSV(logfile, csvfile)
+              logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}_#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
+              params = [
+                'SimcCombinatorConfig.simc',
+                "output=#{logfile}.log",
+                "json2=#{logfile}.json",
+                "$(tbuild)=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}",
+                "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",
+                "#{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc"
+              ]
+              SimcHelper.RunSimulation(params)
+
+              # Write to CSV
+              puts "Adding data from #{logfile}.json to #{csvfile}..."
+              sims = JSONParser.GetAllDPSResults("#{logfile}.json")
+              File.open(csvfile, 'a') do |csv|
+                sims.each do |name, value|
+                  csv.write "#{name},#{value}"
+                  csv.write "\n"
+                end
+              end
             end
           end
         end

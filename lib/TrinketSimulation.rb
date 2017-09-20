@@ -1,5 +1,6 @@
 require_relative '../SimcConfig'
 require_relative 'Interactive'
+require_relative 'JSONParser'
 require_relative 'SimcHelper'
 
 def SimcLogToCSV(infile, outfile)
@@ -7,38 +8,17 @@ def SimcLogToCSV(infile, outfile)
   templateDPS = 0
   sims = { }
 
-  # Read results
-  File.open(infile, 'r') do |results|
-    inProfilesets = false
-    while line = results.gets
-      if line.start_with?('Player:') then
-        name = line.split()[1]
-        dps = results.gets.split()[1]
-        if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
-          if sims[data[1]] then
-            sims[data[1]].merge!(data[2].to_i => dps)
-          else
-            sims[data[1]] = { data[2].to_i => dps }
-          end
-        elsif name == 'Template'
-          templateDPS = dps
-        end
-      elsif line.start_with?('Profilesets ') then
-        inProfilesets = true
-      elsif inProfilesets && line.chomp.empty?
-        inProfilesets = false
-      elsif inProfilesets then
-        parts = line.split()
-        name = parts[2]
-        dps = parts[0].to_f
-        if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
-          if sims[data[1]] then
-            sims[data[1]].merge!(data[2].to_i => dps)
-          else
-            sims[data[1]] = { data[2].to_i => dps }
-          end
-        end
+  # Process results
+  results = JSONParser.GetAllDPSResults(infile)
+  results.each do |name, dps|
+    if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
+      if sims[data[1]] then
+        sims[data[1]].merge!(data[2].to_i => dps)
+      else
+        sims[data[1]] = { data[2].to_i => dps }
       end
+    elsif name == 'Template'
+      templateDPS = dps
     end
   end
 
@@ -47,7 +27,7 @@ def SimcLogToCSV(infile, outfile)
     sims.each do |name, values|
       csv.write name
       values.sort.each do |ilvl, dps|
-        dps_inc = dps.to_f - templateDPS.to_f
+        dps_inc = dps - templateDPS
         csv.write ",#{dps_inc}"
       end
       csv.write "\n"
@@ -77,15 +57,17 @@ def CalculateTrinkets()
   puts "Simulation profile for #{template} generated!"
 
   fightstyle = Interactive.SelectTemplate('Fightstyle')
-  logfile = "#{SimcConfig::LogsFolder}/#{template}_#{fightstyle}.log"
+  logfile = "#{SimcConfig::LogsFolder}/#{template}_#{fightstyle}"
   csvfile = "#{SimcConfig::ReportsFolder}/#{template}_#{fightstyle}.csv"
-  SimcHelper.GenerateSimcConfig()
-  system "#{SimcConfig::SimcPath}/simc threads=#{SimcConfig::Threads} SimcGlobalConfig.simc SimcTrinketConfig.simc " +
-    "#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc output=#{logfile} " +
-    # "html=#{SimcConfig::ReportsFolder}/#{template}_#{fightstyle}.html " +
-    "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc " +
+  params = [
+    'SimcTrinketConfig.simc',
+    "output=#{logfile}.log",
+    "json2=#{logfile}.json",
+    "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",
     simcfile
-  SimcLogToCSV(logfile, csvfile)
+  ]
+  SimcHelper.RunSimulation(params)
+  SimcLogToCSV("#{logfile}.json", csvfile)
 
   puts 'Done! Press enter to quit...'
   Interactive.GetInputOrArg()

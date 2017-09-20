@@ -5,7 +5,7 @@ module Interactive
   # You can disable that behavior by setting the optional parameter to false.
 
   # Fetch next cmd argument or wait for input
-  def Interactive.GetInputOrArg(checkArgs=true)
+  def self.GetInputOrArg(checkArgs=true)
     arg = checkArgs ? ARGV.shift : nil
     unless arg
       return gets.chomp
@@ -16,7 +16,7 @@ module Interactive
 
   # Offers all simc templates matching prefix_*.simc
   # Returns the * part
-  def Interactive.SelectTemplate(prefix, checkArgs=true)
+  def self.SelectTemplate(prefix, checkArgs=true)
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
@@ -46,7 +46,7 @@ module Interactive
 
   # Ask for talent permutation input string
   # Returns array of arrays with talents for each row
-  def Interactive.SelectTalentPermutations(checkArgs=true)
+  def self.SelectTalentPermutations(checkArgs=true)
     puts 'Please select the talents for permutation:'
     puts 'Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation'
     puts 'Example: xxx00xx'
@@ -71,7 +71,7 @@ module Interactive
   end
 
   # Asks if the specified file should be removed and does so by default (no answer)
-  def Interactive.RemoveFileWithQuestion(file, checkArgs=true)
+  def self.RemoveFileWithQuestion(file, checkArgs=true)
     if File.exist?(file)
       puts "Do you want to delete the existing #{file} file? If you type \"n\", results will be appended."
       print 'Y/n: '
