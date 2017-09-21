@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 Template = File.basename(__FILE__, ".rb")
 ItemLevels = [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955]
 TrinketIDs = {

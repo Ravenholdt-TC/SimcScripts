@@ -3,6 +3,13 @@ Mystler's SimC Scripts
 
 This repository contains my scripts for automated simulation and data collection.
 
+## Initial Setup
+
+```
+gem install bundler
+bundle install
+```
+
 ## General Configuration
 
 In order to work with the scripts in this repository, copy the file `SimcConfig_Example.rb`

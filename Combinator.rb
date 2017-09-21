@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
