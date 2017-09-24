@@ -14,14 +14,14 @@ module Interactive
     return arg
   end
 
-  # Offers all simc templates matching prefix_*.simc
+  # Offers all templates matching prefix_*.<ext> in the profiles folder
   # Returns the * part
   def self.SelectTemplate(prefix, checkArgs=true)
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
-    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}_[_a-zA-Z0-9]*\.simc").each do |file|
-      if profile = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}_([_a-zA-Z0-9]*)\.simc/)
+    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}_[_a-zA-Z0-9]*\.*").each do |file|
+      if profile = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}_([_a-zA-Z0-9]*)\.\w+/)
         profiles[index] = profile[1]
         puts "#{index}: #{profile[1]}"
         index += 1
@@ -37,7 +37,7 @@ module Interactive
     unless profiles.has_key?(index)
       puts 'ERROR: Invalid profile index entered!'
       puts 'Press enter to quit...'
-      gets
+      GetInputOrArg(checkArgs)
       exit
     end
     puts
@@ -55,7 +55,7 @@ module Interactive
     unless talentstring.match(/\A[0-3xX]{7}\Z/)
       puts 'ERROR: Invalid talent string!'
       puts 'Press enter to quit...'
-      gets
+      GetInputOrArg(checkArgs)
       exit
     end
     talentdata = []

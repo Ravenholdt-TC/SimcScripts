@@ -11,8 +11,8 @@ def SimcLogToCSV(infile, outfile)
   # Process results
   results = JSONParser.GetAllDPSResults(infile)
   results.each do |name, dps|
-    if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
-      if sims[data[1]] then
+    if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+      if sims[data[1]]
         sims[data[1]].merge!(data[2].to_i => dps)
       else
         sims[data[1]] = { data[2].to_i => dps }
@@ -46,7 +46,7 @@ def CalculateTrinkets()
       ItemLevels.each do |ilvl|
         TrinketIDs.each do |name, id|
           bonus = ""
-          if bid = BonusIDs[name] then
+          if bid = BonusIDs[name]
             bonus = ",bonus_id=#{bid}"
           end
           out.puts "profileset.#{name}_#{ilvl}=trinket1=,id=#{id},ilevel=#{ilvl}" + bonus

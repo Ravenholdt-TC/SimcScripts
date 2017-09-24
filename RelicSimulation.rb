@@ -24,8 +24,8 @@ templateDPS = 0
 puts "Converting #{logfile}.json to #{csvfile}..."
 results = JSONParser.GetAllDPSResults("#{logfile}.json")
 results.each do |name, dps|
-  if data = /\A(.+)_(\p{Digit}+)\Z/.match(name) then
-    if sims[data[1]] then
+  if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+    if sims[data[1]]
       sims[data[1]].merge!(data[2].to_i => dps)
     else
       sims[data[1]] = { data[2].to_i => dps }
@@ -40,11 +40,11 @@ WeaponItemLevelName = 'WeaponItemLevel'
 WeaponItemLevelSteps = 3
 
 # Interpolate between Weapon Item Level Steps
-if sims[WeaponItemLevelName] then
+if sims[WeaponItemLevelName]
   sims[WeaponItemLevelName].sort.each do |amount, dps|
-    if amount == WeaponItemLevelSteps then
+    if amount == WeaponItemLevelSteps
       prevStepDPS = templateDPS
-    elsif amount % WeaponItemLevelSteps == 0 then
+    elsif amount % WeaponItemLevelSteps == 0
       prevStepDPS = sims[WeaponItemLevelName][amount - WeaponItemLevelSteps]
     else
       # Not a step value, delete from storage

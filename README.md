@@ -63,16 +63,15 @@ Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
 
 ## Combinator
 
-This script will run a template for whatever talent permutation you would like to
+This script will run a template for whatever talent and gear combinations you would like to
 investigate. It is an interactive script prompting for any input required.
 
 All you have to do is create a `Combinator_<PROFILENAME>.simc` file in `profiles` with
-your profile and the line:
-```
-talents=$(tbuild)
-```
+the baseline profile called "Template".
 
-Also, you should add `$(tbuild)` to the profile name(s).
+Also make sure gear and setup definitions are available. For an example, look at the
+files `profiles/CombinatorGear_*.json` and `profiles/CombinatorSetups_*.json`. These
+define what gear is available to the class and what setups of those to simulate.
 
 Special Combinator simulation settings can be modified in `SimcCombinatorConfig.simc`.
 

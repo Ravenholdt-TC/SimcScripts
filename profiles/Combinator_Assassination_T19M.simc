@@ -1,10 +1,10 @@
-rogue="$(tbuild)_None"
+rogue="Template"
 level=110
 race=blood_elf
 timeofday=day
 role=attack
 position=back
-talents=$(tbuild)
+talents=0000000
 artifact=43:0:0:0:0:323:4:324:4:325:4:326:4:327:4:328:4:329:4:330:4:331:4:332:1:333:1:334:1:335:1:337:1:346:1:347:1:1276:1:1384:1:1577:4:1578:1:1579:1:1580:1:1651:1
 spec=assassination
 
@@ -29,11 +29,3 @@ trinket1=nightblooming_frond,id=140802,bonus_id=3519
 trinket2=convergence_of_fates,id=140806,bonus_id=3519
 main_hand=the_kingslayers,id=128870,bonus_id=741,gem_id=140822/140815/140819,relic_id=3519/3519/3519
 off_hand=the_kingslayers,id=128869
-
-# Combinations we want to sim
-profiles/includes/RogueCombinations/Assassination_None.simc
-profiles/includes/RogueCombinations/Assassination_T19M4.simc
-profiles/includes/RogueCombinations/Assassination_T19M4+T20H2.simc
-profiles/includes/RogueCombinations/Assassination_T19M2+T20H2.simc
-profiles/includes/RogueCombinations/Assassination_T19M2+T20H4.simc
-profiles/includes/RogueCombinations/Assassination_T20H4.simc
