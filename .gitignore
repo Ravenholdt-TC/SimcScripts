@@ -1,4 +1,4 @@
-*.json
+logs/*.json
 *.log
 *.html
 *.csv

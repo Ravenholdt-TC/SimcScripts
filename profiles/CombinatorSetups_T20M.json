@@ -1,0 +1,43 @@
+{
+    "setups": [
+        {
+            "legendaries": 0,
+            "sets": [
+                {"set": "None", "pieces": 0}
+            ]
+        },
+        {
+            "legendaries": 2,
+            "sets": [
+                {"set": "None", "pieces": 0}
+            ]
+        },
+        {
+            "legendaries": 2,
+            "sets": [
+                {"set": "T19M", "pieces": 4},
+                {"set": "T20M", "pieces": 2}
+            ]
+        },
+        {
+            "legendaries": 2,
+            "sets": [
+                {"set": "T19M", "pieces": 2},
+                {"set": "T20M", "pieces": 2}
+            ]
+        },
+        {
+            "legendaries": 2,
+            "sets": [
+                {"set": "T19M", "pieces": 2},
+                {"set": "T20M", "pieces": 4}
+            ]
+        },
+        {
+            "legendaries": 2,
+            "sets": [
+                {"set": "T20M", "pieces": 4}
+            ]
+        }
+    ]
+}
