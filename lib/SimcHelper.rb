@@ -19,7 +19,7 @@ module SimcHelper
     command.push("threads=#{SimcConfig::Threads}")
 
     # Set global configurations
-    command.push('SimcGlobalConfig.simc')
+    command.push("#{SimcConfig::ConfigFolder}/SimcGlobalConfig.simc")
     GenerateSimcConfig()
     command.push("#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc")
 

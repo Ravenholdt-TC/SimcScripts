@@ -1,8 +1,8 @@
-logs/*.json
 *.log
 *.html
 *.csv
 
 generated/*.simc
+logs/*.json
 
 SimcConfig.rb

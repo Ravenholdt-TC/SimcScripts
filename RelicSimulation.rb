@@ -10,7 +10,7 @@ fightstyle = Interactive.SelectTemplate('Fightstyle')
 logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}"
 csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
 params = [
-  'SimcRelicConfig.simc',
+  "#{SimcConfig::ConfigFolder}/SimcRelicConfig.simc",
   "output=#{logfile}.log",
   "json2=#{logfile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",

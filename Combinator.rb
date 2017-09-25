@@ -107,7 +107,7 @@ end
 puts 'Starting simulations, this may take a while!'
 logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}"
 params = [
-  'SimcCombinatorConfig.simc',
+  "#{SimcConfig::ConfigFolder}/SimcCombinatorConfig.simc",
   "output=#{logfile}.log",
   "json2=#{logfile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",

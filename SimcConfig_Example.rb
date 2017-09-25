@@ -7,6 +7,13 @@ module SimcConfig
   # How many threads to use
   Threads = 3
 
+  ###
+  ### You can most likely leave the following the way they are.
+  ###
+
+  # Where tool-wide config files are stored
+  ConfigFolder = 'conf'
+
   # Where reports / CSV files will be saved
   ReportsFolder = 'reports'
 

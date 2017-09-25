@@ -60,7 +60,7 @@ def CalculateTrinkets()
   logfile = "#{SimcConfig::LogsFolder}/#{template}_#{fightstyle}"
   csvfile = "#{SimcConfig::ReportsFolder}/#{template}_#{fightstyle}.csv"
   params = [
-    'SimcTrinketConfig.simc',
+    "#{SimcConfig::ConfigFolder}/SimcTrinketConfig.simc",
     "output=#{logfile}.log",
     "json2=#{logfile}.json",
     "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",
