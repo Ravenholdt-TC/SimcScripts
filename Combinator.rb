@@ -37,40 +37,43 @@ gear['legendaries'][spec]['trinket2'] = gear['legendaries'][spec]['trinket1']
 # Build gear combinations
 gearCombinations = {}
 setups['setups'].each do |setup|
-  # Iterate over legendary slot combinations
-  gear['legendaries'][spec].keys.combination(setup['legendaries']).to_a.each do |legoSlots|
-    catch (:invalidCombination) do
-      # Always use first slot for dual slot items before considering the second
-      throw :invalidCombination if legoSlots.include?('finger2') && !legoSlots.include?('finger1')
-      throw :invalidCombination if legoSlots.include?('trinket2') && !legoSlots.include?('trinket1')
+  setup['legendaries'].each do |numLegos|
+    # Iterate over legendary slot combinations
+    gear['legendaries'][spec].keys.combination(numLegos).to_a.each do |legoSlots|
+      catch (:invalidCombination) do
+        # Always use first slot for dual slot items before considering the second
+        throw :invalidCombination if legoSlots.include?('finger2') && !legoSlots.include?('finger1')
+        throw :invalidCombination if legoSlots.include?('trinket2') && !legoSlots.include?('trinket1')
 
-      # Create matching set combination
-      usedSlots = [] + legoSlots
-      setStrings = []
-      setup['sets'].each do |set|
-        availableSlots = gear['sets'][set['set']].keys - usedSlots
-        throw :invalidCombination if availableSlots.length < set['pieces']
-        availableSlots.take(set['pieces']).each do |setSlot|
-          setStrings.push("#{setSlot}=#{gear['sets'][set['set']][setSlot]}")
-          usedSlots.push(setSlot)
+        # Create matching set combination
+        usedSlots = [] + legoSlots
+        setStrings = []
+        setup['sets'].each do |set|
+          availableSlots = gear['sets'][set['set']].keys - usedSlots
+          throw :invalidCombination if availableSlots.length < set['pieces']
+          availableSlots.take(set['pieces']).each do |setSlot|
+            setStrings.push("#{setSlot}=#{gear['sets'][set['set']][setSlot]}")
+            usedSlots.push(setSlot)
+          end
         end
-      end
-      setProfileName = setup['sets'].collect {|set| set['pieces'] > 0 ? "#{set['set']}#{set['pieces']}" : "#{set['set']}"}.join('+')
+        setProfileName = setup['sets'].collect {|set| set['pieces'] > 0 ? "#{set['set']}#{set['pieces']}" : "#{set['set']}"}.join('+')
 
-      # Iterate over legendary combinations for the current lego slot combination
-      if legoSlots.empty?
-        gearCombinations["#{setProfileName}_None"] = setStrings
-        next
-      end
-      legoCombinations = legoSlots.collect {|legoSlot| gear['legendaries'][spec][legoSlot].keys}
-      legoCombinations = legoCombinations.reduce(&:product).collect(&:flatten).collect(&:uniq).select {|x| x.length == setup['legendaries']}
-      legoCombinations.each do |legoCombination|
-        legoProfileName = legoCombination.join('_')
-        legoStrings = []
-        legoCombination.each_with_index do |itemName, idx|
-          legoStrings.push("#{legoSlots[idx]}=#{gear['legendaries'][spec][legoSlots[idx]][itemName]}")
+        # Iterate over legendary combinations for the current lego slot combination
+        if legoSlots.empty?
+          gearCombinations["#{setProfileName}_None"] = setStrings
+          next
         end
-        gearCombinations["#{setProfileName}_#{legoProfileName}"] = legoStrings + setStrings
+        legoCombinations = legoSlots.collect {|legoSlot| gear['legendaries'][spec][legoSlot].keys}
+        legoCombinations = legoCombinations.reduce(&:product) if legoSlots.length > 1
+        legoCombinations = legoCombinations.collect(&:flatten).collect(&:uniq).select {|x| x.length == numLegos}
+        legoCombinations.each do |legoCombination|
+          legoProfileName = legoCombination.join('_')
+          legoStrings = []
+          legoCombination.each_with_index do |itemName, idx|
+            legoStrings.push("#{legoSlots[idx]}=#{gear['legendaries'][spec][legoSlots[idx]][itemName]}")
+          end
+          gearCombinations["#{setProfileName}_#{legoProfileName}"] = legoStrings + setStrings
+        end
       end
     end
   end
