@@ -35,6 +35,7 @@ profileset.Fatebringer_1=artifact_override=fatebringer:5
 profileset.FortuneStrikes_1=artifact_override=fortune_strikes:5
 profileset.FortunesBoon_1=artifact_override=fortunes_boon:5
 profileset.Sabermetrics_1=artifact_override=sabermetrics:5
+profileset.BladeDancer_1=artifact_override=blade_dancer:5
 
 profileset.TormentTheWeak_1=crucible=1780:1
 profileset.Shadowbind_1=crucible=1778:1
@@ -56,6 +57,7 @@ profileset.Fatebringer_2=artifact_override=fatebringer:6
 profileset.FortuneStrikes_2=artifact_override=fortune_strikes:6
 profileset.FortunesBoon_2=artifact_override=fortunes_boon:6
 profileset.Sabermetrics_2=artifact_override=sabermetrics:6
+profileset.BladeDancer_2=artifact_override=blade_dancer:6
 
 profileset.TormentTheWeak_2=crucible=1780:2
 profileset.Shadowbind_2=crucible=1778:2
@@ -77,6 +79,7 @@ profileset.Fatebringer_3=artifact_override=fatebringer:7
 profileset.FortuneStrikes_3=artifact_override=fortune_strikes:7
 profileset.FortunesBoon_3=artifact_override=fortunes_boon:7
 profileset.Sabermetrics_3=artifact_override=sabermetrics:7
+profileset.BladeDancer_3=artifact_override=blade_dancer:7
 
 profileset.TormentTheWeak_3=crucible=1780:3
 profileset.Shadowbind_3=crucible=1778:3

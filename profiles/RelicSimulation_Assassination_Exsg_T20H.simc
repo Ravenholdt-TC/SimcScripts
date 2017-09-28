@@ -32,6 +32,7 @@ profileset.BalancedBlades_1=artifact_override=balanced_blades:5
 profileset.GushingWound_1=artifact_override=gushing_wound:5
 profileset.MasterAssassin_1=artifact_override=master_assassin:5
 profileset.Strangler_1=artifact_override=strangler:5
+profileset.PoisonKnives_1=artifact_override=poison_knives:5
 
 profileset.TormentTheWeak_1=crucible=1780:1
 profileset.Shadowbind_1=crucible=1778:1
@@ -52,6 +53,7 @@ profileset.BalancedBlades_2=artifact_override=balanced_blades:6
 profileset.GushingWound_2=artifact_override=gushing_wound:6
 profileset.MasterAssassin_2=artifact_override=master_assassin:6
 profileset.Strangler_2=artifact_override=strangler:6
+profileset.PoisonKnives_2=artifact_override=poison_knives:6
 
 profileset.TormentTheWeak_2=crucible=1780:2
 profileset.Shadowbind_2=crucible=1778:2
@@ -72,6 +74,7 @@ profileset.BalancedBlades_3=artifact_override=balanced_blades:7
 profileset.GushingWound_3=artifact_override=gushing_wound:7
 profileset.MasterAssassin_3=artifact_override=master_assassin:7
 profileset.Strangler_3=artifact_override=strangler:7
+profileset.PoisonKnives_3=artifact_override=poison_knives:7
 
 profileset.TormentTheWeak_3=crucible=1780:3
 profileset.Shadowbind_3=crucible=1778:3
