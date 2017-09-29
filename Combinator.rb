@@ -125,7 +125,18 @@ sims = JSONParser.GetAllDPSResults("#{logfile}.json")
 sims.delete('Template')
 File.open(csvfile, 'a') do |csv|
   sims.each do |name, value|
-    csv.write "#{name},#{value}"
+    # Split profile name into nice CSV columns (mostly for web display)
+    if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
+      if not data[3].empty?
+        legos = data[3].gsub(/_/, ', ')
+      else
+        legos = 'None'
+      end
+      csv.write "#{data[1]},#{data[2]},\"#{legos}\",#{value}"
+    else
+      # We should not get here, but leave it as failsafe
+      csv.write "#{name},#{value}"
+    end
     csv.write "\n"
   end
 end
