@@ -13,10 +13,10 @@ module JSONParser
     results = { }
     json = ReadFile(jsonFile)
     json['sim']['players'].each do |player|
-      results[player['name']] = player['collected_data']['dps']['mean']
+      results[player['name']] = player['collected_data']['dps']['mean'].round
     end
     json['sim']['profilesets']['results'].each do |player|
-      results[player['name']] = player['mean']
+      results[player['name']] = player['mean'].round
     end
     return results
   end
