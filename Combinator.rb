@@ -91,7 +91,7 @@ File.open(simcfile, 'w') do |out|
             talentdata[5].each do |t6|
               talentdata[6].each do |t7|
                 gearCombinations.each do |name, strings|
-                  prefix = "profileset.\"#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}_#{name}\"="
+                  prefix = "profileset.\"#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}_#{name}\"+="
                   out.puts(prefix + "talents=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}")
                   strings.each do |string|
                     out.puts(prefix + string)

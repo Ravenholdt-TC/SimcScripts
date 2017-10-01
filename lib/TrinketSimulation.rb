@@ -49,7 +49,7 @@ def CalculateTrinkets()
           if bid = BonusIDs[name]
             bonus = ",bonus_id=#{bid}"
           end
-          out.puts "profileset.#{name}_#{ilvl}=trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
+          out.puts "profileset.#{name}_#{ilvl}+=trinket1=,id=#{id},ilevel=#{ilvl}" + bonus
         end
       end
     end
