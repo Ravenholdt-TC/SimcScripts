@@ -5,7 +5,7 @@ name="Template"
 shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
 wrists=greenskins_waterlogged_wristcuffs,id=137099,ilevel=970
 
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=900
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=950
 
 artifact_override=black_powder:4
 artifact_override=blade_dancer:4
@@ -18,13 +18,13 @@ artifact_override=fortunes_boon:4
 artifact_override=sabermetrics:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=903
-profileset.WeaponItemLevel_6=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=906
-profileset.WeaponItemLevel_9=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=909
-profileset.WeaponItemLevel_12=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=912
-profileset.WeaponItemLevel_15=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=915
-profileset.WeaponItemLevel_18=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=918
-profileset.WeaponItemLevel_21=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=921
+profileset.WeaponItemLevel_3=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=971
 
 # 1 Relics
 profileset.BlackPowder_1=artifact_override=black_powder:5

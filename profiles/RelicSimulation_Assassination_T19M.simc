@@ -5,7 +5,7 @@ name="Template"
 shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
 wrists=zoldyck_family_training_shackles,id=137098,ilevel=970
 
-main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=900
+main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=950
 
 artifact_override=toxic_blades:4
 artifact_override=serrated_edge:4
@@ -17,13 +17,13 @@ artifact_override=poison_knives:4
 artifact_override=strangler:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=903
-profileset.WeaponItemLevel_6=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=906
-profileset.WeaponItemLevel_9=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=909
-profileset.WeaponItemLevel_12=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=912
-profileset.WeaponItemLevel_15=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=915
-profileset.WeaponItemLevel_18=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=918
-profileset.WeaponItemLevel_21=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=921
+profileset.WeaponItemLevel_3=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=971
 
 # 1 Relic
 profileset.ToxicBlades_1=artifact_override=toxic_blades:5
