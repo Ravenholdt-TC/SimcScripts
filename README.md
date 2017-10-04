@@ -26,13 +26,13 @@ This documentation is based on the `RogueTrinkets.rb` simulation. If you want to
 other trinkets you can copy that script and rename the templates accordingly.
 
 Usage:
-1. Create a simulation profile file called `RogueTrinkets_<PROFILENAME>.simc` in the
-   `profiles` folder.
-   Make sure the SimC profile is named "Template".
-   Make sure that `trinket1=empty` and `trinket2=empty`.
-2. Run `RogueTrinkets.rb`. It will ask you to select a profile.
-3. Wait for the simulation to run until it says it's done.
-4. The resulting CSV and HTML file will be in the `reports` folder.
+1. Create a base simulation profile file called `TrinketSimulation_<PROFILENAME>.simc` in the
+   `profiles` folder. This file defines the base character to simulate.
+2. Create a trinket list file called `TrinketList_<NAME>.json` in the profiles folder. This
+   file defines all trinkets to simulate. (See `TrinketList_Rogue.json` for an example.)
+3. Run `TrinketSimulation.rb`. It will ask you to select the profiles.
+4. Wait for the simulation to run until it says it's done.
+5. The resulting CSV file will be in the `reports` folder.
 
 The result is a CSV file containing the DPS increases for each Trinket and Item Level
 compared to the Template profile.
@@ -52,7 +52,7 @@ Usage:
    (For an example look at the existing profiles in the profiles folder.)
 3. Run `RelicSimulation.rb`. It will ask you to select a profile.
 4. Wait for the simulation to run until it says it's done.
-5. The resulting CSV and HTML file will be in the `reports` folder.
+5. The resulting CSV file will be in the `reports` folder.
 
 The result is a CSV file containing the DPS increases for each Relic or Relic Item Level
 compared to the Template profile. Its structure has been created to fit what we import
