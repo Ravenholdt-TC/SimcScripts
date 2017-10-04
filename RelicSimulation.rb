@@ -19,17 +19,14 @@ params = [
 SimcHelper.RunSimulation(params)
 
 # Process results
-sims = { }
+sims = {}
 templateDPS = 0
 puts "Converting #{logfile}.json to #{csvfile}..."
 results = JSONParser.GetAllDPSResults("#{logfile}.json")
 results.each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
-    if sims[data[1]]
-      sims[data[1]].merge!(data[2].to_i => dps)
-    else
-      sims[data[1]] = { data[2].to_i => dps }
-    end
+    sims[data[1]] = {} unless sims[data[1]]
+    sims[data[1]][data[2].to_i] = dps
   elsif name == 'Template'
     templateDPS = dps
   end
