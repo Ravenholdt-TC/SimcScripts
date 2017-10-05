@@ -243,7 +243,7 @@
             "itemId": 151190,
             "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955],
             "bonusIds": [],
-            "additionalInput": ["legion.specter_of_betrayal_overlap_prob=0"]
+            "additionalInput": ["legion.specter_of_betrayal_overlap=0"]
         },
         {
             "name": "EngineOfEradication",
