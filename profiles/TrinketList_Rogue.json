@@ -314,6 +314,13 @@
             "itemLevels": [935],
             "bonusIds": [],
             "additionalInput": []
+        },
+        {
+            "name": "VoidStalkersContract",
+            "itemId": 151307,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955],
+            "bonusIds": [],
+            "additionalInput": []
         }
     ]
 }
