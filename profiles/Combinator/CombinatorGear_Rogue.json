@@ -11,7 +11,8 @@
             "wrists": {"Bracers": "zoldyck_family_training_shackles,id=137098,bonus_id=3570"},
             "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
                         "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
-                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery"},
+                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570"},
             "back": {"Cloak": "the_dreadlords_deceit,id=137021,bonus_id=3570,enchant=binding_of_agility"}
         },
@@ -26,7 +27,8 @@
             "hands": {"Hands": "shivarran_symmetry,id=141321,bonus_id=3570"},
             "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility",
                         "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility",
-                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility"},
+                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,gems=150versatility,enchant=binding_of_versatility"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570"},
             "back": {"Cloak": "the_curse_of_restlessness,id=151817,bonus_id=3570,enchant=binding_of_agility"}
         },
@@ -41,7 +43,8 @@
             "hands": {"Hands": "the_first_of_the_dead,id=151818,bonus_id=3570"},
             "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
                         "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
-                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery"},
+                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,gems=150mastery,enchant=binding_of_mastery"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570"},
             "back": {"Cloak": "the_dreadlords_deceit,id=137021,bonus_id=3570,enchant=binding_of_agility"}
         }
@@ -71,6 +74,22 @@
             "back": "fanged_slayers_shroud,id=147170,ilevel=930,enchant=binding_of_agility",
             "legs": "fanged_slayers_legguards,id=147173,ilevel=930",
             "shoulder": "fanged_slayers_shoulderpads,id=147174,ilevel=930"
+        },
+        "T21H": {
+            "chest": "vest_of_the_dashing_scoundrel,id=152160,bonus_id=3611/1487",
+            "head": "cavalier_hat_of_the_dashing_scoundrel,id=152163,bonus_id=3611/1487",
+            "legs": "pants_of_the_dashing_scoundrel,id=152164,bonus_id=3611/1487",
+            "back": "cloak_of_the_dashing_scoundrel,id=152161,bonus_id=3611/1487,enchant=binding_of_agility",
+            "hands": "gloves_of_the_dashing_scoundrel,id=152162,bonus_id=3611/1487",
+            "shoulder": "shoulderpads_of_the_dashing_scoundrel,id=152165,bonus_id=3611/1487"
+        },
+        "T21M": {
+            "chest": "vest_of_the_dashing_scoundrel,id=152160,bonus_id=3612/1502",
+            "head": "cavalier_hat_of_the_dashing_scoundrel,id=152163,bonus_id=3612/1502",
+            "legs": "pants_of_the_dashing_scoundrel,id=152164,bonus_id=3612/1502",
+            "back": "cloak_of_the_dashing_scoundrel,id=152161,bonus_id=3612/1502,enchant=binding_of_agility",
+            "hands": "gloves_of_the_dashing_scoundrel,id=152162,bonus_id=3612/1502",
+            "shoulder": "shoulderpads_of_the_dashing_scoundrel,id=152165,bonus_id=3612/1502"
         }
     }
 }

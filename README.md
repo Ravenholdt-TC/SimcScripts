@@ -27,7 +27,7 @@ other trinkets you can copy that script and rename the templates accordingly.
 
 Usage:
 1. Create a base simulation profile file called `TrinketSimulation_<PROFILENAME>.simc` in the
-   `profiles` folder. This file defines the base character to simulate.
+   `profiles/TrinketSimulation` folder. This file defines the base character to simulate.
 2. Create a trinket list file called `TrinketList_<NAME>.json` in the profiles folder. This
    file defines all trinkets to simulate. (See `TrinketList_Rogue.json` for an example.)
 3. Run `TrinketSimulation.rb`. It will ask you to select the profiles.
@@ -43,7 +43,7 @@ Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
 
 Usage:
 1. Create a simulation profile file called `RelicSimulation_<PROFILENAME>.simc` in the
-   `profiles` folder.
+   `profiles/RelicSimulation` folder.
    Make sure the base SimC profile is named "Template".
    Make sure you set all artifact traits to 4. (e.g. `artifact_override=master_assassin:4`)
    It may help to set the weapon item level to a predefined value. (e.g. `ilevel=900`)
@@ -66,7 +66,7 @@ Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
 This script will run a template for whatever talent and gear combinations you would like to
 investigate. It is an interactive script prompting for any input required.
 
-All you have to do is create a `Combinator_<PROFILENAME>.simc` file in `profiles` with
+All you have to do is create a `Combinator_<PROFILENAME>.simc` file in `profiles/Combinator` with
 the baseline profile called "Template".
 
 Also make sure gear and setup definitions are available. For an example, look at the
@@ -79,7 +79,3 @@ Then, you can run the `Combinator.rb` script.
 
 Log files for each combination will be written to the `logs` folder. The resulting CSV
 file can be found in `reports`.
-
-Since we upload some results to a website for display, I created another
-script for better CSV column splitting. Just head into the `reports` folder and
-drag and drop the `Combinator_<PROFILENAME>.csv` file onto `CombinatorColumnSplit.bat`.

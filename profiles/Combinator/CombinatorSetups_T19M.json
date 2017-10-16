@@ -1,0 +1,10 @@
+{
+    "setups": [
+        {
+            "legendaries": [2],
+            "sets": [
+                {"set": "T19M", "pieces": 4}
+            ]
+        }
+    ]
+}

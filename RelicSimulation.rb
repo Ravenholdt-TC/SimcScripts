@@ -5,16 +5,16 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcHelper'
 
-template = Interactive.SelectTemplate('RelicSimulation')
-fightstyle = Interactive.SelectTemplate('Fightstyle')
+template = Interactive.SelectTemplate('RelicSimulation/RelicSimulation')
+fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}"
 csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcRelicConfig.simc",
   "output=#{logfile}.log",
   "json2=#{logfile}.json",
-  "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/RelicSimulation_#{template}.simc"
+  "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig::ProfilesFolder}/RelicSimulation/RelicSimulation_#{template}.simc"
 ]
 SimcHelper.RunSimulation(params)
 

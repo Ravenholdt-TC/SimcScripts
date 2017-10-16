@@ -5,11 +5,11 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcHelper'
 
-profile = Interactive.SelectTemplate('Combinator')
+profile = Interactive.SelectTemplate('Combinator/Combinator')
 
 #Read spec from profile
 spec = ''
-File.open("#{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc", 'r') do |pfile|
+File.open("#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc", 'r') do |pfile|
   while line = pfile.gets
     if line.start_with?('spec=')
       spec = line.chomp.split('=')[1]
@@ -17,9 +17,9 @@ File.open("#{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc", 'r') do |p
   end
 end
 
-gearProfile = Interactive.SelectTemplate('CombinatorGear')
-setupsProfile = Interactive.SelectTemplate('CombinatorSetups')
-fightstyle = Interactive.SelectTemplate('Fightstyle')
+gearProfile = Interactive.SelectTemplate('Combinator/CombinatorGear')
+setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
+fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
@@ -27,8 +27,8 @@ csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
 Interactive.RemoveFileWithQuestion(csvfile)
 
 # Read gear setups from JSON
-gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/CombinatorGear_#{gearProfile}.json")
-setups = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/CombinatorSetups_#{setupsProfile}.json")
+gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorGear_#{gearProfile}.json")
+setups = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorSetups_#{setupsProfile}.json")
 
 # Duplicate two-slot items
 gear['legendaries'][spec]['finger2'] = gear['legendaries'][spec]['finger1']
@@ -113,8 +113,8 @@ params = [
   "#{SimcConfig::ConfigFolder}/SimcCombinatorConfig.simc",
   "output=#{logfile}.log",
   "json2=#{logfile}.json",
-  "#{SimcConfig::ProfilesFolder}/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/Combinator_#{profile}.simc",
+  "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc",
   simcfile
 ]
 SimcHelper.RunSimulation(params)

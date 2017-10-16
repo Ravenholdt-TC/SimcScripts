@@ -1,0 +1,31 @@
+{
+    "setups": [
+        {
+            "legendaries": [2],
+            "sets": [
+                {"set": "T20M", "pieces": 4},
+                {"set": "T21H", "pieces": 2}
+            ]
+        },
+        {
+            "legendaries": [2],
+            "sets": [
+                {"set": "T20M", "pieces": 2},
+                {"set": "T21H", "pieces": 4}
+            ]
+        },
+        {
+            "legendaries": [2],
+            "sets": [
+                {"set": "T20M", "pieces": 2},
+                {"set": "T21H", "pieces": 2}
+            ]
+        },
+        {
+            "legendaries": [2],
+            "sets": [
+                {"set": "T21H", "pieces": 4}
+            ]
+        }
+    ]
+}
