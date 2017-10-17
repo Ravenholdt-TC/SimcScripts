@@ -8,28 +8,19 @@ artifact=17:0:0:0:0:851:1:852:4:853:4:854:4:855:4:856:4:857:4:858:4:859:4:860:4:
 crucible=1739:1780/1739:1780/1739:1780
 spec=subtlety
 
-# OLOLOL
-# Copied this from T20H, will update to T21 later
-# OLOLOL
-
-# No Set/Legendary Base
-#head=fanged_slayers_helm,id=147172,bonus_id=1497/3562
-head=shadowscarred_headcover,id=147034,bonus_id=1507/3562
-neck=locket_of_splintered_souls,id=147014,bonus_id=1497/3562,enchant=mark_of_the_trained_soldier
-shoulder=dripping_arcfin_shoulderpads,id=147037,bonus_id=1497/3562
-back=shroud_of_the_drowned_adherent,id=146985,bonus_id=1497/3562,enchant=binding_of_agility
-#chest=fanged_slayers_chestguard,id=147169,bonus_id=1497/3562
-chest=hide_of_the_abyssal_behemoth,id=147028,bonus_id=1497/3562
-wrists=sinewstitched_wristguards,id=147041,bonus_id=1497/3562
-#hands=fanged_slayers_handguards,id=147171,bonus_id=1497/3562
-hands=moonfire_stranglers,id=147031,bonus_id=1497/3562
-waist=waistguard_of_profane_duplicity,id=147347,bonus_id=1507/3562
-#legs=fanged_slayers_legguards,id=147173,bonus_id=1497/3562
-legs=felstippled_legguards,id=147036,bonus_id=1497/3562
-feet=felscape_pathfinders,id=147030,bonus_id=1497/3562
-finger1=yathaes_thumb_ring,id=147021,bonus_id=1497/3562,enchant=binding_of_mastery
-finger2=band_of_rescinded_truths,id=147194,bonus_id=1497/3562,enchant=binding_of_mastery
-trinket1=specter_of_betrayal,id=151190,bonus_id=1507/3562
-trinket2=convergence_of_fates,id=140806,bonus_id=3519
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=147084/147110/147084,relic_id=1497:3562/1497:3562/1497:3562
+head=general_erodus_tricorne,id=151985,bonus_id=3611/1487
+neck=collar_of_nullflame,id=151973,bonus_id=3611/1487,enchant=mark_of_the_trained_soldier
+shoulder=shoulderpads_of_the_demonic_blitz,id=151988,bonus_id=3611/1487
+back=cloak_of_the_burning_vanguard,id=151937,bonus_id=3611/1487,enchant=binding_of_agility
+chest=vest_of_waning_life,id=151982,bonus_id=3611/1487
+wrists=fiendish_logisticians_wristwraps,id=151992,bonus_id=3611/1487
+hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3611/1487
+waist=portal_keepers_cincture,id=151990,bonus_id=3611/1487
+legs=caustic_titanspite_legguards,id=152282,bonus_id=3611/1487
+feet=lifebearing_footpads,id=151981,bonus_id=3611/1487
+finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3611/1487,enchant=binding_of_mastery
+finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_mastery
+trinket1=shadowsinged_fang,id=151968,bonus_id=3611/1487
+trinket2=golganneths_vitality,id=154174,ilevel=1000
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=155848/152055/155848,relic_id=3611:1497/3611:1487/3611:1497
 off_hand=fangs_of_the_devourer,id=128479,gem_id=0/0/0/0
