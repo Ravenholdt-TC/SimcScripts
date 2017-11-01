@@ -2,7 +2,7 @@
 # Copy to SimcConfig.rb
 module SimcConfig
   # Path to the simc executable
-  SimcPath = 'D:\Dev\SimulationCraft'
+  SimcPath = 'D:/Dev/SimulationCraft'
 
   # How many threads to use
   Threads = 3

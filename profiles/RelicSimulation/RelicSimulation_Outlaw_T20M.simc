@@ -1,5 +1,4 @@
-
-$(simc_profiles_path)/Tier20H/Rogue_Outlaw_SnD_T20H.simc
+$(simc_profiles_path)/Tier20M/Rogue_Outlaw_T20M.simc
 name="Template"
 
 main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=950
