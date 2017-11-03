@@ -1,8 +1,8 @@
 
-$(simc_profiles_path)/Tier21M/Rogue_Outlaw_SnD_T21M.simc
+$(simc_profiles_path)/Tier20M/Rogue_Outlaw-SnD_T20M.simc
 name="Template"
 
-main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=970
+main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=950
 
 #Reset crucible
 crucible=
@@ -18,13 +18,13 @@ artifact_override=fortunes_boon:4
 artifact_override=sabermetrics:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=973
-profileset.WeaponItemLevel_6=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=976
-profileset.WeaponItemLevel_9=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=979
-profileset.WeaponItemLevel_12=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=982
-profileset.WeaponItemLevel_15=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=985
-profileset.WeaponItemLevel_18=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=988
-profileset.WeaponItemLevel_21=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=991
+profileset.WeaponItemLevel_3=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=the_dreadblades,id=128872,bonus_id=742,ilevel=971
 
 # 1 Relics
 profileset.BlackPowder_1=artifact_override=black_powder:5
