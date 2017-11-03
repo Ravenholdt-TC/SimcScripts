@@ -10,9 +10,9 @@ trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 trinketList = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
-simcfile = "#{SimcConfig::GeneratedFolder}/TrinketSimulation_#{template}_#{fightstyle}.simc"
-puts "Writing profilesets to #{simcfile}!"
-File.open(simcfile, 'w') do |out|
+simcFile = "#{SimcConfig::GeneratedFolder}/TrinketSimulation_#{template}_#{fightstyle}.simc"
+puts "Writing profilesets to #{simcFile}!"
+File.open(simcFile, 'w') do |out|
   out.puts 'name="Template"'
   out.puts 'trinket1=empty'
   out.puts 'trinket2=empty'
@@ -30,23 +30,27 @@ File.open(simcfile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logfile = "#{SimcConfig::LogsFolder}/TrinketSimulation_#{template}_#{fightstyle}"
-csvfile = "#{SimcConfig::ReportsFolder}/TrinketSimulation_#{template}_#{fightstyle}.csv"
+logFile = "#{SimcConfig::LogsFolder}/TrinketSimulation_#{template}_#{fightstyle}"
+csvFile = "#{SimcConfig::ReportsFolder}/TrinketSimulation_#{template}_#{fightstyle}.csv"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcTrinketConfig.simc",
-  "output=#{logfile}.log",
-  "json2=#{logfile}.json",
+  "output=#{logFile}.log",
+  "json2=#{logFile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
   "#{SimcConfig::ProfilesFolder}/TrinketSimulation/TrinketSimulation_#{template}.simc",
-  simcfile
+  simcFile
 ]
 SimcHelper.RunSimulation(params)
 
-puts "Processing data from #{logfile}.json to #{csvfile}..."
+# Extract metadata
+puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
+
+puts "Processing data from #{logFile}.json to #{csvFile}..."
 templateDPS = 0
 iLevelList = []
 sims = {}
-results = JSONParser.GetAllDPSResults("#{logfile}.json")
+results = JSONParser.GetAllDPSResults("#{logFile}.json")
 results.each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -60,7 +64,7 @@ iLevelList.uniq!
 iLevelList.sort!
 
 # Write to CSV
-File.open(csvfile, 'w') do |csv|
+File.open(csvFile, 'w') do |csv|
   #CSV header line
   csv.puts "Trinket," + iLevelList.join(',')
   sims.each do |name, values|

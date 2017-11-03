@@ -20,4 +20,22 @@ module JSONParser
     end
     return results
   end
+
+  # Extract metadata from a simulation
+  def self.ExtractMetadata(jsonFile, metaFile)
+    # Get the meta datas from the json report
+    metas = { }
+    json = ReadFile(jsonFile)
+    metas['build_date'] = json['build_date']
+    metas['build_time'] = json['build_time']
+    metas['git_revision'] = json['git_revision']
+    metas['options'] = json['sim']['options']
+    metas['overrides'] = json['sim']['overrides']
+    metas['statistics'] = json['sim']['statistics']
+
+    # Write them into the meta file
+    File.open(metaFile, 'w') do |file|
+      file.write JSON.pretty_generate(metas)
+    end
+  end
 end

@@ -23,8 +23,8 @@ fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
-csvfile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
-Interactive.RemoveFileWithQuestion(csvfile)
+csvFile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
+Interactive.RemoveFileWithQuestion(csvFile)
 
 # Read gear setups from JSON
 gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorGear_#{gearProfile}.json")
@@ -80,9 +80,9 @@ setups['setups'].each do |setup|
 end
 
 # Combine gear with talents and write simc input to file
-simcfile = "#{SimcConfig::GeneratedFolder}/Combinator_#{profile}_#{fightstyle}.simc"
-puts "Writing combinations to #{simcfile}!"
-File.open(simcfile, 'w') do |out|
+simcFile = "#{SimcConfig::GeneratedFolder}/Combinator_#{profile}_#{fightstyle}.simc"
+puts "Writing combinations to #{simcFile}!"
+File.open(simcFile, 'w') do |out|
   talentdata[0].each do |t1|
     talentdata[1].each do |t2|
       talentdata[2].each do |t3|
@@ -108,22 +108,27 @@ File.open(simcfile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logfile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}"
+logFile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}"
+metaFile = "#{SimcConfig::ReportsFolder}/meta/Combinator_#{profile}_#{fightstyle}.json"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcCombinatorConfig.simc",
-  "output=#{logfile}.log",
-  "json2=#{logfile}.json",
+  "output=#{logFile}.log",
+  "json2=#{logFile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
   "#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc",
-  simcfile
+  simcFile
 ]
 SimcHelper.RunSimulation(params)
 
+# Extract metadata
+puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
+
 # Write to CSV
-puts "Adding data from #{logfile}.json to #{csvfile}..."
-sims = JSONParser.GetAllDPSResults("#{logfile}.json")
+puts "Adding data from #{logFile}.json to #{csvFile}..."
+sims = JSONParser.GetAllDPSResults("#{logFile}.json")
 sims.delete('Template')
-File.open(csvfile, 'a') do |csv|
+File.open(csvFile, 'a') do |csv|
   sims.each do |name, value|
     # Split profile name into nice CSV columns (mostly for web display)
     if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)

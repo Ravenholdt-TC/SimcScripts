@@ -7,22 +7,27 @@ require_relative 'lib/SimcHelper'
 
 template = Interactive.SelectTemplate('RelicSimulation/RelicSimulation')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
-logfile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}"
-csvfile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
+logFile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}"
+csvFile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
+metaFile = "#{SimcConfig::ReportsFolder}/meta/RelicSimulation_#{template}_#{fightstyle}.json"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcRelicConfig.simc",
-  "output=#{logfile}.log",
-  "json2=#{logfile}.json",
+  "output=#{logFile}.log",
+  "json2=#{logFile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
   "#{SimcConfig::ProfilesFolder}/RelicSimulation/RelicSimulation_#{template}.simc"
 ]
 SimcHelper.RunSimulation(params)
 
+# Extract metadata
+puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
+
 # Process results
 sims = {}
 templateDPS = 0
-puts "Converting #{logfile}.json to #{csvfile}..."
-results = JSONParser.GetAllDPSResults("#{logfile}.json")
+puts "Converting #{logFile}.json to #{csvFile}..."
+results = JSONParser.GetAllDPSResults("#{logFile}.json")
 results.each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -63,7 +68,7 @@ sims.each do |name, values|
 end
 
 # Write to CSV
-File.open(csvfile, 'w') do |csv|
+File.open(csvFile, 'w') do |csv|
   sims.each do |name, values|
     csv.write name
     values.sort.each do |amount, dps|
