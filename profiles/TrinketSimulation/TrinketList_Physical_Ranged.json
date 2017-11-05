@@ -1,0 +1,368 @@
+{
+    "trinkets": [
+        {
+            "name": "FuryOfTheBurningSky",
+            "itemId": 140801,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "ConvergenceOfFates",
+            "itemId": 140806,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "EntwinedElementalFoci",
+            "itemId": 140796,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "NightbloomingFrond",
+            "itemId": 140802,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "IconOfRot",
+            "itemId": 140798,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "UnstableHorrorslime",
+            "itemId": 138224,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TwistingWind",
+            "itemId": 139323,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "BloodthirstyInstict",
+            "itemId": 139329,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "AransRelaxingRuby",
+            "itemId": 142157,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "DeterioratedConstructCore",
+            "itemId": 142165,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "MrrgriasFavor",
+            "itemId": 142160,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Stat_Mastery",
+            "itemId": 142506,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [605],
+            "additionalInput": []
+        },
+        {
+            "name": "Stat_Versatility",
+            "itemId": 142506,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [607],
+            "additionalInput": []
+        },
+        {
+            "name": "Stat_Haste",
+            "itemId": 142506,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [604],
+            "additionalInput": []
+        },
+        {
+            "name": "Stat_Crit",
+            "itemId": 142506,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [603],
+            "additionalInput": []
+        },
+        {
+            "name": "UnstableArcanocrystal",
+            "itemId": 141482,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "ElementiumBombSquirrelGenerator",
+            "itemId": 137446,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "ObeliskOfTheVoid",
+            "itemId": 137433,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "CagedHorror",
+            "itemId": 136716,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "SplintersOfAgronox",
+            "itemId": 144477,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "OakheartsGnarledRoot",
+            "itemId": 137306,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "SixFeatherFan",
+            "itemId": 141585,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "ChronoShard",
+            "itemId": 137419,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "StormsingerFulminationCharge",
+            "itemId": 137367,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "EyeOfSkovald",
+            "itemId": 133641,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "FigureheadOfTheNaglfar",
+            "itemId": 137329,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "NaraxasSpikedTongue",
+            "itemId": 137349,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "MoonlitPrism",
+            "itemId": 137541,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TirathonsBetrayal",
+            "itemId": 137537,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "ThriceAccursedCompass",
+            "itemId": 141537,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "WindscarWhetstone",
+            "itemId": 137486,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "BloodstainedHandkerchief",
+            "itemId": 142159,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TemperedEggOfSerpentrix",
+            "itemId": 137373,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "HornOfValor",
+            "itemId": 133642,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "HungerOfThePack",
+            "itemId": 136975,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "EngineOfEradication",
+            "itemId": 147015,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "EngineOfEradication_NoOrbs",
+            "itemId": 147015,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": ["legion.engine_of_eradication_orbs=0"]
+        },
+        {
+            "name": "UmbralMoonglaives",
+            "itemId": 147012,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "SpectralThurible",
+            "itemId": 147018,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TarnishedSentinelMedallion",
+            "itemId": 147017,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "CradleOfAnguish",
+            "itemId": 147010,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TerrorFromBelow",
+            "itemId": 147016,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TomeOfUnravelingSanity",
+            "itemId": 147019,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "KiljaedensBurningWish",
+            "itemId": 144259,
+            "itemLevels": [970, 1000],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "InfernalAlchemistStone",
+            "itemId": 127842,
+            "itemLevels": [935],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "VoidStalkersContract",
+            "itemId": 151307,
+            "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "PrototypePersonnelDecimator",
+            "itemId": 151962,
+            "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        //{
+            //"name": "ForgefiendsFabricator",
+            //"itemId": 151963,
+            //"itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            //"bonusIds": [],
+            //"additionalInput": []
+        //},
+        {
+            "name": "ShadowSingedFang",
+            "itemId": 151968,
+            "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "TerminusSignalingBeacon",
+            "itemId": 151969,
+            "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "GolgannethsVitality",
+            "itemId": 154174,
+            "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "AmanThulsVision",
+            "itemId": 154172,
+            "itemLevels": [1000],
+            "bonusIds": [],
+            "additionalInput": []
+        }
+    ]
+}

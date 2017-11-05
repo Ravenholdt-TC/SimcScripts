@@ -1,0 +1,26 @@
+hunter="Template"
+level=110
+race=troll
+role=attack
+position=back
+talents=0000000
+artifact=34:0:0:0:0:1068:1:1070:4:1071:4:1072:4:1073:4:1074:4:1075:4:1076:4:1077:4:1078:4:1079:1:1080:1:1081:1:1082:1:1083:1:1084:1:1338:1:1370:1:1525:4:1526:1:1527:1:1528:24:1638:1
+crucible=1739:1780:1525/1739:1780:1070/1739:1780:1525
+spec=survival
+
+# No Set/Legendary Base
+head=helm_of_the_awakened_soul,id=152423,ilevel=970
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_trained_soldier
+shoulders=pauldrons_of_colossal_burden,id=152005,ilevel=970
+back=cloak_of_the_burning_vanguard,id=151937,ilevel=960,enchant=200agi
+chest=robes_of_the_forsaken_dreadlord,id=151995,ilevel=960
+wrists=scalding_shatterguards,id=152280,ilevel=960
+hands=preysnare_vicegrips,id=151999,ilevel=960
+waist=sash_of_the_gilded_rose,id=152007,bonus_id=3612/1502
+legs=battalionshattering_leggings,id=152002,bonus_id=3612/1502
+feet=deft_soulhunters_sabatons,id=151996,bonus_id=3612/1502
+finger1=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of_haste
+finger2=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=binding_of_haste
+trinket1=gorshalachs_legacy,id=152093,bonus_id=3612/1502
+trinket2=golganneths_vitality,id=154174,ilevel=1000
+main_hand=talonclaw,id=128808,bonus_id=728,gem_id=152060/155855/155847,relic_id=3612:1502/3612:1512/3612:1512
