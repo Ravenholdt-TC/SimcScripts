@@ -32,6 +32,11 @@ module JSONParser
     metas['options'] = json['sim']['options']
     metas['overrides'] = json['sim']['overrides']
     metas['statistics'] = json['sim']['statistics']
+    json['sim']['players'].each do |player|
+      if player['name'] == 'Template'
+        metas['player'] = player
+      end
+    end
 
     # Write them into the meta file
     File.open(metaFile, 'w') do |file|
