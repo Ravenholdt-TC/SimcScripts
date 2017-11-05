@@ -1,25 +1,24 @@
 {
     "legendaries": {
-        "feral": {
-            "head": {"Head": "behemoth_headdress,id=151801,bonus_id=3570,ilevel=1000"},
-            "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3570,ilevel=1000"},
+        "balance": {
+            "head": {"Head": "the_emerald_dreamcatcher,id=137062,bonus_id=3570,ilevel=1000"},
+            "shoulder": {"Mantle": "lady_and_the_child,id=144295,bonus_id=3570,ilevel=1000"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3570,ilevel=1000"},
-            "legs": {"Legs": "fiery_red_maimers,id=144354,bonus_id=3570,ilevel=1000"},
-            "feet": {"Boots": "ailuro_pouncers,id=137024,bonus_id=3570,ilevel=1000"},
-            "wrists": {"Bracers": "luffa_wrappings,id=137056,bonus_id=3570,ilevel=1000"},
-            "hands": {"Hands": "the_wildshapers_clutch,id=137094,bonus_id=3570,ilevel=1000"},
-            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200versatility,enchant=binding_of_versatility",
-                        "Ring": "chatoyant_signet,id=137040,bonus_id=3570,ilevel=1000,gems=200versatility,enchant=binding_of_versatility",
+            "feet": {"Boots": "promise_of_elune_the_moon_goddess,id=137023,bonus_id=3570,ilevel=1000"},
+            "wrists": {"Bracers": "oneths_intuition,id=137092,bonus_id=3570,ilevel=1000"},
+            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery",
+                        "Ring": "impeccable_fel_essence,id=137039,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery",
                         "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200versatility,enchant=binding_of_versatility"},
-            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery"},
+            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"},
+            "back": {"Cloak": "radiant_moonlight,id=151800,bonus_id=3570,ilevel=1000,enchant=binding_of_intellect"}
         }
     },
     "sets": {
         // Order the pieces from the best to the worst, if you have no clue then alphabetical
         "PR": {},
         "T19": {
-            "back": "cloak_of_the_astral_warden,id=138366,ilevel=905,enchant=binding_of_agility",
+            "back": "cloak_of_the_astral_warden,id=138366,ilevel=905,enchant=binding_of_intellect",
             "chest": "robe_of_the_astral_warden,id=138324,ilevel=905",
             "hands": "gloves_of_the_astral_warden,id=138327,ilevel=905",
             "head": "hood_of_the_astral_warden,id=138330,ilevel=905",
@@ -27,7 +26,7 @@
             "shoulder": "mantle_of_the_astral_warden,id=138336,ilevel=905"
         },
         "T20H": {
-            "back": "stormheart_drape,id=147134,ilevel=915,enchant=binding_of_agility",
+            "back": "stormheart_drape,id=147134,ilevel=915,enchant=binding_of_intellect",
             "chest": "stormheart_tunic,id=147133,ilevel=915",
             "hands": "stormheart_gloves,id=147135,ilevel=915",
             "head": "stormheart_headdress,id=147136,ilevel=915",
@@ -35,7 +34,7 @@
             "shoulder": "stormheart_mantle,id=147138,ilevel=915"
         },
         "T20": {
-            "back": "stormheart_drape,id=147134,ilevel=930,enchant=binding_of_agility",
+            "back": "stormheart_drape,id=147134,ilevel=930,enchant=binding_of_intellect",
             "chest": "stormheart_tunic,id=147133,ilevel=930",
             "hands": "stormheart_gloves,id=147135,ilevel=930",
             "head": "stormheart_headdress,id=147136,ilevel=930",
@@ -43,7 +42,7 @@
             "shoulder": "stormheart_mantle,id=147138,ilevel=930"
         },
         "T21H": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_agility",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_intellect",
             "chest": "bearmantle_harness,id=152124,bonus_id=3611/1487",
             "hands": "bearmantle_paws,id=152126,bonus_id=3611/1487",
             "head": "bearmantle_headdress,id=152127,bonus_id=3611/1487",
@@ -51,7 +50,7 @@
             "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3611/1487"
         },
         "T21": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_agility",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_intellect",
             "chest": "bearmantle_harness,id=152124,bonus_id=3612/1502",
             "hands": "bearmantle_paws,id=152126,bonus_id=3612/1502",
             "head": "bearmantle_headdress,id=152127,bonus_id=3612/1502",

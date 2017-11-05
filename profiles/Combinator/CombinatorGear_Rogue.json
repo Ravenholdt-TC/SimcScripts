@@ -2,47 +2,35 @@
     "legendaries": {
         "assassination": {
             "head": {"Head": "the_empty_crown,id=151815,bonus_id=3630"},
-            //"neck": {"Prydaz": "prydaz__xavarics_magnum_opus,id=132444,bonus_id=3630,enchant=mark_of_the_trained_soldier,gems=200mastery"},
             "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
-            //"legs": {"Legs": "will_of_valeera,id=137069,bonus_id=3630"},
             "feet": {"Boots": "duskwalkers_footpads,id=137030,bonus_id=3630"},
-            //"CraftedBoots": "the_sentinels_eternal_refuge,id=146669,bonus_id=3630,gems=200mastery_200mastery_200mastery"},
             "wrists": {"Bracers": "zoldyck_family_training_shackles,id=137098,bonus_id=3630"},
-            "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
-                        "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+            "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
                         "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
             "back": {"Cloak": "the_dreadlords_deceit,id=137021,bonus_id=3630,enchant=binding_of_agility"}
         },
         "outlaw": {
-            //"neck": {"Prydaz": "prydaz__xavarics_magnum_opus,id=132444,bonus_id=3630,enchant=mark_of_the_hidden_satyr,gems=200crit"},
             "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
-            //"legs": {"Legs": "will_of_valeera,id=137069,bonus_id=3630"},
             "feet": {"Boots": "thraxis_tricksy_treads,id=137031,bonus_id=3630"},
-                        //"CraftedBoots": "the_sentinels_eternal_refuge,id=146669,bonus_id=3630,gems=200crit_200crit_200crit"},
             "wrists": {"Bracers": "greenskins_waterlogged_wristcuffs,id=137099,bonus_id=3630"},
             "hands": {"Hands": "shivarran_symmetry,id=141321,bonus_id=3630"},
-            "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
-                        "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
+            "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
                         "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
             "back": {"Cloak": "the_curse_of_restlessness,id=151817,bonus_id=3630,enchant=binding_of_agility"}
         },
         "subtlety": {
-            //"neck": {"Prydaz": "prydaz__xavarics_magnum_opus,id=132444,bonus_id=3630,enchant=mark_of_the_trained_soldier,gems=200versatility"},
             "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
-            //"legs": {"Legs": "will_of_valeera,id=137069,bonus_id=3630"},
             "feet": {"Boots": "shadow_satyrs_walk,id=137032,bonus_id=3630"},
-                        //"CraftedBoots": "the_sentinels_eternal_refuge,id=146669,bonus_id=3630,gems=200versatility_200versatility_200versatility"},
             "wrists": {"Bracers": "denial_of_the_halfgiants,id=137100,bonus_id=3630"},
             "hands": {"Hands": "the_first_of_the_dead,id=151818,bonus_id=3630"},
-            "finger1": {//"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
-                        "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
+            "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
                         "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
@@ -50,8 +38,9 @@
         }
     },
     "sets": {
-        "None": {},
-        "T19M": {
+        // Order the pieces from the best to the worst, if you have no clue then alphabetical
+        "PR": {},
+        "T19": {
             "back": "doomblade_shadowwrap,id=138371,ilevel=905,enchant=binding_of_agility",
             "head": "doomblade_cowl,id=138332,ilevel=905",
             "legs": "doomblade_pants,id=138335,ilevel=905",
@@ -67,7 +56,7 @@
             "legs": "fanged_slayers_legguards,id=147173,ilevel=915",
             "shoulder": "fanged_slayers_shoulderpads,id=147174,ilevel=915"
         },
-        "T20M": {
+        "T20": {
             "chest": "fanged_slayers_chestguard,id=147169,ilevel=930",
             "hands": "fanged_slayers_handguards,id=147171,ilevel=930",
             "head": "fanged_slayers_helm,id=147172,ilevel=930",
@@ -83,7 +72,7 @@
             "hands": "gloves_of_the_dashing_scoundrel,id=152162,bonus_id=3611/1487",
             "shoulder": "shoulderpads_of_the_dashing_scoundrel,id=152165,bonus_id=3611/1487"
         },
-        "T21M": {
+        "T21": {
             "chest": "vest_of_the_dashing_scoundrel,id=152160,bonus_id=3612/1502",
             "head": "cavalier_hat_of_the_dashing_scoundrel,id=152163,bonus_id=3612/1502",
             "legs": "pants_of_the_dashing_scoundrel,id=152164,bonus_id=3612/1502",
