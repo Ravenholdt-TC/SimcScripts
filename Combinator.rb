@@ -23,7 +23,7 @@ fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
-csvFile = "#{SimcConfig::ReportsFolder}/Combinator_#{profile}_#{fightstyle}.csv"
+csvFile = "#{SimcConfig::ReportsFolder}/Combinator_#{fightstyle}_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvFile)
 
 # Read gear setups from JSON
@@ -80,7 +80,7 @@ setups['setups'].each do |setup|
 end
 
 # Combine gear with talents and write simc input to file
-simcFile = "#{SimcConfig::GeneratedFolder}/Combinator_#{profile}_#{fightstyle}.simc"
+simcFile = "#{SimcConfig::GeneratedFolder}/Combinator_#{fightstyle}_#{profile}.simc"
 puts "Writing combinations to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   talentdata[0].each do |t1|
@@ -108,8 +108,8 @@ File.open(simcFile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logFile = "#{SimcConfig::LogsFolder}/Combinator_#{profile}_#{fightstyle}"
-metaFile = "#{SimcConfig::ReportsFolder}/meta/Combinator_#{profile}_#{fightstyle}.json"
+logFile = "#{SimcConfig::LogsFolder}/Combinator_#{fightstyle}_#{profile}"
+metaFile = "#{SimcConfig::ReportsFolder}/meta/Combinator_#{fightstyle}_#{profile}.json"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcCombinatorConfig.simc",
   "output=#{logFile}.log",

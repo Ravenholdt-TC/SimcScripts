@@ -10,7 +10,7 @@ trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 trinketList = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
-simcFile = "#{SimcConfig::GeneratedFolder}/TrinketSimulation_#{template}_#{fightstyle}.simc"
+simcFile = "#{SimcConfig::GeneratedFolder}/TrinketSimulation_#{fightstyle}_#{template}.simc"
 puts "Writing profilesets to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   out.puts 'name="Template"'
@@ -30,8 +30,8 @@ File.open(simcFile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logFile = "#{SimcConfig::LogsFolder}/TrinketSimulation_#{template}_#{fightstyle}"
-csvFile = "#{SimcConfig::ReportsFolder}/TrinketSimulation_#{template}_#{fightstyle}.csv"
+logFile = "#{SimcConfig::LogsFolder}/TrinketSimulation_#{fightstyle}_#{template}"
+csvFile = "#{SimcConfig::ReportsFolder}/TrinketSimulation_#{fightstyle}_#{template}.csv"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",

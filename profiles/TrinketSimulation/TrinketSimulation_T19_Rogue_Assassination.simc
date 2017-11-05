@@ -1,0 +1,5 @@
+$(simc_profiles_path)/Tier19/T19_Rogue_Assassination.simc
+
+#Legendaries
+shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
+wrists=zoldyck_family_training_shackles,id=137098,ilevel=970

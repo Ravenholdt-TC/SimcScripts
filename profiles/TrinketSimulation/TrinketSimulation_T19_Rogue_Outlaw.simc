@@ -1,0 +1,5 @@
+$(simc_profiles_path)/Tier19/T19_Rogue_Outlaw.simc
+
+#Legendaries
+shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
+wrists=greenskins_waterlogged_wristcuffs,id=137099,ilevel=970

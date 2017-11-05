@@ -7,9 +7,9 @@ require_relative 'lib/SimcHelper'
 
 template = Interactive.SelectTemplate('RelicSimulation/RelicSimulation')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
-logFile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{template}_#{fightstyle}"
-csvFile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{template}_#{fightstyle}.csv"
-metaFile = "#{SimcConfig::ReportsFolder}/meta/RelicSimulation_#{template}_#{fightstyle}.json"
+logFile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{fightstyle}_#{template}"
+csvFile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{fightstyle}_#{template}.csv"
+metaFile = "#{SimcConfig::ReportsFolder}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig::ConfigFolder}/SimcRelicConfig.simc",
   "output=#{logFile}.log",
