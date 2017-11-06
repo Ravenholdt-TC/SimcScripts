@@ -1,0 +1,387 @@
+{
+  "trinkets": [
+  // Dungeons
+    {
+      "name": "Elementium Bomb Squirrel Generator",
+      "itemId": 137446,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Obelisk of the Void",
+      "itemId": 137433,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Caged Horror",
+      "itemId": 136716,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Dreadstone of Endless Shadows",
+      "itemId": 144480,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Infernal Writ",
+      "itemId": 137485,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Corrupted Starlight",
+      "itemId": 137301,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Oakheart's Gnarled Root",
+      "itemId": 137306,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Stormsinger Fulmination Charge",
+      "itemId": 137367,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Eye of Skovald",
+      "itemId": 133641,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Horn of Valor",
+      "itemId": 133642,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Figurehead of the Naglfar",
+      "itemId": 137329,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Naraxas' Spiked Tongue",
+      "itemId": 137349,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Aran's Relaxing Ruby",
+      "itemId": 142157,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Deteriorated Construct Core",
+      "itemId": 142165,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Mrrgria's Favor",
+      "itemId": 142160,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Reality Breacher",
+      "itemId": 151310,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Chrono Shard",
+      "itemId": 137419,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Portable Manacracker",
+      "itemId": 137398,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Moonlit Prism",
+      "itemId": 137541,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+  // Raids
+    {
+      "name": "Bough of Corruption",
+      "itemId": 139323,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Swarming Plaguehive",
+      "itemId": 139321,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Twisting Wind",
+      "itemId": 139323,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Unstable Horrorslime",
+      "itemId": 138224,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Wriggling Sinew",
+      "itemId": 139326,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Erratic Metronome",
+      "itemId": 140792,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Fury of the Burning Sky",
+      "itemId": 140801,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Icon of Rot",
+      "itemId": 140798,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Pharameres Forbidden Grimoire",
+      "itemId": 140800,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Star Gate",
+      "itemId": 140804,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Whispers in the Dark",
+      "itemId": 140809,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Charm of the Rising Tide",
+      "itemId": 147002,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Spectral Thurible",
+      "itemId": 147018,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Tarnished Sentinel Medallion",
+      "itemId": 147017,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Terror From Below",
+      "itemId": 147016,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Tome of Unraveling Sanity",
+      "itemId": 147019,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Acrid Catalyst Injector",
+      "itemId": 151955,
+      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Aman'Thul's Vision",
+      "itemId": 154172,
+      "itemLevels": [1000],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Norgannon's Prowess",
+      "itemId": 154177,
+      "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Prototype Personnel Decimator",
+      "itemId": 151962,
+      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Sheath of Asara",
+      "itemId": 151971,
+      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Terminus Signaling Beacon",
+      "itemId": 151969,
+      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Vitality Resonator",
+      "itemId": 151970,
+      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+  // World
+    {
+      "name": "Padawsen's Unlucky Charm",
+      "itemId": 141536,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Unstable Arcanocrystal",
+      "itemId": 141482,
+      "itemLevels": [860, 865, 870, 875, 880, 885, 890, 895, 900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Devilsaur Shock-Baton",
+      "itemId": 140030,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Eyasu's Mulligan",
+      "itemId": 141584,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Stat Mastery",
+      "itemId": 142507,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [605],
+      "additionalInput": []
+    },
+    {
+        "name": "Stat Versatility",
+        "itemId": 142507,
+        "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+        "bonusIds": [607],
+        "additionalInput": []
+    },
+    {
+        "name": "Stat Haste",
+        "itemId": 142507,
+        "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+        "bonusIds": [604],
+        "additionalInput": []
+    },
+    {
+        "name": "Stat Crit",
+        "itemId": 142507,
+        "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+        "bonusIds": [603],
+        "additionalInput": []
+    },
+  // PVP
+    {
+      "name": "PVP Insignia of Dominance",
+      "itemId": 142668,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "PVP Badge of Dominance",
+      "itemId": 142779,
+      "itemLevels": [900, 905, 910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+  // Craft
+    {
+      "name": "Darkmoon Deck: Hellfire",
+      "itemId": 128709,
+      "itemLevels": [900],
+      "bonusIds": [],
+      "additionalInput": []
+    },
+    {
+      "name": "Astral Alchemist Stone",
+      "itemId": 151607,
+      "itemLevels": [935],
+      "bonusIds": [],
+      "additionalInput": []
+    }
+  ]
+}
