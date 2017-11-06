@@ -56,7 +56,7 @@ setups['setups'].each do |setup|
             usedSlots.push(setSlot)
           end
         end
-        setProfileName = setup['sets'].collect {|set| set['pieces'] > 0 ? "#{set['set']}#{set['pieces']}" : "#{set['set']}"}.join('+')
+        setProfileName = setup['sets'].collect {|set| set['pieces'] > 0 ? "#{set['set']}(#{set['pieces']})" : "#{set['set']}"}.join(' + ')
 
         # Iterate over legendary combinations for the current lego slot combination
         if legoSlots.empty?
