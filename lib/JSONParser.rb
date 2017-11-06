@@ -1,4 +1,3 @@
-require_relative '../SimcConfig'
 require 'json'
 
 # Used for parsing json2 output from simc

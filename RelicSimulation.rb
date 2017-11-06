@@ -1,22 +1,22 @@
 require 'rubygems'
 require 'bundler/setup'
-require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
 classfolder = Interactive.SelectSubfolder('RelicSimulation')
 template = Interactive.SelectTemplate("RelicSimulation/#{classfolder}/RelicSimulation")
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
-logFile = "#{SimcConfig::LogsFolder}/RelicSimulation_#{fightstyle}_#{template}"
-csvFile = "#{SimcConfig::ReportsFolder}/RelicSimulation_#{fightstyle}_#{template}.csv"
-metaFile = "#{SimcConfig::ReportsFolder}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
+logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
+csvFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}.csv"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
-  "#{SimcConfig::ConfigFolder}/SimcRelicConfig.simc",
+  "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"
 ]
 SimcHelper.RunSimulation(params)
 

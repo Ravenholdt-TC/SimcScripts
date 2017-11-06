@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'bundler/setup'
-require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
 classfolder = Interactive.SelectSubfolder('TrinketSimulation')
@@ -10,8 +10,8 @@ template = Interactive.SelectTemplate("TrinketSimulation/#{classfolder}/TrinketS
 trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
-trinketList = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
-simcFile = "#{SimcConfig::GeneratedFolder}/TrinketSimulation_#{fightstyle}_#{template}.simc"
+trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
+simcFile = "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc"
 puts "Writing profilesets to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   out.puts 'name="Template"'
@@ -31,14 +31,14 @@ File.open(simcFile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logFile = "#{SimcConfig::LogsFolder}/TrinketSimulation_#{fightstyle}_#{template}"
-csvFile = "#{SimcConfig::ReportsFolder}/TrinketSimulation_#{fightstyle}_#{template}.csv"
+logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
+csvFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.csv"
 params = [
-  "#{SimcConfig::ConfigFolder}/SimcTrinketConfig.simc",
+  "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)

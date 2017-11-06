@@ -1,10 +1,10 @@
-require_relative '../SimcConfig'
+require_relative 'SimcConfig'
 
 module SimcHelper
   # Write SimC default profiles path to GeneratedConfig.simc in generated
   def self.GenerateSimcConfig()
-    File.open("#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc", 'w') do |file|
-      file.puts "$(simc_profiles_path)=#{SimcConfig::SimcPath}/profiles"
+    File.open("#{SimcConfig['GeneratedFolder']}/GeneratedConfig.simc", 'w') do |file|
+      file.puts "$(simc_profiles_path)=#{SimcConfig['SimcPath']}/profiles"
     end
   end
 
@@ -13,15 +13,15 @@ module SimcHelper
     command = []
 
     # Call executable
-    command.push("#{SimcConfig::SimcPath}/simc")
+    command.push("#{SimcConfig['SimcPath']}/simc")
 
     # Set number of threads to use
-    command.push("threads=#{SimcConfig::Threads}")
+    command.push("threads=#{SimcConfig['Threads']}")
 
     # Set global configurations
-    command.push("#{SimcConfig::ConfigFolder}/SimcGlobalConfig.simc")
+    command.push("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc")
     GenerateSimcConfig()
-    command.push("#{SimcConfig::GeneratedFolder}/GeneratedConfig.simc")
+    command.push("#{SimcConfig['GeneratedFolder']}/GeneratedConfig.simc")
 
     command += args
     system command.join(" ")

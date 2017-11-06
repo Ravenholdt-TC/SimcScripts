@@ -6,4 +6,4 @@ generated/*.simc
 logs/*.json
 reports/meta/*.json
 
-SimcConfig.rb
+SimcConfig.yml

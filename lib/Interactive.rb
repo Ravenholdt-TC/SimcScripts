@@ -1,4 +1,4 @@
-require_relative '../SimcConfig'
+require_relative 'SimcConfig'
 
 module Interactive
   # SPECIAL NOTE: By default these function check for existing cmd arguments first.
@@ -20,8 +20,8 @@ module Interactive
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
-    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}_[_a-zA-Z0-9]*\.*").each do |file|
-      if profile = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}_([_a-zA-Z0-9]*)\.\w+/)
+    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}_[_a-zA-Z0-9]*\.*").each do |file|
+      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}_([_a-zA-Z0-9]*)\.\w+/)
         profiles[index] = profile[1]
         puts "#{index}: #{profile[1]}"
         index += 1
@@ -49,8 +49,8 @@ module Interactive
     puts "Please choose a #{prefix} template folder:"
     folders = {}
     index = 1
-    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}/*/").each do |file|
-      if folder = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}\/(.*)\//)
+    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}/*/").each do |file|
+      if folder = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}\/(.*)\//)
         folders[index] = folder[1]
         puts "#{index}: #{folder[1]}"
         index += 1

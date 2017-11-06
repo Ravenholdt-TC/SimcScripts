@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'bundler/setup'
-require_relative 'SimcConfig'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
 classfolder = Interactive.SelectSubfolder('Combinator')
@@ -10,7 +10,7 @@ profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
 
 #Read spec from profile
 spec = ''
-File.open("#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
+File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
   while line = pfile.gets
     if line.start_with?('spec=')
       spec = line.chomp.split('=')[1]
@@ -24,12 +24,12 @@ fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
-csvFile = "#{SimcConfig::ReportsFolder}/Combinator_#{fightstyle}_#{profile}.csv"
+csvFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvFile)
 
 # Read gear setups from JSON
-gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/CombinatorGear_#{gearProfile}.json")
-setups = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorSetups_#{setupsProfile}.json")
+gear = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/CombinatorGear_#{gearProfile}.json")
+setups = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Combinator/CombinatorSetups_#{setupsProfile}.json")
 
 # Duplicate two-slot items
 gear['legendaries'][spec]['finger2'] = gear['legendaries'][spec]['finger1']
@@ -81,7 +81,7 @@ setups['setups'].each do |setup|
 end
 
 # Combine gear with talents and write simc input to file
-simcFile = "#{SimcConfig::GeneratedFolder}/Combinator_#{fightstyle}_#{profile}.simc"
+simcFile = "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc"
 puts "Writing combinations to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   talentdata[0].each do |t1|
@@ -109,14 +109,14 @@ File.open(simcFile, 'w') do |out|
 end
 
 puts 'Starting simulations, this may take a while!'
-logFile = "#{SimcConfig::LogsFolder}/Combinator_#{fightstyle}_#{profile}"
-metaFile = "#{SimcConfig::ReportsFolder}/meta/Combinator_#{fightstyle}_#{profile}.json"
+logFile = "#{SimcConfig['LogsFolder']}/Combinator_#{fightstyle}_#{profile}"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fightstyle}_#{profile}.json"
 params = [
-  "#{SimcConfig::ConfigFolder}/SimcCombinatorConfig.simc",
+  "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)
