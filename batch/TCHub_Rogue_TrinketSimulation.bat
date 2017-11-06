@@ -1,3 +1,5 @@
+cd ..
+
 REM T21
 TrinketSimulation.rb T21_Rogue_Assassination Melee_Agillity 1T q
 TrinketSimulation.rb T21_Rogue_Assassination_Exsg Melee_Agillity 1T q

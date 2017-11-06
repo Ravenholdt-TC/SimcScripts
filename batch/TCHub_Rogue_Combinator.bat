@@ -1,3 +1,5 @@
+cd ..
+
 REM T21
 Combinator.rb T21_Rogue_Assassination Rogue T21 1T xxx00xx y q
 Combinator.rb T21_Rogue_Outlaw Rogue T21 1T x3x00xx y q

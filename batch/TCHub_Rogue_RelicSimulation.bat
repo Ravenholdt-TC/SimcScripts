@@ -1,3 +1,5 @@
+cd ..
+
 REM T21
 RelicSimulation.rb T21_Rogue_Assassination 1T q
 RelicSimulation.rb T21_Rogue_Assassination_Exsg 1T q
