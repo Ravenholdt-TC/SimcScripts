@@ -1,4 +1,4 @@
-$(simc_profiles_path)/Tier21M/Paladin_Retribution_T21M.simc
+$(simc_profiles_path)/Tier21/T21_Paladin_Retribution.simc
 name="Template"
 
 main_hand=ashbringer,id=120978,bonus_id=737,ilevel=960
