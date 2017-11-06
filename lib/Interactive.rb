@@ -44,6 +44,35 @@ module Interactive
     return "#{profiles[index]}"
   end
 
+  # Offers all subfolders in prefix in the profiles folder
+  def self.SelectSubfolder(prefix, checkArgs=true)
+    puts "Please choose a #{prefix} template folder:"
+    folders = {}
+    index = 1
+    Dir.glob("#{SimcConfig::ProfilesFolder}/#{prefix}/*/").each do |file|
+      if folder = file.match(/#{SimcConfig::ProfilesFolder}\/#{prefix}\/(.*)\//)
+        folders[index] = folder[1]
+        puts "#{index}: #{folder[1]}"
+        index += 1
+      end
+    end
+    print 'Folder: '
+    input = GetInputOrArg(checkArgs)
+    if folders.has_value?(input)
+      puts
+      return input
+    end
+    index = input.to_i
+    unless folders.has_key?(index)
+      puts 'ERROR: Invalid folder index entered!'
+      puts 'Press enter to quit...'
+      GetInputOrArg(checkArgs)
+      exit
+    end
+    puts
+    return "#{folders[index]}"
+  end
+
   # Ask for talent permutation input string
   # Returns array of arrays with talents for each row
   def self.SelectTalentPermutations(checkArgs=true)

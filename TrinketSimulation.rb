@@ -5,7 +5,8 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcHelper'
 
-template = Interactive.SelectTemplate('TrinketSimulation/TrinketSimulation')
+classfolder = Interactive.SelectSubfolder('TrinketSimulation')
+template = Interactive.SelectTemplate("TrinketSimulation/#{classfolder}/TrinketSimulation")
 trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
@@ -37,7 +38,7 @@ params = [
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/TrinketSimulation/TrinketSimulation_#{template}.simc",
+  "#{SimcConfig::ProfilesFolder}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)

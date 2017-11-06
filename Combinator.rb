@@ -5,11 +5,12 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcHelper'
 
-profile = Interactive.SelectTemplate('Combinator/Combinator')
+classfolder = Interactive.SelectSubfolder('Combinator')
+profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
 
 #Read spec from profile
 spec = ''
-File.open("#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc", 'r') do |pfile|
+File.open("#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
   while line = pfile.gets
     if line.start_with?('spec=')
       spec = line.chomp.split('=')[1]
@@ -17,7 +18,7 @@ File.open("#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc",
   end
 end
 
-gearProfile = Interactive.SelectTemplate('Combinator/CombinatorGear')
+gearProfile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear")
 setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
@@ -27,7 +28,7 @@ csvFile = "#{SimcConfig::ReportsFolder}/Combinator_#{fightstyle}_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvFile)
 
 # Read gear setups from JSON
-gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorGear_#{gearProfile}.json")
+gear = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/CombinatorGear_#{gearProfile}.json")
 setups = JSONParser.ReadFile("#{SimcConfig::ProfilesFolder}/Combinator/CombinatorSetups_#{setupsProfile}.json")
 
 # Duplicate two-slot items
@@ -115,7 +116,7 @@ params = [
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
   "#{SimcConfig::ProfilesFolder}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig::ProfilesFolder}/Combinator/Combinator_#{profile}.simc",
+  "#{SimcConfig::ProfilesFolder}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)
