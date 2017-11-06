@@ -1,4 +1,4 @@
-$(simc_profiles_path)/Tier21/T21_Rogue_Subtlety_DfA_T21M.simc
+$(simc_profiles_path)/Tier21/T21_Rogue_Subtlety_DfA.simc
 name="Template"
 
 main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=970

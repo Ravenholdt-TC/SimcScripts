@@ -1,4 +1,4 @@
-$(simc_profiles_path)/Tier21/T21_Rogue_Assassination_Exsg_T21M.simc
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination_Exsg.simc
 name="Template"
 
 main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=970
