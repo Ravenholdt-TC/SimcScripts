@@ -55,7 +55,7 @@ profileset.FeralInstinct_2=artifact_override=feral_instinct:6
 profileset.PowerfulBite_2=artifact_override=powerful_bite:6
 profileset.RazorFangs_2=artifact_override=razor_fangs:6
 profileset.AshamanesEnergy_2=artifact_override=ashamanes_energy:6
-profileset.ThrashingClaws_2=artifact_override=ashamanes_energy:6
+profileset.ThrashingClaws_2=artifact_override=thrashing_claws:6
 
 profileset.TormentTheWeak_2=crucible=1780:2
 profileset.Shadowbind_2=crucible=1778:2
