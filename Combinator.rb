@@ -138,7 +138,7 @@ File.open(csvFile, 'a') do |csv|
       else
         legos = 'None'
       end
-      csv.write "#{data[1]},#{data[2]},\"#{legos}\",#{value}"
+      csv.write "#{data[1]},#{data[2].gsub('+', ' + ')},\"#{legos}\",#{value}"
     else
       # We should not get here, but leave it as failsafe
       csv.write "#{name},#{value}"
