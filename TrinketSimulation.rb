@@ -33,6 +33,7 @@ end
 puts 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 csvFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.csv"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",
