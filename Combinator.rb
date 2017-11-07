@@ -72,6 +72,10 @@ setups['setups'].each do |setup|
           legoProfileName = legoCombination.join('_')
           legoStrings = []
           legoCombination.each_with_index do |itemName, idx|
+            legoOverrides = ProfileHelper.GetLegendaryOverrides("Combinator/#{classfolder}/LegendaryOverrides/#{profile}", itemName)
+            legoOverrides.each do |legoOverride|
+              legoStrings.push(legoOverride)
+            end
             legoStrings.push("#{legoSlots[idx]}=#{gear['legendaries'][spec][legoSlots[idx]][itemName]}")
           end
           gearCombinations["#{setProfileName}_#{legoProfileName}"] = legoStrings + setStrings
@@ -93,7 +97,7 @@ File.open(simcFile, 'w') do |out|
             talentdata[5].each do |t6|
               talentdata[6].each do |t7|
                 talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
-                talentOverrides = ProfileHelper.GetTalentOverride("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
+                talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
                 gearCombinations.each do |name, strings|
                   prefix = "profileset.\"#{talentInput}_#{name}\"+="
                   out.puts(prefix + "talents=#{talentInput}")
