@@ -12,8 +12,8 @@ bundle install
 
 ## General Configuration
 
-In order to work with the scripts in this repository, copy the file `SimcConfig_Example.rb`
-to `SimcConfig.rb` and change the parameters to match your setup and needs.
+In order to work with the scripts in this repository, copy the file `SimcConfig_Example.yml`
+to `SimcConfig.yml` and change the parameters to match your setup and needs.
 
 General simulation settings are set in `SimcGlobalConfig.simc`.
 
@@ -66,11 +66,15 @@ Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
 This script will run a template for whatever talent and gear combinations you would like to
 investigate. It is an interactive script prompting for any input required.
 
-All you have to do is create a `Combinator_<PROFILENAME>.simc` file in `profiles/Combinator` with
-the baseline profile called "Template".
+All you have to do is create a `Combinator_<PROFILENAME>.simc` file in a class folder in
+`profiles/Combinator` with the baseline profile called "Template".
+
+You can override baseline gear for certain talents setups by creating another profile in
+a `TalentOverrides` subfolder. That files name has to match the profile name and a talent
+permutation.
 
 Also make sure gear and setup definitions are available. For an example, look at the
-files `profiles/CombinatorGear_*.json` and `profiles/CombinatorSetups_*.json`. These
+files `CombinatorGear_*.json` and `CombinatorSetups_*.json`. These
 define what gear is available to the class and what setups of those to simulate.
 
 Special Combinator simulation settings can be modified in `SimcCombinatorConfig.simc`.

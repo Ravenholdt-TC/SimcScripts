@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/ProfileHelper'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -91,9 +92,14 @@ File.open(simcFile, 'w') do |out|
           talentdata[4].each do |t5|
             talentdata[5].each do |t6|
               talentdata[6].each do |t7|
+                talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
+                talentOverrides = ProfileHelper.GetTalentOverride("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
                 gearCombinations.each do |name, strings|
-                  prefix = "profileset.\"#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}_#{name}\"+="
-                  out.puts(prefix + "talents=#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}")
+                  prefix = "profileset.\"#{talentInput}_#{name}\"+="
+                  out.puts(prefix + "talents=#{talentInput}")
+                  talentOverrides.each do |talentOverride|
+                    out.puts(prefix + talentOverride)
+                  end
                   strings.each do |string|
                     out.puts(prefix + string)
                   end
