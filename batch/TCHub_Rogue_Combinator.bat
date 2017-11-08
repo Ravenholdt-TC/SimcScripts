@@ -1,12 +1,16 @@
 cd ..
 
 REM T21
-Combinator.rb Rogue T21_Rogue_Assassination Rogue T21 1T xxx00xx y q
+Combinator.rb Rogue T21_Rogue_Assassination Rogue T21 1T xxx001x y q
+Combinator.rb Rogue T21_Rogue_Assassination Rogue T21 1T xxx002x n q
+Combinator.rb Rogue T21_Rogue_Assassination Rogue_Assassination_Exsg T21 1T xxx003x n q
 Combinator.rb Rogue T21_Rogue_Outlaw Rogue T21 1T x3x00xx y q
 Combinator.rb Rogue T21_Rogue_Subtlety Rogue T21 1T xxx00xx y q
 
 REM T21H
-Combinator.rb Rogue T21H_Rogue_Assassination Rogue T21H 1T xxx00xx y q
+Combinator.rb Rogue T21H_Rogue_Assassination Rogue T21H 1T xxx001x y q
+Combinator.rb Rogue T21H_Rogue_Assassination Rogue T21H 1T xxx002x n q
+Combinator.rb Rogue T21H_Rogue_Assassination Rogue_Assassination_Exsg T21H 1T xxx003x n q
 Combinator.rb Rogue T21H_Rogue_Outlaw Rogue T21H 1T x3x00xx y q
 Combinator.rb Rogue T21H_Rogue_Subtlety Rogue T21H 1T xxx00xx y q
 
