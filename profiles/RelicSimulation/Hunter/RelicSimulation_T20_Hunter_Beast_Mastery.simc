@@ -1,4 +1,4 @@
-$(simc_profiles_path)/Tier21/T21_Hunter_Beast_Mastery.simc
+$(simc_profiles_path)/Tier20/T20_Hunter_Beast_Mastery.simc
 name="Template"
 
 main_hand=titanstrike,id=128861,bonus_id=726,ilevel=950

@@ -12,7 +12,6 @@ artifact_override=fluffy_go:4
 artifact_override=lacerating_talons:4
 artifact_override=explosive_force:4
 artifact_override=raptors_cry:4
-artifact_override=hellcarver:4
 artifact_override=jaws_of_the_mongoose:4
 
 # Weapon Item Levels
@@ -35,7 +34,6 @@ profileset.FluffyGo_1=artifact_override=fluffy_go:5
 profileset.LaceratingTalons_1=artifact_override=lacerating_talons:5
 profileset.ExplosiveForce_1=artifact_override=explosive_force:5
 profileset.RaptorsCry_1=artifact_override=raptors_cry:5
-profileset.Hellcarver_1=artifact_override=hellcarver:5
 profileset.JawsOfTheMongoose_1=artifact_override=jaws_of_the_mongoose:5
 
 profileset.TormentTheWeak_1=crucible=1780:1
@@ -56,7 +54,6 @@ profileset.FluffyGo_2=artifact_override=fluffy_go:6
 profileset.LaceratingTalons_2=artifact_override=lacerating_talons:6
 profileset.ExplosiveForce_2=artifact_override=explosive_force:6
 profileset.RaptorsCry_2=artifact_override=raptors_cry:6
-profileset.Hellcarver_2=artifact_override=hellcarver:6
 profileset.JawsOfTheMongoose_2=artifact_override=jaws_of_the_mongoose:6
 
 profileset.TormentTheWeak_2=crucible=1780:2
@@ -77,7 +74,6 @@ profileset.FluffyGo_3=artifact_override=fluffy_go:7
 profileset.LaceratingTalons_3=artifact_override=lacerating_talons:7
 profileset.ExplosiveForce_3=artifact_override=explosive_force:7
 profileset.RaptorsCry_3=artifact_override=raptors_cry:7
-profileset.Hellcarver_3=artifact_override=hellcarver:7
 profileset.JawsOfTheMongoose_3=artifact_override=jaws_of_the_mongoose:7
 
 profileset.TormentTheWeak_3=crucible=1780:3
