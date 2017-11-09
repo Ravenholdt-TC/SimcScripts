@@ -20,6 +20,20 @@ module JSONParser
     return results
   end
 
+  def self.GetPriorityDPSResults(jsonFile)
+    results = { }
+    json = ReadFile(jsonFile)
+    json['sim']['profilesets']['results'].each do |player|
+      next unless player['additional_metrics']
+      player['additional_metrics'].each do |metric|
+        if metric['metric'] == 'Damage per Second to Priority Target/Boss'
+          results[player['name']] = metric['mean'].round
+        end
+      end
+    end
+    return results
+  end
+
   # Extract metadata from a simulation
   def self.ExtractMetadata(jsonFile, metaFile)
     # Get the meta datas from the json report

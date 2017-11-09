@@ -139,6 +139,7 @@ JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
 puts "Adding data from #{logFile}.json to #{csvFile}..."
 sims = JSONParser.GetAllDPSResults("#{logFile}.json")
 sims.delete('Template')
+priorityDps = JSONParser.GetPriorityDPSResults("#{logFile}.json")
 File.open(csvFile, 'a') do |csv|
   sims.each do |name, value|
     # Split profile name into nice CSV columns (mostly for web display)
@@ -149,6 +150,7 @@ File.open(csvFile, 'a') do |csv|
         legos = 'None'
       end
       csv.write "#{data[1]},#{data[2].gsub('+', ' + ')},\"#{legos}\",#{value}"
+      csv.write ",#{priorityDps[name]}" if priorityDps[name]
     else
       # We should not get here, but leave it as failsafe
       csv.write "#{name},#{value}"
