@@ -343,13 +343,13 @@
             "bonusIds": [],
             "additionalInput": []
         },
-        // {
-        //     "name": "ForgefiendsFabricator",
-        //     "itemId": 151963,
-        //     "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
-        //     "bonusIds": [],
-        //     "additionalInput": []
-        // },
+        {
+            "name": "ForgefiendsFabricator",
+            "itemId": 151963,
+            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         {
             "name": "SeepingScourgewing",
             "itemId": 151964,
