@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier20/T20_Death_Knight_Unholy.simc
 name="Template"
 
-main_hand=apocalypse,id=128403,bonus_id=728,ilevel=950
+main_hand=apocalypse,id=128403,bonus_id=718,ilevel=950
 
 #Reset crucible
 crucible=
@@ -16,17 +16,17 @@ artifact_override=deadliest_coil:4
 artifact_override=lash_of_shadows:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=953
-profileset.WeaponItemLevel_6=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=956
-profileset.WeaponItemLevel_9=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=959
-profileset.WeaponItemLevel_12=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=962
-profileset.WeaponItemLevel_15=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=965
-profileset.WeaponItemLevel_18=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=968
-profileset.WeaponItemLevel_21=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=971
-profileset.WeaponItemLevel_24=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=974
-profileset.WeaponItemLevel_27=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=977
-profileset.WeaponItemLevel_30=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=980
-profileset.WeaponItemLevel_33=main_hand=apocalypse,id=128403,bonus_id=728,ilevel=983
+profileset.WeaponItemLevel_3=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=971
+profileset.WeaponItemLevel_24=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=974
+profileset.WeaponItemLevel_27=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=977
+profileset.WeaponItemLevel_30=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=980
+profileset.WeaponItemLevel_33=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=983
 
 # 1 Relics
 profileset.RottenTouch_1=artifact_override=rotten_touch:5
