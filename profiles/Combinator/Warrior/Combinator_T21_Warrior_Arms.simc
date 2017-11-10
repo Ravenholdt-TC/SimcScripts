@@ -1,0 +1,26 @@
+warrior="Template"
+level=110
+race=troll
+role=attack
+position=back
+talents=0000000
+artifact=36:0:0:0:0:1136:1:1137:1:1138:1:1139:1:1140:1:1141:1:1142:1:1143:4:1144:4:1145:4:1146:4:1147:4:1148:4:1149:4:1150:4:1151:4:1356:1:1393:1:1613:4:1614:1:1615:1:1616:24:1714:1
+crucible=1739:1778:1146/1739:1778:1146/1739:1778:1146
+spec=arms
+
+# No Set/Legendary Base
+head=helmet_of_the_hidden_sanctuary,id=152013,ilevel=960
+neck=riveted_choker_of_delirium,id=151966,ilevel=960,enchant=mark_of_the_trained_soldier
+shoulders=shoulderguards_of_indomitable_purpose,id=152416,ilevel=960
+back=drape_of_the_spirited_hunt,id=151938,ilevel=960,enchant=binding_of_strength
+chest=soultempered_chestplate,id=152017,ilevel=960
+wrists=vambraces_of_lifes_assurance,id=152023,ilevel=960
+hands=nascent_deathbringers_clutches,id=152686,ilevel=960
+waist=grondfather_girdle,id=152022,ilevel=960
+legs=cosmosculling_legplates,id=152016,ilevel=970
+feet=eredar_warcouncil_sabatons,id=152011,ilevel=960
+finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=200mastery
+finger2=loop_of_the_lifebinder,id=152688,ilevel=960,enchant=200mastery
+trinket1=gorshalachs_legacy,id=152093,ilevel=960
+trinket2=amanthuls_vision,id=154172,ilevel=1000
+main_hand=stromkar_the_warbreaker,id=128910,gem_id=152293/152092/152054,relic_id=3612:1512/3612:1502/3612:1512

@@ -1,0 +1,27 @@
+warrior="Template"
+level=110
+race=blood_elf
+role=attack
+position=back
+talents=0000000
+artifact=35:0:0:0:0:980:1:981:1:982:1:984:1:985:1:986:1:987:1:988:4:989:4:990:4:991:4:992:4:993:4:994:4:995:4:996:4:1357:1:1394:1:1617:4:1618:1:1619:1:1620:24:1715:1
+crucible=1739:1780:995/1739:1780:991/1739:1780:991
+spec=fury
+
+# No Set/Legendary Base
+head=helmet_of_the_hidden_sanctuary,id=152013,ilevel=945
+neck=riveted_choker_of_delirium,id=151966,ilevel=945,enchant=mark_of_the_hidden_satyr
+shoulders=pauldrons_of_the_eternal_offensive,id=152019,ilevel=945
+back=drape_of_the_spirited_hunt,id=151938,ilevel=945,enchant=binding_of_strength
+chest=soultempered_chestplate,id=152017,ilevel=945
+wrists=vambraces_of_lifes_assurance,id=152023,ilevel=945
+hands=imonars_demigauntlets,id=152687,ilevel=945
+waist=grondfather_girdle,id=152022,ilevel=945
+legs=cosmosculling_legplates,id=152016,ilevel=955
+feet=burning_coven_sabatons,id=152010,ilevel=945
+finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=955,enchant=200haste
+finger2=seal_of_the_portalmaster,id=152063,ilevel=945,enchant=200haste
+trinket1=gorshalachs_legacy,id=152093,ilevel=945
+trinket2=khazgoroths_courage,id=154176,ilevel=1000
+main_hand=warswords_of_the_valarjar,id=128908,bonus_id=751,gem_id=155849/155853/152293,relic_ilevel=955/955/945
+off_hand=warswords_of_the_valarjar,id=134553

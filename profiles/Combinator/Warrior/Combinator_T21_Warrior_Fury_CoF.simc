@@ -21,7 +21,7 @@ legs=cosmosculling_legplates,id=152016,ilevel=970
 feet=burning_coven_sabatons,id=152010,ilevel=960
 finger1=seal_of_the_portalmaster,id=152063,ilevel=960,enchant=200haste
 finger2=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=200haste
-trinket1=gorshalachs_legacy,id=152093,ilevel=960
-trinket2=khazgoroths_courage,id=154176,ilevel=1000
+trinket1=khazgoroths_courage,id=154176,ilevel=1000
+trinket2=convergence_of_fates,id=140806,ilevel=905
 main_hand=warswords_of_the_valarjar,id=128908,bonus_id=751,gem_id=155849/155853/152293,relic_ilevel=970/970/960
 off_hand=warswords_of_the_valarjar,id=134553
