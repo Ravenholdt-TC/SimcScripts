@@ -1,7 +1,7 @@
-$(simc_profiles_path)/Tier21/T21_Warrior_Arms.simc
+$(simc_profiles_path)/Tier20/T20_Warrior_Arms.simc
 name="Template"
 
-main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=960
+main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=950
 
 #Reset crucible
 crucible=
@@ -15,18 +15,17 @@ artifact_override=storm_of_swords:4
 artifact_override=many_will_fall:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=963
-profileset.WeaponItemLevel_6=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=966
-profileset.WeaponItemLevel_9=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=969
-profileset.WeaponItemLevel_12=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=972
-profileset.WeaponItemLevel_15=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=975
-profileset.WeaponItemLevel_18=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=978
-profileset.WeaponItemLevel_21=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=981
-profileset.WeaponItemLevel_24=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=984
-profileset.WeaponItemLevel_27=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=987
-profileset.WeaponItemLevel_30=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=990
-profileset.WeaponItemLevel_33=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=993
-profileset.WeaponItemLevel_36=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=996
+profileset.WeaponItemLevel_3=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=971
+profileset.WeaponItemLevel_24=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=974
+profileset.WeaponItemLevel_27=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=977
+profileset.WeaponItemLevel_30=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=980
+profileset.WeaponItemLevel_33=main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750,ilevel=983
 
 # 1 Relics
 profileset.CrushingBlows_1=artifact_override=crushing_blows:5
