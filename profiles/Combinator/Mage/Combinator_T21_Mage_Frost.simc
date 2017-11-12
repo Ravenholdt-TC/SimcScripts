@@ -1,0 +1,26 @@
+mage="Template"
+level=110
+race=dwarf
+role=spell
+position=back
+talents=0000000
+artifact=53:0:0:0:0:783:1:784:4:785:4:786:4:787:4:788:4:789:4:790:4:791:4:792:4:793:1:794:1:795:1:796:1:797:1:798:1:1296:1:1373:1:1537:4:1538:1:1539:1:1540:24:1641:1
+crucible=1739:1780:789/1739:1780:789/1739:1780:789
+spec=frost
+
+# No Set/Legendary Base
+head=crown_of_relentless_annihilation,id=151943,ilevel=960
+neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_hidden_satyr
+shoulders=fallen_avengers_amice,id=151950,ilevel=960
+back=greatcloak_of_the_dark_pantheon,id=152062,ilevel=960,enchant=binding_of_intellect
+chest=gambeson_of_sargeras_corruption,id=152679,ilevel=970
+wrists=blooddrenched_bindings,id=151954,ilevel=960
+hands=handwraps_of_inevitable_doom,id=152680,ilevel=970
+waist=cord_of_blossoming_petals,id=151952,ilevel=960
+legs=fervent_twilight_legwraps,id=151946,ilevel=960
+feet=lady_dacidions_silk_slippers,id=151945,ilevel=960
+finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=200versatility
+finger2=seal_of_the_portalmaster,id=152063,ilevel=960,enchant=200versatility
+trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
+main_hand=ebonchill,id=128862,bonus_id=731,gem_id=155850/155846/155850,relic_id=3612:1512/3612:1512/3612:1512
