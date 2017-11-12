@@ -10,18 +10,18 @@ spec=subtlety
 
 # No Set/Legendary Base
 head=general_erodus_tricorne,id=151985,bonus_id=3611/1487
-neck=collar_of_nullflame,id=151973,bonus_id=3611/1487,enchant=mark_of_the_trained_soldier
+neck=vulcanarcore_pendant,id=151965,bonus_id=3611/1487,enchant=mark_of_the_trained_soldier
 shoulder=shoulderpads_of_the_demonic_blitz,id=151988,bonus_id=3611/1487
 back=cloak_of_the_burning_vanguard,id=151937,bonus_id=3611/1487,enchant=binding_of_agility
 chest=vest_of_waning_life,id=151982,bonus_id=3611/1487
-wrists=fiendish_logisticians_wristwraps,id=151992,bonus_id=3611/1487
+wrist=fiendish_logisticians_wristwraps,id=151992,bonus_id=3611/1487
 hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3611/1487
 waist=portal_keepers_cincture,id=151990,bonus_id=3611/1487
 legs=caustic_titanspite_legguards,id=152282,bonus_id=3611/1487
 feet=lifebearing_footpads,id=151981,bonus_id=3611/1487
-finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3611/1487,enchant=binding_of_versatility
-finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_versatility
-trinket1=shadowsinged_fang,id=151968,bonus_id=3611/1487
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_critical_strike
+finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3611/1487,enchant=binding_of_critical_strike
+trinket1=seeping_scourgewing,id=151964,bonus_id=3611/1487
 trinket2=golganneths_vitality,id=154174,ilevel=1000
 main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=155848/152055/155848,relic_id=3611:1497/3611:1487/3611:1497
-off_hand=fangs_of_the_devourer,id=128479,gem_id=0/0/0/0
+off_hand=fangs_of_the_devourer,id=128479

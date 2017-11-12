@@ -30,9 +30,9 @@
             "feet": {"Boots": "shadow_satyrs_walk,id=137032,bonus_id=3630"},
             "wrists": {"Bracers": "denial_of_the_halfgiants,id=137100,bonus_id=3630"},
             "hands": {"Hands": "the_first_of_the_dead,id=151818,bonus_id=3630"},
-            "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
-                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200versatility,enchant=binding_of_versatility"},
+            "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
+                        "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
             "back": {"Cloak": "the_dreadlords_deceit,id=137021,bonus_id=3630,enchant=binding_of_agility"}
         }
@@ -57,12 +57,12 @@
             "shoulder": "fanged_slayers_shoulderpads,id=147174,ilevel=915"
         },
         "T20": {
-            "chest": "fanged_slayers_chestguard,id=147169,ilevel=930",
-            "hands": "fanged_slayers_handguards,id=147171,ilevel=930",
-            "head": "fanged_slayers_helm,id=147172,ilevel=930",
-            "back": "fanged_slayers_shroud,id=147170,ilevel=930,enchant=binding_of_agility",
-            "legs": "fanged_slayers_legguards,id=147173,ilevel=930",
-            "shoulder": "fanged_slayers_shoulderpads,id=147174,ilevel=930"
+            "chest": "fanged_slayers_chestguard,id=147169,bonus_id=1512/3563",
+            "hands": "fanged_slayers_handguards,id=147171,bonus_id=1512/3563",
+            "head": "fanged_slayers_helm,id=147172,bonus_id=1512/3563",
+            "back": "fanged_slayers_shroud,id=147170,bonus_id=1512/3563,enchant=binding_of_agility",
+            "legs": "fanged_slayers_legguards,id=147173,bonus_id=1512/3563",
+            "shoulder": "fanged_slayers_shoulderpads,id=147174,bonus_id=1512/3563"
         },
         "T21H": {
             "chest": "vest_of_the_dashing_scoundrel,id=152160,bonus_id=3611/1487",
