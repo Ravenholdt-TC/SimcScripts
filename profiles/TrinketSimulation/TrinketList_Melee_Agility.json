@@ -1,373 +1,373 @@
 {
     "trinkets": [
         {
-            "name": "DraughtOfSouls",
+            "name": "Draught of Souls",
             "itemId": 140808,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ConvergenceOfFates",
+            "name": "Convergence of Fates",
             "itemId": 140806,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "EntwinedElementalFoci",
+            "name": "Entwined Elemental Foci",
             "itemId": 140796,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "NightbloomingFrond",
+            "name": "Nightblooming Frond",
             "itemId": 140802,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ArcanogolemDigit",
+            "name": "Arcanogolem Digit",
             "itemId": 140794,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "RavagedSeedPod",
+            "name": "Ravaged Seed Pod",
             "itemId": 139320,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SpontaneousAppendages",
+            "name": "Spontaneous Appendages",
             "itemId": 139325,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "NaturesCall",
+            "name": "Nature's Call",
             "itemId": 139334,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "BloodthirstyInstict",
+            "name": "Bloodthirsty Instict",
             "itemId": 139329,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "EyeOfCommand",
+            "name": "Eye of Command",
             "itemId": 142167,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ChaosTalisman",
+            "name": "Chaos Talisman",
             "itemId": 137459,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Stat_Mastery",
+            "name": "Stat Mastery",
             "itemId": 142506,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [605],
             "additionalInput": []
         },
         {
-            "name": "Stat_Versatility",
+            "name": "Stat Versatility",
             "itemId": 142506,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [607],
             "additionalInput": []
         },
         {
-            "name": "Stat_Haste",
+            "name": "Stat Haste",
             "itemId": 142506,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [604],
             "additionalInput": []
         },
         {
-            "name": "Stat_Crit",
+            "name": "Stat Crit",
             "itemId": 142506,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [603],
             "additionalInput": []
         },
         {
-            "name": "UnstableArcanocrystal",
+            "name": "Unstable Arcanocrystal",
             "itemId": 141482,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TirathonsBetrayal",
+            "name": "Tirathon's Betrayal",
             "itemId": 137537,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SixFeatherFan",
+            "name": "Six-Feather Fan",
             "itemId": 141585,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ChronoShard",
+            "name": "Chrono Shard",
             "itemId": 137419,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ThriceAccursedCompass",
+            "name": "Thrice Accursed Compass",
             "itemId": 141537,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "WindscarWhetstone",
+            "name": "Windscar Whetstone",
             "itemId": 137486,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "BloodstainedHandkerchief",
+            "name": "Bloodstained Handkerchief",
             "itemId": 142159,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SpikedCounterweight",
+            "name": "Spiked Counterweight",
             "itemId": 136715,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "NightmareEggShell",
+            "name": "Nightmare Egg Shell",
             "itemId": 137312,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TemperedEggOfSerpentrix",
+            "name": "Tempered Egg of Serpentrix",
             "itemId": 137373,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "HornOfValor",
+            "name": "Horn of Valor",
             "itemId": 133642,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "HungerOfThePack",
+            "name": "Hunger of the Pack",
             "itemId": 136975,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "MementoOfAngerboda",
+            "name": "Memento of Angerboda",
             "itemId": 133644,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "MarkOfDargrul",
+            "name": "Mark of Dargrul",
             "itemId": 137357,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TerrorboundNexus",
+            "name": "Terrorbound Nexus",
             "itemId": 137406,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "FaultyCountermeasure",
+            "name": "Faulty Countermeasure",
             "itemId": 137539,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ToeKneesPromise",
+            "name": "Toe Knee's Promise",
             "itemId": 142164,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TinyOozelingInAJar",
+            "name": "Tiny Oozeling in a Jar",
             "itemId": 137439,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SpecterOfBetrayal",
+            "name": "Specter of Betrayal",
             "itemId": 151190,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SpecterOfBetrayal_NoOverlap",
+            "name": "Specter of Betrayal (No Overlap)",
             "itemId": 151190,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": ["legion.specter_of_betrayal_overlap=0"]
         },
         {
-            "name": "EngineOfEradication",
+            "name": "Engine of Eradication",
             "itemId": 147015,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "EngineOfEradication_NoOrbs",
+            "name": "Engine of Eradication (No Orbs)",
             "itemId": 147015,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": ["legion.engine_of_eradication_orbs=0"]
         },
         {
-            "name": "UmbralMoonglaives",
+            "name": "Umbral Moonglaives",
             "itemId": 147012,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "VialOfCeaselessToxins",
+            "name": "Vial of Ceaseless Toxins",
             "itemId": 147011,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "InfernalCinders",
+            "name": "Infernal Cinders",
             "itemId": 147009,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "InfernalCinders_3Users",
+            "name": "Infernal Cinders (3 Users)",
             "itemId": 147009,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": ["legion.infernal_cinders_users=3"]
         },
         {
-            "name": "CradleOfAnguish",
+            "name": "Cradle of Anguish",
             "itemId": 147010,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TomeOfUnravelingSanity",
+            "name": "Tome of Unraveling Sanity",
             "itemId": 147019,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "KiljaedensBurningWish",
+            "name": "Kiljaeden's Burning Wish",
             "itemId": 144259,
             "itemLevels": [940, 970, 1000],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "InfernalAlchemistStone",
+            "name": "Infernal Alchemist Stone",
             "itemId": 127842,
             "itemLevels": [935],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "VoidStalkersContract",
+            "name": "Void Stalker's Contract",
             "itemId": 151307,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "AmanThulsVision",
+            "name": "Aman'Thul's Vision",
             "itemId": 154172,
             "itemLevels": [1000],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "GolgannethsVitality",
+            "name": "Golganneth's Vitality",
             "itemId": 154174,
             "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "TerminusSignalingBeacon",
+            "name": "Terminus Signaling Beacon",
             "itemId": 151969,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ForgefiendsFabricator",
+            "name": "Forgefiend's Fabricator",
             "itemId": 151963,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "SeepingScourgewing",
+            "name": "Seeping Scourgewing",
             "itemId": 151964,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "GorshalachsLegacy",
+            "name": "Gorshalach's Legacy",
             "itemId": 152093,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "ShadowsingedFang",
+            "name": "Shadow-singed Fang",
             "itemId": 151968,
-            "itemLevels": [930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+            "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
             "additionalInput": []
         }
