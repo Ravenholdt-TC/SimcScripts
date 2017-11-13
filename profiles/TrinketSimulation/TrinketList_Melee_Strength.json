@@ -295,7 +295,7 @@
             "additionalInput": []
         },
         {
-            "name": "Infernal AlchemistStone",
+            "name": "Infernal Alchemist Stone",
             "itemId": 127842,
             "itemLevels": [935],
             "bonusIds": [],
@@ -330,7 +330,7 @@
             "additionalInput": []
         },
         {
-            "name": "seeping_scourgewing",
+            "name": "Seeping Scourgewing",
             "itemId": 151964,
             "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
             "bonusIds": [],
