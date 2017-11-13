@@ -1,0 +1,27 @@
+priest="Template"
+level=110
+race=blood_elf
+role=spell
+position=back
+talents=0000000
+artifact=47:0:0:0:0:764:1:765:1:766:1:767:4:768:1:769:1:770:1:771:4:772:4:773:4:774:4:775:4:776:4:777:4:778:4:779:1:1347:1:1381:1:1573:4:1574:1:1575:1:1576:24:1650:1
+crucible=1739:3:1780:3:1573:3
+spec=shadow
+
+# No Set/Legendary Base
+head=soulhunters_cowl,id=151944,ilevel=945
+neck=chain_of_the_unmaker,id=152283,ilevel=945,enchant=mark_of_the_claw
+shoulders=fallen_avengers_amice,id=151950,ilevel=945
+back=greatcloak_of_the_dark_pantheon,id=152062,ilevel=945,enchant=binding_of_intellect
+chest=gambeson_of_sargeras_corruption,id=152679,ilevel=945
+wrists=cuffs_of_the_viridian_flameweavers,id=152085,ilevel=945
+hands=handwraps_of_inevitable_doom,id=152680,ilevel=945
+waist=sash_of_diabolic_preparation,id=152355,ilevel=945
+legs=subjugated_drudges_leggings,id=152352,ilevel=945
+feet=lady_dacidions_silk_slippers,id=151945,ilevel=945
+finger1=zealous_tormentors_ring,id=152284,ilevel=945,enchant=binding_of_haste
+finger2=seal_of_the_portalmaster,id=152063,ilevel=945,enchant=binding_of_haste
+trinket1=amanthuls_vision,id=154172,ilevel=1000
+trinket2=acrid_catalyst_injector,id=151955,ilevel=945
+main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,gem_id=155852/155847/155852,relic_ilevel=955/955/955
+off_hand=secrets_of_the_void,id=133958
