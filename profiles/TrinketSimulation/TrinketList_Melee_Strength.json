@@ -290,7 +290,7 @@
         {
             "name": "Kiljaedens Burning Wish",
             "itemId": 144259,
-            "itemLevels": [940, 970],
+            "itemLevels": [1000],
             "bonusIds": [],
             "additionalInput": []
         },
