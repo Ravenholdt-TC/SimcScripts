@@ -1,0 +1,61 @@
+{
+    "legendaries": {
+        "havoc": {
+            "head": {"Head": "raddons_cascading_eyes,id=137061,bonus_id=3630"},
+            "shoulder": {"Mantle": "delusions_of_grandeur,id=144279,bonus_id=3630"},
+            "back": {"Back": "chaos_theory,id=151798,bonus_id=3630"},
+            "waist": {"Cinidaria": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
+            "feet": {"Boots": "loramus_thalipedes_sacrifice,id=137022,bonus_id=3630"},
+            "wrists": {"Bracers": "moarg_bionic_stabilizers,id=137090,bonus_id=3630"},
+            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200critical_strike,enchant=binding_of_critical_strike",
+                        "Ring": "anger_of_the_half_giants,id=137038,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                        "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike"},
+            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
+        }
+    },
+    "sets": {
+        // Order the pieces from the best to the worst, if you have no clue then alphabetical
+        "PR": {},
+        "T19": {
+            "back": "cape-of-second-sight,id=138375,ilevel=905,enchant=binding_of_agility",
+            "chest": "tunic-of-second-sight,id=138376,ilevel=905",
+            "hands": "gloves-of-second-sight,id=138377,ilevel=905",
+            "head": "mask-of-second-sight,id=138378,ilevel=905",
+            "legs": "legwraps-of-second-sight,id=138379,ilevel=905",
+            "shoulder": "shoulderguards-of-second-sight,id=138380,ilevel=905"
+        },
+        "T20H": {
+            "back": "demonbane_shroud,id=147128,ilevel=915,enchant=binding_of_agility",
+            "chest": "demonbane_harness,id=147127,ilevel=915",
+            "hands": "demonbane_gauntlets,id=147129,ilevel=915",
+            "legs": "demonbane_leggings,id=147131,ilevel=915",
+            "head": "demonbane_faceguard,id=147130,ilevel=915",
+            "shoulder": "demonbane_shoulderpads,id=147132,ilevel=915"
+        },
+        "T20": {
+            "back": "demonbane_shroud,id=147128,bonus_id=3611/1487,enchant=binding_of_agility",
+            "chest": "demonbane_harness,id=147127,bonus_id=3611/1487",
+            "hands": "demonbane_gauntlets,id=147129,bonus_id=3611/1487",
+            "legs": "demonbane_leggings,id=147131,bonus_id=3611/1487",
+            "head": "demonbane_faceguard,id=147130,bonus_id=3611/1487",
+            "shoulder": "demonbane_shoulderpads,id=147132,bonus_id=3611/1487"
+        },
+        "T21H": {
+            "chest": "felreaper_vest,id=152118,bonus_id=3612/1502",
+            "back": "felreaper_drape,id=152119,bonus_id=3612/1502,enchant=binding_of_agility",
+            "legs": "felreaper_leggings,id=152122,bonus_id=3612/1502",
+            "hands": "felreaper_gloves,id=152120,bonus_id=3612/1502",
+            "head": "felreaper_hood,id=152121,bonus_id=3612/1502",
+            "shoulder": "felreaper_spaulders,id=152123,bonus_id=3612/1502"
+        },
+        "T21": {
+            "chest": "felreaper_vest,id=152118,bonus_id=3612/1502",
+            "back": "felreaper_drape,id=152119,bonus_id=3612/1502,enchant=binding_of_agility",
+            "legs": "felreaper_leggings,id=152122,bonus_id=3612/1502",
+            "hands": "felreaper_gloves,id=152120,bonus_id=3612/1502",
+            "head": "felreaper_hood,id=152121,bonus_id=3612/1502",
+            "shoulder": "felreaper_spaulders,id=152123,bonus_id=3612/1502"
+        }
+    }
+}

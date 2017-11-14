@@ -1,0 +1,27 @@
+demonhunter="Template"
+level=110
+race=blood_elf
+role=attack
+position=back
+talents=0000000
+artifact=3:0:0:0:0:1000:4:1001:4:1002:4:1003:4:1004:4:1005:4:1006:4:1007:4:1008:4:1010:1:1011:1:1012:1:1013:1:1014:1:1015:1:1016:1:1330:1:1362:1:1493:4:1494:1:1495:1:1496:24:1630:1
+crucible=1739:3:1777:3:1001:2:1000:1
+spec=havoc
+
+# No Set/Legendary Base
+head=headdress_of_living_brambles,id=152681,ilevel=945
+neck=chain_of_the_unmaker,id=152283,ilevel=945,enchant=mark_of_the_trained_soldier
+shoulders=felflame_inferno_shoulderpads,id=152413,ilevel=945
+back=greatcloak_of_the_dark_pantheon,id=152062,ilevel=945,enchant=binding_of_agility
+chest=vest_of_waning_life,id=151982,ilevel=945
+wrists=fiendish_logisticians_wristwraps,id=151992,ilevel=945
+hands=grips_of_hungering_shadows,id=152086,ilevel=945
+waist=portal_keepers_cincture,id=151990,ilevel=945
+legs=caustic_titanspite_legguards,id=152282,ilevel=945
+feet=lifebearing_footpads,id=151981,ilevel=945
+finger1=seal_of_the_portalmaster,id=152063,ilevel=945,enchant=binding_of_critical_strike
+finger2=band_of_the_sargerite_smith,id=152064,ilevel=945,enchant=binding_of_critical_strike
+trinket1=seeping_scourgewing,id=151964,ilevel=945
+trinket2=golganneths_vitality,id=154174,ilevel=1000
+main_hand=twinblades_of_the_deceiver,id=127829,bonus_id=719,gem_id=152033/155852/152033/0,relic_ilevel=955/955/955
+off_hand=twinblades_of_the_deceiver,id=127830,gem_id=0/0/0/0,relic_id=0/0

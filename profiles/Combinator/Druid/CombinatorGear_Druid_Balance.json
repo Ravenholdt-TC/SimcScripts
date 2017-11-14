@@ -27,33 +27,34 @@
         },
         "T20H": {
             "back": "stormheart_drape,id=147134,ilevel=915,enchant=binding_of_intellect",
-            "chest": "stormheart_tunic,id=147133,ilevel=915",
+            "shoulder": "stormheart_mantle,id=147138,ilevel=915",
             "hands": "stormheart_gloves,id=147135,ilevel=915",
-            "head": "stormheart_headdress,id=147136,ilevel=915",
             "legs": "stormheart_legguards,id=147137,ilevel=915",
-            "shoulder": "stormheart_mantle,id=147138,ilevel=915"
+            "chest": "stormheart_tunic,id=147133,ilevel=915",
+            "head": "stormheart_headdress,id=147136,ilevel=915"
         },
         "T20": {
             "back": "stormheart_drape,id=147134,ilevel=930,enchant=binding_of_intellect",
-            "chest": "stormheart_tunic,id=147133,ilevel=930",
+            "shoulder": "stormheart_mantle,id=147138,ilevel=930",
             "hands": "stormheart_gloves,id=147135,ilevel=930",
-            "head": "stormheart_headdress,id=147136,ilevel=930",
             "legs": "stormheart_legguards,id=147137,ilevel=930",
-            "shoulder": "stormheart_mantle,id=147138,ilevel=930"
+            "chest": "stormheart_tunic,id=147133,ilevel=930",
+            "head": "stormheart_headdress,id=147136,ilevel=930"
+            
         },
         "T21H": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_intellect",
-            "chest": "bearmantle_harness,id=152124,bonus_id=3611/1487",
-            "hands": "bearmantle_paws,id=152126,bonus_id=3611/1487",
             "head": "bearmantle_headdress,id=152127,bonus_id=3611/1487",
+            "chest": "bearmantle_harness,id=152124,bonus_id=3611/1487",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_intellect",
+            "hands": "bearmantle_paws,id=152126,bonus_id=3611/1487",
             "legs": "bearmantle_legguards,id=152128,bonus_id=3611/1487",
             "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3611/1487"
         },
         "T21": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_intellect",
-            "chest": "bearmantle_harness,id=152124,bonus_id=3612/1502",
-            "hands": "bearmantle_paws,id=152126,bonus_id=3612/1502",
             "head": "bearmantle_headdress,id=152127,bonus_id=3612/1502",
+            "chest": "bearmantle_harness,id=152124,bonus_id=3612/1502",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_intellect",
+            "hands": "bearmantle_paws,id=152126,bonus_id=3612/1502",
             "legs": "bearmantle_legguards,id=152128,bonus_id=3612/1502",
             "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3612/1502"
         }

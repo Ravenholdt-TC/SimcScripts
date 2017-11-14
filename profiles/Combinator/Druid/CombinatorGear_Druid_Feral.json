@@ -43,20 +43,20 @@
             "shoulder": "stormheart_mantle,id=147138,ilevel=930"
         },
         "T21H": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_agility",
-            "chest": "bearmantle_harness,id=152124,bonus_id=3611/1487",
-            "hands": "bearmantle_paws,id=152126,bonus_id=3611/1487",
             "head": "bearmantle_headdress,id=152127,bonus_id=3611/1487",
+            "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3611/1487",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3611/1487,enchant=binding_of_agility",
+            "hands": "bearmantle_paws,id=152126,bonus_id=3611/1487",
             "legs": "bearmantle_legguards,id=152128,bonus_id=3611/1487",
-            "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3611/1487"
+            "chest": "bearmantle_harness,id=152124,bonus_id=3611/1487"
         },
         "T21": {
-            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_agility",
-            "chest": "bearmantle_harness,id=152124,bonus_id=3612/1502",
-            "hands": "bearmantle_paws,id=152126,bonus_id=3612/1502",
             "head": "bearmantle_headdress,id=152127,bonus_id=3612/1502",
+            "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3612/1502",
+            "back": "bearmantle_cloak,id=152125,bonus_id=3612/1502,enchant=binding_of_agility",
+            "hands": "bearmantle_paws,id=152126,bonus_id=3612/1502",
             "legs": "bearmantle_legguards,id=152128,bonus_id=3612/1502",
-            "shoulder": "bearmantle_shoulders,id=152129,bonus_id=3612/1502"
+            "chest": "bearmantle_harness,id=152124,bonus_id=3612/1502"
         }
     }
 }
