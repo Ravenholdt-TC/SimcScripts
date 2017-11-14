@@ -1,6 +1,6 @@
 {
     "legendaries": {
-        "Retribution": {
+        "retribution": {
             "shoulder": {"Mantle": "ashes_to_dust,id=144358,bonus_id=3570,ilevel=1000"},
             "waist": {"Belt": "chain_of_thrayn,id=137086,bonus_id=3570,ilevel=1000"},
             "chest": {"Chest": "scarlet_inquisitors_expurgation,id=151813,bonus_id=3570,ilevel=1000"},
@@ -39,7 +39,7 @@
             "shoulder": "radiant_lightbringer_shoulderguards,id=147162,ilevel=930"
         },
         "T21H": {
-            "head": "lights_vanguard_helm,id=152163,bonus_id=3611/1487",
+            "head": "lights_vanguard_helm,id=152151,bonus_id=3611/1487",
             "shoulder": "lights_vanguard_shoulderplates,id=152153,bonus_id=3611/1487",
             "chest": "lights_vanguard_breastplate,id=152148,bonus_id=3611/1487",
             "hands": "lights_vanguard_gauntlets,id=152150,bonus_id=3611/1487",
@@ -47,7 +47,7 @@
             "legs": "lights_vanguard_legplates,id=152152,bonus_id=3611/1487"
         },
         "T21": {
-            "head": "lights_vanguard_helm,id=152163,bonus_id=3612/1502",
+            "head": "lights_vanguard_helm,id=152151,bonus_id=3612/1502",
             "shoulder": "lights_vanguard_shoulderplates,id=152153,bonus_id=3612/1502",
             "chest": "lights_vanguard_breastplate,id=152148,bonus_id=3612/1502",
             "hands": "lights_vanguard_gauntlets,id=152150,bonus_id=3612/1502",
