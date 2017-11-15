@@ -1,0 +1,27 @@
+warlock="Template"
+level=110
+race=troll
+role=spell
+position=back
+talents=0000000
+artifact=38:0:0:0:0:803:1:804:4:805:4:806:4:807:4:808:4:809:4:810:4:811:4:812:4:813:1:814:1:815:1:816:1:817:1:818:1:1355:1:1392:1:1609:4:1610:1:1611:1:1612:24:1713:1
+crucible=1739:3:1770:3:805:2:809:1
+spec=destruction
+default_pet=imp
+
+# No Set/Legendary Base
+head=crown_of_relentless_annihilation,id=151943,ilevel=945
+neck=chain_of_the_unmaker,id=152283,ilevel=955
+shoulders=corrupted_mantle_of_the_felseekers,id=153018,ilevel=945
+back=cloak_of_the_burning_vanguard,id=151937,ilevel=945
+chest=gambeson_of_sargeras_corruption,id=152679,ilevel=955
+wrists=cuffs_of_the_viridian_flameweavers,id=152085,ilevel=945
+hands=handwraps_of_inevitable_doom,id=152680,ilevel=955
+waist=enhanced_worldscorcher_cinch,id=151951,ilevel=945
+legs=subjugated_drudges_leggings,id=152352,ilevel=945
+feet=lady_dacidions_silk_slippers,id=151945,ilevel=945
+finger1=zealous_tormentors_ring,id=152284,ilevel=945,enchant=binding_of_haste
+finger2=band_of_the_sargerite_smith,id=152064,ilevel=945,enchant=binding_of_haste
+trinket1=acrid_catalyst_injector,id=151955,ilevel=945
+trinket2=amanthuls_vision,id=154172,ilevel=1000
+main_hand=scepter_of_sargeras,id=128941,gem_id=152031/155849/152031,relic_ilevel=945/955/945
