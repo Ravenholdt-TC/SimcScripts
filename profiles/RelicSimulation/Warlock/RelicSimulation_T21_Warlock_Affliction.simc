@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier21/T21_Warlock_Affliction.simc
 name="Template"
 
-main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=960
+main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=747,ilevel=966
 
 #Reset crucible
 crucible=
@@ -15,18 +15,16 @@ artifact_override=inherently_unstable:4
 artifact_override=winnowing:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=963
-profileset.WeaponItemLevel_6=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=966
-profileset.WeaponItemLevel_9=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=969
-profileset.WeaponItemLevel_12=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=972
-profileset.WeaponItemLevel_15=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=975
-profileset.WeaponItemLevel_18=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=978
-profileset.WeaponItemLevel_21=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=981
-profileset.WeaponItemLevel_24=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=984
-profileset.WeaponItemLevel_27=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=987
-profileset.WeaponItemLevel_30=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=990
-profileset.WeaponItemLevel_33=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=993
-profileset.WeaponItemLevel_36=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=996
+profileset.WeaponItemLevel_3=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=969
+profileset.WeaponItemLevel_6=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=972
+profileset.WeaponItemLevel_9=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=975
+profileset.WeaponItemLevel_12=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=978
+profileset.WeaponItemLevel_15=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=981
+profileset.WeaponItemLevel_18=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=984
+profileset.WeaponItemLevel_21=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=987
+profileset.WeaponItemLevel_24=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=990
+profileset.WeaponItemLevel_27=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=993
+profileset.WeaponItemLevel_30=main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=731,ilevel=996
 
 # 1 Relics
 profileset.Perdition_1=artifact_override=perdition:5

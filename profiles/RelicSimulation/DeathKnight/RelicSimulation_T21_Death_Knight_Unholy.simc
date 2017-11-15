@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier21/T21_Death_Knight_Unholy.simc
 name="Template"
 
-main_hand=apocalypse,id=128403,bonus_id=718,ilevel=960,enchant=rune_of_the_fallen_crusader
+main_hand=apocalypse,id=128403,bonus_id=718,ilevel=966,enchant=rune_of_the_fallen_crusader
 
 #Reset crucible
 crucible=
@@ -16,18 +16,16 @@ artifact_override=deadliest_coil:4
 artifact_override=lash_of_shadows:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=963,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_6=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=966,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_9=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=969,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_12=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=972,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_15=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=975,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_18=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=978,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_21=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=981,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_24=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=984,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_27=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=987,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_30=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=990,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_33=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=993,enchant=rune_of_the_fallen_crusader
-profileset.WeaponItemLevel_36=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=996,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_3=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=969,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_6=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=972,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_9=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=975,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_12=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=978,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_15=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=981,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_18=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=984,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_21=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=987,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_24=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=990,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_27=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=993,enchant=rune_of_the_fallen_crusader
+profileset.WeaponItemLevel_30=main_hand=apocalypse,id=128403,bonus_id=718,ilevel=996,enchant=rune_of_the_fallen_crusader
 
 # 1 Relics
 profileset.RottenTouch_1=artifact_override=rotten_touch:5

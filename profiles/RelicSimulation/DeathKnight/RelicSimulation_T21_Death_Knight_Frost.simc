@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier21/T21_Death_Knight_Frost.simc
 name="Template"
 
-main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=960,enchant=rune_of_razorice
+main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=966,enchant=rune_of_razorice
 
 #Reset crucible
 crucible=
@@ -16,18 +16,16 @@ artifact_override=blast_radius:4
 artifact_override=runefrost:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=963,enchant=rune_of_razorice
-profileset.WeaponItemLevel_6=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=966,enchant=rune_of_razorice
-profileset.WeaponItemLevel_9=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=969,enchant=rune_of_razorice
-profileset.WeaponItemLevel_12=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=972,enchant=rune_of_razorice
-profileset.WeaponItemLevel_15=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=975,enchant=rune_of_razorice
-profileset.WeaponItemLevel_18=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=978,enchant=rune_of_razorice
-profileset.WeaponItemLevel_21=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=981,enchant=rune_of_razorice
-profileset.WeaponItemLevel_24=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=984,enchant=rune_of_razorice
-profileset.WeaponItemLevel_27=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=987,enchant=rune_of_razorice
-profileset.WeaponItemLevel_30=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=990,enchant=rune_of_razorice
-profileset.WeaponItemLevel_33=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=993,enchant=rune_of_razorice
-profileset.WeaponItemLevel_36=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=996,enchant=rune_of_razorice
+profileset.WeaponItemLevel_3=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=969,enchant=rune_of_razorice
+profileset.WeaponItemLevel_6=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=972,enchant=rune_of_razorice
+profileset.WeaponItemLevel_9=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=975,enchant=rune_of_razorice
+profileset.WeaponItemLevel_12=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=978,enchant=rune_of_razorice
+profileset.WeaponItemLevel_15=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=981,enchant=rune_of_razorice
+profileset.WeaponItemLevel_18=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=984,enchant=rune_of_razorice
+profileset.WeaponItemLevel_21=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=987,enchant=rune_of_razorice
+profileset.WeaponItemLevel_24=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=990,enchant=rune_of_razorice
+profileset.WeaponItemLevel_27=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=993,enchant=rune_of_razorice
+profileset.WeaponItemLevel_30=main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=996,enchant=rune_of_razorice
 
 # 1 Relics
 profileset.NothingButTheBoots_1=artifact_override=nothing_but_the_boots:5

@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier21/T21_Monk_Windwalker.simc
 name="Template"
 
-main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=960
+main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=966
 
 #Reset crucible
 crucible=
@@ -14,18 +14,16 @@ artifact_override=strength_of_xuen:4
 artifact_override=split_personality:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=963
-profileset.WeaponItemLevel_6=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=966
-profileset.WeaponItemLevel_9=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=969
-profileset.WeaponItemLevel_12=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=972
-profileset.WeaponItemLevel_15=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=975
-profileset.WeaponItemLevel_18=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=978
-profileset.WeaponItemLevel_21=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=981
-profileset.WeaponItemLevel_24=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=984
-profileset.WeaponItemLevel_27=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=987
-profileset.WeaponItemLevel_30=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=990
-profileset.WeaponItemLevel_33=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=993
-profileset.WeaponItemLevel_36=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=996
+profileset.WeaponItemLevel_3=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=969
+profileset.WeaponItemLevel_6=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=972
+profileset.WeaponItemLevel_9=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=975
+profileset.WeaponItemLevel_12=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=978
+profileset.WeaponItemLevel_15=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=981
+profileset.WeaponItemLevel_18=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=984
+profileset.WeaponItemLevel_21=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=987
+profileset.WeaponItemLevel_24=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=990
+profileset.WeaponItemLevel_27=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=993
+profileset.WeaponItemLevel_30=main_hand=fists_of_the_heavens,id=128940,bonus_id=734,ilevel=996
 
 # 1 Relics
 profileset.RisingWinds_1=artifact_override=rising_winds:5

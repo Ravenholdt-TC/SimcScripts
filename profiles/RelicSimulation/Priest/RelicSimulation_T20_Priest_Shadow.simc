@@ -1,7 +1,7 @@
-$(simc_profiles_path)/Tier21/T21_Priest_Shadow.simc
+$(simc_profiles_path)/Tier20/T20_Priest_Shadow.simc
 name="Template"
 
-main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=966
+main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=950
 
 #Reset crucible
 crucible=
@@ -15,16 +15,17 @@ artifact_override=to_the_pain:4
 artifact_override=fiending_dark:4
 
 # Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=969
-profileset.WeaponItemLevel_6=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=972
-profileset.WeaponItemLevel_9=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=975
-profileset.WeaponItemLevel_12=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=978
-profileset.WeaponItemLevel_15=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=981
-profileset.WeaponItemLevel_18=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=984
-profileset.WeaponItemLevel_21=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=987
-profileset.WeaponItemLevel_24=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=990
-profileset.WeaponItemLevel_27=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=993
-profileset.WeaponItemLevel_30=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=996
+profileset.WeaponItemLevel_3=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=953
+profileset.WeaponItemLevel_6=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=956
+profileset.WeaponItemLevel_9=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=959
+profileset.WeaponItemLevel_12=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=962
+profileset.WeaponItemLevel_15=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=965
+profileset.WeaponItemLevel_18=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=968
+profileset.WeaponItemLevel_21=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=971
+profileset.WeaponItemLevel_24=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=974
+profileset.WeaponItemLevel_27=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=977
+profileset.WeaponItemLevel_30=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=980
+profileset.WeaponItemLevel_33=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=983
 
 # 1 Relics
 profileset.VoidCorruption_1=artifact_override=void_corruption:5
