@@ -11,7 +11,7 @@ default_pet=felguard
 
 # No Set/Legendary Base
 head=soulhunters_cowl,id=151944,ilevel=960
-neck=riveted_choker_of_delirium,id=151966,ilevel=960,enchant_id=5437
+neck=riveted_choker_of_delirium,id=151966,ilevel=960,enchant=mark_of_the_claw
 shoulders=fallen_avengers_amice,id=151950,ilevel=960
 back=greatcloak_of_the_dark_pantheon,id=152062,ilevel=960
 chest=gambeson_of_sargeras_corruption,id=152679,ilevel=970

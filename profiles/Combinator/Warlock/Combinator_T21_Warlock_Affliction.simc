@@ -11,7 +11,7 @@ default_pet=felhunter
 
 # No Set/Legendary Base
 head=soulhunters_cowl,id=151944,ilevel=960
-neck=chain_of_the_unmaker,id=152283,ilevel=970
+neck=chain_of_the_unmaker,id=152283,ilevel=970,enchant=mark_of_the_trained_soldier
 shoulders=accursed_defilers_mantle,id=152354,ilevel=960
 back=cloak_of_the_burning_vanguard,id=151937,ilevel=960
 chest=gambeson_of_sargeras_corruption,id=152679,ilevel=960
