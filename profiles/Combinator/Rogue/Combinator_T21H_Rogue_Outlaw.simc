@@ -23,6 +23,6 @@ feet=depraved_machinists_footpads,id=152412,bonus_id=3611/1487
 finger1=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_critical_strike
 finger2=zealous_tormentors_ring,id=152284,bonus_id=3611/1487,enchant=binding_of_critical_strike
 trinket1=shadowsinged_fang,id=151968,bonus_id=3611/1487
-trinket2=golganneths_vitality,id=154174,ilevel=1000
+trinket2=golganneths_vitality,id=154174,bonus_id=4213
 main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=152028/155855/155853,relic_id=3611:1487/3611:1497/3611:1497
 off_hand=the_dreadblades,id=134552
