@@ -351,11 +351,39 @@
             "additionalInput": []
         },
         {
+            "name": "Khazgoroths Courage 5-Pantheon",
+            "itemId": 154176,
+            "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
+        },
+        {
+            "name": "Khazgoroths Courage 15-Pantheon",
+            "itemId": 154176,
+            "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
+        },
+        {
             "name": "Aman'Thuls Vision",
             "itemId": 154172,
             "itemLevels": [1000],
             "bonusIds": [],
             "additionalInput": []
+        },
+        {
+            "name": "Aman'Thul's Vision 5-Pantheon",
+            "itemId": 154172,
+            "itemLevels": [1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
+          },
+        {
+            "name": "Aman'Thul's Vision 15-Pantheon",
+            "itemId": 154172,
+            "itemLevels": [1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
         }
     ]
 }

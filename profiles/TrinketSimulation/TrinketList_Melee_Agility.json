@@ -330,11 +330,39 @@
             "additionalInput": []
         },
         {
+            "name": "Aman'Thul's Vision 5-Pantheon",
+            "itemId": 154172,
+            "itemLevels": [1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
+        },
+        {
+            "name": "Aman'Thul's Vision 15-Pantheon",
+            "itemId": 154172,
+            "itemLevels": [1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
+        },
+        {
             "name": "Golganneth's Vitality",
             "itemId": 154174,
             "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
             "bonusIds": [],
             "additionalInput": []
+        },
+        {
+            "name": "Golganneth's Vitality 5-Pantheon",
+            "itemId": 154174,
+            "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
+        },
+        {
+            "name": "Golganneth's Vitality 15-Pantheon",
+            "itemId": 154174,
+            "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+            "bonusIds": [],
+            "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
         },
         {
             "name": "Terminus Signaling Beacon",
