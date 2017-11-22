@@ -11,18 +11,19 @@ crucible=1739:1780:1064/1739:1780:1067/1739:1780:1067
 
 # No Set/Legendary Base
 head=headdress_of_living_brambles,id=152681,bonus_id=3611/1487
-neck=chain_of_the_unmaker,id=152283,bonus_id=3611/1487,enchant=mark_of_the_hidden_satyr
+neck=vulcanarcore_pendant,id=151965,bonus_id=3611/1487,enchant=mark_of_the_hidden_satyr
 shoulder=shoulderpads_of_the_demonic_blitz,id=151988,bonus_id=3611/1487
 back=greatcloak_of_the_dark_pantheon,id=152062,bonus_id=3611/1487,enchant=binding_of_agility
 chest=vest_of_waning_life,id=151982,bonus_id=3611/1487
 wrist=bracers_of_wanton_morality,id=152414,bonus_id=3611/1487
 hands=grips_of_hungering_shadows,id=152086,bonus_id=3611/1487
-waist=belt_of_fractured_sanity,id=151991,bonus_id=3611/1487
+waist=deathenveloping_cincture,id=151986,bonus_id=3611/1487
 legs=breach_blocker_legguards,id=151987,bonus_id=3611/1487
 feet=depraved_machinists_footpads,id=152412,bonus_id=3611/1487
-finger1=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_critical_strike
-finger2=zealous_tormentors_ring,id=152284,bonus_id=3611/1487,enchant=binding_of_critical_strike
+finger1=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_haste
+finger2=zealous_tormentors_ring,id=152284,bonus_id=3611/1487,enchant=binding_of_haste
 trinket1=shadowsinged_fang,id=151968,bonus_id=3611/1487
 trinket2=golganneths_vitality,id=154174,bonus_id=4213
 main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=152028/155855/155853,relic_id=3611:1487/3611:1497/3611:1497
 off_hand=the_dreadblades,id=134552
+
