@@ -3,7 +3,6 @@
         "assassination": {
             "head": {"Head": "the_empty_crown,id=151815,bonus_id=3630"},
             "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
-            "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
             "feet": {"Boots": "duskwalkers_footpads,id=137030,bonus_id=3630"},
             "wrists": {"Bracers": "zoldyck_family_training_shackles,id=137098,bonus_id=3630"},
             "finger1": {"Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=200crit,enchant=binding_of_critical_strike",
