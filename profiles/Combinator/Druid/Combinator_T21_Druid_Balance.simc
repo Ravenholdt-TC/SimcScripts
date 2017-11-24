@@ -20,7 +20,7 @@ hands=grips_of_hungering_shadows,id=152086,ilevel=960
 waist=deathenveloping_cincture,id=151986,ilevel=970
 legs=breachblocker_legguards,id=151987,ilevel=960
 feet=depraved_machinists_footpads,id=152412,ilevel=960
-finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=960,enchant=binding_of_mastery
+finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=binding_of_mastery
 finger2=loop_of_the_lifebinder,id=152688,ilevel=960,enchant=200mastery 
 trinket1=acrid_catalyst_injector,id=151955,ilevel=960
 trinket2=amanthuls_vision,id=154172,ilevel=1000

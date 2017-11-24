@@ -2,7 +2,7 @@
     "legendaries": {
         "balance": {
             "head": {"Head": "the_emerald_dreamcatcher,id=137062,bonus_id=3570,ilevel=1000"},
-            "shoulder": {"Mantle": "lady_and_the_child,id=144295,bonus_id=3570,ilevel=1000"},
+            "shoulder": {"Shoulder": "lady_and_the_child,id=144295,bonus_id=3570,ilevel=1000"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3570,ilevel=1000"},
             "feet": {"Boots": "promise_of_elune_the_moon_goddess,id=137023,bonus_id=3570,ilevel=1000"},
             "wrists": {"Bracers": "oneths_intuition,id=137092,bonus_id=3570,ilevel=1000"},

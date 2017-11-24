@@ -2,7 +2,7 @@
     "legendaries": {
         "feral": {
             "head": {"Head": "behemoth_headdress,id=151801,bonus_id=3570,ilevel=1000"},
-            "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3570,ilevel=1000"},
+            "shoulder": {"Shoulder": "lady_and_the_child,id=144295,bonus_id=3570,ilevel=1000"},
             "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3570,ilevel=1000"},
             "legs": {"Legs": "fiery_red_maimers,id=144354,bonus_id=3570,ilevel=1000"},
             "feet": {"Boots": "ailuro_pouncers,id=137024,bonus_id=3570,ilevel=1000"},

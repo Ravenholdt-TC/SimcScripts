@@ -20,7 +20,7 @@ hands=grips_of_hungering_shadows,id=152086,ilevel=945
 waist=belt_of_fractured_sanity,id=151991,ilevel=945
 legs=breachblocker_legguards,id=151987,ilevel=945
 feet=vicious_flamepaws,id=151983,ilevel=945
-finger1=seal_of_the_portalmaster,id=152063,ilevel=945,enchant=binding_of_versatility
+finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=955,enchant=binding_of_versatility
 finger2=zealous_tormentors_ring,id=152284,ilevel=945,enchant=binding_of_versatility
 trinket1=golganneths_vitality,id=154174,ilevel=1000
 trinket2=seeping_scourgewing,id=151964,ilevel=945
