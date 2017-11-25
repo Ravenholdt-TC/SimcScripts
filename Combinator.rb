@@ -67,6 +67,7 @@ setups['setups'].each do |setup|
         end
         legoCombinations = legoSlots.collect {|legoSlot| gear['legendaries'][spec][legoSlot].keys}
         legoCombinations = legoCombinations.reduce(&:product) if legoSlots.length > 1
+        legoCombinations = legoCombinations.flatten.collect {|x| [x]} if legoSlots.length == 1
         legoCombinations = legoCombinations.collect(&:flatten).collect(&:uniq).uniq {|x| x.sort}.select {|x| x.length == numLegos}
         legoCombinations.each do |legoCombination|
           legoProfileName = legoCombination.join('_')
