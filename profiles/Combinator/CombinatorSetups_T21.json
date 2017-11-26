@@ -11,6 +11,13 @@
         {
             "legendaries": [2],
             "sets": [
+                {"set": "T19", "pieces": 2},
+                {"set": "T21", "pieces": 4}
+            ]
+        },
+        {
+            "legendaries": [2],
+            "sets": [
                 {"set": "T20", "pieces": 4},
                 {"set": "T21", "pieces": 2}
             ]

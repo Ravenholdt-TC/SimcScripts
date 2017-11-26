@@ -1,22 +1,30 @@
 cd ..
 
-REM T21
-TrinketSimulation.rb Monk T21_Monk_Windwalker Melee_Agility 1T q
-TrinketSimulation.rb Monk T20_Monk_Windwalker Melee_Agility 1T q
-TrinketSimulation.rb DemonHunter T21_Demon_Hunter_Havoc Melee_Agility 1T q
-TrinketSimulation.rb DemonHunter T20_Demon_Hunter_Havoc Melee_Agility 1T q
-TrinketSimulation.rb Druid T20_Druid_Feral Melee_Agility 1T q
-TrinketSimulation.rb Druid T21_Druid_Feral Melee_Agility 1T q
-TrinketSimulation.rb Shaman T20_Shaman_Enhancement Melee_Agility 1T q
-TrinketSimulation.rb Shaman T21_Shaman_Enhancement Melee_Agility 1T q
-TrinketSimulation.rb Hunter T20_Hunter_Survival Melee_Agility 1T q
-TrinketSimulation.rb Hunter T21_Hunter_Survival Melee_Agility 1T q
+RelicSimulation.rb DeathKnight T20_Death_Knight_Frost 1T q
+@pause
+Combinator.rb Shaman T21_Shaman_Enhancement Shaman_Enhancement T21 1T x00xxxx y q
+Combinator.rb Shaman T21H_Shaman_Enhancement Shaman_Enhancement T21H 1T x00xxxx y q
+@pause
 
-REM T21H
+Combinator.rb Hunter T21_Hunter_Survival Hunter_Survival T21 1T xx0x0xx y q
+Combinator.rb Hunter T21H_Hunter_Survival Hunter_Survival T21H 1T xx0x0xx y q
+Combinator.rb Shaman T21_Shaman_Elemental Shaman_Elemental T21 1T x00xxxx y q
+Combinator.rb Shaman T21H_Shaman_Elemental Shaman_Elemental T21H 1T x00xxxx y q
+Combinator.rb Shaman T21_Shaman_Enhancement Shaman_Enhancement T21 1T x00xxxx y q
+Combinator.rb Shaman T21H_Shaman_Enhancement Shaman_Enhancement T21H 1T x00xxxx y q
+Combinator.rb Warrior T21_Warrior_Arms Warrior_Arms T21 1T x3x2xxx y q
+Combinator.rb Warrior T21H_Warrior_Arms Warrior_Arms T21H 1T x3x2xxx y q
+Combinator.rb Warrior T21_Warrior_Fury Warrior_Fury T21 1T x3x2xxx y q
+Combinator.rb Warrior T21H_Warrior_Fury Warrior_Fury T21H 1T x3x2xxx y q
+Combinator.rb DeathKnight T21_Death_Knight_Frost Death_Knight_Frost T21 1T xxx00xx y q
+Combinator.rb DeathKnight T21H_Death_Knight_Frost Death_Knight_Frost T21H 1T xxx00xx y q
+Combinator.rb Shaman T21_Shaman_Elemental Shaman_Elemental T21 1T x00xxxx y q
+Combinator.rb Shaman T21H_Shaman_Elemental Shaman_Elemental T21H 1T x00xxxx y q
 
 
 
-REM T20
+
+
 
 
 
