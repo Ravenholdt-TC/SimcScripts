@@ -34,11 +34,11 @@
       },
       "T21H": {
           "chest": "serpentstalker_tunic,id=152130,bonus_id=3611/1487",
-          "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
-          "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487",
           "back": "cloak_of_the_dashing_scoundrel,id=152131,bonus_id=3611/1487,enchant=binding_of_agility",
           "hands": "serpentstalker_grips,id=152132,bonus_id=3611/1487",
-          "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487"
+          "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487",
+          "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
+          "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487"
       },
       "T21": {
           "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3612/1502",

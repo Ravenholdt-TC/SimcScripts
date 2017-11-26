@@ -9,18 +9,18 @@ crucible=1739:3:1780:3:1521:1:319:2
 spec=marksmanship
 
 # No Set/Legendary Base
-head=helm_of_the_awakened_soul,id=152423,ilevel=970
-neck=chain_of_the_unmaker,id=152283,bonus_id=3612/1502,enchant=mark_of_the_trained_soldier
-shoulders=pauldrons_of_colossal_burden,id=152005,ilevel=970
-back=cloak_of_the_burning_vanguard,id=151937,ilevel=960,enchant=200agi
-chest=robes_of_the_forsaken_dreadlord,id=151995,ilevel=960
-wrists=scalding_shatterguards,id=152280,ilevel=960
-hands=preysnare_vicegrips,id=151999,ilevel=960
-waist=depraved_tacticians_waistguard,id=152006,ilevel=960
-legs=legguards_of_numbing_gloom,id=152003,ilevel=960
-feet=greatboots_of_the_searing_tempest,id=152684,ilevel=960
-finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=970,enchant=200mastery
-finger2=loop_of_the_lifebinder,id=152688,ilevel=960,enchant=200mastery
-trinket1=amanthuls_vision,id=154172,ilevel=1000
-trinket2=tarnished_sentinel_medallion,id=147017,bonus_id=1512/3563
-main_hand=thasdorah_legacy_of_the_windrunners,id=128826,gem_id=155853/155847/152291,relic_id=3612:1512/3612:1512/3612:1502
+head=azure_squallshapers_helm,id=147049,bonus_id=1512/3563
+neck=locket_of_splintered_souls,id=147014,bonus_id=1512/3563,enchant=mark_of_the_claw
+shoulders=pauldrons_of_the_gibbering_eye,id=147053,bonus_id=1512/3563
+back=cape_of_mindless_fury,id=147193,bonus_id=1512/3563,enchant=binding_of_agility
+chest=hauberk_of_frozen_mist,id=147043,bonus_id=1512/3563
+wrists=painsinged_armguards,id=147057,bonus_id=1512/3563
+hands=vicegrip_of_the_unrepentant,id=147048,bonus_id=1522/3563
+waist=waistguard_of_interminable_unity,id=147056,bonus_id=1512/3563
+legs=legguards_of_siphoned_power,id=147052,bonus_id=1512/3563
+feet=starstalker_treads,id=147046,bonus_id=1522/3563
+finger1=scaled_band_of_servitude,id=147020,bonus_id=1512/3563,enchant=binding_of_mastery
+finger2=seal_of_the_second_duumvirate,id=147195,bonus_id=1522/3563,enchant=binding_of_mastery
+trinket1=tarnished_sentinel_medallion,id=147017,bonus_id=1512/3563
+trinket2=convergence_of_fates,id=140806,bonus_id=3518
+main_hand=thasdorah_legacy_of_the_windrunners,id=128826,gem_id=147112/147082/147105,relic_id=1512:3563/1522:3563/1512:3563

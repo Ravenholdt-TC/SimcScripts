@@ -4,7 +4,7 @@ race=troll
 role=attack
 position=back
 talents=0000000
-artifact=34:0:0:0:0:1068:1:1070:4:1071:4:1072:4:1073:4:1074:4:1075:4:1076:4:1077:4:1078:4:1079:1:1080:1:1081:1:1082:1:1083:1:1084:1:1338:1:1370:1:1525:4:1526:1:1527:1:1528:24:1638:1
+artifact=34:152060:152048:155847:0:1068:1:1070:6:1071:4:1072:4:1073:4:1074:4:1075:4:1076:4:1077:4:1078:4:1079:1:1080:1:1081:1:1082:1:1083:1:1084:1:1338:1:1370:1:1525:5:1526:1:1527:1:1528:24:1638:1
 crucible=1739:1780:1525/1739:1780:1070/1739:1780:1525
 spec=survival
 
@@ -19,8 +19,8 @@ hands=preysnare_vicegrips,id=151999,bonus_id=3611/1487
 waist=sash_of_the_gilded_rose,id=152007,bonus_id=3611/1487
 legs=battalionshattering_leggings,id=152002,bonus_id=3611/1487
 feet=deft_soulhunters_sabatons,id=151996,bonus_id=3611/1487
-finger1=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_haste
-finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_haste
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_haste
+finger2=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_haste
 trinket1=seeping_scourgewing,id=151964,bonus_id=3611/1487
-trinket2=golganneths_vitality,id=154174,ilevel=1000
+trinket2=golganneths_vitality,id=154174,bonus_id=4213
 main_hand=talonclaw,id=128808,bonus_id=728,gem_id=152060/155855/155847,relic_id=3611:1487/3611:1497/3611:1497

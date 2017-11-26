@@ -18,12 +18,12 @@
         // Order the pieces from the best to the worst, if you have no clue then alphabetical
         "PR": {},
         "T19": {
-            "back": "cape-of-second-sight,id=138375,ilevel=905,enchant=binding_of_agility",
-            "chest": "tunic-of-second-sight,id=138376,ilevel=905",
-            "hands": "gloves-of-second-sight,id=138377,ilevel=905",
-            "head": "mask-of-second-sight,id=138378,ilevel=905",
-            "legs": "legwraps-of-second-sight,id=138379,ilevel=905",
-            "shoulder": "shoulderguards-of-second-sight,id=138380,ilevel=905"
+            "back": "cape_of_second_sight,id=138375,ilevel=905,enchant=binding_of_agility",
+            "chest": "tunic_of_second_sight,id=138376,ilevel=905",
+            "hands": "gloves_of_second_sight,id=138377,ilevel=905",
+            "head": "mask_of_second_sight,id=138378,ilevel=905",
+            "legs": "legwraps_of_second_sight,id=138379,ilevel=905",
+            "shoulder": "shoulderguards_of_second_sight,id=138380,ilevel=905"
         },
         "T20H": {
             "back": "demonbane_shroud,id=147128,ilevel=915,enchant=binding_of_agility",

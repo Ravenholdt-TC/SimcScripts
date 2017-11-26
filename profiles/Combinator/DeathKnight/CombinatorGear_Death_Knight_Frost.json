@@ -1,12 +1,12 @@
 {
     "legendaries": {
         "frost": {
-            "head": {"Head": "perseverance-of-the-ebon-martyr,id=132459,bonus_id=3570,ilevel=1000"},
-            "legs": {"Legs": "consorts-cold-core,id=144293,bonus_id=3570,ilevel=1000"},
-            "waist": {"Belt": "koltiras-newfound-will,id=132366,bonus_id=3570,ilevel=1000"},
-            "wrists": {"Wrists": "toravons-whiteout-bindings,id=132458,bonus_id=3570,ilevel=1000"},
+            "head": {"Head": "perseverance_of_the_ebon_martyr,id=132459,bonus_id=3570,ilevel=1000"},
+            "legs": {"Legs": "consorts_cold_core,id=144293,bonus_id=3570,ilevel=1000"},
+            "waist": {"Belt": "koltiras_newfound_will,id=132366,bonus_id=3570,ilevel=1000"},
+            "wrists": {"Wrists": "toravons_whiteout_bindings,id=132458,bonus_id=3570,ilevel=1000"},
             "chest": {"Chest": "cold_heart,id=151796,bonus_id=3570,ilevel=1000"},
-            "finger1": {"Seal": "seal-of-necrofantasia,id=137223,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
+            "finger1": {"Seal": "seal_of_necrofantasia,id=137223,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
                         "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
@@ -41,19 +41,19 @@
         },
         "T21H": {
             "head": "dreadwake_helm,id=152115,ilevel=945",
-            "hands": "dreadwake_gauntlets,id=152114,ilevel=945",
+            "chest": "dreadwake_bonecage,id=152112,ilevel=945",
             "back": "dreadwake_greatcloak,id=152113,ilevel=945,enchant=binding_of_strenght",
             "shoulder": "dreadwake_pauldrons,id=152117,ilevel=945",
             "legs": "dreadwake_legplates,id=152116,ilevel=945",
-            "chest": "dreadwake_bonecage,id=152112,ilevel=945"
+            "hands": "dreadwake_gauntlets,id=152114,ilevel=945"
         },
         "T21": {
             "head": "dreadwake_helm,id=152115,ilevel=960",
-            "hands": "dreadwake_gauntlets,id=152114,ilevel=960",
+            "chest": "dreadwake_bonecage,id=152112,ilevel=960",
             "back": "dreadwake_greatcloak,id=152113,ilevel=960,enchant=binding_of_strenght",
             "shoulder": "dreadwake_pauldrons,id=152117,ilevel=960",
             "legs": "dreadwake_legplates,id=152116,ilevel=960",
-            "chest": "dreadwake_bonecage,id=152112,ilevel=960"
+            "hands": "dreadwake_gauntlets,id=152114,ilevel=960"
             
         }
     }
