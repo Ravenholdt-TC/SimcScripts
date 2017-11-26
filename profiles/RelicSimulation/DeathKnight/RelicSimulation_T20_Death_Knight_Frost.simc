@@ -1,7 +1,7 @@
 $(simc_profiles_path)/Tier20/T20_Death_Knight_Frost.simc
 name="Template"
 
-main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=950
+main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,ilevel=950,enchant=rune_of_razorice
 
 #Reset crucible
 crucible=
