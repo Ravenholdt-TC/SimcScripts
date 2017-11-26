@@ -1,14 +1,14 @@
 {
   "legendaries": {
       "enhancement": {
-          "head": {"Head": "uncertain-reminder,id=143732,bonus_id=3570,ilevel=1000"},
-          "hands": {"Hands": "smoldering-heart,id=151819,bonus_id=3570,ilevel=1000"},
-          "wrists": {"Bracers": "akainus-absolute-justice,id=137084,bonus_id=3570,ilevel=1000"},
-          "waist": {"Belt": "storm-tempests,id=137103,bonus_id=3570,ilevel=1000"},
-          "feet": {"Boots": "spiritual-journey,id=138117,bonus_id=3570,ilevel=1000"},
+          "head": {"Head": "uncertain_reminder,id=143732,bonus_id=3570,ilevel=1000"},
+          "hands": {"Hands": "smoldering_heart,id=151819,bonus_id=3570,ilevel=1000"},
+          "wrists": {"Bracers": "akainus_absolute_justice,id=137084,bonus_id=3570,ilevel=1000"},
+          "waist": {"Belt": "storm_tempests,id=137103,bonus_id=3570,ilevel=1000"},
+          "feet": {"Boots": "spiritual_journey,id=138117,bonus_id=3570,ilevel=1000"},
           "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Ring": "eye-of-the-twisting-nether,id=137050,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Soul": "soul-of-the-farseer,id=151647,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
+                      "EotN": "eye_of_the_twisting_nether,id=137050,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
+                      "Soul": "soul_of_the_farseer,id=151647,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
                       "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste"},
           "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
       }
@@ -17,36 +17,36 @@
       // Order the pieces from the best to the worst, if you have no clue then alphabetical
       "PR": {},
       "T19": {
-          "back": "cloak-of-shackled-elements,id=138372,ilevel=905,enchant=binding_of_agility",
-          "head": "helm-of-shackled-elements,id=138343,ilevel=905",
-          "legs": "leggings-of-shackled-elements,id=138345,ilevel=905",
-          "chest": "raiment-of-shackled-elements,id=138346,ilevel=905",
-          "shoulder": "pauldrons-of-shackled-elements,id=138348,ilevel=905",
-          "hands": "gauntlets-of-shackled-elements,id=138341,ilevel=905"
+          "back": "cloak_of_shackled_elements,id=138372,ilevel=905,enchant=binding_of_agility",
+          "head": "helm_of_shackled_elements,id=138343,ilevel=905",
+          "legs": "leggings_of_shackled_elements,id=138345,ilevel=905",
+          "chest": "raiment_of_shackled_elements,id=138346,ilevel=905",
+          "shoulder": "pauldrons_of_shackled_elements,id=138348,ilevel=905",
+          "hands": "gauntlets_of_shackled_elements,id=138341,ilevel=905"
       },
       "T20": {
-          "back": "drape-of-the-skybreaker,id=147176,ilevel=930,enchant=binding_of_agility",
-          "chest": "harness-of-the-skybreaker,id=147175,ilevel=930",
-          "head": "helmet-of-the-skybreaker,id=147178,ilevel=930",
-          "shoulder": "pauldrons-of-the-skybreaker,id=147180,ilevel=930",
-          "legs": "legguards-of-the-skybreaker,id=147179,ilevel=930",
-          "hands": "grips-of-the-skybreaker,id=147177,ilevel=930"
+          "back": "drape_of_the_skybreaker,id=147176,ilevel=930,enchant=binding_of_agility",
+          "chest": "harness_of_the_skybreaker,id=147175,ilevel=930",
+          "head": "helmet_of_the_skybreaker,id=147178,ilevel=930",
+          "shoulder": "pauldrons_of_the_skybreaker,id=147180,ilevel=930",
+          "legs": "legguards_of_the_skybreaker,id=147179,ilevel=930",
+          "hands": "grips_of_the_skybreaker,id=147177,ilevel=930"
       },
       "T21H": {
-        "shoulder": "pauldrons-of-venerated-spirits,id=152171,bonus_id=3611/1487",
-        "back": "drape-of-venerated-spirits,id=152167,bonus_id=3611/1487,enchant=binding_of_agility",
-        "chest": "robes-of-venerated-spirits,id=152166,bonus_id=3611/1487",
-        "legs": "leggings-of-venerated-spirits,id=152170,bonus_id=3611/1487",
-        "hands": "gloves-of-venerated-spirits,id=152168,bonus_id=3611/1487",
-        "head": "headdress-of-venerated-spirits,id=152169,bonus_id=3611/1487"
+        "shoulder": "pauldrons_of_venerated_spirits,id=152171,bonus_id=3611/1487",
+        "back": "drape_of_venerated_spirits,id=152167,bonus_id=3611/1487,enchant=binding_of_agility",
+        "chest": "robes_of_venerated_spirits,id=152166,bonus_id=3611/1487",
+        "legs": "leggings_of_venerated_spirits,id=152170,bonus_id=3611/1487",
+        "hands": "gloves_of_venerated_spirits,id=152168,bonus_id=3611/1487",
+        "head": "headdress_of_venerated_spirits,id=152169,bonus_id=3611/1487"
       },
       "T21": {
-          "shoulder": "pauldrons-of-venerated-spirits,id=152171,bonus_id=3612/1502",
-          "back": "drape-of-venerated-spirits,id=152167,bonus_id=3612/1502,enchant=binding_of_agility",
-          "chest": "robes-of-venerated-spirits,id=152166,bonus_id=3612/1502",
-          "legs": "leggings-of-venerated-spirits,id=152170,bonus_id=3612/1502",
-          "hands": "gloves-of-venerated-spirits,id=152168,bonus_id=3612/1502",
-          "head": "headdress-of-venerated-spirits,id=152169,bonus_id=3612/1502"
+          "shoulder": "pauldrons_of_venerated_spirits,id=152171,bonus_id=3612/1502",
+          "back": "drape_of_venerated_spirits,id=152167,bonus_id=3612/1502,enchant=binding_of_agility",
+          "chest": "robes_of_venerated_spirits,id=152166,bonus_id=3612/1502",
+          "legs": "leggings_of_venerated_spirits,id=152170,bonus_id=3612/1502",
+          "hands": "gloves_of_venerated_spirits,id=152168,bonus_id=3612/1502",
+          "head": "headdress_of_venerated_spirits,id=152169,bonus_id=3612/1502"
           
       }
   }
