@@ -9,18 +9,18 @@ crucible=1739:1778:1146/1739:1778:1146/1739:1778:1146
 spec=arms
 
 # No Set/Legendary Base
-head=helmet_of_the_hidden_sanctuary,id=152013,ilevel=945
-neck=riveted_choker_of_delirium,id=151966,ilevel=945,enchant=mark_of_the_trained_soldier
-shoulders=shoulderguards_of_indomitable_purpose,id=152416,ilevel=945
-back=drape_of_the_spirited_hunt,id=151938,ilevel=945,enchant=binding_of_strength
-chest=soultempered_chestplate,id=152017,ilevel=945
-wrists=vambraces_of_lifes_assurance,id=152023,ilevel=945
-hands=nascent_deathbringers_clutches,id=152686,ilevel=945
-waist=grondfather_girdle,id=152022,ilevel=945
-legs=cosmosculling_legplates,id=152016,ilevel=955
-feet=eredar_warcouncil_sabatons,id=152011,ilevel=945
-finger1=sullied_seal_of_the_pantheon,id=151972,ilevel=955,enchant=200mastery
-finger2=loop_of_the_lifebinder,id=152688,ilevel=945,enchant=200mastery
-trinket1=gorshalachs_legacy,id=152093,ilevel=945
-trinket2=amanthuls_vision,id=154172,ilevel=1000
-main_hand=stromkar_the_warbreaker,id=128910,gem_id=152293/152092/152054,relic_ilevel=955/945/955
+head=helmet_of_the_hidden_sanctuary,id=152013,bonus_id=3611/1487
+neck=riveted_choker_of_delirium,id=151966,bonus_id=3611/1487,enchant=mark_of_the_trained_soldier
+shoulders=shoulderguards_of_indomitable_purpose,id=152416,bonus_id=3611/1487
+back=drape_of_the_spirited_hunt,id=151938,bonus_id=3611/1487,enchant=binding_of_strength
+chest=soultempered_chestplate,id=152017,bonus_id=3611/1487
+wrists=vambraces_of_lifes_assurance,id=152023,bonus_id=3611/1487
+hands=nascent_deathbringers_clutches,id=152686,bonus_id=3611/1487
+waist=grondfather_girdle,id=152022,bonus_id=3611/1487
+legs=cosmosculling_legplates,id=152016,bonus_id=3611/1487
+feet=eredar_warcouncil_sabatons,id=152011,bonus_id=3611/1487
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_mastery
+finger2=loop_of_the_lifebinder,id=152688,bonus_id=3611/1487,enchant=binding_of_mastery
+trinket1=gorshalachs_legacy,id=152093,bonus_id=3611/1487
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
+main_hand=stromkar_the_warbreaker,id=128910,gem_id=152293/152092/152054,relic_id=3611:1497/3611:1487/3611:1497

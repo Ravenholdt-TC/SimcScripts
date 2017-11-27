@@ -17,44 +17,44 @@
         // Order the pieces from the best to the worst, if you have no clue then alphabetical
         "PR": {},
         "T19": {
-            "head": "hood_of_enveloped_dissonance,id=138331,ilevel=905",
-            "legs": "leggings_of_enveloped_dissonance,id=138334,ilevel=905",
-            "chest": "tunic_of_enveloped_dissonance,id=138325,ilevel=905",
-            "shoulder": "pauldrons_of_enveloped_dissonance,id=138337,ilevel=905",
-            "hands": "hood_of_enveloped_dissonance,id=138331,ilevel=905",
-            "back": "cloak_of_enveloped_dissonance,id=138367,ilevel=905,enchant=binding_of_agility"
+            "head": "hood_of_enveloped_dissonance,id=138331,bonus_id=3519",
+            "legs": "leggings_of_enveloped_dissonance,id=138334,bonus_id=3519",
+            "chest": "tunic_of_enveloped_dissonance,id=138325,bonus_id=3519",
+            "shoulder": "pauldrons_of_enveloped_dissonance,id=138337,bonus_id=3519",
+            "hands": "hood_of_enveloped_dissonance,id=138331,bonus_id=3519",
+            "back": "cloak_of_enveloped_dissonance,id=138367,bonus_id=3519,enchant=binding_of_agility"
         },
         "T20H": {
-            "hands": "xuens_gauntlets,id=147153,ilevel=915",
-            "head": "xuens_helm,id=147154,ilevel=915",
-            "back": "xuens_cloak,id=147152,ilevel=915,enchant=binding_of_agility",
-            "shoulder": "xuens_shoulderguards,id=147156,ilevel=915",
-            "legs": "xuens_legguards,id=147155,ilevel=915",
-            "chest": "xuens_tunic,id=147151,ilevel=915"
+            "hands": "xuens_gauntlets,id=147153,bonus_id=1497/3562",
+            "head": "xuens_helm,id=147154,bonus_id=1497/3562",
+            "back": "xuens_cloak,id=147152,bonus_id=1497/3562,enchant=binding_of_agility",
+            "shoulder": "xuens_shoulderguards,id=147156,bonus_id=1497/3562",
+            "legs": "xuens_legguards,id=147155,bonus_id=1497/3562",
+            "chest": "xuens_tunic,id=147151,bonus_id=1497/3562"
         },
         "T20": {
-            "hands": "xuens_gauntlets,id=147153,ilevel=930",
-            "head": "xuens_helm,id=147154,ilevel=930",
-            "back": "xuens_cloak,id=147152,ilevel=930,enchant=binding_of_agility",
-            "shoulder": "xuens_shoulderguards,id=147156,ilevel=930",
-            "legs": "xuens_legguards,id=147155,ilevel=930",
-            "chest": "xuens_tunic,id=147151,ilevel=930"
+            "hands": "xuens_gauntlets,id=147153,bonus_id=1512/3563",
+            "head": "xuens_helm,id=147154,bonus_id=1512/3563",
+            "back": "xuens_cloak,id=147152,bonus_id=1512/3563,enchant=binding_of_agility",
+            "shoulder": "xuens_shoulderguards,id=147156,bonus_id=1512/3563",
+            "legs": "xuens_legguards,id=147155,bonus_id=1512/3563",
+            "chest": "xuens_tunic,id=147151,bonus_id=1512/3563"
         },
         "T21H": {
-            "legs": "leggings_of_chiji,id=152146,ilevel=945",
-            "back": "cloak_of_chiji,id=152143,ilevel=945,enchant=binding_of_agility",
-            "hands": "grips_of_chiji,id=152144,ilevel=945",
-            "shoulder": "meditation_spheres_of_chiji,id=152147,ilevel=945",
-            "chest": "tunic_of_chiji,id=152142,ilevel=945",
-            "head": "douli_of_chiji,id=152145,ilevel=945"
+            "legs": "leggings_of_chiji,id=152146,bonus_id=3611/1487",
+            "back": "cloak_of_chiji,id=152143,bonus_id=3611/1487,enchant=binding_of_agility",
+            "hands": "grips_of_chiji,id=152144,bonus_id=3611/1487",
+            "shoulder": "meditation_spheres_of_chiji,id=152147,bonus_id=3611/1487",
+            "chest": "tunic_of_chiji,id=152142,bonus_id=3611/1487",
+            "head": "douli_of_chiji,id=152145,bonus_id=3611/1487"
         },
         "T21": {
-            "legs": "leggings_of_chiji,id=152146,ilevel=960",
-            "back": "cloak_of_chiji,id=152143,ilevel=960,enchant=binding_of_agility",
-            "hands": "grips_of_chiji,id=152144,ilevel=960",
-            "shoulder": "meditation_spheres_of_chiji,id=152147,ilevel=960",
-            "chest": "tunic_of_chiji,id=152142,ilevel=960",
-            "head": "douli_of_chiji,id=152145,ilevel=960"
+            "legs": "leggings_of_chiji,id=152146,bonus_id=3612/1502",
+            "back": "cloak_of_chiji,id=152143,bonus_id=3612/1502,enchant=binding_of_agility",
+            "hands": "grips_of_chiji,id=152144,bonus_id=3612/1502",
+            "shoulder": "meditation_spheres_of_chiji,id=152147,bonus_id=3612/1502",
+            "chest": "tunic_of_chiji,id=152142,bonus_id=3612/1502",
+            "head": "douli_of_chiji,id=152145,bonus_id=3612/1502"
         }
     }
 }

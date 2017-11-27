@@ -2,12 +2,12 @@
     "legendaries": {
         "havoc": {
             "head": {"Head": "raddons_cascading_eyes,id=137061,bonus_id=3630"},
-            "shoulder": {"Mantle": "delusions_of_grandeur,id=144279,bonus_id=3630"},
+            "shoulder": {"Shoulder": "delusions_of_grandeur,id=144279,bonus_id=3630"},
             "back": {"Back": "chaos_theory,id=151798,bonus_id=3630"},
             "waist": {"Cinidaria": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
             "feet": {"Boots": "loramus_thalipedes_sacrifice,id=137022,bonus_id=3630"},
             "wrists": {"Bracers": "moarg_bionic_stabilizers,id=137090,bonus_id=3630"},
-            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200critical_strike,enchant=binding_of_critical_strike",
+            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200critical_strike,enchant=binding_of_critical_strike",
                         "Ring": "anger_of_the_half_giants,id=137038,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
                         "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike"},
@@ -18,20 +18,20 @@
         // Order the pieces from the best to the worst, if you have no clue then alphabetical
         "PR": {},
         "T19": {
-            "back": "cape_of_second_sight,id=138375,ilevel=905,enchant=binding_of_agility",
-            "chest": "tunic_of_second_sight,id=138376,ilevel=905",
-            "hands": "gloves_of_second_sight,id=138377,ilevel=905",
-            "head": "mask_of_second_sight,id=138378,ilevel=905",
-            "legs": "legwraps_of_second_sight,id=138379,ilevel=905",
-            "shoulder": "shoulderguards_of_second_sight,id=138380,ilevel=905"
+            "back": "cape_of_second_sight,id=138375,bonus_id=3519,enchant=binding_of_agility",
+            "chest": "tunic_of_second_sight,id=138376,bonus_id=3519",
+            "hands": "gloves_of_second_sight,id=138377,bonus_id=3519",
+            "head": "mask_of_second_sight,id=138378,bonus_id=3519",
+            "legs": "legwraps_of_second_sight,id=138379,bonus_id=3519",
+            "shoulder": "shoulderguards_of_second_sight,id=138380,bonus_id=3519"
         },
         "T20H": {
-            "back": "demonbane_shroud,id=147128,ilevel=915,enchant=binding_of_agility",
-            "chest": "demonbane_harness,id=147127,ilevel=915",
-            "hands": "demonbane_gauntlets,id=147129,ilevel=915",
-            "legs": "demonbane_leggings,id=147131,ilevel=915",
-            "head": "demonbane_faceguard,id=147130,ilevel=915",
-            "shoulder": "demonbane_shoulderpads,id=147132,ilevel=915"
+            "back": "demonbane_shroud,id=147128,bonus_id=1497/3562,enchant=binding_of_agility",
+            "chest": "demonbane_harness,id=147127,bonus_id=1497/3562",
+            "hands": "demonbane_gauntlets,id=147129,bonus_id=1497/3562",
+            "legs": "demonbane_leggings,id=147131,bonus_id=1497/3562",
+            "head": "demonbane_faceguard,id=147130,bonus_id=1497/3562",
+            "shoulder": "demonbane_shoulderpads,id=147132,bonus_id=1497/3562"
         },
         "T20": {
             "back": "demonbane_shroud,id=147128,bonus_id=3611/1487,enchant=binding_of_agility",

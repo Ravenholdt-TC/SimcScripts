@@ -1,49 +1,49 @@
 {
   "legendaries": {
       "marksmanship": {
-          "back": {"Cloak": "celerity_of_the_windrunners,id=151803,bonus_id=3570,ilevel=1000,enchant=binding_of_agility"},
-          "hands": {"Hands": "mkii_gyroscopic_stabilizer,id=144303,bonus_id=3570,ilevel=1000"},
-          "feet": {"Boots": "ullrs_feather_snowshoes,id=137033,bonus_id=3570,ilevel=1000"},
-          "finger1": {"Soul": "soul_of_the_huntmaster,id=151641,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery",
-                      "Zevrim": "zevrims_hunger,id=137055,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200mastery,enchant=binding_of_mastery"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
+          "back": {"Cloak": "celerity_of_the_windrunners,id=151803,bonus_id=3570,bonus_id=4213,enchant=binding_of_agility"},
+          "hands": {"Hands": "mkii_gyroscopic_stabilizer,id=144303,bonus_id=3570,bonus_id=4213"},
+          "feet": {"Boots": "ullrs_feather_snowshoes,id=137033,bonus_id=3570,bonus_id=4213"},
+          "finger1": {"Soul": "soul_of_the_huntmaster,id=151641,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
+                      "Zevrim": "zevrims_hunger,id=137055,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
       }
   },
   "sets": {
       // Order the pieces from the best to the worst, if you have no clue then alphabetical
       "PR": {},
       "T19": {
-          "back": "eagletalon_cloak,id=138368,ilevel=905,enchant=binding_of_agility",
-          "head": "eagletalon_cowl,id=138342,ilevel=905",
-          "legs": "eagletalon_legchains,id=138344,ilevel=905",
-          "chest": "eagletalon_tunic,id=138339,ilevel=905",
-          "hands": "eagletalon_gauntlets,id=138340,ilevel=905",
-          "shoulder": "eagletalon_spaulders,id=138347,ilevel=905"
+          "back": "eagletalon_cloak,id=138368,bonus_id=3519,enchant=binding_of_agility",
+          "head": "eagletalon_cowl,id=138342,bonus_id=3519",
+          "legs": "eagletalon_legchains,id=138344,bonus_id=3519",
+          "chest": "eagletalon_tunic,id=138339,bonus_id=3519",
+          "hands": "eagletalon_gauntlets,id=138340,bonus_id=3519",
+          "shoulder": "eagletalon_spaulders,id=138347,bonus_id=3519"
       },
       "T20": {
-          "head": "wildstalker_helmet,id=147142,ilevel=930",
-          "chest": "wildstalker_chestguard,id=147139,ilevel=930",
-          "hands": "wildstalker_gauntlets,id=147141,ilevel=930",
-          "back": "wildstalker_cape,id=147140,ilevel=930,enchant=binding_of_agility",
-          "legs": "wildstalker_leggings,id=147143,ilevel=930",
-          "shoulder": "wildstalker_spaulders,id=147144,ilevel=930"
+          "head": "wildstalker_helmet,id=147142,bonus_id=1512/3563",
+          "chest": "wildstalker_chestguard,id=147139,bonus_id=1512/3563",
+          "hands": "wildstalker_gauntlets,id=147141,bonus_id=1512/3563",
+          "back": "wildstalker_cape,id=147140,bonus_id=1512/3563,enchant=binding_of_agility",
+          "legs": "wildstalker_leggings,id=147143,bonus_id=1512/3563",
+          "shoulder": "wildstalker_spaulders,id=147144,bonus_id=1512/3563"
       },
       "T21H": {
-        "shoulder": "serpentstalker_mantle,id=152135,ilevel=945",
-        "legs": "serpentstalker_legguards,id=152134,ilevel=945",
-        "head": "serpentstalker_helmet,id=152133,ilevel=945",
-        "hands": "serpentstalker_grips,id=152132,ilevel=945",
-        "chest": "serpentstalker_tunic,id=152130,ilevel=945",
-        "back": "serpentstalker_drape,id=152131,ilevel=945,enchant=binding_of_agility"
+        "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487",
+        "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487",
+        "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
+        "hands": "serpentstalker_grips,id=152132,bonus_id=3611/1487",
+        "chest": "serpentstalker_tunic,id=152130,bonus_id=3611/1487",
+        "back": "serpentstalker_drape,id=152131,bonus_id=3611/1487,enchant=binding_of_agility"
       },
       "T21": {
-          "shoulder": "serpentstalker_mantle,id=152135,ilevel=960",
-          "legs": "serpentstalker_legguards,id=152134,ilevel=960",
-          "head": "serpentstalker_helmet,id=152133,ilevel=960",
-          "hands": "serpentstalker_grips,id=152132,ilevel=960",
-          "chest": "serpentstalker_tunic,id=152130,ilevel=960",
-          "back": "serpentstalker_drape,id=152131,ilevel=960,enchant=binding_of_agility"
+          "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3612/1502",
+          "legs": "serpentstalker_legguards,id=152134,bonus_id=3612/1502",
+          "head": "serpentstalker_helmet,id=152133,bonus_id=3612/1502",
+          "hands": "serpentstalker_grips,id=152132,bonus_id=3612/1502",
+          "chest": "serpentstalker_tunic,id=152130,bonus_id=3612/1502",
+          "back": "serpentstalker_drape,id=152131,bonus_id=3612/1502,enchant=binding_of_agility"
       }
   }
 }

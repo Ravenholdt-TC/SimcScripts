@@ -1,36 +1,36 @@
 {
   "legendaries": {
       "destruction": {
-          "shoulder": {"Shoulder": "lessons_of_space_time,id=144369,bonus_id=3570,ilevel=1000"},
-          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3570,ilevel=1000"},
-        //   "back": {"Cloak": "odr_shawl_of_the_ymirjar,id=132375,bonus_id=3570,ilevel=1000,enchant=binding_of_intellect"},
-          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3570,ilevel=1000"},
-          "waist": {"Waist": "feretory_of_souls,id=132456,bonus_id=3570,ilevel=1000"},
-          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                    //   "Ring": "alythesss_pyrogenics,id=132460,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
+          "shoulder": {"Shoulder": "lessons_of_space_time,id=144369,bonus_id=3570,bonus_id=4213"},
+          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3570,bonus_id=4213"},
+        //   "back": {"Cloak": "odr_shawl_of_the_ymirjar,id=132375,bonus_id=3570,bonus_id=4213,enchant=binding_of_intellect"},
+          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3570,bonus_id=4213"},
+          "waist": {"Waist": "feretory_of_souls,id=132456,bonus_id=3570,bonus_id=4213"},
+          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                    //   "Ring": "alythesss_pyrogenics,id=132460,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
       }
   },
   "sets": {
       // Order the pieces from the best to the worst, if you have no clue then alphabetical
       "PR": {},
       "T19": {
-          "back": "cloak_of_azjaqir,id=138373,ilevel=905,enchant=binding_of_intellect",
-          "shoulder": "pauldrons_of_azjaqir,id=138323,ilevel=905",
-          "chest": "finery_of_azjaqir,id=138320,ilevel=905",
-          "legs": "leggings_of_azjaqir,id=138317,ilevel=905",
-          "head": "eyes_of_azjaqir,id=138314,ilevel=905",
-          "hands": "clutch_of_azjaqir,id=138311,ilevel=905"
+          "back": "cloak_of_azjaqir,id=138373,bonus_id=3519,enchant=binding_of_intellect",
+          "shoulder": "pauldrons_of_azjaqir,id=138323,bonus_id=3519",
+          "chest": "finery_of_azjaqir,id=138320,bonus_id=3519",
+          "legs": "leggings_of_azjaqir,id=138317,bonus_id=3519",
+          "head": "eyes_of_azjaqir,id=138314,bonus_id=3519",
+          "hands": "clutch_of_azjaqir,id=138311,bonus_id=3519"
       },
       "T20": {
-          "back": "diabolic_shroud,id=147181,ilevel=930,enchant=binding_of_intellect",
-          "chest": "diabolic_robe,id=147185,ilevel=930",
-          "legs": "diabolic_leggings,id=147184,ilevel=930",
-          "head": "diabolic_helm,id=147183,ilevel=930",
-          "shoulder": "diabolic_mantle,id=147186,ilevel=930",
-          "hands": "diabolic_gloves,id=147182,ilevel=930"
+          "back": "diabolic_shroud,id=147181,bonus_id=1512/3563,enchant=binding_of_intellect",
+          "chest": "diabolic_robe,id=147185,bonus_id=1512/3563",
+          "legs": "diabolic_leggings,id=147184,bonus_id=1512/3563",
+          "head": "diabolic_helm,id=147183,bonus_id=1512/3563",
+          "shoulder": "diabolic_mantle,id=147186,bonus_id=1512/3563",
+          "hands": "diabolic_gloves,id=147182,bonus_id=1512/3563"
       },
       "T21H": {
         "head": "grim_inquisitors_death_mask,id=152174,bonus_id=3611/1487",

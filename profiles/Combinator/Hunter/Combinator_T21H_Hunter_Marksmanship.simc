@@ -21,6 +21,6 @@ legs=legguards_of_numbing_gloom,id=152003,bonus_id=3611/1487
 feet=greatboots_of_the_searing_tempest,id=152684,bonus_id=3611/1487
 finger1=loop_of_the_lifebinder,id=152688,bonus_id=3611/1487,enchant=binding_of_mastery
 finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_mastery
-trinket1=amanthuls_vision,id=154172,ilevel=1000
+trinket1=amanthuls_vision,id=154172,bonus_id=4213
 trinket2=tarnished_sentinel_medallion,id=147017,bonus_id=1512/3563
 main_hand=thasdorah_legacy_of_the_windrunners,id=128826,gem_id=155853/155847/152291,relic_id=3611:1497/3611:1497/3611:1487

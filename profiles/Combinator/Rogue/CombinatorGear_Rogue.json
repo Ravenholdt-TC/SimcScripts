@@ -42,20 +42,20 @@
         // Order the pieces from the best to the worst, if you have no clue then alphabetical
         "PR": {},
         "T19": {
-            "back": "doomblade_shadowwrap,id=138371,ilevel=905,enchant=binding_of_agility",
-            "head": "doomblade_cowl,id=138332,ilevel=905",
-            "legs": "doomblade_pants,id=138335,ilevel=905",
-            "chest": "doomblade_tunic,id=138326,ilevel=905",
-            "hands": "doomblade_gauntlets,id=138329,ilevel=905",
-            "shoulder": "doomblade_spaulders,id=138338,ilevel=905"
+            "back": "doomblade_shadowwrap,id=138371,bonus_id=3519,enchant=binding_of_agility",
+            "head": "doomblade_cowl,id=138332,bonus_id=3519",
+            "legs": "doomblade_pants,id=138335,bonus_id=3519",
+            "chest": "doomblade_tunic,id=138326,bonus_id=3519",
+            "hands": "doomblade_gauntlets,id=138329,bonus_id=3519",
+            "shoulder": "doomblade_spaulders,id=138338,bonus_id=3519"
         },
         "T20H": {
-            "chest": "fanged_slayers_chestguard,id=147169,ilevel=915",
-            "hands": "fanged_slayers_handguards,id=147171,ilevel=915",
-            "head": "fanged_slayers_helm,id=147172,ilevel=915",
-            "back": "fanged_slayers_shroud,id=147170,ilevel=915,enchant=binding_of_agility",
-            "legs": "fanged_slayers_legguards,id=147173,ilevel=915",
-            "shoulder": "fanged_slayers_shoulderpads,id=147174,ilevel=915"
+            "chest": "fanged_slayers_chestguard,id=147169,bonus_id=1497/3562",
+            "hands": "fanged_slayers_handguards,id=147171,bonus_id=1497/3562",
+            "head": "fanged_slayers_helm,id=147172,bonus_id=1497/3562",
+            "back": "fanged_slayers_shroud,id=147170,bonus_id=1497/3562,enchant=binding_of_agility",
+            "legs": "fanged_slayers_legguards,id=147173,bonus_id=1497/3562",
+            "shoulder": "fanged_slayers_shoulderpads,id=147174,bonus_id=1497/3562"
         },
         "T20": {
             "chest": "fanged_slayers_chestguard,id=147169,bonus_id=1512/3563",

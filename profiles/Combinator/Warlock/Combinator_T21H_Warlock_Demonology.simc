@@ -10,19 +10,19 @@ spec=demonology
 default_pet=felguard
 
 # No Set/Legendary Base
-head=soulhunters_cowl,id=151944,ilevel=945
-neck=riveted_choker_of_delirium,id=151966,ilevel=945,enchant_id=5437
-shoulders=fallen_avengers_amice,id=151950,ilevel=945
-back=greatcloak_of_the_dark_pantheon,id=152062,ilevel=945
-chest=gambeson_of_sargeras_corruption,id=152679,ilevel=955
-wrists=blooddrenched_bindings,id=151954,ilevel=945
-hands=aranasi_shadowweavers_gloves,id=151941,ilevel=945
-waist=cord_of_surging_hysteria,id=151942,ilevel=945
-legs=fervent_twilight_legwraps,id=151946,ilevel=945
-feet=lady_dacidions_silk_slippers,id=151945,ilevel=945
-finger1=zealous_tormentors_ring,id=152284,ilevel=945,enchant_id=5428
-finger2=loop_of_the_lifebinder,id=152688,ilevel=945,enchant_id=5428
-trinket1=acrid_catalyst_injector,id=151955,ilevel=945
-trinket2=amanthuls_vision,id=154172,ilevel=1000
+head=soulhunters_cowl,id=151944,bonus_id=3611/1487
+neck=riveted_choker_of_delirium,id=151966,bonus_id=3611/1487,enchant_id=5437
+shoulders=fallen_avengers_amice,id=151950,bonus_id=3611/1487
+back=greatcloak_of_the_dark_pantheon,id=152062,bonus_id=3611/1487
+chest=gambeson_of_sargeras_corruption,id=152679,bonus_id=3611/1487
+wrists=blooddrenched_bindings,id=151954,bonus_id=3611/1487
+hands=aranasi_shadowweavers_gloves,id=151941,bonus_id=3611/1487
+waist=cord_of_surging_hysteria,id=151942,bonus_id=3611/1487
+legs=fervent_twilight_legwraps,id=151946,bonus_id=3611/1487
+feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3611/1487
+finger1=zealous_tormentors_ring,id=152284,bonus_id=3611/1487,enchant_id=5428
+finger2=loop_of_the_lifebinder,id=152688,bonus_id=3611/1487,enchant_id=5428
+trinket1=acrid_catalyst_injector,id=151955,bonus_id=3611/1487
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=spine_of_thalkiel,id=137246,gem_id=0/0/0/0,relic_id=0/0
-off_hand=skull_of_the_manari,id=128943,bonus_id=748,gem_id=152056/155849/152031,relic_ilevel=945/955/945
+off_hand=skull_of_the_manari,id=128943,bonus_id=748,gem_id=152056/155849/152031,relic_id=3611:1487/3611:1497/3611:1487

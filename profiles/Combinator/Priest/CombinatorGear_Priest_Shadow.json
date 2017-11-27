@@ -1,38 +1,38 @@
 {
   "legendaries": {
       "shadow": {
-          "head": {"Head": "zenkaram_iridis_anadem,id=133971,bonus_id=3570,ilevel=1000"},
-          "shoulder": {"Mantle": "mother_shahrazs_seduction,id=132437,bonus_id=3570,ilevel=1000"},
-          "chest": {"Chest": "heart_of_the_void,id=151814,bonus_id=3570,ilevel=1000"},
-          "wrists": {"Wrists": "anunds_seared_shackles,id=132409,bonus_id=3570,ilevel=1000"},
-          "back": {"Back": "zeks_exterminatus,id=144438,bonus_id=3570,ilevel=1000"},
-          "waist": {"Waist": "mangazas_madness,id=132864,bonus_id=3570,ilevel=1000"},
-          "legs": {"Legs": "mystic_kilt_of_the_rune_master,id=132451,bonus_id=3570,ilevel=1000"},
-          "finger1": {"Soul": "soul_of_the_high_priest,id=151646,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Ring": "the_twins_painful_touch,id=133973,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,ilevel=1000,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,ilevel=1000"}
+          "head": {"Head": "zenkaram_iridis_anadem,id=133971,bonus_id=3570,bonus_id=4213"},
+          "shoulder": {"Shoulder": "mother_shahrazs_seduction,id=132437,bonus_id=3570,bonus_id=4213"},
+          "chest": {"Chest": "heart_of_the_void,id=151814,bonus_id=3570,bonus_id=4213"},
+          "wrists": {"Wrists": "anunds_seared_shackles,id=132409,bonus_id=3570,bonus_id=4213"},
+          "back": {"Back": "zeks_exterminatus,id=144438,bonus_id=3570,bonus_id=4213"},
+          "waist": {"Waist": "mangazas_madness,id=132864,bonus_id=3570,bonus_id=4213"},
+          "legs": {"Legs": "mystic_kilt_of_the_rune_master,id=132451,bonus_id=3570,bonus_id=4213"},
+          "finger1": {"Soul": "soul_of_the_high_priest,id=151646,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                      "Ring": "the_twins_painful_touch,id=133973,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
       }
   },
   "sets": {
       // Order the pieces from the best to the worst, if you have no clue then alphabetical
       "PR": {},
       "T19": {
-          "back": "purifiers_drape,id=138370,ilevel=905,enchant=binding_of_intellect",
-          "hands": "purifiers_gloves,id=138310,ilevel=905",
-          "head": "purifiers_gorget,id=138313,ilevel=905",
-          "shoulder": "purifiers_mantle,id=138322,ilevel=905",
-          "chest": "purifiers_cassock,id=138319,ilevel=905",
-          "legs": "purifiers_leggings,id=138316,ilevel=905"
+          "back": "purifiers_drape,id=138370,bonus_id=3519,enchant=binding_of_intellect",
+          "hands": "purifiers_gloves,id=138310,bonus_id=3519",
+          "head": "purifiers_gorget,id=138313,bonus_id=3519",
+          "shoulder": "purifiers_mantle,id=138322,bonus_id=3519",
+          "chest": "purifiers_cassock,id=138319,bonus_id=3519",
+          "legs": "purifiers_leggings,id=138316,bonus_id=3519"
       },
       "T20": {
-            "head": "hood_of_blind_absolution,id=147165,ilevel=930",
-            "back": "shawl_of_blind_absolution,id=147163,ilevel=930,enchant=binding_of_intellect",
-            "chest": "robes_of_blind_absolution,id=147167,ilevel=930",
-            "legs": "leggings_of_blind_absolution,id=147166,ilevel=930",
-            "hands": "gloves_of_blind_absolution,id=147164,ilevel=930",
-            "shoulder": "mantle_of_blind_absolution,id=147168,ilevel=930"
+            "head": "hood_of_blind_absolution,id=147165,bonus_id=1512/3563",
+            "back": "shawl_of_blind_absolution,id=147163,bonus_id=1512/3563,enchant=binding_of_intellect",
+            "chest": "robes_of_blind_absolution,id=147167,bonus_id=1512/3563",
+            "legs": "leggings_of_blind_absolution,id=147166,bonus_id=1512/3563",
+            "hands": "gloves_of_blind_absolution,id=147164,bonus_id=1512/3563",
+            "shoulder": "mantle_of_blind_absolution,id=147168,bonus_id=1512/3563"
       },
       "T21H": {
         "head": "gilded_seraphs_crown,id=152156,bonus_id=3611/1487",

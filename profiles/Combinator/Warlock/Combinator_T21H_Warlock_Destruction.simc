@@ -10,18 +10,18 @@ spec=destruction
 default_pet=imp
 
 # No Set/Legendary Base
-head=crown_of_relentless_annihilation,id=151943,ilevel=945
-neck=chain_of_the_unmaker,id=152283,ilevel=955
-shoulders=corrupted_mantle_of_the_felseekers,id=153018,ilevel=945
-back=cloak_of_the_burning_vanguard,id=151937,ilevel=945
-chest=gambeson_of_sargeras_corruption,id=152679,ilevel=955
-wrists=cuffs_of_the_viridian_flameweavers,id=152085,ilevel=945
-hands=handwraps_of_inevitable_doom,id=152680,ilevel=955
-waist=enhanced_worldscorcher_cinch,id=151951,ilevel=945
-legs=subjugated_drudges_leggings,id=152352,ilevel=945
-feet=lady_dacidions_silk_slippers,id=151945,ilevel=945
-finger1=zealous_tormentors_ring,id=152284,ilevel=945,enchant=binding_of_haste
-finger2=band_of_the_sargerite_smith,id=152064,ilevel=945,enchant=binding_of_haste
-trinket1=acrid_catalyst_injector,id=151955,ilevel=945
-trinket2=amanthuls_vision,id=154172,ilevel=1000
+head=crown_of_relentless_annihilation,id=151943,bonus_id=3611/1487
+neck=chain_of_the_unmaker,id=152283,bonus_id=3611/1487
+shoulders=corrupted_mantle_of_the_felseekers,id=153018,bonus_id=3611/1487
+back=cloak_of_the_burning_vanguard,id=151937,bonus_id=3611/1487
+chest=gambeson_of_sargeras_corruption,id=152679,bonus_id=3611/1487
+wrists=cuffs_of_the_viridian_flameweavers,id=152085,bonus_id=3611/1487
+hands=handwraps_of_inevitable_doom,id=152680,bonus_id=3611/1487
+waist=enhanced_worldscorcher_cinch,id=151951,bonus_id=3611/1487
+legs=subjugated_drudges_leggings,id=152352,bonus_id=3611/1487
+feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3611/1487
+finger1=zealous_tormentors_ring,id=152284,bonus_id=3611/1487,enchant=binding_of_haste
+finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3611/1487,enchant=binding_of_haste
+trinket1=acrid_catalyst_injector,id=151955,bonus_id=3611/1487
+trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=scepter_of_sargeras,id=128941,gem_id=152031/155849/152031,relic_ilevel=945/955/945
