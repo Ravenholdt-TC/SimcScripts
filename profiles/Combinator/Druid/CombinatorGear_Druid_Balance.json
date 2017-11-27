@@ -1,17 +1,17 @@
 {
     "legendaries": {
         "balance": {
-            "head": {"Head": "the_emerald_dreamcatcher,id=137062,bonus_id=3570,bonus_id=4213"},
-            "shoulder": {"Shoulder": "lady_and_the_child,id=144295,bonus_id=3570,bonus_id=4213"},
-            "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3570,bonus_id=4213"},
-            "feet": {"Boots": "promise_of_elune_the_moon_goddess,id=137023,bonus_id=3570,bonus_id=4213"},
-            "wrists": {"Bracers": "oneths_intuition,id=137092,bonus_id=3570,bonus_id=4213"},
-            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                        "Ring": "impeccable_fel_essence,id=137039,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                        "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery"},
-            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"},
-            "back": {"Cloak": "radiant_moonlight,id=151800,bonus_id=3570,bonus_id=4213,enchant=binding_of_intellect"}
+            "head": {"Head": "the_emerald_dreamcatcher,id=137062,bonus_id=3630"},
+            "shoulder": {"Shoulder": "lady_and_the_child,id=144295,bonus_id=3630"},
+            "waist": {"Belt": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
+            "feet": {"Boots": "promise_of_elune_the_moon_goddess,id=137023,bonus_id=3630"},
+            "wrists": {"Bracers": "oneths_intuition,id=137092,bonus_id=3630"},
+            "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                        "Ring": "impeccable_fel_essence,id=137039,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                        "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery"},
+            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
+            "back": {"Cloak": "radiant_moonlight,id=151800,bonus_id=3630,enchant=binding_of_intellect"}
         }
     },
     "sets": {

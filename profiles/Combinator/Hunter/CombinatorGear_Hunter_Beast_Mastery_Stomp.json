@@ -1,15 +1,15 @@
 {
   "legendaries": {
       "beast_mastery": {
-          "shoulder": {"Mantle": "the_mantle_of_command,id=144326,bonus_id=3570,bonus_id=4213"},
-          "chest": {"Chest": "parsels_tongue,id=151805,bonus_id=3570,bonus_id=4213"},
-          "wrists": {"Bracers": "call_of_the_wild,id=137101,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Belt": "roar_of_the_seven_lions,id=137080,bonus_id=3570,bonus_id=4213"},
-          "feet": {"Boots": "qapla_eredun_war_order,id=137227,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Apex": "the_apex_predators_claw,id=137382,bonus_id=3570,bonus_id=4213,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3570,bonus_id=4213,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200critical_strike,enchant=binding_of_critical_strike"}
+          "shoulder": {"Mantle": "the_mantle_of_command,id=144326,bonus_id=3630"},
+          "chest": {"Chest": "parsels_tongue,id=151805,bonus_id=3630"},
+          "wrists": {"Bracers": "call_of_the_wild,id=137101,bonus_id=3630"},
+          "waist": {"Belt": "roar_of_the_seven_lions,id=137080,bonus_id=3630"},
+          "feet": {"Boots": "qapla_eredun_war_order,id=137227,bonus_id=3630"},
+          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                      "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                      "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike"}
       }
   },
   "sets": {

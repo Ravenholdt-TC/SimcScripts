@@ -1,17 +1,17 @@
 {
   "legendaries": {
       "affliction": {
-          "head": {"Head": "hood_of_eternal_disdain,id=132394,bonus_id=3570,bonus_id=4213"},
-          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3570,bonus_id=4213"},
-          "back": {"Cloak": "reap_and_sow,id=144364,bonus_id=3570,bonus_id=4213,enchant=binding_of_intellect"},
-          "wrists": {"Wrists": "stretens_sleepless_shackles,id=132381,bonus_id=3570,bonus_id=4213"},
-                    //  "Sindorei": "sindorei_spite,id=132379,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Waist": "power_cord_of_lethtendris,id=132457,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                      "Ring": "sacrolashs_dark_strike,id=132378,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery"}
-        //   "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "head": {"Head": "hood_of_eternal_disdain,id=132394,bonus_id=3630"},
+          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3630"},
+          "back": {"Cloak": "reap_and_sow,id=144364,bonus_id=3630,enchant=binding_of_intellect"},
+          "wrists": {"Wrists": "stretens_sleepless_shackles,id=132381,bonus_id=3630"},
+                    //  "Sindorei": "sindorei_spite,id=132379,bonus_id=3630"},
+          "waist": {"Waist": "power_cord_of_lethtendris,id=132457,bonus_id=3630"},
+          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                      "Ring": "sacrolashs_dark_strike,id=132378,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery"}
+        //   "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {

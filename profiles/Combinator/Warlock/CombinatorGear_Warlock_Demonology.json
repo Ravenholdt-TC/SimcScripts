@@ -1,16 +1,16 @@
 {
   "legendaries": {
       "demonology": {
-          "head": {"Head": "wakeners_loyalty,id=144385,bonus_id=3570,bonus_id=4213"},
-          "shoulder": {"Shoulder": "recurrent_ritual,id=132393,bonus_id=3570,bonus_id=4213"},
-          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3570,bonus_id=4213"},
-          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Waist": "kazzaks_final_curse,id=132374,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Ring": "wilfreds_sigil_of_superior_summoning,id=132369,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"}
-        //   "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "head": {"Head": "wakeners_loyalty,id=144385,bonus_id=3630"},
+          "shoulder": {"Shoulder": "recurrent_ritual,id=132393,bonus_id=3630"},
+          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3630"},
+          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3630"},
+          "waist": {"Waist": "kazzaks_final_curse,id=132374,bonus_id=3630"},
+          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Ring": "wilfreds_sigil_of_superior_summoning,id=132369,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"}
+        //   "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {

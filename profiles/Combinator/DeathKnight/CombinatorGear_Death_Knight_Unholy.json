@@ -1,15 +1,15 @@
 {
     "legendaries": {
         "unholy": {
-            "head": {"Head": "death_march,id=144280,bonus_id=3570,bonus_id=4213"},
-            "shoulder": {"Shoulder": "taktheritrixs_shoulderpads,id=137075,bonus_id=3570,bonus_id=4213"},
-            "waist": {"Belt": "draugr_girdle_of_the_everlasting_king,id=132441,bonus_id=3570,bonus_id=4213"},
-            "wrists": {"Wrists": "the_instructors_fourth_lesson,id=132448,bonus_id=3570,bonus_id=4213"},
-            "chest": {"Chest": "cold_heart,id=151796,bonus_id=3570,bonus_id=4213"},
-            "finger1": {"Uvanimor": "uvanimor_the_unbeautiful,id=137037,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                        "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200mastery,enchant=binding_of_mastery"},
-            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+            "head": {"Head": "death_march,id=144280,bonus_id=3630"},
+            "shoulder": {"Shoulder": "taktheritrixs_shoulderpads,id=137075,bonus_id=3630"},
+            "waist": {"Belt": "draugr_girdle_of_the_everlasting_king,id=132441,bonus_id=3630"},
+            "wrists": {"Wrists": "the_instructors_fourth_lesson,id=132448,bonus_id=3630"},
+            "chest": {"Chest": "cold_heart,id=151796,bonus_id=3630"},
+            "finger1": {"Uvanimor": "uvanimor_the_unbeautiful,id=137037,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                        "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200mastery,enchant=binding_of_mastery"},
+            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
         }
     },
     "sets": {

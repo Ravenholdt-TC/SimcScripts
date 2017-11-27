@@ -1,14 +1,14 @@
 {
     "legendaries": {
         "retribution": {
-            "shoulder": {"Shoulder": "ashes_to_dust,id=144358,bonus_id=3570,bonus_id=4213"},
-            "waist": {"Belt": "chain_of_thrayn,id=137086,bonus_id=3570,bonus_id=4213"},
-            "chest": {"Chest": "scarlet_inquisitors_expurgation,id=151813,bonus_id=3570,bonus_id=4213"},
-            "finger1": {"Liadrin": "liadrins_fury_unleashed,id=137048,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                        "Soul": "soul_of_the_highlord,id=151644,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
-            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"},
-            "back": {"Cloak": "whisper_of_the_nathrezim,id=137020,bonus_id=3570,bonus_id=4213,enchant=binding_of_force"}
+            "shoulder": {"Shoulder": "ashes_to_dust,id=144358,bonus_id=3630"},
+            "waist": {"Belt": "chain_of_thrayn,id=137086,bonus_id=3630"},
+            "chest": {"Chest": "scarlet_inquisitors_expurgation,id=151813,bonus_id=3630"},
+            "finger1": {"Liadrin": "liadrins_fury_unleashed,id=137048,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                        "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"},
+            "back": {"Cloak": "whisper_of_the_nathrezim,id=137020,bonus_id=3630,enchant=binding_of_force"}
         }
     },
     "sets": {

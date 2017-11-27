@@ -1,18 +1,18 @@
 {
   "legendaries": {
       "shadow": {
-          "head": {"Head": "zenkaram_iridis_anadem,id=133971,bonus_id=3570,bonus_id=4213"},
-          "shoulder": {"Shoulder": "mother_shahrazs_seduction,id=132437,bonus_id=3570,bonus_id=4213"},
-          "chest": {"Chest": "heart_of_the_void,id=151814,bonus_id=3570,bonus_id=4213"},
-          "wrists": {"Wrists": "anunds_seared_shackles,id=132409,bonus_id=3570,bonus_id=4213"},
-          "back": {"Back": "zeks_exterminatus,id=144438,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Waist": "mangazas_madness,id=132864,bonus_id=3570,bonus_id=4213"},
-          "legs": {"Legs": "mystic_kilt_of_the_rune_master,id=132451,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Soul": "soul_of_the_high_priest,id=151646,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Ring": "the_twins_painful_touch,id=133973,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "head": {"Head": "zenkaram_iridis_anadem,id=133971,bonus_id=3630"},
+          "shoulder": {"Shoulder": "mother_shahrazs_seduction,id=132437,bonus_id=3630"},
+          "chest": {"Chest": "heart_of_the_void,id=151814,bonus_id=3630"},
+          "wrists": {"Wrists": "anunds_seared_shackles,id=132409,bonus_id=3630"},
+          "back": {"Back": "zeks_exterminatus,id=144438,bonus_id=3630"},
+          "waist": {"Waist": "mangazas_madness,id=132864,bonus_id=3630"},
+          "legs": {"Legs": "mystic_kilt_of_the_rune_master,id=132451,bonus_id=3630"},
+          "finger1": {"Soul": "soul_of_the_high_priest,id=151646,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Ring": "the_twins_painful_touch,id=133973,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {

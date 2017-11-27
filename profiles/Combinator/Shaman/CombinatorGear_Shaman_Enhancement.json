@@ -1,16 +1,16 @@
 {
   "legendaries": {
       "enhancement": {
-          "head": {"Head": "uncertain_reminder,id=143732,bonus_id=3570,bonus_id=4213"},
-          "hands": {"Hands": "smoldering_heart,id=151819,bonus_id=3570,bonus_id=4213"},
-          "wrists": {"Bracers": "akainus_absolute_justice,id=137084,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Belt": "storm_tempests,id=137103,bonus_id=3570,bonus_id=4213"},
-          "feet": {"Boots": "spiritual_journey,id=138117,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "EotN": "eye_of_the_twisting_nether,id=137050,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Soul": "soul_of_the_farseer,id=151647,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "head": {"Head": "uncertain_reminder,id=143732,bonus_id=3630"},
+          "hands": {"Hands": "smoldering_heart,id=151819,bonus_id=3630"},
+          "wrists": {"Bracers": "akainus_absolute_justice,id=137084,bonus_id=3630"},
+          "waist": {"Belt": "storm_tempests,id=137103,bonus_id=3630"},
+          "feet": {"Boots": "spiritual_journey,id=138117,bonus_id=3630"},
+          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "EotN": "eye_of_the_twisting_nether,id=137050,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Soul": "soul_of_the_farseer,id=151647,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {

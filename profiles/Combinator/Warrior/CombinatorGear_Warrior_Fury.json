@@ -1,15 +1,15 @@
 {
   "legendaries": {
       "fury": {
-          "head": {"Head": "ceannar_charger,id=137088,bonus_id=3570,bonus_id=4213"},
-          "back": {"Cloak": "kazzalax_fujiedas_fury,id=137053,bonus_id=3570,bonus_id=4213,enchant=binding_of_strength"},
-          "waist": {"Waist": "najentuss_vertebrae,id=137087,bonus_id=3570,bonus_id=4213"},
-          "legs": {"Legs": "valarjar_berserkers,id=151824,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Soul": "soul_of_the_battlelord,id=151650,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Ayala": "ayalas_stone_heart,id=137052,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "head": {"Head": "ceannar_charger,id=137088,bonus_id=3630"},
+          "back": {"Cloak": "kazzalax_fujiedas_fury,id=137053,bonus_id=3630,enchant=binding_of_strength"},
+          "waist": {"Waist": "najentuss_vertebrae,id=137087,bonus_id=3630"},
+          "legs": {"Legs": "valarjar_berserkers,id=151824,bonus_id=3630"},
+          "finger1": {"Soul": "soul_of_the_battlelord,id=151650,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Ayala": "ayalas_stone_heart,id=137052,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {

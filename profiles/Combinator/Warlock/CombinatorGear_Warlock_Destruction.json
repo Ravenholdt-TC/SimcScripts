@@ -1,16 +1,16 @@
 {
   "legendaries": {
       "destruction": {
-          "shoulder": {"Shoulder": "lessons_of_space_time,id=144369,bonus_id=3570,bonus_id=4213"},
-          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3570,bonus_id=4213"},
-        //   "back": {"Cloak": "odr_shawl_of_the_ymirjar,id=132375,bonus_id=3570,bonus_id=4213,enchant=binding_of_intellect"},
-          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3570,bonus_id=4213"},
-          "waist": {"Waist": "feretory_of_souls,id=132456,bonus_id=3570,bonus_id=4213"},
-          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                    //   "Ring": "alythesss_pyrogenics,id=132460,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3570,bonus_id=4213,gems=200haste,enchant=binding_of_haste"},
-          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3570,bonus_id=4213"}
+          "shoulder": {"Shoulder": "lessons_of_space_time,id=144369,bonus_id=3630"},
+          "chest": {"Chest": "the_master_harvester,id=151821,bonus_id=3630"},
+        //   "back": {"Cloak": "odr_shawl_of_the_ymirjar,id=132375,bonus_id=3630,enchant=binding_of_intellect"},
+          "wrists": {"Sindorei": "sindorei_spite,id=132379,bonus_id=3630"},
+          "waist": {"Waist": "feretory_of_souls,id=132456,bonus_id=3630"},
+          "finger1": {"Soul": "soul_of_the_netherlord,id=151649,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                    //   "Ring": "alythesss_pyrogenics,id=132460,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+          "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },
   "sets": {
