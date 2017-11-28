@@ -6,3 +6,4 @@ max_time=300
 vary_combat_length=0.2
 default_actions=1
 report_details=0
+profileset_output_data=race/talents/artifact/crucible/gear

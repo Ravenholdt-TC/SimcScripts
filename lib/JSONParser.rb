@@ -50,6 +50,11 @@ module JSONParser
         metas['player'] = player
       end
     end
+    metas['profilesets_overrides'] = { }
+    json['sim']['profilesets']['results'].each do |player|
+      next unless player['overrides']
+      metas['profilesets_overrides'][player['name']] = player['overrides']
+    end
 
     # Write them into the meta file
     File.open(metaFile, 'w') do |file|
