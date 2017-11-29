@@ -20,8 +20,8 @@ module Interactive
     puts "Please choose the #{prefix} template you want to simulate:"
     profiles = {}
     index = 1
-    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}_[_\-a-zA-Z0-9]*\.*").each do |file|
-      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}_([_\-a-zA-Z0-9]*)\.\w+/)
+    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}_[_\-+a-zA-Z0-9]*\.*").each do |file|
+      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}_([_\-+a-zA-Z0-9]*)\.\w+/)
         profiles[index] = profile[1]
         puts "#{index}: #{profile[1]}"
         index += 1
