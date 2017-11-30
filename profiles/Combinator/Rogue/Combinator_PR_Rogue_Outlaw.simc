@@ -22,6 +22,6 @@ feet=lifebearing_footpads,id=151981,bonus_id=3611/1487
 finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3611/1487,enchant=binding_of_versatility
 finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_versatility
 trinket1=shadowsinged_fang,id=151968,bonus_id=3611/1487
-trinket2=golganneths_vitality,id=154174,bonus_id=4213
+trinket2=golganneths_vitality,id=154174,bonus_id=3997
 main_hand=the_dreadblades,id=128872,bonus_id=742,gem_id=152028/155855/155853,relic_id=3611:1487/3611:1497/3611:1497
 off_hand=the_dreadblades,id=134552

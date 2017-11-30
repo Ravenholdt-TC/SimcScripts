@@ -21,6 +21,6 @@ legs=cosmosculling_legplates,id=152016,bonus_id=3611/1487
 feet=burning_coven_sabatons,id=152010,bonus_id=3611/1487
 finger1=loop_of_the_lifebinder,id=152688,bonus_id=3611/1487,enchant=binding_of_mastery
 finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_haste
-trinket1=khazgoroths_courage,id=154176,bonus_id=4213
+trinket1=khazgoroths_courage,id=154176,bonus_id=3997
 trinket2=seeping_scourgewing,id=151964,bonus_id=3611/1487
 main_hand=apocalypse,id=128403,gem_id=155849/152056/155847,relic_id=3611:1497/3611:1487/3611:1497,enchant=rune_of_the_fallen_crusader
