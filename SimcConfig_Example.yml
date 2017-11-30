@@ -1,4 +1,6 @@
 # Path to the simc executable
+# If you have spaces in your path, create an environment variable (e.g. SIMC_PATH),
+# then set it to '%SIMC_PATH%' (including the single quotes).
 SimcPath: D:\Dev\SimulationCraft
 
 # How many threads to use
