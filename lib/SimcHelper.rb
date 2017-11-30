@@ -13,7 +13,7 @@ module SimcHelper
     command = []
 
     # Call executable
-    command.push("#{SimcConfig['SimcPath']}/simc")
+    command.push("\"#{SimcConfig['SimcPath']}/simc\"")
 
     # Set number of threads to use
     command.push("threads=#{SimcConfig['Threads']}")
