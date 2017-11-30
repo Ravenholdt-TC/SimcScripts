@@ -1,2 +1,2 @@
 enemy=EVIL_Fluffy_Pillow
-raid_events+=/movement,players_only=1,first=45,cooldown=85,distance=50,last=360
+raid_events+=/movement,players_only=1,first=45,cooldown=85,distance=50
