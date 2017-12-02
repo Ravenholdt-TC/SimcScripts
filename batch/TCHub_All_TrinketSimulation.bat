@@ -16,6 +16,7 @@ TrinketSimulation.rb Mage T21_Mage_Frost Ranged_Intelligence 1T q
 TrinketSimulation.rb Monk T21_Monk_Windwalker Melee_Agility 1T q
 TrinketSimulation.rb Paladin T21_Paladin_Retribution Melee_Strength 1T q
 TrinketSimulation.rb Priest T21_Priest_Shadow Ranged_Intelligence 1T q
+TrinketSimulation.rb Priest T21_Priest_Shadow_S2M Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Elemental Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Enhancement Melee_Agility 1T q
 TrinketSimulation.rb Warlock T21_Warlock_Affliction Ranged_Intelligence 1T q
@@ -40,6 +41,7 @@ TrinketSimulation.rb Mage T20_Mage_Frost Ranged_Intelligence 1T q
 TrinketSimulation.rb Monk T20_Monk_Windwalker Melee_Agility 1T q
 TrinketSimulation.rb Paladin T20_Paladin_Retribution Melee_Strength 1T q
 TrinketSimulation.rb Priest T20_Priest_Shadow Ranged_Intelligence 1T q
+TrinketSimulation.rb Priest T20_Priest_Shadow_S2M Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T20_Shaman_Elemental Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T20_Shaman_Enhancement Melee_Agility 1T q
 TrinketSimulation.rb Warlock T20_Warlock_Affliction Ranged_Intelligence 1T q

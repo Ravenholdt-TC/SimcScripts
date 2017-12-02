@@ -16,6 +16,7 @@ RelicSimulation.rb Mage T21_Mage_Frost 1T q
 RelicSimulation.rb Monk T21_Monk_Windwalker 1T q
 RelicSimulation.rb Paladin T21_Paladin_Retribution 1T q
 RelicSimulation.rb Priest T21_Priest_Shadow 1T q
+RelicSimulation.rb Priest T21_Priest_Shadow_S2M 1T q
 RelicSimulation.rb Shaman T21_Shaman_Elemental 1T q
 RelicSimulation.rb Shaman T21_Shaman_Enhancement 1T q
 RelicSimulation.rb Warlock T21_Warlock_Affliction 1T q
@@ -40,6 +41,7 @@ RelicSimulation.rb Mage T20_Mage_Frost 1T q
 RelicSimulation.rb Monk T20_Monk_Windwalker 1T q
 RelicSimulation.rb Paladin T20_Paladin_Retribution 1T q
 RelicSimulation.rb Priest T20_Priest_Shadow 1T q
+RelicSimulation.rb Priest T20_Priest_Shadow_S2M 1T q
 RelicSimulation.rb Shaman T20_Shaman_Elemental 1T q
 RelicSimulation.rb Shaman T20_Shaman_Enhancement 1T q
 RelicSimulation.rb Warlock T20_Warlock_Affliction 1T q
