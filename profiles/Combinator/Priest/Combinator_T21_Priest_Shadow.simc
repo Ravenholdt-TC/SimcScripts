@@ -15,13 +15,13 @@ shoulders=fallen_avengers_amice,id=151950,bonus_id=3612/1502
 back=greatcloak_of_the_dark_pantheon,id=152062,bonus_id=3612/1502,enchant=binding_of_intellect
 chest=gambeson_of_sargeras_corruption,id=152679,bonus_id=3612/1502
 wrists=cuffs_of_the_viridian_flameweavers,id=152085,bonus_id=3612/1502
-hands=handwraps_of_inevitable_doom,id=152680,bonus_id=3612/1502
+hands=aranasi_shadowweavers_gloves,id=151941,bonus_id=3612/1502
 waist=sash_of_diabolic_preparation,id=152355,bonus_id=3612/1502
-legs=subjugated_drudges_leggings,id=152352,bonus_id=3612/1502
+legs=fervent_twilight_legwraps,id=151946,bonus_id=3612/1502
 feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3612/1502
 finger1=zealous_tormentors_ring,id=152284,bonus_id=3612/1502,enchant=binding_of_haste
 finger2=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of_haste
-trinket1=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
-trinket2=amanthuls_vision,id=154172,bonus_id=4213
+trinket1=amanthuls_vision,id=154172,bonus_id=4213
+trinket2=acrid_catalyst_injector,id=151955,bonus_id=3612/1502
 main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,gem_id=155852/155847/155852,relic_id=3612:1512/3612:1512/3612:1512
 off_hand=secrets_of_the_void,id=133958
