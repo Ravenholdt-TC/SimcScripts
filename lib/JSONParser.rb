@@ -35,7 +35,8 @@ module JSONParser
   end
 
   # Extract metadata from a simulation
-  def self.ExtractMetadata(jsonFile, metaFile)
+  # Additional data is an optional hash that is merged into the JSON output.
+  def self.ExtractMetadata(jsonFile, metaFile, additionalData={})
     # Get the meta datas from the json report
     metas = { }
     json = ReadFile(jsonFile)
@@ -55,6 +56,9 @@ module JSONParser
       next unless player['overrides']
       metas['profilesets_overrides'][player['name']] = player['overrides']
     end
+
+    # Add additional data
+    metas.merge!(additionalData)
 
     # Write them into the meta file
     File.open(metaFile, 'w') do |file|

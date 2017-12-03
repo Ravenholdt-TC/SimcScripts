@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
+require_relative 'lib/CrucibleWeights'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcConfig'
@@ -19,10 +20,6 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"
 ]
 SimcHelper.RunSimulation(params)
-
-# Extract metadata
-puts "Extract metadata from #{logFile}.json to #{metaFile}..."
-JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
 
 # Process results
 sims = {}
@@ -61,6 +58,21 @@ if sims[WeaponItemLevelName]
     end
   end
 end
+
+# Get string for crucible weight addon and add it to metadata
+addToMeta = {}
+json = JSONParser.ReadFile("#{logFile}.json")
+begin
+  simcSpecString = json['sim']['players'].first['specialization']
+  cruweight = CrucibleWeights.GetCrucibleWeightString(simcSpecString, sims, templateDPS)
+  addToMeta['crucibleweight'] = cruweight if cruweight
+rescue KeyError => exception
+  puts "ERROR: Spec not found in JSON output. Not generating crucible weight string."
+end
+
+# Save metadata
+puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+JSONParser.ExtractMetadata("#{logFile}.json", metaFile, addToMeta)
 
 # Get max number of results (have to fill others for Google Charts to work)
 max_columns = 1
