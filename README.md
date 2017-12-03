@@ -5,6 +5,9 @@ This repository contains my scripts for automated simulation and data collection
 
 ## Initial Setup
 
+Install a Ruby interpreter. On Windows you can use [RubyInstaller](https://rubyinstaller.org/).
+You will need to install the DevKit as well. As of RubyInstaller 2.4+ you can run `ridk install 123`.
+
 ```
 gem install bundler
 bundle install
@@ -22,14 +25,12 @@ in your simc profiles.
 
 ## TrinketSimulation
 
-This documentation is based on the `RogueTrinkets.rb` simulation. If you want to simulate
-other trinkets you can copy that script and rename the templates accordingly.
-
 Usage:
 1. Create a base simulation profile file called `TrinketSimulation_<PROFILENAME>.simc` in the
    `profiles/TrinketSimulation` folder. This file defines the base character to simulate.
-2. Create a trinket list file called `TrinketList_<NAME>.json` in the profiles folder. This
-   file defines all trinkets to simulate. (See `TrinketList_Rogue.json` for an example.)
+2. (Optional) Create a custom trinket list file called `TrinketList_<NAME>.json` in the profiles
+   folder. This file defines all trinkets to simulate. (See `TrinketList_Melee_Agility.json` for
+   an example.)
 3. Run `TrinketSimulation.rb`. It will ask you to select the profiles.
 4. Wait for the simulation to run until it says it's done.
 5. The resulting CSV file will be in the `reports` folder.
@@ -54,10 +55,13 @@ Usage:
 4. Wait for the simulation to run until it says it's done.
 5. The resulting CSV file will be in the `reports` folder.
 
+Currently the RelicSimulation expects WeaponItemLevel increases in steps of three and will
+interpolate steps in between for a smoother graph and less sim time.
+
 The result is a CSV file containing the DPS increases for each Relic or Relic Item Level
 compared to the Template profile. Its structure has been created to fit what we import
-using Google Charts on the Ravenholdt-TC website. Thus, the CSV content includes annotations
-and zero values to fill for an equal amount of columns.
+using Google Charts on the Ravenholdt-TC/HeroDamage website. Thus, the CSV content includes
+annotations and zero values to fill for an equal amount of columns.
 
 Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
 
@@ -71,7 +75,9 @@ All you have to do is create a `Combinator_<PROFILENAME>.simc` file in a class f
 
 You can override baseline gear for certain talents setups by creating another profile in
 a `TalentOverrides` subfolder. That files name has to match the profile name and a talent
-permutation.
+permutation. (e.g. `<NAME>_xxx123x`) The same principle applies for legendary overrides.
+Create a `LegendaryOverrides` subfolder and name it same as the profile followed by a
+legendary name from the Gear file. (e.g. `<NAME>_Bracers`)
 
 Also make sure gear and setup definitions are available. For an example, look at the
 files `CombinatorGear_*.json` and `CombinatorSetups_*.json`. These
