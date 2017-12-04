@@ -17,6 +17,13 @@ TrinketSimulation.rb Monk T21_Monk_Windwalker Melee_Agility 1T q
 TrinketSimulation.rb Paladin T21_Paladin_Retribution Melee_Strength 1T q
 TrinketSimulation.rb Priest T21_Priest_Shadow Ranged_Intelligence 1T q
 TrinketSimulation.rb Priest T21_Priest_Shadow_S2M Ranged_Intelligence 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination_Exsg Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Outlaw Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Outlaw_SnD Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Subtlety Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Subtlety_DfA Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Soul+Insignia Melee_Agility 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Elemental Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Enhancement Melee_Agility 1T q
 TrinketSimulation.rb Warlock T21_Warlock_Affliction Ranged_Intelligence 1T q
@@ -42,6 +49,12 @@ TrinketSimulation.rb Monk T20_Monk_Windwalker Melee_Agility 1T q
 TrinketSimulation.rb Paladin T20_Paladin_Retribution Melee_Strength 1T q
 TrinketSimulation.rb Priest T20_Priest_Shadow Ranged_Intelligence 1T q
 TrinketSimulation.rb Priest T20_Priest_Shadow_S2M Ranged_Intelligence 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Assassination Melee_Agility 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Assassination_Exsg Melee_Agility 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Outlaw Melee_Agility 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Outlaw_SnD Melee_Agility 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Subtlety Melee_Agility 1T q
+TrinketSimulation.rb Rogue T20_Rogue_Subtlety_DfA Melee_Agility 1T q
 TrinketSimulation.rb Shaman T20_Shaman_Elemental Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T20_Shaman_Enhancement Melee_Agility 1T q
 TrinketSimulation.rb Warlock T20_Warlock_Affliction Ranged_Intelligence 1T q
@@ -49,5 +62,10 @@ TrinketSimulation.rb Warlock T20_Warlock_Demonology Ranged_Intelligence 1T q
 TrinketSimulation.rb Warlock T20_Warlock_Destruction Ranged_Intelligence 1T q
 TrinketSimulation.rb Warrior T20_Warrior_Arms Melee_Strength 1T q
 TrinketSimulation.rb Warrior T20_Warrior_Fury Melee_Strength 1T q
+
+REM T19
+TrinketSimulation.rb Rogue T19_Rogue_Assassination Melee_Agility 1T q
+TrinketSimulation.rb Rogue T19_Rogue_Outlaw Melee_Agility 1T q
+TrinketSimulation.rb Rogue T19_Rogue_Subtlety Melee_Agility 1T q
 
 @pause

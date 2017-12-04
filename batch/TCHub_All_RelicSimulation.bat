@@ -17,6 +17,13 @@ RelicSimulation.rb Monk T21_Monk_Windwalker 1T q
 RelicSimulation.rb Paladin T21_Paladin_Retribution 1T q
 RelicSimulation.rb Priest T21_Priest_Shadow 1T q
 RelicSimulation.rb Priest T21_Priest_Shadow_S2M 1T q
+RelicSimulation.rb Rogue T21_Rogue_Assassination 1T q
+RelicSimulation.rb Rogue T21_Rogue_Assassination_Exsg 1T q
+RelicSimulation.rb Rogue T21_Rogue_Outlaw 1T q
+RelicSimulation.rb Rogue T21_Rogue_Outlaw_SnD 1T q
+RelicSimulation.rb Rogue T21_Rogue_Subtlety 1T q
+RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA 1T q
+RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Soul+Insignia 1T q
 RelicSimulation.rb Shaman T21_Shaman_Elemental 1T q
 RelicSimulation.rb Shaman T21_Shaman_Enhancement 1T q
 RelicSimulation.rb Warlock T21_Warlock_Affliction 1T q
@@ -42,6 +49,12 @@ RelicSimulation.rb Monk T20_Monk_Windwalker 1T q
 RelicSimulation.rb Paladin T20_Paladin_Retribution 1T q
 RelicSimulation.rb Priest T20_Priest_Shadow 1T q
 RelicSimulation.rb Priest T20_Priest_Shadow_S2M 1T q
+RelicSimulation.rb Rogue T20_Rogue_Assassination 1T q
+RelicSimulation.rb Rogue T20_Rogue_Assassination_Exsg 1T q
+RelicSimulation.rb Rogue T20_Rogue_Outlaw 1T q
+RelicSimulation.rb Rogue T20_Rogue_Outlaw_SnD 1T q
+RelicSimulation.rb Rogue T20_Rogue_Subtlety 1T q
+RelicSimulation.rb Rogue T20_Rogue_Subtlety_DfA 1T q
 RelicSimulation.rb Shaman T20_Shaman_Elemental 1T q
 RelicSimulation.rb Shaman T20_Shaman_Enhancement 1T q
 RelicSimulation.rb Warlock T20_Warlock_Affliction 1T q
@@ -49,6 +62,11 @@ RelicSimulation.rb Warlock T20_Warlock_Demonology 1T q
 RelicSimulation.rb Warlock T20_Warlock_Destruction 1T q
 RelicSimulation.rb Warrior T20_Warrior_Arms 1T q
 RelicSimulation.rb Warrior T20_Warrior_Fury 1T q
+
+REM T19
+RelicSimulation.rb Rogue T19_Rogue_Assassination 1T q
+RelicSimulation.rb Rogue T19_Rogue_Outlaw 1T q
+RelicSimulation.rb Rogue T19_Rogue_Subtlety 1T q
 
 
 @pause
