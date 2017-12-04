@@ -6,7 +6,7 @@ TrinketSimulation.rb DeathKnight T21_Death_Knight_Unholy Melee_Strength 1T q
 TrinketSimulation.rb DemonHunter T21_Demon_Hunter_Havoc Melee_Agility 1T q
 TrinketSimulation.rb Druid T21_Druid_Balance Ranged_Intelligence 1T q
 TrinketSimulation.rb Druid T21_Druid_Feral Melee_Agility 1T q
-TrinketSimulation.rb Hunter T21_Hunter_Beast_Mastery Ranged_Agility 1T q
+TrinketSimulation.rb Hunter T21_Hunter_Beast_Mastery_DireFrenzy Ranged_Agility 1T q
 TrinketSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp Ranged_Agility 1T q
 TrinketSimulation.rb Hunter T21_Hunter_Marksmanship Ranged_Agility 1T q
 TrinketSimulation.rb Hunter T21_Hunter_Survival Melee_Agility 1T q

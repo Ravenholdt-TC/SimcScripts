@@ -6,7 +6,7 @@ RelicSimulation.rb DeathKnight T21_Death_Knight_Unholy 1T q
 RelicSimulation.rb DemonHunter T21_Demon_Hunter_Havoc 1T q
 RelicSimulation.rb Druid T21_Druid_Balance 1T q
 RelicSimulation.rb Druid T21_Druid_Feral 1T q
-RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery 1T q
+RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_DireFrenzy 1T q
 RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp 1T q
 RelicSimulation.rb Hunter T21_Hunter_Marksmanship 1T q
 RelicSimulation.rb Hunter T21_Hunter_Survival 1T q
