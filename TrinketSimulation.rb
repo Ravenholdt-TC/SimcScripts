@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/JSONResults'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -44,16 +45,18 @@ params = [
 ]
 SimcHelper.RunSimulation(params)
 
+# Read JSON Output
+results = JSONResults.new("#{logFile}.json")
+
 # Extract metadata
 puts "Extract metadata from #{logFile}.json to #{metaFile}..."
-JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
+results.extractMetadata(metaFile)
 
 puts "Processing data from #{logFile}.json to #{csvFile}..."
 templateDPS = 0
 iLevelList = []
 sims = {}
-results = JSONParser.GetAllDPSResults("#{logFile}.json")
-results.each do |name, dps|
+results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps

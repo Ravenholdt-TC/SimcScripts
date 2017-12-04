@@ -3,6 +3,7 @@ require 'bundler/setup'
 require_relative 'lib/CrucibleWeights'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/JSONResults'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -21,12 +22,14 @@ params = [
 ]
 SimcHelper.RunSimulation(params)
 
+# Read JSON Output
+results = JSONResults.new("#{logFile}.json")
+
 # Process results
 sims = {}
 templateDPS = 0
 puts "Converting #{logFile}.json to #{csvFile}..."
-results = JSONParser.GetAllDPSResults("#{logFile}.json")
-results.each do |name, dps|
+results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
@@ -61,7 +64,7 @@ end
 
 # Get string for crucible weight addon and add it to metadata
 addToMeta = {}
-json = JSONParser.ReadFile("#{logFile}.json")
+json = results.getRawJSON()
 begin
   simcSpecString = json['sim']['players'].first['specialization']
   cruweight = CrucibleWeights.GetCrucibleWeightString(simcSpecString, sims, templateDPS)
@@ -72,7 +75,7 @@ end
 
 # Save metadata
 puts "Extract metadata from #{logFile}.json to #{metaFile}..."
-JSONParser.ExtractMetadata("#{logFile}.json", metaFile, addToMeta)
+results.extractMetadata(metaFile, addToMeta)
 
 # Get max number of results (have to fill others for Google Charts to work)
 max_columns = 1

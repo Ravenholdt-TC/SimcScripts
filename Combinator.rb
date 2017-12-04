@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
+require_relative 'lib/JSONResults'
 require_relative 'lib/ProfileHelper'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
@@ -132,15 +133,18 @@ params = [
 ]
 SimcHelper.RunSimulation(params)
 
+# Read JSON Output
+results = JSONResults.new("#{logFile}.json")
+
 # Extract metadata
 puts "Extract metadata from #{logFile}.json to #{metaFile}..."
-JSONParser.ExtractMetadata("#{logFile}.json", metaFile)
+results.extractMetadata(metaFile)
 
 # Write to CSV
 puts "Adding data from #{logFile}.json to #{csvFile}..."
-sims = JSONParser.GetAllDPSResults("#{logFile}.json")
+sims = results.getAllDPSResults()
 sims.delete('Template')
-priorityDps = JSONParser.GetPriorityDPSResults("#{logFile}.json")
+priorityDps = results.getPriorityDPSResults()
 File.open(csvFile, 'a') do |csv|
   sims.each do |name, value|
     # Split profile name into nice CSV columns (mostly for web display)
