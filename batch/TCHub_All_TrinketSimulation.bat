@@ -22,7 +22,7 @@ TrinketSimulation.rb Rogue T21_Rogue_Assassination_Exsg Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Outlaw Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Outlaw_SnD Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Subtlety Melee_Agility 1T q
-TrinketSimulation.rb Rogue T21_Rogue_Subtlety_DfA Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Mantle+Hands Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Soul+Insignia Melee_Agility 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Elemental Ranged_Intelligence 1T q
 TrinketSimulation.rb Shaman T21_Shaman_Enhancement Melee_Agility 1T q

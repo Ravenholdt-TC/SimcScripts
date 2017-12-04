@@ -22,7 +22,7 @@ RelicSimulation.rb Rogue T21_Rogue_Assassination_Exsg 1T q
 RelicSimulation.rb Rogue T21_Rogue_Outlaw 1T q
 RelicSimulation.rb Rogue T21_Rogue_Outlaw_SnD 1T q
 RelicSimulation.rb Rogue T21_Rogue_Subtlety 1T q
-RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA 1T q
+RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Mantle+Hands 1T q
 RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Soul+Insignia 1T q
 RelicSimulation.rb Shaman T21_Shaman_Elemental 1T q
 RelicSimulation.rb Shaman T21_Shaman_Enhancement 1T q
