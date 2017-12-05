@@ -1,0 +1,6 @@
+profileset_metric=dps/prioritydps
+enemy=Huey
+enemy=Dewey
+enemy=Louie
+
+raid_events+=/adds,count=1,first=30,cooldown=60,duration=20

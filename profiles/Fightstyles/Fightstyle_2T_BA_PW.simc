@@ -1,0 +1,5 @@
+profileset_metric=dps/prioritydps
+enemy=Mom
+enemy=Dad
+
+raid_events+=/adds,count=1,first=30,cooldown=60,duration=20

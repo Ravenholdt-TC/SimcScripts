@@ -1,5 +1,6 @@
 profileset_metric=dps/prioritydps
 enemy=Boss
+
 raid_events+=/adds,count=1,first=30,cooldown=30,duration=10
 raid_events+=/adds,count=1,first=30,cooldown=30,duration=12
 raid_events+=/adds,count=1,first=30,cooldown=30,duration=14
