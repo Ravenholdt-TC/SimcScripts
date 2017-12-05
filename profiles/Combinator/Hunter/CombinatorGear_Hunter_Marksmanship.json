@@ -22,11 +22,11 @@
           "shoulder": "eagletalon_spaulders,id=138347,bonus_id=3519"
       },
       "T20": {
-          "head": "wildstalker_helmet,id=147142,bonus_id=1512/3563",
+          "back": "wildstalker_cape,id=147140,bonus_id=1512/3563,enchant=binding_of_agility",
           "chest": "wildstalker_chestguard,id=147139,bonus_id=1512/3563",
           "hands": "wildstalker_gauntlets,id=147141,bonus_id=1512/3563",
-          "back": "wildstalker_cape,id=147140,bonus_id=1512/3563,enchant=binding_of_agility",
           "legs": "wildstalker_leggings,id=147143,bonus_id=1512/3563",
+          "head": "wildstalker_helmet,id=147142,bonus_id=1512/3563",
           "shoulder": "wildstalker_spaulders,id=147144,bonus_id=1512/3563"
       },
       "T21H": {
