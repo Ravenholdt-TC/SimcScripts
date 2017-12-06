@@ -84,7 +84,7 @@ end
 
 # Generate data
 puts "Combining data from csv files..."
-CompositeData = {}
+compositeData = {}
 fightList.each do |fight, value|
   puts "Model #{fight} : #{value}" 
   
@@ -95,10 +95,10 @@ fightList.each do |fight, value|
     key = row[0] + "," + row[1] + "," + row[2]
     
     #factor each data with the corresponding value
-    if CompositeData[key].nil?
-      CompositeData[key] = (value * row[3].to_f).round(0)
+    if compositeData[key].nil?
+      compositeData[key] = (value * row[3].to_f).round(0)
     else
-      CompositeData[key] = CompositeData[key] + (value * row[3].to_f).round(0)
+      compositeData[key] = compositeData[key] + (value * row[3].to_f).round(0)
     end
   end
 end
@@ -106,7 +106,7 @@ end
 # Print data to file
 puts "Writing data in #{csvFile} ..."
 File.open(csvFile, 'a') do |csv|
-  CompositeData.each do |name, value|
+  compositeData.each do |name, value|
     csv.write "#{name},#{value}"
     csv.write "\n"
   end
