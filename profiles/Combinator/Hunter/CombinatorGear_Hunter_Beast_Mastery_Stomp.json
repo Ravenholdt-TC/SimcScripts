@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "beast_mastery": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200critical_strike,enchant=mark_of_the_claw"},
           "shoulder": {"Mantle": "the_mantle_of_command,id=144326,bonus_id=3630"},
           "chest": {"Chest": "parsels_tongue,id=151805,bonus_id=3630"},
           "wrists": {"Bracers": "call_of_the_wild,id=137101,bonus_id=3630"},

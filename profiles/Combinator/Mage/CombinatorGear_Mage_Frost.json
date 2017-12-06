@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "frost": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200versatility,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "shattered_fragments_of_sindragosa,id=151810,bonus_id=3630"},
           "shoulder": {"Shoulder": "ice_time,id=144260,bonus_id=3630"},
           "wrists": {"Wrists": "magtheridons_banished_bracers,id=138140,bonus_id=3630"},

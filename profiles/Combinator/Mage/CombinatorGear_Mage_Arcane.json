@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "arcane": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200versatility,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "gravity_spiral,id=144274,bonus_id=3630"},
           "shoulder": {"Shoulder": "mantle_of_the_first_kirin_tor,id=151808,bonus_id=3630"},
           "wrists": {"Wrists": "rhonins_assaulting_armwraps,id=132413,bonus_id=3630"},

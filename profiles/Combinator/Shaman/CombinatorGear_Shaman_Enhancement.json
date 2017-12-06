@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "enhancement": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200haste,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "uncertain_reminder,id=143732,bonus_id=3630"},
           "hands": {"Hands": "smoldering_heart,id=151819,bonus_id=3630"},
           "wrists": {"Bracers": "akainus_absolute_justice,id=137084,bonus_id=3630"},

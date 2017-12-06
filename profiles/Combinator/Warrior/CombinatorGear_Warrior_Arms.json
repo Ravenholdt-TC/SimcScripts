@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "arms": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200mastery,enchant=mark_of_the_trained_soldier"},
           "head": {"Head": "the_great_storms_eye,id=151823,bonus_id=3630"},
           "hands": {"Hands": "archavons_heavy_hand,id=137060,bonus_id=3630,enchant=binding_of_strength"},
           "legs": {"Legs": "weight_of_the_earth,id=137077,bonus_id=3630"},

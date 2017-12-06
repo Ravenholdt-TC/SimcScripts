@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "fury": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200haste,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "ceannar_charger,id=137088,bonus_id=3630"},
           "back": {"Cloak": "kazzalax_fujiedas_fury,id=137053,bonus_id=3630,enchant=binding_of_strength"},
           "waist": {"Waist": "najentuss_vertebrae,id=137087,bonus_id=3630"},

@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "fire": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200critical_strike,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "darcklis_dragonfire_diadem,id=132863,bonus_id=3630"},
           "shoulder": {"Shoulder": "contained_infernal_core,id=151809,bonus_id=3630"},
           "wrists": {"Wrists": "marquee_bindings_of_the_sun_king,id=132406,bonus_id=3630"},

@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "elemental": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200critical_strike,enchant=mark_of_the_claw"},
           "head": {"Head": "uncertain_reminder,id=143732,bonus_id=3630"},
           "hands": {"Hands": "smoldering_heart,id=151819,bonus_id=3630"},
           "shoulder": {"Shoulder": "echoes_of_the_great_sundering,id=137074,bonus_id=3630"},

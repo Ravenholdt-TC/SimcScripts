@@ -1,6 +1,7 @@
 {
     "legendaries": {
         "windwalker": {
+            "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200mastery,enchant=mark_of_the_hidden_satyr"},
             "head": {"Head": "the_wind_blows,id=151811,bonus_id=3630"},
             "chest": {"Chest": "the_emperors_capacitor,id=144239,bonus_id=3630"},
             "hands": {"Hands": "hidden_masters_forbidden_touch,id=137057,bonus_id=3630"},

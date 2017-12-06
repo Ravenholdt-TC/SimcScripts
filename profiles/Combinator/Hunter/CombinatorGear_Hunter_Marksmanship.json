@@ -1,6 +1,7 @@
 {
   "legendaries": {
       "marksmanship": {
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200mastery,enchant=mark_of_the_trained_soldier"},
           "back": {"Cloak": "celerity_of_the_windrunners,id=151803,bonus_id=3630,enchant=binding_of_agility"},
           "hands": {"Hands": "mkii_gyroscopic_stabilizer,id=144303,bonus_id=3630"},
           "feet": {"Boots": "ullrs_feather_snowshoes,id=137033,bonus_id=3630"},
