@@ -30,15 +30,15 @@ Interactive.RemoveFileWithQuestion(csvFile)
 # Read tier model from JSON
 model = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Fightstyles/Composite/Composite_#{setupsProfile}.json")
 
-# Generate data
-puts "Combining data from csv files..."
+# Verify reports integrity
+puts "verifying all reports needed..."
 fightList = {}
-CompositeData = {}
+lines = 0
+buildDate = ""
 model['Fightstyle_model'].each do |fight, value|
-  puts "Model #{fight} : #{value}" 
   # only if fightstyle value is > 0
   if value > 0 
-    #check if file exists
+    #check if csv file exists
     reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
     unless File.file?(reportName)
       puts "ERROR: Report missing : #{reportName} !"
@@ -47,16 +47,58 @@ model['Fightstyle_model'].each do |fight, value|
       exit
     end
     
-    #Store everything in the table
-    CSV.foreach(reportName) do |row|
-      key = row[0] + "," + row[1] + "," + row[2]
-      
-      #factor each data with the corresponding value
-      if CompositeData[key].nil?
-        CompositeData[key] = (value * row[3].to_f).round(0)
-      else
-        CompositeData[key] = CompositeData[key] + (value * row[3].to_f).round(0)
-      end
+    #check if meta file exists
+    reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json"
+    unless File.file?(reportNameMeta)
+      puts "ERROR: Report meta missing : #{reportNameMeta} !"
+      puts "Press enter to quit..."
+      Interactive.GetInputOrArg()
+      exit
+    end
+    
+    # check for same build date
+    buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json")
+    if buildDate == ""
+      buildDate = buildDateContent['build_date']
+    elsif buildDate != buildDateContent['build_date']
+      puts "ERROR: Files don't have the same build date !"
+      puts "Press enter to quit..."
+      Interactive.GetInputOrArg()
+      exit
+    end
+    
+    # check for same number of lines
+    if lines == 0
+      lines = CSV.read(reportName).count
+    elsif lines != CSV.read(reportName).count
+      puts "ERROR: Files don't have the same length !"
+      puts "Press enter to quit..."
+      Interactive.GetInputOrArg()
+      exit
+    end
+    
+    # register fight
+    fightList[fight] = value
+  end
+end
+
+# Generate data
+puts "Combining data from csv files..."
+CompositeData = {}
+fightList.each do |fight, value|
+  puts "Model #{fight} : #{value}" 
+  
+  reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
+  
+  #Store everything in the table
+  CSV.foreach(reportName) do |row|
+    key = row[0] + "," + row[1] + "," + row[2]
+    
+    #factor each data with the corresponding value
+    if CompositeData[key].nil?
+      CompositeData[key] = (value * row[3].to_f).round(0)
+    else
+      CompositeData[key] = CompositeData[key] + (value * row[3].to_f).round(0)
     end
   end
 end
