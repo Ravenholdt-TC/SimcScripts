@@ -37,52 +37,56 @@ lines = 0
 buildDate = ""
 model['Fightstyle_model'].each do |fight, value|
   # only if fightstyle value is > 0
-  if value > 0 
-    #check if csv file exists
-    reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
-    unless File.file?(reportName)
-      puts "ERROR: Report missing : #{reportName} !"
-      puts "Press enter to quit..."
-      Interactive.GetInputOrArg()
-      exit
-    end
-    
-    #check if meta file exists
-    reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json"
-    unless File.file?(reportNameMeta)
-      puts "ERROR: Report meta missing : #{reportNameMeta} !"
-      puts "Press enter to quit..."
-      Interactive.GetInputOrArg()
-      exit
-    end
-    
-    # check for same build date
-    buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json")
-    if buildDate == ""
-      buildDate = buildDateContent['build_date']
-    elsif buildDate != buildDateContent['build_date']
-      puts "ERROR: Files don't have the same build date !"
-      puts "Press enter to quit..."
-      Interactive.GetInputOrArg()
-      exit
-    end
-    
-    # check for same number of lines
-    if lines == 0
-      lines = CSV.read(reportName).count
-    elsif lines != CSV.read(reportName).count
-      puts "ERROR: Files don't have the same length !"
-      puts "Press enter to quit..."
-      Interactive.GetInputOrArg()
-      exit
-    end
-    
-    # register fight
-    fightList[fight] = value
+  unless value != 0
+    puts "WARNING: Fightstyle value=0, not using : #{fight} !"
+    next
   end
+  
+  #check if csv file exists
+  reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
+  unless File.file?(reportName)
+    puts "ERROR: Report missing : #{reportName} !"
+    puts "Press enter to quit..."
+    Interactive.GetInputOrArg()
+    exit
+  end
+  
+  #check if meta file exists
+  reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json"
+  unless File.file?(reportNameMeta)
+    puts "ERROR: Report meta missing : #{reportNameMeta} !"
+    puts "Press enter to quit..."
+    Interactive.GetInputOrArg()
+    exit
+  end
+  
+  # check for same build date
+  buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json")
+  if buildDate == ""
+    buildDate = buildDateContent['build_date']
+  elsif buildDate != buildDateContent['build_date']
+    puts "ERROR: Files don't have the same build date !"
+    puts "Press enter to quit..."
+    Interactive.GetInputOrArg()
+    exit
+  end
+  
+  # check for same number of lines
+  if lines == 0
+    lines = CSV.read(reportName).count
+  elsif lines != CSV.read(reportName).count
+    puts "ERROR: Files don't have the same length !"
+    puts "Press enter to quit..."
+    Interactive.GetInputOrArg()
+    exit
+  end
+  
+  # register fight
+  fightList[fight] = value
 end
 
 # Generate data
+puts
 puts "Combining data from csv files..."
 compositeData = {}
 fightList.each do |fight, value|
@@ -104,6 +108,7 @@ fightList.each do |fight, value|
 end
 
 # Print data to file
+puts
 puts "Writing data in #{csvFile} ..."
 File.open(csvFile, 'a') do |csv|
   compositeData.each do |name, value|
