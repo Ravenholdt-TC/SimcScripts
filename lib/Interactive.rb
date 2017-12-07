@@ -98,6 +98,34 @@ module Interactive
     puts
     return talentdata
   end
+  
+  def self.SelectCompositeType(checkArgs=true)
+    puts 'Please select the type data you want to compose:'
+    compositeType = ["Combinator","RelicSimulation","TrinketSimulation"]
+    constructedcompositeType = {}
+    index=1
+    compositeType.each do |compType|
+      constructedcompositeType[index] = compType
+      puts "#{index}: #{compType}"
+      index += 1
+    end
+    print 'Composite: '
+    
+    input = GetInputOrArg(checkArgs)
+    if constructedcompositeType.has_value?(input)
+      puts
+      return input
+    end
+    index = input.to_i
+    unless constructedcompositeType.has_key?(index)
+      puts 'ERROR: Invalid composite type!'
+      puts 'Press enter to quit...'
+      GetInputOrArg(checkArgs)
+      exit
+    end
+    puts
+    return "#{constructedcompositeType[index]}"
+  end
 
   # Asks if the specified file should be removed and does so by default (no answer)
   def self.RemoveFileWithQuestion(file, checkArgs=true)

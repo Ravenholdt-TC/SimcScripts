@@ -6,6 +6,7 @@ require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/SimcConfig'
 
+CompositeType = Interactive.SelectCompositeType()
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
 
@@ -19,12 +20,10 @@ File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_
   end
 end
 
-gearProfile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear")
 setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
-talentdata = Interactive.SelectTalentPermutations()
 
 # Recreate or append to csv?
-csvFile = "#{SimcConfig['ReportsFolder']}/Combinator_Composite_#{profile}.csv"
+csvFile = "#{SimcConfig['ReportsFolder']}/#{CompositeType}_Composite_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvFile)
 
 # Read tier model from JSON
@@ -43,7 +42,7 @@ model['Fightstyle_model'].each do |fight, value|
   end
   
   #check if csv file exists
-  reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
+  reportName = "#{SimcConfig['ReportsFolder']}/#{CompositeType}_#{fight}_#{profile}.csv"
   unless File.file?(reportName)
     puts "ERROR: Report missing : #{reportName} !"
     puts "Press enter to quit..."
@@ -52,7 +51,7 @@ model['Fightstyle_model'].each do |fight, value|
   end
   
   #check if meta file exists
-  reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json"
+  reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/#{CompositeType}_#{fight}_#{profile}.json"
   unless File.file?(reportNameMeta)
     puts "ERROR: Report meta missing : #{reportNameMeta} !"
     puts "Press enter to quit..."
@@ -61,7 +60,7 @@ model['Fightstyle_model'].each do |fight, value|
   end
   
   # check for same build date
-  buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fight}_#{profile}.json")
+  buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/#{CompositeType}_#{fight}_#{profile}.json")
   if buildDate == ""
     buildDate = buildDateContent['build_date']
   elsif buildDate != buildDateContent['build_date']
@@ -92,7 +91,7 @@ compositeData = {}
 fightList.each do |fight, value|
   puts "Model #{fight} : #{value}" 
   
-  reportName = "#{SimcConfig['ReportsFolder']}/Combinator_#{fight}_#{profile}.csv"
+  reportName = "#{SimcConfig['ReportsFolder']}/#{CompositeType}_#{fight}_#{profile}.csv"
   
   #Store everything in the table
   CSV.foreach(reportName) do |row|
