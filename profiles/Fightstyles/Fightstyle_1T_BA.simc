@@ -1,3 +1,4 @@
+profileset_metric=dps/prioritydps
 enemy=EVIL_Fluffy_Pillow
 
 raid_events+=/adds,count=1,first=30,cooldown=60,duration=20
