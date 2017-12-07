@@ -25,8 +25,7 @@
             "back": {"Cloak": "the_curse_of_restlessness,id=151817,bonus_id=3630,enchant=binding_of_agility"}
         },
         "subtlety": {
-            "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630",
-                "Bantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
+            "shoulder": {"Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"},
             "waist": {"Cinidaria": "cinidaria_the_symbiote,id=133976,bonus_id=3630"},
             "feet": {"Boots": "shadow_satyrs_walk,id=137032,bonus_id=3630"},
             "wrists": {"Bracers": "denial_of_the_halfgiants,id=137100,bonus_id=3630"},
