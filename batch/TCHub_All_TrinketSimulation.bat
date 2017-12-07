@@ -68,4 +68,7 @@ TrinketSimulation.rb Rogue T19_Rogue_Assassination Melee_Agility 1T q
 TrinketSimulation.rb Rogue T19_Rogue_Outlaw Melee_Agility 1T q
 TrinketSimulation.rb Rogue T19_Rogue_Subtlety Melee_Agility 1T q
 
+REM Composite T21
+REM Composite.rb TrinketSimulation Priest T21_Priest_Shadow T21 q
+
 @pause

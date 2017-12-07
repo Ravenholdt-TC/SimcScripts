@@ -68,5 +68,8 @@ RelicSimulation.rb Rogue T19_Rogue_Assassination 1T q
 RelicSimulation.rb Rogue T19_Rogue_Outlaw 1T q
 RelicSimulation.rb Rogue T19_Rogue_Subtlety 1T q
 
+REM Composite T21
+REM Composite.rb RelicSimulation Priest T21_Priest_Shadow T21 q
+
 
 @pause

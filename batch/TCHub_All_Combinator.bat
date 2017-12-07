@@ -73,4 +73,7 @@ Combinator.rb Rogue PR_Rogue_Assassination Rogue PR 1T xxx00xx y q
 Combinator.rb Rogue PR_Rogue_Outlaw Rogue PR 1T x3x00xx y q
 Combinator.rb Rogue PR_Rogue_Subtlety Rogue PR 1T xxx00xx y q
 
+REM Composite T21
+REM Composite.rb Combinator Priest T21_Priest_Shadow T21 q
+
 @pause
