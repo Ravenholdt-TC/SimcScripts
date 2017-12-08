@@ -8,7 +8,7 @@
             "feet": {"Boots": "loramus_thalipedes_sacrifice,id=137022,bonus_id=3630"},
             "wrists": {"Bracers": "moarg_bionic_stabilizers,id=137090,bonus_id=3630"},
             "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
-                        "Ring": "anger_of_the_half_giants,id=137038,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
+                        "Ring": "anger_of_the_halfgiants,id=137038,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
                         "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
                         "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike"},
             "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
