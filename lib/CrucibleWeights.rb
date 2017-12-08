@@ -20,9 +20,13 @@ module CrucibleWeights
         cruweight += "#{traitId}^"
         ranks = []
         values.sort.each do |amount, dps|
-          prevRankDPS = amount - 1 > 0 ? values[amount - 1] : templateDPS
-          weight = (dps.to_f - prevRankDPS) / (results['WeaponItemLevel'][1].to_f - templateDPS)
-          ranks.push("#{amount + 4}:#{weight.round(2)}")
+          if amount - 1 > 0
+            weight = (dps.to_f - values[amount - 1]) / (results['WeaponItemLevel'][1].to_f - templateDPS)
+            ranks.push("#{amount + 4}:#{weight.round(2)}")
+          else
+            weight = (dps.to_f - templateDPS) / (results['WeaponItemLevel'][1].to_f - templateDPS)
+            ranks.push("#{weight.round(2)}")
+          end
         end
         cruweight += ranks.join(' ') + '^'
       elsif TraitMap['Crucible'][name]
