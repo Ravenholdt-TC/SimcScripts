@@ -13,7 +13,7 @@ Combinator.rb Hunter T21_Hunter_Survival Hunter_Survival T21 1T xx0x0xx y q
 Combinator.rb Mage T21_Mage_Arcane Mage_Arcane T21 1T x0xx0xx y q
 Combinator.rb Mage T21_Mage_Fire Mage_Fire T21 1T x0xx0xx y q
 Combinator.rb Mage T21_Mage_Frost Mage_Frost T21 1T x0xx0xx y q
-Combinator.rb Monk T21_Monk_Windwalker Monk_Windwalker T21 1T x0x00xx y q
+Combinator.rb Monk T21_Monk_Windwalker Monk T21 1T x0x00xx y q
 Combinator.rb Paladin T21_Paladin_Retribution Paladin_Retribution T21 1T xx0x00x y q
 Combinator.rb Priest T21_Priest_Shadow Priest_Shadow T21 1T x00xxxx y q
 Combinator.rb Rogue T21_Rogue_Assassination Rogue T21 1T xxx001x y q
@@ -42,7 +42,7 @@ Combinator.rb Hunter T21H_Hunter_Survival Hunter_Survival T21H 1T xx0x0xx y q
 Combinator.rb Mage T21H_Mage_Arcane Mage_Arcane T21H 1T x0xx0xx y q
 Combinator.rb Mage T21H_Mage_Fire Mage_Fire T21H 1T x0xx0xx y q
 Combinator.rb Mage T21H_Mage_Frost Mage_Frost T21H 1T x0xx0xx y q
-Combinator.rb Monk T21H_Monk_Windwalker Monk_Windwalker T21H 1T x0x00xx y q
+Combinator.rb Monk T21H_Monk_Windwalker Monk T21H 1T x0x00xx y q
 Combinator.rb Paladin T21H_Paladin_Retribution Paladin_Retribution T21H 1T xx0x00x y q
 Combinator.rb Priest T21H_Priest_Shadow Priest_Shadow T21H 1T x00xxxx y q
 Combinator.rb Rogue T21H_Rogue_Assassination Rogue T21H 1T xxx001x y q
