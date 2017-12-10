@@ -78,27 +78,45 @@ module Interactive
   def self.SelectTalentPermutations(checkArgs=true)
     puts 'Please select the talents for permutation:'
     puts 'Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation'
-    puts 'Example: xxx00xx'
+    puts 'You can specify more per tier by wrapping the wanted columns in [].'
+    puts 'Examples: xxx00xx, xxx00[12]x'
     print 'Talents: '
     talentstring = GetInputOrArg(checkArgs)
-    unless talentstring.match(/\A[0-3xX]{7}\Z/)
-      puts 'ERROR: Invalid talent string!'
+    talentdata = []
+    isTierArray = false
+    tierArray = []
+    talentstring.each_char do |talentpart|
+      if ['0', '1', '2', '3'].include?(talentpart)
+        if isTierArray
+          tierArray.push(talentpart.to_i)
+        else
+          talentdata.push([talentpart.to_i])
+        end
+      elsif !isTierArray && talentpart.downcase.eql?('x')
+        talentdata.push((1..3).to_a)
+      elsif !isTierArray && talentpart.eql?('[')
+        isTierArray = true
+        tierArray = []
+      elsif isTierArray && talentpart.eql?(']')
+        isTierArray = false
+        talentdata.push(tierArray)
+      else
+        puts 'ERROR: Invalid talent string input!'
+        puts 'Press enter to quit...'
+        GetInputOrArg(checkArgs)
+        exit
+      end
+    end
+    if talentdata.length != 7
+      puts 'ERROR: Invalid number of talents!'
       puts 'Press enter to quit...'
       GetInputOrArg(checkArgs)
       exit
     end
-    talentdata = []
-    talentstring.each_char do |tier|
-      if tier.downcase.eql? 'x'
-        talentdata.push((1..3).to_a)
-      else
-        talentdata.push([tier.to_i])
-      end
-    end
-    puts
+    puts talentdata
     return talentdata
   end
-  
+
   def self.SelectCompositeType(checkArgs=true)
     puts 'Please select the type data you want to compose:'
     compositeType = ["Combinator","RelicSimulation","TrinketSimulation"]
@@ -110,7 +128,7 @@ module Interactive
       index += 1
     end
     print 'Composite: '
-    
+
     input = GetInputOrArg(checkArgs)
     if constructedcompositeType.has_value?(input)
       puts
