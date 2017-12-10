@@ -113,7 +113,6 @@ module Interactive
       GetInputOrArg(checkArgs)
       exit
     end
-    puts talentdata
     return talentdata
   end
 
