@@ -1,75 +1,14 @@
-cd ..
-
-REM T21
-RelicSimulation.rb DeathKnight T21_Death_Knight_Frost 1T q
-RelicSimulation.rb DeathKnight T21_Death_Knight_Unholy 1T q
-RelicSimulation.rb DemonHunter T21_Demon_Hunter_Havoc 1T q
-RelicSimulation.rb Druid T21_Druid_Balance 1T q
-RelicSimulation.rb Druid T21_Druid_Feral 1T q
-RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_DireFrenzy 1T q
-RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp 1T q
-RelicSimulation.rb Hunter T21_Hunter_Marksmanship 1T q
-RelicSimulation.rb Hunter T21_Hunter_Survival 1T q
-RelicSimulation.rb Mage T21_Mage_Arcane 1T q
-RelicSimulation.rb Mage T21_Mage_Fire 1T q
-RelicSimulation.rb Mage T21_Mage_Frost 1T q
-RelicSimulation.rb Monk T21_Monk_Windwalker 1T q
-RelicSimulation.rb Paladin T21_Paladin_Retribution 1T q
-RelicSimulation.rb Priest T21_Priest_Shadow 1T q
-RelicSimulation.rb Priest T21_Priest_Shadow_S2M 1T q
-RelicSimulation.rb Rogue T21_Rogue_Assassination 1T q
-RelicSimulation.rb Rogue T21_Rogue_Assassination_Exsg 1T q
-RelicSimulation.rb Rogue T21_Rogue_Outlaw 1T q
-RelicSimulation.rb Rogue T21_Rogue_Outlaw_SnD 1T q
-RelicSimulation.rb Rogue T21_Rogue_Subtlety 1T q
-RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Mantle+Hands 1T q
-RelicSimulation.rb Rogue T21_Rogue_Subtlety_DfA-Soul+Insignia 1T q
-RelicSimulation.rb Shaman T21_Shaman_Elemental 1T q
-RelicSimulation.rb Shaman T21_Shaman_Enhancement 1T q
-RelicSimulation.rb Warlock T21_Warlock_Affliction 1T q
-RelicSimulation.rb Warlock T21_Warlock_Demonology 1T q
-RelicSimulation.rb Warlock T21_Warlock_Destruction 1T q
-RelicSimulation.rb Warrior T21_Warrior_Arms 1T q
-RelicSimulation.rb Warrior T21_Warrior_Fury 1T q
-
-REM T20
-RelicSimulation.rb DeathKnight T20_Death_Knight_Frost 1T q
-RelicSimulation.rb DeathKnight T20_Death_Knight_Unholy 1T q
-RelicSimulation.rb DemonHunter T20_Demon_Hunter_Havoc 1T q
-RelicSimulation.rb Druid T20_Druid_Balance 1T q
-RelicSimulation.rb Druid T20_Druid_Feral 1T q
-RelicSimulation.rb Hunter T20_Hunter_Beast_Mastery 1T q
-RelicSimulation.rb Hunter T20_Hunter_Beast_Mastery_Stomp 1T q
-RelicSimulation.rb Hunter T20_Hunter_Marksmanship 1T q
-RelicSimulation.rb Hunter T20_Hunter_Survival 1T q
-RelicSimulation.rb Mage T20_Mage_Arcane 1T q
-RelicSimulation.rb Mage T20_Mage_Fire 1T q
-RelicSimulation.rb Mage T20_Mage_Frost 1T q
-RelicSimulation.rb Monk T20_Monk_Windwalker 1T q
-RelicSimulation.rb Paladin T20_Paladin_Retribution 1T q
-RelicSimulation.rb Priest T20_Priest_Shadow 1T q
-RelicSimulation.rb Priest T20_Priest_Shadow_S2M 1T q
-RelicSimulation.rb Rogue T20_Rogue_Assassination 1T q
-RelicSimulation.rb Rogue T20_Rogue_Assassination_Exsg 1T q
-RelicSimulation.rb Rogue T20_Rogue_Outlaw 1T q
-RelicSimulation.rb Rogue T20_Rogue_Outlaw_SnD 1T q
-RelicSimulation.rb Rogue T20_Rogue_Subtlety 1T q
-RelicSimulation.rb Rogue T20_Rogue_Subtlety_DfA 1T q
-RelicSimulation.rb Shaman T20_Shaman_Elemental 1T q
-RelicSimulation.rb Shaman T20_Shaman_Enhancement 1T q
-RelicSimulation.rb Warlock T20_Warlock_Affliction 1T q
-RelicSimulation.rb Warlock T20_Warlock_Demonology 1T q
-RelicSimulation.rb Warlock T20_Warlock_Destruction 1T q
-RelicSimulation.rb Warrior T20_Warrior_Arms 1T q
-RelicSimulation.rb Warrior T20_Warrior_Fury 1T q
-
-REM T19
-RelicSimulation.rb Rogue T19_Rogue_Assassination 1T q
-RelicSimulation.rb Rogue T19_Rogue_Outlaw 1T q
-RelicSimulation.rb Rogue T19_Rogue_Subtlety 1T q
-
-REM Composite T21
-REM Composite.rb RelicSimulation Priest T21_Priest_Shadow T21 q
-
+call %~dp0\DeathKnight\DK_All_RelicSimulation.bat nopause
+call %~dp0\DemonHunter\DH_All_RelicSimulation.bat nopause
+call %~dp0\Druid\Druid_All_RelicSimulation.bat nopause
+call %~dp0\Hunter\Hunter_All_RelicSimulation.bat nopause
+call %~dp0\Mage\Mage_All_RelicSimulation.bat nopause
+call %~dp0\Monk\Monk_All_RelicSimulation.bat nopause
+call %~dp0\Paladin\Paladin_All_RelicSimulation.bat nopause
+call %~dp0\Priest\Priest_All_RelicSimulation.bat nopause
+call %~dp0\Rogue\Rogue_All_RelicSimulation.bat nopause
+call %~dp0\Shaman\Shaman_All_RelicSimulation.bat nopause
+call %~dp0\Warlock\Warlock_All_RelicSimulation.bat nopause
+call %~dp0\Warrior\Warrior_All_RelicSimulation.bat nopause
 
 @pause
