@@ -1,3 +1,4 @@
+require_relative 'Logging'
 require_relative 'SimcConfig'
 
 module Interactive
@@ -35,7 +36,7 @@ module Interactive
     end
     index = input.to_i
     unless profiles.has_key?(index)
-      puts 'ERROR: Invalid profile index entered!'
+      Logging.LogScriptFatal "ERROR: Invalid profile index #{input} entered!"
       puts 'Press enter to quit...'
       GetInputOrArg(checkArgs)
       exit
@@ -64,7 +65,7 @@ module Interactive
     end
     index = input.to_i
     unless folders.has_key?(index)
-      puts 'ERROR: Invalid folder index entered!'
+      Logging.LogScriptFatal "ERROR: Invalid folder index #{input} entered!"
       puts 'Press enter to quit...'
       GetInputOrArg(checkArgs)
       exit
@@ -101,14 +102,14 @@ module Interactive
         isTierArray = false
         talentdata.push(tierArray)
       else
-        puts 'ERROR: Invalid talent string input!'
+        Logging.LogScriptFatal "ERROR: Invalid talent string input #{talentstring}!"
         puts 'Press enter to quit...'
         GetInputOrArg(checkArgs)
         exit
       end
     end
     if talentdata.length != 7
-      puts 'ERROR: Invalid number of talents!'
+      Logging.LogScriptFatal "ERROR: Invalid number of talents! Got #{talentdata.length}"
       puts 'Press enter to quit...'
       GetInputOrArg(checkArgs)
       exit
@@ -135,7 +136,7 @@ module Interactive
     end
     index = input.to_i
     unless constructedcompositeType.has_key?(index)
-      puts 'ERROR: Invalid composite type!'
+      Logging.LogScriptFatal "ERROR: Invalid composite type #{input}!"
       puts 'Press enter to quit...'
       GetInputOrArg(checkArgs)
       exit
@@ -152,7 +153,7 @@ module Interactive
       deletefile = GetInputOrArg(checkArgs)
       unless deletefile.downcase.eql? 'n'
         File.delete(file)
-        puts 'Old file deleted!'
+        Logging.LogScriptInfo "Old #{file} file deleted!"
       end
       puts
     end

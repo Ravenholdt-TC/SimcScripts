@@ -3,9 +3,12 @@ require 'bundler/setup'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
+require_relative 'lib/Logging'
 require_relative 'lib/ProfileHelper'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
+
+Logging.SetScriptName("Combinator")
 
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
@@ -28,6 +31,17 @@ talentdata = Interactive.SelectTalentPermutations()
 # Recreate or append to csv?
 csvFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}.csv"
 Interactive.RemoveFileWithQuestion(csvFile)
+
+# Log all interactively set settings
+puts
+Logging.LogScriptInfo "Summarizing input:"
+Logging.LogScriptInfo "-- Class: #{classfolder}"
+Logging.LogScriptInfo "-- Profile: #{profile}"
+Logging.LogScriptInfo "-- Gear: #{gearProfile}"
+Logging.LogScriptInfo "-- Setups: #{setupsProfile}"
+Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
+Logging.LogScriptInfo "-- Talents: #{talentdata}"
+puts
 
 # Read gear setups from JSON
 gear = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/CombinatorGear_#{gearProfile}.json")
@@ -89,7 +103,7 @@ end
 
 # Combine gear with talents and write simc input to file
 simcFile = "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc"
-puts "Writing combinations to #{simcFile}!"
+Logging.LogScriptInfo "Writing combinations to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   talentdata[0].each do |t1|
     talentdata[1].each do |t2|
@@ -120,7 +134,7 @@ File.open(simcFile, 'w') do |out|
   end
 end
 
-puts 'Starting simulations, this may take a while!'
+Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/Combinator_#{fightstyle}_#{profile}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fightstyle}_#{profile}.json"
 params = [
@@ -137,11 +151,11 @@ SimcHelper.RunSimulation(params)
 results = JSONResults.new("#{logFile}.json")
 
 # Extract metadata
-puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
 # Write to CSV
-puts "Adding data from #{logFile}.json to #{csvFile}..."
+Logging.LogScriptInfo "Adding data from #{logFile}.json to #{csvFile}..."
 sims = results.getAllDPSResults()
 sims.delete('Template')
 priorityDps = results.getPriorityDPSResults()
@@ -165,5 +179,5 @@ File.open(csvFile, 'a') do |csv|
 end
 
 puts
-puts 'Done! Press enter to quit...'
+Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

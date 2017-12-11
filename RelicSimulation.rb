@@ -4,12 +4,25 @@ require_relative 'lib/CrucibleWeights'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
+require_relative 'lib/Logging'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
+
+Logging.SetScriptName("RelicSimulation")
 
 classfolder = Interactive.SelectSubfolder('RelicSimulation')
 template = Interactive.SelectTemplate("RelicSimulation/#{classfolder}/RelicSimulation")
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
+
+# Log all interactively set settings
+puts
+Logging.LogScriptInfo "Summarizing input:"
+Logging.LogScriptInfo "-- Class: #{classfolder}"
+Logging.LogScriptInfo "-- Profile: #{template}"
+Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
+puts
+
+Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
 csvFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}.csv"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
@@ -28,7 +41,7 @@ results = JSONResults.new("#{logFile}.json")
 # Process results
 sims = {}
 templateDPS = 0
-puts "Converting #{logFile}.json to #{csvFile}..."
+Logging.LogScriptInfo "Converting #{logFile}.json to #{csvFile}..."
 results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -70,11 +83,11 @@ begin
   cruweight = CrucibleWeights.GetCrucibleWeightString(simcSpecString, sims, templateDPS)
   addToMeta['crucibleweight'] = cruweight if cruweight
 rescue KeyError => exception
-  puts "ERROR: Spec not found in JSON output. Not generating crucible weight string."
+  Logging.LogScriptError "ERROR: Spec not found in JSON output. Not generating crucible weight string."
 end
 
 # Save metadata
-puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile, addToMeta)
 
 # Get max number of results (have to fill others for Google Charts to work)
@@ -98,5 +111,5 @@ File.open(csvFile, 'w') do |csv|
   end
 end
 
-puts 'Done! Press enter to quit...'
+Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

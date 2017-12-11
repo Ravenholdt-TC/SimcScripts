@@ -1,9 +1,15 @@
 require 'json'
+require_relative 'Logging'
 
 module JSONParser
   # Returns full JSON hash from a file
   def self.ReadFile(file)
-    return JSON.parse(File.read(file))
+    begin
+      return JSON.parse(File.read(file))
+    rescue => err
+      Logging.LogScriptFatal err
+      exit
+    end
   end
 
   # Write a hash into a JSON file

@@ -1,3 +1,5 @@
+require 'open3'
+require_relative 'Logging'
 require_relative 'SimcConfig'
 
 module SimcHelper
@@ -24,6 +26,26 @@ module SimcHelper
     command.push("#{SimcConfig['GeneratedFolder']}/GeneratedConfig.simc")
 
     command += args
-    system *command
+
+    # Run simulation with logging and redirecting output to the terminal
+    outlog = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.log", 'a')
+    outlog.progname = 'SimulationCraft'
+    errlog = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.err.log", 'a')
+    errlog.progname = 'SimulationCraft'
+    Open3.popen3(*command) do |stdin, stdout, stderr, thread|
+      Thread.new do
+        until (line = stdout.gets).nil? do
+          line.chomp!
+          Logging.LogSimcInfo(line)
+        end
+      end
+      Thread.new do
+        until (line = stderr.gets).nil? do
+          line.chomp!
+          Logging.LogSimcError(line)
+        end
+      end
+      thread.join # Wait for simc process to end
+    end
   end
 end

@@ -3,17 +3,29 @@ require 'bundler/setup'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
+require_relative 'lib/Logging'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
+
+Logging.SetScriptName("TrinketSimulation")
 
 classfolder = Interactive.SelectSubfolder('TrinketSimulation')
 template = Interactive.SelectTemplate("TrinketSimulation/#{classfolder}/TrinketSimulation")
 trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
+# Log all interactively set settings
+puts
+Logging.LogScriptInfo "Summarizing input:"
+Logging.LogScriptInfo "-- Class: #{classfolder}"
+Logging.LogScriptInfo "-- Profile: #{template}"
+Logging.LogScriptInfo "-- Trinket List: #{trinketListProfile}"
+Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
+puts
+
 trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
 simcFile = "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc"
-puts "Writing profilesets to #{simcFile}!"
+Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
   out.puts 'name="Template"'
   out.puts 'trinket1=empty'
@@ -31,7 +43,7 @@ File.open(simcFile, 'w') do |out|
   end
 end
 
-puts 'Starting simulations, this may take a while!'
+Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 csvFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.csv"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
@@ -49,10 +61,10 @@ SimcHelper.RunSimulation(params)
 results = JSONResults.new("#{logFile}.json")
 
 # Extract metadata
-puts "Extract metadata from #{logFile}.json to #{metaFile}..."
+Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
-puts "Processing data from #{logFile}.json to #{csvFile}..."
+Logging.LogScriptInfo "Processing data from #{logFile}.json to #{csvFile}..."
 templateDPS = 0
 iLevelList = []
 sims = {}
@@ -86,5 +98,5 @@ File.open(csvFile, 'w') do |csv|
   end
 end
 
-puts 'Done! Press enter to quit...'
+Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

@@ -1,15 +1,17 @@
+require_relative 'Logging'
+
 module CrucibleWeights
   def self.GetCrucibleWeightString(spec_string, results, templateDPS)
     unless WeaponMap[spec_string]
-      puts "ERROR: #{spec_string} not found in WeaponMap. Not creating crucible weight string."
+      Logging.LogScriptError "ERROR: #{spec_string} not found in WeaponMap. Not creating crucible weight string."
       return nil
     end
     unless TraitMap[spec_string]
-      puts "ERROR: #{spec_string} not found in TraitMap. Not creating crucible weight string."
+      Logging.LogScriptError "ERROR: #{spec_string} not found in TraitMap. Not creating crucible weight string."
       return nil
     end
     unless results['WeaponItemLevel']
-      puts "ERROR: WeaponItemLevel not found in results. Not creating crucible weight string."
+      Logging.LogScriptError "ERROR: WeaponItemLevel not found in results. Not creating crucible weight string."
       return nil
     end
     cruweight = "cruweight^#{WeaponMap[spec_string]}^ilvl^1^"
@@ -34,7 +36,7 @@ module CrucibleWeights
         weight = (values[1].to_f - templateDPS) / (results['WeaponItemLevel'][1].to_f - templateDPS)
         cruweight += "#{traitId}^#{weight.round(2)}^"
       else
-        puts "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
+        Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
         next
       end
     end
