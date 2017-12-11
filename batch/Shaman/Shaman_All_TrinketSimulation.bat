@@ -1,3 +1,4 @@
+setlocal
 cd %~dp0\..\..
 
 REM T21
