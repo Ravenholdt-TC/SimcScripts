@@ -28,10 +28,6 @@ module SimcHelper
     command += args
 
     # Run simulation with logging and redirecting output to the terminal
-    outlog = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.log", 'a')
-    outlog.progname = 'SimulationCraft'
-    errlog = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.err.log", 'a')
-    errlog.progname = 'SimulationCraft'
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|
       Thread.new do
         until (line = stdout.gets).nil? do
