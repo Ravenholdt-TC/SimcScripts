@@ -7,7 +7,7 @@ require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
 require_relative 'lib/SimcConfig'
 
-Logging.SetScriptName("Composite")
+Logging.Initialize("Composite")
 
 compositeType = Interactive.SelectCompositeType()
 classfolder = Interactive.SelectSubfolder('Combinator')

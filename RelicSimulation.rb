@@ -8,7 +8,7 @@ require_relative 'lib/Logging'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
-Logging.SetScriptName("RelicSimulation")
+Logging.Initialize("RelicSimulation")
 
 classfolder = Interactive.SelectSubfolder('RelicSimulation')
 template = Interactive.SelectTemplate("RelicSimulation/#{classfolder}/RelicSimulation")

@@ -2,15 +2,13 @@ require 'logger'
 require_relative 'SimcConfig'
 
 module Logging
-  # Module vars
-  @@SimcLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.log", 'a')
-  @@SimcLogger.progname = 'SimulationCraft'
-  @@SimcErrorLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.err.log", 'a')
-  @@SimcErrorLogger.progname = 'SimulationCraft'
-  @@ScriptLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.log", 'a')
-  @@ScriptErrorLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.err.log", 'a')
-
-  def self.SetScriptName(name)
+  def self.Initialize(scriptName)
+    @@SimcLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.log", 'a')
+    @@SimcLogger.progname = 'SimulationCraft'
+    @@SimcErrorLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/SimC.err.log", 'a')
+    @@SimcErrorLogger.progname = 'SimulationCraft'
+    @@ScriptLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.log", 'a')
+    @@ScriptErrorLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.err.log", 'a')
     @@ScriptLogger.progname = name
     @@ScriptErrorLogger.progname = name
   end

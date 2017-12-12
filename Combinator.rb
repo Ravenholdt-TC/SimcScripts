@@ -8,7 +8,7 @@ require_relative 'lib/ProfileHelper'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
-Logging.SetScriptName("Combinator")
+Logging.Initialize("Combinator")
 
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")

@@ -7,7 +7,7 @@ require_relative 'lib/Logging'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
-Logging.SetScriptName("TrinketSimulation")
+Logging.Initialize("TrinketSimulation")
 
 classfolder = Interactive.SelectSubfolder('TrinketSimulation')
 template = Interactive.SelectTemplate("TrinketSimulation/#{classfolder}/TrinketSimulation")
