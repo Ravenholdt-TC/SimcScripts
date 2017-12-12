@@ -89,3 +89,8 @@ Then, you can run the `Combinator.rb` script.
 
 Log files for each combination will be written to the `logs` folder. The resulting CSV
 file can be found in `reports`.
+
+## Archiver
+
+If you run Archiver, it will automatically pack all script output files in generated, logs,
+and reports into a time-stamped .tar.gz file in `archives` and delete the raw files.

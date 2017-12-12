@@ -22,3 +22,6 @@ GeneratedFolder: generated
 
 # Where templates for the scripts are placed
 ProfilesFolder: profiles
+
+# Where archiver puts packed reports, logs and input
+ArchivesFolder: archives
