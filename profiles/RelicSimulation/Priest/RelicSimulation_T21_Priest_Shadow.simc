@@ -13,6 +13,7 @@ artifact_override=mind_shattering:4
 artifact_override=creeping_shadows:4
 artifact_override=to_the_pain:4
 artifact_override=fiending_dark:4
+artifact_override=unleash_the_shadows:4
 
 # Weapon Item Levels
 profileset.WeaponItemLevel_3=main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740,ilevel=969
@@ -34,6 +35,7 @@ profileset.MindShattering_1=artifact_override=mind_shattering:5
 profileset.CreepingShadows_1=artifact_override=creeping_shadows:5
 profileset.ToThePain_1=artifact_override=to_the_pain:5
 profileset.FiendingDark_1=artifact_override=fiending_dark:5
+profileset.UnleashTheShadows_1=artifact_override=unleash_the_shadows:5
 
 profileset.TormentTheWeak_1=crucible=1780:1
 profileset.Shadowbind_1=crucible=1778:1
@@ -54,6 +56,7 @@ profileset.MindShattering_2=artifact_override=mind_shattering:6
 profileset.CreepingShadows_2=artifact_override=creeping_shadows:6
 profileset.ToThePain_2=artifact_override=to_the_pain:6
 profileset.FiendingDark_2=artifact_override=fiending_dark:6
+profileset.UnleashTheShadows_2=artifact_override=unleash_the_shadows:6
 
 profileset.TormentTheWeak_2=crucible=1780:2
 profileset.Shadowbind_2=crucible=1778:2
@@ -74,6 +77,7 @@ profileset.MindShattering_3=artifact_override=mind_shattering:7
 profileset.CreepingShadows_3=artifact_override=creeping_shadows:7
 profileset.ToThePain_3=artifact_override=to_the_pain:7
 profileset.FiendingDark_3=artifact_override=fiending_dark:7
+profileset.UnleashTheShadows_3=artifact_override=unleash_the_shadows:7
 
 profileset.TormentTheWeak_3=crucible=1780:3
 profileset.Shadowbind_3=crucible=1778:3
