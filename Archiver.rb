@@ -14,7 +14,7 @@ if fileArray.length < 1
   exit
 end
 
-puts "Packaging logs and reports to #{targetArchive}"
+puts "Packaging logs and reports to #{targetArchive}..."
 File.open(targetArchive, 'wb') do |archive|
   Zlib::GzipWriter.wrap(archive) do |gz|
     Gem::Package::TarWriter.new(gz) do |tar|
@@ -36,7 +36,7 @@ end
 puts
 puts
 
-puts "Deleting old files"
+puts 'Deleting old files...'
 fileArray.each do |file|
   begin
     FileUtils.rm(file)
