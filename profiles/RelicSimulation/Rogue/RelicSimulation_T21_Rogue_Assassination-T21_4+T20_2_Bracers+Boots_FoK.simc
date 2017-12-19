@@ -1,0 +1,163 @@
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination.simc
+name="Template"
+
+### FoK Overrides
+
+actions.precombat=flask
+actions.precombat+=/augmentation
+actions.precombat+=/food
+# Snapshot raid buffed stats before combat begins and pre-potting is done.
+actions.precombat+=/snapshot_stats
+actions.precombat+=/apply_poison
+actions.precombat+=/stealth
+actions.precombat+=/potion
+actions.precombat+=/marked_for_death,if=raid_event.adds.in>40
+
+# Executed every time the actor is available.
+actions=variable,name=energy_regen_combined,value=energy.regen+poisoned_bleeds*(7+talent.venom_rush.enabled*3)%2
+actions+=/variable,name=energy_time_to_max_combined,value=energy.deficit%variable.energy_regen_combined
+actions+=/call_action_list,name=cds
+actions+=/call_action_list,name=maintain
+# The 'active_dot.rupture>=spell_targets.rupture' means that we don't want to envenom as long as we can multi-rupture (i.e. units that don't have rupture yet).
+actions+=/call_action_list,name=finish,if=(!talent.exsanguinate.enabled|cooldown.exsanguinate.remains>2)&(!dot.rupture.refreshable|(dot.rupture.exsanguinated&dot.rupture.remains>=3.5)|target.time_to_die-dot.rupture.remains<=6)&active_dot.rupture>=spell_targets.rupture
+actions+=/call_action_list,name=build,if=combo_points.deficit>1|energy.deficit<=25+variable.energy_regen_combined
+
+# Builders
+actions.build=hemorrhage,if=refreshable
+actions.build+=/hemorrhage,cycle_targets=1,if=refreshable&dot.rupture.ticking&spell_targets.fan_of_knives<2+equipped.insignia_of_ravenholdt
+actions.build+=/fan_of_knives,if=spell_targets>=2+equipped.insignia_of_ravenholdt|buff.the_dreadlords_deceit.stack>=29
+actions.build+=/mutilate,cycle_targets=1,if=dot.deadly_poison_dot.refreshable
+actions.build+=/fan_of_knives
+
+# Cooldowns
+actions.cds=potion,if=buff.bloodlust.react|target.time_to_die<=60|debuff.vendetta.up&cooldown.vanish.remains<5
+actions.cds+=/blood_fury,if=debuff.vendetta.up
+actions.cds+=/berserking,if=debuff.vendetta.up
+actions.cds+=/arcane_torrent,if=dot.kingsbane.ticking&!buff.envenom.up&energy.deficit>=15+variable.energy_regen_combined*gcd.remains*1.1
+actions.cds+=/marked_for_death,target_if=min:target.time_to_die,if=target.time_to_die<combo_points.deficit*1.5|(raid_event.adds.in>40&combo_points.deficit>=cp_max_spend)
+actions.cds+=/vendetta,if=!talent.exsanguinate.enabled|dot.rupture.ticking
+actions.cds+=/exsanguinate,if=!set_bonus.tier20_4pc&(prev_gcd.1.rupture&dot.rupture.remains>4+4*cp_max_spend&!stealthed.rogue|dot.garrote.pmultiplier>1&!cooldown.vanish.up&buff.subterfuge.up)
+actions.cds+=/exsanguinate,if=set_bonus.tier20_4pc&dot.garrote.remains>20&dot.rupture.remains>4+4*cp_max_spend
+# Nightstalker w/o Exsanguinate: Vanish Envenom if Mantle & T19_4PC, else Vanish Rupture
+actions.cds+=/vanish,if=talent.nightstalker.enabled&combo_points>=cp_max_spend&!talent.exsanguinate.enabled&mantle_duration=0&((equipped.mantle_of_the_master_assassin&set_bonus.tier19_4pc)|((!equipped.mantle_of_the_master_assassin|!set_bonus.tier19_4pc)&(dot.rupture.refreshable|debuff.vendetta.up)))
+actions.cds+=/vanish,if=talent.nightstalker.enabled&combo_points>=cp_max_spend&talent.exsanguinate.enabled&cooldown.exsanguinate.remains<1&(dot.rupture.ticking|time>10)
+actions.cds+=/vanish,if=talent.subterfuge.enabled&equipped.mantle_of_the_master_assassin&(debuff.vendetta.up|target.time_to_die<10)&mantle_duration=0
+actions.cds+=/vanish,if=talent.subterfuge.enabled&!equipped.mantle_of_the_master_assassin&!stealthed.rogue&dot.garrote.refreshable&((spell_targets.fan_of_knives<=3&combo_points.deficit>=1+spell_targets.fan_of_knives)|(spell_targets.fan_of_knives>=4&combo_points.deficit>=4))
+actions.cds+=/vanish,if=talent.shadow_focus.enabled&variable.energy_time_to_max_combined>=2&combo_points.deficit>=4
+actions.cds+=/toxic_blade,if=combo_points.deficit>=1+(mantle_duration>=0.2)&dot.rupture.remains>8&cooldown.vendetta.remains>10
+
+# Finishers
+actions.finish=death_from_above,if=combo_points>=5
+actions.finish+=/envenom,if=combo_points>=4+(talent.deeper_stratagem.enabled&!set_bonus.tier19_4pc)&(debuff.vendetta.up|mantle_duration>=0.2|debuff.surge_of_toxins.remains<0.2|energy.deficit<=25+variable.energy_regen_combined)
+actions.finish+=/envenom,if=talent.elaborate_planning.enabled&combo_points>=3+!talent.exsanguinate.enabled&buff.elaborate_planning.remains<0.2
+
+# Kingsbane
+# Sinister Circulation makes it worth to cast Kingsbane on CD except if you're [stealthed w/ Nighstalker and have Mantle & T19_4PC to Envenom] or before vendetta if you have mantle during the opener.
+actions.kb=kingsbane,if=artifact.sinister_circulation.enabled&!(equipped.duskwalkers_footpads&equipped.convergence_of_fates&artifact.master_assassin.rank>=6)&(time>25|!equipped.mantle_of_the_master_assassin|(debuff.vendetta.up&debuff.surge_of_toxins.up))&(talent.subterfuge.enabled|!stealthed.rogue|(talent.nightstalker.enabled&(!equipped.mantle_of_the_master_assassin|!set_bonus.tier19_4pc)))
+actions.kb+=/kingsbane,if=buff.envenom.up&((debuff.vendetta.up&debuff.surge_of_toxins.up)|cooldown.vendetta.remains<=5.8|cooldown.vendetta.remains>=10)
+
+# Maintain
+actions.maintain=rupture,if=talent.nightstalker.enabled&stealthed.rogue&!set_bonus.tier21_2pc&(!equipped.mantle_of_the_master_assassin|!set_bonus.tier19_4pc)&(talent.exsanguinate.enabled|target.time_to_die-remains>4)
+actions.maintain+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&stealthed.rogue&combo_points.deficit>=1&set_bonus.tier20_4pc&((dot.garrote.remains<=13&!debuff.toxic_blade.up)|pmultiplier<=1)&!exsanguinated
+actions.maintain+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&stealthed.rogue&combo_points.deficit>=1&!set_bonus.tier20_4pc&refreshable&(!exsanguinated|remains<=tick_time*2)&target.time_to_die-remains>2
+actions.maintain+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&stealthed.rogue&combo_points.deficit>=1&!set_bonus.tier20_4pc&remains<=10&pmultiplier<=1&!exsanguinated&target.time_to_die-remains>2
+actions.maintain+=/rupture,if=!talent.exsanguinate.enabled&combo_points>=3&!ticking&mantle_duration<=0.2&target.time_to_die>6
+actions.maintain+=/rupture,if=talent.exsanguinate.enabled&((combo_points>=cp_max_spend&cooldown.exsanguinate.remains<1)|(!ticking&(time>10|combo_points>=2+artifact.urge_to_kill.enabled)))
+actions.maintain+=/rupture,cycle_targets=1,if=combo_points>=4&refreshable&(pmultiplier<=1|remains<=tick_time)&(!exsanguinated|remains<=tick_time*2)&target.time_to_die-remains>6
+actions.maintain+=/call_action_list,name=kb,if=combo_points.deficit>=1+(mantle_duration>=0.2)&(!talent.exsanguinate.enabled|!cooldown.exanguinate.up|time>9)
+actions.maintain+=/pool_resource,for_next=1
+actions.maintain+=/garrote,cycle_targets=1,if=(!talent.subterfuge.enabled|!(cooldown.vanish.up&cooldown.vendetta.remains<=4))&combo_points.deficit>=1&refreshable&(pmultiplier<=1|remains<=tick_time)&(!exsanguinated|remains<=tick_time*2)&target.time_to_die-remains>4
+actions.maintain+=/garrote,if=set_bonus.tier20_4pc&talent.exsanguinate.enabled&prev_gcd.1.rupture&cooldown.exsanguinate.remains<1&(!cooldown.vanish.up|time>12)
+
+shoulder=fanged_slayers_shoulderpads,id=147174,bonus_id=1512/3563
+hands=fanged_slayers_handguards,id=147171,bonus_id=1512/3563
+chest=vest_of_the_dashing_scoundrel,id=152160,bonus_id=3612/1502
+feet=duskwalkers_footpads,id=137030,bonus_id=3630
+
+### End FoK Overrides
+
+main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=970
+
+#Reset crucible
+crucible=
+
+artifact_override=toxic_blades:4
+artifact_override=serrated_edge:4
+artifact_override=master_alchemist:4
+artifact_override=balanced_blades:4
+artifact_override=gushing_wound:4
+artifact_override=master_assassin:4
+artifact_override=poison_knives:4
+artifact_override=strangler:4
+
+# Weapon Item Levels
+profileset.WeaponItemLevel_3=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=973
+profileset.WeaponItemLevel_6=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=976
+profileset.WeaponItemLevel_9=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=979
+profileset.WeaponItemLevel_12=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=982
+profileset.WeaponItemLevel_15=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=985
+profileset.WeaponItemLevel_18=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=988
+profileset.WeaponItemLevel_21=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=991
+
+# 1 Relic
+profileset.ToxicBlades_1=artifact_override=toxic_blades:5
+profileset.SerratedEdge_1=artifact_override=serrated_edge:5
+profileset.MasterAlchemist_1=artifact_override=master_alchemist:5
+profileset.BalancedBlades_1=artifact_override=balanced_blades:5
+profileset.GushingWound_1=artifact_override=gushing_wound:5
+profileset.MasterAssassin_1=artifact_override=master_assassin:5
+profileset.Strangler_1=artifact_override=strangler:5
+profileset.PoisonKnives_1=artifact_override=poison_knives:5
+
+profileset.TormentTheWeak_1=crucible=1780:1
+profileset.Shadowbind_1=crucible=1778:1
+profileset.ChaoticDarkness_1=crucible=1779:1
+profileset.DarkSorrows_1=crucible=1781:1
+profileset.MasterOfShadows_1=crucible=1771:1
+profileset.MurderousIntent_1=crucible=1774:1
+profileset.Shocklight_1=crucible=1777:1
+profileset.LightSpeed_1=crucible=1770:1
+profileset.SecureInTheLight_1=crucible=1782:1
+profileset.InfusionOfLight_1=crucible=1783:1
+
+# 2 Relic
+profileset.ToxicBlades_2=artifact_override=toxic_blades:6
+profileset.SerratedEdge_2=artifact_override=serrated_edge:6
+profileset.MasterAlchemist_2=artifact_override=master_alchemist:6
+profileset.BalancedBlades_2=artifact_override=balanced_blades:6
+profileset.GushingWound_2=artifact_override=gushing_wound:6
+profileset.MasterAssassin_2=artifact_override=master_assassin:6
+profileset.Strangler_2=artifact_override=strangler:6
+profileset.PoisonKnives_2=artifact_override=poison_knives:6
+
+profileset.TormentTheWeak_2=crucible=1780:2
+profileset.Shadowbind_2=crucible=1778:2
+profileset.ChaoticDarkness_2=crucible=1779:2
+profileset.DarkSorrows_2=crucible=1781:2
+profileset.MasterOfShadows_2=crucible=1771:2
+profileset.MurderousIntent_2=crucible=1774:2
+profileset.Shocklight_2=crucible=1777:2
+profileset.LightSpeed_2=crucible=1770:2
+profileset.SecureInTheLight_2=crucible=1782:2
+profileset.InfusionOfLight_2=crucible=1783:2
+
+# 3 Relic
+profileset.ToxicBlades_3=artifact_override=toxic_blades:7
+profileset.SerratedEdge_3=artifact_override=serrated_edge:7
+profileset.MasterAlchemist_3=artifact_override=master_alchemist:7
+profileset.BalancedBlades_3=artifact_override=balanced_blades:7
+profileset.GushingWound_3=artifact_override=gushing_wound:7
+profileset.MasterAssassin_3=artifact_override=master_assassin:7
+profileset.Strangler_3=artifact_override=strangler:7
+profileset.PoisonKnives_3=artifact_override=poison_knives:7
+
+profileset.TormentTheWeak_3=crucible=1780:3
+profileset.Shadowbind_3=crucible=1778:3
+profileset.ChaoticDarkness_3=crucible=1779:3
+profileset.DarkSorrows_3=crucible=1781:3
+profileset.MasterOfShadows_3=crucible=1771:3
+profileset.MurderousIntent_3=crucible=1774:3
+profileset.Shocklight_3=crucible=1777:3
+profileset.LightSpeed_3=crucible=1770:3
+profileset.SecureInTheLight_3=crucible=1782:3
+profileset.InfusionOfLight_3=crucible=1783:3
