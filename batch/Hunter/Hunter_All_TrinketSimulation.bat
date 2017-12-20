@@ -9,7 +9,6 @@ TrinketSimulation.rb Hunter T21_Hunter_Survival Melee_Agility 1T q
 
 REM T20
 TrinketSimulation.rb Hunter T20_Hunter_Beast_Mastery Ranged_Agility 1T q
-TrinketSimulation.rb Hunter T20_Hunter_Beast_Mastery_Stomp Ranged_Agility 1T q
 TrinketSimulation.rb Hunter T20_Hunter_Marksmanship Ranged_Agility 1T q
 TrinketSimulation.rb Hunter T20_Hunter_Survival Melee_Agility 1T q
 
