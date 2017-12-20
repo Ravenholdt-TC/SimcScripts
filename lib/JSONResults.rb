@@ -1,3 +1,4 @@
+require 'date'
 require_relative 'JSONParser'
 
 # Used for parsing json2 output from simc
@@ -57,6 +58,10 @@ class JSONResults
       next unless player['overrides']
       metas['profilesets_overrides'][player['name']] = player['overrides']
     end
+
+    # Timestamps
+    metas['build_timestamp'] = DateTime.parse(@jsonData['build_date'] + ' ' + @jsonData['build_time'] + ' ' + Time.now.strftime('%:z')).to_time.to_i
+    metas['result_timestamp'] = Time.now.to_i
 
     # Add additional data
     metas.merge!(additionalData)
