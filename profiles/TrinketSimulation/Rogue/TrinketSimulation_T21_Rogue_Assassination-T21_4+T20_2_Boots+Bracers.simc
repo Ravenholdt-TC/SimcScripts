@@ -1,0 +1,6 @@
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination.simc
+
+shoulder=fanged_slayers_shoulderpads,id=147174,bonus_id=1512/3563
+hands=fanged_slayers_handguards,id=147171,bonus_id=1512/3563
+chest=vest_of_the_dashing_scoundrel,id=152160,bonus_id=3612/1502
+feet=duskwalkers_footpads,id=137030,bonus_id=3630
