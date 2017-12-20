@@ -2,7 +2,10 @@ setlocal
 cd %~dp0\..\..
 
 REM T21
-TrinketSimulation.rb Rogue T21_Rogue_Assassination Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination-Mantle+Bracers Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination-Mantle+Bracers_FoK Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination-T21_4+T20_2_Boots+Bracers Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination-T21_4+T20_2_Boots+Bracers_FoK Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Assassination_Exsg Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Outlaw Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Outlaw_SnD Melee_Agility 1T q
