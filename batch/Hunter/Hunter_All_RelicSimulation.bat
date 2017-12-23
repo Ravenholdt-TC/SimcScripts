@@ -4,6 +4,8 @@ cd %~dp0\..\..
 REM T21
 RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_DireFrenzy 1T q
 RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp 1T q
+RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp-T20-4+T21-2_AotB 1T q
+RelicSimulation.rb Hunter T21_Hunter_Beast_Mastery_Stomp-T20-4+T21-2_KC 1T q
 RelicSimulation.rb Hunter T21_Hunter_Marksmanship 1T q
 RelicSimulation.rb Hunter T21_Hunter_Survival 1T q
 
