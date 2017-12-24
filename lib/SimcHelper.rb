@@ -10,6 +10,11 @@ module SimcHelper
     end
   end
 
+  # Convert string into simc name, e.g. "Fortune's Strike" -> "fortunes_strike"
+  def self.TokenizeName(name)
+    return name.downcase.gsub(/[^0-9a-z_+.% ]/i, '').gsub(' ', '_')
+  end
+
   # Run a simulation with all args applied in order
   def self.RunSimulation(args)
     command = []

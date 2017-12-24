@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'bundler/setup'
-require_relative 'lib/CrucibleWeights'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
@@ -12,6 +11,10 @@ Logging.Initialize("RelicSimulation")
 
 classfolder = Interactive.SelectSubfolder('RelicSimulation')
 template = Interactive.SelectTemplate("RelicSimulation/#{classfolder}/RelicSimulation")
+
+relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicSimulation/RelicList.json")
+spec = Interactive.SelectFromArray('Specialization', relicList['Weapons'].keys)
+
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 # Log all interactively set settings
@@ -19,8 +22,51 @@ puts
 Logging.LogScriptInfo "Summarizing input:"
 Logging.LogScriptInfo "-- Class: #{classfolder}"
 Logging.LogScriptInfo "-- Profile: #{template}"
+Logging.LogScriptInfo "-- Specialization: #{spec}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
+
+# Generate simc input
+simcFile = "#{SimcConfig['GeneratedFolder']}/RelicSimulation_#{fightstyle}_#{template}.simc"
+Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
+WeaponItemLevelName = 'Weapon Item Level'
+WeaponItemLevelSteps = relicList['Config']['ItemLevelSteps']
+File.open(simcFile, 'w') do |out|
+  out.puts 'name="Template"'
+  out.puts "#{relicList['Weapons'][spec]},ilevel=#{relicList['Config']['BaseItemLevel']}"
+  # Reset crucible
+  out.puts 'crucible='
+  # Override all spec traits to 4
+  relicList['Traits'][spec].each do |trait|
+    out.puts "artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:4"
+  end
+  out.puts
+  # Weapon Item Level profilesets
+  weaponRangeMin = relicList['Config']['BaseItemLevel'] + WeaponItemLevelSteps
+  weaponRangeMax = relicList['Config']['BaseItemLevel'] + relicList['Config']['MaximumLevelIncrease']
+  (weaponRangeMin..weaponRangeMax).step(WeaponItemLevelSteps) do |ilvl|
+    out.puts "profileset.\"#{WeaponItemLevelName}_#{ilvl - relicList['Config']['BaseItemLevel']}\"+=#{relicList['Weapons'][spec]},ilevel=#{ilvl}"
+  end
+  out.puts
+  # Trait profilesets
+  (5..7).each.with_index(1) do |rank, amount|
+    relicList['Traits'][spec].each do |trait|
+      next if trait['exclude']
+      next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
+      next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+      out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{rank}"
+    end
+  end
+  out.puts
+  (1..3).each do |amount|
+    relicList['Traits']['Crucible'].each do |trait|
+      next if trait['exclude']
+      next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
+      next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+      out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{amount}"
+    end
+  end
+end
 
 Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
@@ -31,7 +77,8 @@ params = [
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"
+  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc",
+  simcFile
 ]
 SimcHelper.RunSimulation(params)
 
@@ -50,10 +97,6 @@ results.getAllDPSResults().each do |name, dps|
     templateDPS = dps
   end
 end
-
-# For interpolation to generate graphs that look more linear
-WeaponItemLevelName = 'WeaponItemLevel'
-WeaponItemLevelSteps = 3
 
 # Interpolate between Weapon Item Level Steps
 if sims[WeaponItemLevelName]
@@ -77,13 +120,36 @@ end
 
 # Get string for crucible weight addon and add it to metadata
 addToMeta = {}
-json = results.getRawJSON()
-begin
-  simcSpecString = json['sim']['players'].first['specialization']
-  cruweight = CrucibleWeights.GetCrucibleWeightString(simcSpecString, sims, templateDPS)
-  addToMeta['crucibleweight'] = cruweight if cruweight
-rescue KeyError => exception
-  Logging.LogScriptError "ERROR: Spec not found in JSON output. Not generating crucible weight string."
+if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
+  Logging.LogScriptInfo 'Generating CrucibleWeight string...'
+  weaponId = data[1]
+  cruweight = "cruweight^#{weaponId}^ilvl^1^"
+  sims.each do |name, values|
+    next if name == WeaponItemLevelName
+    if trait = relicList['Traits'][spec].find {|trait| trait['name'] == name}
+      cruweight += "#{trait['spellId']}^"
+      ranks = []
+      values.sort.each do |amount, dps|
+        if amount - 1 > 0
+          weight = (dps.to_f - values[amount - 1]) / (sims[WeaponItemLevelName][1].to_f - templateDPS)
+          ranks.push("#{amount + 4}:#{weight.round(2)}")
+        else
+          weight = (dps.to_f - templateDPS) / (sims[WeaponItemLevelName][1].to_f - templateDPS)
+          ranks.push("#{weight.round(2)}")
+        end
+      end
+      cruweight += ranks.join(' ') + '^'
+    elsif trait = relicList['Traits']['Crucible'].find {|trait| trait['name'] == name}
+      weight = (values[1].to_f - templateDPS) / (sims[WeaponItemLevelName][1].to_f - templateDPS)
+      cruweight += "#{trait['spellId']}^#{weight.round(2)}^"
+    else
+      Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
+      next
+    end
+  end
+  cruweight += 'end'
+  addToMeta['crucibleweight'] = cruweight
+  Logging.LogScriptInfo cruweight
 end
 
 # Save metadata
@@ -99,7 +165,7 @@ end
 # Write to CSV
 File.open(csvFile, 'w') do |csv|
   sims.each do |name, values|
-    csv.write name
+    csv.write "\"#{name}\""
     values.sort.each do |amount, dps|
       dps_inc = dps - templateDPS
       csv.write ",#{dps_inc},\"#{amount}\""

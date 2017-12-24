@@ -45,18 +45,14 @@ Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
 Usage:
 1. Create a simulation profile file called `RelicSimulation_<PROFILENAME>.simc` in the
    `profiles/RelicSimulation` folder.
-   Make sure the base SimC profile is named "Template".
-   Make sure you set all artifact traits to 4. (e.g. `artifact_override=master_assassin:4`)
-   It may help to set the weapon item level to a predefined value. (e.g. `ilevel=900`)
-2. Create additional profiles that increase weapon item level or one trait. These additional
-   profile names should follow the pattern `<NAME>_<AMOUNT>` without special characters.
-   (For an example look at the existing profiles in the profiles folder.)
-3. Run `RelicSimulation.rb`. It will ask you to select a profile.
-4. Wait for the simulation to run until it says it's done.
-5. The resulting CSV file will be in the `reports` folder.
+2. Run `RelicSimulation.rb`. It will ask you to select a profile and spec.
+3. Wait for the simulation to run until it says it's done.
+4. The resulting CSV file will be in the `reports` folder.
 
-Currently the RelicSimulation expects WeaponItemLevel increases in steps of three and will
-interpolate steps in between for a smoother graph and less sim time.
+The relics used for the simulationa are configured in `profiles/RelicSimulation/RelicList.json`.
+
+The crucible weight string can be found in the terminal output and in the meta report file
+at the bottom.
 
 The result is a CSV file containing the DPS increases for each Relic or Relic Item Level
 compared to the Template profile. Its structure has been created to fit what we import

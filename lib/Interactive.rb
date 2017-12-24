@@ -145,6 +145,31 @@ module Interactive
     return "#{constructedcompositeType[index]}"
   end
 
+  # Choose from a given array. Prompt will show "Please choose a <name>:"
+  def self.SelectFromArray(name, array, checkArgs=true)
+    puts "Please choose a #{name}:"
+    index = 1
+    array.each do |item|
+      puts "#{index}: #{item}"
+      index += 1
+    end
+    print "#{name}: "
+    input = GetInputOrArg(checkArgs)
+    if array.include?(input)
+      puts
+      return input
+    end
+    index = input.to_i
+    if index <= 0 || !array[index - 1]
+      Logging.LogScriptFatal "ERROR: Invalid #{name} index #{input} entered!"
+      puts 'Press enter to quit...'
+      GetInputOrArg(checkArgs)
+      exit
+    end
+    puts
+    return array[index - 1]
+  end
+
   # Asks if the specified file should be removed and does so by default (no answer)
   def self.RemoveFileWithQuestion(file, checkArgs=true)
     if File.exist?(file)

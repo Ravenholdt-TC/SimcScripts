@@ -1,0 +1,1252 @@
+/*
+    Optional trait options:
+    Ignore trait completely: "fightstyleBlacklist": ["1T"]
+    Only specific fightstyles, e.g.: "fightstyleWhitelist": ["1T"]
+    Exclude certain fightstyles, e.g.: "fightstyleBlacklist": ["1T"]
+*/
+{
+    "Config": {
+        "BaseItemLevel": 966,
+        "ItemLevelSteps": 3,
+        "MaximumLevelIncrease": 30
+    },
+    "Weapons": {
+        "Death_Knight_Blood": "main_hand=maw_of_the_damned,id=128402,bonus_id=716,enchant=rune_of_the_fallen_crusader",
+        "Death_Knight_Frost": "main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,enchant=rune_of_razorice",
+        "Death_Knight_Unholy": "main_hand=apocalypse,id=128403,bonus_id=718,enchant=rune_of_the_fallen_crusader",
+        "Demon_Hunter_Havoc": "main_hand=twinblades_of_the_deceiver,id=127829,bonus_id=719",
+        //"Demon_Hunter_Vengeance": "",
+        "Druid_Balance": "main_hand=scythe_of_elune,id=128858,bonus_id=722",
+        "Druid_Feral": "main_hand=fangs_of_ashamane,id=128860,bonus_id=723",
+        //"Druid_Guardian": "",
+        //"Druid_Restoration": "",
+        "Hunter_Beast_Mastery": "main_hand=titanstrike,id=128861,bonus_id=726",
+        "Hunter_Marksmanship": "main_hand=thasdorah_legacy_of_the_windrunners,id=128826,bonus_id=727",
+        "Hunter_Survival": "main_hand=talonclaw,id=128808,bonus_id=728",
+        "Mage_Arcane": "main_hand=aluneth,id=127857,bonus_id=729",
+        "Mage_Fire": "main_hand=felomelorn,id=128820,bonus_id=730",
+        "Mage_Frost": "main_hand=ebonchill,id=128862,bonus_id=731",
+        //"Monk_Brewmaster": "",
+        //"Monk_Mistweaver": "",
+        "Monk_Windwalker": "main_hand=fists_of_the_heavens,id=128940,bonus_id=734",
+        //"Paladin_Protection": "",
+        //"Paladin_Holy": "",
+        "Paladin_Retribution": "main_hand=ashbringer,id=120978,bonus_id=737",
+        //"Priest_Holy": "",
+        //"Priest_Discipline": "",
+        "Priest_Shadow": "main_hand=xalatath_blade_of_the_black_empire,id=128827,bonus_id=740",
+        "Rogue_Assassination": "main_hand=the_kingslayers,id=128870,bonus_id=741",
+        "Rogue_Outlaw": "main_hand=the_dreadblades,id=128872,bonus_id=742",
+        "Rogue_Subtlety": "main_hand=fangs_of_the_devourer,id=128476,bonus_id=743",
+        "Shaman_Elemental": "main_hand=the_fist_of_raden,id=128935,bonus_id=744",
+        "Shaman_Enhancement": "main_hand=doomhammer,id=128819,bonus_id=745",
+        //"Shaman_Restoration": "",
+        "Warlock_Affliction": "main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=747",
+        "Warlock_Demonology": "main_hand=skull_of_the_manari,id=128943,bonus_id=748",
+        "Warlock_Destruction": "main_hand=scepter_of_sargeras,id=128941,bonus_id=749",
+        //"Warrior_Protection": "",
+        "Warrior_Arms": "main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750",
+        "Warrior_Fury": "main_hand=warswords_of_the_valarjar,id=128908,bonus_id=751"
+    },
+    "Traits" : {
+        "Crucible": [
+            // Shadow Traits
+            {
+                "name": "Master of Shadows",
+                "spellId": 252091
+            },
+            {
+                "name": "Murderous Intent",
+                "spellId": 252191
+            },
+            {
+                "name": "Shadowbind",
+                "spellId": 252875
+            },
+            {
+                "name": "Chaotic Darkness",
+                "spellId": 252888
+            },
+            {
+                "name": "Torment the Weak",
+                "spellId": 252906
+            },
+            {
+                "name": "Dark Sorrows",
+                "spellId": 252922
+            },
+            // Light Traits
+            {
+                "name": "Light Speed",
+                "spellId": 252088
+            },
+            {
+                "name": "Refractive Shell",
+                "spellId": 252207,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Shocklight",
+                "spellId": 252799
+            },
+            {
+                "name": "Secure in the Light",
+                "spellId": 253070
+            },
+            {
+                "name": "Infusion of Light",
+                "spellId": 253093
+            },
+            {
+                "name": "Light's Embrace",
+                "spellId": 253111,
+                "fightstyleBlacklist": ["1T"]
+            }
+        ],
+        "Death_Knight_Blood": [
+            {
+                "name": "All-consuming Rot",
+                "spellId": 192464
+            },
+            {
+                "name": "Bonebreaker",
+                "spellId": 192538
+            },
+            {
+                "name": "Carrion Feast",
+                "spellId": 238042,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Coagulopathy",
+                "spellId": 192460
+            },
+            {
+                "name": "Dance of Darkness",
+                "spellId": 192514
+            },
+            {
+                "name": "Grim Perseverance",
+                "spellId": 192447,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Iron Heart",
+                "spellId": 192450,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Meat Shield",
+                "spellId": 192453,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Vampiric Fangs",
+                "spellId": 192542,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Veinrender",
+                "spellId": 192457
+            }
+        ],
+        "Death_Knight_Frost": [
+            {
+                "name": "Ambidexterity",
+                "spellId": 189092
+            },
+            {
+                "name": "Bad to the Bone",
+                "spellId": 189147
+            },
+            {
+                "name": "Blast Radius",
+                "spellId": 189086
+            },
+            {
+                "name": "Cold as Ice",
+                "spellId": 189080
+            },
+            {
+                "name": "Dead of Winter",
+                "spellId": 189164
+            },
+            {
+                "name": "Frozen Skin",
+                "spellId": 204875,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Ice in your Veins",
+                "spellId": 189154,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Nothing but the Boots",
+                "spellId": 189144
+            },
+            {
+                "name": "Overpowered",
+                "spellId": 189097
+            },
+            {
+                "name": "Runefrost",
+                "spellId": 238043
+            }
+        ],
+        "Death_Knight_Unholy": [
+            {
+                "name": "Deadliest Coil",
+                "spellId": 191419
+            },
+            {
+                "name": "Deadly Durability",
+                "spellId": 191565,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Eternal Agony",
+                "spellId": 208598
+            },
+            {
+                "name": "Lash of Shadows",
+                "spellId": 238044
+            },
+            {
+                "name": "Plaguebearer",
+                "spellId": 191485
+            },
+            {
+                "name": "Rotten Touch",
+                "spellId": 191442
+            },
+            {
+                "name": "Runic Tattoos",
+                "spellId": 191592
+            },
+            {
+                "name": "Scourge the Unbeliever",
+                "spellId": 191494
+            },
+            {
+                "name": "The Darkest Crusade",
+                "spellId": 191488
+            },
+            {
+                "name": "Unholy Endurance",
+                "spellId": 191584,
+                "fightstyleBlacklist": ["1T"]
+            }
+        ],
+        "Demon_Hunter_Havoc": [
+            {
+                "name": "Contained Fury",
+                "spellId": 201454
+            },
+            {
+                "name": "Critical Chaos",
+                "spellId": 201455
+            },
+            {
+                "name": "Chaos Vision",
+                "spellId": 201456
+            },
+            {
+                "name": "Sharpened Glaives",
+                "spellId": 201457
+            },
+            {
+                "name": "Demon Rage",
+                "spellId": 201458
+            },
+            {
+                "name": "Illidari Knowledge",
+                "spellId": 201459,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Unleashed Demons",
+                "spellId": 201460
+            },
+            {
+                "name": "Deceiver's Fury",
+                "spellId": 201463,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Overwhelming Power",
+                "spellId": 201464,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Wide Eyes",
+                "spellId": 238045
+            }
+        ],
+        "Demon_Hunter_Vengeance": [
+        ],
+        "Druid_Balance": [
+            {
+                "name": "Bladed Feathers",
+                "spellId": 202302,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Touch of the Moon",
+                "spellId": 203018,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Dark Side of the Moon",
+                "spellId": 202384
+            },
+            {
+                "name": "Twilight Glow",
+                "spellId": 202386
+            },
+            {
+                "name": "Solar Stabbing",
+                "spellId": 202426
+            },
+            {
+                "name": "Scythe of the Stars",
+                "spellId": 202433
+            },
+            {
+                "name": "Falling Star",
+                "spellId": 202445
+            },
+            {
+                "name": "Sunfire Burns",
+                "spellId": 202466
+            },
+            {
+                "name": "Empowerment",
+                "spellId": 202464
+            },
+            {
+                "name": "Light of the Evening Star",
+                "spellId": 238047
+            }
+        ],
+        "Druid_Feral": [
+            {
+                "name": "Honed Instincts",
+                "spellId": 210557,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Razor Fangs",
+                "spellId": 210570
+            },
+            {
+                "name": "Feral Power",
+                "spellId": 210571
+            },
+            {
+                "name": "Powerful Bite",
+                "spellId": 210575
+            },
+            {
+                "name": "Ashamane's Energy",
+                "spellId": 210579
+            },
+            {
+                "name": "Attuned to Nature",
+                "spellId": 210590,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Tear the Flesh",
+                "spellId": 210593
+            },
+            {
+                "name": "Feral Instinct",
+                "spellId": 210631
+            },
+            {
+                "name": "Sharpened Claws",
+                "spellId": 210637
+            },
+            {
+                "name": "Thrashing Claws",
+                "spellId": 238048
+            }
+        ],
+        "Druid_Guardian": [
+        ],
+        "Druid_Restoration": [
+        ],
+        "Hunter_Beast_Mastery": [
+            {
+                "name": "Wilderness Expert",
+                "spellId": 197038
+            },
+            {
+                "name": "Furious Swipes",
+                "spellId": 197047,
+                "aoeOnly": true
+            },
+            {
+                "name": "Pack Leader",
+                "spellId": 197080
+            },
+            {
+                "name": "Natural Reflexes",
+                "spellId": 197138,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Focus of the Titans",
+                "spellId": 197139,
+                "aoeOnly": true
+            },
+            {
+                "name": "Spitting Cobras",
+                "spellId": 197140
+            },
+            {
+                "name": "Mimiron's Shell",
+                "spellId": 197160,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Jaws of Thunder",
+                "spellId": 197162
+            },
+            {
+                "name": "Unleash the Beast",
+                "spellId": 206910
+            },
+            {
+                "name": "Slithering Serpents",
+                "spellId": 238051
+            }
+        ],
+        "Hunter_Marksmanship": [
+            {
+                "name": "Deadly Aim",
+                "spellId": 190449
+            },
+            {
+                "name": "Windrunner's Guidance",
+                "spellId": 190457
+            },
+            {
+                "name": "Quick Shot",
+                "spellId": 190462
+            },
+            {
+                "name": "Called Shot",
+                "spellId": 190467,
+                "aoeOnly": true
+            },
+            {
+                "name": "Healing Shell",
+                "spellId": 190503,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Survival of the Fittest",
+                "spellId": 190514,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Precision",
+                "spellId": 190520
+            },
+            {
+                "name": "Marked for Death",
+                "spellId": 190529
+            },
+            {
+                "name": "Gust of Wind",
+                "spellId": 190567,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Unerring Arrows",
+                "spellId": 238052
+            }
+        ],
+        "Hunter_Survival": [
+            {
+                "name": "Sharpened Fang",
+                "spellId": 203566
+            },
+            {
+                "name": "My Beloved Monster",
+                "spellId": 203577
+            },
+            {
+                "name": "Lacerating Talons",
+                "spellId": 203578
+            },
+            {
+                "name": "Raptor's Cry",
+                "spellId": 203638
+            },
+            {
+                "name": "Fluffy, Go",
+                "spellId": 203669
+            },
+            {
+                "name": "Explosive Force",
+                "spellId": 203670
+            },
+            {
+                "name": "Hellcarver",
+                "spellId": 203673,
+                "aoeOnly": true
+            },
+            {
+                "name": "Bird of Prey",
+                "spellId": 224764,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Hunter's Bounty",
+                "spellId": 203749,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Jaws of the Mongoose",
+                "spellId": 238053
+            }
+        ],
+        "Mage_Arcane": [
+            {
+                "name": "Torrential Barrage",
+                "spellId": 187304
+            },
+            {
+                "name": "Blasting Rod",
+                "spellId": 187258
+            },
+            {
+                "name": "Aegwynn's Wrath",
+                "spellId": 187321
+            },
+            {
+                "name": "Arcane Purification",
+                "spellId": 187313,
+                "aoeOnly": true
+            },
+            {
+                "name": "Aegwynn's Fury",
+                "spellId": 187287
+            },
+            {
+                "name": "Ethereal Sensitivity",
+                "spellId": 187276
+            },
+            {
+                "name": "Aegwynn's Imperative",
+                "spellId": 187264
+            },
+            {
+                "name": "Everywhere at Once",
+                "spellId": 187301,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Force Barrier",
+                "spellId": 210716,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Aegwynn's Intensity",
+                "spellId": 238054
+            }
+        ],
+        "Mage_Fire": [
+            {
+                "name": "Fire at Will",
+                "spellId": 194224
+            },
+            {
+                "name": "Reignition Overdrive",
+                "spellId": 194234
+            },
+            {
+                "name": "Pyroclasmic Paranoia",
+                "spellId": 194239
+            },
+            {
+                "name": "Burning Gaze",
+                "spellId": 194312
+            },
+            {
+                "name": "Blue Flame Special",
+                "spellId": 210182,
+                "aoeOnly": true
+            },
+            {
+                "name": "Great Balls of Fire",
+                "spellId": 194313
+            },
+            {
+                "name": "Everburning Consumption",
+                "spellId": 194314
+            },
+            {
+                "name": "Cauterizing Blink",
+                "spellId": 194318,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Molten Skin",
+                "spellId": 194315,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Pre-Ignited",
+                "spellId": 238055
+            }
+        ],
+        "Mage_Frost": [
+            {
+                "name": "Icy Caress",
+                "spellId": 195315
+            },
+            {
+                "name": "Ice Age",
+                "spellId": 195317
+            },
+            {
+                "name": "Let It Go",
+                "spellId": 195322
+            },
+            {
+                "name": "Orbital Strike",
+                "spellId": 195323
+            },
+            {
+                "name": "Frozen Veins",
+                "spellId": 195345
+            },
+            {
+                "name": "Clarity of Thought",
+                "spellId": 195351
+            },
+            {
+                "name": "The Storm Rages",
+                "spellId": 195352,
+                "aoeOnly": true
+            },
+            {
+                "name": "Shield of Alodi",
+                "spellId": 195354,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Jouster",
+                "spellId": 214626,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Obsidian Lance",
+                "spellId": 238056
+            }
+        ],
+        "Monk_Brewmaster": [
+        ],
+        "Monk_Mistweaver": [
+        ],
+        "Monk_Windwalker": [
+            {
+                "name": "Inner Peace",
+                "spellId": 195243
+            },
+            {
+                "name": "Light on your Feet",
+                "spellId": 195244,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Rising Winds",
+                "spellId": 195263
+            },
+            {
+                "name": "Tiger Claws",
+                "spellId": 218607
+            },
+            {
+                "name": "Death Art",
+                "spellId": 195266,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Power of a Thousand Cranes",
+                "spellId": 195269,
+                "aoeOnly": true
+            },
+            {
+                "name": "Fists of the Wind",
+                "spellId": 195291
+            },
+            {
+                "name": "Healing Winds",
+                "spellId": 195380,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Strength of Xuen",
+                "spellId": 195267
+            },
+            {
+                "name": "Split Personality",
+                "spellId": 238059
+            }
+        ],
+        "Paladin_Protection": [
+        ],
+        "Paladin_Holy": [
+        ],
+        "Paladin_Retribution": [
+            {
+                "name": "Highlord's Judgement",
+                "spellId": 186941
+            },
+            {
+                "name": "Sharpened Edge",
+                "spellId": 184759
+            },
+            {
+                "name": "Righteous Blade",
+                "spellId": 184843
+            },
+            {
+                "name": "Embrace the Light",
+                "spellId": 186934,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Deflection",
+                "spellId": 184778,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Deliver the Justice",
+                "spellId": 186927
+            },
+            {
+                "name": "Might of the Templar",
+                "spellId": 185368
+            },
+            {
+                "name": "Protector of the Ashen Blade",
+                "spellId": 186944,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Wrath of the Ashbringer",
+                "spellId": 186945
+            },
+            {
+                "name": "Righteous Verdict",
+                "spellId": 238062
+            }
+        ],
+        "Priest_Holy": [
+        ],
+        "Priest_Discipline": [
+        ],
+        "Priest_Shadow": [
+            {
+                "name": "Unleash the Shadows",
+                "spellId": 194093
+            },
+            {
+                "name": "From the Shadows",
+                "spellId": 193642,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Mind Shattering",
+                "spellId": 193643
+            },
+            {
+                "name": "To the Pain",
+                "spellId": 193644
+            },
+            {
+                "name": "Death's Embrace",
+                "spellId": 193645
+            },
+            {
+                "name": "Thoughts of Insanity",
+                "spellId": 193647,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Creeping Shadows",
+                "spellId": 194002
+            },
+            {
+                "name": "Touch of Darkness",
+                "spellId": 194007
+            },
+            {
+                "name": "Void Corruption",
+                "spellId": 194016
+            },
+            {
+                "name": "Fiending Dark",
+                "spellId": 238065
+            }
+        ],
+        "Rogue_Assassination": [
+            {
+                "name": "Toxic Blades",
+                "spellId": 192310
+            },
+            {
+                "name": "Serrated Edge",
+                "spellId": 192315
+            },
+            {
+                "name": "Master Alchemist",
+                "spellId": 192318
+            },
+            {
+                "name": "Fade Into Shadows",
+                "spellId": 192323,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Balanced Blades",
+                "spellId": 192326
+            },
+            {
+                "name": "Gushing Wound",
+                "spellId": 192329
+            },
+            {
+                "name": "Shadow Walker",
+                "spellId": 192345,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Master Assassin",
+                "spellId": 192349
+            },
+            {
+                "name": "Poison Knives",
+                "spellId": 192376
+            },
+            {
+                "name": "Strangler",
+                "spellId": 238066
+            }
+        ],
+        "Rogue_Outlaw": [
+            {
+                "name": "Black Powder",
+                "spellId": 216230
+            },
+            {
+                "name": "Blade Dancer",
+                "spellId": 202507,
+                "aoeOnly": true
+            },
+            {
+                "name": "Fate's Thirst",
+                "spellId": 202514
+            },
+            {
+                "name": "Fortune's Strike",
+                "spellId": 202521
+            },
+            {
+                "name": "Gunslinger",
+                "spellId": 202522
+            },
+            {
+                "name": "Fatebringer",
+                "spellId": 202524
+            },
+            {
+                "name": "Fortune Strikes",
+                "spellId": 202530
+            },
+            {
+                "name": "Ghostly Shell",
+                "spellId": 202533,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Fortune's Boon",
+                "spellId": 202907
+            },
+            {
+                "name": "Sabermetrics",
+                "spellId": 238067
+            }
+        ],
+        "Rogue_Subtlety": [
+            {
+                "name": "The Quiet Knife",
+                "spellId": 197231
+            },
+            {
+                "name": "Demon's Kiss",
+                "spellId": 197233
+            },
+            {
+                "name": "Gutripper",
+                "spellId": 197234
+            },
+            {
+                "name": "Precision Strike",
+                "spellId": 197235
+            },
+            {
+                "name": "Fortune's Bite",
+                "spellId": 197369
+            },
+            {
+                "name": "Soul Shadows",
+                "spellId": 197386
+            },
+            {
+                "name": "Energetic Stabbing",
+                "spellId": 197239
+            },
+            {
+                "name": "Catlike Reflexes",
+                "spellId": 197241,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Ghost Armor",
+                "spellId": 197244,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Weak Point",
+                "spellId": 238068
+            }
+        ],
+        "Shaman_Elemental": [
+            {
+                "name": "Call of Thunder",
+                "spellId": 191493
+            },
+            {
+                "name": "The Ground Trembles",
+                "spellId": 191499,
+                "aoeOnly": true
+            },
+            {
+                "name": "Lava Imbued",
+                "spellId": 191504
+            },
+            {
+                "name": "Firestorm",
+                "spellId": 191740
+            },
+            {
+                "name": "Protection of the Elements",
+                "spellId": 191569,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Molten Blast",
+                "spellId": 191572
+            },
+            {
+                "name": "Electric Discharge",
+                "spellId": 191577,
+                "aoeOnly": true
+            },
+            {
+                "name": "Shamanistic Healing",
+                "spellId": 191582,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Earthen Attunement",
+                "spellId": 191598
+            },
+            {
+                "name": "Elemental Destabilization",
+                "spellId": 238069
+            }
+        ],
+        "Shaman_Enhancement": [
+            {
+                "name": "Weapons of the Elements",
+                "spellId": 215381
+            },
+            {
+                "name": "Forged in Lava",
+                "spellId": 198236
+            },
+            {
+                "name": "Spirit of the Maelstrom",
+                "spellId": 198238,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Wind Surge",
+                "spellId": 198247
+            },
+            {
+                "name": "Elemental Healing",
+                "spellId": 198248,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Wind Strikes",
+                "spellId": 198292
+            },
+            {
+                "name": "Spiritual Healing",
+                "spellId": 198296,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Gathering Storms",
+                "spellId": 198299
+            },
+            {
+                "name": "Gathering of the Maelstrom",
+                "spellId": 198349
+            },
+            {
+                "name": "Crashing Hammer",
+                "spellId": 238070
+            }
+        ],
+        "Shaman_Restoration": [
+        ],
+        "Warlock_Affliction": [
+            {
+                "name": "Inimitable Agony",
+                "spellId": 199111
+            },
+            {
+                "name": "Hideous Corruption",
+                "spellId": 199112
+            },
+            {
+                "name": "Drained to a Husk",
+                "spellId": 199120
+            },
+            {
+                "name": "Inherently Unstable",
+                "spellId": 199152
+            },
+            {
+                "name": "Seeds of Doom",
+                "spellId": 199153,
+                "aoeOnly": true
+            },
+            {
+                "name": "Perdition",
+                "spellId": 199158
+            },
+            {
+                "name": "Shadowy Incantations",
+                "spellId": 199163
+            },
+            {
+                "name": "Shadows of the Flesh",
+                "spellId": 199212,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Long Dark Night of the Soul",
+                "spellId": 199214,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Winnowing",
+                "spellId": 238072
+            }
+        ],
+        "Warlock_Demonology": [
+            {
+                "name": "Summoner's Prowess",
+                "spellId": 211108
+            },
+            {
+                "name": "Legionwrath",
+                "spellId": 211126,
+                "aoeOnly": true
+            },
+            {
+                "name": "The Doom of Azeroth",
+                "spellId": 211106
+            },
+            {
+                "name": "Sharpened Dreadfangs",
+                "spellId": 211123
+            },
+            {
+                "name": "Dirty Hands",
+                "spellId": 211105
+            },
+            {
+                "name": "Infernal Furnace",
+                "spellId": 211119
+            },
+            {
+                "name": "Maw of Shadows",
+                "spellId": 211099
+            },
+            {
+                "name": "Open Link",
+                "spellId": 211144,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Firm Resolve",
+                "spellId": 211131,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Left Hand of Darkness",
+                "spellId": 238073
+            }
+        ],
+        "Warlock_Destruction": [
+            {
+                "name": "Master of Disaster",
+                "spellId": 196211
+            },
+            {
+                "name": "Chaotic Instability",
+                "spellId": 196217
+            },
+            {
+                "name": "Fire and the Flames",
+                "spellId": 196222
+            },
+            {
+                "name": "Residual Flames",
+                "spellId": 196227
+            },
+            {
+                "name": "Soulsnatcher",
+                "spellId": 196236
+            },
+            {
+                "name": "Burning Hunger",
+                "spellId": 196432
+            },
+            {
+                "name": "Fire from the Sky",
+                "spellId": 196258,
+                "aoeOnly": true
+            },
+            {
+                "name": "Devourer of Life",
+                "spellId": 196301,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Eternal Struggle",
+                "spellId": 196305,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Flames of Sargeras",
+                "spellId": 238074
+            }
+        ],
+        "Warrior_Protection": [
+        ],
+        "Warrior_Arms": [
+            {
+                "name": "Unending Rage",
+                "spellId": 209459
+            },
+            {
+                "name": "One Against Many",
+                "spellId": 209462,
+                "aoeOnly": true
+            },
+            {
+                "name": "Crushing Blows",
+                "spellId": 209472
+            },
+            {
+                "name": "Many Will Fall",
+                "spellId": 216274
+            },
+            {
+                "name": "Deathblow",
+                "spellId": 209481
+            },
+            {
+                "name": "Tactical Advance",
+                "spellId": 209483,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Precise Strikes",
+                "spellId": 248579
+            },
+            {
+                "name": "Exloit the Weakness",
+                "spellId": 209494
+            },
+            {
+                "name": "Touch of Zakajz",
+                "spellId": 209541,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Storm of Swords",
+                "spellId": 238075
+            }
+        ],
+        "Warrior_Fury": [
+            {
+                "name": "Deathdealer",
+                "spellId": 200846
+            },
+            {
+                "name": "Wild Slashes",
+                "spellId": 216273
+            },
+            {
+                "name": "Wrath and Fury",
+                "spellId": 200849
+            },
+            {
+                "name": "Unstoppable",
+                "spellId": 200853
+            },
+            {
+                "name": "Uncontrolled Rage",
+                "spellId": 200856,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Battle Scars",
+                "spellId": 200857,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Bloodcraze",
+                "spellId": 200859,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Unrivaled Strength",
+                "spellId": 200860
+            },
+            {
+                "name": "Raging Berserker",
+                "spellId": 200861
+            },
+            {
+                "name": "Pulse of Battle",
+                "spellId": 238076
+            }
+        ]
+    }
+}
