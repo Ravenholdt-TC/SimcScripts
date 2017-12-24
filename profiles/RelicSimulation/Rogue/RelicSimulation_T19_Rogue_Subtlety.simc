@@ -1,56 +1,5 @@
 $(simc_profiles_path)/Tier19/T19_Rogue_Subtlety.simc
-name="Template"
 
 #Legendaries
 shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
 wrists=denial_of_the_halfgiants,id=137100,ilevel=970
-
-main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=950
-
-artifact_override=soul_shadows:4
-artifact_override=fortunes_bite:4
-artifact_override=precision_strike:4
-artifact_override=demons_kiss:4
-artifact_override=gutripper:4
-artifact_override=energetic_stabbing:4
-artifact_override=weak_point:4
-artifact_override=the_quiet_knife:4
-
-# Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=953
-profileset.WeaponItemLevel_6=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=956
-profileset.WeaponItemLevel_9=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=959
-profileset.WeaponItemLevel_12=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=962
-profileset.WeaponItemLevel_15=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=965
-profileset.WeaponItemLevel_18=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=968
-profileset.WeaponItemLevel_21=main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,ilevel=971
-
-# 1 Relics
-profileset.SoulShadows_1=artifact_override=soul_shadows:5
-profileset.FortunesBite_1=artifact_override=fortunes_bite:5
-profileset.PrecisionStrike_1=artifact_override=precision_strike:5
-profileset.DemonsKiss_1=artifact_override=demons_kiss:5
-profileset.Gutripper_1=artifact_override=gutripper:5
-profileset.EnergeticStabbing_1=artifact_override=energetic_stabbing:5
-profileset.WeakPoint_1=artifact_override=weak_point:5
-profileset.TheQuietKnife_1=artifact_override=the_quiet_knife:5
-
-# 2 Relics
-profileset.SoulShadows_2=artifact_override=soul_shadows:6
-profileset.FortunesBite_2=artifact_override=fortunes_bite:6
-profileset.PrecisionStrike_2=artifact_override=precision_strike:6
-profileset.DemonsKiss_2=artifact_override=demons_kiss:6
-profileset.Gutripper_2=artifact_override=gutripper:6
-profileset.EnergeticStabbing_2=artifact_override=energetic_stabbing:6
-profileset.WeakPoint_2=artifact_override=weak_point:6
-profileset.TheQuietKnife_2=artifact_override=the_quiet_knife:6
-
-# 3 Relics
-profileset.SoulShadows_3=artifact_override=soul_shadows:7
-profileset.FortunesBite_3=artifact_override=fortunes_bite:7
-profileset.PrecisionStrike_3=artifact_override=precision_strike:7
-profileset.DemonsKiss_3=artifact_override=demons_kiss:7
-profileset.Gutripper_3=artifact_override=gutripper:7
-profileset.EnergeticStabbing_3=artifact_override=energetic_stabbing:7
-profileset.WeakPoint_3=artifact_override=weak_point:7
-profileset.TheQuietKnife_3=artifact_override=the_quiet_knife:7

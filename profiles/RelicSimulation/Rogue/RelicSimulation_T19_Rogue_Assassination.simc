@@ -1,56 +1,5 @@
 $(simc_profiles_path)/Tier19/T19_Rogue_Assassination.simc
-name="Template"
 
 #Legendaries
 shoulder=mantle_of_the_master_assassin,id=144236,ilevel=970
 wrists=zoldyck_family_training_shackles,id=137098,ilevel=970
-
-main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=950
-
-artifact_override=toxic_blades:4
-artifact_override=serrated_edge:4
-artifact_override=master_alchemist:4
-artifact_override=balanced_blades:4
-artifact_override=gushing_wound:4
-artifact_override=master_assassin:4
-artifact_override=poison_knives:4
-artifact_override=strangler:4
-
-# Weapon Item Levels
-profileset.WeaponItemLevel_3=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=953
-profileset.WeaponItemLevel_6=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=956
-profileset.WeaponItemLevel_9=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=959
-profileset.WeaponItemLevel_12=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=962
-profileset.WeaponItemLevel_15=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=965
-profileset.WeaponItemLevel_18=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=968
-profileset.WeaponItemLevel_21=main_hand=the_kingslayers,id=128870,bonus_id=741,ilevel=971
-
-# 1 Relic
-profileset.ToxicBlades_1=artifact_override=toxic_blades:5
-profileset.SerratedEdge_1=artifact_override=serrated_edge:5
-profileset.MasterAlchemist_1=artifact_override=master_alchemist:5
-profileset.BalancedBlades_1=artifact_override=balanced_blades:5
-profileset.GushingWound_1=artifact_override=gushing_wound:5
-profileset.MasterAssassin_1=artifact_override=master_assassin:5
-profileset.Strangler_1=artifact_override=strangler:5
-profileset.PoisonKnives_1=artifact_override=poison_knives:5
-
-# 2 Relic
-profileset.ToxicBlades_2=artifact_override=toxic_blades:6
-profileset.SerratedEdge_2=artifact_override=serrated_edge:6
-profileset.MasterAlchemist_2=artifact_override=master_alchemist:6
-profileset.BalancedBlades_2=artifact_override=balanced_blades:6
-profileset.GushingWound_2=artifact_override=gushing_wound:6
-profileset.MasterAssassin_2=artifact_override=master_assassin:6
-profileset.Strangler_2=artifact_override=strangler:6
-profileset.PoisonKnives_2=artifact_override=poison_knives:6
-
-# 3 Relic
-profileset.ToxicBlades_3=artifact_override=toxic_blades:7
-profileset.SerratedEdge_3=artifact_override=serrated_edge:7
-profileset.MasterAlchemist_3=artifact_override=master_alchemist:7
-profileset.BalancedBlades_3=artifact_override=balanced_blades:7
-profileset.GushingWound_3=artifact_override=gushing_wound:7
-profileset.MasterAssassin_3=artifact_override=master_assassin:7
-profileset.Strangler_3=artifact_override=strangler:7
-profileset.PoisonKnives_3=artifact_override=poison_knives:7
