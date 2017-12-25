@@ -156,7 +156,45 @@ results.extractMetadata(metaFile)
 
 # Write report
 Logging.LogScriptInfo "Adding data from #{logFile}.json to #{reportFile}..."
-results.extractCombinator(reportFile)
+sims = results.getAllDPSResults()
+sims.delete('Template')
+priorityDps = results.getPriorityDPSResults()
+report = [ ]
+sims.each do |name, value|
+  # Split profile name (mostly for web display)
+  if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
+    actor = [ ]
+    actor.push(data[1]) # Talents
+    actor.push(data[2].gsub('+', ' + ')) # Tiers
+
+    # Legendaries
+    if not data[3].empty?
+      legos = data[3].gsub(/_/, ', ')
+    else
+      legos = 'None'
+    end
+    actor.push(legos)
+
+    actor.push(value) # DPS
+    actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
+    report.push(actor)
+  else
+    # We should not get here, but leave it as failsafe
+    actor = [ ]
+    actor.push(name) # Profile Name
+    actor.push(value) # DPS
+    actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
+    report.push(actor)
+  end
+end
+# Sort the report by the DPS value in DESC order
+report.sort! { |x,y| y[3] <=> x[3] }
+# Add the initial rank
+report.each_with_index { |actor, index|
+  actor.unshift(index + 1)
+}
+# Write into the report file
+JSONParser.WriteFile(reportFile, report)
 
 puts
 Logging.LogScriptInfo 'Done! Press enter to quit...'
