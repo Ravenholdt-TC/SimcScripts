@@ -28,9 +28,9 @@ setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
-# Recreate or append to csv?
-csvFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}.csv"
-Interactive.RemoveFileWithQuestion(csvFile)
+# Recreate or append to report?
+reportFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}.json"
+Interactive.RemoveFileWithQuestion(reportFile)
 
 # Log all interactively set settings
 puts
@@ -154,29 +154,9 @@ results = JSONResults.new("#{logFile}.json")
 Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
-# Write to CSV
-Logging.LogScriptInfo "Adding data from #{logFile}.json to #{csvFile}..."
-sims = results.getAllDPSResults()
-sims.delete('Template')
-priorityDps = results.getPriorityDPSResults()
-File.open(csvFile, 'a') do |csv|
-  sims.each do |name, value|
-    # Split profile name into nice CSV columns (mostly for web display)
-    if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
-      if not data[3].empty?
-        legos = data[3].gsub(/_/, ', ')
-      else
-        legos = 'None'
-      end
-      csv.write "#{data[1]},#{data[2].gsub('+', ' + ')},\"#{legos}\",#{value}"
-      csv.write ",#{priorityDps[name]}" if priorityDps[name]
-    else
-      # We should not get here, but leave it as failsafe
-      csv.write "#{name},#{value}"
-    end
-    csv.write "\n"
-  end
-end
+# Write report
+Logging.LogScriptInfo "Adding data from #{logFile}.json to #{reportFile}..."
+results.extractCombinator(reportFile)
 
 puts
 Logging.LogScriptInfo 'Done! Press enter to quit...'

@@ -69,4 +69,44 @@ class JSONResults
     # Write them into the meta file
     JSONParser.WriteFile(metaFile, metas)
   end
+
+  def extractCombinator(reportFile)
+    # Fetch results
+    sims = self.getAllDPSResults()
+    sims.delete('Template')
+    priorityDps = self.getPriorityDPSResults()
+
+    # Our data object
+    report = [ ]
+    sims.each do |name, value|
+      # Split profile name (mostly for web display)
+      if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
+        actor = [ ]
+        actor.push(data[1]) # Talents
+        actor.push(data[2].gsub('+', ' + ')) # Tiers
+
+        # Legendaries
+        if not data[3].empty?
+          legos = data[3].gsub(/_/, ', ')
+        else
+          legos = 'None'
+        end
+        actor.push(legos)
+
+        actor.push(value) # DPS
+        actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
+        report.push(actor)
+      else
+        # We should not get here, but leave it as failsafe
+        actor = [ ]
+        actor.push(name) # Profile Name
+        actor.push(value) # DPS
+        actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
+        report.push(actor)
+      end
+    end
+
+    # Write into the report file
+    JSONParser.WriteFile(reportFile, report)
+  end
 end
