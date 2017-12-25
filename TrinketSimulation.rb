@@ -45,7 +45,7 @@ end
 
 Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
-csvFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.csv"
+reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.json"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
@@ -64,7 +64,7 @@ results = JSONResults.new("#{logFile}.json")
 Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
-Logging.LogScriptInfo "Processing data from #{logFile}.json to #{csvFile}..."
+Logging.LogScriptInfo "Processing data from #{logFile}.json to #{reportFile}..."
 templateDPS = 0
 iLevelList = []
 sims = {}
@@ -80,23 +80,6 @@ end
 iLevelList.uniq!
 iLevelList.sort!
 
-# Write to CSV
-File.open(csvFile, 'w') do |csv|
-  #CSV header line
-  csv.puts "Trinket," + iLevelList.join(',')
-  sims.each do |name, values|
-    csv.write name
-    iLevelList.each do |ilvl|
-      if values[ilvl]
-        dps_inc = values[ilvl] - templateDPS
-        csv.write ",#{dps_inc}"
-      else
-        csv.write ',0'
-      end
-    end
-    csv.write "\n"
-  end
-end
 # Write report
 report = [ ]
 # Header
