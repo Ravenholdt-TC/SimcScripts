@@ -20,7 +20,7 @@ module JSONParser
   end
 
   # Write a hash into a JSON file
-  def self.WriteFilePretty(filename, hash)
+  def self.WritePrettyFile(filename, hash)
     File.open(filename, 'w') do |file|
       file.write JSON.pretty_generate(hash)
     end
