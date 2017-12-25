@@ -106,6 +106,14 @@ class JSONResults
       end
     end
 
+    # Sort the report by the DPS value in DESC order
+    report.sort! { |x,y| y[3] <=> x[3] }
+
+    # Add the initial rank
+    report.each_with_index { |actor, index|
+      actor.unshift(index + 1)
+    }
+
     # Write into the report file
     JSONParser.WriteFile(reportFile, report)
   end
