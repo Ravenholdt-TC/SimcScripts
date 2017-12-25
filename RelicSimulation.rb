@@ -70,7 +70,7 @@ end
 
 Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
-csvFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}.csv"
+reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}.json"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
@@ -88,7 +88,7 @@ results = JSONResults.new("#{logFile}.json")
 # Process results
 sims = {}
 templateDPS = 0
-Logging.LogScriptInfo "Converting #{logFile}.json to #{csvFile}..."
+Logging.LogScriptInfo "Converting #{logFile}.json to #{reportFile}..."
 results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -162,20 +162,24 @@ sims.each do |name, values|
   max_columns = values.length if values.length > max_columns
 end
 
-# Write to CSV
-File.open(csvFile, 'w') do |csv|
-  sims.each do |name, values|
-    csv.write "\"#{name}\""
-    values.sort.each do |amount, dps|
-      dps_inc = dps - templateDPS
-      csv.write ",#{dps_inc},\"#{amount}\""
-    end
-    ((values.length + 1)..max_columns).each do |i|
-      csv.write ",0,\"\""
-    end
-    csv.write "\n"
+# Write report
+report = [ ]
+sims.each do |name, value|
+  actor = [ ]
+  actor.push(name)
+  values.sort.each do |amount, dps|
+    actor.push(dps - templateDPS)
+    actor.push(amount)
   end
+  ((values.length + 1)..max_columns).each do |i|
+    csv.write ",0,\"\""
+    actor.push(0)
+    actor.push("")
+  end
+  report.push(actor)
 end
+# Write into the report file
+JSONParser.WriteFile(reportFile, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()
