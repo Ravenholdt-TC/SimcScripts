@@ -10,12 +10,19 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/SimcConfig'
 
-# Convert Combinator CSV File (1T only)
+# Convert Combinator CSV File
 def Combinator (csvFile, jsonFile)
   report = [ ]
 
   CSV.foreach(csvFile, quote_char: '"', col_sep: ',', row_sep: :auto, headers: false) do |row|
-    actor = [ row[0].to_i, row[1].to_str, row[2].to_str, row[3].to_i ]
+    actor = [ ]
+    row.each_with_index{ |value, index|
+      if index == 1 or index == 2
+        actor.push(value.to_str)
+      else
+        actor.push(value.to_i)
+      end
+    }
     report.push(actor)
   end
 
@@ -96,7 +103,7 @@ end
 # Combinator("#{SimcConfig['ReportsFolder']}/Combinator_1T_T21H_Mage_Frost.csv", "#{SimcConfig['ReportsFolder']}/Combinator_1T_T21H_Mage_Frost.json")
 # Combinator("#{SimcConfig['ReportsFolder']}/Combinator_1T_T21H_Shaman_Elemental.csv", "#{SimcConfig['ReportsFolder']}/Combinator_1T_T21H_Shaman_Elemental.json")
 
-# Convert Trinkets CSV File (1T only)
+# Convert Trinkets CSV File
 def Trinkets (csvFile, jsonFile)
   report = [ ]
 
@@ -185,7 +192,7 @@ end
 # Trinkets("#{SimcConfig['ReportsFolder']}/TrinketSimulation_1T_T21_Druid_Feral.csv", "#{SimcConfig['ReportsFolder']}/TrinketSimulation_1T_T21_Druid_Feral.json")
 # Trinkets("#{SimcConfig['ReportsFolder']}/TrinketSimulation_1T_T21_Druid_Balance.csv", "#{SimcConfig['ReportsFolder']}/TrinketSimulation_1T_T21_Druid_Balance.json")
 
-# Convert Relics CSV File (1T only)
+# Convert Relics CSV File
 def Relics (csvFile, jsonFile)
   report = [ ]
 
