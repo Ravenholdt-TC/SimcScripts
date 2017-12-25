@@ -161,12 +161,13 @@ sims.delete('Template')
 priorityDps = results.getPriorityDPSResults()
 report = [ ]
 sims.each do |name, value|
+  actor = [ ]
   # Split profile name (mostly for web display)
   if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
-    actor = [ ]
-    actor.push(data[1]) # Talents
-    actor.push(data[2].gsub('+', ' + ')) # Tiers
-
+    # Talents
+    actor.push(data[1])
+    # Tiers
+    actor.push(data[2].gsub('+', ' + '))
     # Legendaries
     if not data[3].empty?
       legos = data[3].gsub(/_/, ', ')
@@ -174,18 +175,13 @@ sims.each do |name, value|
       legos = 'None'
     end
     actor.push(legos)
-
-    actor.push(value) # DPS
-    actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
-    report.push(actor)
   else
     # We should not get here, but leave it as failsafe
-    actor = [ ]
-    actor.push(name) # Profile Name
-    actor.push(value) # DPS
-    actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
-    report.push(actor)
+    actor.push(name)
   end
+  actor.push(value) # DPS
+  actor.push(priorityDps[name]) if priorityDps[name] # Priority DPS
+  report.push(actor)
 end
 # Sort the report by the DPS value in DESC order
 report.sort! { |x,y| y[3] <=> x[3] }
