@@ -164,15 +164,25 @@ end
 
 # Write report
 report = [ ]
-sims.each do |name, value|
+# Header
+def hashElementType (value)
+  return { "type" => value }
+end
+header = [ hashElementType("string") ]
+for i in 1..max_columns
+  header.push(hashElementType("number"))
+  header.push(hashElementType("string"))
+end
+report.push(header)
+# Relics
+sims.each do |name, values|
   actor = [ ]
   actor.push(name)
-  values.sort.each do |amount, dps|
+  values.sort.each do |rank, dps|
     actor.push(dps - templateDPS)
-    actor.push(amount)
+    actor.push(rank.to_s)
   end
   ((values.length + 1)..max_columns).each do |i|
-    csv.write ",0,\"\""
     actor.push(0)
     actor.push("")
   end
@@ -180,6 +190,39 @@ sims.each do |name, value|
 end
 # Write into the report file
 JSONParser.WriteFile(reportFile, report)
+
+## Should we write plain DT ?
+# # Write report (Google Chart DataTable JSON)
+# def hashElementType (value)
+#   return { "type" => value }
+# end
+# def hashElementValue (value)
+#   return { "v" => value }
+# end
+# report = { }
+# cols = [ hashElementType("string") ]
+# for i in 1..max_columns
+#   cols.push(hashElementType("number"))
+#   cols.push(hashElementType("string"))
+# end
+# report["cols"] = cols
+# rows = [ ]
+# sims.each do |name, values|
+#   actor = [ ]
+#   actor.push(hashElementValue(name))
+#   values.sort.each do |rank, dps|
+#     actor.push(hashElementValue(dps - templateDPS))
+#     actor.push(hashElementValue(rank.to_s))
+#   end
+#   ((values.length + 1)..max_columns).each do |i|
+#     actor.push(hashElementValue(0))
+#     actor.push(hashElementValue(""))
+#   end
+#   rows.push({ "c" => actor })
+# end
+# report["rows"] = rows
+# # Write into the report file
+# JSONParser.WriteFile(reportFile, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()
