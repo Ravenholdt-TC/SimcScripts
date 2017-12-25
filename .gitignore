@@ -1,10 +1,5 @@
-*.log
-*.html
-*.csv
-*.tar.gz
-
-generated/*.simc
-logs/*.json
-reports/meta/*.json
+generated/
+logs/
+reports/
 
 SimcConfig.yml
