@@ -97,6 +97,29 @@ File.open(csvFile, 'w') do |csv|
     csv.write "\n"
   end
 end
+# Write report
+report = [ ]
+# Header
+header = [ "Trinket" ]
+iLevelList.each do |ilvl|
+  header.push(ilvl.to_s)
+end
+report.push(header)
+# Trinkets
+sims.each do |name, values|
+  actor = [ ]
+  actor.push(name)
+  iLevelList.each do |ilvl|
+    if values[ilvl]
+      actor.push(values[ilvl] - templateDPS)
+    else
+      actor.push(0)
+    end
+  end
+  report.push(actor)
+end
+# Write into the report file
+JSONParser.WriteFile(reportFile, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()
