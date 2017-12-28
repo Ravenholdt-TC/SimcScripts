@@ -118,6 +118,29 @@ if sims[WeaponItemLevelName]
   end
 end
 
+# Find the highest 3rd rank relic to filter meaningless weaponitemlevel steps
+max_thirdRankDPS = 0
+sims.each do |name, values|
+  if name != WeaponItemLevelName
+    thirdRankDPS = values[3] - templateDPS
+    max_thirdRankDPS = thirdRankDPS if thirdRankDPS > max_thirdRankDPS
+  end
+end
+# Find the corresponding step in wilvl hash
+max_weaponItemLevelIncrease = 1
+weaponItemLevelIncreases = sims[WeaponItemLevelName].length
+sims[WeaponItemLevelName].sort.each do |step, dps|
+  if dps - templateDPS >= max_thirdRankDPS
+    # Store the next step or the max step, whichever is the smallest
+    max_weaponItemLevelIncrease = [step + 1, weaponItemLevelIncreases].min
+    break
+  end
+end
+# Delete meaningless steps
+for step in (max_weaponItemLevelIncrease+1)..weaponItemLevelIncreases
+  sims[WeaponItemLevelName].delete(step)
+end
+
 # Get string for crucible weight addon and add it to metadata
 addToMeta = {}
 if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
