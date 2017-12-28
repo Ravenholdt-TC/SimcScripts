@@ -122,23 +122,37 @@ end
 max_thirdRankDPS = 0
 sims.each do |name, values|
   if name != WeaponItemLevelName
-    thirdRankDPS = values[3] - templateDPS
+    thirdRankDPS = values[3]
     max_thirdRankDPS = thirdRankDPS if thirdRankDPS > max_thirdRankDPS
   end
 end
 # Find the corresponding step in wilvl hash
-max_weaponItemLevelIncrease = 1
-weaponItemLevelIncreases = sims[WeaponItemLevelName].length
+max_weaponItemLevelStep = 1
+weaponItemLevelSteps = sims[WeaponItemLevelName].length
 sims[WeaponItemLevelName].sort.each do |step, dps|
-  if dps - templateDPS >= max_thirdRankDPS
+  if dps >= max_thirdRankDPS
     # Store the next step or the max step, whichever is the smallest
-    max_weaponItemLevelIncrease = [step + 1, weaponItemLevelIncreases].min
+    max_weaponItemLevelStep = [step + 1, weaponItemLevelSteps].min
     break
   end
 end
+max_weaponItemLevelDPS = sims[WeaponItemLevelName][max_weaponItemLevelStep]
 # Delete meaningless steps
-for step in (max_weaponItemLevelIncrease+1)..weaponItemLevelIncreases
-  sims[WeaponItemLevelName].delete(step)
+for i in (max_weaponItemLevelStep+1)..weaponItemLevelSteps
+  sims[WeaponItemLevelName].delete(i)
+end
+
+# Add equivalent % DPS gain from template DPS, limited to next % increase after maxDPS
+PercentageDPSGainName = '% DPS Gain'
+sims[PercentageDPSGainName] = { }
+max_simActorDPS = [max_thirdRankDPS, max_weaponItemLevelDPS].max
+for i in (0.5..200).step(0.5)
+  dpsGain = (templateDPS * ( 1 + i / 100)).round(0)
+  sims[PercentageDPSGainName][i] = dpsGain
+  # Add the % DPS Gain until we reach the max dps
+  if dpsGain > max_simActorDPS
+    break
+  end
 end
 
 # Get string for crucible weight addon and add it to metadata
@@ -148,7 +162,7 @@ if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
   weaponId = data[1]
   cruweight = "cruweight^#{weaponId}^ilvl^1^"
   sims.each do |name, values|
-    next if name == WeaponItemLevelName
+    next if name == WeaponItemLevelName || name == PercentageDPSGainName
     if trait = relicList['Traits'][spec].find {|trait| trait['name'] == name}
       cruweight += "#{trait['spellId']}^"
       ranks = []
