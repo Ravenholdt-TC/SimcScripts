@@ -836,7 +836,14 @@
             },
             {
                 "name": "Poison Knives",
-                "spellId": 192376
+                "spellId": 192376,
+                "fightstyleBlacklist": ["1T"]
+            },
+            {
+                "name": "Poison Knives",
+                "spellId": 192376,
+                "fightstyleWhitelist": ["1T"],
+                "profileMatch" : ["FoK"]
             },
             {
                 "name": "Strangler",
