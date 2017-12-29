@@ -3,6 +3,8 @@
     Ignore trait completely: "fightstyleBlacklist": ["1T"]
     Only specific fightstyles, e.g.: "fightstyleWhitelist": ["1T"]
     Exclude certain fightstyles, e.g.: "fightstyleBlacklist": ["1T"]
+    Only use for profiles containing a string, e.g. "profileMatch": ["FoK"]
+    Exclude profiles containing a string, e.g. "profileNoMatch": ["FoK"]
 */
 {
     "Config": {
@@ -816,7 +818,8 @@
             },
             {
                 "name": "Balanced Blades",
-                "spellId": 192326
+                "spellId": 192326,
+                "profileNoMatch" : ["FoK"]
             },
             {
                 "name": "Gushing Wound",
