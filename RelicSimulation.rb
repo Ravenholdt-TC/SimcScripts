@@ -119,38 +119,38 @@ if sims[WeaponItemLevelName]
 end
 
 # Find the highest 3rd rank relic to filter meaningless weaponitemlevel steps
-max_thirdRankDPS = 0
+maxThirdRankDPS = 0
 sims.each do |name, values|
   if name != WeaponItemLevelName
     thirdRankDPS = values[3]
-    max_thirdRankDPS = thirdRankDPS if thirdRankDPS > max_thirdRankDPS
+    maxThirdRankDPS = thirdRankDPS if thirdRankDPS > maxThirdRankDPS
   end
 end
 # Find the corresponding step in wilvl hash
-weaponItemLevelSteps = sims[WeaponItemLevelName].length
-max_weaponItemLevelStep = weaponItemLevelSteps
-sims[WeaponItemLevelName].sort.each do |step, dps|
-  if dps >= max_thirdRankDPS
-    # Store the next step or the max step, whichever is the smallest
-    max_weaponItemLevelStep = [step + 1, weaponItemLevelSteps].min
+numWeaponItemLevelResults = sims[WeaponItemLevelName].length
+maxWeaponItemLevelAmount = numWeaponItemLevelResults
+sims[WeaponItemLevelName].sort.each do |amount, dps|
+  if dps >= maxThirdRankDPS
+    # Store the next amount or the max amount, whichever is the smallest
+    maxWeaponItemLevelAmount = [amount + 1, numWeaponItemLevelResults].min
     break
   end
 end
-max_weaponItemLevelDPS = sims[WeaponItemLevelName][max_weaponItemLevelStep]
-# Delete meaningless steps
-for i in (max_weaponItemLevelStep+1)..weaponItemLevelSteps
+max_weaponItemLevelDPS = sims[WeaponItemLevelName][maxWeaponItemLevelAmount]
+# Delete meaningless amounts
+for i in (maxWeaponItemLevelAmount+1)..numWeaponItemLevelResults
   sims[WeaponItemLevelName].delete(i)
 end
 
 # Add equivalent % DPS gain from template DPS, limited to next % increase after maxDPS
 PercentageDPSGainName = '% DPS Gain'
 sims[PercentageDPSGainName] = { }
-max_simActorDPS = [max_thirdRankDPS, max_weaponItemLevelDPS].max
-for i in (0.5..200).step(0.5)
+maxSimActorDPS = [maxThirdRankDPS, max_weaponItemLevelDPS].max
+(0.5..200).step(0.5) do |i|
   dpsGain = (templateDPS * ( 1 + i / 100)).round(0)
   sims[PercentageDPSGainName][i] = dpsGain
   # Add the % DPS Gain until we reach the max dps
-  if dpsGain > max_simActorDPS
+  if dpsGain > maxSimActorDPS
     break
   end
 end
@@ -194,9 +194,9 @@ Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile, addToMeta)
 
 # Get max number of results (have to fill others for Google Charts to work)
-max_columns = 1
+maxColumns = 1
 sims.each do |name, values|
-  max_columns = values.length if values.length > max_columns
+  maxColumns = values.length if values.length > maxColumns
 end
 
 # Write report
@@ -206,7 +206,7 @@ def hashElementType (value)
   return { "type" => value }
 end
 header = [ hashElementType("string") ]
-for i in 1..max_columns
+for i in 1..maxColumns
   header.push(hashElementType("number"))
   header.push(hashElementType("string"))
 end
@@ -219,7 +219,7 @@ sims.each do |name, values|
     actor.push(dps - templateDPS)
     actor.push(rank.to_s)
   end
-  ((values.length + 1)..max_columns).each do |i|
+  ((values.length + 1)..maxColumns).each do |i|
     actor.push(0)
     actor.push("")
   end
@@ -238,7 +238,7 @@ JSONParser.WriteFile(reportFile, report)
 # end
 # report = { }
 # cols = [ hashElementType("string") ]
-# for i in 1..max_columns
+# for i in 1..maxColumns
 #   cols.push(hashElementType("number"))
 #   cols.push(hashElementType("string"))
 # end
@@ -251,7 +251,7 @@ JSONParser.WriteFile(reportFile, report)
 #     actor.push(hashElementValue(dps - templateDPS))
 #     actor.push(hashElementValue(rank.to_s))
 #   end
-#   ((values.length + 1)..max_columns).each do |i|
+#   ((values.length + 1)..maxColumns).each do |i|
 #     actor.push(hashElementValue(0))
 #     actor.push(hashElementValue(""))
 #   end
