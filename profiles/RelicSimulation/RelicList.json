@@ -1,6 +1,6 @@
 /*
     Optional trait options:
-    Ignore trait completely: "fightstyleBlacklist": ["1T"]
+    Ignore trait completely: "exclude": true
     Only specific fightstyles, e.g.: "fightstyleWhitelist": ["1T"]
     Exclude certain fightstyles, e.g.: "fightstyleBlacklist": ["1T"]
     Only use for profiles containing a string, e.g. "profileMatch": ["FoK"]
@@ -85,7 +85,7 @@
             {
                 "name": "Refractive Shell",
                 "spellId": 252207,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Shocklight",
@@ -102,7 +102,7 @@
             {
                 "name": "Light's Embrace",
                 "spellId": 253111,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             }
         ],
         "Death_Knight_Blood": [
@@ -117,7 +117,7 @@
             {
                 "name": "Carrion Feast",
                 "spellId": 238042,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Coagulopathy",
@@ -130,22 +130,22 @@
             {
                 "name": "Grim Perseverance",
                 "spellId": 192447,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Iron Heart",
                 "spellId": 192450,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Meat Shield",
                 "spellId": 192453,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Vampiric Fangs",
                 "spellId": 192542,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Veinrender",
@@ -176,12 +176,12 @@
             {
                 "name": "Frozen Skin",
                 "spellId": 204875,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Ice in your Veins",
                 "spellId": 189154,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Nothing but the Boots",
@@ -204,7 +204,7 @@
             {
                 "name": "Deadly Durability",
                 "spellId": 191565,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Eternal Agony",
@@ -237,7 +237,7 @@
             {
                 "name": "Unholy Endurance",
                 "spellId": 191584,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             }
         ],
         "Demon_Hunter_Havoc": [
@@ -264,7 +264,7 @@
             {
                 "name": "Illidari Knowledge",
                 "spellId": 201459,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Unleashed Demons",
@@ -273,12 +273,12 @@
             {
                 "name": "Deceiver's Fury",
                 "spellId": 201463,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Overwhelming Power",
                 "spellId": 201464,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Wide Eyes",
@@ -291,12 +291,12 @@
             {
                 "name": "Bladed Feathers",
                 "spellId": 202302,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Touch of the Moon",
                 "spellId": 203018,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Dark Side of the Moon",
@@ -335,7 +335,7 @@
             {
                 "name": "Honed Instincts",
                 "spellId": 210557,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Razor Fangs",
@@ -356,7 +356,7 @@
             {
                 "name": "Attuned to Nature",
                 "spellId": 210590,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Tear the Flesh",
@@ -387,7 +387,7 @@
             {
                 "name": "Furious Swipes",
                 "spellId": 197047,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Pack Leader",
@@ -396,12 +396,12 @@
             {
                 "name": "Natural Reflexes",
                 "spellId": 197138,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Focus of the Titans",
                 "spellId": 197139,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Spitting Cobras",
@@ -410,7 +410,7 @@
             {
                 "name": "Mimiron's Shell",
                 "spellId": 197160,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Jaws of Thunder",
@@ -441,17 +441,17 @@
             {
                 "name": "Called Shot",
                 "spellId": 190467,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Healing Shell",
                 "spellId": 190503,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Survival of the Fittest",
                 "spellId": 190514,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Precision",
@@ -464,7 +464,7 @@
             {
                 "name": "Gust of Wind",
                 "spellId": 190567,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Unerring Arrows",
@@ -499,17 +499,17 @@
             {
                 "name": "Hellcarver",
                 "spellId": 203673,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Bird of Prey",
                 "spellId": 224764,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Hunter's Bounty",
                 "spellId": 203749,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Jaws of the Mongoose",
@@ -532,7 +532,7 @@
             {
                 "name": "Arcane Purification",
                 "spellId": 187313,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Aegwynn's Fury",
@@ -549,12 +549,12 @@
             {
                 "name": "Everywhere at Once",
                 "spellId": 187301,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Force Barrier",
                 "spellId": 210716,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Aegwynn's Intensity",
@@ -581,7 +581,7 @@
             {
                 "name": "Blue Flame Special",
                 "spellId": 210182,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Great Balls of Fire",
@@ -594,12 +594,12 @@
             {
                 "name": "Cauterizing Blink",
                 "spellId": 194318,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Molten Skin",
                 "spellId": 194315,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Pre-Ignited",
@@ -634,17 +634,17 @@
             {
                 "name": "The Storm Rages",
                 "spellId": 195352,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Shield of Alodi",
                 "spellId": 195354,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Jouster",
                 "spellId": 214626,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Obsidian Lance",
@@ -663,7 +663,7 @@
             {
                 "name": "Light on your Feet",
                 "spellId": 195244,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Rising Winds",
@@ -676,12 +676,12 @@
             {
                 "name": "Death Art",
                 "spellId": 195266,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Power of a Thousand Cranes",
                 "spellId": 195269,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Fists of the Wind",
@@ -690,7 +690,7 @@
             {
                 "name": "Healing Winds",
                 "spellId": 195380,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Strength of Xuen",
@@ -721,12 +721,12 @@
             {
                 "name": "Embrace the Light",
                 "spellId": 186934,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Deflection",
                 "spellId": 184778,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Deliver the Justice",
@@ -739,7 +739,7 @@
             {
                 "name": "Protector of the Ashen Blade",
                 "spellId": 186944,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Wrath of the Ashbringer",
@@ -762,7 +762,7 @@
             {
                 "name": "From the Shadows",
                 "spellId": 193642,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Mind Shattering",
@@ -779,7 +779,7 @@
             {
                 "name": "Thoughts of Insanity",
                 "spellId": 193647,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Creeping Shadows",
@@ -814,7 +814,7 @@
             {
                 "name": "Fade Into Shadows",
                 "spellId": 192323,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Balanced Blades",
@@ -828,7 +828,7 @@
             {
                 "name": "Shadow Walker",
                 "spellId": 192345,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Master Assassin",
@@ -858,7 +858,7 @@
             {
                 "name": "Blade Dancer",
                 "spellId": 202507,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Fate's Thirst",
@@ -883,7 +883,7 @@
             {
                 "name": "Ghostly Shell",
                 "spellId": 202533,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Fortune's Boon",
@@ -926,12 +926,12 @@
             {
                 "name": "Catlike Reflexes",
                 "spellId": 197241,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Ghost Armor",
                 "spellId": 197244,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Weak Point",
@@ -946,7 +946,7 @@
             {
                 "name": "The Ground Trembles",
                 "spellId": 191499,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Lava Imbued",
@@ -959,7 +959,7 @@
             {
                 "name": "Protection of the Elements",
                 "spellId": 191569,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Molten Blast",
@@ -968,12 +968,12 @@
             {
                 "name": "Electric Discharge",
                 "spellId": 191577,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Shamanistic Healing",
                 "spellId": 191582,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Earthen Attunement",
@@ -996,7 +996,7 @@
             {
                 "name": "Spirit of the Maelstrom",
                 "spellId": 198238,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Wind Surge",
@@ -1005,7 +1005,7 @@
             {
                 "name": "Elemental Healing",
                 "spellId": 198248,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Wind Strikes",
@@ -1014,7 +1014,7 @@
             {
                 "name": "Spiritual Healing",
                 "spellId": 198296,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Gathering Storms",
@@ -1051,7 +1051,7 @@
             {
                 "name": "Seeds of Doom",
                 "spellId": 199153,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Perdition",
@@ -1064,12 +1064,12 @@
             {
                 "name": "Shadows of the Flesh",
                 "spellId": 199212,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Long Dark Night of the Soul",
                 "spellId": 199214,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Winnowing",
@@ -1084,7 +1084,7 @@
             {
                 "name": "Legionwrath",
                 "spellId": 211126,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "The Doom of Azeroth",
@@ -1109,12 +1109,12 @@
             {
                 "name": "Open Link",
                 "spellId": 211144,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Firm Resolve",
                 "spellId": 211131,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Left Hand of Darkness",
@@ -1149,17 +1149,17 @@
             {
                 "name": "Fire from the Sky",
                 "spellId": 196258,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Devourer of Life",
                 "spellId": 196301,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Eternal Struggle",
                 "spellId": 196305,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Flames of Sargeras",
@@ -1176,7 +1176,7 @@
             {
                 "name": "One Against Many",
                 "spellId": 209462,
-                "aoeOnly": true
+                "fightstyleBlacklist": ["1T"]
             },
             {
                 "name": "Crushing Blows",
@@ -1193,7 +1193,7 @@
             {
                 "name": "Tactical Advance",
                 "spellId": 209483,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Precise Strikes",
@@ -1206,7 +1206,7 @@
             {
                 "name": "Touch of Zakajz",
                 "spellId": 209541,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Storm of Swords",
@@ -1233,17 +1233,17 @@
             {
                 "name": "Uncontrolled Rage",
                 "spellId": 200856,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Battle Scars",
                 "spellId": 200857,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Bloodcraze",
                 "spellId": 200859,
-                "fightstyleBlacklist": ["1T"]
+                "exclude": true
             },
             {
                 "name": "Unrivaled Strength",
