@@ -54,6 +54,8 @@ File.open(simcFile, 'w') do |out|
       next if trait['exclude']
       next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
       next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+      next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
+      next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
       out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{rank}"
     end
   end
@@ -63,6 +65,8 @@ File.open(simcFile, 'w') do |out|
       next if trait['exclude']
       next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
       next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+      next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
+      next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
       out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{amount}"
     end
   end
