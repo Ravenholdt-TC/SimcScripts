@@ -127,8 +127,8 @@ sims.each do |name, values|
   end
 end
 # Find the corresponding step in wilvl hash
-max_weaponItemLevelStep = 1
 weaponItemLevelSteps = sims[WeaponItemLevelName].length
+max_weaponItemLevelStep = weaponItemLevelSteps
 sims[WeaponItemLevelName].sort.each do |step, dps|
   if dps >= max_thirdRankDPS
     # Store the next step or the max step, whichever is the smallest
