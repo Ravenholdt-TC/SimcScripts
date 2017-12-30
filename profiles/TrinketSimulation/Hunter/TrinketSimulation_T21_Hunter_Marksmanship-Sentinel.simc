@@ -1,0 +1,5 @@
+$(simc_profiles_path)/Tier21/T21_Hunter_Marksmanship.simc
+
+talents=1102012
+
+finger1=zevrims_hunger,id=137055,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery
