@@ -1,6 +1,1 @@
-$(simc_profiles_path)/Tier21/T21_Rogue_Assassination.simc
-
-crucible=1739:1771:331/1739:1771:331/1739:1771:331
-main_hand=the_kingslayers,id=128870,bonus_id=741,gem_id=152055/152049/152295,relic_id=3612:1502/3612:1502/3612:1502
-
-fok_rotation=1
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination_FoK.simc

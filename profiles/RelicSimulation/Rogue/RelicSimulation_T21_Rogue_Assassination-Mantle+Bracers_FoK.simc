@@ -1,4 +1,1 @@
-$(simc_profiles_path)/Tier21/T21_Rogue_Assassination.simc
-
-### FoK Override
-fok_rotation=1
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination_FoK.simc
