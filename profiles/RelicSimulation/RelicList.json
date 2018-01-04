@@ -17,7 +17,7 @@
         "Death_Knight_Frost": "main_hand=blades_of_the_fallen_prince,id=128292,bonus_id=717,enchant=rune_of_razorice",
         "Death_Knight_Unholy": "main_hand=apocalypse,id=128403,bonus_id=718,enchant=rune_of_the_fallen_crusader",
         "Demon_Hunter_Havoc": "main_hand=twinblades_of_the_deceiver,id=127829,bonus_id=719",
-        //"Demon_Hunter_Vengeance": "",
+        "Demon_Hunter_Vengeance": "main_hand=aldrachi_warblades,id=128832,bonus_id=721",
         "Druid_Balance": "main_hand=scythe_of_elune,id=128858,bonus_id=722",
         "Druid_Feral": "main_hand=fangs_of_ashamane,id=128860,bonus_id=723",
         "Druid_Guardian": "main_hand=claws_of_ursoc,id=128821,bonus_id=724",
@@ -28,10 +28,10 @@
         "Mage_Arcane": "main_hand=aluneth,id=127857,bonus_id=729",
         "Mage_Fire": "main_hand=felomelorn,id=128820,bonus_id=730",
         "Mage_Frost": "main_hand=ebonchill,id=128862,bonus_id=731",
-        //"Monk_Brewmaster": "",
+        "Monk_Brewmaster": "main_hand=fu_zan_the_wanderers_companion,id=128938,bonus_id=732",
         //"Monk_Mistweaver": "",
         "Monk_Windwalker": "main_hand=fists_of_the_heavens,id=128940,bonus_id=734",
-        //"Paladin_Protection": "",
+        "Paladin_Protection": "off_hand=truthguard,id=128866,bonus_id=736",
         //"Paladin_Holy": "",
         "Paladin_Retribution": "main_hand=ashbringer,id=120978,bonus_id=737",
         //"Priest_Holy": "",
@@ -46,7 +46,7 @@
         "Warlock_Affliction": "main_hand=ulthalesh_the_deadwind_harvester,id=128942,bonus_id=747",
         "Warlock_Demonology": "main_hand=skull_of_the_manari,id=128943,bonus_id=748",
         "Warlock_Destruction": "main_hand=scepter_of_sargeras,id=128941,bonus_id=749",
-        //"Warrior_Protection": "",
+        "Warrior_Protection": "off_hand=scale_of_the_earthwarder,id=128289,bonus_id=752",
         "Warrior_Arms": "main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750",
         "Warrior_Fury": "main_hand=warswords_of_the_valarjar,id=128908,bonus_id=751"
     },
@@ -286,6 +286,51 @@
             }
         ],
         "Demon_Hunter_Vengeance": [
+            {
+                "name": "Infernal Force",
+                "spellId": 207375
+            },
+            {
+                "name": "Fiery Demise",
+                "spellId": 212817
+            },
+            {
+                "name": "Aura of Pain",
+                "spellId": 207347
+            },
+            {
+                "name": "Honed Warblades",
+                "spellId": 207352
+            },
+            {
+                "name": "Shatter The Souls",
+                "spellId": 212827,
+                "exclude": true
+            },
+            {
+                "name": "Will of the Illidari",
+                "spellId": 212819,
+                "exclude": true
+            },
+            {
+                "name": "Devour Souls",
+                "spellId": 212821,
+                "exclude": true
+            },
+            {
+                "name": "Embrace the Pain",
+                "spellId": 212816,
+                "exclude": true
+            },
+            {
+                "name": "Aldrachi Design",
+                "spellId": 207343,
+                "exclude": true
+            },
+            {
+                "name": "Lingering Ordeal",
+                "spellId": 238046
+            }
         ],
         "Druid_Balance": [
             {
@@ -694,6 +739,51 @@
             }
         ],
         "Monk_Brewmaster": [
+            {
+                "name": "Draught of Darkness",
+                "spellId": 238057
+            },
+            {
+                "name": "Gifted Student",
+                "spellId": 213136
+            },
+            {
+                "name": "Face Palm",
+                "spellId": 213116
+            },
+            {
+                "name": "Obsidian Fists",
+                "spellId": 213051
+            },
+            {
+                "name": "Hot Blooded",
+                "spellId": 213049
+            },
+            {
+                "name": "Overflow",
+                "spellId": 213180,
+                "exclude": true
+            },
+            {
+                "name": "Healthy Appetite",
+                "spellId": 213133,
+                "exclude": true
+            },
+            {
+                "name": "Dark Side of the Moon",
+                "spellId": 213062,
+                "exclude": true
+            },
+            {
+                "name": "Staggering Around",
+                "spellId": 213055,
+                "exclude": true
+            },
+            {
+                "name": "Potent Kick",
+                "spellId": 213047,
+                "exclude": true
+            }
         ],
         "Monk_Mistweaver": [
         ],
@@ -744,6 +834,43 @@
             }
         ],
         "Paladin_Protection": [
+            {
+                "name": "Hammer Time",
+                "spellId": 209229
+            },
+            {
+                "name": "Stern Judgment",
+                "spellId": 209217
+            },
+            {
+                "name": "Consecration in Flame",
+                "spellId": 209218
+            },
+            {
+                "name": "Holy Aegis",
+                "spellId": 238061,
+                "exclude": true
+            },
+            {
+                "name": "Faith's Armor",
+                "spellId": 209225,
+                "exclude": true
+            },
+            {
+                "name": "Scatter the Shadows",
+                "spellId": 209223,
+                "exclude": true
+            },
+            {
+                "name": "Bastion of Truth",
+                "spellId": 209216,
+                "exclude": true
+            },
+            {
+                "name": "Unflinching Defense",
+                "spellId": 209220,
+                "exclude": true
+            }
         ],
         "Paladin_Holy": [
         ],
@@ -1209,6 +1336,53 @@
             }
         ],
         "Warrior_Protection": [
+            {
+                "name": "Shatter the Bones",
+                "spellId": 188639
+            },
+            {
+                "name": "Thunder Crash",
+                "spellId": 188644
+            },
+            {
+                "name": "Rage of the Fallen",
+                "spellId": 216272
+            },
+            {
+                "name": "Dragon Skin",
+                "spellId": 203225,
+                "exclude": true
+            },
+            {
+                "name": "Vrykul Shield Training",
+                "spellId": 188635,
+                "exclude": true
+            },
+            {
+                "name": "Will to Survive",
+                "spellId": 188683,
+                "exclude": true
+            },
+            {
+                "name": "Intolerance",
+                "spellId": 203227,
+                "exclude": true
+            },
+            {
+                "name": "Toughness",
+                "spellId": 188632,
+                "exclude": true
+            },
+            {
+                "name": "Leaping Giants",
+                "spellId": 203230,
+                "exclude": true
+            },
+            {
+                "name": "Bastion of the Aspects",
+                "spellId": 238077,
+                "exclude": true
+            }
         ],
         "Warrior_Arms": [
             {
