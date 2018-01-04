@@ -20,7 +20,7 @@
         //"Demon_Hunter_Vengeance": "",
         "Druid_Balance": "main_hand=scythe_of_elune,id=128858,bonus_id=722",
         "Druid_Feral": "main_hand=fangs_of_ashamane,id=128860,bonus_id=723",
-        //"Druid_Guardian": "",
+        "Druid_Guardian": "main_hand=claws_of_ursoc,id=128821,bonus_id=724",
         //"Druid_Restoration": "",
         "Hunter_Beast_Mastery": "main_hand=titanstrike,id=128861,bonus_id=726",
         "Hunter_Marksmanship": "main_hand=thasdorah_legacy_of_the_windrunners,id=128826,bonus_id=727",
@@ -376,6 +376,48 @@
             }
         ],
         "Druid_Guardian": [
+            {
+                "name": "Vicious Bites",
+                "spellId": 200440
+            },
+            {
+                "name": "Jagged Claws",
+                "spellId": 200409
+            },
+            {
+                "name": "Mauler",
+                "spellId": 208762
+            },
+            {
+                "name": "Wildflesh",
+                "spellId": 200400,
+                "exclude": true
+            },
+            {
+                "name": "Perpetual Spring",
+                "spellId": 200402,
+                "exclude": true
+            },
+            {
+                "name": "Bestial Fortitude",
+                "spellId": 200414,
+                "exclude": true
+            },
+            {
+                "name": "Ursoc's Endurance",
+                "spellId": 200399,
+                "exclude": true
+            },
+            {
+                "name": "Scintillating Moonlight",
+                "spellId": 238049,
+                "exclude": true
+            },
+            {
+                "name": "Sharpened Instincts",
+                "spellId": 200415,
+                "exclude": true
+            }
         ],
         "Druid_Restoration": [
         ],
