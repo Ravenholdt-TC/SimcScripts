@@ -106,6 +106,9 @@ puts
 Logging.LogScriptInfo "Combining data from json files..."
 compositeData = {}
 
+# relic/trinket header
+header = []
+
 if compositeType == "Combinator"
   fightList.each do |fightStyle, weight|
     Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
@@ -127,46 +130,51 @@ if compositeType == "Combinator"
         compositeData[key] = actor
       else
         compositeData[key][3] = compositeData[key][3] + (weight * reportData[4].to_f).round(0)
-        # puts "#{key} : #{compositeData[key][0]} #{compositeData[key][1]} #{compositeData[key][2]} #{compositeData[key][3]}"
       end
     end
   end
 elsif compositeType == "RelicSimulation"
   fightList.each do |fightStyle, weight|
-    reportName = "#{SimcConfig['ReportsFolder']}/#{compositeType}_#{fightStyle}_#{profile}.csv"
+    Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
     
-    #Store everything in the table
-    CSV.foreach(reportName) do |row|
-      key = row[0]
-      index = 1
-      indexRow = 0
-      
-      # init table if first file
-      # unless compositeData[key].nil?
-        # compositeData[key] = []
-      # end
-      
-      until row[index+1].nil?
-        puts (index+1)
-        puts row[index+1]
-        if a[key][(row[index+1]).to_i] == 0
-          a[key][(row[index+1]).to_i] = (weight * row[(row[index]).to_i].to_f).round(0) 
-        else
-          a[key][(row[index+1]).to_i] = a[key][row[(row[index]).to_i]] + (weight * row[(row[index]).to_i].to_f).round(0) 
+    reportIndex = 0
+    
+    jsonList[fightStyle].each do |reportData|
+      if reportIndex > 0 # Skip header
+        traitIndex = 0
+        traitName = ""
+        traitDps = 0
+        
+        reportData.each do |traitData|
+          if traitIndex > 0 
+            if traitIndex%2 == 0
+              if traitDps == 0
+                next
+              end
+              if compositeData[traitName].nil? 
+                compositeData[traitName] = {}
+              end
+              if compositeData[traitName][traitData].nil? 
+                compositeData[traitName][traitData] = (weight * traitDps.to_f).round(0)
+              else
+                compositeData[traitName][traitData] = compositeData[traitName][traitData] + (weight * traitDps.to_f).round(0)
+              end
+            else
+              traitDps = traitData
+            end
+          else
+            traitName = traitData
+          end
+          traitIndex = traitIndex + 1 
         end
-        index += 2
+      else #save header
+        header = reportData
       end
+      reportIndex = reportIndex + 1
     end
   end
 elsif compositeType == "TrinketSimulation"
-  fightList.each do |fightStyle, weight|
-    reportName = "#{SimcConfig['ReportsFolder']}/#{compositeType}_#{fightStyle}_#{profile}.csv"
-    
-    #Store everything in the table
-    CSV.foreach(reportName) do |row|
-      
-    end
-  end
+
 else 
   Logging.LogScriptFatal "ERROR: Composite type not handled yet !"
   puts "Press enter to quit..."
@@ -191,12 +199,34 @@ if compositeType == "Combinator"
   report.each_with_index { |actor, index|
     actor.unshift(index + 1)
   }
-  
 elsif compositeType == "RelicSimulation"
-  File.open(csvFile, 'a') do |csv|
-    a.each do |name, value|
-
+  # compositeData.each do |key,actor|
+    # actor.each do |key2,actor2|
+      # puts "#{key} #{key2} #{actor2}"
+    # end
+  # end
+  # Calculates max column
+  maxColumns = 1
+  compositeData.each do |name, values|
+    maxColumns = values.length if values.length > maxColumns
+  end
+  
+  # Put the header first
+  report.push(header)
+  
+  # Put all data in order
+  compositeData.each do |name, values|
+    actor = [ ]
+    actor.push(name)
+    values.sort.each do |rank, dps|
+      actor.push(dps)
+      actor.push(rank.to_s)
     end
+    ((values.length + 1)..maxColumns).each do |i|
+      actor.push(0)
+      actor.push("")
+    end
+    report.push(actor)
   end
 elsif compositeType == "TrinketSimulation"
 end 
