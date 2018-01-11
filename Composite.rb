@@ -111,8 +111,6 @@ header = []
 
 if compositeType == "Combinator"
   fightList.each do |fightStyle, weight|
-    Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
-
     jsonList[fightStyle].each do |reportData|
       actor = [ ]
       key = "#{reportData[1]} #{reportData[2]} #{reportData[3]}"
@@ -129,14 +127,13 @@ if compositeType == "Combinator"
         # Store
         compositeData[key] = actor
       else
+        # Simply add dps values to already stored one
         compositeData[key][3] = compositeData[key][3] + (weight * reportData[4].to_f).round(0)
       end
     end
   end
 elsif compositeType == "RelicSimulation"
-  fightList.each do |fightStyle, weight|
-    Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
-    
+  fightList.each do |fightStyle, weight|  
     reportIndex = 0
     
     jsonList[fightStyle].each do |reportData|
@@ -148,26 +145,31 @@ elsif compositeType == "RelicSimulation"
         reportData.each do |traitData|
           if traitIndex > 0 
             if traitIndex%2 == 0
+              # Stop when we have the last trait
               if traitDps == 0
                 next
               end
               if compositeData[traitName].nil? 
                 compositeData[traitName] = {}
               end
+              
+              # First iteration, just save
               if compositeData[traitName][traitData].nil? 
                 compositeData[traitName][traitData] = (weight * traitDps.to_f).round(0)
-              else
+              else # Add to already saved result
                 compositeData[traitName][traitData] = compositeData[traitName][traitData] + (weight * traitDps.to_f).round(0)
               end
             else
+              # Save trait dps for next iteration
               traitDps = traitData
             end
           else
+            # Grab the trait name
             traitName = traitData
           end
           traitIndex = traitIndex + 1 
         end
-      else #save header
+      else # save header
         header = reportData
       end
       reportIndex = reportIndex + 1
@@ -200,11 +202,6 @@ if compositeType == "Combinator"
     actor.unshift(index + 1)
   }
 elsif compositeType == "RelicSimulation"
-  # compositeData.each do |key,actor|
-    # actor.each do |key2,actor2|
-      # puts "#{key} #{key2} #{actor2}"
-    # end
-  # end
   # Calculates max column
   maxColumns = 1
   compositeData.each do |name, values|
@@ -212,13 +209,21 @@ elsif compositeType == "RelicSimulation"
   end
   
   # Put the header first
+  def hashElementType (value)
+    return { "type" => value }
+  end
+  header = [ hashElementType("string") ]
+  for i in 1..maxColumns
+    header.push(hashElementType("number"))
+    header.push(hashElementType("string"))
+  end
   report.push(header)
   
   # Put all data in order
   compositeData.each do |name, values|
     actor = [ ]
     actor.push(name)
-    values.sort.each do |rank, dps|
+    values.each do |rank, dps|
       actor.push(dps)
       actor.push(rank.to_s)
     end
@@ -229,6 +234,7 @@ elsif compositeType == "RelicSimulation"
     report.push(actor)
   end
 elsif compositeType == "TrinketSimulation"
+
 end 
 
 # Output to JSON
