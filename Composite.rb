@@ -109,6 +109,7 @@ compositeData = {}
 # relic/trinket header
 header = []
 
+
 if compositeType == "Combinator"
   fightList.each do |fightStyle, weight|
     jsonList[fightStyle].each do |reportData|
@@ -176,7 +177,37 @@ elsif compositeType == "RelicSimulation"
     end
   end
 elsif compositeType == "TrinketSimulation"
-
+  fightList.each do |fightStyle, weight|  
+    reportIndex = 0
+    
+    jsonList[fightStyle].each do |reportData|
+      if reportIndex > 0 # Skip header
+        trinketIndex = 0
+        trinketName = ""
+        
+        reportData.each do |traitData|
+          if trinketIndex > 0 
+            if compositeData[trinketName].nil? 
+              compositeData[trinketName] = {}
+            end
+            # First iteration, just save
+            if compositeData[trinketName][trinketIndex-1].nil? 
+              compositeData[trinketName][trinketIndex-1] = (weight * traitData.to_f).round(0)
+            else # Add to already saved result
+              compositeData[trinketName][trinketIndex-1] = compositeData[trinketName][trinketIndex-1] + (weight * traitData.to_f).round(0)
+            end
+          else
+            # Grab the trait name
+            trinketName = traitData
+          end
+          trinketIndex = trinketIndex + 1 
+        end
+      else # save header
+        header = reportData
+      end
+      reportIndex = reportIndex + 1
+    end
+  end
 else 
   Logging.LogScriptFatal "ERROR: Composite type not handled yet !"
   puts "Press enter to quit..."
@@ -187,6 +218,12 @@ end
 # Print data to file
 puts
 Logging.LogScriptInfo "Writing data in #{reportFile} ..."
+
+# Prepare MetaFile
+firstFightstyle, firstWeight = fightList.first
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{firstFightstyle}_#{profile}.json"
+metaFileComposite = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_Composite_#{profile}.json"
+parsedMetaFile = JSONParser.ReadFile(metaFile)
 
 report = []
 
@@ -202,6 +239,8 @@ if compositeType == "Combinator"
     actor.unshift(index + 1)
   }
 elsif compositeType == "RelicSimulation"
+  
+
   # Calculates max column
   maxColumns = 1
   compositeData.each do |name, values|
@@ -234,12 +273,23 @@ elsif compositeType == "RelicSimulation"
     report.push(actor)
   end
 elsif compositeType == "TrinketSimulation"
-
+  # Put back header
+  report.push(header)
+  # Trinkets
+  compositeData.each do |name, values|
+    actor = [ ]
+    actor.push(name)
+    values.each do |index, dps|
+      actor.push(dps)
+    end
+    report.push(actor)
+  end
 end 
 
 # Output to JSON
 JSONParser.WriteFile(reportFile, report)
 
-puts
+JSONParser.WriteFile(metaFileComposite, parsedMetaFile)
+
 Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
