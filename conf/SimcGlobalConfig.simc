@@ -6,4 +6,5 @@ report_details=0
 optimal_raid=1
 single_actor_batch=1
 optimize_expressions=1
+profileset_metric=dps
 # profileset_output_data=race/talents/artifact/crucible/gear
