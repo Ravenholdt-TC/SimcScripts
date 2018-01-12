@@ -118,7 +118,7 @@ module Interactive
   end
 
   def self.SelectCompositeType(checkArgs=true)
-    puts 'Please select the type data you want to compose:'
+    puts 'Please select the type of data you want to compose:'
     compositeType = ["Combinator","RelicSimulation","TrinketSimulation"]
     constructedcompositeType = {}
     index=1
