@@ -4,6 +4,7 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
+require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -45,7 +46,7 @@ end
 
 Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}.json"
+reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
@@ -64,7 +65,7 @@ results = JSONResults.new("#{logFile}.json")
 Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
-Logging.LogScriptInfo "Processing data from #{logFile}.json to #{reportFile}..."
+Logging.LogScriptInfo "Processing data and writing report to #{reportFile}..."
 templateDPS = 0
 iLevelList = []
 sims = {}
@@ -102,7 +103,7 @@ sims.each do |name, values|
   report.push(actor)
 end
 # Write into the report file
-JSONParser.WriteFile(reportFile, report)
+ReportWriter.WriteArrayReport(reportFile, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

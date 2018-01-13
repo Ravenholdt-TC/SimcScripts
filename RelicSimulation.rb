@@ -4,6 +4,7 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
+require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -74,7 +75,7 @@ end
 
 Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}.json"
+reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
@@ -92,7 +93,7 @@ results = JSONResults.new("#{logFile}.json")
 # Process results
 sims = {}
 templateDPS = 0
-Logging.LogScriptInfo "Converting #{logFile}.json to #{reportFile}..."
+Logging.LogScriptInfo "Processing results and writing report to #{reportFile}..."
 results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -230,7 +231,7 @@ sims.each do |name, values|
   report.push(actor)
 end
 # Write into the report file
-JSONParser.WriteFile(reportFile, report)
+ReportWriter.WriteArrayReport(reportFile, report)
 
 ## Should we write plain DT ?
 # # Write report (Google Chart DataTable JSON)

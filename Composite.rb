@@ -4,6 +4,7 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
+require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 
 Logging.Initialize("Composite")
@@ -284,7 +285,7 @@ elsif compositeType == "TrinketSimulation"
 end
 
 # Output to JSON
-JSONParser.WriteFile(reportFile, report)
+ReportWriter.WriteArrayReport(reportFile, report)
 
 JSONParser.WriteFile(metaFileComposite, parsedMetaFile)
 

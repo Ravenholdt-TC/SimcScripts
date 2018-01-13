@@ -5,6 +5,7 @@ require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
 require_relative 'lib/ProfileHelper'
+require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
@@ -187,7 +188,7 @@ report.each_with_index { |actor, index|
   actor.unshift(index + 1)
 }
 # Write into the report file
-JSONParser.WriteFile(reportFile, report)
+ReportWriter.WriteArrayReport(reportFile, report)
 
 puts
 Logging.LogScriptInfo 'Done! Press enter to quit...'
