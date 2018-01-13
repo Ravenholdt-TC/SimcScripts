@@ -28,10 +28,6 @@ setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 talentdata = Interactive.SelectTalentPermutations()
 
-# Recreate or append to report?
-reportFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}.json"
-Interactive.RemoveFileWithQuestion(reportFile)
-
 # Log all interactively set settings
 puts
 Logging.LogScriptInfo "Summarizing input:"
@@ -155,7 +151,8 @@ Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
 results.extractMetadata(metaFile)
 
 # Write report
-Logging.LogScriptInfo "Adding data from #{logFile}.json to #{reportFile}..."
+reportFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}"
+Logging.LogScriptInfo "Reading results and writing report to #{reportFile}..."
 sims = results.getAllDPSResults()
 sims.delete('Template')
 priorityDps = results.getPriorityDPSResults()

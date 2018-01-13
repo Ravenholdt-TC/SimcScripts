@@ -169,18 +169,4 @@ module Interactive
     puts
     return array[index - 1]
   end
-
-  # Asks if the specified file should be removed and does so by default (no answer)
-  def self.RemoveFileWithQuestion(file, checkArgs=true)
-    if File.exist?(file)
-      puts "Do you want to delete the existing #{file} file? If you type \"n\", results will be appended."
-      print 'Y/n: '
-      deletefile = GetInputOrArg(checkArgs)
-      unless deletefile.downcase.eql? 'n'
-        File.delete(file)
-        Logging.LogScriptInfo "Old #{file} file deleted!"
-      end
-      puts
-    end
-  end
 end

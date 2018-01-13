@@ -24,10 +24,6 @@ end
 
 setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
 
-# Recreate or append to csv?
-reportFile = "#{SimcConfig['ReportsFolder']}/#{compositeType}_Composite_#{profile}.json"
-Interactive.RemoveFileWithQuestion(reportFile)
-
 # Log all interactively set settings
 puts
 Logging.LogScriptInfo "Summarizing input:"
@@ -49,7 +45,7 @@ lines = 0
 buildDate = ""
 model['Fightstyle_model'].each do |fightStyle, weight|
   Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
-  
+
   # only if fightstyle weight is > 0
   unless weight != 0
     Logging.LogScriptFatal "WARNING: Fightstyle weight=0, not using : #{fightStyle} !"
@@ -124,7 +120,7 @@ if compositeType == "Combinator"
         actor.push(reportData[3])
         # DPS value
         actor.push((weight * reportData[4].to_f).round(0))
-        
+
         # Store
         compositeData[key] = actor
       else
@@ -134,28 +130,28 @@ if compositeType == "Combinator"
     end
   end
 elsif compositeType == "RelicSimulation"
-  fightList.each do |fightStyle, weight|  
+  fightList.each do |fightStyle, weight|
     reportIndex = 0
-    
+
     jsonList[fightStyle].each do |reportData|
       if reportIndex > 0 # Skip header
         traitIndex = 0
         traitName = ""
         traitDps = 0
-        
+
         reportData.each do |traitData|
-          if traitIndex > 0 
+          if traitIndex > 0
             if traitIndex%2 == 0
               # Stop when we have the last trait
               if traitDps == 0
                 next
               end
-              if compositeData[traitName].nil? 
+              if compositeData[traitName].nil?
                 compositeData[traitName] = {}
               end
-              
+
               # First iteration, just save
-              if compositeData[traitName][traitData].nil? 
+              if compositeData[traitName][traitData].nil?
                 compositeData[traitName][traitData] = (weight * traitDps.to_f).round(0)
               else # Add to already saved result
                 compositeData[traitName][traitData] = compositeData[traitName][traitData] + (weight * traitDps.to_f).round(0)
@@ -168,7 +164,7 @@ elsif compositeType == "RelicSimulation"
             # Grab the trait name
             traitName = traitData
           end
-          traitIndex = traitIndex + 1 
+          traitIndex = traitIndex + 1
         end
       else # save header
         header = reportData
@@ -177,21 +173,21 @@ elsif compositeType == "RelicSimulation"
     end
   end
 elsif compositeType == "TrinketSimulation"
-  fightList.each do |fightStyle, weight|  
+  fightList.each do |fightStyle, weight|
     reportIndex = 0
-    
+
     jsonList[fightStyle].each do |reportData|
       if reportIndex > 0 # Skip header
         trinketIndex = 0
         trinketName = ""
-        
+
         reportData.each do |traitData|
-          if trinketIndex > 0 
-            if compositeData[trinketName].nil? 
+          if trinketIndex > 0
+            if compositeData[trinketName].nil?
               compositeData[trinketName] = {}
             end
             # First iteration, just save
-            if compositeData[trinketName][trinketIndex-1].nil? 
+            if compositeData[trinketName][trinketIndex-1].nil?
               compositeData[trinketName][trinketIndex-1] = (weight * traitData.to_f).round(0)
             else # Add to already saved result
               compositeData[trinketName][trinketIndex-1] = compositeData[trinketName][trinketIndex-1] + (weight * traitData.to_f).round(0)
@@ -200,7 +196,7 @@ elsif compositeType == "TrinketSimulation"
             # Grab the trait name
             trinketName = traitData
           end
-          trinketIndex = trinketIndex + 1 
+          trinketIndex = trinketIndex + 1
         end
       else # save header
         header = reportData
@@ -208,7 +204,7 @@ elsif compositeType == "TrinketSimulation"
       reportIndex = reportIndex + 1
     end
   end
-else 
+else
   Logging.LogScriptFatal "ERROR: Composite type not handled yet !"
   puts "Press enter to quit..."
   Interactive.GetInputOrArg()
@@ -217,7 +213,8 @@ end
 
 # Print data to file
 puts
-Logging.LogScriptInfo "Writing data in #{reportFile} ..."
+reportFile = "#{SimcConfig['ReportsFolder']}/#{compositeType}_Composite_#{profile}"
+Logging.LogScriptInfo "Writing composite data to #{reportFile} ..."
 
 # Prepare MetaFile
 firstFightstyle, firstWeight = fightList.first
@@ -239,14 +236,14 @@ if compositeType == "Combinator"
     actor.unshift(index + 1)
   }
 elsif compositeType == "RelicSimulation"
-  
+
 
   # Calculates max column
   maxColumns = 1
   compositeData.each do |name, values|
     maxColumns = values.length if values.length > maxColumns
   end
-  
+
   # Put the header first
   def hashElementType (value)
     return { "type" => value }
@@ -257,7 +254,7 @@ elsif compositeType == "RelicSimulation"
     header.push(hashElementType("string"))
   end
   report.push(header)
-  
+
   # Put all data in order
   compositeData.each do |name, values|
     actor = [ ]
@@ -284,7 +281,7 @@ elsif compositeType == "TrinketSimulation"
     end
     report.push(actor)
   end
-end 
+end
 
 # Output to JSON
 JSONParser.WriteFile(reportFile, report)
