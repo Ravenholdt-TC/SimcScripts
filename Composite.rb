@@ -13,37 +13,34 @@ compositeType = Interactive.SelectCompositeType()
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
 
-#Read spec from profile
-spec = ''
-File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
-  while line = pfile.gets
-    if line.start_with?('spec=')
-      spec = line.chomp.split('=')[1]
-    end
-  end
-end
-
-setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
+# Grab spec
+profileInfo = profile.split("_")
+setupsProfile = profileInfo.shift
+spec = profileInfo.join("_")
 
 # Log all interactively set settings
-puts
 Logging.LogScriptInfo "Summarizing input:"
 Logging.LogScriptInfo "-- Composite Type: #{compositeType}"
 Logging.LogScriptInfo "-- Class: #{classfolder}"
+Logging.LogScriptInfo "-- Spec: #{spec}"
 Logging.LogScriptInfo "-- Profile: #{profile}"
 Logging.LogScriptInfo "-- Setups: #{setupsProfile}"
-puts
 
 # Read tier model from JSON
 model = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Fightstyles/Composite/Composite_#{setupsProfile}.json")
 
-# Verify reports integrity
-Logging.LogScriptInfo "Verifying all reports needed..."
+######################
+# Check reports integrity
+######################
 puts
+Logging.LogScriptInfo "Verifying all reports needed..."
+
 fightList = {}
-jsonList = {}
+reportList = {}
+metaList = {}
 lines = 0
 buildDate = ""
+
 model['Fightstyle_model'].each do |fightStyle, weight|
   Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
 
@@ -72,10 +69,10 @@ model['Fightstyle_model'].each do |fightStyle, weight|
   end
 
   # check for same build date
-  buildDateContent = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{fightStyle}_#{profile}.json")
+  parsedMeta = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{fightStyle}_#{profile}.json")
   if buildDate == ""
-    buildDate = buildDateContent['build_date']
-  elsif buildDate != buildDateContent['build_date']
+    buildDate = parsedMeta['build_date']
+  elsif buildDate != parsedMeta['build_date']
     Logging.LogScriptFatal "ERROR: Files don't have the same build date !"
     puts "Press enter to quit..."
     Interactive.GetInputOrArg()
@@ -95,21 +92,23 @@ model['Fightstyle_model'].each do |fightStyle, weight|
 
   # register fightStyle and store json
   fightList[fightStyle] = weight
-  jsonList[fightStyle] = parsedReport
+  reportList[fightStyle] = parsedReport
+  metaList[fightStyle] = parsedMeta
 end
 
-# Generate data
+######################
+#### Generate data ###
+######################
 puts
 Logging.LogScriptInfo "Combining data from json files..."
-compositeData = {}
 
 # relic/trinket header
 header = []
-
+compositeData = {}
 
 if compositeType == "Combinator"
   fightList.each do |fightStyle, weight|
-    jsonList[fightStyle].each do |reportData|
+    reportList[fightStyle].each do |reportData|
       actor = [ ]
       key = "#{reportData[1]} #{reportData[2]} #{reportData[3]}"
       if compositeData[key].nil?
@@ -134,7 +133,7 @@ elsif compositeType == "RelicSimulation"
   fightList.each do |fightStyle, weight|
     reportIndex = 0
 
-    jsonList[fightStyle].each do |reportData|
+    reportList[fightStyle].each do |reportData|
       if reportIndex > 0 # Skip header
         traitIndex = 0
         traitName = ""
@@ -167,8 +166,6 @@ elsif compositeType == "RelicSimulation"
           end
           traitIndex = traitIndex + 1
         end
-      else # save header
-        header = reportData
       end
       reportIndex = reportIndex + 1
     end
@@ -177,7 +174,7 @@ elsif compositeType == "TrinketSimulation"
   fightList.each do |fightStyle, weight|
     reportIndex = 0
 
-    jsonList[fightStyle].each do |reportData|
+    reportList[fightStyle].each do |reportData|
       if reportIndex > 0 # Skip header
         trinketIndex = 0
         trinketName = ""
@@ -194,7 +191,7 @@ elsif compositeType == "TrinketSimulation"
               compositeData[trinketName][trinketIndex-1] = compositeData[trinketName][trinketIndex-1] + (weight * traitData.to_f).round(0)
             end
           else
-            # Grab the trait name
+            # Grab the trinket name
             trinketName = traitData
           end
           trinketIndex = trinketIndex + 1
@@ -212,18 +209,20 @@ else
   exit
 end
 
-# Print data to file
+######################
+# Print data to file #
+######################
 puts
 reportFile = "#{SimcConfig['ReportsFolder']}/#{compositeType}_Composite_#{profile}"
-Logging.LogScriptInfo "Writing composite data to #{reportFile} ..."
+Logging.LogScriptInfo "Writing data in #{reportFile} ..."
+
+report = []
 
 # Prepare MetaFile
 firstFightstyle, firstWeight = fightList.first
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{firstFightstyle}_#{profile}.json"
-metaFileComposite = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_Composite_#{profile}.json"
+metaFileComposite = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_Composite_#{profile}"
 parsedMetaFile = JSONParser.ReadFile(metaFile)
-
-report = []
 
 if compositeType == "Combinator"
   # Rebuild the report
@@ -237,7 +236,49 @@ if compositeType == "Combinator"
     actor.unshift(index + 1)
   }
 elsif compositeType == "RelicSimulation"
-
+  # Recalc cruweight for relicSimultation
+  relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicSimulation/RelicList.json")
+  WeaponItemLevelName = 'Weapon Item Level'
+  PercentageDPSGainName = '% DPS Gain'
+  
+  # Calculate Composite Template DPS
+  compositeTemplateDps = 0
+  fightList.each do |fightStyle, weight|
+    compositeTemplateDps = compositeTemplateDps + (weight * metaList[fightStyle]['player']['collected_data']['dps']['mean'].to_f).round(0)
+  end
+  
+  # Calculate cruweight
+  if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
+    Logging.LogScriptInfo 'Generating CrucibleWeight string...'
+    weaponId = data[1]
+    cruweight = "cruweight^#{weaponId}^ilvl^1^"
+    compositeData.each do |name, values|
+      next if name == WeaponItemLevelName || name == PercentageDPSGainName
+      if trait = relicList['Traits'][spec].find {|trait| trait['name'] == name}
+        cruweight += "#{trait['spellId']}^"
+        ranks = []
+        values.sort.each do |amount, dps|
+          if amount.to_i - 1 > 0
+            weight = (dps.to_f - values[(amount.to_i - 1).to_s]) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
+            ranks.push("#{amount.to_i + 4}:#{weight.round(2)}")
+          else
+            weight = (dps.to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
+            ranks.push("#{weight.round(2)}")
+          end
+        end
+        cruweight += ranks.join(' ') + '^'
+      elsif trait = relicList['Traits']['Crucible'].find {|trait| trait['name'] == name}
+        weight = (values['1'].to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
+        cruweight += "#{trait['spellId']}^#{weight.round(2)}^"
+      else
+        Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
+        next
+      end
+    end
+    cruweight += 'end'
+    parsedMetaFile['crucibleweight'] = cruweight
+    Logging.LogScriptInfo cruweight
+  end
 
   # Calculates max column
   maxColumns = 1
@@ -284,10 +325,13 @@ elsif compositeType == "TrinketSimulation"
   end
 end
 
-# Output to JSON
+######################
+### Output to JSON ###
+######################
+# Report
 ReportWriter.WriteArrayReport(reportFile, report)
-
-JSONParser.WriteFile(metaFileComposite, parsedMetaFile)
+# Meta
+ReportWriter.WriteArrayReport(metaFileComposite, parsedMetaFile)
 
 Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
