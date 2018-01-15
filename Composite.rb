@@ -50,7 +50,7 @@ model['Fightstyle_model'].each do |fightStyle, weight|
     next
   end
 
-  #check if csv file exists
+  #check if json file exists
   reportName = "#{SimcConfig['ReportsFolder']}/#{compositeType}_#{fightStyle}_#{profile}.json"
   unless File.file?(reportName)
     Logging.LogScriptFatal "ERROR: Report missing : #{reportName} !"
@@ -153,7 +153,7 @@ elsif compositeType == "RelicSimulation"
                 compositeData[traitName] = {}
               end
               if traitName == PercentageDPSGainName
-                traitLevel = traitData.to_s
+                traitLevel = traitData.to_f
               else
                 traitLevel = traitData.to_i
               end
@@ -222,7 +222,7 @@ end
 ######################
 puts
 reportFile = "#{SimcConfig['ReportsFolder']}/#{compositeType}_Composite_#{profile}"
-Logging.LogScriptInfo "Writing data in #{reportFile} ..."
+Logging.LogScriptInfo "Writing data in #{reportFile}.json ..."
 
 report = []
 
@@ -265,16 +265,16 @@ elsif compositeType == "RelicSimulation"
         ranks = []
         values.sort.each do |amount, dps|
           if amount - 1 > 0
-            weight = (dps.to_f - values[amount - 1]) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
+            weight = dps.to_f / compositeData[WeaponItemLevelName][1].to_f
             ranks.push("#{amount + 4}:#{weight.round(2)}")
           else
-            weight = (dps.to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
+            weight = dps.to_f / compositeData[WeaponItemLevelName][1].to_f
             ranks.push("#{weight.round(2)}")
           end
         end
         cruweight += ranks.join(' ') + '^'
       elsif trait = relicList['Traits']['Crucible'].find {|trait| trait['name'] == name}
-        weight = (values[1].to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
+        weight = values[1].to_f / compositeData[WeaponItemLevelName][1].to_f
         cruweight += "#{trait['spellId']}^#{weight.round(2)}^"
       else
         Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
