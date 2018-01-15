@@ -44,13 +44,13 @@ buildDate = ""
 model['Fightstyle_model'].each do |fightStyle, weight|
   Logging.LogScriptInfo "Model #{fightStyle} : #{weight}"
 
-  # only if fightstyle weight is > 0
+  # Check if fightstyle weight is > 0
   unless weight != 0
     Logging.LogScriptFatal "WARNING: Fightstyle weight=0, not using : #{fightStyle} !"
     next
   end
 
-  #check if json file exists
+  # Check if json file exists
   reportName = "#{SimcConfig['ReportsFolder']}/#{compositeType}_#{fightStyle}_#{profile}.json"
   unless File.file?(reportName)
     Logging.LogScriptFatal "ERROR: Report missing : #{reportName} !"
@@ -59,7 +59,7 @@ model['Fightstyle_model'].each do |fightStyle, weight|
     exit
   end
 
-  #check if meta file exists
+  # Check if meta file exists
   reportNameMeta = "#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{fightStyle}_#{profile}.json"
   unless File.file?(reportNameMeta)
     Logging.LogScriptFatal "ERROR: Report meta missing : #{reportNameMeta} !"
@@ -68,7 +68,7 @@ model['Fightstyle_model'].each do |fightStyle, weight|
     exit
   end
 
-  # check for same build date
+  # Check for same build date
   parsedMeta = JSONParser.ReadFile("#{SimcConfig['ReportsFolder']}/meta/#{compositeType}_#{fightStyle}_#{profile}.json")
   if buildDate == ""
     buildDate = parsedMeta['build_date']
@@ -79,7 +79,7 @@ model['Fightstyle_model'].each do |fightStyle, weight|
     exit
   end
 
-  # check for same number of lines
+  # Check for same number of lines
   parsedReport = JSONParser.ReadFile(reportName)
   if lines == 0
     lines = parsedReport.count
@@ -90,7 +90,7 @@ model['Fightstyle_model'].each do |fightStyle, weight|
     exit
   end
 
-  # register fightStyle and store json
+  # Register fightStyle and store json
   fightList[fightStyle] = weight
   reportList[fightStyle] = parsedReport
   metaList[fightStyle] = parsedMeta
@@ -102,7 +102,6 @@ end
 puts
 Logging.LogScriptInfo "Combining data from json files..."
 
-# relic/trinket header
 header = []
 compositeData = {}
 WeaponItemLevelName = 'Weapon Item Level'
@@ -152,6 +151,7 @@ elsif compositeType == "RelicSimulation"
               if compositeData[traitName].nil?
                 compositeData[traitName] = {}
               end
+              # Reformat data
               if traitName == PercentageDPSGainName
                 traitLevel = traitData.to_f
               else
@@ -187,24 +187,24 @@ elsif compositeType == "TrinketSimulation"
         trinketIndex = 0
         trinketName = ""
 
-        reportData.each do |traitData|
+        reportData.each do |trinketData|
           if trinketIndex > 0
             if compositeData[trinketName].nil?
               compositeData[trinketName] = {}
             end
             # First iteration, just save
             if compositeData[trinketName][trinketIndex-1].nil?
-              compositeData[trinketName][trinketIndex-1] = (weight * traitData.to_f).round(0)
+              compositeData[trinketName][trinketIndex-1] = (weight * trinketData.to_f).round(0)
             else # Add to already saved result
-              compositeData[trinketName][trinketIndex-1] = compositeData[trinketName][trinketIndex-1] + (weight * traitData.to_f).round(0)
+              compositeData[trinketName][trinketIndex-1] = compositeData[trinketName][trinketIndex-1] + (weight * trinketData.to_f).round(0)
             end
           else
             # Grab the trinket name
-            trinketName = traitData
+            trinketName = trinketData
           end
           trinketIndex = trinketIndex + 1
         end
-      else # save header
+      else # Save header
         header = reportData
       end
       reportIndex = reportIndex + 1
@@ -237,8 +237,10 @@ if compositeType == "Combinator"
   compositeData.each do |key,actor|
     report.push(actor)
   end
+
   # Sort the report by the DPS value in DESC order
   report.sort! { |x,y| y[3] <=> x[3] }
+
   # Add the initial rank
   report.each_with_index { |actor, index|
     actor.unshift(index + 1)
@@ -307,7 +309,7 @@ elsif compositeType == "RelicSimulation"
   compositeData.each do |name, values|
     actor = [ ]
     actor.push(name)
-    values.each do |rank, dps|
+    values.sort.each do |rank, dps|
       actor.push(dps)
       actor.push(rank.to_s)
     end
@@ -320,7 +322,8 @@ elsif compositeType == "RelicSimulation"
 elsif compositeType == "TrinketSimulation"
   # Put back header
   report.push(header)
-  # Trinkets
+
+  # Write Trinkets data
   compositeData.each do |name, values|
     actor = [ ]
     actor.push(name)
