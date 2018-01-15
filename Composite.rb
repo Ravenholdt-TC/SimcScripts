@@ -105,6 +105,8 @@ Logging.LogScriptInfo "Combining data from json files..."
 # relic/trinket header
 header = []
 compositeData = {}
+WeaponItemLevelName = 'Weapon Item Level'
+PercentageDPSGainName = '% DPS Gain'
 
 if compositeType == "Combinator"
   fightList.each do |fightStyle, weight|
@@ -138,6 +140,7 @@ elsif compositeType == "RelicSimulation"
         traitIndex = 0
         traitName = ""
         traitDps = 0
+        traitLevel = 0
 
         reportData.each do |traitData|
           if traitIndex > 0
@@ -149,12 +152,17 @@ elsif compositeType == "RelicSimulation"
               if compositeData[traitName].nil?
                 compositeData[traitName] = {}
               end
+              if traitName == PercentageDPSGainName
+                traitLevel = traitData.to_s
+              else
+                traitLevel = traitData.to_i
+              end
 
               # First iteration, just save
-              if compositeData[traitName][traitData].nil?
-                compositeData[traitName][traitData] = (weight * traitDps.to_f).round(0)
+              if compositeData[traitName][traitLevel].nil?
+                compositeData[traitName][traitLevel] = (weight * traitDps.to_f).round(0)
               else # Add to already saved result
-                compositeData[traitName][traitData] = compositeData[traitName][traitData] + (weight * traitDps.to_f).round(0)
+                compositeData[traitName][traitLevel] = compositeData[traitName][traitLevel] + (weight * traitDps.to_f).round(0)
               end
             else
               # Save trait dps for next iteration
@@ -238,8 +246,6 @@ if compositeType == "Combinator"
 elsif compositeType == "RelicSimulation"
   # Recalc cruweight for relicSimultation
   relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicSimulation/RelicList.json")
-  WeaponItemLevelName = 'Weapon Item Level'
-  PercentageDPSGainName = '% DPS Gain'
   
   # Calculate Composite Template DPS
   compositeTemplateDps = 0
@@ -258,17 +264,17 @@ elsif compositeType == "RelicSimulation"
         cruweight += "#{trait['spellId']}^"
         ranks = []
         values.sort.each do |amount, dps|
-          if amount.to_i - 1 > 0
-            weight = (dps.to_f - values[(amount.to_i - 1).to_s]) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
-            ranks.push("#{amount.to_i + 4}:#{weight.round(2)}")
+          if amount - 1 > 0
+            weight = (dps.to_f - values[amount - 1]) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
+            ranks.push("#{amount + 4}:#{weight.round(2)}")
           else
-            weight = (dps.to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
+            weight = (dps.to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
             ranks.push("#{weight.round(2)}")
           end
         end
         cruweight += ranks.join(' ') + '^'
       elsif trait = relicList['Traits']['Crucible'].find {|trait| trait['name'] == name}
-        weight = (values['1'].to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName]['1'].to_f - compositeTemplateDps)
+        weight = (values[1].to_f - compositeTemplateDps) / (compositeData[WeaponItemLevelName][1].to_f - compositeTemplateDps)
         cruweight += "#{trait['spellId']}^#{weight.round(2)}^"
       else
         Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
