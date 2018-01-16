@@ -1,1 +1,6 @@
 $(simc_profiles_path)/Tier21/T21_Priest_Shadow.simc
+
+talents=1001231
+
+finger2=sephuzs_secret,id=132452,bonus_id=3630,gem_id=151583,enchant=binding_of_haste
+
