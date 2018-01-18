@@ -33,6 +33,16 @@ Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
 WeaponItemLevelName = 'Weapon Item Level'
 WeaponItemLevelSteps = relicList['Config']['ItemLevelSteps']
 File.open(simcFile, 'w') do |out|
+  out.puts("# --- Relics Config ---")
+  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc"))
+  out.puts
+  out.puts("# --- #{fightstyle} Fightstyle ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
+  out.puts
+  out.puts("# --- #{template} ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"))
+  out.puts
+  out.puts("# --- Relics ---")
   out.puts 'name="Template"'
   out.puts "#{relicList['Weapons'][spec]},ilevel=#{relicList['Config']['BaseItemLevel']}"
   # Reset crucible
@@ -78,11 +88,8 @@ logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}
 reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)

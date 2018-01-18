@@ -28,6 +28,16 @@ trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketSimula
 simcFile = "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc"
 Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
+  out.puts("# --- Trinkets Config ---")
+  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc"))
+  out.puts
+  out.puts("# --- #{fightstyle} Fightstyle ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
+  out.puts
+  out.puts("# --- #{template} ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc"))
+  out.puts
+  out.puts("# --- Trinkets ---")
   out.puts 'name="Template"'
   out.puts 'trinket1=empty'
   out.puts 'trinket2=empty'
@@ -49,11 +59,8 @@ logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{templat
 reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)

@@ -102,6 +102,16 @@ end
 simcFile = "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc"
 Logging.LogScriptInfo "Writing combinations to #{simcFile}!"
 File.open(simcFile, 'w') do |out|
+  out.puts("# --- Combinator Config ---")
+  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc"))
+  out.puts
+  out.puts("# --- #{fightstyle} Fightstyle ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
+  out.puts
+  out.puts("# --- #{profile} ---")
+  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc"))
+  out.puts
+  out.puts("# --- Combinator (#{talentdata}) ---")
   talentdata[0].each do |t1|
     talentdata[1].each do |t2|
       talentdata[2].each do |t3|
@@ -135,11 +145,8 @@ Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/Combinator_#{fightstyle}_#{profile}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fightstyle}_#{profile}.json"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
   simcFile
 ]
 SimcHelper.RunSimulation(params)
