@@ -1,1 +1,4 @@
 $(simc_profiles_path)/Tier21/T21_Death_Knight_Blood.simc
+
+role=attack
+position=back
