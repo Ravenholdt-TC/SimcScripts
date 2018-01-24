@@ -6,7 +6,7 @@ This repository contains my scripts for automated simulation and data collection
 ## Initial Setup
 
 Install a Ruby interpreter. On Windows you can use [RubyInstaller](https://rubyinstaller.org/).
-You will need to install the DevKit as well. As of RubyInstaller 2.4+ you can run `ridk install 123`.
+You will need to install the DevKit as well. As of RubyInstaller 2.4+ you can run `ridk install 1 2 3`.
 
 ```
 gem install bundler
