@@ -25,45 +25,35 @@ Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
 trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
-simcFile = "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc"
-Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
-File.open(simcFile, 'w') do |out|
-  out.puts("# --- Trinkets Config ---")
-  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc"))
-  out.puts
-  out.puts("# --- #{fightstyle} Fightstyle ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
-  out.puts
-  out.puts("# --- #{template} ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc"))
-  out.puts
-  out.puts("# --- Trinkets ---")
-  out.puts 'name="Template"'
-  out.puts 'trinket1=empty'
-  out.puts 'trinket2=empty'
-  out.puts
-  trinketList['trinkets'].each do |trinket|
-    bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
-    trinket['itemLevels'].each do |ilvl|
-      out.puts "profileset.\"#{trinket['name']}_#{ilvl}\"+=trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}"
-      trinket['additionalInput'].each do |input|
-        out.puts "profileset.\"#{trinket['name']}_#{ilvl}\"+=#{input}"
-      end
+simcInput = []
+Logging.LogScriptInfo "Generating profilesets..."
+simcInput.push 'name="Template"'
+simcInput.push 'trinket1=empty'
+simcInput.push 'trinket2=empty'
+simcInput.push ''
+trinketList['trinkets'].each do |trinket|
+  bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
+  trinket['itemLevels'].each do |ilvl|
+    simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}"
+    trinket['additionalInput'].each do |input|
+      simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=#{input}"
     end
-    out.puts
   end
+  simcInput.push ''
 end
 
-Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
 params = [
+  "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  simcFile
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
+  simcInput
 ]
-SimcHelper.RunSimulation(params)
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

@@ -3,34 +3,47 @@ require_relative 'Logging'
 require_relative 'SimcConfig'
 
 module SimcHelper
-  # Write SimC default profiles path to GeneratedConfig.simc in generated
-  def self.GenerateSimcConfig()
-    File.open("#{SimcConfig['GeneratedFolder']}/GeneratedConfig.simc", 'w') do |file|
-      file.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
-    end
-  end
-
   # Convert string into simc name, e.g. "Fortune's Strike" -> "fortunes_strike"
   def self.TokenizeName(name)
     return name.downcase.gsub(/[^0-9a-z_+.% ]/i, '').gsub(' ', '_')
   end
 
+  # Append a simc file to a filestream, used for generating the full simc input file.
+  def self.WriteFileToInput(filename, out)
+    out.puts
+    out.puts("# --- #{filename} ---")
+    out.puts(File.read(filename))
+    out.puts("# --- End of File ---")
+    out.puts
+  end
+
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args)
-    command = []
+  def self.RunSimulation(args, generateInput="#{SimcConfig['GeneratedFolder']}/LastInput.simc")
+    Logging.LogScriptInfo "Writing full SimC Input to #{generateInput}..."
+    File.open(generateInput, 'w') do |input|
+      input.puts "### SimcScripts Full Input, generated #{Time.now}"
+      input.puts
 
-    # Call executable
-    command.push("#{SimcConfig['SimcPath']}/simc")
+      # Special input via script config
+      input.puts "threads=#{SimcConfig['Threads']}"
+      input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
 
-    # Set number of threads to use
-    command.push("threads=#{SimcConfig['Threads']}")
+      # Use global simc config file
+      WriteFileToInput("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc", input)
 
-    # Set global configurations
-    command.push("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc")
-    GenerateSimcConfig()
-    command.push("#{SimcConfig['GeneratedFolder']}/GeneratedConfig.simc")
+      args.flatten.each do |arg|
+        if arg.end_with?('.simc')
+          # Input File
+          WriteFileToInput(arg, input)
+        else
+          input.puts arg
+        end
+      end
+    end
 
-    command += args
+    # Call executable with full input file
+    Logging.LogScriptInfo 'Starting simulations, this may take a while!'
+    command = ["#{SimcConfig['SimcPath']}/simc", generateInput]
 
     # Run simulation with logging and redirecting output to the terminal
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|

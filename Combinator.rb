@@ -99,39 +99,27 @@ setups['setups'].each do |setup|
 end
 
 # Combine gear with talents and write simc input to file
-simcFile = "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc"
-Logging.LogScriptInfo "Writing combinations to #{simcFile}!"
-File.open(simcFile, 'w') do |out|
-  out.puts("# --- Combinator Config ---")
-  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc"))
-  out.puts
-  out.puts("# --- #{fightstyle} Fightstyle ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
-  out.puts
-  out.puts("# --- #{profile} ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc"))
-  out.puts
-  out.puts("# --- Combinator (#{talentdata}) ---")
-  talentdata[0].each do |t1|
-    talentdata[1].each do |t2|
-      talentdata[2].each do |t3|
-        talentdata[3].each do |t4|
-          talentdata[4].each do |t5|
-            talentdata[5].each do |t6|
-              talentdata[6].each do |t7|
-                talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
-                talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
-                gearCombinations.each do |name, strings|
-                  prefix = "profileset.\"#{talentInput}_#{name}\"+="
-                  out.puts(prefix + "talents=#{talentInput}")
-                  talentOverrides.each do |talentOverride|
-                    out.puts(prefix + talentOverride)
-                  end
-                  strings.each do |string|
-                    out.puts(prefix + string)
-                  end
-                  out.puts
+simcInput = []
+Logging.LogScriptInfo "Generating combinations..."
+talentdata[0].each do |t1|
+  talentdata[1].each do |t2|
+    talentdata[2].each do |t3|
+      talentdata[3].each do |t4|
+        talentdata[4].each do |t5|
+          talentdata[5].each do |t6|
+            talentdata[6].each do |t7|
+              talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
+              talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
+              gearCombinations.each do |name, strings|
+                prefix = "profileset.\"#{talentInput}_#{name}\"+="
+                simcInput.push(prefix + "talents=#{talentInput}")
+                talentOverrides.each do |talentOverride|
+                  simcInput.push(prefix + talentOverride)
                 end
+                strings.each do |string|
+                  simcInput.push(prefix + string)
+                end
+                simcInput.push ''
               end
             end
           end
@@ -141,15 +129,17 @@ File.open(simcFile, 'w') do |out|
   end
 end
 
-Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/Combinator_#{fightstyle}_#{profile}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fightstyle}_#{profile}.json"
 params = [
+  "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  simcFile
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
+  simcInput
 ]
-SimcHelper.RunSimulation(params)
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

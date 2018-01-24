@@ -28,71 +28,61 @@ Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
 # Generate simc input
-simcFile = "#{SimcConfig['GeneratedFolder']}/RelicSimulation_#{fightstyle}_#{template}.simc"
-Logging.LogScriptInfo "Writing profilesets to #{simcFile}!"
+simcInput = []
+Logging.LogScriptInfo "Generating profilesets..."
 WeaponItemLevelName = 'Weapon Item Level'
 WeaponItemLevelSteps = relicList['Config']['ItemLevelSteps']
-File.open(simcFile, 'w') do |out|
-  out.puts("# --- Relics Config ---")
-  out.puts(File.read("#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc"))
-  out.puts
-  out.puts("# --- #{fightstyle} Fightstyle ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc"))
-  out.puts
-  out.puts("# --- #{template} ---")
-  out.puts(File.read("#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc"))
-  out.puts
-  out.puts("# --- Relics ---")
-  out.puts 'name="Template"'
-  out.puts "#{relicList['Weapons'][spec]},ilevel=#{relicList['Config']['BaseItemLevel']}"
-  # Reset crucible
-  out.puts 'crucible='
-  # Override all spec traits to 4
+simcInput.push 'name="Template"'
+simcInput.push "#{relicList['Weapons'][spec]},ilevel=#{relicList['Config']['BaseItemLevel']}"
+# Reset crucible
+simcInput.push 'crucible='
+# Override all spec traits to 4
+relicList['Traits'][spec].each do |trait|
+  simcInput.push "artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:4"
+end
+simcInput.push
+# Weapon Item Level profilesets
+weaponRangeMin = relicList['Config']['BaseItemLevel'] + WeaponItemLevelSteps
+weaponRangeMax = relicList['Config']['BaseItemLevel'] + relicList['Config']['MaximumLevelIncrease']
+(weaponRangeMin..weaponRangeMax).step(WeaponItemLevelSteps) do |ilvl|
+  simcInput.push "profileset.\"#{WeaponItemLevelName}_#{ilvl - relicList['Config']['BaseItemLevel']}\"+=#{relicList['Weapons'][spec]},ilevel=#{ilvl}"
+end
+simcInput.push ''
+# Trait profilesets
+(5..7).each.with_index(1) do |rank, amount|
   relicList['Traits'][spec].each do |trait|
-    out.puts "artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:4"
+    next if trait['exclude']
+    next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
+    next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+    next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
+    next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
+    simcInput.push "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{rank}"
   end
-  out.puts
-  # Weapon Item Level profilesets
-  weaponRangeMin = relicList['Config']['BaseItemLevel'] + WeaponItemLevelSteps
-  weaponRangeMax = relicList['Config']['BaseItemLevel'] + relicList['Config']['MaximumLevelIncrease']
-  (weaponRangeMin..weaponRangeMax).step(WeaponItemLevelSteps) do |ilvl|
-    out.puts "profileset.\"#{WeaponItemLevelName}_#{ilvl - relicList['Config']['BaseItemLevel']}\"+=#{relicList['Weapons'][spec]},ilevel=#{ilvl}"
-  end
-  out.puts
-  # Trait profilesets
-  (5..7).each.with_index(1) do |rank, amount|
-    relicList['Traits'][spec].each do |trait|
-      next if trait['exclude']
-      next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
-      next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
-      next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
-      next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
-      out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{rank}"
-    end
-  end
-  out.puts
-  (1..3).each do |amount|
-    relicList['Traits']['Crucible'].each do |trait|
-      next if trait['exclude']
-      next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
-      next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
-      next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
-      next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
-      out.puts "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{amount}"
-    end
+end
+simcInput.push ''
+(1..3).each do |amount|
+  relicList['Traits']['Crucible'].each do |trait|
+    next if trait['exclude']
+    next if trait['fightstyleWhitelist'] && !trait['fightstyleWhitelist'].include?(fightstyle)
+    next if trait['fightstyleBlacklist'] && trait['fightstyleBlacklist'].include?(fightstyle)
+    next if trait['profileMatch'] && !trait['profileMatch'].any? {|x| template.include?(x)}
+    next if trait['profileNoMatch'] && trait['profileNoMatch'].any? {|x| template.include?(x)}
+    simcInput.push "profileset.\"#{trait['name']}_#{amount}\"+=artifact_override=#{SimcHelper.TokenizeName(trait['name'])}:#{amount}"
   end
 end
 
-Logging.LogScriptInfo 'Starting simulations, this may take a while!'
 logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
 reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
 params = [
+  "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
-  simcFile
+  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc",
+  simcInput
 ]
-SimcHelper.RunSimulation(params)
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/RelicSimulation_#{fightstyle}_#{template}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")
