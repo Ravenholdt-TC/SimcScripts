@@ -12,7 +12,7 @@ Logging.Initialize("TrinketSimulation")
 
 classfolder = Interactive.SelectSubfolder('Templates')
 template = Interactive.SelectTemplate("Templates/#{classfolder}/")
-trinketListProfile = Interactive.SelectTemplate('TrinketLists/')
+trinketListProfiles = Interactive.SelectTemplateMulti('TrinketLists/')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 # Log all interactively set settings
@@ -20,26 +20,28 @@ puts
 Logging.LogScriptInfo "Summarizing input:"
 Logging.LogScriptInfo "-- Class: #{classfolder}"
 Logging.LogScriptInfo "-- Profile: #{template}"
-Logging.LogScriptInfo "-- Trinket List: #{trinketListProfile}"
+Logging.LogScriptInfo "-- Trinket List: #{trinketListProfiles}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
-trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketLists/#{trinketListProfile}.json")
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push 'trinket1=empty'
 simcInput.push 'trinket2=empty'
 simcInput.push ''
-trinketList['trinkets'].each do |trinket|
-  bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
-  trinket['itemLevels'].each do |ilvl|
-    simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}"
-    trinket['additionalInput'].each do |input|
-      simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=#{input}"
+trinketListProfiles.each do |trinketListProfile|
+  trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketLists/#{trinketListProfile}.json")
+  trinketList['trinkets'].each do |trinket|
+    bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
+    trinket['itemLevels'].each do |ilvl|
+      simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}"
+      trinket['additionalInput'].each do |input|
+        simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=#{input}"
+      end
     end
+    simcInput.push ''
   end
-  simcInput.push ''
 end
 
 logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"

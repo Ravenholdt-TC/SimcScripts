@@ -1,5 +1,6 @@
 require_relative 'Logging'
 require_relative 'SimcConfig'
+require 'yaml'
 
 module Interactive
   # SPECIAL NOTE: By default these function check for existing cmd arguments first.
@@ -44,6 +45,44 @@ module Interactive
     end
     puts
     return "#{profiles[index]}"
+  end
+
+  # Offers all templates matching prefix_*.<ext> in the profiles folder
+  # Returns the selecitons as array, multiple selections allowed via [a,b] (no spaces)
+  def self.SelectTemplateMulti(prefix, checkArgs=true)
+    puts "Please choose the #{prefix} templates you want to simulate:"
+    puts '(You can either enter one, or multiple using the format [a,b] without spaces.)'
+    profiles = {}
+    index = 1
+    underscore = prefix.end_with?('/') ? '' : '_'
+    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*").each do |file|
+      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
+        profiles[index] = profile[1]
+        puts "#{index}: #{profile[1]}"
+        index += 1
+      end
+    end
+    print 'Profile: '
+    input = GetInputOrArg(checkArgs)
+    inputArray = [(YAML.load(input))].flatten # Use YAML to automatically parse arrays as such
+    templates = []
+    inputArray.each do |el|
+      if profiles.has_value?(el)
+        templates.push(el)
+        next
+      end
+      index = el.to_i
+      if profiles.has_key?(index)
+        templates.push("#{profiles[index]}")
+      else
+        Logging.LogScriptFatal "ERROR: Invalid profile index #{el} entered!"
+        puts 'Press enter to quit...'
+        GetInputOrArg(checkArgs)
+        exit
+      end
+    end
+    puts
+    return templates
   end
 
   # Offers all subfolders in prefix in the profiles folder
