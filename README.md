@@ -26,8 +26,8 @@ in your simc profiles.
 ## TrinketSimulation
 
 Usage:
-1. Create a base simulation profile file called `TrinketSimulation_<PROFILENAME>.simc` in the
-   `profiles/TrinketSimulation` folder. This file defines the base character to simulate.
+1. Create a simulation profile file in the `profiles/Templates` folder. This file defines the
+   base character to simulate.
 2. (Optional) Create a custom trinket list file called `TrinketList_<NAME>.json` in the profiles
    folder. This file defines all trinkets to simulate. (See `TrinketList_Melee_Agility.json` for
    an example.)
@@ -43,8 +43,8 @@ Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
 ## RelicSimulation
 
 Usage:
-1. Create a simulation profile file called `RelicSimulation_<PROFILENAME>.simc` in the
-   `profiles/RelicSimulation` folder.
+1. Create a simulation profile file in the `profiles/Templates` folder. This file defines the
+   base character to simulate.
 2. Run `RelicSimulation.rb`. It will ask you to select a profile and spec.
 3. Wait for the simulation to run until it says it's done.
 4. The resulting CSV file will be in the `reports` folder.

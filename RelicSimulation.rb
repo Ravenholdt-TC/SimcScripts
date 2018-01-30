@@ -10,10 +10,10 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("RelicSimulation")
 
-classfolder = Interactive.SelectSubfolder('RelicSimulation')
-template = Interactive.SelectTemplate("RelicSimulation/#{classfolder}/RelicSimulation")
+classfolder = Interactive.SelectSubfolder('Templates')
+template = Interactive.SelectTemplate("Templates/#{classfolder}/")
 
-relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicSimulation/RelicList.json")
+relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicList.json")
 spec = Interactive.SelectFromArray('Specialization', relicList['Weapons'].keys)
 
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
@@ -79,7 +79,7 @@ params = [
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/RelicSimulation/#{classfolder}/RelicSimulation_#{template}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
 SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/RelicSimulation_#{fightstyle}_#{template}.simc")

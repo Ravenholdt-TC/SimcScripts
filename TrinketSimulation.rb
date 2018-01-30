@@ -10,9 +10,9 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("TrinketSimulation")
 
-classfolder = Interactive.SelectSubfolder('TrinketSimulation')
-template = Interactive.SelectTemplate("TrinketSimulation/#{classfolder}/TrinketSimulation")
-trinketListProfile = Interactive.SelectTemplate('TrinketSimulation/TrinketList')
+classfolder = Interactive.SelectSubfolder('Templates')
+template = Interactive.SelectTemplate("Templates/#{classfolder}/")
+trinketListProfile = Interactive.SelectTemplate('TrinketLists/')
 fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 # Log all interactively set settings
@@ -24,7 +24,7 @@ Logging.LogScriptInfo "-- Trinket List: #{trinketListProfile}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
-trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketSimulation/TrinketList_#{trinketListProfile}.json")
+trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketLists/#{trinketListProfile}.json")
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
@@ -50,7 +50,7 @@ params = [
   "output=#{logFile}.log",
   "json2=#{logFile}.json",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/TrinketSimulation/#{classfolder}/TrinketSimulation_#{template}.simc",
+  "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
 SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc")
