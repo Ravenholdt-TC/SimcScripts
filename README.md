@@ -61,6 +61,17 @@ annotations and zero values to fill for an equal amount of columns.
 
 Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
 
+## RaceSimulation
+
+Usage:
+1. Create a simulation profile file in the `profiles/Templates` folder. This file defines the
+   base character to simulate.
+2. Run `RaceSimulation.rb`. It will ask you to select a profile and fightstyle.
+3. Wait for the simulation to run until it says it's done.
+4. The resulting CSV file will be in the `reports` folder.
+
+Special Race simulation settings can be set in `SimcRaceConfig.simc`.
+
 ## Combinator
 
 This script will run a template for whatever talent and gear combinations you would like to
