@@ -7,6 +7,7 @@ require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
 
+# Map race name and simc string
 RaceMap = {
   'Night Elf' => 'night_elf',
   'Blood Elf' => 'blood_elf',
@@ -20,12 +21,30 @@ RaceMap = {
   'Undead' => 'undead',
   'Worgen' => 'worgen',
   'Tauren' => 'tauren',
-  'Draenei' => 'draenei'
-  ###### SOON
-  #'Void Elf' => 'voidelf',
-  #'Highmountain Tauren' => 'highmountaintauren',
-  #'Lightforged Draenei' => 'lightforgeddraenei',
-  #'Nightborne' => 'nightborne'
+  'Draenei' => 'draenei',
+  'Void Elf' => 'void_elf',
+  'Highmountain Tauren' => 'highmountain_tauren',
+  'Lightforged Draenei' => 'lightforged_draenei',
+  'Nightborne' => 'nightborne'
+  ###### BfA
+  #'Zandalari Troll' => 'zandalari_troll',
+  #'Dark Iron Dwarf' => 'dark_iron_dwarf'
+}
+
+# Map class folder and race name
+ClassMap = {
+  'DeathKnight' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin'],
+  'DemonHunter' => ['Night Elf', 'Blood Elf'],
+  'Druid' => ['Night Elf', 'Worgen', 'Tauren', 'Troll', 'Highmountain Tauren'],
+  'Hunter' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne'],
+  'Mage' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Monk' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Highmountain Tauren', 'Nightborne'],
+  'Paladin' => ['Human', 'Dwarf', 'Draenei', 'Lightforged Draenei', 'Tauren', 'Blood Elf'],
+  'Priest' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Rogue' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Worgen', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Shaman' => ['Dwarf', 'Draenei', 'Pandaren', 'Orc', 'Tauren', 'Troll', 'Goblin', 'Highmountain Tauren'],
+  'Warlock' => ['Human', 'Dwarf', 'Gnome', 'Worgen', 'Void Elf', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Warrior' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne']
 }
 
 Logging.Initialize("RaceSimulation")
@@ -48,7 +67,9 @@ simcInput.push 'name="Template"'
 simcInput.push 'race=none'
 simcInput.push ''
 RaceMap.each do |name, raceString|
-  simcInput.push "profileset.\"#{name}\"+=race=#{raceString}"
+  if ClassMap[classfolder].include?(name)
+    simcInput.push "profileset.\"#{name}\"+=race=#{raceString}"
+  end
 end
 
 logFile = "#{SimcConfig['LogsFolder']}/RaceSimulation_#{fightstyle}_#{template}"
