@@ -95,6 +95,12 @@ results.extractMetadata(metaFile)
 # Write report
 Logging.LogScriptInfo "Processing data and writing report to #{reportFile}..."
 report = [ ]
+# Header
+def hashElementType (value)
+  return { "type" => value }
+end
+header = [ hashElementType("string"), hashElementType("number") ]
+report.push(header)
 sims = results.getAllDPSResults()
 templateDPS = sims['Template'] or 0
 sims.delete('Template')
