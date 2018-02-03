@@ -1,0 +1,5 @@
+$(simc_profiles_path)/Tier21/T21_Rogue_Assassination.simc
+
+### Gear Overrides
+shoulder=shoulderpads_of_the_demonic_blitz,id=151988,bonus_id=3612/1502
+feet=duskwalkers_footpads,id=137030,bonus_id=3630

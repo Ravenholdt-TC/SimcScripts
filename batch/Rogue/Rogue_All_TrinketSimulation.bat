@@ -3,6 +3,7 @@ cd %~dp0\..\..
 
 REM T21
 TrinketSimulation.rb Rogue T21_Rogue_Assassination-Mantle+Bracers Melee_Agility 1T q
+TrinketSimulation.rb Rogue T21_Rogue_Assassination-Boots+Bracers Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Assassination-T21_4+T20_2_Bracers+Boots Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Assassination_Exsg Melee_Agility 1T q
 TrinketSimulation.rb Rogue T21_Rogue_Outlaw Melee_Agility 1T q
