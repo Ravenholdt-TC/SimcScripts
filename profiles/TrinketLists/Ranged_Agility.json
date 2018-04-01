@@ -127,6 +127,13 @@
       "bonusIds": [],
       "additionalInput": []
     },
+    {
+      "name": "Splinters of Agronox",
+      "itemId": 144477,
+      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "bonusIds": [],
+      "additionalInput": []
+    },
   // Raids
     {
       "name": "Bloodthirsty Instict",
