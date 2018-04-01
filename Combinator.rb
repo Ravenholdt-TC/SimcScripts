@@ -144,12 +144,14 @@ results = JSONResults.new(simulationFilename)
 # Extract metadata
 results.extractMetadata(simulationFilename)
 
-# Write report
-reportFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}"
-Logging.LogScriptInfo "Reading results and writing report to #{reportFile}..."
+# Process results
+Logging.LogScriptInfo "Processing results..."
 sims = results.getAllDPSResults()
 sims.delete('Template')
 priorityDps = results.getPriorityDPSResults()
+
+# Construct the report
+Logging.LogScriptInfo "Construct the report..."
 report = [ ]
 sims.each do |name, value|
   actor = [ ]
@@ -180,8 +182,9 @@ report.sort! { |x,y| y[3] <=> x[3] }
 report.each_with_index { |actor, index|
   actor.unshift(index + 1)
 }
-# Write into the report file
-ReportWriter.WriteArrayReport(reportFile, report)
+
+# Write the report(s)
+ReportWriter.WriteArrayReport(simulationFilename, report)
 
 puts
 Logging.LogScriptInfo 'Done! Press enter to quit...'

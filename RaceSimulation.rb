@@ -73,7 +73,6 @@ RaceMap.each do |name, raceString|
 end
 
 simulationFilename = "RaceSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRaceConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -88,8 +87,14 @@ results = JSONResults.new(simulationFilename)
 # Extract metadata
 results.extractMetadata(simulationFilename)
 
-# Write report
-Logging.LogScriptInfo "Processing data and writing report to #{reportFile}..."
+# Process results
+Logging.LogScriptInfo "Processing results..."
+sims = results.getAllDPSResults()
+templateDPS = sims['Template'] or 0
+sims.delete('Template')
+
+# Construct the report
+Logging.LogScriptInfo "Construct the report..."
 report = [ ]
 # Header
 def hashElementType (value)
@@ -97,15 +102,14 @@ def hashElementType (value)
 end
 header = [ hashElementType("string"), hashElementType("number") ]
 report.push(header)
-sims = results.getAllDPSResults()
-templateDPS = sims['Template'] or 0
-sims.delete('Template')
+# Body
 sims.each do |name, value|
   actor = [name, value - templateDPS]
   report.push(actor)
 end
-# Write into the report file
-ReportWriter.WriteArrayReport(reportFile, report)
+
+# Write the report(s)
+ReportWriter.WriteArrayReport(simulationFilename, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

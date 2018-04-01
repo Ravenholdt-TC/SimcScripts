@@ -72,7 +72,6 @@ simcInput.push ''
 end
 
 simulationFilename = "RelicSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -85,9 +84,9 @@ SimcHelper.RunSimulation(params, simulationFilename)
 results = JSONResults.new(simulationFilename)
 
 # Process results
+Logging.LogScriptInfo "Processing results..."
 sims = {}
 templateDPS = 0
-Logging.LogScriptInfo "Processing results and writing report to #{reportFile}..."
 results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
@@ -96,7 +95,6 @@ results.getAllDPSResults().each do |name, dps|
     templateDPS = dps
   end
 end
-
 # Interpolate between Weapon Item Level Steps
 if sims[WeaponItemLevelName]
   sims[WeaponItemLevelName].sort.each do |amount, dps|
@@ -116,7 +114,6 @@ if sims[WeaponItemLevelName]
     end
   end
 end
-
 # Find the highest 3rd rank relic to filter meaningless weaponitemlevel steps
 maxThirdRankDPS = 0
 sims.each do |name, values|
@@ -140,7 +137,6 @@ max_weaponItemLevelDPS = sims[WeaponItemLevelName][maxWeaponItemLevelAmount]
 for i in (maxWeaponItemLevelAmount+1)..numWeaponItemLevelResults
   sims[WeaponItemLevelName].delete(i)
 end
-
 # Add equivalent % DPS gain from template DPS, limited to next % increase after maxDPS
 PercentageDPSGainName = '% DPS Gain'
 sims[PercentageDPSGainName] = { }
@@ -153,7 +149,6 @@ maxSimActorDPS = [maxThirdRankDPS, max_weaponItemLevelDPS].max
     break
   end
 end
-
 # Get string for crucible weight addon and add it to metadata
 addToMeta = {}
 if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
@@ -191,14 +186,14 @@ end
 # Save metadata
 results.extractMetadata(simulationFilename, addToMeta)
 
+# Construct the report
+Logging.LogScriptInfo "Construct the report..."
+report = [ ]
 # Get max number of results (have to fill others for Google Charts to work)
 maxColumns = 1
 sims.each do |name, values|
   maxColumns = values.length if values.length > maxColumns
 end
-
-# Write report
-report = [ ]
 # Header
 def hashElementType (value)
   return { "type" => value }
@@ -209,7 +204,7 @@ for i in 1..maxColumns
   header.push(hashElementType("string"))
 end
 report.push(header)
-# Relics
+# Body
 sims.each do |name, values|
   actor = [ ]
   actor.push(name)
@@ -223,24 +218,32 @@ sims.each do |name, values|
   end
   report.push(actor)
 end
-# Write into the report file
-ReportWriter.WriteArrayReport(reportFile, report)
+
+# Write the report(s)
+ReportWriter.WriteArrayReport(simulationFilename, report)
 
 ## Should we write plain DT ?
 # # Write report (Google Chart DataTable JSON)
+# report = { }
+# # Get max number of results (have to fill others for Google Charts to work)
+# maxColumns = 1
+# sims.each do |name, values|
+#   maxColumns = values.length if values.length > maxColumns
+# end
+# # Header
 # def hashElementType (value)
 #   return { "type" => value }
 # end
 # def hashElementValue (value)
 #   return { "v" => value }
 # end
-# report = { }
 # cols = [ hashElementType("string") ]
 # for i in 1..maxColumns
 #   cols.push(hashElementType("number"))
 #   cols.push(hashElementType("string"))
 # end
 # report["cols"] = cols
+# # Body
 # rows = [ ]
 # sims.each do |name, values|
 #   actor = [ ]
@@ -256,8 +259,8 @@ ReportWriter.WriteArrayReport(reportFile, report)
 #   rows.push({ "c" => actor })
 # end
 # report["rows"] = rows
-# # Write into the report file
-# JSONParser.WriteFile(reportFile, report)
+# # Write report
+# JSONParser.WriteFile("#{SimcConfig['ReportsFolder']}/#{simulationFilename}", report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()

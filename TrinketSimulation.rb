@@ -45,7 +45,6 @@ trinketListProfiles.each do |trinketListProfile|
 end
 
 simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -60,7 +59,8 @@ results = JSONResults.new(simulationFilename)
 # Extract metadata
 results.extractMetadata(simulationFilename)
 
-Logging.LogScriptInfo "Processing data and writing report to #{reportFile}..."
+# Process results
+Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
 iLevelList = []
 sims = {}
@@ -76,7 +76,8 @@ end
 iLevelList.uniq!
 iLevelList.sort!
 
-# Write report
+# Construct the report
+Logging.LogScriptInfo "Construct the report..."
 report = [ ]
 # Header
 header = [ "Trinket" ]
@@ -84,7 +85,7 @@ iLevelList.each do |ilvl|
   header.push(ilvl.to_s)
 end
 report.push(header)
-# Trinkets
+# Body
 sims.each do |name, values|
   actor = [ ]
   actor.push(name)
@@ -97,8 +98,9 @@ sims.each do |name, values|
   end
   report.push(actor)
 end
-# Write into the report file
-ReportWriter.WriteArrayReport(reportFile, report)
+
+# Write the report(s)
+ReportWriter.WriteArrayReport(simulationFilename, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()
