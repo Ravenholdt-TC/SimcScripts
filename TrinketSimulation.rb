@@ -44,9 +44,10 @@ trinketListProfiles.each do |trinketListProfile|
   end
 end
 
-logFile = "#{SimcConfig['LogsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/TrinketSimulation_#{fightstyle}_#{template}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/TrinketSimulation_#{fightstyle}_#{template}.json"
+simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
+logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "output=#{logFile}.log",
@@ -55,7 +56,7 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
-SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/TrinketSimulation_#{fightstyle}_#{template}.simc")
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

@@ -129,8 +129,9 @@ talentdata[0].each do |t1|
   end
 end
 
-logFile = "#{SimcConfig['LogsFolder']}/Combinator_#{fightstyle}_#{profile}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/Combinator_#{fightstyle}_#{profile}.json"
+simulationFilename = "Combinator_#{fightstyle}_#{profile}"
+logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   "output=#{logFile}.log",
@@ -139,7 +140,7 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
   simcInput
 ]
-SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/Combinator_#{fightstyle}_#{profile}.simc")
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

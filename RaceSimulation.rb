@@ -72,9 +72,10 @@ RaceMap.each do |name, raceString|
   end
 end
 
-logFile = "#{SimcConfig['LogsFolder']}/RaceSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/RaceSimulation_#{fightstyle}_#{template}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/RaceSimulation_#{fightstyle}_#{template}.json"
+simulationFilename = "RaceSimulation_#{fightstyle}_#{template}"
+logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRaceConfig.simc",
   "output=#{logFile}.log",
@@ -83,7 +84,7 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
-SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/RaceSimulation_#{fightstyle}_#{template}.simc")
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

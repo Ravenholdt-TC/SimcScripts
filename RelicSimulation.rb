@@ -71,9 +71,10 @@ simcInput.push ''
   end
 end
 
-logFile = "#{SimcConfig['LogsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
-reportFile = "#{SimcConfig['ReportsFolder']}/RelicSimulation_#{fightstyle}_#{template}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/RelicSimulation_#{fightstyle}_#{template}.json"
+simulationFilename = "RelicSimulation_#{fightstyle}_#{template}"
+logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
+metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "output=#{logFile}.log",
@@ -82,7 +83,7 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
-SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/RelicSimulation_#{fightstyle}_#{template}.simc")
+SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc")
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")
