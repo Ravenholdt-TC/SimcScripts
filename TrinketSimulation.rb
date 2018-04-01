@@ -45,9 +45,7 @@ trinketListProfiles.each do |trinketListProfile|
 end
 
 simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
-logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
 reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -60,8 +58,7 @@ SimcHelper.RunSimulation(params, simulationFilename)
 results = JSONResults.new(simulationFilename)
 
 # Extract metadata
-Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
-results.extractMetadata(metaFile)
+results.extractMetadata(simulationFilename)
 
 Logging.LogScriptInfo "Processing data and writing report to #{reportFile}..."
 templateDPS = 0

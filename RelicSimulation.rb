@@ -72,9 +72,7 @@ simcInput.push ''
 end
 
 simulationFilename = "RelicSimulation_#{fightstyle}_#{template}"
-logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
 reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRelicConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -191,8 +189,7 @@ if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
 end
 
 # Save metadata
-Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
-results.extractMetadata(metaFile, addToMeta)
+results.extractMetadata(simulationFilename, addToMeta)
 
 # Get max number of results (have to fill others for Google Charts to work)
 maxColumns = 1

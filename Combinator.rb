@@ -130,8 +130,6 @@ talentdata[0].each do |t1|
 end
 
 simulationFilename = "Combinator_#{fightstyle}_#{profile}"
-logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
-metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -144,8 +142,7 @@ SimcHelper.RunSimulation(params, simulationFilename)
 results = JSONResults.new(simulationFilename)
 
 # Extract metadata
-Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
-results.extractMetadata(metaFile)
+results.extractMetadata(simulationFilename)
 
 # Write report
 reportFile = "#{SimcConfig['ReportsFolder']}/Combinator_#{fightstyle}_#{profile}"
