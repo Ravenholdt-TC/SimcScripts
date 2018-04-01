@@ -377,13 +377,20 @@
             "itemLevels": [1000],
             "bonusIds": [],
             "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
-          },
+        },
         {
             "name": "Aman'Thul's Vision 15-Pantheon",
             "itemId": 154172,
             "itemLevels": [1000],
             "bonusIds": [],
             "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
+        },
+        {
+            "name": "Pyrite Infuser",
+            "itemId": 156016,
+            "itemLevels": [930, 935, 940, 945],
+            "bonusIds": [3625],
+            "additionalInput": []
         }
     ]
 }
