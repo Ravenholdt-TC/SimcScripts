@@ -73,9 +73,6 @@ end
 iLevelList.uniq!
 iLevelList.sort!
 
-# Extract metadata
-results.extractMetadata()
-
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
 report = [ ]

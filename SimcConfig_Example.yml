@@ -5,7 +5,7 @@ SimcPath: D:\Dev\SimulationCraft
 Threads: 3
 
 # What file type to write reports to (available: json, csv; you can specify multiple with | as seperator)
-OutputExt: json
+OutputExt: csv
 
 ###
 ### You can most likely leave the following the way they are.
@@ -28,3 +28,10 @@ ProfilesFolder: profiles
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
+
+###
+### Hero Websites (json output only)
+###
+
+# If specified to true, will prepare the report to be used on HeroTC websites like Hero Damage
+HeroOutput: false

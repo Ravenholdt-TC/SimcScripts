@@ -11,7 +11,12 @@ module ReportWriter
       Logging.LogScriptInfo "Writing report to #{reportFile}.#{ext}..."
       case ext
       when 'json'
-        JSONParser.WriteFile("#{reportFile}.json", array)
+        if SimcConfig['HeroOutput']
+          hash = { 'results' => array, 'metas' => results.extractMetadata() }
+          JSONParser.WriteFile("#{reportFile}.json", hash)
+        else
+          JSONParser.WritePrettyFile("#{reportFile}.json", array)
+        end
       when 'csv'
         CSV.open("#{reportFile}.csv", "wb") do |csv|
           array.each do |row|

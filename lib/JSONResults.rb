@@ -9,6 +9,7 @@ class JSONResults
     @simulationFilename = simulationFilename
     @logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}.json"
     @jsonData = JSONParser.ReadFile(@logFile)
+    @additionalMetadata = {}
   end
 
   def getRawJSON()
@@ -41,12 +42,15 @@ class JSONResults
     return results
   end
 
+  # Append an hash that will be merged with the metas during extractMetadata()
+  # Can be called multiple times to append different hashes before the extraction
+  def appendToMetadata(additionalMetadata)
+    @additionalMetadata.merge!(additionalMetadata)
+  end
+
   # Extract metadata from a simulation
-  # Additional data is an optional hash that is merged into the JSON output.
-  def extractMetadata(additionalData={})
-    # Init
-    metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{@simulationFilename}.json"
-    Logging.LogScriptInfo "Extract metadata from #{@logFile} to #{metaFile}..."
+  def extractMetadata()
+    Logging.LogScriptInfo "Extract metadata from #{@logFile}..."
 
     # Get the meta datas from the json report
     metas = { }
@@ -72,9 +76,8 @@ class JSONResults
     metas['result_timestamp'] = Time.now.to_i
 
     # Add additional data
-    metas.merge!(additionalData)
+    metas.merge!(@additionalMetadata)
 
-    # Write them into the meta file
-    JSONParser.WriteFile(metaFile, metas)
+    return metas
   end
 end

@@ -149,6 +149,7 @@ maxSimActorDPS = [maxThirdRankDPS, max_weaponItemLevelDPS].max
     break
   end
 end
+
 # Get string for crucible weight addon and add it to metadata
 addToMeta = {}
 if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
@@ -182,9 +183,7 @@ if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
   addToMeta['crucibleweight'] = cruweight
   Logging.LogScriptInfo cruweight
 end
-
-# Extract metadata
-results.extractMetadata(addToMeta)
+results.appendToMetadata(addToMeta)
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
