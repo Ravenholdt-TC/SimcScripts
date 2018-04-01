@@ -1,3 +1,5 @@
 # Put here any override for the Combinator Simulation
 target_error=0.4
 profileset_work_threads=1
+# Increase profileset_init_threads if you're simming faster than you init the profileset
+profileset_init_threads=1

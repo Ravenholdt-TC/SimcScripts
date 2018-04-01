@@ -1,3 +1,4 @@
 # Put here any override for the Trinket Simulation
 target_error=0.2
+profileset_work_threads=1
 default_actions=1
