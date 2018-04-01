@@ -184,7 +184,7 @@ if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
 end
 
 # Extract metadata
-results.extractMetadata(simulationFilename, addToMeta)
+results.extractMetadata(addToMeta)
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."

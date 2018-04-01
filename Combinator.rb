@@ -148,7 +148,7 @@ sims.delete('Template')
 priorityDps = results.getPriorityDPSResults()
 
 # Extract metadata
-results.extractMetadata(simulationFilename)
+results.extractMetadata()
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."

@@ -4,7 +4,9 @@ require_relative 'JSONParser'
 # Used for parsing json2 output from simc
 class JSONResults
   def initialize(simulationFilename="LastInput")
-    @jsonData = JSONParser.ReadFile("#{SimcConfig['LogsFolder']}/#{simulationFilename}.json")
+    @simulationFilename = simulationFilename
+    @logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}.json"
+    @jsonData = JSONParser.ReadFile(@logFile)
   end
 
   def getRawJSON()
@@ -39,12 +41,12 @@ class JSONResults
 
   # Extract metadata from a simulation
   # Additional data is an optional hash that is merged into the JSON output.
-  def extractMetadata(simulationFilename="LastInput", additionalData={})
-    logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}.json"
-    metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
+  def extractMetadata(additionalData={})
+    # Init
+    metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{@simulationFilename}.json"
+    Logging.LogScriptInfo "Extract metadata from #{@logFile} to #{metaFile}..."
 
     # Get the meta datas from the json report
-    Logging.LogScriptInfo "Extract metadata from #{logFile} to #{metaFile}..."
     metas = { }
     metas['build_date'] = @jsonData['build_date']
     metas['build_time'] = @jsonData['build_time']
