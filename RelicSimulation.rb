@@ -84,7 +84,7 @@ params = [
 SimcHelper.RunSimulation(params, simulationFilename)
 
 # Read JSON Output
-results = JSONResults.new("#{logFile}.json")
+results = JSONResults.new(simulationFilename)
 
 # Process results
 sims = {}

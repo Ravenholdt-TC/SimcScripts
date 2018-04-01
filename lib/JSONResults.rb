@@ -3,8 +3,8 @@ require_relative 'JSONParser'
 
 # Used for parsing json2 output from simc
 class JSONResults
-  def initialize(file)
-    @jsonData = JSONParser.ReadFile(file)
+  def initialize(simulationFilename)
+    @jsonData = JSONParser.ReadFile("#{SimcConfig['LogsFolder']}/#{simulationFilename}.json")
   end
 
   def getRawJSON()

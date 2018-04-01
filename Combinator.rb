@@ -141,7 +141,7 @@ params = [
 SimcHelper.RunSimulation(params, simulationFilename)
 
 # Read JSON Output
-results = JSONResults.new("#{logFile}.json")
+results = JSONResults.new(simulationFilename)
 
 # Extract metadata
 Logging.LogScriptInfo "Extract metadata from #{logFile}.json to #{metaFile}..."
