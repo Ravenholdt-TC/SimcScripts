@@ -84,14 +84,14 @@ SimcHelper.RunSimulation(params, simulationFilename)
 # Read JSON Output
 results = JSONResults.new(simulationFilename)
 
-# Extract metadata
-results.extractMetadata(simulationFilename)
-
 # Process results
 Logging.LogScriptInfo "Processing results..."
 sims = results.getAllDPSResults()
 templateDPS = sims['Template'] or 0
 sims.delete('Template')
+
+# Extract metadata
+results.extractMetadata(simulationFilename)
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."

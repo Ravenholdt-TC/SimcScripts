@@ -56,9 +56,6 @@ SimcHelper.RunSimulation(params, simulationFilename)
 # Read JSON Output
 results = JSONResults.new(simulationFilename)
 
-# Extract metadata
-results.extractMetadata(simulationFilename)
-
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
@@ -75,6 +72,9 @@ results.getAllDPSResults().each do |name, dps|
 end
 iLevelList.uniq!
 iLevelList.sort!
+
+# Extract metadata
+results.extractMetadata(simulationFilename)
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."

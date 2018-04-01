@@ -183,7 +183,7 @@ if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
   Logging.LogScriptInfo cruweight
 end
 
-# Save metadata
+# Extract metadata
 results.extractMetadata(simulationFilename, addToMeta)
 
 # Construct the report
