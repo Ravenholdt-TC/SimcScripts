@@ -83,7 +83,7 @@ params = [
   "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput
 ]
-SimcHelper.RunSimulation(params, "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc")
+SimcHelper.RunSimulation(params, simulationFilename)
 
 # Read JSON Output
 results = JSONResults.new("#{logFile}.json")

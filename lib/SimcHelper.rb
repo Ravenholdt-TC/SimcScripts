@@ -18,9 +18,10 @@ module SimcHelper
   end
 
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args, generateInput="#{SimcConfig['GeneratedFolder']}/LastInput.simc")
-    Logging.LogScriptInfo "Writing full SimC Input to #{generateInput}..."
-    File.open(generateInput, 'w') do |input|
+  def self.RunSimulation(args, generatedFilename="LastInput")
+    generatedFile = "#{SimcConfig['GeneratedFolder']}/#{generatedFilename}.simc"
+    Logging.LogScriptInfo "Writing full SimC Input to #{generatedFile}..."
+    File.open(generatedFile, 'w') do |input|
       input.puts "### SimcScripts Full Input, generated #{Time.now}"
       input.puts
 
@@ -43,7 +44,7 @@ module SimcHelper
 
     # Call executable with full input file
     Logging.LogScriptInfo 'Starting simulations, this may take a while!'
-    command = ["#{SimcConfig['SimcPath']}/simc", generateInput]
+    command = ["#{SimcConfig['SimcPath']}/simc", generatedFile]
 
     # Run simulation with logging and redirecting output to the terminal
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|
