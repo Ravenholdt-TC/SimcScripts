@@ -78,8 +78,6 @@ reportFile = "#{SimcConfig['ReportsFolder']}/#{simulationFilename}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRaceConfig.simc",
-  "output=#{logFile}.log",
-  "json2=#{logFile}.json",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
   "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
   simcInput

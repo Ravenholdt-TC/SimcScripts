@@ -134,8 +134,6 @@ logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
 metaFile = "#{SimcConfig['ReportsFolder']}/meta/#{simulationFilename}.json"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
-  "output=#{logFile}.log",
-  "json2=#{logFile}.json",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
   "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
   simcInput

@@ -18,8 +18,8 @@ module SimcHelper
   end
 
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args, generatedFilename="LastInput")
-    generatedFile = "#{SimcConfig['GeneratedFolder']}/#{generatedFilename}.simc"
+  def self.RunSimulation(args, simulationFilename="LastInput")
+    generatedFile = "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc"
     Logging.LogScriptInfo "Writing full SimC Input to #{generatedFile}..."
     File.open(generatedFile, 'w') do |input|
       input.puts "### SimcScripts Full Input, generated #{Time.now}"
@@ -28,6 +28,11 @@ module SimcHelper
       # Special input via script config
       input.puts "threads=#{SimcConfig['Threads']}"
       input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
+
+      # Logs
+      logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+      input.puts "output=#{logFile}.log"
+      input.puts "json2=#{logFile}.json"
 
       # Use global simc config file
       WriteFileToInput("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc", input)
