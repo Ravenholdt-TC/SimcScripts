@@ -184,7 +184,7 @@ report.each_with_index { |actor, index|
 }
 
 # Write the report(s)
-ReportWriter.WriteArrayReport(simulationFilename, report)
+ReportWriter.WriteArrayReport(results, report)
 
 puts
 Logging.LogScriptInfo 'Done! Press enter to quit...'

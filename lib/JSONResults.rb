@@ -3,6 +3,8 @@ require_relative 'JSONParser'
 
 # Used for parsing json2 output from simc
 class JSONResults
+  attr_reader :simulationFilename
+
   def initialize(simulationFilename="LastInput")
     @simulationFilename = simulationFilename
     @logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}.json"

@@ -100,7 +100,7 @@ sims.each do |name, values|
 end
 
 # Write the report(s)
-ReportWriter.WriteArrayReport(simulationFilename, report)
+ReportWriter.WriteArrayReport(results, report)
 
 Logging.LogScriptInfo 'Done! Press enter to quit...'
 Interactive.GetInputOrArg()
