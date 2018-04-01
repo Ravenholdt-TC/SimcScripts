@@ -391,6 +391,13 @@
             "itemLevels": [930, 935, 940, 945],
             "bonusIds": [3625],
             "additionalInput": []
+        },
+        {
+            "name": "Wrathstone",
+            "itemId": 156000,
+            "itemLevels": [930, 935, 940, 945],
+            "bonusIds": [3625],
+            "additionalInput": []
         }
     ]
 }

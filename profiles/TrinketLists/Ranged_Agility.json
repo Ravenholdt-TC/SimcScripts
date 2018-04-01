@@ -143,6 +143,13 @@
         "additionalInput": []
     },
     {
+        "name": "Wrathstone",
+        "itemId": 156000,
+        "itemLevels": [930, 935, 940, 945],
+        "bonusIds": [3625],
+        "additionalInput": []
+    },
+    {
       "name": "Bloodthirsty Instict",
       "itemId": 139329,
       "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
