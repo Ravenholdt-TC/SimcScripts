@@ -1,0 +1,25 @@
+rogue="Template"
+level=110
+race=dwarf
+role=attack
+position=back
+talents=0000000
+spec=subtlety
+
+# No Set/Legendary Base
+head=general_erodus_tricorne,id=151985,bonus_id=3612/1502
+neck=vulcanarcore_pendant,id=151965,bonus_id=3612/1502,enchant=mark_of_the_trained_soldier
+shoulder=shoulderpads_of_the_demonic_blitz,id=151988,bonus_id=3612/1502
+back=cloak_of_the_burning_vanguard,id=151937,bonus_id=3612/1502,enchant=binding_of_agility
+chest=vest_of_waning_life,id=151982,bonus_id=3612/1502
+wrist=fiendish_logisticians_wristwraps,id=151992,bonus_id=3612/1502
+hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3612/1502
+waist=portal_keepers_cincture,id=151990,bonus_id=3612/1502
+legs=caustic_titanspite_legguards,id=152282,bonus_id=3612/1502
+feet=lifebearing_footpads,id=151981,bonus_id=3612/1502
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_mastery
+finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_mastery
+trinket1=seeping_scourgewing,id=151964,bonus_id=3612/1502
+trinket2=golganneths_vitality,id=154174,bonus_id=3997
+main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=155848/152057/155848,relic_id=3612:1512/3612:1502/3612:1512
+off_hand=fangs_of_the_devourer,id=128479
