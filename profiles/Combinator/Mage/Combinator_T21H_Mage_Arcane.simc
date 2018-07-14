@@ -17,8 +17,8 @@ hands=aranasi_shadowweavers_gloves,id=151941,bonus_id=3611/1487
 waist=cord_of_blossoming_petals,id=151952,bonus_id=3611/1487
 legs=fervent_twilight_legwraps,id=151946,bonus_id=3611/1487
 feet=lady_dacidions_silk_slippers,id=151945,bonus_id=3611/1487
-finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=200versatility
-finger2=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=200versatility
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3611/1487,enchant=binding_of_versatility
+finger2=seal_of_the_portalmaster,id=152063,bonus_id=3611/1487,enchant=binding_of_versatility
 trinket1=tarnished_sentinel_medallion,id=147017,bonus_id=1512/3563
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
 main_hand=aluneth,id=127857,gem_id=155846/155850/155846,relic_id=3611:1497/3611:1497/3611:1497

@@ -16,8 +16,8 @@ hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3612/1502
 waist=belt_of_fractured_sanity,id=151991,bonus_id=3612/1502
 legs=elizes_everlasting_encasement,id=137067,bonus_id=3630
 feet=depraved_machinists_footpads,id=152412,bonus_id=3612/1502
-finger1=zealous_tormentors_ring,id=152284,bonus_id=3612/1502,enchant=200crit
-finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=200crit
+finger1=zealous_tormentors_ring,id=152284,bonus_id=3612/1502,enchant=binding_of_critical_strike
+finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_critical_strike
 trinket1=golganneths_vitality,id=154174,bonus_id=3997
 trinket2=specter_of_betrayal,id=151190,bonus_id=3563/1522
 main_hand=claws_of_ursoc,id=128821,bonus_id=724,gem_id=152037/152295/152051,relic_id=3612:1502/3612:1502/3612:1502
