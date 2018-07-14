@@ -1,10 +1,10 @@
 rogue="Template"
-spec=outlaw
 level=110
 race=dwarf
 role=attack
 position=back
 talents=0000000
+spec=outlaw
 
 # No Set/Legendary Base
 head=headdress_of_living_brambles,id=152681,bonus_id=3612/1502
