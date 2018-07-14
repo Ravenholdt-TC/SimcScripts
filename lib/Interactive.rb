@@ -157,34 +157,6 @@ module Interactive
     return talentdata
   end
 
-  def self.SelectCompositeType(checkArgs=true)
-    puts 'Please select the type of data you want to compose:'
-    compositeType = ["Combinator","TrinketSimulation"]
-    constructedcompositeType = {}
-    index=1
-    compositeType.each do |compType|
-      constructedcompositeType[index] = compType
-      puts "#{index}: #{compType}"
-      index += 1
-    end
-    print 'Composite: '
-
-    input = GetInputOrArg(checkArgs)
-    if constructedcompositeType.has_value?(input)
-      puts
-      return input
-    end
-    index = input.to_i
-    unless constructedcompositeType.has_key?(index)
-      Logging.LogScriptFatal "ERROR: Invalid composite type #{input}!"
-      puts 'Press enter to quit...'
-      GetInputOrArg(checkArgs)
-      exit
-    end
-    puts
-    return "#{constructedcompositeType[index]}"
-  end
-
   # Choose from a given array. Prompt will show "Please choose a <name>:"
   def self.SelectFromArray(name, array, checkArgs=true)
     puts "Please choose a #{name}:"
