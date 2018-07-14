@@ -9,7 +9,7 @@ artifact=56:0:0:0:0:868:4:869:4:870:4:871:4:872:4:873:4:874:4:875:4:876:1:877:1:
 crucible=1739:1777:1517/1739:1777:875/1739:1777:1517
 
 head=serpentstalker_helmet,id=152133,bonus_id=3612/1502
-neck=prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200critical_strike,enchant=mark_of_the_claw
+neck=prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11critical_strike,enchant=mark_of_the_claw
 shoulders=wildstalker_spaulders,id=147144,bonus_id=1512/3563
 back=wildstalker_cape,id=147140,bonus_id=1512/3563,enchant=binding_of_agility
 chest=wildstalker_chestguard,id=147139,bonus_id=1512/3563

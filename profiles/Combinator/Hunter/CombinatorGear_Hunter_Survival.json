@@ -1,16 +1,16 @@
 {
   "legendaries": {
       "survival": {
-          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200haste,enchant=mark_of_the_claw"},
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11haste,enchant=mark_of_the_claw"},
           "back": {"Cloak": "unseen_predators_cloak,id=151807,bonus_id=3630,enchant=binding_of_agility"},
           "chest": {"Chest": "butchers_bone_apron,id=144361,bonus_id=3630"},
           "wrists": {"Bracers": "call_of_the_wild,id=137101,bonus_id=3630"},
           "waist": {"Belt": "helbrine_rope_of_the_mist_marauder,id=137082,bonus_id=3630"},
           "feet": {"Boots": "nesingwarys_trapping_treads,id=137034,bonus_id=3630"},
-          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
-                      "Frizzo": "frizzos_fingertrap,id=137043,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
-                      "Soul": "soul_of_the_huntmaster,id=151641,bonus_id=3630,gems=200haste,enchant=binding_of_haste",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200haste,enchant=binding_of_haste"},
+          "finger1": {"Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                      "Frizzo": "frizzos_fingertrap,id=137043,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                      "Soul": "soul_of_the_huntmaster,id=151641,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"},
           "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },

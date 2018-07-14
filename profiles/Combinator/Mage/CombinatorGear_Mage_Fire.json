@@ -1,16 +1,16 @@
 {
   "legendaries": {
       "fire": {
-          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=200critical_strike,enchant=mark_of_the_hidden_satyr"},
+          "neck": {"Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11critical_strike,enchant=mark_of_the_hidden_satyr"},
           "head": {"Head": "darcklis_dragonfire_diadem,id=132863,bonus_id=3630"},
           "shoulder": {"Shoulder": "contained_infernal_core,id=151809,bonus_id=3630"},
           "wrists": {"Wrists": "marquee_bindings_of_the_sun_king,id=132406,bonus_id=3630"},
           "waist": {"Waist": "koralons_burning_touch,id=132454,bonus_id=3630"},
           "hands": {"Hands": "pyrotex_ignition_cloth,id=144355,bonus_id=3630"},
-          "finger1": {"Soul": "soul_of_the_archmage,id=151642,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Shard": "shard_of_the_exodar,id=132410,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike",
-                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike"},
+          "finger1": {"Soul": "soul_of_the_archmage,id=151642,bonus_id=3630,gems=11critical_strike,enchant=binding_of_critical_strike",
+                      "Shard": "shard_of_the_exodar,id=132410,bonus_id=3630,gems=11critical_strike,enchant=binding_of_critical_strike",
+                      "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11critical_strike,enchant=binding_of_critical_strike",
+                      "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11critical_strike,enchant=binding_of_critical_strike"},
           "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
       }
   },

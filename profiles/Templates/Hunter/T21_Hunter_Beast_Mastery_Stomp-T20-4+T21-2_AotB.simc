@@ -19,7 +19,7 @@ waist=worldravager_waistguard,id=152683,bonus_id=3612/1502
 legs=serpentstalker_legguards,id=152134,bonus_id=3612/1502
 feet=qapla_eredun_war_order,id=137227,bonus_id=3630
 finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_critical_strike
-finger2=sephuzs_secret,id=132452,bonus_id=3630,gems=200critical_strike,enchant=binding_of_critical_strike
+finger2=sephuzs_secret,id=132452,bonus_id=3630,gems=11critical_strike,enchant=binding_of_critical_strike
 trinket1=amanthuls_vision,id=154172,bonus_id=4213
 trinket2=shadowsinged_fang,id=151968,bonus_id=3612/1502
 main_hand=titanstrike,id=128861,bonus_id=726,gem_id=155853/152025/152293,relic_id=3612:1512/3612:1502/3612:1502
