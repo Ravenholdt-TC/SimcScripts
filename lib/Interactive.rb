@@ -159,7 +159,7 @@ module Interactive
 
   def self.SelectCompositeType(checkArgs=true)
     puts 'Please select the type of data you want to compose:'
-    compositeType = ["Combinator","RelicSimulation","TrinketSimulation"]
+    compositeType = ["Combinator","TrinketSimulation"]
     constructedcompositeType = {}
     index=1
     compositeType.each do |compType|

@@ -40,27 +40,6 @@ compared to the Template profile.
 
 Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
 
-## RelicSimulation
-
-Usage:
-1. Create a simulation profile file in the `profiles/Templates` folder. This file defines the
-   base character to simulate.
-2. Run `RelicSimulation.rb`. It will ask you to select a profile and spec.
-3. Wait for the simulation to run until it says it's done.
-4. The resulting CSV file will be in the `reports` folder.
-
-The relics used for the simulationa are configured in `profiles/RelicSimulation/RelicList.json`.
-
-The crucible weight string can be found in the terminal output and in the meta report file
-at the bottom.
-
-The result is a CSV file containing the DPS increases for each Relic or Relic Item Level
-compared to the Template profile. Its structure has been created to fit what we import
-using Google Charts on the Ravenholdt-TC/HeroDamage website. Thus, the CSV content includes
-annotations and zero values to fill for an equal amount of columns.
-
-Special Relic simulation settings can be set in `SimcRelicConfig.simc`.
-
 ## RaceSimulation
 
 Usage:

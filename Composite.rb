@@ -130,54 +130,6 @@ if compositeType == "Combinator"
       end
     end
   end
-elsif compositeType == "RelicSimulation"
-  fightList.each do |fightStyle, weight|
-    reportIndex = 0
-
-    reportList[fightStyle].each do |reportData|
-      if reportIndex > 0 # Skip header
-        traitIndex = 0
-        traitName = ""
-        traitDps = 0
-        traitLevel = 0
-
-        reportData.each do |traitData|
-          if traitIndex > 0
-            if traitIndex%2 == 0
-              # Stop when we have the last trait
-              if traitDps == 0
-                next
-              end
-              if compositeData[traitName].nil?
-                compositeData[traitName] = {}
-              end
-              # Reformat data
-              if traitName == PercentageDPSGainName
-                traitLevel = traitData.to_f
-              else
-                traitLevel = traitData.to_i
-              end
-
-              # First iteration, just save
-              if compositeData[traitName][traitLevel].nil?
-                compositeData[traitName][traitLevel] = (weight * traitDps.to_f).round(0)
-              else # Add to already saved result
-                compositeData[traitName][traitLevel] = compositeData[traitName][traitLevel] + (weight * traitDps.to_f).round(0)
-              end
-            else
-              # Save trait dps for next iteration
-              traitDps = traitData
-            end
-          else
-            # Grab the trait name
-            traitName = traitData
-          end
-          traitIndex = traitIndex + 1
-        end
-      end
-      reportIndex = reportIndex + 1
-    end
-  end
 elsif compositeType == "TrinketSimulation"
   fightList.each do |fightStyle, weight|
     reportIndex = 0
@@ -245,80 +197,6 @@ if compositeType == "Combinator"
   report.each_with_index { |actor, index|
     actor.unshift(index + 1)
   }
-elsif compositeType == "RelicSimulation"
-  # Recalc cruweight for relicSimultation
-  relicList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/RelicSimulation/RelicList.json")
-  
-  # Calculate Composite Template DPS
-  compositeTemplateDps = 0
-  fightList.each do |fightStyle, weight|
-    compositeTemplateDps = compositeTemplateDps + (weight * metaList[fightStyle]['player']['collected_data']['dps']['mean'].to_f).round(0)
-  end
-  
-  # Calculate cruweight
-  if data = /,id=(\p{Digit}+),/.match(relicList['Weapons'][spec])
-    Logging.LogScriptInfo 'Generating CrucibleWeight string...'
-    weaponId = data[1]
-    cruweight = "cruweight^#{weaponId}^ilvl^1^"
-    compositeData.each do |name, values|
-      next if name == WeaponItemLevelName || name == PercentageDPSGainName
-      if trait = relicList['Traits'][spec].find {|trait| trait['name'] == name}
-        cruweight += "#{trait['spellId']}^"
-        ranks = []
-        values.sort.each do |amount, dps|
-          if amount - 1 > 0
-            weight = dps.to_f / compositeData[WeaponItemLevelName][1].to_f
-            ranks.push("#{amount + 4}:#{weight.round(2)}")
-          else
-            weight = dps.to_f / compositeData[WeaponItemLevelName][1].to_f
-            ranks.push("#{weight.round(2)}")
-          end
-        end
-        cruweight += ranks.join(' ') + '^'
-      elsif trait = relicList['Traits']['Crucible'].find {|trait| trait['name'] == name}
-        weight = values[1].to_f / compositeData[WeaponItemLevelName][1].to_f
-        cruweight += "#{trait['spellId']}^#{weight.round(2)}^"
-      else
-        Logging.LogScriptWarning "WARNING: No spell id for trait #{name} found. Ignoring in crucible weight string."
-        next
-      end
-    end
-    cruweight += 'end'
-    parsedMetaFile['crucibleweight'] = cruweight
-    Logging.LogScriptInfo cruweight
-  end
-
-  # Calculates max column
-  maxColumns = 1
-  compositeData.each do |name, values|
-    maxColumns = values.length if values.length > maxColumns
-  end
-
-  # Put the header first
-  def hashElementType (value)
-    return { "type" => value }
-  end
-  header = [ hashElementType("string") ]
-  for i in 1..maxColumns
-    header.push(hashElementType("number"))
-    header.push(hashElementType("string"))
-  end
-  report.push(header)
-
-  # Put all data in order
-  compositeData.each do |name, values|
-    actor = [ ]
-    actor.push(name)
-    values.sort.each do |rank, dps|
-      actor.push(dps)
-      actor.push(rank.to_s)
-    end
-    ((values.length + 1)..maxColumns).each do |i|
-      actor.push(0)
-      actor.push("")
-    end
-    report.push(actor)
-  end
 elsif compositeType == "TrinketSimulation"
   # Put back header
   report.push(header)
