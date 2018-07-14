@@ -17,8 +17,8 @@ hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3612/1502
 waist=portal_keepers_cincture,id=151990,bonus_id=3612/1502
 legs=caustic_titanspite_legguards,id=152282,bonus_id=3612/1502
 feet=lifebearing_footpads,id=151981,bonus_id=3612/1502
-finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_critical_strike
-finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_critical_strike
+finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_mastery
+finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_mastery
 trinket1=seeping_scourgewing,id=151964,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3997
 main_hand=fangs_of_the_devourer,id=128476,bonus_id=743,gem_id=155848/152057/155848,relic_id=3612:1512/3612:1502/3612:1512

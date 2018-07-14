@@ -18,8 +18,8 @@ hands=lurid_grips_of_the_obscene,id=151984,bonus_id=3612/1502
 waist=portal_keepers_cincture,id=151990,bonus_id=3612/1502
 legs=caustic_titanspite_legguards,id=152282,bonus_id=3612/1502
 feet=vicious_flamepaws,id=151983,bonus_id=3612/1502
-finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_mastery
-finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_mastery
+finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_haste
+finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_haste
 trinket1=shadowsinged_fang,id=151968,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3997
 main_hand=the_kingslayers,id=128870,bonus_id=741,gem_id=152055/152293/152092,relic_id=3612:1502/3612:1502/3612:1502
