@@ -59,12 +59,6 @@ toRun = {
       'T21H_Rogue_Outlaw-Roll_the_Bones Rogue T21H x3x00x[23]',
       'T21H_Rogue_Outlaw-Slice_and_Dice Rogue_Outlaw_SnD T21H x3x00x1',
       'T21H_Rogue_Subtlety Rogue T21H xxx00xx',
-      'T20_Rogue_Assassination Rogue T20 xxx00xx',
-      'T20_Rogue_Outlaw Rogue T20 x3x00xx',
-      'T20_Rogue_Subtlety Rogue T20 xxx00xx',
-      'T19_Rogue_Assassination Rogue T19 xxx00xx',
-      'T19_Rogue_Outlaw Rogue T19 x3x00xx',
-      'T19_Rogue_Subtlety Rogue T19 xxx00xx',
       'PR_Rogue_Assassination Rogue PR xxx00xx',
       'PR_Rogue_Outlaw Rogue PR x3x00xx',
       'PR_Rogue_Subtlety Rogue PR xxx00xx'
@@ -95,13 +89,10 @@ toRun = {
       'T21_Death_Knight_Frost',
       'T21_Death_Knight_Frost-Cold_Heart+Runic_Attenuation',
       'T21_Death_Knight_Unholy',
-      'T21_Death_Knight_Blood',
-      'T20_Death_Knight_Frost',
-      'T20_Death_Knight_Unholy'
+      'T21_Death_Knight_Blood'
     ],
     'DemonHunter' => [
-      'T21_Demon_Hunter_Havoc',
-      'T20_Demon_Hunter_Havoc'
+      'T21_Demon_Hunter_Havoc'
     ],
     'Druid' => [
       'T21_Druid_Balance',
@@ -109,9 +100,7 @@ toRun = {
       'T21_Druid_Feral-BS_+_BT',
       'T21_Druid_Feral-LI_+_Incarnation',
       'T21_Druid_Feral-LI_+_Soul_of_the_Forest',
-      'T21_Druid_Guardian',
-      'T20_Druid_Balance',
-      'T20_Druid_Feral'
+      'T21_Druid_Guardian'
     ],
     'Hunter' => [
       'T21_Hunter_Beast_Mastery_DireFrenzy',
@@ -120,34 +109,24 @@ toRun = {
       'T21_Hunter_Beast_Mastery_Stomp-T20-4+T21-2_KC',
       'T21_Hunter_Marksmanship',
       'T21_Hunter_Marksmanship-Sentinel',
-      'T21_Hunter_Survival',
-      'T20_Hunter_Beast_Mastery',
-      'T20_Hunter_Marksmanship',
-      'T20_Hunter_Survival'
+      'T21_Hunter_Survival'
     ],
     'Mage' => [
       'T21_Mage_Arcane',
       'T21_Mage_Fire',
-      'T21_Mage_Frost',
-      'T20_Mage_Arcane',
-      'T20_Mage_Fire',
-      'T20_Mage_Frost'
+      'T21_Mage_Frost'
     ],
     'Monk' => [
       'T21_Monk_Windwalker',
-      'T21_Monk_Brewmaster',
-      'T20_Monk_Windwalker'
+      'T21_Monk_Brewmaster'
     ],
     'Paladin' => [
       'T21_Paladin_Retribution',
-      'T21_Paladin_Protection',
-      'T20_Paladin_Retribution'
+      'T21_Paladin_Protection'
     ],
     'Priest' => [
       'T21_Priest_Shadow',
-      'T21_Priest_Shadow_S2M',
-      'T20_Priest_Shadow',
-      'T20_Priest_Shadow_S2M'
+      'T21_Priest_Shadow_S2M'
     ],
     'Rogue' => [
       'T21_Rogue_Assassination-Mantle+Bracers',
@@ -158,36 +137,20 @@ toRun = {
       'T21_Rogue_Outlaw_SnD',
       'T21_Rogue_Subtlety',
       'T21_Rogue_Subtlety_DfA-Mantle+Hands',
-      'T21_Rogue_Subtlety_DfA-Soul+Insignia',
-      'T20_Rogue_Assassination',
-      'T20_Rogue_Assassination_Exsg',
-      'T20_Rogue_Outlaw',
-      'T20_Rogue_Outlaw_SnD',
-      'T20_Rogue_Subtlety',
-      'T20_Rogue_Subtlety_DfA',
-      'T19_Rogue_Assassination',
-      'T19_Rogue_Outlaw',
-      'T19_Rogue_Subtlety'
+      'T21_Rogue_Subtlety_DfA-Soul+Insignia'
     ],
     'Shaman' => [
       'T21_Shaman_Elemental',
-      'T21_Shaman_Enhancement',
-      'T20_Shaman_Elemental',
-      'T20_Shaman_Enhancement'
+      'T21_Shaman_Enhancement'
     ],
     'Warlock' => [
       'T21_Warlock_Affliction',
       'T21_Warlock_Demonology',
-      'T21_Warlock_Destruction',
-      'T20_Warlock_Affliction',
-      'T20_Warlock_Demonology',
-      'T20_Warlock_Destruction'
+      'T21_Warlock_Destruction'
     ],
     'Warrior' => [
       'T21_Warrior_Arms',
-      'T21_Warrior_Fury',
-      'T20_Warrior_Arms',
-      'T20_Warrior_Fury'
+      'T21_Warrior_Fury'
     ]
   },
   'TrinketSimulation' => {
@@ -195,21 +158,16 @@ toRun = {
       'T21_Death_Knight_Frost Melee_Strength',
       'T21_Death_Knight_Frost-Cold_Heart+Runic_Attenuation Melee_Strength',
       'T21_Death_Knight_Unholy Melee_Strength',
-      'T21_Death_Knight_Blood Melee_Strength',
-      'T20_Death_Knight_Frost Melee_Strength',
-      'T20_Death_Knight_Unholy Melee_Strength'
+      'T21_Death_Knight_Blood Melee_Strength'
     ],
     'DemonHunter' => [
-      'T21_Demon_Hunter_Havoc Melee_Agility',
-      'T20_Demon_Hunter_Havoc Melee_Agility'
+      'T21_Demon_Hunter_Havoc Melee_Agility'
     ],
     'Druid' => [
       'T21_Druid_Balance Ranged_Intelligence',
       'T21_Druid_Balance-Stellar_Drift Ranged_Intelligence',
       'T21_Druid_Feral Melee_Agility',
-      'T21_Druid_Guardian Melee_Agility',
-      'T20_Druid_Balance Ranged_Intelligence',
-      'T20_Druid_Feral Melee_Agility'
+      'T21_Druid_Guardian Melee_Agility'
     ],
     'Hunter' => [
       'T21_Hunter_Beast_Mastery_DireFrenzy Ranged_Agility',
@@ -217,34 +175,24 @@ toRun = {
       'T21_Hunter_Beast_Mastery_Stomp-T20-4+T21-2_AotB Ranged_Agility',
       'T21_Hunter_Beast_Mastery_Stomp-T20-4+T21-2_KC Ranged_Agility',
       'T21_Hunter_Marksmanship Ranged_Agility',
-      'T21_Hunter_Survival Melee_Agility',
-      'T20_Hunter_Beast_Mastery Ranged_Agility',
-      'T20_Hunter_Marksmanship Ranged_Agility',
-      'T20_Hunter_Survival Melee_Agility'
+      'T21_Hunter_Survival Melee_Agility'
     ],
     'Mage' => [
       'T21_Mage_Arcane Ranged_Intelligence',
       'T21_Mage_Fire Ranged_Intelligence',
-      'T21_Mage_Frost Ranged_Intelligence',
-      'T20_Mage_Arcane Ranged_Intelligence',
-      'T20_Mage_Fire Ranged_Intelligence',
-      'T20_Mage_Frost Ranged_Intelligence'
+      'T21_Mage_Frost Ranged_Intelligence'
     ],
     'Monk' => [
       'T21_Monk_Windwalker Melee_Agility',
-      'T21_Monk_Brewmaster Melee_Agility',
-      'T20_Monk_Windwalker Melee_Agility'
+      'T21_Monk_Brewmaster Melee_Agility'
     ],
     'Paladin' => [
       'T21_Paladin_Retribution Melee_Strength',
-      'T21_Paladin_Protection Melee_Strength',
-      'T20_Paladin_Retribution Melee_Strength'
+      'T21_Paladin_Protection Melee_Strength'
     ],
     'Priest' => [
       'T21_Priest_Shadow Ranged_Intelligence',
-      'T21_Priest_Shadow_S2M Ranged_Intelligence',
-      'T20_Priest_Shadow Ranged_Intelligence',
-      'T20_Priest_Shadow_S2M Ranged_Intelligence'
+      'T21_Priest_Shadow_S2M Ranged_Intelligence'
     ],
     'Rogue' => [
       'T21_Rogue_Assassination-Mantle+Bracers Melee_Agility',
@@ -255,36 +203,20 @@ toRun = {
       'T21_Rogue_Outlaw_SnD Melee_Agility',
       'T21_Rogue_Subtlety Melee_Agility',
       'T21_Rogue_Subtlety_DfA-Mantle+Hands Melee_Agility',
-      'T21_Rogue_Subtlety_DfA-Soul+Insignia Melee_Agility',
-      'T20_Rogue_Assassination Melee_Agility',
-      'T20_Rogue_Assassination_Exsg Melee_Agility',
-      'T20_Rogue_Outlaw Melee_Agility',
-      'T20_Rogue_Outlaw_SnD Melee_Agility',
-      'T20_Rogue_Subtlety Melee_Agility',
-      'T20_Rogue_Subtlety_DfA Melee_Agility',
-      'T19_Rogue_Assassination Melee_Agility',
-      'T19_Rogue_Outlaw Melee_Agility',
-      'T19_Rogue_Subtlety Melee_Agility'
+      'T21_Rogue_Subtlety_DfA-Soul+Insignia Melee_Agility'
     ],
     'Shaman' => [
       'T21_Shaman_Elemental Ranged_Intelligence',
-      'T21_Shaman_Enhancement Melee_Agility',
-      'T20_Shaman_Elemental Ranged_Intelligence',
-      'T20_Shaman_Enhancement Melee_Agility'
+      'T21_Shaman_Enhancement Melee_Agility'
     ],
     'Warlock' => [
       'T21_Warlock_Affliction Ranged_Intelligence',
       'T21_Warlock_Demonology Ranged_Intelligence',
-      'T21_Warlock_Destruction Ranged_Intelligence',
-      'T20_Warlock_Affliction Ranged_Intelligence',
-      'T20_Warlock_Demonology Ranged_Intelligence',
-      'T20_Warlock_Destruction Ranged_Intelligence'
+      'T21_Warlock_Destruction Ranged_Intelligence'
     ],
     'Warrior' => [
       'T21_Warrior_Arms Melee_Strength',
-      'T21_Warrior_Fury Melee_Strength',
-      'T20_Warrior_Arms Melee_Strength',
-      'T20_Warrior_Fury Melee_Strength'
+      'T21_Warrior_Fury Melee_Strength'
     ]
   }
 }
