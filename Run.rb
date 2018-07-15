@@ -57,7 +57,6 @@ toRun = {
   'RaceSimulation' => {
     'DeathKnight' => [
       'T21_Death_Knight_Frost',
-      'T21_Death_Knight_Frost-Cold_Heart+Runic_Attenuation',
       'T21_Death_Knight_Unholy',
       'T21_Death_Knight_Blood'
     ],
@@ -66,10 +65,7 @@ toRun = {
     ],
     'Druid' => [
       'T21_Druid_Balance',
-      'T21_Druid_Balance-Stellar_Drift',
-      'T21_Druid_Feral-BS_+_BT',
-      'T21_Druid_Feral-LI_+_Incarnation',
-      'T21_Druid_Feral-LI_+_Soul_of_the_Forest',
+      # 'T21_Druid_Feral',
       'T21_Druid_Guardian'
     ],
     'Hunter' => [
@@ -126,7 +122,6 @@ toRun = {
   'TrinketSimulation' => {
     'DeathKnight' => [
       'T21_Death_Knight_Frost Melee_Strength',
-      'T21_Death_Knight_Frost-Cold_Heart+Runic_Attenuation Melee_Strength',
       'T21_Death_Knight_Unholy Melee_Strength',
       'T21_Death_Knight_Blood Melee_Strength'
     ],
@@ -135,8 +130,7 @@ toRun = {
     ],
     'Druid' => [
       'T21_Druid_Balance Ranged_Intelligence',
-      'T21_Druid_Balance-Stellar_Drift Ranged_Intelligence',
-      'T21_Druid_Feral Melee_Agility',
+      # 'T21_Druid_Feral Melee_Agility',
       'T21_Druid_Guardian Melee_Agility'
     ],
     'Hunter' => [
