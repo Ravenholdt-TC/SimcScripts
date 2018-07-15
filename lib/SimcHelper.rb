@@ -32,7 +32,7 @@ module SimcHelper
       # Logs
       logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
       input.puts "output=#{logFile}.log"
-      input.puts "json2=#{logFile}.json"
+      input.puts "json=#{logFile}.json"
 
       # Use global simc config file
       WriteFileToInput("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc", input)

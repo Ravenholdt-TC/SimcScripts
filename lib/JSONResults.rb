@@ -1,7 +1,7 @@
 require 'date'
 require_relative 'JSONParser'
 
-# Used for parsing json2 output from simc
+# Used for parsing json output from simc
 class JSONResults
   attr_reader :simulationFilename
 
