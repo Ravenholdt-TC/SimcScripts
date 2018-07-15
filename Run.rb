@@ -38,10 +38,7 @@ toRun = {
       'T21_Rogue_Assassination-Bleed Rogue_Assassination_Exsg T21 xxx003x',
       'T21_Rogue_Outlaw-Roll_the_Bones Rogue T21 x3x00x[23]',
       'T21_Rogue_Outlaw-Slice_and_Dice Rogue_Outlaw_SnD T21 x3x00x1',
-      'T21_Rogue_Subtlety Rogue T21 xxx00xx',
-      'PR_Rogue_Assassination Rogue PR xxx00xx',
-      'PR_Rogue_Outlaw Rogue PR x3x00xx',
-      'PR_Rogue_Subtlety Rogue PR xxx00xx'
+      'T21_Rogue_Subtlety Rogue T21 xxx00xx'
     ],
     'Shaman' => [
       'T21_Shaman_Elemental Shaman_Elemental T21 x00xxxx',

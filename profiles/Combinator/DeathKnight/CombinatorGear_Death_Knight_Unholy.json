@@ -1,20 +1,32 @@
 {
     "legendaries": {
         "unholy": {
-            "head": {"Head": "death_march,id=144280,bonus_id=3630"},
-            "shoulder": {"Shoulder": "taktheritrixs_shoulderpads,id=137075,bonus_id=3630"},
-            "waist": {"Belt": "draugr_girdle_of_the_everlasting_king,id=132441,bonus_id=3630"},
-            "wrists": {"Wrists": "the_instructors_fourth_lesson,id=132448,bonus_id=3630"},
-            "chest": {"Chest": "cold_heart,id=151796,bonus_id=3630"},
-            "finger1": {"Uvanimor": "uvanimor_the_unbeautiful,id=137037,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                        "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                        "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"},
-            "trinket1": {"KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"}
+            "head": {
+                "Head": "death_march,id=144280,bonus_id=3630"
+            },
+            "shoulder": {
+                "Shoulder": "taktheritrixs_shoulderpads,id=137075,bonus_id=3630"
+            },
+            "waist": {
+                "Belt": "draugr_girdle_of_the_everlasting_king,id=132441,bonus_id=3630"
+            },
+            "wrists": {
+                "Wrists": "the_instructors_fourth_lesson,id=132448,bonus_id=3630"
+            },
+            "chest": {
+                "Chest": "cold_heart,id=151796,bonus_id=3630"
+            },
+            "finger1": {
+                "Uvanimor": "uvanimor_the_unbeautiful,id=137037,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
+                "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+            },
+            "trinket1": {
+                "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
+            }
         }
     },
     "sets": {
-        // Order the pieces from the best to the worst, if you have no clue then alphabetical
-        "PR": {},
         "T19": {
             "back": "dreadwyrm_greatcloak,id=138364,bonus_id=3519,enchant=binding_of_strenght",
             "hands": "dreadwyrm_gauntlets,id=138352,bonus_id=3519",
@@ -54,7 +66,7 @@
             "legs": "dreadwake_legplates,id=152116,bonus_id=3612/1502",
             "shoulder": "dreadwake_pauldrons,id=152117,bonus_id=3612/1502",
             "chest": "dreadwake_bonecage,id=152112,bonus_id=3612/1502"
-            
+
         }
     }
 }
