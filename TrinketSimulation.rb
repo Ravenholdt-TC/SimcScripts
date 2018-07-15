@@ -10,10 +10,10 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("TrinketSimulation")
 
+fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 classfolder = Interactive.SelectSubfolder('Templates')
 template = Interactive.SelectTemplate("Templates/#{classfolder}/")
 trinketListProfiles = Interactive.SelectTemplateMulti('TrinketLists/')
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 # Log all interactively set settings
 puts

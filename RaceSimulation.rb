@@ -49,9 +49,9 @@ ClassMap = {
 
 Logging.Initialize("RaceSimulation")
 
+fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 classfolder = Interactive.SelectSubfolder('Templates')
 template = Interactive.SelectTemplate("Templates/#{classfolder}/")
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
 
 # Log all interactively set settings
 puts
