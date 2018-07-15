@@ -28,12 +28,12 @@
     },
     "sets": {
         "T19": {
-            "back": "dreadwyrm_greatcloak,id=138364,bonus_id=3519,enchant=binding_of_strenght",
-            "hands": "dreadwyrm_gauntlets,id=138352,bonus_id=3519",
-            "head": "dreadwyrm_crown,id=138355,bonus_id=3519",
-            "legs": "dreadwyrm_legplates,id=138358,bonus_id=3519",
-            "chest": "dreadwyrm_breastplate,id=138349,bonus_id=3519",
-            "shoulder": "dreadwyrm_shoulderguards,id=138361,bonus_id=3519"
+            "back": "dreadwyrm_greatcloak,id=138364,bonus_id=3518/1484,enchant=binding_of_strenght",
+            "hands": "dreadwyrm_gauntlets,id=138352,bonus_id=3518/1484",
+            "head": "dreadwyrm_crown,id=138355,bonus_id=3518/1484",
+            "legs": "dreadwyrm_legplates,id=138358,bonus_id=3518/1484",
+            "chest": "dreadwyrm_breastplate,id=138349,bonus_id=3518/1484",
+            "shoulder": "dreadwyrm_shoulderguards,id=138361,bonus_id=3518/1484"
         },
         "T20H": {
             "hands": "gravewarden_handguards,id=147123,bonus_id=1497/3562",

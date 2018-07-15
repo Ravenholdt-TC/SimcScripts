@@ -29,12 +29,12 @@
     },
     "sets": {
         "T19": {
-            "back": "greatcloak_of_the_obsidian_aspect,id=138374,bonus_id=3519,enchant=binding_of_strength",
-            "head": "warhelm_of_the_obsidian_aspect,id=138357,bonus_id=3519",
-            "hands": "gauntlets_of_the_obsidian_aspect,id=138354,bonus_id=3519",
-            "shoulder": "shoulderplates_of_the_obsidian_aspect,id=138363,bonus_id=3519",
-            "chest": "chestplate_of_the_obsidian_aspect,id=138351,bonus_id=3519",
-            "legs": "legplates_of_the_obsidian_aspect,id=138360,bonus_id=3519"
+            "back": "greatcloak_of_the_obsidian_aspect,id=138374,bonus_id=3518/1484,enchant=binding_of_strength",
+            "head": "warhelm_of_the_obsidian_aspect,id=138357,bonus_id=3518/1484",
+            "hands": "gauntlets_of_the_obsidian_aspect,id=138354,bonus_id=3518/1484",
+            "shoulder": "shoulderplates_of_the_obsidian_aspect,id=138363,bonus_id=3518/1484",
+            "chest": "chestplate_of_the_obsidian_aspect,id=138351,bonus_id=3518/1484",
+            "legs": "legplates_of_the_obsidian_aspect,id=138360,bonus_id=3518/1484"
         },
         "T20": {
             "back": "titanic_onslaught_cloak,id=147188,bonus_id=1512/3563,enchant=binding_of_strength",

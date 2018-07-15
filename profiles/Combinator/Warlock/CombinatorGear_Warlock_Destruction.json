@@ -28,12 +28,12 @@
     },
     "sets": {
         "T19": {
-            "back": "cloak_of_azjaqir,id=138373,bonus_id=3519,enchant=binding_of_intellect",
-            "shoulder": "pauldrons_of_azjaqir,id=138323,bonus_id=3519",
-            "chest": "finery_of_azjaqir,id=138320,bonus_id=3519",
-            "legs": "leggings_of_azjaqir,id=138317,bonus_id=3519",
-            "head": "eyes_of_azjaqir,id=138314,bonus_id=3519",
-            "hands": "clutch_of_azjaqir,id=138311,bonus_id=3519"
+            "back": "cloak_of_azjaqir,id=138373,bonus_id=3518/1484,enchant=binding_of_intellect",
+            "shoulder": "pauldrons_of_azjaqir,id=138323,bonus_id=3518/1484",
+            "chest": "finery_of_azjaqir,id=138320,bonus_id=3518/1484",
+            "legs": "leggings_of_azjaqir,id=138317,bonus_id=3518/1484",
+            "head": "eyes_of_azjaqir,id=138314,bonus_id=3518/1484",
+            "hands": "clutch_of_azjaqir,id=138311,bonus_id=3518/1484"
         },
         "T20": {
             "back": "diabolic_shroud,id=147181,bonus_id=1512/3563,enchant=binding_of_intellect",

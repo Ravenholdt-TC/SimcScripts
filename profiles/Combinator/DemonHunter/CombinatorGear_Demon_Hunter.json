@@ -68,12 +68,12 @@
     },
     "sets": {
         "T19": {
-            "back": "cape_of_second_sight,id=138375,bonus_id=3519,enchant=binding_of_agility",
-            "chest": "tunic_of_second_sight,id=138376,bonus_id=3519",
-            "hands": "gloves_of_second_sight,id=138377,bonus_id=3519",
-            "head": "mask_of_second_sight,id=138378,bonus_id=3519",
-            "legs": "legwraps_of_second_sight,id=138379,bonus_id=3519",
-            "shoulder": "shoulderguards_of_second_sight,id=138380,bonus_id=3519"
+            "back": "cape_of_second_sight,id=138375,bonus_id=3518/1484,enchant=binding_of_agility",
+            "chest": "tunic_of_second_sight,id=138376,bonus_id=3518/1484",
+            "hands": "gloves_of_second_sight,id=138377,bonus_id=3518/1484",
+            "head": "mask_of_second_sight,id=138378,bonus_id=3518/1484",
+            "legs": "legwraps_of_second_sight,id=138379,bonus_id=3518/1484",
+            "shoulder": "shoulderguards_of_second_sight,id=138380,bonus_id=3518/1484"
         },
         "T20H": {
             "back": "demonbane_shroud,id=147128,bonus_id=1497/3562,enchant=binding_of_agility",

@@ -32,12 +32,12 @@
     },
     "sets": {
         "T19": {
-            "back": "cloak_of_the_astral_warden,id=138366,bonus_id=3519,enchant=binding_of_intellect",
-            "chest": "robe_of_the_astral_warden,id=138324,bonus_id=3519",
-            "hands": "gloves_of_the_astral_warden,id=138327,bonus_id=3519",
-            "head": "hood_of_the_astral_warden,id=138330,bonus_id=3519",
-            "legs": "leggings_of_the_astral_warden,id=138333,bonus_id=3519",
-            "shoulder": "mantle_of_the_astral_warden,id=138336,bonus_id=3519"
+            "back": "cloak_of_the_astral_warden,id=138366,bonus_id=3518/1484,enchant=binding_of_intellect",
+            "chest": "robe_of_the_astral_warden,id=138324,bonus_id=3518/1484",
+            "hands": "gloves_of_the_astral_warden,id=138327,bonus_id=3518/1484",
+            "head": "hood_of_the_astral_warden,id=138330,bonus_id=3518/1484",
+            "legs": "leggings_of_the_astral_warden,id=138333,bonus_id=3518/1484",
+            "shoulder": "mantle_of_the_astral_warden,id=138336,bonus_id=3518/1484"
         },
         "T20H": {
             "back": "stormheart_drape,id=147134,bonus_id=1497/3562,enchant=binding_of_intellect",

@@ -31,12 +31,12 @@
     },
     "sets": {
         "T19": {
-            "back": "doomblade_shadowwrap,id=138371,bonus_id=3519,enchant=binding_of_agility",
-            "head": "doomblade_cowl,id=138332,bonus_id=3519",
-            "legs": "doomblade_pants,id=138335,bonus_id=3519",
-            "chest": "doomblade_tunic,id=138326,bonus_id=3519",
-            "hands": "doomblade_gauntlets,id=138329,bonus_id=3519",
-            "shoulder": "doomblade_spaulders,id=138338,bonus_id=3519"
+            "back": "doomblade_shadowwrap,id=138371,bonus_id=3518/1484,enchant=binding_of_agility",
+            "head": "doomblade_cowl,id=138332,bonus_id=3518/1484",
+            "legs": "doomblade_pants,id=138335,bonus_id=3518/1484",
+            "chest": "doomblade_tunic,id=138326,bonus_id=3518/1484",
+            "hands": "doomblade_gauntlets,id=138329,bonus_id=3518/1484",
+            "shoulder": "doomblade_spaulders,id=138338,bonus_id=3518/1484"
         },
         "T20H": {
             "chest": "fanged_slayers_chestguard,id=147169,bonus_id=1497/3562",

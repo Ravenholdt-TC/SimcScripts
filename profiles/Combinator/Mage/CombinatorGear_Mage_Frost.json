@@ -32,12 +32,12 @@
     },
     "sets": {
         "T19": {
-            "back": "cloak_of_everburning_knowledge,id=138365,bonus_id=3519,enchant=binding_of_intellect",
-            "hands": "gloves_of_everburning_knowledge,id=138309,bonus_id=3519",
-            "shoulder": "mantle_of_everburning_knowledge,id=138321,bonus_id=3519",
-            "legs": "leggings_of_everburning_knowledge,id=138315,bonus_id=3519",
-            "head": "hood_of_everburning_knowledge,id=138312,bonus_id=3519",
-            "chest": "robe_of_everburning_knowledge,id=138318,bonus_id=3519"
+            "back": "cloak_of_everburning_knowledge,id=138365,bonus_id=3518/1484,enchant=binding_of_intellect",
+            "hands": "gloves_of_everburning_knowledge,id=138309,bonus_id=3518/1484",
+            "shoulder": "mantle_of_everburning_knowledge,id=138321,bonus_id=3518/1484",
+            "legs": "leggings_of_everburning_knowledge,id=138315,bonus_id=3518/1484",
+            "head": "hood_of_everburning_knowledge,id=138312,bonus_id=3518/1484",
+            "chest": "robe_of_everburning_knowledge,id=138318,bonus_id=3518/1484"
         },
         "T20": {
             "back": "drape_of_the_arcane_tempest,id=147145,bonus_id=1512/3563,enchant=binding_of_intellect",

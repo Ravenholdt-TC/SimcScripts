@@ -70,12 +70,12 @@
     },
     "sets": {
         "T19": {
-            "head": "hood_of_enveloped_dissonance,id=138331,bonus_id=3519",
-            "legs": "leggings_of_enveloped_dissonance,id=138334,bonus_id=3519",
-            "chest": "tunic_of_enveloped_dissonance,id=138325,bonus_id=3519",
-            "shoulder": "pauldrons_of_enveloped_dissonance,id=138337,bonus_id=3519",
-            "hands": "hood_of_enveloped_dissonance,id=138331,bonus_id=3519",
-            "back": "cloak_of_enveloped_dissonance,id=138367,bonus_id=3519,enchant=binding_of_agility"
+            "head": "hood_of_enveloped_dissonance,id=138331,bonus_id=3518/1484",
+            "legs": "leggings_of_enveloped_dissonance,id=138334,bonus_id=3518/1484",
+            "chest": "tunic_of_enveloped_dissonance,id=138325,bonus_id=3518/1484",
+            "shoulder": "pauldrons_of_enveloped_dissonance,id=138337,bonus_id=3518/1484",
+            "hands": "hood_of_enveloped_dissonance,id=138331,bonus_id=3518/1484",
+            "back": "cloak_of_enveloped_dissonance,id=138367,bonus_id=3518/1484,enchant=binding_of_agility"
         },
         "T20H": {
             "hands": "xuens_gauntlets,id=147153,bonus_id=1497/3562",

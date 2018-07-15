@@ -32,12 +32,12 @@
     },
     "sets": {
         "T19": {
-            "back": "cloak_of_shackled_elements,id=138372,bonus_id=3519,enchant=binding_of_agility",
-            "head": "helm_of_shackled_elements,id=138343,bonus_id=3519",
-            "legs": "leggings_of_shackled_elements,id=138345,bonus_id=3519",
-            "chest": "raiment_of_shackled_elements,id=138346,bonus_id=3519",
-            "shoulder": "pauldrons_of_shackled_elements,id=138348,bonus_id=3519",
-            "hands": "gauntlets_of_shackled_elements,id=138341,bonus_id=3519"
+            "back": "cloak_of_shackled_elements,id=138372,bonus_id=3518/1484,enchant=binding_of_agility",
+            "head": "helm_of_shackled_elements,id=138343,bonus_id=3518/1484",
+            "legs": "leggings_of_shackled_elements,id=138345,bonus_id=3518/1484",
+            "chest": "raiment_of_shackled_elements,id=138346,bonus_id=3518/1484",
+            "shoulder": "pauldrons_of_shackled_elements,id=138348,bonus_id=3518/1484",
+            "hands": "gauntlets_of_shackled_elements,id=138341,bonus_id=3518/1484"
         },
         "T20": {
             "back": "drape_of_the_skybreaker,id=147176,bonus_id=1512/3563,enchant=binding_of_agility",

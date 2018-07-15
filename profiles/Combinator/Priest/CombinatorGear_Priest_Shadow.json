@@ -35,12 +35,12 @@
     },
     "sets": {
         "T19": {
-            "back": "purifiers_drape,id=138370,bonus_id=3519,enchant=binding_of_intellect",
-            "hands": "purifiers_gloves,id=138310,bonus_id=3519",
-            "head": "purifiers_gorget,id=138313,bonus_id=3519",
-            "shoulder": "purifiers_mantle,id=138322,bonus_id=3519",
-            "chest": "purifiers_cassock,id=138319,bonus_id=3519",
-            "legs": "purifiers_leggings,id=138316,bonus_id=3519"
+            "back": "purifiers_drape,id=138370,bonus_id=3518/1484,enchant=binding_of_intellect",
+            "hands": "purifiers_gloves,id=138310,bonus_id=3518/1484",
+            "head": "purifiers_gorget,id=138313,bonus_id=3518/1484",
+            "shoulder": "purifiers_mantle,id=138322,bonus_id=3518/1484",
+            "chest": "purifiers_cassock,id=138319,bonus_id=3518/1484",
+            "legs": "purifiers_leggings,id=138316,bonus_id=3518/1484"
         },
         "T20": {
             "head": "hood_of_blind_absolution,id=147165,bonus_id=1512/3563",

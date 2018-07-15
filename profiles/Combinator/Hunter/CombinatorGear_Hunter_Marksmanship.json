@@ -25,12 +25,12 @@
     },
     "sets": {
         "T19": {
-            "back": "eagletalon_cloak,id=138368,bonus_id=3519,enchant=binding_of_agility",
-            "head": "eagletalon_cowl,id=138342,bonus_id=3519",
-            "legs": "eagletalon_legchains,id=138344,bonus_id=3519",
-            "chest": "eagletalon_tunic,id=138339,bonus_id=3519",
-            "hands": "eagletalon_gauntlets,id=138340,bonus_id=3519",
-            "shoulder": "eagletalon_spaulders,id=138347,bonus_id=3519"
+            "back": "eagletalon_cloak,id=138368,bonus_id=3518/1484,enchant=binding_of_agility",
+            "head": "eagletalon_cowl,id=138342,bonus_id=3518/1484",
+            "legs": "eagletalon_legchains,id=138344,bonus_id=3518/1484",
+            "chest": "eagletalon_tunic,id=138339,bonus_id=3518/1484",
+            "hands": "eagletalon_gauntlets,id=138340,bonus_id=3518/1484",
+            "shoulder": "eagletalon_spaulders,id=138347,bonus_id=3518/1484"
         },
         "T20": {
             "back": "wildstalker_cape,id=147140,bonus_id=1512/3563,enchant=binding_of_agility",
