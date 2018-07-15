@@ -64,7 +64,7 @@ puts
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
-simcInput.push 'race=none'
+simcInput.push 'race=""'
 simcInput.push ''
 RaceMap.each do |name, raceString|
   if ClassMap[classfolder].include?(name)
