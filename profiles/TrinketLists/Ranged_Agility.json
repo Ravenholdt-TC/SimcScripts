@@ -1,413 +1,408 @@
 {
   "trinkets": [
-  // Dungeons
     {
       "name": "Elementium Bomb Squirrel Generator",
       "itemId": 137446,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Obelisk of the Void",
       "itemId": 137433,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Caged Horror",
       "itemId": 136716,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Splinters of Agronox",
       "itemId": 144477,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Oakhearts Gnarled Root",
       "itemId": 137306,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Stormsinger Fulmination Charge",
       "itemId": 137367,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Tempered Egg of Serpentrix",
       "itemId": 137373,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Eye of Skovald",
       "itemId": 133641,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Horn of Valor",
       "itemId": 133642,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Figurehead of the Naglfar",
       "itemId": 137329,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Naraxas Spiked Tongue",
       "itemId": 137349,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Aran's Relaxing Ruby",
       "itemId": 142157,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Deteriorated Construct Core",
       "itemId": 142165,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Mrrgria's Favor",
       "itemId": 142160,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "VoidStalkers Contract",
       "itemId": 151307,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Chrono Shard",
       "itemId": 137419,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Tirathons Betrayal",
       "itemId": 137537,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Moonlit Prism",
       "itemId": 137541,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Splinters of Agronox",
       "itemId": 144477,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
-  // Raids
     {
         "name": "Pyrite Infuser",
         "itemId": 156016,
-        "itemLevels": [930, 935, 940, 945],
+        "itemLevels": [210, 215, 220, 225],
         "bonusIds": [3625],
         "additionalInput": []
     },
     {
         "name": "Wrathstone",
         "itemId": 156000,
-        "itemLevels": [930, 935, 940, 945],
+        "itemLevels": [210, 215, 220, 225],
         "bonusIds": [3625],
         "additionalInput": []
     },
     {
       "name": "Bloodthirsty Instict",
       "itemId": 139329,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Twisting Wind",
       "itemId": 139323,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Unstable Horrorslime",
       "itemId": 138224,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Convergence of Fates",
       "itemId": 140806,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Entwined Elemental Foci",
       "itemId": 140796,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Fury of the Burning Sky",
       "itemId": 140801,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Icon of Rot",
       "itemId": 140798,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Nightblooming Frond",
       "itemId": 140802,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Cradle of Anguish",
       "itemId": 147010,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Engine of Eradication",
       "itemId": 147015,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Engine of Eradication_No Orbs",
       "itemId": 147015,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": ["legion.engine_of_eradication_orbs=0"]
     },
     {
       "name": "Spectral Thurible",
       "itemId": 147018,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Tarnished Sentinel Medallion",
       "itemId": 147017,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Terror from Below",
       "itemId": 147016,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Tome of Unraveling Sanity",
       "itemId": 147019,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Aman'Thul's Vision",
       "itemId": 154172,
-      "itemLevels": [1000],
+      "itemLevels": [280],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Aman'Thul's Vision 5-Pantheon",
       "itemId": 154172,
-      "itemLevels": [1000],
+      "itemLevels": [280],
       "bonusIds": [],
       "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
     },
     {
       "name": "Aman'Thul's Vision 15-Pantheon",
       "itemId": 154172,
-      "itemLevels": [1000],
+      "itemLevels": [280],
       "bonusIds": [],
       "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
     },
     {
       "name": "ForgefiendsFabricator",
       "itemId": 151963,
-      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Golganneth's Vitality",
       "itemId": 154174,
-      "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+      "itemLevels": [220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Golganneth's Vitality 5-Pantheon",
       "itemId": 154174,
-      "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+      "itemLevels": [220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280],
       "bonusIds": [],
       "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am"]
     },
     {
       "name": "Golganneth's Vitality 15-Pantheon",
       "itemId": 154174,
-      "itemLevels": [940, 945, 950, 955, 960, 965, 970, 975, 980, 985, 990, 995, 1000],
+      "itemLevels": [220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280],
       "bonusIds": [],
       "additionalInput": ["legion.pantheon_trinket_users=am/am/am/am/am/am/am/am/am/am/am/am/am/am/am"]
     },
     {
       "name": "Prototype Personnel Decimator",
       "itemId": 151962,
-      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Shadow Singed Fang",
       "itemId": 151968,
-      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Terminus Signaling Beacon",
       "itemId": 151969,
-      "itemLevels": [915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
-  // World
     {
       "name": "Stat Mastery",
       "itemId": 142506,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [605],
       "additionalInput": []
     },
     {
       "name": "Stat Versatility",
       "itemId": 142506,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [607],
       "additionalInput": []
     },
     {
       "name": "Stat Haste",
       "itemId": 142506,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [604],
       "additionalInput": []
     },
     {
       "name": "Stat Crit",
       "itemId": 142506,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [603],
       "additionalInput": []
     },
     {
       "name": "Unstable Arcanocrystal",
       "itemId": 141482,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Six Feather Fan",
       "itemId": 141585,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Thrice Accursed Compass",
       "itemId": 141537,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Kil'jaeden's Burning Wish",
       "itemId": 144259,
-      "itemLevels": [1000],
+      "itemLevels": [280],
       "bonusIds": [],
       "additionalInput": []
     },
-  // PVP
     {
       "name": "PVP Insignia of Conquest",
       "itemId": 142662,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "PVP Badge of Conquest",
       "itemId": 142773,
-      "itemLevels": [910, 915, 920, 925, 930, 935, 940, 945, 950, 955, 960, 965, 970, 975, 980, 985],
+      "itemLevels": [192, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265],
       "bonusIds": [],
       "additionalInput": []
     },
-  // Craft
     {
       "name": "Darkmoon Deck: Dominion",
       "itemId": 128705,
-      "itemLevels": [900],
+      "itemLevels": [188],
       "bonusIds": [],
       "additionalInput": []
     },
     {
       "name": "Infernal Alchemist Stone",
       "itemId": 127842,
-      "itemLevels": [935],
+      "itemLevels": [215],
       "bonusIds": [],
       "additionalInput": []
     }
