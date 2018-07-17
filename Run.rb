@@ -11,7 +11,7 @@ toRun = {
     ],
     'Druid' => [
       'T21_Druid_Balance Druid_Balance T21 x000xxx',
-      # 'T21_Druid_Feral Druid_Feral T21 x000xxx'
+      'T21_Druid_Feral Druid_Feral T21 x000xxx'
     ],
     'Hunter' => [
       'T21_Hunter_Beast_Mastery-Mastery-Build Hunter_Beast_Mastery_Mastery T21 xx0x0xx',
@@ -50,8 +50,8 @@ toRun = {
       'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
     ],
     'Warrior' => [
-      # 'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
-      # 'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx'
+      'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
+      'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx'
     ]
   },
   'RaceSimulation' => {
@@ -107,8 +107,8 @@ toRun = {
       'T21_Warlock_Destruction'
     ],
     'Warrior' => [
-      # 'T21_Warrior_Arms',
-      # 'T21_Warrior_Fury'
+      'T21_Warrior_Arms',
+      'T21_Warrior_Fury'
     ]
   },
   'TrinketSimulation' => {
@@ -164,8 +164,8 @@ toRun = {
       'T21_Warlock_Destruction Ranged_Intelligence'
     ],
     'Warrior' => [
-      # 'T21_Warrior_Arms Melee_Strength',
-      # 'T21_Warrior_Fury Melee_Strength'
+      'T21_Warrior_Arms Melee_Strength',
+      'T21_Warrior_Fury Melee_Strength'
     ]
   }
 }
