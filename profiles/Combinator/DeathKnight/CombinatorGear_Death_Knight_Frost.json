@@ -19,6 +19,7 @@
             "finger1": {
                 "Seal": "seal_of_necrofantasia,id=137223,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
                 "Soul": "soul_of_the_deathlord,id=151640,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
                 // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
             },
             "trinket1": {
