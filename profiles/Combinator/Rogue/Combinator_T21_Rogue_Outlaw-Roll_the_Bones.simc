@@ -15,7 +15,7 @@ chest=vest_of_waning_life,id=151982,bonus_id=3612/1502
 wrist=bracers_of_wanton_morality,id=152414,bonus_id=3612/1502
 hands=grips_of_hungering_shadows,id=152086,bonus_id=3612/1502
 waist=deathenveloping_cincture,id=151986,bonus_id=3612/1502
-legs=breach_blocker_legguards,id=151987,bonus_id=3612/1502
+legs=breachblocker_legguards,id=151987,bonus_id=3612/1502
 feet=depraved_machinists_footpads,id=152412,bonus_id=3612/1502
 finger1=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of_haste
 finger2=zealous_tormentors_ring,id=152284,bonus_id=3612/1502,enchant=binding_of_haste
