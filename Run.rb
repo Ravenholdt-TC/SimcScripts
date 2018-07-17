@@ -44,13 +44,13 @@ toRun = {
       'T21_Shaman_Enhancement Shaman_Enhancement T21 xx0x0xx'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
-      'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
-      'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
+      # 'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
+      # 'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
+      # 'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
-      'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx'
+      # 'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
+      # 'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx'
     ]
   },
   'RaceSimulation' => {
@@ -101,13 +101,13 @@ toRun = {
       'T21_Shaman_Enhancement'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction',
-      'T21_Warlock_Demonology',
-      'T21_Warlock_Destruction'
+      # 'T21_Warlock_Affliction',
+      # 'T21_Warlock_Demonology',
+      # 'T21_Warlock_Destruction'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms',
-      'T21_Warrior_Fury'
+      # 'T21_Warrior_Arms',
+      # 'T21_Warrior_Fury'
     ]
   },
   'TrinketSimulation' => {
@@ -158,13 +158,13 @@ toRun = {
       'T21_Shaman_Enhancement Melee_Agility'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction Ranged_Intelligence',
-      'T21_Warlock_Demonology Ranged_Intelligence',
-      'T21_Warlock_Destruction Ranged_Intelligence'
+      # 'T21_Warlock_Affliction Ranged_Intelligence',
+      # 'T21_Warlock_Demonology Ranged_Intelligence',
+      # 'T21_Warlock_Destruction Ranged_Intelligence'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms Melee_Strength',
-      'T21_Warrior_Fury Melee_Strength'
+      # 'T21_Warrior_Arms Melee_Strength',
+      # 'T21_Warrior_Fury Melee_Strength'
     ]
   }
 }
