@@ -14,8 +14,7 @@ toRun = {
       'T21_Druid_Feral Druid_Feral T21 x000xxx'
     ],
     'Hunter' => [
-      'T21_Hunter_Beast_Mastery-Mastery-Build Hunter_Beast_Mastery_Mastery T21 xx0x0xx',
-      'T21_Hunter_Beast_Mastery-Crit-Build Hunter_Beast_Mastery_Stomp T21 xx0x0xx',
+      'T21_Hunter_Beast_Mastery Hunter_Beast_Mastery_Mastery T21 xx0x0xx',
       'T21_Hunter_Marksmanship Hunter_Marksmanship T21 xx0x0xx',
       'T21_Hunter_Survival Hunter_Survival T21 xx0x0xx'
     ],
