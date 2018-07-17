@@ -28,7 +28,7 @@
     },
     "sets": {
         "T19": {
-            "back": "dreadwyrm_greatcloak,id=138364,bonus_id=3518/1484,enchant=binding_of_strenght",
+            "back": "dreadwyrm_greatcloak,id=138364,bonus_id=3518/1484,enchant=binding_of_strength",
             "hands": "dreadwyrm_gauntlets,id=138352,bonus_id=3518/1484",
             "head": "dreadwyrm_crown,id=138355,bonus_id=3518/1484",
             "legs": "dreadwyrm_legplates,id=138358,bonus_id=3518/1484",
@@ -38,7 +38,7 @@
         "T20H": {
             "hands": "gravewarden_handguards,id=147123,bonus_id=1497/3562",
             "head": "gravewarden_visage,id=147124,bonus_id=1497/3562",
-            "back": "gravewarden_cloak,id=147122,bonus_id=1497/3562,enchant=binding_of_strenght",
+            "back": "gravewarden_cloak,id=147122,bonus_id=1497/3562,enchant=binding_of_strength",
             "shoulder": "gravewarden_pauldrons,id=147126,bonus_id=1497/3562",
             "legs": "gravewarden_legplates,id=147125,bonus_id=1497/3562",
             "chest": "gravewarden_chestplate,id=147121,bonus_id=1497/3562"
@@ -46,7 +46,7 @@
         "T20": {
             "hands": "gravewarden_handguards,id=147123,bonus_id=1512/3563",
             "head": "gravewarden_visage,id=147124,bonus_id=1512/3563",
-            "back": "gravewarden_cloak,id=147122,bonus_id=1512/3563,enchant=binding_of_strenght",
+            "back": "gravewarden_cloak,id=147122,bonus_id=1512/3563,enchant=binding_of_strength",
             "shoulder": "gravewarden_pauldrons,id=147126,bonus_id=1512/3563",
             "legs": "gravewarden_legplates,id=147125,bonus_id=1512/3563",
             "chest": "gravewarden_chestplate,id=147121,bonus_id=1512/3563"
@@ -54,7 +54,7 @@
         "T21H": {
             "head": "dreadwake_helm,id=152115,bonus_id=3611/1487",
             "chest": "dreadwake_bonecage,id=152112,bonus_id=3611/1487",
-            "back": "dreadwake_greatcloak,id=152113,bonus_id=3611/1487,enchant=binding_of_strenght",
+            "back": "dreadwake_greatcloak,id=152113,bonus_id=3611/1487,enchant=binding_of_strength",
             "shoulder": "dreadwake_pauldrons,id=152117,bonus_id=3611/1487",
             "legs": "dreadwake_legplates,id=152116,bonus_id=3611/1487",
             "hands": "dreadwake_gauntlets,id=152114,bonus_id=3611/1487"
@@ -62,7 +62,7 @@
         "T21": {
             "head": "dreadwake_helm,id=152115,bonus_id=3612/1502",
             "chest": "dreadwake_bonecage,id=152112,bonus_id=3612/1502",
-            "back": "dreadwake_greatcloak,id=152113,bonus_id=3612/1502,enchant=binding_of_strenght",
+            "back": "dreadwake_greatcloak,id=152113,bonus_id=3612/1502,enchant=binding_of_strength",
             "shoulder": "dreadwake_pauldrons,id=152117,bonus_id=3612/1502",
             "legs": "dreadwake_legplates,id=152116,bonus_id=3612/1502",
             "hands": "dreadwake_gauntlets,id=152114,bonus_id=3612/1502"
