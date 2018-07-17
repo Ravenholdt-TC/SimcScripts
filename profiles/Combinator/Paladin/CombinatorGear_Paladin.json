@@ -27,8 +27,8 @@
             },
             "finger1": {
                 "Ring": "heathcliffs_immortality,id=137047,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630",
@@ -53,8 +53,8 @@
             },
             "finger1": {
                 "Liadrin": "liadrins_fury_unleashed,id=137048,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+                "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
@@ -104,7 +104,6 @@
             "hands": "lights_vanguard_gauntlets,id=152150,bonus_id=3612/1502",
             "back": "lights_vanguard_greatcloak,id=152149,bonus_id=3612/1502,enchant=binding_of_force",
             "legs": "lights_vanguard_legplates,id=152152,bonus_id=3612/1502"
-
         }
     }
 }

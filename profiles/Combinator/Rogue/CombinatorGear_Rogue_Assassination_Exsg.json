@@ -18,8 +18,8 @@
             },
             "finger1": {
                 "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
+                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"

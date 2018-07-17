@@ -22,8 +22,8 @@
             "finger1": {
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
                 "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
             }
         }
     },

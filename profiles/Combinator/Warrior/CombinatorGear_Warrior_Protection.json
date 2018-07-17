@@ -28,8 +28,8 @@
             "finger1": {
                 "Soul": "soul_of_the_battlelord,id=151650,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
                 "Ring": "the_walls_fell,id=137054,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630",

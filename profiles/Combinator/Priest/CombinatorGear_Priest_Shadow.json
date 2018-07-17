@@ -25,8 +25,8 @@
             "finger1": {
                 "Soul": "soul_of_the_high_priest,id=151646,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
                 "Twins": "the_twins_painful_touch,id=133973,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
