@@ -1,8 +1,8 @@
 {
     "legendaries": {
-        "beast_mastery": {
+        "beast_haste": {
             "neck": {
-                "Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11crit,enchant=mark_of_the_claw"
+                "Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11haste,enchant=mark_of_the_claw"
             },
             "shoulder": {
                 "Mantle": "the_mantle_of_command,id=144326,bonus_id=3630"
@@ -20,10 +20,10 @@
                 "Boots": "qapla_eredun_war_order,id=137227,bonus_id=3630"
             },
             "finger1": {
-                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
-                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
             }
         }
     },
@@ -45,18 +45,18 @@
             "shoulder": "wildstalker_spaulders,id=147144,bonus_id=1512/3563"
         },
         "T21H": {
-            "chest": "serpentstalker_tunic,id=152130,bonus_id=3611/1487",
-            "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
-            "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487",
-            "back": "serpentstalker_drape,id=152131,bonus_id=3611/1487,enchant=binding_of_agility",
+            "back": "cloak_of_the_dashing_scoundrel,id=152131,bonus_id=3611/1487,enchant=binding_of_agility",
             "hands": "serpentstalker_grips,id=152132,bonus_id=3611/1487",
-            "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487"
+            "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487",
+            "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487",
+            "chest": "serpentstalker_tunic,id=152130,bonus_id=3611/1487",
+            "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487"
         },
         "T21": {
-            "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3612/1502",
-            "legs": "serpentstalker_legguards,id=152134,bonus_id=3612/1502",
-            "hands": "serpentstalker_grips,id=152132,bonus_id=3612/1502",
             "back": "serpentstalker_drape,id=152131,bonus_id=3612/1502,enchant=binding_of_agility",
+            "hands": "serpentstalker_grips,id=152132,bonus_id=3612/1502",
+            "legs": "serpentstalker_legguards,id=152134,bonus_id=3612/1502",
+            "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3612/1502",
             "chest": "serpentstalker_tunic,id=152130,bonus_id=3612/1502",
             "head": "serpentstalker_helmet,id=152133,bonus_id=3612/1502"
         }

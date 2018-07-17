@@ -48,19 +48,19 @@
             "shoulder": "wildstalker_spaulders,id=147144,bonus_id=1512/3563"
         },
         "T21H": {
+            "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
             "chest": "serpentstalker_tunic,id=152130,bonus_id=3611/1487",
             "back": "serpentstalker_drape,id=152131,bonus_id=3611/1487,enchant=binding_of_agility",
             "hands": "serpentstalker_grips,id=152132,bonus_id=3611/1487",
             "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3611/1487",
-            "head": "serpentstalker_helmet,id=152133,bonus_id=3611/1487",
             "legs": "serpentstalker_legguards,id=152134,bonus_id=3611/1487"
         },
         "T21": {
+            "head": "serpentstalker_helmet,id=152133,bonus_id=3612/1502",
             "shoulder": "serpentstalker_mantle,id=152135,bonus_id=3612/1502",
             "back": "serpentstalker_drape,id=152131,bonus_id=3612/1502,enchant=binding_of_agility",
             "chest": "serpentstalker_tunic,id=152130,bonus_id=3612/1502",
             "hands": "serpentstalker_grips,id=152132,bonus_id=3612/1502",
-            "head": "serpentstalker_helmet,id=152133,bonus_id=3612/1502",
             "legs": "serpentstalker_legguards,id=152134,bonus_id=3612/1502"
         }
     }
