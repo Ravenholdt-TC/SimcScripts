@@ -7,7 +7,7 @@ toRun = {
       'T21_Death_Knight_Unholy Death_Knight_Unholy T21 xx0x0xx'
     ],
     'DemonHunter' => [
-      'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0xxx'
+      'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0x2x'
     ],
     'Druid' => [
       'T21_Druid_Balance Druid_Balance T21 x000xxx',
@@ -45,8 +45,8 @@ toRun = {
     ],
     'Warlock' => [
       # 'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
-      # 'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
-      # 'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
+      'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
+      'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
     ],
     'Warrior' => [
       'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
@@ -102,8 +102,8 @@ toRun = {
     ],
     'Warlock' => [
       # 'T21_Warlock_Affliction',
-      # 'T21_Warlock_Demonology',
-      # 'T21_Warlock_Destruction'
+      'T21_Warlock_Demonology',
+      'T21_Warlock_Destruction'
     ],
     'Warrior' => [
       'T21_Warrior_Arms',
@@ -159,8 +159,8 @@ toRun = {
     ],
     'Warlock' => [
       # 'T21_Warlock_Affliction Ranged_Intelligence',
-      # 'T21_Warlock_Demonology Ranged_Intelligence',
-      # 'T21_Warlock_Destruction Ranged_Intelligence'
+      'T21_Warlock_Demonology Ranged_Intelligence',
+      'T21_Warlock_Destruction Ranged_Intelligence'
     ],
     'Warrior' => [
       'T21_Warrior_Arms Melee_Strength',
