@@ -31,8 +31,8 @@
             "finger1": {
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
                 "Ring": "dual_determination,id=137041,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
-                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630",

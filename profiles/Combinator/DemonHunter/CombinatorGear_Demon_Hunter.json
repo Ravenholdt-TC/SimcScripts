@@ -22,8 +22,8 @@
             "finger1": {
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
                 "Ring": "anger_of_the_halfgiants,id=137038,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
-                // "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
+                "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
@@ -57,8 +57,8 @@
             "finger1": {
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11versatility,enchant=versatility",
                 "FotBP": "fragment_of_the_betrayers_prison,id=138854,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
-                "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
-                // "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
+                "Soul": "soul_of_the_slayer,id=151639,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility",
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11versatility,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630",

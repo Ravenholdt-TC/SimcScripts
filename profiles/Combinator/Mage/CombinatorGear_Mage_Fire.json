@@ -22,8 +22,8 @@
             "finger1": {
                 "Soul": "soul_of_the_archmage,id=151642,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
                 "Shard": "shard_of_the_exodar,id=132410,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
-                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
-                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11crit,enchant=binding_of_critical_strike"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"

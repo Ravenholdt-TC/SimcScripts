@@ -22,8 +22,8 @@
             "finger1": {
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
                 "EotN": "eye_of_the_twisting_nether,id=137050,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Soul": "soul_of_the_farseer,id=151647,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
-                // "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Soul": "soul_of_the_farseer,id=151647,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
