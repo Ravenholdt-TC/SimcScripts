@@ -29,6 +29,9 @@
             }
         },
         "outlaw": {
+            "head": {
+                "Crown": "the_empty_crown,id=151815,bonus_id=3630"
+            },
             "shoulder": {
                 "Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"
             },
@@ -57,6 +60,9 @@
             }
         },
         "subtlety": {
+            "head": {
+                "Crown": "the_empty_crown,id=151815,bonus_id=3630"
+            },
             "shoulder": {
                 "Mantle": "mantle_of_the_master_assassin,id=144236,bonus_id=3630"
             },
