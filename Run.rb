@@ -44,7 +44,7 @@ toRun = {
       'T21_Shaman_Enhancement Shaman_Enhancement T21 xx0x0xx'
     ],
     'Warlock' => [
-      # 'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
+      'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
       'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
       'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
     ],
@@ -64,7 +64,7 @@ toRun = {
     ],
     'Druid' => [
       'T21_Druid_Balance',
-      # 'T21_Druid_Feral',
+      'T21_Druid_Feral',
       # 'T21_Druid_Guardian'
     ],
     'Hunter' => [
@@ -93,15 +93,14 @@ toRun = {
       'T21_Rogue_Assassination_Exsg',
       'T21_Rogue_Outlaw',
       'T21_Rogue_Outlaw_SnD',
-      'T21_Rogue_Subtlety',
-      'T21_Rogue_Subtlety_DfA'
+      'T21_Rogue_Subtlety'
     ],
     'Shaman' => [
       'T21_Shaman_Elemental',
       'T21_Shaman_Enhancement'
     ],
     'Warlock' => [
-      # 'T21_Warlock_Affliction',
+      'T21_Warlock_Affliction',
       'T21_Warlock_Demonology',
       'T21_Warlock_Destruction'
     ],
@@ -121,7 +120,7 @@ toRun = {
     ],
     'Druid' => [
       'T21_Druid_Balance Ranged_Intelligence',
-      # 'T21_Druid_Feral Melee_Agility',
+      'T21_Druid_Feral Melee_Agility',
       # 'T21_Druid_Guardian Melee_Agility'
     ],
     'Hunter' => [
@@ -150,15 +149,14 @@ toRun = {
       'T21_Rogue_Assassination_Exsg Melee_Agility',
       'T21_Rogue_Outlaw Melee_Agility',
       'T21_Rogue_Outlaw_SnD Melee_Agility',
-      'T21_Rogue_Subtlety Melee_Agility',
-      'T21_Rogue_Subtlety_DfA Melee_Agility'
+      'T21_Rogue_Subtlety Melee_Agility'
     ],
     'Shaman' => [
       'T21_Shaman_Elemental Ranged_Intelligence',
       'T21_Shaman_Enhancement Melee_Agility'
     ],
     'Warlock' => [
-      # 'T21_Warlock_Affliction Ranged_Intelligence',
+      'T21_Warlock_Affliction Ranged_Intelligence',
       'T21_Warlock_Demonology Ranged_Intelligence',
       'T21_Warlock_Destruction Ranged_Intelligence'
     ],
