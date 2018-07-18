@@ -17,9 +17,9 @@
                 "Bracers": "zoldyck_family_training_shackles,id=137098,bonus_id=3630"
             },
             "finger1": {
-                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
@@ -48,9 +48,9 @@
                 "Hands": "shivarran_symmetry,id=141321,bonus_id=3630"
             },
             "finger1": {
-                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
@@ -79,9 +79,9 @@
                 "Hands": "the_first_of_the_dead,id=151818,bonus_id=3630"
             },
             "finger1": {
-                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11mastery,enchant=binding_of_mastery"
+                "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
+                "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"

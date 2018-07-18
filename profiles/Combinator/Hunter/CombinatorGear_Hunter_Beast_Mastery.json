@@ -2,7 +2,7 @@
     "legendaries": {
         "beast_mastery": {
             "neck": {
-                "Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gems=11haste,enchant=mark_of_the_hidden_satyr"
+                "Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gem_id=151583,enchant=mark_of_the_hidden_satyr"
             },
             "shoulder": {
                 "Mantle": "the_mantle_of_command,id=144326,bonus_id=3630"
@@ -23,11 +23,11 @@
                 "Boots": "qapla_eredun_war_order,id=137227,bonus_id=3630"
             },
             "finger1": {
-                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Zevrim": "zevrims_hunger,id=137055,bonus_id=3630,gems=11haste,enchant=binding_of_haste",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gems=11haste,enchant=binding_of_haste"
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Zevrim": "zevrims_hunger,id=137055,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             }
         }
     },
