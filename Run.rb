@@ -167,16 +167,19 @@ toRun = {
   }
 }
 
-scripts = SimcConfig["RunScripts"]
-fightstyles = SimcConfig["RunFightstyles"]
+orders = SimcConfig["RunOrders"]
 wowclasses = SimcConfig["RunClasses"]
 
-scripts.each do |script|
-  fightstyles.each do |fightstyle|
-    wowclasses.each do |wowclass|
-      commands = toRun[script][wowclass]
-      commands.each do |command|
-        system "bundle exec ruby #{script}.rb #{fightstyle} #{wowclass} #{command} q"
+orders.each do |order|
+  scripts = order[0]
+  fightstyles = order[1]
+  scripts.each do |script|
+    fightstyles.each do |fightstyle|
+      wowclasses.each do |wowclass|
+        commands = toRun[script][wowclass]
+        commands.each do |command|
+          system "bundle exec ruby #{script}.rb #{fightstyle} #{wowclass} #{command} q"
+        end
       end
     end
   end

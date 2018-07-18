@@ -33,11 +33,12 @@ ArchivesFolder: archives
 ### Run.rb
 ###
 
-# Scripts to run
-RunScripts: ["RaceSimulation", "TrinketSimulation", "Combinator"]
-
-# Fighstyles to run
-RunFightstyles: ["1T", "2T", "3T", "1T_Adds"]
+# Orders (scripts, fightstyles) to run
+RunOrders: [
+  [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
+  [["RaceSimulation", "TrinketSimulation"], ["2T", "3T", "1T_Adds"]],
+  [["Combinator"], ["2T", "3T", "1T_Adds"]],
+]
 
 # Classes to run
 RunClasses: ["DeathKnight", "DemonHunter", "Druid", "Hunter", "Mage", "Monk", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
