@@ -21,4 +21,4 @@ finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=bindin
 finger2=loop_of_the_lifebinder,id=152688,bonus_id=3612/1502,enchant=binding_of_mastery
 trinket1=gorshalachs_legacy,id=152093,bonus_id=3612/1502
 trinket2=amanthuls_vision,id=154172,bonus_id=4213
-main_hand=stromkar_the_warbreaker,id=128910,gem_id=152293/152092/152054,relic_id=3612:1512/3612:1502/3612:1512
+main_hand=stromkar_the_warbreaker,id=128910,bonus_id=750/1505/1505/1505,gem_id=155855/155847/155852

@@ -22,5 +22,5 @@ finger1=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding
 finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_haste
 trinket1=shadowsinged_fang,id=151968,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3997
-main_hand=the_kingslayers,id=128870,bonus_id=741,gem_id=152055/152293/152092,relic_id=3612:1502/3612:1502/3612:1502
+main_hand=the_kingslayers,id=128870,bonus_id=741/1505/1505/1505,gem_id=155852/155855/155847
 off_hand=the_kingslayers,id=128869

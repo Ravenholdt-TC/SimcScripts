@@ -21,4 +21,4 @@ finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=bindin
 finger2=band_of_the_sargerite_smith,id=152064,bonus_id=3612/1502,enchant=binding_of_haste
 trinket1=prototype_personnel_decimator,id=151962,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3984/3997
-main_hand=titanstrike,id=128861,bonus_id=726,gem_id=155853/155846/155855,relic_id=3612:1512/3612:1512/3612:1512
+main_hand=titanstrike,id=128861,bonus_id=726/1505/1505/1505,gem_id=155853/155846/155855

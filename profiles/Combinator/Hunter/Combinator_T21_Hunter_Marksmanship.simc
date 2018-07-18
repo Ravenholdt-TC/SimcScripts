@@ -21,4 +21,4 @@ finger1=seal_of_the_portalmaster,id=152063,bonus_id=3612/1502,enchant=binding_of
 finger2=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=binding_of_versatility
 trinket1=prototype_personnel_decimator,id=151962,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3984/3997
-main_hand=thasdorah_legacy_of_the_windrunners,id=128826,gem_id=155853/155847/155854,relic_id=3612:1512/3612:1512/3612:1512
+main_hand=thasdorah_legacy_of_the_windrunners,id=128826,bonus_id=727/1505/1505/1505,gem_id=155853/155847/155854

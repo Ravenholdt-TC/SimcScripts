@@ -22,5 +22,5 @@ finger1=sullied_seal_of_the_pantheon,id=151972,bonus_id=3612/1502,enchant=bindin
 finger2=zealous_tormentors_ring,id=152284,bonus_id=3612/1502,enchant=binding_of_versatility
 trinket1=seeping_scourgewing,id=151964,bonus_id=3612/1502
 trinket2=golganneths_vitality,id=154174,bonus_id=3997
-main_hand=fangs_of_ashamane,id=128860,bonus_id=723,gem_id=155847/152041/155854/0,relic_id=3612:1512/3612:1502/3612:1512
-off_hand=fangs_of_ashamane,id=128859,gem_id=0/0/0/0,relic_id=0/0
+main_hand=fangs_of_ashamane,id=128860,bonus_id=723/1505/1505/1505,gem_id=155850/155847/155854
+off_hand=fangs_of_ashamane,id=128859
