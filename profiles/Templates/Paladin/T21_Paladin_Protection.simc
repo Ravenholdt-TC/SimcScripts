@@ -1,4 +1,4 @@
-$(simc_profiles_path)/Tier21/T21_Paladin_Protection_DPS.simc
+$(simc_profiles_path)/Tier21/T21_Paladin_Protection.simc
 
 role=attack
 position=back
