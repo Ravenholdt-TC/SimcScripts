@@ -19,6 +19,7 @@
             "finger1": {
                 "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             },
             "trinket1": {
@@ -50,6 +51,7 @@
             "finger1": {
                 "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             },
             "trinket1": {
@@ -81,6 +83,7 @@
             "finger1": {
                 "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
             },
             "trinket1": {

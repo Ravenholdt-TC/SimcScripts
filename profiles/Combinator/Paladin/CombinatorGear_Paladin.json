@@ -28,6 +28,7 @@
             "finger1": {
                 "Ring": "heathcliffs_immortality,id=137047,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
                 "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility"
             },
             "trinket1": {
@@ -54,6 +55,7 @@
             "finger1": {
                 "Liadrin": "liadrins_fury_unleashed,id=137048,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
             },
             "trinket1": {

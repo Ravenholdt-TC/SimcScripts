@@ -19,6 +19,7 @@
             "finger1": {
                 "Insignia": "insignia_of_ravenholdt,id=137049,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike",
                 "Vigor": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike",
+                "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike",
                 "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151580,enchant=binding_of_critical_strike"
             },
             "trinket1": {
