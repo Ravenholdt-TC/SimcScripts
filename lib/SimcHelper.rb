@@ -30,7 +30,7 @@ module SimcHelper
       input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
 
       # Logs
-      logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}"
+      logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
       input.puts "output=#{logFile}.log"
       input.puts "json=#{logFile}.json"
 
