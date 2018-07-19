@@ -8,7 +8,7 @@
                 "Head": "the_great_storms_eye,id=151823,bonus_id=3630"
             },
             "hands": {
-                "Hands": "archavons_heavy_hand,id=137060,bonus_id=3630,enchant=binding_of_strength"
+                "Hands": "archavons_heavy_hand,id=137060,bonus_id=3630"
             },
             "legs": {
                 "Legs": "weight_of_the_earth,id=137077,bonus_id=3630"
