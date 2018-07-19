@@ -28,7 +28,7 @@
             "finger1": {
                 "Ring": "heathcliffs_immortality,id=137047,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
                 "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630",
@@ -54,19 +54,19 @@
             "finger1": {
                 "Liadrin": "liadrins_fury_unleashed,id=137048,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Soul": "soul_of_the_highlord,id=151644,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
             },
             "back": {
-                "Cloak": "whisper_of_the_nathrezim,id=137020,bonus_id=3630,enchant=binding_of_force"
+                "Cloak": "whisper_of_the_nathrezim,id=137020,bonus_id=3630,enchant=binding_of_strength"
             }
         }
     },
     "sets": {
         "T19": {
-            "back": "greatmantle_of_the_highlord,id=138369,bonus_id=3518/1484,enchant=binding_of_force",
+            "back": "greatmantle_of_the_highlord,id=138369,bonus_id=3518/1484,enchant=binding_of_strength",
             "chest": "breastplate_of_the_highlord,id=138350,bonus_id=3518/1484",
             "hands": "gauntlets_of_the_highlord,id=138353,bonus_id=3518/1484",
             "head": "helmet_of_the_highlord,id=138356,bonus_id=3518/1484",
@@ -74,7 +74,7 @@
             "shoulder": "pauldrons_of_the_highlord,id=138362,bonus_id=3518/1484"
         },
         "T20H": {
-            "back": "radiant_lightbringer_cape,id=147158,bonus_id=1497/3562,enchant=binding_of_force",
+            "back": "radiant_lightbringer_cape,id=147158,bonus_id=1497/3562,enchant=binding_of_strength",
             "chest": "radiant_lightbringer_breastplate,id=147157,bonus_id=1497/3562",
             "hands": "radiant_lightbringer_gauntlets,id=147159,bonus_id=1497/3562",
             "head": "radiant_lightbringer_crown,id=147160,bonus_id=1497/3562",
@@ -86,7 +86,7 @@
             "hands": "radiant_lightbringer_gauntlets,id=147159,bonus_id=1512/3563",
             "head": "radiant_lightbringer_crown,id=147160,bonus_id=1512/3563",
             "legs": "radiant_lightbringer_greaves,id=147161,bonus_id=1512/3563",
-            "back": "radiant_lightbringer_cape,id=147158,bonus_id=1512/3563,enchant=binding_of_force",
+            "back": "radiant_lightbringer_cape,id=147158,bonus_id=1512/3563,enchant=binding_of_strength",
             "shoulder": "radiant_lightbringer_shoulderguards,id=147162,bonus_id=1512/3563"
         },
         "T21H": {
@@ -94,7 +94,7 @@
             "shoulder": "lights_vanguard_shoulderplates,id=152153,bonus_id=3611/1487",
             "chest": "lights_vanguard_breastplate,id=152148,bonus_id=3611/1487",
             "hands": "lights_vanguard_gauntlets,id=152150,bonus_id=3611/1487",
-            "back": "lights_vanguard_greatcloak,id=152149,bonus_id=3611/1487,enchant=binding_of_force",
+            "back": "lights_vanguard_greatcloak,id=152149,bonus_id=3611/1487,enchant=binding_of_strength",
             "legs": "lights_vanguard_legplates,id=152152,bonus_id=3611/1487"
         },
         "T21": {
@@ -102,7 +102,7 @@
             "shoulder": "lights_vanguard_shoulderplates,id=152153,bonus_id=3612/1502",
             "chest": "lights_vanguard_breastplate,id=152148,bonus_id=3612/1502",
             "hands": "lights_vanguard_gauntlets,id=152150,bonus_id=3612/1502",
-            "back": "lights_vanguard_greatcloak,id=152149,bonus_id=3612/1502,enchant=binding_of_force",
+            "back": "lights_vanguard_greatcloak,id=152149,bonus_id=3612/1502,enchant=binding_of_strength",
             "legs": "lights_vanguard_legplates,id=152152,bonus_id=3612/1502"
         }
     }
