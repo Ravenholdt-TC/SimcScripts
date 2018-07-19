@@ -7,7 +7,7 @@ class JSONResults
 
   def initialize(simulationFilename="LastInput")
     @simulationFilename = simulationFilename
-    @logFile = "#{SimcConfig['LogsFolder']}/#{simulationFilename}.json"
+    @logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}.json"
     @jsonData = JSONParser.ReadFile(@logFile)
     @additionalMetadata = {}
   end

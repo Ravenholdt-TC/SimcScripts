@@ -1,7 +1,29 @@
-archives/
-generated/
-logs/
-reports/
-.vscode/
-
+# Project #
+###########
+archives/*
+generated/*
+logs/*
+!logs/simc/
+logs/simc/*
+!logs/simc/.gitkeep
+reports/*
 SimcConfig.yml
+
+# Project dependencies #
+########################
+
+
+# IDE #
+#######
+.idea/*
+.vscode/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
