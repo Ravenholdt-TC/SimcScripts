@@ -20,7 +20,7 @@
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Ring": "impeccable_fel_essence,id=137039,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
                 "Soul": "soul_of_the_archdruid,id=151636,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151584,enchant=binding_of_mastery"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"

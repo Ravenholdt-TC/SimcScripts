@@ -27,7 +27,7 @@
                 "Apex": "the_apex_predators_claw,id=137382,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Soul": "soul_of_the_shadowblade,id=150936,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Zevrim": "zevrims_hunger,id=137055,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             }
         }
     },

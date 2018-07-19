@@ -23,7 +23,7 @@
                 "Soul": "soul_of_the_archmage,id=151642,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
                 "Shard": "shard_of_the_exodar,id=132410,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151585,enchant=binding_of_versatility"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"

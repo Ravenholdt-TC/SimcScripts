@@ -19,7 +19,7 @@
             "finger1": {
                 "Soul": "soul_of_the_netherlord,id=151649,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
                 "Sephuz": "sephuzs_secret,id=132452,bonus_id=3630,gem_id=151583,enchant=binding_of_haste",
-                "Crucible":"insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
+                "Crucible": "insignia_of_the_grand_army,id=152626,bonus_id=3630,gem_id=151583,enchant=binding_of_haste"
             },
             "trinket1": {
                 "KJBW": "kiljaedens_burning_wish,id=144259,bonus_id=3630"
