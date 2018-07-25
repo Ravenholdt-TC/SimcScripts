@@ -108,8 +108,10 @@ talentdata[0].each do |t1|
             talentdata[6].each do |t7|
               talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
               talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
-              gearCombinations.each do |name, strings|
-                prefix = "profileset.\"#{talentInput}_#{name}\"+="
+              gearCombinations.each do |gearName, strings|
+                name = "#{talentInput}_#{gearName}"
+                prefix = "profileset.\"#{name}\"+="
+                simcInput.push(prefix + "name=#{name}")
                 simcInput.push(prefix + "talents=#{talentInput}")
                 talentOverrides.each do |talentOverride|
                   simcInput.push(prefix + talentOverride)
