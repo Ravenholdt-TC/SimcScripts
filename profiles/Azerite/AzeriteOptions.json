@@ -1,0 +1,7 @@
+{
+    "baseItemLevel": 325, // Used for stacks, 325 is HC dungeon level, 385 Mythic Raid
+    "itemLevels": [ 325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385 ],
+    "blacklistedPowerIds": [
+        13 // Azerite Empowered
+    ]
+}
