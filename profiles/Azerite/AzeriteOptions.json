@@ -1,6 +1,12 @@
 {
     "baseItemLevel": 325, // Used for stacks, 325 is HC dungeon level, 385 Mythic Raid
-    "itemLevels": [ 325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385 ],
+    "itemLevels": [
+        325, // HC Dungeons, WQs
+        340, // LFR Uldir, M+ 0-3 Dungeons, Emissaries
+        355, // Normal Uldir, M+ 4-6, World Bosses, Rep
+        370, // HC Uldir, M+ 7-9
+        385, // M Uldir, M+ 10+
+    ],
     "blacklistedPowerIds": [
         13 // Azerite Empowered
     ]
