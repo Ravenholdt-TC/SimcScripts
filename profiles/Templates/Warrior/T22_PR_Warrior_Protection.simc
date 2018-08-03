@@ -1,0 +1,4 @@
+$(simc_profiles_path)/PreRaids/PR_Warrior_Protection.simc
+
+role=attack
+position=back
