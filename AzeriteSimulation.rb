@@ -41,7 +41,8 @@ simcInputStacks = []
 powerList.each do |power|
   next if !power['classesId'].include?(classId)
   next if power['specId'] && !power['specId'].include?(specId)
-  next if powerSettings.include?(power['powerId'])
+  next if powerSettings['blacklistedTiers'].include?(power['tier'])
+  next if powerSettings['blacklistedPowerIds'].include?(power['powerId'])
 
   # Item Level Simulations
   powerSettings['itemLevels'].each do |ilvl|

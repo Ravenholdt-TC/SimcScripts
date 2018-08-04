@@ -7,7 +7,10 @@
         370, // HC Uldir, M+ 7-9
         385 // M Uldir, M+ 10+
     ],
+    "blacklistedTiers": [
+        0,
+        1
+    ],
     "blacklistedPowerIds": [
-        13 // Azerite Empowered
     ]
 }
