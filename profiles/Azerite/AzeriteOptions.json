@@ -5,7 +5,7 @@
         340, // LFR Uldir, M+ 0-3 Dungeons, Emissaries
         355, // Normal Uldir, M+ 4-6, World Bosses, Rep
         370, // HC Uldir, M+ 7-9
-        385, // M Uldir, M+ 10+
+        385 // M Uldir, M+ 10+
     ],
     "blacklistedPowerIds": [
         13 // Azerite Empowered

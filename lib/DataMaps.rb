@@ -20,7 +20,7 @@ ClassAndSpecIds = {
   'Hunter' => {
     class_id: 3,
     specs: {
-      'BeastMastery' => 253,
+      'Beast-Mastery' => 253,
       'Marksmanship' => 254,
       'Survival' => 255,
     },
