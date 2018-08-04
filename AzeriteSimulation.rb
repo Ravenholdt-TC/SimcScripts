@@ -36,16 +36,28 @@ simcInput.push 'name="Template"'
 simcInput.push 'disable_azerite=items'
 simcInput.push ''
 
-simcInputLevels = []
+# Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
+headItemString = ''
+File.open(templateFile, 'r') do |tfile|
+  while line = tfile.gets
+    if line.start_with?('head=')
+      headItemString = line.chomp
+    end
+  end
+end
+
+# Create simc inputs
+simcInputLevels = ["#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
 simcInputStacks = []
 powerList.each do |power|
   next if !power['classesId'].include?(classId)
-  next if power['specId'] && !power['specId'].include?(specId)
+  next if power['specsId'] && !power['specsId'].include?(specId)
   next if powerSettings['blacklistedTiers'].include?(power['tier'])
   next if powerSettings['blacklistedPowerIds'].include?(power['powerId'])
 
   # Item Level Simulations
   powerSettings['itemLevels'].each do |ilvl|
+    simcInputLevels.push "profileset.\"#{power['spellName']}_#{ilvl}\"+=#{headItemString},ilevel=#{ilvl}"
     simcInputLevels.push "profileset.\"#{power['spellName']}_#{ilvl}\"+=azerite_override=#{power['powerId']}:#{ilvl}"
   end
 
