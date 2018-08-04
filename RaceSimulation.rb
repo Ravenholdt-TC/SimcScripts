@@ -61,18 +61,6 @@ Logging.LogScriptInfo "-- Profile: #{template}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
-simcInput = []
-Logging.LogScriptInfo "Generating profilesets..."
-simcInput.push 'name="Template"'
-simcInput.push 'race=""'
-simcInput.push ''
-RaceMap.each do |name, raceString|
-  if ClassMap[classfolder].include?(name)
-    simcInput.push "profileset.\"#{name}\"+=race=#{raceString}"
-  end
-end
-
-simulationFilename = "RaceSimulation_#{fightstyle}_#{template}"
 templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
 unless File.exist?(templateFile)
   Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
@@ -86,6 +74,19 @@ end
 unless File.exist?(templateFile)
   Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
 end
+
+simcInput = []
+Logging.LogScriptInfo "Generating profilesets..."
+simcInput.push 'name="Template"'
+simcInput.push 'race=""'
+simcInput.push ''
+RaceMap.each do |name, raceString|
+  if ClassMap[classfolder].include?(name)
+    simcInput.push "profileset.\"#{name}\"+=race=#{raceString}"
+  end
+end
+
+simulationFilename = "RaceSimulation_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRaceConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",

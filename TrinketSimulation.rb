@@ -24,6 +24,20 @@ Logging.LogScriptInfo "-- Trinket List: #{trinketListProfiles}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
+templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
+unless File.exist?(templateFile)
+  Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
+  if template.start_with?('PR')
+    tierFolder = 'PreRaids'
+  else
+    tierFolder = "Tier#{template[1..2]}"
+  end
+  templateFile = "#{SimcConfig['SimcPath']}/profiles/#{tierFolder}/#{template}.simc"
+end
+unless File.exist?(templateFile)
+  Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
+end
+
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
@@ -45,19 +59,6 @@ trinketListProfiles.each do |trinketListProfile|
 end
 
 simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
-templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
-unless File.exist?(templateFile)
-  Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
-  if template.start_with?('PR')
-    tierFolder = 'PreRaids'
-  else
-    tierFolder = "Tier#{template[1..2]}"
-  end
-  templateFile = "#{SimcConfig['SimcPath']}/profiles/#{tierFolder}/#{template}.simc"
-end
-unless File.exist?(templateFile)
-  Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
-end
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",

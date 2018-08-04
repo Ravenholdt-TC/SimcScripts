@@ -55,11 +55,6 @@ powerList.each do |power|
   end
 end
 
-##################################
-# Process Item Level simulations #
-##################################
-
-simulationFilename = "AzeriteLevels_#{fightstyle}_#{template}"
 templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
 unless File.exist?(templateFile)
   Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
@@ -73,6 +68,12 @@ end
 unless File.exist?(templateFile)
   Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
 end
+
+##################################
+# Process Item Level simulations #
+##################################
+
+simulationFilename = "AzeriteLevels_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
@@ -135,7 +136,7 @@ simulationFilename = "AzeriteStacks_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc",
+  templateFile,
   simcInput + simcInputStacks,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
