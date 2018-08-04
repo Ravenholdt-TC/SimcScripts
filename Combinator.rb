@@ -16,7 +16,7 @@ classfolder = Interactive.SelectSubfolder('Combinator')
 profile, profileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator_")
 #Read spec from profile
 spec = ''
-File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
+File.open(profileFile, 'r') do |pfile|
   while line = pfile.gets
     if line.start_with?('spec=')
       spec = line.chomp.split('=')[1]
