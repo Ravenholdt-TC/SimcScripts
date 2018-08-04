@@ -10,10 +10,10 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("TrinketSimulation")
 
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
+fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
 classfolder = Interactive.SelectSubfolder('Templates')
-template = Interactive.SelectTemplate("Templates/#{classfolder}/")
-trinketListProfiles = Interactive.SelectTemplateMulti('TrinketLists/')
+template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
+trinketListProfiles = Interactive.SelectTemplateMulti("#{SimcConfig['ProfilesFolder']}/TrinketLists/")
 
 # Log all interactively set settings
 puts

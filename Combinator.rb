@@ -11,9 +11,9 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("Combinator")
 
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
+fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
 classfolder = Interactive.SelectSubfolder('Combinator')
-profile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator")
+profile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator")
 #Read spec from profile
 spec = ''
 File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
@@ -23,8 +23,8 @@ File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_
     end
   end
 end
-gearProfile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear")
-setupsProfile = Interactive.SelectTemplate('Combinator/CombinatorSetups')
+gearProfile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/CombinatorGear")
+setupsProfile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/CombinatorSetups")
 talentdata = Interactive.SelectTalentPermutations()
 
 # Log all interactively set settings

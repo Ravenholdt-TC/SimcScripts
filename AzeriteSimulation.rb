@@ -11,10 +11,10 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("AzeriteSimulation")
 
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
+fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
 classfolder = Interactive.SelectSubfolder('Templates')
 spec = Interactive.SelectFromArray('Specialization', ClassAndSpecIds[classfolder][:specs].keys)
-template = Interactive.SelectTemplate("Templates/#{classfolder}/")
+template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
 
 powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
 powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")

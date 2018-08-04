@@ -33,8 +33,8 @@ RaceMap = {
 
 # Map class folder and race name
 ClassMap = {
-  'DeathKnight' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin'],
-  'DemonHunter' => ['Night Elf', 'Blood Elf'],
+  'Death-Knight' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin'],
+  'Demon-Hunter' => ['Night Elf', 'Blood Elf'],
   'Druid' => ['Night Elf', 'Worgen', 'Tauren', 'Troll', 'Highmountain Tauren'],
   'Hunter' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne'],
   'Mage' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
@@ -49,9 +49,9 @@ ClassMap = {
 
 Logging.Initialize("RaceSimulation")
 
-fightstyle = Interactive.SelectTemplate('Fightstyles/Fightstyle')
+fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
 classfolder = Interactive.SelectSubfolder('Templates')
-template = Interactive.SelectTemplate("Templates/#{classfolder}/")
+template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
 
 # Log all interactively set settings
 puts

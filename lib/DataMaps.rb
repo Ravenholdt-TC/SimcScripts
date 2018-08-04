@@ -41,7 +41,7 @@ ClassAndSpecIds = {
       'Shadow' => 258,
     },
   },
-  'DeathKnight' => {
+  'Death-Knight' => {
     class_id: 6,
     specs: {
       'Blood' => 250,
@@ -90,7 +90,7 @@ ClassAndSpecIds = {
     },
     'Restoration' => 105,
   },
-  'DemonHunter' => {
+  'Demon-Hunter' => {
     class_id: 12,
     specs: {
       'Havoc' => 577,
