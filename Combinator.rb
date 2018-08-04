@@ -11,9 +11,9 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("Combinator")
 
-fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
+fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Combinator')
-profile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator")
+profile, profileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator_")
 #Read spec from profile
 spec = ''
 File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc", 'r') do |pfile|
@@ -23,8 +23,8 @@ File.open("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_
     end
   end
 end
-gearProfile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/CombinatorGear")
-setupsProfile = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Combinator/CombinatorSetups")
+gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear_")
+setupsProfile, setupsProfileFile = Interactive.SelectTemplate('Combinator/CombinatorSetups_')
 talentdata = Interactive.SelectTalentPermutations()
 
 # Log all interactively set settings
@@ -39,8 +39,8 @@ Logging.LogScriptInfo "-- Talents: #{talentdata}"
 puts
 
 # Read gear setups from JSON
-gear = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/CombinatorGear_#{gearProfile}.json")
-setups = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Combinator/CombinatorSetups_#{setupsProfile}.json")
+gear = JSONParser.ReadFile(gearProfileFile)
+setups = JSONParser.ReadFile(setupsProfileFile)
 
 # Duplicate two-slot items
 gear['legendaries'][spec]['finger2'] = gear['legendaries'][spec]['finger1']
@@ -68,17 +68,17 @@ setups['setups'].each do |setup|
             usedSlots.push(setSlot)
           end
         end
-        setProfileName = setup['sets'].collect {|set| set['pieces'] > 0 ? "#{set['set']}(#{set['pieces']})" : "#{set['set']}"}.join('+')
+        setProfileName = setup['sets'].collect { |set| set['pieces'] > 0 ? "#{set['set']}(#{set['pieces']})" : "#{set['set']}" }.join('+')
 
         # Iterate over legendary combinations for the current lego slot combination
         if legoSlots.empty?
           gearCombinations["#{setProfileName}_None"] = setStrings
           next
         end
-        legoCombinations = legoSlots.collect {|legoSlot| gear['legendaries'][spec][legoSlot].keys}
+        legoCombinations = legoSlots.collect { |legoSlot| gear['legendaries'][spec][legoSlot].keys }
         legoCombinations = legoCombinations.reduce(&:product) if legoSlots.length > 1
-        legoCombinations = legoCombinations.flatten.collect {|x| [x]} if legoSlots.length == 1
-        legoCombinations = legoCombinations.collect(&:flatten).collect(&:uniq).uniq {|x| x.sort}.select {|x| x.length == numLegos}
+        legoCombinations = legoCombinations.flatten.collect { |x| [x] } if legoSlots.length == 1
+        legoCombinations = legoCombinations.collect(&:flatten).collect(&:uniq).uniq { |x| x.sort }.select { |x| x.length == numLegos }
         legoCombinations.each do |legoCombination|
           legoProfileName = legoCombination.join('_')
           legoStrings = []
@@ -132,9 +132,9 @@ end
 simulationFilename = "Combinator_#{fightstyle}_#{profile}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
-  "#{SimcConfig['ProfilesFolder']}/Combinator/#{classfolder}/Combinator_#{profile}.simc",
-  simcInput
+  fightstyleFile,
+  profileFile,
+  simcInput,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
@@ -149,9 +149,9 @@ priorityDps = results.getPriorityDPSResults()
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
-report = [ ]
+report = []
 sims.each do |name, value|
-  actor = [ ]
+  actor = []
   # Split profile name (mostly for web display)
   if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
     # Talents
@@ -174,7 +174,7 @@ sims.each do |name, value|
   report.push(actor)
 end
 # Sort the report by the DPS value in DESC order
-report.sort! { |x,y| y[3] <=> x[3] }
+report.sort! { |x, y| y[3] <=> x[3] }
 # Add the initial rank
 report.each_with_index { |actor, index|
   actor.unshift(index + 1)

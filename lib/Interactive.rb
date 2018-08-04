@@ -7,7 +7,7 @@ module Interactive
   # You can disable that behavior by setting the optional parameter to false.
 
   # Fetch next cmd argument or wait for input
-  def self.GetInputOrArg(checkArgs=true)
+  def self.GetInputOrArg(checkArgs = true)
     arg = checkArgs ? ARGV.shift : nil
     unless arg
       return gets.chomp
@@ -16,32 +16,53 @@ module Interactive
     return arg
   end
 
-  # Offers all templates matching prefix_*.<ext> in the profiles folder
-  # Returns the * part
-  def self.SelectTemplate(prefixes, checkArgs=true)
-    puts "Please choose what do you want to simulate:"
-    profiles = {}
-    index = 1
+  # Helper that contains the common parts for the following two functions
+  # Returns hash { index: [name, path], ... } of shown templates
+  def self.TemplateList(prefixes, contains = [], checkArgs = true)
     if prefixes.is_a?(String)
       prefixes = [prefixes]
     end
-    prefixes.each do |prefix|
-      underscore = prefix.end_with?('/') ? '' : '_'
-      files = Dir.glob("#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*")
-      files.sort!
-      files.each do |file|
-        if profile = file.match(/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
-          profiles[index] = profile[1]
-          puts "#{index}: #{profile[1]}"
-          index += 1
+    if contains.is_a?(String)
+      contains = [contains]
+    end
+    profiles = {}
+    index = 1
+    profileSourceFolders = ["#{SimcConfig['ProfilesFolder']}/"] + SimcConfig['SimcProfileFolders'].collect { |x| "#{SimcConfig['SimcPath']}/#{x}" }
+    profileSourceFolders.each do |folder|
+      fromSimcString = folder.start_with?(SimcConfig['SimcPath']) ? ' (via SimC profiles)' : ''
+      folder.gsub!('\\', '/')
+      prefixes.each do |prefix|
+        files = Dir.glob("#{folder}#{prefix}[_\-+a-zA-Z0-9]*\.*")
+        files.sort!
+        files.each do |file|
+          catch (:invalidfile) do
+            contains.each do |c|
+              throw :invalidfile if !file.include?(c) && !file.include?(c.gsub('-', '_'))
+            end
+            if profile = file.match(/#{folder}#{prefix}([_\-+a-zA-Z0-9]*)\.\w+/)
+              profiles[index] = [profile[1], file]
+              puts "#{index}: #{profile[1]}#{fromSimcString}"
+              index += 1
+            end
+          end
         end
       end
     end
+    return profiles
+  end
+
+  # Offers all templates matching prefix*.<ext> for each prefix in the profile sources
+  # Additionally ensure that the file path contains whitelisted strings
+  # (strings in whitelist check also check for - replaced by _ automatically)
+  # Returns [name, path] with the * part as name and the file path as path
+  def self.SelectTemplate(prefixes, contains = [], checkArgs = true)
+    puts "Please choose what you want to simulate:"
+    profiles = TemplateList(prefixes, contains, checkArgs)
     print 'Profile: '
     input = GetInputOrArg(checkArgs)
-    if profiles.has_value?(input)
+    if result = profiles.values.find { |x| x.first == input }
       puts
-      return input
+      return result
     end
     index = input.to_i
     unless profiles.has_key?(index)
@@ -51,38 +72,25 @@ module Interactive
       exit
     end
     puts
-    return "#{profiles[index]}"
+    return profiles[index]
   end
 
-  # Offers all templates matching prefix_*.<ext> in the profiles folder
-  # Returns the selecitons as array, multiple selections allowed via [a,b] (no spaces)
-  def self.SelectTemplateMulti(prefixes, checkArgs=true)
-    puts "Please choose what do you want to simulate:"
+  # Offers all templates matching prefix*.<ext> in the profile sources
+  # Additionally ensure that the file path contains whitelisted strings
+  # (strings in whitelist check also check for - replaced by _ automatically)
+  # Returns the selecitons as array of arrays, multiple selections allowed via [a,b] (no spaces)
+  # [[name, file], ...]
+  def self.SelectTemplateMulti(prefixes, contains = [], checkArgs = true)
+    puts "Please choose what you want to simulate:"
     puts '(You can either enter one, or multiple using the format [a,b] without spaces.)'
-    profiles = {}
-    index = 1
-    if prefixes.is_a?(String)
-      prefixes = [prefixes]
-    end
-    prefixes.each do |prefix|
-      underscore = prefix.end_with?('/') ? '' : '_'
-      files = Dir.glob("#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*")
-      files.sort!
-      files.each do |file|
-        if profile = file.match(/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
-          profiles[index] = profile[1]
-          puts "#{index}: #{profile[1]}"
-          index += 1
-        end
-      end
-    end
+    profiles = TemplateList(prefixes, contains, checkArgs)
     print 'Profile: '
     input = GetInputOrArg(checkArgs)
     inputArray = [(YAML.load(input))].flatten # Use YAML to automatically parse arrays as such
     templates = []
     inputArray.each do |el|
-      if profiles.has_value?(el)
-        templates.push(el)
+      if result = profiles.values.find { |x| x.first == el }
+        templates.push(result)
         next
       end
       index = el.to_i
@@ -100,7 +108,7 @@ module Interactive
   end
 
   # Offers all subfolders in prefix in the profiles folder
-  def self.SelectSubfolder(prefix, checkArgs=true)
+  def self.SelectSubfolder(prefix, checkArgs = true)
     puts "Please choose a #{prefix} template folder:"
     folders = {}
     index = 1
@@ -132,7 +140,7 @@ module Interactive
 
   # Ask for talent permutation input string
   # Returns array of arrays with talents for each row
-  def self.SelectTalentPermutations(checkArgs=true)
+  def self.SelectTalentPermutations(checkArgs = true)
     puts 'Please select the talents for permutation:'
     puts 'Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation'
     puts 'You can specify more per tier by wrapping the wanted columns in [].'
@@ -174,7 +182,7 @@ module Interactive
   end
 
   # Choose from a given array. Prompt will show "Please choose a <name>:"
-  def self.SelectFromArray(name, array, checkArgs=true)
+  def self.SelectFromArray(name, array, checkArgs = true)
     puts "Please choose a #{name}:"
     index = 1
     array.each do |item|

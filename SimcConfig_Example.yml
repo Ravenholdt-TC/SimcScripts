@@ -25,6 +25,10 @@ GeneratedFolder: generated
 
 # Where templates for the scripts are placed
 ProfilesFolder: profiles
+# Additional template sources in the SimC source
+SimcProfileFolders:
+- profiles/PreRaids/
+- profiles/Tier22/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives

@@ -11,10 +11,10 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("AzeriteSimulation")
 
-fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
+fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Templates')
 spec = Interactive.SelectFromArray('Specialization', ClassAndSpecIds[classfolder][:specs].keys)
-template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
+template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
 
 powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
 powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")
@@ -55,20 +55,6 @@ powerList.each do |power|
   end
 end
 
-templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
-unless File.exist?(templateFile)
-  Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
-  if template.start_with?('PR')
-    tierFolder = 'PreRaids'
-  else
-    tierFolder = "Tier#{template[1..2]}"
-  end
-  templateFile = "#{SimcConfig['SimcPath']}/profiles/#{tierFolder}/#{template}.simc"
-end
-unless File.exist?(templateFile)
-  Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
-end
-
 ##################################
 # Process Item Level simulations #
 ##################################
@@ -76,9 +62,9 @@ end
 simulationFilename = "AzeriteLevels_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  fightstyleFile,
   templateFile,
-  simcInput + simcInputLevels
+  simcInput + simcInputLevels,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
@@ -135,7 +121,7 @@ ReportWriter.WriteArrayReport(results, report)
 simulationFilename = "AzeriteStacks_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  fightstyleFile,
   templateFile,
   simcInput + simcInputStacks,
 ]

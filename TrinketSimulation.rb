@@ -10,9 +10,9 @@ require_relative 'lib/SimcHelper'
 
 Logging.Initialize("TrinketSimulation")
 
-fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
+fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Templates')
-template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
+template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
 trinketListProfiles = Interactive.SelectTemplateMulti("#{SimcConfig['ProfilesFolder']}/TrinketLists/")
 
 # Log all interactively set settings
@@ -24,28 +24,14 @@ Logging.LogScriptInfo "-- Trinket List: #{trinketListProfiles}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
-templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
-unless File.exist?(templateFile)
-  Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
-  if template.start_with?('PR')
-    tierFolder = 'PreRaids'
-  else
-    tierFolder = "Tier#{template[1..2]}"
-  end
-  templateFile = "#{SimcConfig['SimcPath']}/profiles/#{tierFolder}/#{template}.simc"
-end
-unless File.exist?(templateFile)
-  Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
-end
-
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push 'trinket1=empty'
 simcInput.push 'trinket2=empty'
 simcInput.push ''
-trinketListProfiles.each do |trinketListProfile|
-  trinketList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/TrinketLists/#{trinketListProfile}.json")
+trinketListProfiles.each do |pname, pfile|
+  trinketList = JSONParser.ReadFile(pfile)
   trinketList['trinkets'].each do |trinket|
     bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
     trinket['itemLevels'].each do |ilvl|
@@ -61,9 +47,9 @@ end
 simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  fightstyleFile,
   templateFile,
-  simcInput
+  simcInput,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
@@ -89,16 +75,16 @@ iLevelList.sort!
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
-report = [ ]
+report = []
 # Header
-header = [ "Trinket" ]
+header = ["Trinket"]
 iLevelList.each do |ilvl|
   header.push(ilvl.to_s)
 end
 report.push(header)
 # Body
 sims.each do |name, values|
-  actor = [ ]
+  actor = []
   actor.push(name)
   iLevelList.each do |ilvl|
     if values[ilvl]

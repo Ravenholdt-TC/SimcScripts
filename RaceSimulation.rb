@@ -25,10 +25,10 @@ RaceMap = {
   'Void Elf' => 'void_elf',
   'Highmountain Tauren' => 'highmountain_tauren',
   'Lightforged Draenei' => 'lightforged_draenei',
-  'Nightborne' => 'nightborne'
-  ###### BfA
-  #'Zandalari Troll' => 'zandalari_troll',
-  #'Dark Iron Dwarf' => 'dark_iron_dwarf'
+  'Nightborne' => 'nightborne',
+###### BfA
+#'Zandalari Troll' => 'zandalari_troll',
+#'Dark Iron Dwarf' => 'dark_iron_dwarf'
 }
 
 # Map class folder and race name
@@ -44,14 +44,14 @@ ClassMap = {
   'Rogue' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Worgen', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
   'Shaman' => ['Dwarf', 'Draenei', 'Pandaren', 'Orc', 'Tauren', 'Troll', 'Goblin', 'Highmountain Tauren'],
   'Warlock' => ['Human', 'Dwarf', 'Gnome', 'Worgen', 'Void Elf', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
-  'Warrior' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne']
+  'Warrior' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne'],
 }
 
 Logging.Initialize("RaceSimulation")
 
-fightstyle = Interactive.SelectTemplate("#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle")
+fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Templates')
-template = Interactive.SelectTemplate(["#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/", "#{SimcConfig['SimcPath']}/profiles/PreRaids/", "#{SimcConfig['SimcPath']}/profiles/Tier22/"])
+template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
 
 # Log all interactively set settings
 puts
@@ -60,20 +60,6 @@ Logging.LogScriptInfo "-- Class: #{classfolder}"
 Logging.LogScriptInfo "-- Profile: #{template}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
-
-templateFile = "#{SimcConfig['ProfilesFolder']}/Templates/#{classfolder}/#{template}.simc"
-unless File.exist?(templateFile)
-  Logging.LogScriptInfo "Template file not found, defaulting to SimC one."
-  if template.start_with?('PR')
-    tierFolder = 'PreRaids'
-  else
-    tierFolder = "Tier#{template[1..2]}"
-  end
-  templateFile = "#{SimcConfig['SimcPath']}/profiles/#{tierFolder}/#{template}.simc"
-end
-unless File.exist?(templateFile)
-  Logging.LogScriptError("Unknown SimC template file (#{templateFile})!")
-end
 
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
@@ -89,9 +75,9 @@ end
 simulationFilename = "RaceSimulation_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcRaceConfig.simc",
-  "#{SimcConfig['ProfilesFolder']}/Fightstyles/Fightstyle_#{fightstyle}.simc",
+  fightstyleFile,
   templateFile,
-  simcInput
+  simcInput,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
@@ -106,12 +92,13 @@ sims.delete('Template')
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
-report = [ ]
+report = []
 # Header
-def hashElementType (value)
-  return { "type" => value }
+def hashElementType(value)
+  return {"type" => value}
 end
-header = [ hashElementType("string"), hashElementType("number") ]
+
+header = [hashElementType("string"), hashElementType("number")]
 report.push(header)
 # Body
 sims.each do |name, value|
