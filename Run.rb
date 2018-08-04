@@ -1,6 +1,65 @@
 require_relative 'lib/SimcConfig'
 
 toRun = {
+  'AzeriteSimulation'=> {
+    'Death-Knight' => [
+      'Blood PR_Death_Knight_Blood',
+      'Frost PR_Death_Knight_Frost',
+      'Unholy PR_Death_Knight_Unholy'
+    ],
+    'Demon-Hunter' => [
+      'Havoc PR_Demon_Hunter_Havoc',
+      'Vengeance PR_Demon_Hunter_Vengeance'
+    ],
+    'Druid' => [
+      'Balance PR_Druid_Balance',
+      'Feral PR_Druid_Feral',
+      'Guardian PR_Druid_Guardian'
+    ],
+    'Hunter' => [
+      'Beast-Mastery PR_Hunter_Beast_Mastery',
+      'Marksmanship PR_Hunter_Marksmanship',
+      'Survival PR_Hunter_Survival'
+    ],
+    'Mage' => [
+      'Arcane PR_Mage_Arcane',
+      'Fire PR_Mage_Fire',
+      'Frost PR_Mage_Frost'
+    ],
+    'Monk' => [
+      'Brewmaster PR_Monk_Brewmaster',
+      'Windwalker PR_Monk_Windwalker'
+    ],
+    'Paladin' => [
+      'Protection PR_Paladin_Protection',
+      'Retribution PR_Paladin_Retribution'
+    ],
+    'Priest' => [
+      'Shadow PR_Priest_Shadow',
+      'Shadow T22_Priest_Shadow'
+    ],
+    'Rogue' => [
+      'Assassination PR_Rogue_Assassination',
+      # 'Assassination PR_Rogue_Assassination_Exsg',
+      'Outlaw PR_Rogue_Outlaw',
+      # 'Outlaw PR_Rogue_Outlaw_SnD',
+      'Subtlety PR_Rogue_Subtlety'
+    ],
+    'Shaman' => [
+      'Elemental PR_Shaman_Elemental',
+      'Enhancement PR_Shaman_Enhancement',
+      'Enhancement T22_Shaman_Enhancement'
+    ],
+    'Warlock' => [
+      'Affliction PR_Warlock_Affliction',
+      'Demonology PR_Warlock_Demonology',
+      'Destruction PR_Warlock_Destruction'
+    ],
+    'Warrior' => [
+      'Arms PR_Warrior_Arms',
+      'Fury PR_Warrior_Fury'
+    ]
+  },
   'Combinator' => {
     'Death-Knight' => [
       'T21_Death_Knight_Frost Death_Knight_Frost T21 xx0x0xx',
@@ -87,18 +146,20 @@ toRun = {
       'PR_Paladin_Retribution'
     ],
     'Priest' => [
-      'PR_Priest_Shadow'
+      'PR_Priest_Shadow',
+      'T22_Priest_Shadow'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination',
-      'PR_Rogue_Assassination_Exsg',
+      # 'PR_Rogue_Assassination_Exsg',
       'PR_Rogue_Outlaw',
-      'PR_Rogue_Outlaw_SnD',
+      # 'PR_Rogue_Outlaw_SnD',
       'PR_Rogue_Subtlety'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
-      'PR_Shaman_Enhancement'
+      'PR_Shaman_Enhancement',
+      'T22_Shaman_Enhancement'
     ],
     'Warlock' => [
       'PR_Warlock_Affliction',
@@ -144,18 +205,20 @@ toRun = {
       'PR_Paladin_Retribution Strength'
     ],
     'Priest' => [
-      'PR_Priest_Shadow Intelligence'
+      'PR_Priest_Shadow Intelligence',
+      'T22_Priest_Shadow Intelligence'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination Agility',
-      'PR_Rogue_Assassination_Exsg Agility',
+      # 'PR_Rogue_Assassination_Exsg Agility',
       'PR_Rogue_Outlaw Agility',
-      'PR_Rogue_Outlaw_SnD Agility',
+      # 'PR_Rogue_Outlaw_SnD Agility',
       'PR_Rogue_Subtlety Agility'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
-      'PR_Shaman_Enhancement Agility'
+      'PR_Shaman_Enhancement Agility',
+      'T22_Shaman_Enhancement Agility'
     ],
     'Warlock' => [
       'PR_Warlock_Affliction Intelligence',
