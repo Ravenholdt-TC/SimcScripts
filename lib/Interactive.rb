@@ -18,16 +18,23 @@ module Interactive
 
   # Offers all templates matching prefix_*.<ext> in the profiles folder
   # Returns the * part
-  def self.SelectTemplate(prefix, checkArgs=true)
-    puts "Please choose the #{prefix} template you want to simulate:"
+  def self.SelectTemplate(prefixes, checkArgs=true)
+    puts "Please choose what do you want to simulate:"
     profiles = {}
     index = 1
-    underscore = prefix.end_with?('/') ? '' : '_'
-    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*").each do |file|
-      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
-        profiles[index] = profile[1]
-        puts "#{index}: #{profile[1]}"
-        index += 1
+    if prefixes.is_a?(String)
+      prefixes = [prefixes]
+    end
+    prefixes.each do |prefix|
+      underscore = prefix.end_with?('/') ? '' : '_'
+      files = Dir.glob("#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*")
+      files.sort!
+      files.each do |file|
+        if profile = file.match(/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
+          profiles[index] = profile[1]
+          puts "#{index}: #{profile[1]}"
+          index += 1
+        end
       end
     end
     print 'Profile: '
@@ -49,17 +56,24 @@ module Interactive
 
   # Offers all templates matching prefix_*.<ext> in the profiles folder
   # Returns the selecitons as array, multiple selections allowed via [a,b] (no spaces)
-  def self.SelectTemplateMulti(prefix, checkArgs=true)
-    puts "Please choose the #{prefix} templates you want to simulate:"
+  def self.SelectTemplateMulti(prefixes, checkArgs=true)
+    puts "Please choose what do you want to simulate:"
     puts '(You can either enter one, or multiple using the format [a,b] without spaces.)'
     profiles = {}
     index = 1
-    underscore = prefix.end_with?('/') ? '' : '_'
-    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*").each do |file|
-      if profile = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
-        profiles[index] = profile[1]
-        puts "#{index}: #{profile[1]}"
-        index += 1
+    if prefixes.is_a?(String)
+      prefixes = [prefixes]
+    end
+    prefixes.each do |prefix|
+      underscore = prefix.end_with?('/') ? '' : '_'
+      files = Dir.glob("#{prefix}#{underscore}[_\-+a-zA-Z0-9]*\.*")
+      files.sort!
+      files.each do |file|
+        if profile = file.match(/#{prefix}#{underscore}([_\-+a-zA-Z0-9]*)\.\w+/)
+          profiles[index] = profile[1]
+          puts "#{index}: #{profile[1]}"
+          index += 1
+        end
       end
     end
     print 'Profile: '
@@ -90,7 +104,9 @@ module Interactive
     puts "Please choose a #{prefix} template folder:"
     folders = {}
     index = 1
-    Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}/*/").each do |file|
+    files = Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}/*/")
+    files.sort!
+    files.each do |file|
       if folder = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}\/(.*)\//)
         folders[index] = folder[1]
         puts "#{index}: #{folder[1]}"
