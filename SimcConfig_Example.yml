@@ -35,13 +35,13 @@ ArchivesFolder: archives
 
 # Orders (scripts, fightstyles) to run
 RunOrders: [
-  [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
-  [["RaceSimulation", "TrinketSimulation"], ["2T", "3T", "1TA"]],
+  [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
+  [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation"], ["2T", "3T", "1TA"]],
   [["Combinator"], ["2T", "3T", "1TA"]],
 ]
 
 # Classes to run
-RunClasses: ["DeathKnight", "DemonHunter", "Druid", "Hunter", "Mage", "Monk", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
+RunClasses: ["Death-Knight", "Demon-Hunter", "Druid", "Hunter", "Mage", "Monk", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
 
 ###
 ### Hero Websites (json output only)
