@@ -2,11 +2,11 @@ require_relative 'lib/SimcConfig'
 
 toRun = {
   'Combinator' => {
-    'DeathKnight' => [
+    'Death-Knight' => [
       'T21_Death_Knight_Frost Death_Knight_Frost T21 xx0x0xx',
       'T21_Death_Knight_Unholy Death_Knight_Unholy T21 xx0x0xx'
     ],
-    'DemonHunter' => [
+    'Demon-Hunter' => [
       'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0x2x'
     ],
     'Druid' => [
@@ -54,115 +54,117 @@ toRun = {
     ]
   },
   'RaceSimulation' => {
-    'DeathKnight' => [
-      'T21_Death_Knight_Blood',
-      'T21_Death_Knight_Frost',
-      'T21_Death_Knight_Unholy'
+    'Death-Knight' => [
+      'PR_Death_Knight_Blood',
+      'PR_Death_Knight_Frost',
+      'PR_Death_Knight_Unholy'
     ],
-    'DemonHunter' => [
-      'T21_Demon_Hunter_Havoc'
+    'Demon-Hunter' => [
+      'PR_Demon_Hunter_Havoc',
+      'PR_Demon_Hunter_Vengeance'
     ],
     'Druid' => [
-      'T21_Druid_Balance',
-      'T21_Druid_Feral',
-      # 'T21_Druid_Guardian'
+      'PR_Druid_Balance',
+      'PR_Druid_Feral',
+      'PR_Druid_Guardian'
     ],
     'Hunter' => [
-      'T21_Hunter_Beast_Mastery',
-      'T21_Hunter_Marksmanship',
-      'T21_Hunter_Survival'
+      'PR_Hunter_Beast_Mastery',
+      'PR_Hunter_Marksmanship',
+      'PR_Hunter_Survival'
     ],
     'Mage' => [
-      'T21_Mage_Arcane',
-      'T21_Mage_Fire',
-      'T21_Mage_Frost'
+      'PR_Mage_Arcane',
+      'PR_Mage_Fire',
+      'PR_Mage_Frost'
     ],
     'Monk' => [
-      'T21_Monk_Brewmaster',
-      'T21_Monk_Windwalker'
+      'PR_Monk_Brewmaster',
+      'PR_Monk_Windwalker'
     ],
     'Paladin' => [
-      'T21_Paladin_Protection',
-      'T21_Paladin_Retribution'
+      'PR_Paladin_Protection',
+      'PR_Paladin_Retribution'
     ],
     'Priest' => [
-      'T21_Priest_Shadow'
+      'PR_Priest_Shadow'
     ],
     'Rogue' => [
-      'T21_Rogue_Assassination',
-      'T21_Rogue_Assassination_Exsg',
-      'T21_Rogue_Outlaw',
-      'T21_Rogue_Outlaw_SnD',
-      'T21_Rogue_Subtlety'
+      'PR_Rogue_Assassination',
+      'PR_Rogue_Assassination_Exsg',
+      'PR_Rogue_Outlaw',
+      'PR_Rogue_Outlaw_SnD',
+      'PR_Rogue_Subtlety'
     ],
     'Shaman' => [
-      'T21_Shaman_Elemental',
-      'T21_Shaman_Enhancement'
+      'PR_Shaman_Elemental',
+      'PR_Shaman_Enhancement'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction',
-      'T21_Warlock_Demonology',
-      'T21_Warlock_Destruction'
+      'PR_Warlock_Affliction',
+      'PR_Warlock_Demonology',
+      'PR_Warlock_Destruction'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms',
-      'T21_Warrior_Fury'
+      'PR_Warrior_Arms',
+      'PR_Warrior_Fury'
     ]
   },
   'TrinketSimulation' => {
-    'DeathKnight' => [
-      'T21_Death_Knight_Blood Melee_Strength',
-      'T21_Death_Knight_Frost Melee_Strength',
-      'T21_Death_Knight_Unholy Melee_Strength'
+    'Death-Knight' => [
+      'PR_Death_Knight_Blood Strength',
+      'PR_Death_Knight_Frost Strength',
+      'PR_Death_Knight_Unholy Strength'
     ],
-    'DemonHunter' => [
-      'T21_Demon_Hunter_Havoc Melee_Agility'
+    'Demon-Hunter' => [
+      'PR_Demon_Hunter_Havoc Agility',
+      'PR_Demon_Hunter_Vengeance Agility'
     ],
     'Druid' => [
-      'T21_Druid_Balance Ranged_Intelligence',
-      'T21_Druid_Feral Melee_Agility',
-      # 'T21_Druid_Guardian Melee_Agility'
+      'PR_Druid_Balance Intelligence',
+      'PR_Druid_Feral Agility',
+      'PR_Druid_Guardian Agility'
     ],
     'Hunter' => [
-      'T21_Hunter_Beast_Mastery Ranged_Agility',
-      'T21_Hunter_Marksmanship Ranged_Agility',
-      'T21_Hunter_Survival Melee_Agility'
+      'PR_Hunter_Beast_Mastery Agility',
+      'PR_Hunter_Marksmanship Agility',
+      'PR_Hunter_Survival Agility'
     ],
     'Mage' => [
-      'T21_Mage_Arcane Ranged_Intelligence',
-      'T21_Mage_Fire Ranged_Intelligence',
-      'T21_Mage_Frost Ranged_Intelligence'
+      'PR_Mage_Arcane Intelligence',
+      'PR_Mage_Fire Intelligence',
+      'PR_Mage_Frost Intelligence'
     ],
     'Monk' => [
-      'T21_Monk_Brewmaster Melee_Agility',
-      'T21_Monk_Windwalker Melee_Agility'
+      'PR_Monk_Brewmaster Agility',
+      'PR_Monk_Windwalker Agility'
     ],
     'Paladin' => [
-      'T21_Paladin_Protection Melee_Strength',
-      'T21_Paladin_Retribution Melee_Strength'
+      'PR_Paladin_Protection Strength',
+      'PR_Paladin_Retribution Strength'
     ],
     'Priest' => [
-      'T21_Priest_Shadow Ranged_Intelligence'
+      'PR_Priest_Shadow Intelligence'
     ],
     'Rogue' => [
-      'T21_Rogue_Assassination Melee_Agility',
-      'T21_Rogue_Assassination_Exsg Melee_Agility',
-      'T21_Rogue_Outlaw Melee_Agility',
-      'T21_Rogue_Outlaw_SnD Melee_Agility',
-      'T21_Rogue_Subtlety Melee_Agility'
+      'PR_Rogue_Assassination Agility',
+      'PR_Rogue_Assassination_Exsg Agility',
+      'PR_Rogue_Outlaw Agility',
+      'PR_Rogue_Outlaw_SnD Agility',
+      'PR_Rogue_Subtlety Agility'
     ],
     'Shaman' => [
-      'T21_Shaman_Elemental Ranged_Intelligence',
-      'T21_Shaman_Enhancement Melee_Agility'
+      'PR_Shaman_Elemental Intelligence',
+      'PR_Shaman_Enhancement Agility'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction Ranged_Intelligence',
-      'T21_Warlock_Demonology Ranged_Intelligence',
-      'T21_Warlock_Destruction Ranged_Intelligence'
+      'PR_Warlock_Affliction Intelligence',
+      'PR_Warlock_Demonology Intelligence',
+      'PR_Warlock_Destruction Intelligence'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms Melee_Strength',
-      'T21_Warrior_Fury Melee_Strength'
+      'PR_Warrior_Arms Strength',
+      'PR_Warrior_Fury Strength'
     ]
   }
 }
