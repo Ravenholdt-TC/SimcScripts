@@ -98,3 +98,43 @@ ClassAndSpecIds = {
     },
   },
 }
+
+# Map race name and simc string
+RaceInputMap = {
+  'Night Elf' => 'night_elf',
+  'Blood Elf' => 'blood_elf',
+  'Dwarf' => 'dwarf',
+  'Gnome' => 'gnome',
+  'Goblin' => 'goblin',
+  'Human' => 'human',
+  'Orc' => 'orc',
+  'Pandaren' => 'pandaren',
+  'Troll' => 'troll',
+  'Undead' => 'undead',
+  'Worgen' => 'worgen',
+  'Tauren' => 'tauren',
+  'Draenei' => 'draenei',
+  'Void Elf' => 'void_elf',
+  'Highmountain Tauren' => 'highmountain_tauren',
+  'Lightforged Draenei' => 'lightforged_draenei',
+  'Nightborne' => 'nightborne',
+###### BfA
+#'Zandalari Troll' => 'zandalari_troll',
+#'Dark Iron Dwarf' => 'dark_iron_dwarf'
+}
+
+# Map class folder and race name
+ClassRaceMap = {
+  'Death-Knight' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin'],
+  'Demon-Hunter' => ['Night Elf', 'Blood Elf'],
+  'Druid' => ['Night Elf', 'Worgen', 'Tauren', 'Troll', 'Highmountain Tauren'],
+  'Hunter' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne'],
+  'Mage' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Monk' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Highmountain Tauren', 'Nightborne'],
+  'Paladin' => ['Human', 'Dwarf', 'Draenei', 'Lightforged Draenei', 'Tauren', 'Blood Elf'],
+  'Priest' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Rogue' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Worgen', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Shaman' => ['Dwarf', 'Draenei', 'Pandaren', 'Orc', 'Tauren', 'Troll', 'Goblin', 'Highmountain Tauren'],
+  'Warlock' => ['Human', 'Dwarf', 'Gnome', 'Worgen', 'Void Elf', 'Orc', 'Undead', 'Troll', 'Blood Elf', 'Goblin', 'Nightborne'],
+  'Warrior' => ['Human', 'Dwarf', 'Night Elf', 'Gnome', 'Draenei', 'Worgen', 'Lightforged Draenei', 'Void Elf', 'Pandaren', 'Orc', 'Undead', 'Tauren', 'Troll', 'Blood Elf', 'Goblin', 'Highmountain Tauren', 'Nightborne'],
+}
