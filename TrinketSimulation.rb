@@ -13,7 +13,7 @@ Logging.Initialize("TrinketSimulation")
 fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Templates')
 template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
-trinketListProfiles = Interactive.SelectTemplateMulti("#{SimcConfig['ProfilesFolder']}/TrinketLists/")
+trinketListProfiles = Interactive.SelectTemplateMulti('TrinketLists/')
 
 # Log all interactively set settings
 puts
