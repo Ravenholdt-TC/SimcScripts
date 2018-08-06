@@ -5,7 +5,8 @@ toRun = {
     'Death-Knight' => [
       'Blood PR_Death_Knight_Blood',
       'Frost PR_Death_Knight_Frost',
-      'Unholy PR_Death_Knight_Unholy'
+      'Unholy PR_Death_Knight_Unholy',
+      'Blood T22_Death_Knight_Blood'
     ],
     'Demon-Hunter' => [
       'Havoc PR_Demon_Hunter_Havoc',
@@ -116,7 +117,8 @@ toRun = {
     'Death-Knight' => [
       'PR_Death_Knight_Blood',
       'PR_Death_Knight_Frost',
-      'PR_Death_Knight_Unholy'
+      'PR_Death_Knight_Unholy',
+      'T22_Death_Knight_Blood'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
@@ -175,7 +177,8 @@ toRun = {
     'Death-Knight' => [
       'PR_Death_Knight_Blood Strength',
       'PR_Death_Knight_Frost Strength',
-      'PR_Death_Knight_Unholy Strength'
+      'PR_Death_Knight_Unholy Strength',
+      'T22_Death_Knight_Blood Strength'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Agility',
