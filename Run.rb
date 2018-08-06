@@ -41,10 +41,15 @@ toRun = {
     ],
     'Rogue' => [
       'Assassination PR_Rogue_Assassination',
-      # 'Assassination PR_Rogue_Assassination_Exsg',
+      'Assassination PR_Rogue_Assassination_Exsg',
       'Outlaw PR_Rogue_Outlaw',
-      # 'Outlaw PR_Rogue_Outlaw_SnD',
-      'Subtlety PR_Rogue_Subtlety'
+      'Outlaw PR_Rogue_Outlaw_SnD',
+      'Subtlety PR_Rogue_Subtlety',
+      'Assassination T22_Rogue_Assassination',
+      'Assassination T22_Rogue_Assassination_Exsg',
+      'Outlaw T22_Rogue_Outlaw',
+      'Outlaw T22_Rogue_Outlaw_SnD',
+      'Subtlety T22_Rogue_Subtlety'
     ],
     'Shaman' => [
       'Elemental PR_Shaman_Elemental',
@@ -153,10 +158,15 @@ toRun = {
     ],
     'Rogue' => [
       'PR_Rogue_Assassination',
-      # 'PR_Rogue_Assassination_Exsg',
+      'PR_Rogue_Assassination_Exsg',
       'PR_Rogue_Outlaw',
-      # 'PR_Rogue_Outlaw_SnD',
-      'PR_Rogue_Subtlety'
+      'PR_Rogue_Outlaw_SnD',
+      'PR_Rogue_Subtlety',
+      'T22_Rogue_Assassination',
+      'T22_Rogue_Assassination_Exsg',
+      'T22_Rogue_Outlaw',
+      'T22_Rogue_Outlaw_SnD',
+      'T22_Rogue_Subtlety'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
@@ -213,10 +223,15 @@ toRun = {
     ],
     'Rogue' => [
       'PR_Rogue_Assassination Agility',
-      # 'PR_Rogue_Assassination_Exsg Agility',
+      'PR_Rogue_Assassination_Exsg Agility',
       'PR_Rogue_Outlaw Agility',
-      # 'PR_Rogue_Outlaw_SnD Agility',
-      'PR_Rogue_Subtlety Agility'
+      'PR_Rogue_Outlaw_SnD Agility',
+      'PR_Rogue_Subtlety Agility',
+      'T22_Rogue_Assassination Agility',
+      'T22_Rogue_Assassination_Exsg Agility',
+      'T22_Rogue_Outlaw Agility',
+      'T22_Rogue_Outlaw_SnD Agility',
+      'T22_Rogue_Subtlety Agility'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
