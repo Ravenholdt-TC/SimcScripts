@@ -13,7 +13,7 @@ Logging.Initialize("Combinator")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Combinator')
-profile, profileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/Combinator_")
+profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ''], classfolder)
 #Read spec from profile
 spec = ''
 File.open(profileFile, 'r') do |pfile|
@@ -43,22 +43,30 @@ gear = JSONParser.ReadFile(gearProfileFile)
 setups = JSONParser.ReadFile(setupsProfileFile)
 
 # Duplicate two-slot items
-gear['legendaries'][spec]['finger2'] = gear['legendaries'][spec]['finger1']
-gear['legendaries'][spec]['trinket2'] = gear['legendaries'][spec]['trinket1']
+gear['specials'][spec]['finger2'] = gear['specials'][spec]['finger1']
+gear['specials'][spec]['trinket2'] = gear['specials'][spec]['trinket1']
+
+# Duplicate Azerite as "three slots"
+gear['specials'][spec]['azerite2'] = gear['specials'][spec]['azerite']
+gear['specials'][spec]['azerite3'] = gear['specials'][spec]['azerite']
+
+hasAnyAzerite = false
 
 # Build gear combinations
 gearCombinations = {}
 setups['setups'].each do |setup|
-  setup['legendaries'].each do |numLegos|
+  setup['specials'].each do |numSpecials|
     # Iterate over legendary slot combinations
-    gear['legendaries'][spec].keys.combination(numLegos).to_a.each do |legoSlots|
+    gear['specials'][spec].keys.combination(numSpecials).to_a.each do |specialSlots|
       catch (:invalidCombination) do
-        # Always use first slot for dual slot items before considering the second
-        throw :invalidCombination if legoSlots.include?('finger2') && !legoSlots.include?('finger1')
-        throw :invalidCombination if legoSlots.include?('trinket2') && !legoSlots.include?('trinket1')
+        # Always use first slot for multi slot specials before considering the next ones
+        throw :invalidCombination if specialSlots.include?('finger2') && !specialSlots.include?('finger1')
+        throw :invalidCombination if specialSlots.include?('trinket2') && !specialSlots.include?('trinket1')
+        throw :invalidCombination if specialSlots.include?('azerite2') && !specialSlots.include?('azerite')
+        throw :invalidCombination if specialSlots.include?('azerite3') && (!specialSlots.include?('azerite2') || !specialSlots.include?('azerite'))
 
         # Create matching set combination
-        usedSlots = [] + legoSlots
+        usedSlots = [] + specialSlots
         setStrings = []
         setup['sets'].each do |set|
           availableSlots = gear['sets'][set['set']].keys - usedSlots
@@ -70,26 +78,36 @@ setups['setups'].each do |setup|
         end
         setProfileName = setup['sets'].collect { |set| set['pieces'] > 0 ? "#{set['set']}(#{set['pieces']})" : "#{set['set']}" }.join('+')
 
-        # Iterate over legendary combinations for the current lego slot combination
-        if legoSlots.empty?
+        # Iterate over special combinations for the current special slot combination
+        if specialSlots.empty?
           gearCombinations["#{setProfileName}_None"] = setStrings
           next
         end
-        legoCombinations = legoSlots.collect { |legoSlot| gear['legendaries'][spec][legoSlot].keys }
-        legoCombinations = legoCombinations.reduce(&:product) if legoSlots.length > 1
-        legoCombinations = legoCombinations.flatten.collect { |x| [x] } if legoSlots.length == 1
-        legoCombinations = legoCombinations.collect(&:flatten).collect(&:uniq).uniq { |x| x.sort }.select { |x| x.length == numLegos }
-        legoCombinations.each do |legoCombination|
-          legoProfileName = legoCombination.join('_')
-          legoStrings = []
-          legoCombination.each_with_index do |itemName, idx|
-            legoOverrides = ProfileHelper.GetLegendaryOverrides("Combinator/#{classfolder}/LegendaryOverrides/#{profile}", itemName)
-            legoOverrides.each do |legoOverride|
-              legoStrings.push(legoOverride)
+        specialCombinations = specialSlots.collect { |specialSlot| gear['specials'][spec][specialSlot].keys }
+        specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1
+        specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1
+        specialCombinations = specialCombinations.collect(&:flatten).collect(&:uniq).uniq { |x| x.sort }.select { |x| x.length == numSpecials }
+        specialCombinations.each do |specialCombination|
+          specialProfileName = specialCombination.join('_')
+          specialStrings = []
+          specialAzeritePowers = []
+          specialCombination.each_with_index do |itemName, idx|
+            specialOverrides = ProfileHelper.GetSpecialOverrides("Combinator/#{classfolder}/SpecialOverrides/#{profile}", itemName)
+            specialOverrides.each do |specialOverride|
+              specialStrings.push(specialOverride)
             end
-            legoStrings.push("#{legoSlots[idx]}=#{gear['legendaries'][spec][legoSlots[idx]][itemName]}")
+            # Special treatment for handling Azerite overrides as specials
+            if ['azerite', 'azerite2', 'azerite3'].include? specialSlots[idx]
+              specialAzeritePowers.push(gear['specials'][spec][specialSlots[idx]][itemName])
+            else
+              specialStrings.push("#{specialSlots[idx]}=#{gear['specials'][spec][specialSlots[idx]][itemName]}")
+            end
           end
-          gearCombinations["#{setProfileName}_#{legoProfileName}"] = legoStrings + setStrings
+          unless specialAzeritePowers.empty?
+            hasAnyAzerite = true
+            specialStrings.push("azerite_override=#{specialAzeritePowers.join('/')}")
+          end
+          gearCombinations["#{setProfileName}_#{specialProfileName}"] = specialStrings + setStrings
         end
       end
     end
@@ -98,6 +116,10 @@ end
 
 # Combine gear with talents and write simc input to file
 simcInput = []
+simcInput.push 'name=Template'
+simcInput.push 'disable_azerite=items' if hasAnyAzerite
+simcInput.push ''
+
 Logging.LogScriptInfo "Generating combinations..."
 talentdata[0].each do |t1|
   talentdata[1].each do |t2|
@@ -111,7 +133,7 @@ talentdata[0].each do |t1|
               gearCombinations.each do |gearName, strings|
                 name = "#{talentInput}_#{gearName}"
                 prefix = "profileset.\"#{name}\"+="
-                simcInput.push(prefix + "name=#{name}")
+                simcInput.push(prefix + "name=\"#{name}\"")
                 simcInput.push(prefix + "talents=#{talentInput}")
                 talentOverrides.each do |talentOverride|
                   simcInput.push(prefix + talentOverride)
@@ -167,6 +189,7 @@ sims.each do |name, value|
     actor.push(legos)
   else
     # We should not get here, but leave it as failsafe
+    Logging.LogScriptError "Matching result name failed: #{name}"
     actor.push(name)
   end
   actor.push(value) # DPS

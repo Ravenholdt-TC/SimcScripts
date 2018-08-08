@@ -17,11 +17,13 @@ module ProfileHelper
     return []
   end
 
-  # Fetch an override profile from the given prefix with the file's legendary matching
-  def self.GetLegendaryOverrides(prefix, legendary)
+  # Fetch an override profile from the given prefix with the file's special item matching
+  # Convert spaces to dashes
+  def self.GetSpecialOverrides(prefix, special)
+    special = special.gsub(' ', '-')
     Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}_*\.simc").each do |file|
-      if data = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}_([a-zA-Z0-9]*)\.simc/)
-        return GetAsOverrideLines(file) if data[1] == legendary
+      if data = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}_([-a-zA-Z0-9]*)\.simc/)
+        return GetAsOverrideLines(file) if data[1] == special
       end
     end
     return []
