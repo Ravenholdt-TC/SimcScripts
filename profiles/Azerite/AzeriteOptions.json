@@ -11,10 +11,14 @@
         0,
         1
     ],
+    // Unknown traits that crash sim
     "blacklistedPowerIds": [
-        1, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
-        8, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
-        6 // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
+        1,
+        8,
+        6,
+        2,
+        90,
+        7
     ],
     "pairedPowers": [
         [486, 492], // Glory in Battle H + Liberators Might A
