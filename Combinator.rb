@@ -15,13 +15,10 @@ fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ''], classfolder)
 #Read spec from profile
-spec = ''
-File.open(profileFile, 'r') do |pfile|
-  while line = pfile.gets
-    if line.start_with?('spec=')
-      spec = line.chomp.split('=')[1]
-    end
-  end
+spec = ProfileHelper.GetSimcSpecFromTemplate(profileFile)
+unless spec
+  Logging.LogScriptError "No spec= string found in profile!"
+  exit
 end
 gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear_")
 setupsProfile, setupsProfileFile = Interactive.SelectTemplate('Combinator/CombinatorSetups_')

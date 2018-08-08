@@ -5,6 +5,7 @@ require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
 require_relative 'lib/Logging'
+require_relative 'lib/ProfileHelper'
 require_relative 'lib/ReportWriter'
 require_relative 'lib/SimcConfig'
 require_relative 'lib/SimcHelper'
@@ -13,13 +14,19 @@ Logging.Initialize("AzeriteSimulation")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
 classfolder = Interactive.SelectSubfolder('Templates')
-spec = Interactive.SelectFromArray('Specialization', ClassAndSpecIds[classfolder][:specs].keys)
 template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
 
 powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
 powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")
 
 classId = ClassAndSpecIds[classfolder][:class_id]
+
+#Read spec from profile
+spec = ProfileHelper.GetSimcSpecFromTemplate(templateFile)
+unless spec
+  Logging.LogScriptError "No spec= string found in profile!"
+  exit
+end
 specId = ClassAndSpecIds[classfolder][:specs][spec]
 
 # Log all interactively set settings
@@ -37,13 +44,17 @@ simcInput.push 'disable_azerite=items'
 simcInput.push ''
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
-headItemString = ''
+headItemString = nil
 File.open(templateFile, 'r') do |tfile|
   while line = tfile.gets
     if line.start_with?('head=')
       headItemString = line.chomp
     end
   end
+end
+unless headItemString
+  Logging.LogScriptError "No head= string found in profile!"
+  exit
 end
 
 # Create simc inputs

@@ -4,97 +4,97 @@ ClassAndSpecIds = {
   'Warrior' => {
     class_id: 1,
     specs: {
-      'Arms' => 71,
-      'Fury' => 72,
-      'Protection' => 73,
+      'arms' => 71,
+      'fury' => 72,
+      'protection' => 73,
     },
   },
   'Paladin' => {
     class_id: 2,
     specs: {
-      'Holy' => 65,
-      'Protection' => 66,
-      'Retribution' => 70,
+      'holy' => 65,
+      'protection' => 66,
+      'retribution' => 70,
     },
   },
   'Hunter' => {
     class_id: 3,
     specs: {
-      'Beast-Mastery' => 253,
-      'Marksmanship' => 254,
-      'Survival' => 255,
+      'beast_mastery' => 253,
+      'marksmanship' => 254,
+      'survival' => 255,
     },
   },
   'Rogue' => {
     class_id: 4,
     specs: {
-      'Assassination' => 259,
-      'Outlaw' => 260,
-      'Subtlety' => 261,
+      'assassination' => 259,
+      'outlaw' => 260,
+      'subtlety' => 261,
     },
   },
   'Priest' => {
     class_id: 5,
     specs: {
-      'Discipline' => 256,
-      'Holy' => 257,
-      'Shadow' => 258,
+      'discipline' => 256,
+      'holy' => 257,
+      'shadow' => 258,
     },
   },
   'Death-Knight' => {
     class_id: 6,
     specs: {
-      'Blood' => 250,
-      'Frost' => 251,
-      'Unholy' => 252,
+      'blood' => 250,
+      'frost' => 251,
+      'unholy' => 252,
     },
   },
   'Shaman' => {
     class_id: 7,
     specs: {
-      'Elemental' => 262,
-      'Enhancement' => 263,
-      'Restoration' => 264,
+      'elemental' => 262,
+      'enhancement' => 263,
+      'restoration' => 264,
     },
   },
   'Mage' => {
     class_id: 8,
     specs: {
-      'Arcane' => 62,
-      'Fire' => 63,
-      'Frost' => 64,
+      'arcane' => 62,
+      'fire' => 63,
+      'frost' => 64,
     },
   },
   'Warlock' => {
     class_id: 9,
     specs: {
-      'Affliction' => 265,
-      'Demonology' => 266,
-      'Destruction' => 267,
+      'affliction' => 265,
+      'demonology' => 266,
+      'destruction' => 267,
     },
   },
   'Monk' => {
     class_id: 10,
     specs: {
-      'Brewmaster' => 268,
-      'Windwalker' => 269,
-      'Mistweaver' => 270,
+      'brewmaster' => 268,
+      'windwalker' => 269,
+      'mistweaver' => 270,
     },
   },
   'Druid' => {
     class_id: 11,
     specs: {
-      'Balance' => 102,
-      'Feral' => 103,
-      'Guardian' => 104,
+      'balance' => 102,
+      'feral' => 103,
+      'guardian' => 104,
+      'restoration' => 105,
     },
-    'Restoration' => 105,
   },
   'Demon-Hunter' => {
     class_id: 12,
     specs: {
-      'Havoc' => 577,
-      'Vengeance' => 581,
+      'havoc' => 577,
+      'vengeance' => 581,
     },
   },
 }

@@ -39,4 +39,17 @@ module ProfileHelper
     end
     return overrideLines
   end
+
+  # Fetch the sim spec string from a profile
+  def self.GetSimcSpecFromTemplate(file)
+    spec = nil
+    File.open(file, 'r') do |pfile|
+      while line = pfile.gets
+        if line.start_with?('spec=')
+          spec = line.chomp.split('=')[1]
+        end
+      end
+    end
+    return spec
+  end
 end
