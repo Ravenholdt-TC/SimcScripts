@@ -18,7 +18,7 @@ bundle install
 In order to work with the scripts in this repository, copy the file `SimcConfig_Example.yml`
 to `SimcConfig.yml` and change the parameters to match your setup and needs.
 
-General simulation settings are set in `SimcGlobalConfig.simc`.
+General simulation settings are set in `conf/SimcGlobalConfig.simc`.
 
 If you want to access SimC default profiles, you can use the variable `$(simc_profiles_path)`
 in your simc profiles.
@@ -26,9 +26,9 @@ in your simc profiles.
 ## TrinketSimulation
 
 Usage:
-1. Create a simulation profile file in the `profiles/Templates` folder. This file defines the
+1. Create a simulation profile file in your `profiles/Templates` class folder. This file defines the
    base character to simulate.
-2. (Optional) Create a custom trinket list file called `TrinketList_<NAME>.json` in the profiles
+2. (Optional) Create a custom trinket list file in the `profiles/TrinketLists`
    folder. This file defines all trinkets to simulate. (See `TrinketList_Melee_Agility.json` for
    an example.)
 3. Run `TrinketSimulation.rb`. It will ask you to select the profiles.
@@ -38,7 +38,21 @@ Usage:
 The result is a CSV file containing the DPS increases for each Trinket and Item Level
 compared to the Template profile.
 
-Special Trinket simulation settings can be set in `SimcTrinketConfig.simc`.
+Special Trinket simulation settings can be set in `conf/SimcTrinketConfig.simc`.
+
+## AzeriteSimulation
+
+Usage:
+1. Create a simulation profile file in your `profiles/Templates` class folder. This file defines the
+   base character to simulate.
+2. Run `AzeriteSimulation.rb`. It will ask you to select the profiles.
+3. Wait for the simulation to run until it says it's done.
+4. The result will be two CSV files in the `reports` folder.
+
+One file contains the DPS increases for each Trait and Item Level compared to the Template profile.
+The other one has the results for multiple stacks of the traits.
+
+Special Azerite simulation settings can be set in `conf/SimcAzeriteConfig.simc`.
 
 ## RaceSimulation
 
@@ -49,7 +63,7 @@ Usage:
 3. Wait for the simulation to run until it says it's done.
 4. The resulting CSV file will be in the `reports` folder.
 
-Special Race simulation settings can be set in `SimcRaceConfig.simc`.
+Special Race simulation settings can be set in `conf/SimcRaceConfig.simc`.
 
 ## Combinator
 
@@ -57,19 +71,19 @@ This script will run a template for whatever talent and gear combinations you wo
 investigate. It is an interactive script prompting for any input required.
 
 All you have to do is create a `Combinator_<PROFILENAME>.simc` file in a class folder in
-`profiles/Combinator` with the baseline profile called "Template".
+`profiles/Combinator`. You can also use your classes folder in `profiles/Templates`.
 
 You can override baseline gear for certain talents setups by creating another profile in
 a `TalentOverrides` subfolder. That files name has to match the profile name and a talent
-permutation. (e.g. `<NAME>_xxx123x`) The same principle applies for legendary overrides.
-Create a `LegendaryOverrides` subfolder and name it same as the profile followed by a
-legendary name from the Gear file. (e.g. `<NAME>_Bracers`)
+permutation. (e.g. `<NAME>_xxx123x`) The same principle applies for special item overrides.
+Create a `SpecialOverrides` subfolder and name it the same as the profile followed by a
+special item name from the Gear file. (e.g. `<NAME>_Bracers`)
 
 Also make sure gear and setup definitions are available. For an example, look at the
 files `CombinatorGear_*.json` and `CombinatorSetups_*.json`. These
 define what gear is available to the class and what setups of those to simulate.
 
-Special Combinator simulation settings can be modified in `SimcCombinatorConfig.simc`.
+Special Combinator simulation settings can be modified in `conf/SimcCombinatorConfig.simc`.
 
 Then, you can run the `Combinator.rb` script.
 
