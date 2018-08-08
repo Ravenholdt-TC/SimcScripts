@@ -12,5 +12,8 @@
         1
     ],
     "blacklistedPowerIds": [
+        1, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
+        8, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
+        6 // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
     ]
 }
