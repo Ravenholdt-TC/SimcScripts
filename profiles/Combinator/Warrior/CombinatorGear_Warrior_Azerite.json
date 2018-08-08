@@ -1,0 +1,39 @@
+{
+  "specials": {
+    "arms": {
+      "azerite": {
+        "Crushing Assault": "434:340",
+        "Executioner's Precision": "121:340",
+        "Seismic Wave": "433:340",
+        "Test of Might": "226:340",
+        "Gathering Storm": "174:340",
+        "Lord of War": "435:340"
+      }
+    },
+    "fury": {
+      "azerite": {
+        "Bloodcraze": "176:340",
+        "Reckless Flurry": "438:340",
+        "Infinite Fury": "451:340",
+        "Gathering Storm": "174:340",
+        "Trample the Weak": "119:340",
+        "Pulverizing Blows": "229:340",
+        "Simmering Rage": "437:340"
+      }
+    },
+    "protection": {
+      "azerite": {
+        "Iron Fortress": "441:340",
+        "Bloodsport": "177:340",
+        "Deafening Crash": "118:340",
+        "Brace for Impact": "450:340",
+        "Callous Reprisal": "440:340",
+        "Reinforced Plating": "237:340"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

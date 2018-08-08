@@ -1,0 +1,40 @@
+{
+  "specials": {
+    "brewmaster": {
+      "azerite": {
+        "Boiling Brew": "116:340",
+        "Fit to Burst": "238:340",
+        "Staggering Strikes": "186:340",
+        "Niuzao's Blessing": "382:340",
+        "Elusive Footwork": "384:340",
+        "Training of Niuzao": "383:340"
+      }
+    },
+    "windwalker": {
+      "azerite": {
+        "Iron Fists": "117:340",
+        "Meridian Strikes": "391:340",
+        "Open Palm Strikes": "389:340",
+        "Swift Roundhouse": "388:340",
+        "Sunrise Technique": "184:340",
+        "Pressure Point": "390:340"
+      }
+    },
+    "mistweaver": {
+      "azerite": {
+        "Overflowing Mists": "185:340",
+        "Synergistic Growth": "102:340",
+        "Invigorating Brew": "76:340",
+        "Burst of Life": "385:340",
+        "Uplifted Spirits": "387:340",
+        "Font of Life": "386:340",
+        "Sunrise Technique": "184:340",
+        "Misty Peaks": "248:340"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

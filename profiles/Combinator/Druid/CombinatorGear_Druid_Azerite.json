@@ -1,0 +1,43 @@
+{
+  "specials": {
+    "balance": {
+      "azerite": {
+        "Dawning Sun": "250:340",
+        "Streaking Stars": "122:340",
+        "Sunblaze": "200:340",
+        "Craggy Bark": "251:340",
+        "Power of the Moon": "173:340",
+        "Lunar Shrapnel": "357:340",
+        "Lively Spirit": "364:340",
+        "High Noon": "356:340"
+      }
+    },
+    "feral": {
+      "azerite": {
+        "Shredding Fury": "209:340",
+        "Twisted Claws": "241:340",
+        "Raking Ferocity": "169:340",
+        "Blood Mist": "111:340",
+        "Iron Jaws": "247:340",
+        "Wild Fleshrending": "359:340",
+        "Gushing Lacerations": "358:340",
+        "Masterful Instincts": "171:340"
+      }
+    },
+    "guardian": {
+      "azerite": {
+        "Twisted Claws": "241:340",
+        "Guardian's Wrath": "361:340",
+        "Craggy Bark": "251:340",
+        "Wild Fleshrending": "359:340",
+        "Layered Mane": "112:340",
+        "Masterful Instincts": "171:340",
+        "Gory Regeneration": "360:340"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

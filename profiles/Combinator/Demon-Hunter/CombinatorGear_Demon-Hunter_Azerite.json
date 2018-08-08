@@ -1,0 +1,29 @@
+{
+  "specials": {
+    "havoc": {
+      "azerite": {
+        "Unbound Chaos": "220:340",
+        "Revolving Blades": "126:340",
+        "Infernal Armor": "160:340",
+        "Furious Gaze": "159:340",
+        "Seething Power": "245:340",
+        "Eyes of Rage": "353:340",
+        "Thirsting Blades": "352:340"
+      }
+    },
+    "vengeance": {
+      "azerite": {
+        "Essence Sever": "355:340",
+        "Infernal Armor": "160:340",
+        "Revel in Pain": "134:340",
+        "Gaping Maw": "246:340",
+        "Cycle of Binding": "354:340",
+        "Rigid Carapace": "221:340"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
