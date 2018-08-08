@@ -1,0 +1,38 @@
+{
+    "specials": {
+        "assassination": {
+            "azerite": {
+                "Shrouded Suffocation": "shrouded_suffocation:340",
+                "Twist the Knife": "twist_the_knife:340",
+                "Fan of Blades": "fan_of_blades:340",
+                "Double Dose": "double_dose:340",
+                "Poisoned Wire": "poisoned_wire:340",
+                "Scent of Blood": "scent_of_blood:340",
+                "Sharpened Blades": "sharpened_blades:340"
+            }
+        },
+        "outlaw": {
+            "azerite": {
+                "Ace Up Your Sleeve": "ace_up_your_sleeve:340",
+                "Brigand's Blitz": "brigands_blitz:340",
+                "Deadshot": "deadshot:340",
+                "Paradise Lost": "paradise_lost:340",
+                "Snake Eyes": "snake_eyes:340",
+                "Storm of Steel": "storm_of_steel:340"
+            }
+        },
+        "subtlety": {
+            "azerite": {
+                "The First Dance": "the_first_dance:340",
+                "Inevitability": "inevitability:340",
+                "Blade In The Shadows": "blade_in_the_shadows:340",
+                "Sharpened Blades": "sharpened_blades:340",
+                "Night's Vengeance": "nights_vengeance:340",
+                "Perforate": "perforate:340"
+            }
+        }
+    },
+    "sets": {
+        "None": {}
+    }
+}

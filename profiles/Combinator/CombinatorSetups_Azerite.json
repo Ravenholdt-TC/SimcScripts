@@ -1,0 +1,13 @@
+{
+    "setups": [
+        {
+            "specials": [0, 1, 2, 3],
+            "sets": [
+                {
+                    "set": "None",
+                    "pieces": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "legendaries": {
+    "specials": {
         "feral": {
             "head": {
                 "Head": "behemoth_headdress,id=151801,bonus_id=3630"

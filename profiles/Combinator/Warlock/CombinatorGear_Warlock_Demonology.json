@@ -1,5 +1,5 @@
 {
-    "legendaries": {
+    "specials": {
         "demonology": {
             "neck": {
                 "Prydaz": "prydaz_xavarics_magnum_opus,id=132444,bonus_id=3630,gem_id=151583,enchant=mark_of_the_claw"

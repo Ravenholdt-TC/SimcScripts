@@ -1,5 +1,5 @@
 {
-    "legendaries": {
+    "specials": {
         "unholy": {
             "head": {
                 "Head": "death_march,id=144280,bonus_id=3630"
