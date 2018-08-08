@@ -94,3 +94,8 @@ file can be found in `reports`.
 
 If you run Archiver, it will automatically pack all script output files in generated, logs,
 and reports into a time-stamped .tar.gz file in `archives` and delete the raw files.
+
+## Tools
+
+The tools subfolder is there to host non-simulating scripts like one-shot input generators.
+Even though they are in the tools folder, they should be run from the main folder.
