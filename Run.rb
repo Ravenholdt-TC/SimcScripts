@@ -33,7 +33,8 @@ toRun = {
     ],
     'Paladin' => [
       'Protection PR_Paladin_Protection',
-      'Retribution PR_Paladin_Retribution'
+      'Retribution PR_Paladin_Retribution',
+      'Retribution T22_Paladin_Retribution'
     ],
     'Priest' => [
       'Shadow PR_Priest_Shadow',
@@ -150,7 +151,8 @@ toRun = {
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
-      'PR_Paladin_Retribution'
+      'PR_Paladin_Retribution',
+      'T22_Paladin_Retribution'
     ],
     'Priest' => [
       'PR_Priest_Shadow',
@@ -215,7 +217,8 @@ toRun = {
     ],
     'Paladin' => [
       'PR_Paladin_Protection Strength',
-      'PR_Paladin_Retribution Strength'
+      'PR_Paladin_Retribution Strength',
+      'T22_Paladin_Retribution Strength'
     ],
     'Priest' => [
       'PR_Priest_Shadow Intelligence',
