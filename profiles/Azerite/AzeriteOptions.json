@@ -15,5 +15,13 @@
         1, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
         8, // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
         6 // Unknown trait that crashes sim (looks like leveling set bonus with weird flags)
+    ],
+    "pairedPowers": [
+        [486, 492], // Glory in Battle H + Liberators Might A
+        [487, 493], // Retaliatory Fury H + Last Gift A
+        [488, 494], // Battlefield Focus H + Battlefield Precision A
+        [489, 495], // Sylvanas' Resolve H + Anduin's Determination A
+        [490, 496], // Combined Might H + Stronger Together A
+        [491, 497] // Collective Will H + Stand As One A
     ]
 }

@@ -55,16 +55,26 @@ powerList.each do |power|
   next if powerSettings['blacklistedTiers'].include?(power['tier'])
   next if powerSettings['blacklistedPowerIds'].include?(power['powerId'])
 
+  powerName = power['spellName']
+  pairedSet = powerSettings['pairedPowers'].find { |x| x.include? power['powerId'] }
+  if pairedSet
+    if power['powerId'] == pairedSet.first
+      powerName = powerList.select { |x| pairedSet.include? x['powerId'] }.collect { |x| x['spellName'] }.join(' / ')
+    else
+      next
+    end
+  end
+
   # Item Level Simulations
   powerSettings['itemLevels'].each do |ilvl|
-    simcInputLevels.push "profileset.\"#{power['spellName']}_#{ilvl}\"+=#{headItemString},ilevel=#{ilvl}"
-    simcInputLevels.push "profileset.\"#{power['spellName']}_#{ilvl}\"+=azerite_override=#{power['powerId']}:#{ilvl}"
+    simcInputLevels.push "profileset.\"#{powerName}_#{ilvl}\"+=#{headItemString},ilevel=#{ilvl}"
+    simcInputLevels.push "profileset.\"#{powerName}_#{ilvl}\"+=azerite_override=#{power['powerId']}:#{ilvl}"
   end
 
   # Stack Simulations
   (1..3).each do |stacks|
     powerstring = (["#{power['powerId']}:#{powerSettings['baseItemLevel']}"] * stacks).join('/')
-    simcInputStacks.push "profileset.\"#{power['spellName']}_#{stacks}\"+=azerite_override=#{powerstring}"
+    simcInputStacks.push "profileset.\"#{powerName}_#{stacks}\"+=azerite_override=#{powerstring}"
   end
 end
 
