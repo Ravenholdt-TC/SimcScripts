@@ -69,54 +69,68 @@ toRun = {
   },
   'Combinator' => {
     'Death-Knight' => [
-      'T21_Death_Knight_Frost Death_Knight_Frost T21 xx0x0xx',
-      'T21_Death_Knight_Unholy Death_Knight_Unholy T21 xx0x0xx',
+      'PR_Death_Knight_Blood Death_Knight_Azerite Azerite xx200[23]3',
+      'PR_Death_Knight_Frost Death_Knight_Azerite Azerite xx0x0xx',
+      'PR_Death_Knight_Unholy Death_Knight_Azerite Azerite xx0x0xx',
+      'T22_Death_Knight_Blood Death_Knight_Azerite Azerite xx200[23]3'
     ],
     'Demon-Hunter' => [
-      'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0x2x',
+      'PR_Demon_Hunter_Havoc Demon_Hunter_Azerite Azerite xxx0x2x',
+      'PR_Demon_Hunter_Vengeance Demon_Hunter_Azerite Azerite x[23]x[23]0x0'
     ],
     'Druid' => [
-      'T21_Druid_Balance Druid_Balance T21 x000xxx',
-      'T21_Druid_Feral Druid_Feral T21 x000xxx',
+      'PR_Druid_Balance Druid_Azerite Azerite x000xxx',
+      'PR_Druid_Feral Druid_Azerite Azerite x000xxx',
+      'PR_Druid_Guardian Druid_Azerite Azerite x000x0x'
     ],
     'Hunter' => [
-      'T21_Hunter_Beast_Mastery Hunter_Beast_Mastery T21 xx0x0xx',
-      'T21_Hunter_Marksmanship Hunter_Marksmanship T21 xx0x0xx',
-      'T21_Hunter_Survival Hunter_Survival T21 xx0x0xx',
+      'PR_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx',
+      'PR_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx',
+      'PR_Hunter_Survival Hunter_Azerite Azerite xx0x0xx'
     ],
     'Mage' => [
-      'T21_Mage_Arcane Mage_Arcane T21 x0xx0xx',
-      'T21_Mage_Fire Mage_Fire T21 x0xx0xx',
-      'T21_Mage_Frost Mage_Frost T21 x0xx0xx',
+      'PR_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
+      'PR_Mage_Fire Mage_Azerite Azerite x0xx0xx',
+      'PR_Mage_Frost Mage_Azerite Azerite x0xx0xx'
     ],
     'Monk' => [
-      'T21_Monk_Windwalker Monk T21 x0x00xx',
+      'PR_Monk_Brewmaster Monk_Azerite Azerite x0x00xx',
+      'PR_Monk_Windwalker Monk_Azerite Azerite x0x00xx'
     ],
     'Paladin' => [
-      'T21_Paladin_Retribution Paladin T21 xx0x0[02]x',
+      'PR_Paladin_Protection Paladin_Azerite Azerite xx0[01]00x',
+      'PR_Paladin_Retribution Paladin_Azerite Azerite xx0x0[02]x',
+      'T22_Paladin_Retribution Paladin_Azerite Azerite xx0x0[02]x'
     ],
     'Priest' => [
-      'T21_Priest_Shadow Priest_Shadow T21 x0x0xxx',
+      'PR_Priest_Shadow Priest_Azerite Azerite x0x0xxx',
+      'T22_Priest_Shadow Priest_Azerite Azerite x0x0xxx'
     ],
     'Rogue' => [
-      'T21_Rogue_Assassination-Poison Rogue T21 xxx00[12]x',
-      'T21_Rogue_Assassination-Bleed Rogue_Assassination_Exsg T21 xxx003x',
-      'T21_Rogue_Outlaw-Roll_the_Bones Rogue T21 x3x00[12]x',
-      'T21_Rogue_Outlaw-Slice_and_Dice Rogue_Outlaw_SnD T21 x3x003x',
-      'T21_Rogue_Subtlety Rogue T21 xxx00xx',
+      'PR_Rogue_Assassination-Poison Rogue_Azerite Azerite xxx00[12]x',
+      'PR_Rogue_Assassination-Bleed Rogue_Azerite Azerite xxx003x',
+      'PR_Rogue_Outlaw-Roll_the_Bones Rogue_Azerite Azerite x3x00[12]x',
+      'PR_Rogue_Outlaw-Slice_and_Dice Rogue_Azerite Azerite x3x003x',
+      'PR_Rogue_Subtlety Rogue_Azerite Azerite xxx00xx',
+      'T22_Rogue_Assassination-Poison Rogue_Azerite Azerite xxx00[12]x',
+      'T22_Rogue_Assassination-Bleed Rogue_Azerite Azerite xxx003x',
+      'T22_Rogue_Outlaw-Roll_the_Bones Rogue_Azerite Azerite x3x00[12]x',
+      'T22_Rogue_Outlaw-Slice_and_Dice Rogue_Azerite Azerite x3x003x',
+      'T22_Rogue_Subtlety Rogue_Azerite Azerite xxx00xx'
     ],
     'Shaman' => [
-      'T21_Shaman_Elemental Shaman_Elemental T21 xx0x0xx',
-      'T21_Shaman_Enhancement Shaman_Enhancement T21 xx0x0xx',
+      'PR_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx',
+      'PR_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx',
+      'T22_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx'
     ],
     'Warlock' => [
-      'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
-      'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
-      'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx',
+      'PR_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx',
+      'PR_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx',
+      'PR_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
     ],
     'Warrior' => [
-      'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
-      'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx',
+      'PR_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
+      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx'
     ],
   },
   'RaceSimulation' => {

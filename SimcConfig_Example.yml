@@ -41,7 +41,7 @@ ArchivesFolder: archives
 RunOrders: [
   [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
   [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation"], ["2T", "3T", "1TA"]],
-  [["Combinator"], ["2T", "3T", "1TA"]],
+  [["Combinator"], ["2T", "3T", "1TA"]]
 ]
 
 # Classes to run
