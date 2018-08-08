@@ -1,162 +1,44 @@
 require_relative 'lib/SimcConfig'
 
 toRun = {
-  'AzeriteSimulation'=> {
-    'Death-Knight' => [
-      'Blood PR_Death_Knight_Blood',
-      'Frost PR_Death_Knight_Frost',
-      'Unholy PR_Death_Knight_Unholy',
-      'Blood T22_Death_Knight_Blood'
-    ],
-    'Demon-Hunter' => [
-      'Havoc PR_Demon_Hunter_Havoc',
-      'Vengeance PR_Demon_Hunter_Vengeance'
-    ],
-    'Druid' => [
-      'Balance PR_Druid_Balance',
-      'Feral PR_Druid_Feral',
-      'Guardian PR_Druid_Guardian'
-    ],
-    'Hunter' => [
-      'Beast-Mastery PR_Hunter_Beast_Mastery',
-      'Marksmanship PR_Hunter_Marksmanship',
-      'Survival PR_Hunter_Survival'
-    ],
-    'Mage' => [
-      'Arcane PR_Mage_Arcane',
-      'Fire PR_Mage_Fire',
-      'Frost PR_Mage_Frost'
-    ],
-    'Monk' => [
-      'Brewmaster PR_Monk_Brewmaster',
-      'Windwalker PR_Monk_Windwalker'
-    ],
-    'Paladin' => [
-      'Protection PR_Paladin_Protection',
-      'Retribution PR_Paladin_Retribution',
-      'Retribution T22_Paladin_Retribution'
-    ],
-    'Priest' => [
-      'Shadow PR_Priest_Shadow',
-      'Shadow T22_Priest_Shadow'
-    ],
-    'Rogue' => [
-      'Assassination PR_Rogue_Assassination',
-      'Assassination PR_Rogue_Assassination_Exsg',
-      'Outlaw PR_Rogue_Outlaw',
-      'Outlaw PR_Rogue_Outlaw_SnD',
-      'Subtlety PR_Rogue_Subtlety',
-      'Assassination T22_Rogue_Assassination',
-      'Assassination T22_Rogue_Assassination_Exsg',
-      'Outlaw T22_Rogue_Outlaw',
-      'Outlaw T22_Rogue_Outlaw_SnD',
-      'Subtlety T22_Rogue_Subtlety'
-    ],
-    'Shaman' => [
-      'Elemental PR_Shaman_Elemental',
-      'Enhancement PR_Shaman_Enhancement',
-      'Enhancement T22_Shaman_Enhancement'
-    ],
-    'Warlock' => [
-      'Affliction PR_Warlock_Affliction',
-      'Demonology PR_Warlock_Demonology',
-      'Destruction PR_Warlock_Destruction'
-    ],
-    'Warrior' => [
-      'Arms PR_Warrior_Arms',
-      'Fury PR_Warrior_Fury'
-    ]
-  },
-  'Combinator' => {
-    'Death-Knight' => [
-      'T21_Death_Knight_Frost Death_Knight_Frost T21 xx0x0xx',
-      'T21_Death_Knight_Unholy Death_Knight_Unholy T21 xx0x0xx'
-    ],
-    'Demon-Hunter' => [
-      'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0x2x'
-    ],
-    'Druid' => [
-      'T21_Druid_Balance Druid_Balance T21 x000xxx',
-      'T21_Druid_Feral Druid_Feral T21 x000xxx'
-    ],
-    'Hunter' => [
-      'T21_Hunter_Beast_Mastery Hunter_Beast_Mastery T21 xx0x0xx',
-      'T21_Hunter_Marksmanship Hunter_Marksmanship T21 xx0x0xx',
-      'T21_Hunter_Survival Hunter_Survival T21 xx0x0xx'
-    ],
-    'Mage' => [
-      'T21_Mage_Arcane Mage_Arcane T21 x0xx0xx',
-      'T21_Mage_Fire Mage_Fire T21 x0xx0xx',
-      'T21_Mage_Frost Mage_Frost T21 x0xx0xx'
-    ],
-    'Monk' => [
-      'T21_Monk_Windwalker Monk T21 x0x00xx'
-    ],
-    'Paladin' => [
-      'T21_Paladin_Retribution Paladin T21 xx0x0[02]x'
-    ],
-    'Priest' => [
-      'T21_Priest_Shadow Priest_Shadow T21 x0x0xxx'
-    ],
-    'Rogue' => [
-      'T21_Rogue_Assassination-Poison Rogue T21 xxx00[12]x',
-      'T21_Rogue_Assassination-Bleed Rogue_Assassination_Exsg T21 xxx003x',
-      'T21_Rogue_Outlaw-Roll_the_Bones Rogue T21 x3x00[12]x',
-      'T21_Rogue_Outlaw-Slice_and_Dice Rogue_Outlaw_SnD T21 x3x003x',
-      'T21_Rogue_Subtlety Rogue T21 xxx00xx'
-    ],
-    'Shaman' => [
-      'T21_Shaman_Elemental Shaman_Elemental T21 xx0x0xx',
-      'T21_Shaman_Enhancement Shaman_Enhancement T21 xx0x0xx'
-    ],
-    'Warlock' => [
-      'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
-      'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
-      'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx'
-    ],
-    'Warrior' => [
-      'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
-      'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx'
-    ]
-  },
-  'RaceSimulation' => {
+  'AzeriteSimulation' => {
     'Death-Knight' => [
       'PR_Death_Knight_Blood',
       'PR_Death_Knight_Frost',
       'PR_Death_Knight_Unholy',
-      'T22_Death_Knight_Blood'
+      'T22_Death_Knight_Blood',
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
-      'PR_Demon_Hunter_Vengeance'
+      'PR_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
       'PR_Druid_Balance',
       'PR_Druid_Feral',
-      'PR_Druid_Guardian'
+      'PR_Druid_Guardian',
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery',
       'PR_Hunter_Marksmanship',
-      'PR_Hunter_Survival'
+      'PR_Hunter_Survival',
     ],
     'Mage' => [
       'PR_Mage_Arcane',
       'PR_Mage_Fire',
-      'PR_Mage_Frost'
+      'PR_Mage_Frost',
     ],
     'Monk' => [
       'PR_Monk_Brewmaster',
-      'PR_Monk_Windwalker'
+      'PR_Monk_Windwalker',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
       'PR_Paladin_Retribution',
-      'T22_Paladin_Retribution'
+      'T22_Paladin_Retribution',
     ],
     'Priest' => [
       'PR_Priest_Shadow',
-      'T22_Priest_Shadow'
+      'T22_Priest_Shadow',
     ],
     'Rogue' => [
       'PR_Rogue_Assassination',
@@ -168,61 +50,179 @@ toRun = {
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
-      'T22_Rogue_Subtlety'
+      'T22_Rogue_Subtlety',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
       'PR_Shaman_Enhancement',
-      'T22_Shaman_Enhancement'
+      'T22_Shaman_Enhancement',
     ],
     'Warlock' => [
       'PR_Warlock_Affliction',
       'PR_Warlock_Demonology',
-      'PR_Warlock_Destruction'
+      'PR_Warlock_Destruction',
     ],
     'Warrior' => [
       'PR_Warrior_Arms',
-      'PR_Warrior_Fury'
-    ]
+      'PR_Warrior_Fury',
+    ],
+  },
+  'Combinator' => {
+    'Death-Knight' => [
+      'T21_Death_Knight_Frost Death_Knight_Frost T21 xx0x0xx',
+      'T21_Death_Knight_Unholy Death_Knight_Unholy T21 xx0x0xx',
+    ],
+    'Demon-Hunter' => [
+      'T21_Demon_Hunter_Havoc Demon_Hunter T21 xxx0x2x',
+    ],
+    'Druid' => [
+      'T21_Druid_Balance Druid_Balance T21 x000xxx',
+      'T21_Druid_Feral Druid_Feral T21 x000xxx',
+    ],
+    'Hunter' => [
+      'T21_Hunter_Beast_Mastery Hunter_Beast_Mastery T21 xx0x0xx',
+      'T21_Hunter_Marksmanship Hunter_Marksmanship T21 xx0x0xx',
+      'T21_Hunter_Survival Hunter_Survival T21 xx0x0xx',
+    ],
+    'Mage' => [
+      'T21_Mage_Arcane Mage_Arcane T21 x0xx0xx',
+      'T21_Mage_Fire Mage_Fire T21 x0xx0xx',
+      'T21_Mage_Frost Mage_Frost T21 x0xx0xx',
+    ],
+    'Monk' => [
+      'T21_Monk_Windwalker Monk T21 x0x00xx',
+    ],
+    'Paladin' => [
+      'T21_Paladin_Retribution Paladin T21 xx0x0[02]x',
+    ],
+    'Priest' => [
+      'T21_Priest_Shadow Priest_Shadow T21 x0x0xxx',
+    ],
+    'Rogue' => [
+      'T21_Rogue_Assassination-Poison Rogue T21 xxx00[12]x',
+      'T21_Rogue_Assassination-Bleed Rogue_Assassination_Exsg T21 xxx003x',
+      'T21_Rogue_Outlaw-Roll_the_Bones Rogue T21 x3x00[12]x',
+      'T21_Rogue_Outlaw-Slice_and_Dice Rogue_Outlaw_SnD T21 x3x003x',
+      'T21_Rogue_Subtlety Rogue T21 xxx00xx',
+    ],
+    'Shaman' => [
+      'T21_Shaman_Elemental Shaman_Elemental T21 xx0x0xx',
+      'T21_Shaman_Enhancement Shaman_Enhancement T21 xx0x0xx',
+    ],
+    'Warlock' => [
+      'T21_Warlock_Affliction Warlock_Affliction T21 xx0x0xx',
+      'T21_Warlock_Demonology Warlock_Demonology T21 xx0x0xx',
+      'T21_Warlock_Destruction Warlock_Destruction T21 xx0x0xx',
+    ],
+    'Warrior' => [
+      'T21_Warrior_Arms Warrior_Arms T21 x3x2xxx',
+      'T21_Warrior_Fury Warrior_Fury T21 x3x2xxx',
+    ],
+  },
+  'RaceSimulation' => {
+    'Death-Knight' => [
+      'PR_Death_Knight_Blood',
+      'PR_Death_Knight_Frost',
+      'PR_Death_Knight_Unholy',
+      'T22_Death_Knight_Blood',
+    ],
+    'Demon-Hunter' => [
+      'PR_Demon_Hunter_Havoc',
+      'PR_Demon_Hunter_Vengeance',
+    ],
+    'Druid' => [
+      'PR_Druid_Balance',
+      'PR_Druid_Feral',
+      'PR_Druid_Guardian',
+    ],
+    'Hunter' => [
+      'PR_Hunter_Beast_Mastery',
+      'PR_Hunter_Marksmanship',
+      'PR_Hunter_Survival',
+    ],
+    'Mage' => [
+      'PR_Mage_Arcane',
+      'PR_Mage_Fire',
+      'PR_Mage_Frost',
+    ],
+    'Monk' => [
+      'PR_Monk_Brewmaster',
+      'PR_Monk_Windwalker',
+    ],
+    'Paladin' => [
+      'PR_Paladin_Protection',
+      'PR_Paladin_Retribution',
+      'T22_Paladin_Retribution',
+    ],
+    'Priest' => [
+      'PR_Priest_Shadow',
+      'T22_Priest_Shadow',
+    ],
+    'Rogue' => [
+      'PR_Rogue_Assassination',
+      'PR_Rogue_Assassination_Exsg',
+      'PR_Rogue_Outlaw',
+      'PR_Rogue_Outlaw_SnD',
+      'PR_Rogue_Subtlety',
+      'T22_Rogue_Assassination',
+      'T22_Rogue_Assassination_Exsg',
+      'T22_Rogue_Outlaw',
+      'T22_Rogue_Outlaw_SnD',
+      'T22_Rogue_Subtlety',
+    ],
+    'Shaman' => [
+      'PR_Shaman_Elemental',
+      'PR_Shaman_Enhancement',
+      'T22_Shaman_Enhancement',
+    ],
+    'Warlock' => [
+      'PR_Warlock_Affliction',
+      'PR_Warlock_Demonology',
+      'PR_Warlock_Destruction',
+    ],
+    'Warrior' => [
+      'PR_Warrior_Arms',
+      'PR_Warrior_Fury',
+    ],
   },
   'TrinketSimulation' => {
     'Death-Knight' => [
       'PR_Death_Knight_Blood Strength',
       'PR_Death_Knight_Frost Strength',
       'PR_Death_Knight_Unholy Strength',
-      'T22_Death_Knight_Blood Strength'
+      'T22_Death_Knight_Blood Strength',
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Agility',
-      'PR_Demon_Hunter_Vengeance Agility'
+      'PR_Demon_Hunter_Vengeance Agility',
     ],
     'Druid' => [
       'PR_Druid_Balance Intelligence',
       'PR_Druid_Feral Agility',
-      'PR_Druid_Guardian Agility'
+      'PR_Druid_Guardian Agility',
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Agility',
       'PR_Hunter_Marksmanship Agility',
-      'PR_Hunter_Survival Agility'
+      'PR_Hunter_Survival Agility',
     ],
     'Mage' => [
       'PR_Mage_Arcane Intelligence',
       'PR_Mage_Fire Intelligence',
-      'PR_Mage_Frost Intelligence'
+      'PR_Mage_Frost Intelligence',
     ],
     'Monk' => [
       'PR_Monk_Brewmaster Agility',
-      'PR_Monk_Windwalker Agility'
+      'PR_Monk_Windwalker Agility',
     ],
     'Paladin' => [
       'PR_Paladin_Protection Strength',
       'PR_Paladin_Retribution Strength',
-      'T22_Paladin_Retribution Strength'
+      'T22_Paladin_Retribution Strength',
     ],
     'Priest' => [
       'PR_Priest_Shadow Intelligence',
-      'T22_Priest_Shadow Intelligence'
+      'T22_Priest_Shadow Intelligence',
     ],
     'Rogue' => [
       'PR_Rogue_Assassination Agility',
@@ -234,23 +234,23 @@ toRun = {
       'T22_Rogue_Assassination_Exsg Agility',
       'T22_Rogue_Outlaw Agility',
       'T22_Rogue_Outlaw_SnD Agility',
-      'T22_Rogue_Subtlety Agility'
+      'T22_Rogue_Subtlety Agility',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
       'PR_Shaman_Enhancement Agility',
-      'T22_Shaman_Enhancement Agility'
+      'T22_Shaman_Enhancement Agility',
     ],
     'Warlock' => [
       'PR_Warlock_Affliction Intelligence',
       'PR_Warlock_Demonology Intelligence',
-      'PR_Warlock_Destruction Intelligence'
+      'PR_Warlock_Destruction Intelligence',
     ],
     'Warrior' => [
       'PR_Warrior_Arms Strength',
-      'PR_Warrior_Fury Strength'
-    ]
-  }
+      'PR_Warrior_Fury Strength',
+    ],
+  },
 }
 
 orders = SimcConfig["RunOrders"]
