@@ -34,6 +34,19 @@
         "Masterful Instincts": "171:340",
         "Gory Regeneration": "360:340"
       }
+    },
+    "restoration": {
+      "azerite": {
+        "Autumn Leaves": "210:340",
+        "Synergistic Growth": "102:340",
+        "Rampant Growth": "362:340",
+        "Craggy Bark": "251:340",
+        "Fungal Essence": "120:340",
+        "Grove Tending": "172:340",
+        "Waking Dream": "363:340",
+        "Lively Spirit": "364:340",
+        "High Noon": "356:340"
+      }
     }
   },
   "sets": {
