@@ -21,6 +21,9 @@ toRun = {
       'PR_Hunter_Beast_Mastery',
       'PR_Hunter_Marksmanship',
       'PR_Hunter_Survival',
+      'T22_Hunter_Beast_Mastery',
+      'T22_Hunter_Marksmanship',
+      'T22_Hunter_Survival',
     ],
     'Mage' => [
       'PR_Mage_Arcane',
@@ -86,7 +89,10 @@ toRun = {
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx',
       'PR_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx',
-      'PR_Hunter_Survival Hunter_Azerite Azerite xx0x0xx'
+      'PR_Hunter_Survival Hunter_Azerite Azerite xx0x0xx',
+      'T22_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx',
+      'T22_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx',
+      'T22_Hunter_Survival Hunter_Azerite Azerite xx0x0xx'
     ],
     'Mage' => [
       'PR_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
@@ -153,6 +159,9 @@ toRun = {
       'PR_Hunter_Beast_Mastery',
       'PR_Hunter_Marksmanship',
       'PR_Hunter_Survival',
+      'T22_Hunter_Beast_Mastery',
+      'T22_Hunter_Marksmanship',
+      'T22_Hunter_Survival',
     ],
     'Mage' => [
       'PR_Mage_Arcane',
@@ -219,6 +228,9 @@ toRun = {
       'PR_Hunter_Beast_Mastery Agility',
       'PR_Hunter_Marksmanship Agility',
       'PR_Hunter_Survival Agility',
+      'T22_Hunter_Beast_Mastery Agility',
+      'T22_Hunter_Marksmanship Agility',
+      'T22_Hunter_Survival Agility',
     ],
     'Mage' => [
       'PR_Mage_Arcane Intelligence',
