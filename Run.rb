@@ -11,11 +11,16 @@ toRun = {
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
       'PR_Demon_Hunter_Vengeance',
+      'T22_Demon_Hunter_Havoc',
+      'T22_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
       'PR_Druid_Balance',
       'PR_Druid_Feral',
       'PR_Druid_Guardian',
+      'T22_Druid_Balance',
+      'T22_Druid_Feral',
+      'T22_Druid_Guardian',
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery',
@@ -29,10 +34,15 @@ toRun = {
       'PR_Mage_Arcane',
       'PR_Mage_Fire',
       'PR_Mage_Frost',
+      'T22_Mage_Arcane',
+      'T22_Mage_Fire',
+      'T22_Mage_Frost',
     ],
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
+      'T22_Monk_Brewmaster',
+      'T22_Monk_Windwalker',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
@@ -64,10 +74,15 @@ toRun = {
       'PR_Warlock_Affliction',
       'PR_Warlock_Demonology',
       'PR_Warlock_Destruction',
+      'T22_Warlock_Affliction',
+      'T22_Warlock_Demonology',
+      'T22_Warlock_Destruction',
     ],
     'Warrior' => [
       'PR_Warrior_Arms',
       'PR_Warrior_Fury',
+      'T22_Warrior_Arms',
+      'T22_Warrior_Fury',
     ],
   },
   'Combinator' => {
@@ -79,12 +94,17 @@ toRun = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
-      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite x[23]x[23]0x0'
+      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite x[23]x[23]0x0',
+      'T22_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
+      'T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite x[23]x[23]0x0'
     ],
     'Druid' => [
       'PR_Druid_Balance Druid_Azerite Azerite x000xxx',
       'PR_Druid_Feral Druid_Azerite Azerite x000xxx',
-      'PR_Druid_Guardian Druid_Azerite Azerite x000x0x'
+      'PR_Druid_Guardian Druid_Azerite Azerite x000x0x',
+      'T22_Druid_Balance Druid_Azerite Azerite x000xxx',
+      'T22_Druid_Feral Druid_Azerite Azerite x000xxx',
+      'T22_Druid_Guardian Druid_Azerite Azerite x000x0x'
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx',
@@ -97,11 +117,16 @@ toRun = {
     'Mage' => [
       'PR_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
       'PR_Mage_Fire Mage_Azerite Azerite x0xx0xx',
-      'PR_Mage_Frost Mage_Azerite Azerite x0xx0xx'
+      'PR_Mage_Frost Mage_Azerite Azerite x0xx0xx',
+      'T22_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
+      'T22_Mage_Fire Mage_Azerite Azerite x0xx0xx',
+      'T22_Mage_Frost Mage_Azerite Azerite x0xx0xx'
     ],
     'Monk' => [
       'PR_Monk_Brewmaster Monk_Azerite Azerite x0x00xx',
-      'PR_Monk_Windwalker Monk_Azerite Azerite x0x00xx'
+      'PR_Monk_Windwalker Monk_Azerite Azerite x0x00xx',
+      'T22_Monk_Brewmaster Monk_Azerite Azerite x0x00xx',
+      'T22_Monk_Windwalker Monk_Azerite Azerite x0x00xx'
     ],
     'Paladin' => [
       'PR_Paladin_Protection Paladin_Azerite Azerite xx0[01]00x',
@@ -132,11 +157,16 @@ toRun = {
     'Warlock' => [
       'PR_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx',
       'PR_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx',
-      'PR_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
+      'PR_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx',
+      'T22_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx',
+      'T22_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx',
+      'T22_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
     ],
     'Warrior' => [
       'PR_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
-      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx'
+      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
+      'T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
+      'T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx'
     ],
   },
   'RaceSimulation' => {
@@ -149,11 +179,16 @@ toRun = {
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
       'PR_Demon_Hunter_Vengeance',
+      'T22_Demon_Hunter_Havoc',
+      'T22_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
       'PR_Druid_Balance',
       'PR_Druid_Feral',
       'PR_Druid_Guardian',
+      'T22_Druid_Balance',
+      'T22_Druid_Feral',
+      'T22_Druid_Guardian',
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery',
@@ -167,10 +202,15 @@ toRun = {
       'PR_Mage_Arcane',
       'PR_Mage_Fire',
       'PR_Mage_Frost',
+      'T22_Mage_Arcane',
+      'T22_Mage_Fire',
+      'T22_Mage_Frost',
     ],
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
+      'T22_Monk_Brewmaster',
+      'T22_Monk_Windwalker',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
@@ -202,10 +242,15 @@ toRun = {
       'PR_Warlock_Affliction',
       'PR_Warlock_Demonology',
       'PR_Warlock_Destruction',
+      'T22_Warlock_Affliction',
+      'T22_Warlock_Demonology',
+      'T22_Warlock_Destruction',
     ],
     'Warrior' => [
       'PR_Warrior_Arms',
       'PR_Warrior_Fury',
+      'T22_Warrior_Arms',
+      'T22_Warrior_Fury',
     ],
   },
   'TrinketSimulation' => {
@@ -218,11 +263,16 @@ toRun = {
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Agility',
       'PR_Demon_Hunter_Vengeance Agility',
+      'T22_Demon_Hunter_Havoc Agility',
+      'T22_Demon_Hunter_Vengeance Agility',
     ],
     'Druid' => [
       'PR_Druid_Balance Intelligence',
       'PR_Druid_Feral Agility',
       'PR_Druid_Guardian Agility',
+      'T22_Druid_Balance Intelligence',
+      'T22_Druid_Feral Agility',
+      'T22_Druid_Guardian Agility',
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Agility',
@@ -236,10 +286,15 @@ toRun = {
       'PR_Mage_Arcane Intelligence',
       'PR_Mage_Fire Intelligence',
       'PR_Mage_Frost Intelligence',
+      'T22_Mage_Arcane Intelligence',
+      'T22_Mage_Fire Intelligence',
+      'T22_Mage_Frost Intelligence',
     ],
     'Monk' => [
       'PR_Monk_Brewmaster Agility',
       'PR_Monk_Windwalker Agility',
+      'T22_Monk_Brewmaster Agility',
+      'T22_Monk_Windwalker Agility',
     ],
     'Paladin' => [
       'PR_Paladin_Protection Strength',
@@ -271,10 +326,15 @@ toRun = {
       'PR_Warlock_Affliction Intelligence',
       'PR_Warlock_Demonology Intelligence',
       'PR_Warlock_Destruction Intelligence',
+      'T22_Warlock_Affliction Intelligence',
+      'T22_Warlock_Demonology Intelligence',
+      'T22_Warlock_Destruction Intelligence',
     ],
     'Warrior' => [
       'PR_Warrior_Arms Strength',
       'PR_Warrior_Fury Strength',
+      'T22_Warrior_Arms Strength',
+      'T22_Warrior_Fury Strength',
     ],
   },
 }
