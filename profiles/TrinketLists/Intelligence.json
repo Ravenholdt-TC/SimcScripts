@@ -43,31 +43,38 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        {
+            "name": "Balefire Branch",
+            "itemId": 159630,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // World Boss
         {
-            "name": "Galecaller's Beak",
-            "itemId": 161379,
+            "name": "Azuretho's Singed Plumage",
+            "itemId": 161377,
             "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Prism of Dark Intensity",
-            "itemId": 161376,
+            "name": "Doom's Hatred",
+            "itemId": 161461,
             "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Doom's Fury",
-            "itemId": 161463,
+            "name": "Drust-Runed Icicle",
+            "itemId": 161380,
             "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Kraulok's Claw",
-            "itemId": 161419,
+            "name": "T'zane's Barkspines",
+            "itemId": 161411,
             "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
