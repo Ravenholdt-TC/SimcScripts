@@ -6,13 +6,13 @@ toRun = {
       'PR_Death_Knight_Blood',
       'PR_Death_Knight_Frost',
       'PR_Death_Knight_Unholy',
-      'T22_Death_Knight_Blood',
+      'T22_Death_Knight_Blood'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
       'PR_Demon_Hunter_Vengeance',
       'T22_Demon_Hunter_Havoc',
-      'T22_Demon_Hunter_Vengeance',
+      'T22_Demon_Hunter_Vengeance'
     ],
     'Druid' => [
       'PR_Druid_Balance',
@@ -20,7 +20,7 @@ toRun = {
       'PR_Druid_Guardian',
       'T22_Druid_Balance',
       'T22_Druid_Feral',
-      'T22_Druid_Guardian',
+      'T22_Druid_Guardian'
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery',
@@ -28,7 +28,7 @@ toRun = {
       'PR_Hunter_Survival',
       'T22_Hunter_Beast_Mastery',
       'T22_Hunter_Marksmanship',
-      'T22_Hunter_Survival',
+      'T22_Hunter_Survival'
     ],
     'Mage' => [
       'PR_Mage_Arcane',
@@ -36,22 +36,22 @@ toRun = {
       'PR_Mage_Frost',
       'T22_Mage_Arcane',
       'T22_Mage_Fire',
-      'T22_Mage_Frost',
+      'T22_Mage_Frost'
     ],
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
       'T22_Monk_Brewmaster',
-      'T22_Monk_Windwalker',
+      'T22_Monk_Windwalker'
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
       'PR_Paladin_Retribution',
-      'T22_Paladin_Retribution',
+      'T22_Paladin_Retribution'
     ],
     'Priest' => [
       'PR_Priest_Shadow',
-      'T22_Priest_Shadow',
+      'T22_Priest_Shadow'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination',
@@ -63,12 +63,12 @@ toRun = {
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
-      'T22_Rogue_Subtlety',
+      'T22_Rogue_Subtlety'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
       'PR_Shaman_Enhancement',
-      'T22_Shaman_Enhancement',
+      'T22_Shaman_Enhancement'
     ],
     'Warlock' => [
       'PR_Warlock_Affliction',
@@ -76,13 +76,13 @@ toRun = {
       'PR_Warlock_Destruction',
       'T22_Warlock_Affliction',
       'T22_Warlock_Demonology',
-      'T22_Warlock_Destruction',
+      'T22_Warlock_Destruction'
     ],
     'Warrior' => [
       'PR_Warrior_Arms',
       'PR_Warrior_Fury',
       'T22_Warrior_Arms',
-      'T22_Warrior_Fury',
+      'T22_Warrior_Fury'
     ],
   },
   'Combinator' => {
@@ -174,13 +174,13 @@ toRun = {
       'PR_Death_Knight_Blood',
       'PR_Death_Knight_Frost',
       'PR_Death_Knight_Unholy',
-      'T22_Death_Knight_Blood',
+      'T22_Death_Knight_Blood'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
       'PR_Demon_Hunter_Vengeance',
       'T22_Demon_Hunter_Havoc',
-      'T22_Demon_Hunter_Vengeance',
+      'T22_Demon_Hunter_Vengeance'
     ],
     'Druid' => [
       'PR_Druid_Balance',
@@ -188,7 +188,7 @@ toRun = {
       'PR_Druid_Guardian',
       'T22_Druid_Balance',
       'T22_Druid_Feral',
-      'T22_Druid_Guardian',
+      'T22_Druid_Guardian'
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery',
@@ -196,7 +196,7 @@ toRun = {
       'PR_Hunter_Survival',
       'T22_Hunter_Beast_Mastery',
       'T22_Hunter_Marksmanship',
-      'T22_Hunter_Survival',
+      'T22_Hunter_Survival'
     ],
     'Mage' => [
       'PR_Mage_Arcane',
@@ -204,22 +204,22 @@ toRun = {
       'PR_Mage_Frost',
       'T22_Mage_Arcane',
       'T22_Mage_Fire',
-      'T22_Mage_Frost',
+      'T22_Mage_Frost'
     ],
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
       'T22_Monk_Brewmaster',
-      'T22_Monk_Windwalker',
+      'T22_Monk_Windwalker'
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
       'PR_Paladin_Retribution',
-      'T22_Paladin_Retribution',
+      'T22_Paladin_Retribution'
     ],
     'Priest' => [
       'PR_Priest_Shadow',
-      'T22_Priest_Shadow',
+      'T22_Priest_Shadow'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination',
@@ -231,12 +231,12 @@ toRun = {
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
-      'T22_Rogue_Subtlety',
+      'T22_Rogue_Subtlety'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
       'PR_Shaman_Enhancement',
-      'T22_Shaman_Enhancement',
+      'T22_Shaman_Enhancement'
     ],
     'Warlock' => [
       'PR_Warlock_Affliction',
@@ -244,13 +244,13 @@ toRun = {
       'PR_Warlock_Destruction',
       'T22_Warlock_Affliction',
       'T22_Warlock_Demonology',
-      'T22_Warlock_Destruction',
+      'T22_Warlock_Destruction'
     ],
     'Warrior' => [
       'PR_Warrior_Arms',
       'PR_Warrior_Fury',
       'T22_Warrior_Arms',
-      'T22_Warrior_Fury',
+      'T22_Warrior_Fury'
     ],
   },
   'TrinketSimulation' => {
@@ -258,13 +258,13 @@ toRun = {
       'PR_Death_Knight_Blood Strength',
       'PR_Death_Knight_Frost Strength',
       'PR_Death_Knight_Unholy Strength',
-      'T22_Death_Knight_Blood Strength',
+      'T22_Death_Knight_Blood Strength'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Agility',
       'PR_Demon_Hunter_Vengeance Agility',
       'T22_Demon_Hunter_Havoc Agility',
-      'T22_Demon_Hunter_Vengeance Agility',
+      'T22_Demon_Hunter_Vengeance Agility'
     ],
     'Druid' => [
       'PR_Druid_Balance Intelligence',
@@ -272,7 +272,7 @@ toRun = {
       'PR_Druid_Guardian Agility',
       'T22_Druid_Balance Intelligence',
       'T22_Druid_Feral Agility',
-      'T22_Druid_Guardian Agility',
+      'T22_Druid_Guardian Agility'
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Agility',
@@ -280,7 +280,7 @@ toRun = {
       'PR_Hunter_Survival Agility',
       'T22_Hunter_Beast_Mastery Agility',
       'T22_Hunter_Marksmanship Agility',
-      'T22_Hunter_Survival Agility',
+      'T22_Hunter_Survival Agility'
     ],
     'Mage' => [
       'PR_Mage_Arcane Intelligence',
@@ -288,22 +288,22 @@ toRun = {
       'PR_Mage_Frost Intelligence',
       'T22_Mage_Arcane Intelligence',
       'T22_Mage_Fire Intelligence',
-      'T22_Mage_Frost Intelligence',
+      'T22_Mage_Frost Intelligence'
     ],
     'Monk' => [
       'PR_Monk_Brewmaster Agility',
       'PR_Monk_Windwalker Agility',
       'T22_Monk_Brewmaster Agility',
-      'T22_Monk_Windwalker Agility',
+      'T22_Monk_Windwalker Agility'
     ],
     'Paladin' => [
       'PR_Paladin_Protection Strength',
       'PR_Paladin_Retribution Strength',
-      'T22_Paladin_Retribution Strength',
+      'T22_Paladin_Retribution Strength'
     ],
     'Priest' => [
       'PR_Priest_Shadow Intelligence',
-      'T22_Priest_Shadow Intelligence',
+      'T22_Priest_Shadow Intelligence'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination Agility',
@@ -315,12 +315,12 @@ toRun = {
       'T22_Rogue_Assassination_Exsg Agility',
       'T22_Rogue_Outlaw Agility',
       'T22_Rogue_Outlaw_SnD Agility',
-      'T22_Rogue_Subtlety Agility',
+      'T22_Rogue_Subtlety Agility'
     ],
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
       'PR_Shaman_Enhancement Agility',
-      'T22_Shaman_Enhancement Agility',
+      'T22_Shaman_Enhancement Agility'
     ],
     'Warlock' => [
       'PR_Warlock_Affliction Intelligence',
@@ -328,13 +328,13 @@ toRun = {
       'PR_Warlock_Destruction Intelligence',
       'T22_Warlock_Affliction Intelligence',
       'T22_Warlock_Demonology Intelligence',
-      'T22_Warlock_Destruction Intelligence',
+      'T22_Warlock_Destruction Intelligence'
     ],
     'Warrior' => [
       'PR_Warrior_Arms Strength',
       'PR_Warrior_Fury Strength',
       'T22_Warrior_Arms Strength',
-      'T22_Warrior_Fury Strength',
+      'T22_Warrior_Fury Strength'
     ],
   },
 }
