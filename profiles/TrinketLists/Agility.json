@@ -108,6 +108,14 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        // Drop
+        {
+            "name": "Landoi's Scrutiny",
+            "itemId": 163935,
+            "itemLevels": [350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Professions
         {
             "name": "Darkmoon Deck: Fathoms",
