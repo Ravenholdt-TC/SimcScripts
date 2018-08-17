@@ -53,3 +53,5 @@ RunClasses: ["Death-Knight", "Demon-Hunter", "Druid", "Hunter", "Mage", "Monk", 
 
 # If specified to true, will prepare the report to be used on HeroTC websites like Hero Damage
 HeroOutput: false
+
+HeroDamagePath: D:\Dev\HeroDamage
