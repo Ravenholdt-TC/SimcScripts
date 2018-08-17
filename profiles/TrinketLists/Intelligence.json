@@ -109,6 +109,42 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        // World Quests
+        {
+            "name": "Dinobone Charm",
+            "itemId": 158155,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Gilded Loa Figurine",
+            "itemId": 158153,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Emblem of Zandalar",
+            "itemId": 158154,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Plunderbeard's Flask",
+            "itemId": 158164,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Pearl Diver's Compass",
+            "itemId": 158162,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Professions
         {
             "name": "Darkmoon Deck: Squalls",
