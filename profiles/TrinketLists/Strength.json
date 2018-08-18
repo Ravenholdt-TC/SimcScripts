@@ -1,23 +1,67 @@
 {
     "trinkets": [
+        // Raids
+        {
+            "name": "Disc of Systematic Regression",
+            "itemId": 160650,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vanquished Tendril of G'huun",
+            "itemId": 160654,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Syringe of Bloodborne Infirmity",
+            "itemId": 160655,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        // World Boss
+        {
+            "name": "Prism of Dark Intensity",
+            "itemId": 161376,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Galecaller's Beak",
+            "itemId": 161379,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Kraulok's Claw",
+            "itemId": 161419,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Doom's Fury",
+            "itemId": 161463,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Dungeons
-        {
-            "name": "Rezan's Gleaming Eye",
-            "itemId": 158712,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Briny Barnacle",
-            "itemId": 159619,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
         {
             "name": "Merektha's Fang",
             "itemId": 158367,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Rezan's Gleaming Eye",
+            "itemId": 158712,
             "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -30,6 +74,20 @@
             "additionalInput": []
         },
         {
+            "name": "Gore-Crusted Butcher's Block",
+            "itemId": 159616,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Briny Barnacle",
+            "itemId": 159619,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
             "name": "Vial of Animated Blood",
             "itemId": 159625,
             "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
@@ -37,8 +95,8 @@
             "additionalInput": []
         },
         {
-            "name": "Gore-Crusted Butcher's Block",
-            "itemId": 159616,
+            "name": "Lingering Sporepods",
+            "itemId": 159626,
             "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -50,60 +108,9 @@
             "bonusIds": [],
             "additionalInput": []
         },
-        // World Boss
+        // World Drop
         {
-            "name": "Galecaller's Beak",
-            "itemId": 161379,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Prism of Dark Intensity",
-            "itemId": 161376,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Doom's Fury",
-            "itemId": 161463,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Kraulok's Claw",
-            "itemId": 161419,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        // Raids
-        {
-            "name": "Disc of Systematic Regression",
-            "itemId": 160650,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Syringe of Bloodborne Infirmity",
-            "itemId": 160655,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vanquished Tendril of G'huun",
-            "itemId": 160654,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        // Drop
-        {
-            "name": "Bygone Bee Almanac",
+            "name": "'Bygone Bee' Almanac",
             "itemId": 163936,
             "itemLevels": [350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
@@ -111,8 +118,8 @@
         },
         // World Quests
         {
-            "name": "Dinobone Charm",
-            "itemId": 158155,
+            "name": "Galewind Chimes",
+            "itemId": 155568,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -132,8 +139,8 @@
             "additionalInput": []
         },
         {
-            "name": "Plunderbeard's Flask",
-            "itemId": 158164,
+            "name": "Dinobone Charm",
+            "itemId": 158155,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -141,6 +148,125 @@
         {
             "name": "Pearl Diver's Compass",
             "itemId": 158162,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "First Mate's Spyglass",
+            "itemId": 158163,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Plunderbeard's Flask",
+            "itemId": 158164,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Whirlwing's Plumage",
+            "itemId": 158215,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Living Oil Cannister",
+            "itemId": 158216,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dadalea's Wing",
+            "itemId": 158218,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vial of Storms",
+            "itemId": 158224,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Doom Shroom",
+            "itemId": 158555,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Siren's Tongue",
+            "itemId": 158556,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Snowpelt Mangler",
+            "itemId": 160263,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Incessantly Ticking Clock",
+            "itemId": 161113,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Cursed Captain's Charm",
+            "itemId": 161115,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Berserker's Juju",
+            "itemId": 161117,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Ravasaur Skull Bijou",
+            "itemId": 161119,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Kaja-fied Banana",
+            "itemId": 161125,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dread Aspirant's Medallion",
+            "itemId": 162897,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dread Gladiator's Badge", // PVP WQ ?
+            "itemId": 161902,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Crawg Gnawed Femur",
+            "itemId": 163703,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -154,15 +280,15 @@
             "additionalInput": []
         },
         {
-            "name": "Endless Tincture of Fractional Power",
-            "itemId": 152636,
+            "name": "Surging Alchemist Stone",
+            "itemId": 152632,
             "itemLevels": [300],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Surging Alchemist Stone",
-            "itemId": 152632,
+            "name": "Endless Tincture of Fractional Power",
+            "itemId": 152636,
             "itemLevels": [300],
             "bonusIds": [],
             "additionalInput": []

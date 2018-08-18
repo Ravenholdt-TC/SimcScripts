@@ -1,9 +1,67 @@
 {
     "trinkets": [
+        // Raids
+        {
+            "name": "Vigilant's Bloodshaper",
+            "itemId": 160651,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vanquished Tendril of G'huun",
+            "itemId": 160654,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Twitching Tentacle of Xalzaix",
+            "itemId": 160656,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        // World Boss
+        {
+            "name": "Azuretho's Singed Plumage",
+            "itemId": 161377,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Drust-Runed Icicle",
+            "itemId": 161380,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "T'zane's Barkspines",
+            "itemId": 161411,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Doom's Hatred",
+            "itemId": 161461,
+            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Dungeons
         {
             "name": "Vessel of Skittering Shadows",
             "itemId": 159610,
+            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Ignition Mage's Fuse",
+            "itemId": 159615,
             "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -30,8 +88,8 @@
             "additionalInput": []
         },
         {
-            "name": "Ignition Mage's Fuse",
-            "itemId": 159615,
+            "name": "Balefire Branch",
+            "itemId": 159630,
             "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -43,65 +101,7 @@
             "bonusIds": [],
             "additionalInput": []
         },
-        {
-            "name": "Balefire Branch",
-            "itemId": 159630,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        // World Boss
-        {
-            "name": "Azuretho's Singed Plumage",
-            "itemId": 161377,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Doom's Hatred",
-            "itemId": 161461,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Drust-Runed Icicle",
-            "itemId": 161380,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "T'zane's Barkspines",
-            "itemId": 161411,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        // Raids
-        {
-            "name": "Twitching Tentacle of Xalzaix",
-            "itemId": 160656,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vanquished Tendril of G'huun",
-            "itemId": 160654,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vigilant's Bloodshaper",
-            "itemId": 160651,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        // Drop
+        // World Drop
         {
             "name": "Leyshock's Grand Compilation",
             "itemId": 163937,
@@ -111,8 +111,8 @@
         },
         // World Quests
         {
-            "name": "Dinobone Charm",
-            "itemId": 158155,
+            "name": "Galewind Chimes",
+            "itemId": 155568,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -132,8 +132,8 @@
             "additionalInput": []
         },
         {
-            "name": "Plunderbeard's Flask",
-            "itemId": 158164,
+            "name": "Dinobone Charm",
+            "itemId": 158155,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -141,6 +141,125 @@
         {
             "name": "Pearl Diver's Compass",
             "itemId": 158162,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "First Mate's Spyglass",
+            "itemId": 158163,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Plunderbeard's Flask",
+            "itemId": 158164,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Whirlwing's Plumage",
+            "itemId": 158215,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Living Oil Cannister",
+            "itemId": 158216,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dadalea's Wing",
+            "itemId": 158218,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vial of Storms",
+            "itemId": 158224,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Doom Shroom",
+            "itemId": 158555,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Siren's Tongue",
+            "itemId": 158556,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Snowpelt Mangler",
+            "itemId": 160263,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Incessantly Ticking Clock",
+            "itemId": 161113,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Cursed Captain's Charm",
+            "itemId": 161115,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Berserker's Juju",
+            "itemId": 161117,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Ravasaur Skull Bijou",
+            "itemId": 161119,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Kaja-fied Banana",
+            "itemId": 161125,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dread Aspirant's Medallion",
+            "itemId": 162897,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Dread Gladiator's Badge", // PVP WQ ?
+            "itemId": 161902,
+            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Crawg Gnawed Femur",
+            "itemId": 163703,
             "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
             "bonusIds": [],
             "additionalInput": []
@@ -154,15 +273,15 @@
             "additionalInput": []
         },
         {
-            "name": "Endless Tincture of Fractional Power",
-            "itemId": 152636,
+            "name": "Surging Alchemist Stone",
+            "itemId": 152632,
             "itemLevels": [300],
             "bonusIds": [],
             "additionalInput": []
         },
         {
-            "name": "Surging Alchemist Stone",
-            "itemId": 152632,
+            "name": "Endless Tincture of Fractional Power",
+            "itemId": 152636,
             "itemLevels": [300],
             "bonusIds": [],
             "additionalInput": []
