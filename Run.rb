@@ -87,16 +87,16 @@ toRun = {
   },
   'Combinator' => {
     'Death-Knight' => [
-      'PR_Death_Knight_Blood Death-Knight_Azerite Azerite xx200[23]3',
+      'PR_Death_Knight_Blood Death-Knight_Azerite Azerite xxx00xx',
       'PR_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx',
       'PR_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx',
-      'T22_Death_Knight_Blood Death-Knight_Azerite Azerite xx200[23]3'
+      'T22_Death_Knight_Blood Death-Knight_Azerite Azerite xxx00xx'
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
-      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite x[23]x[23]0x0',
+      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx0x0',
       'T22_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
-      'T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite x[23]x[23]0x0'
+      'T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx0x0'
     ],
     'Druid' => [
       'PR_Druid_Balance Druid_Azerite Azerite x000xxx',
@@ -129,9 +129,9 @@ toRun = {
       'T22_Monk_Windwalker Monk_Azerite Azerite x0x00xx'
     ],
     'Paladin' => [
-      'PR_Paladin_Protection Paladin_Azerite Azerite xx0[01]00x',
-      'PR_Paladin_Retribution Paladin_Azerite Azerite xx0x0[02]x',
-      'T22_Paladin_Retribution Paladin_Azerite Azerite xx0x0[02]x'
+      'PR_Paladin_Protection Paladin_Azerite Azerite xx0x00x',
+      'PR_Paladin_Retribution Paladin_Azerite Azerite xx0x00x',
+      'T22_Paladin_Retribution Paladin_Azerite Azerite xx0x00x'
     ],
     'Priest' => [
       'PR_Priest_Shadow Priest_Azerite Azerite x0x0xxx',
@@ -140,13 +140,13 @@ toRun = {
     'Rogue' => [
       'PR_Rogue_Assassination Rogue_Azerite Azerite xxx00[12]x',
       'PR_Rogue_Assassination_Exsg Rogue_Azerite Azerite xxx003x',
-      'PR_Rogue_Outlaw Rogue_Azerite Azerite x3x00[12]x',
-      'PR_Rogue_Outlaw_SnD Rogue_Azerite Azerite x3x003x',
+      'PR_Rogue_Outlaw Rogue_Azerite Azerite x0x00[12]x',
+      'PR_Rogue_Outlaw_SnD Rogue_Azerite Azerite x0x003x',
       'PR_Rogue_Subtlety Rogue_Azerite Azerite xxx00xx',
       'T22_Rogue_Assassination Rogue_Azerite Azerite xxx00[12]x',
       'T22_Rogue_Assassination_Exsg Rogue_Azerite Azerite xxx003x',
-      'T22_Rogue_Outlaw Rogue_Azerite Azerite x3x00[12]x',
-      'T22_Rogue_Outlaw_SnD Rogue_Azerite Azerite x3x003x',
+      'T22_Rogue_Outlaw Rogue_Azerite Azerite x0x00[12]x',
+      'T22_Rogue_Outlaw_SnD Rogue_Azerite Azerite x0x003x',
       'T22_Rogue_Subtlety Rogue_Azerite Azerite xxx00xx'
     ],
     'Shaman' => [
@@ -163,10 +163,10 @@ toRun = {
       'T22_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
     ],
     'Warrior' => [
-      'PR_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
-      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
-      'T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
-      'T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx'
+      'PR_Warrior_Arms Warrior_Azerite Azerite x0x0xxx',
+      'PR_Warrior_Fury Warrior_Azerite Azerite x0x0xxx',
+      'T22_Warrior_Arms Warrior_Azerite Azerite x0x0xxx',
+      'T22_Warrior_Fury Warrior_Azerite Azerite x0x0xxx'
     ],
   },
   'RaceSimulation' => {
