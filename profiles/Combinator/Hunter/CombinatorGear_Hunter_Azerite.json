@@ -3,33 +3,33 @@
     "beast_mastery": {
       "azerite": {
         "Haze of Rage": "161:340",
+        "Primal Instincts": "366:340",
+        "Rapid Reload": "369:340",
+        "Feeding Frenzy": "367:340",
         "Pack Alpha": "365:340",
         "Dance of Death": "211:340",
-        "Feeding Frenzy": "367:340",
-        "Rapid Reload": "369:340",
-        "Primal Instincts": "366:340",
         "Serrated Jaws": "107:340"
       }
     },
     "marksmanship": {
       "azerite": {
         "Focused Fire": "370:340",
-        "Steady Aim": "368:340",
         "Rapid Reload": "369:340",
+        "Steady Aim": "368:340",
+        "In The Rhythm": "36:340",
         "Arcane Flurry": "162:340",
-        "Unerring Vision": "212:340",
-        "In The Rhythm": "36:340"
+        "Unerring Vision": "212:340"
       }
     },
     "survival": {
       "azerite": {
         "Up Close And Personal": "373:340",
-        "Wildfire Cluster": "110:340",
+        "Blur of Talons": "371:340",
         "Wilderness Survival": "372:340",
-        "Latent Poison": "163:340",
         "Venomous Fangs": "213:340",
+        "Wildfire Cluster": "110:340",
         "Serrated Jaws": "107:340",
-        "Blur of Talons": "371:340"
+        "Latent Poison": "163:340"
       }
     }
   },

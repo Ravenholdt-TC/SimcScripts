@@ -3,20 +3,20 @@
     "blood": {
       "azerite": {
         "Bone Spike Graveyard": "140:340",
-        "Deep Cuts": "106:340",
-        "Eternal Rune Weapon": "348:340",
         "Embrace of the Darkfallen": "243:340",
-        "Marrowblood": "197:340",
-        "Bones of the Damned": "349:340"
+        "Bones of the Damned": "349:340",
+        "Eternal Rune Weapon": "348:340",
+        "Deep Cuts": "106:340",
+        "Marrowblood": "197:340"
       }
     },
     "frost": {
       "azerite": {
         "Killer Frost": "346:340",
-        "Icy Citadel": "108:340",
+        "Latent Chill": "141:340",
         "Frozen Tempest": "347:340",
         "Echoing Howl": "242:340",
-        "Latent Chill": "141:340",
+        "Icy Citadel": "108:340",
         "Glacial Contagion": "198:340"
       }
     },
@@ -24,11 +24,11 @@
       "azerite": {
         "Bone Spike Graveyard": "140:340",
         "Last Surprise": "351:340",
-        "Harrowing Decay": "244:340",
         "Festering Doom": "109:340",
         "Cankerous Wounds": "350:340",
         "Horrid Experimentation": "142:340",
-        "Festermight": "199:340"
+        "Festermight": "199:340",
+        "Harrowing Decay": "244:340"
       }
     }
   },
