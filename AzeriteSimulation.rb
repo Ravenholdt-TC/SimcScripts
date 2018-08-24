@@ -78,14 +78,20 @@ powerList.each do |power|
 
   # Item Level Simulations
   powerSettings['itemLevels'].each do |ilvl|
-    simcInputLevels.push "profileset.\"#{powerName}_#{ilvl}\"+=#{headItemString},ilevel=#{ilvl}"
-    simcInputLevels.push "profileset.\"#{powerName}_#{ilvl}\"+=azerite_override=#{power['powerId']}:#{ilvl}"
+    name = "#{powerName}_#{ilvl}"
+    prefix = "profileset.\"#{name}\"+="
+    simcInputLevels.push(prefix + "name=\"#{name}\"")
+    simcInputLevels.push(prefix + "#{headItemString},ilevel=#{ilvl}")
+    simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
   end
 
   # Stack Simulations
   (1..3).each do |stacks|
+    name = "#{powerName}_#{stacks}"
+    prefix = "profileset.\"#{name}\"+="
+    simcInputStacks.push(prefix + "name=\"#{name}\"")
     powerstring = (["#{power['powerId']}:#{powerSettings['baseItemLevel']}"] * stacks).join('/')
-    simcInputStacks.push "profileset.\"#{powerName}_#{stacks}\"+=azerite_override=#{powerstring}"
+    simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
   end
 end
 

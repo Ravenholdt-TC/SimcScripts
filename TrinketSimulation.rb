@@ -35,9 +35,12 @@ trinketListProfiles.each do |pname, pfile|
   trinketList['trinkets'].each do |trinket|
     bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
     trinket['itemLevels'].each do |ilvl|
-      simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}"
+      name = "#{trinket['name']}_#{ilvl}"
+      prefix = "profileset.\"#{name}\"+="
+      simcInput.push(prefix + "name=\"#{name}\"")
+      simcInput.push(prefix + "trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}")
       trinket['additionalInput'].each do |input|
-        simcInput.push "profileset.\"#{trinket['name']}_#{ilvl}\"+=#{input}"
+        simcInput.push(prefix + "#{input}")
       end
     end
     simcInput.push ''

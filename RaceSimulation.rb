@@ -29,7 +29,9 @@ simcInput.push 'race=""'
 simcInput.push ''
 RaceInputMap.each do |name, raceString|
   if ClassRaceMap[classfolder].include?(name)
-    simcInput.push "profileset.\"#{name}\"+=race=#{raceString}"
+    prefix = "profileset.\"#{name}\"+="
+    simcInput.push(prefix + "name=\"#{name}\"")
+    simcInput.push(prefix + "race=#{raceString}")
   end
 end
 
