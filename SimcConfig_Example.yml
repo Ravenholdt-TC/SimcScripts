@@ -39,9 +39,10 @@ ArchivesFolder: archives
 
 # Orders (scripts, fightstyles) to run
 RunOrders: [
-  [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
-  [["AzeriteSimulation", "RaceSimulation", "TrinketSimulation"], ["2T", "3T", "1TA"]],
-  [["Combinator"], ["2T", "3T", "1TA"]]
+  [["RaceSimulation", "TrinketSimulation", "Combinator", "AzeriteSimulation"], ["1T"]],
+  [["RaceSimulation", "TrinketSimulation", "Combinator", "AzeriteSimulation"], ["2T"]],
+  [["RaceSimulation", "TrinketSimulation", "Combinator", "AzeriteSimulation"], ["3T"]],
+  [["RaceSimulation", "TrinketSimulation", "Combinator", "AzeriteSimulation"], ["1TA"]]
 ]
 
 # Classes to run

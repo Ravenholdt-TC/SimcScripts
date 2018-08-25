@@ -7,18 +7,13 @@
         "Furious Gaze": "159:340",
         "Eyes of Rage": "353:340",
         "Thirsting Blades": "352:340",
-        "Infernal Armor": "160:340",
         "Seething Power": "245:340"
       }
     },
     "vengeance": {
       "azerite": {
         "Essence Sever": "355:340",
-        "Cycle of Binding": "354:340",
-        "Gaping Maw": "246:340",
-        "Revel in Pain": "134:340",
-        "Infernal Armor": "160:340",
-        "Rigid Carapace": "221:340"
+        "Cycle of Binding": "354:340"
       }
     }
   },

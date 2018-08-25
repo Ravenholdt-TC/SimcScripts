@@ -3,13 +3,12 @@
     "holy": {
       "azerite": {
         "Radiant Incandescence": "452:340",
+        "Zealotry": "396:340",
         "Martyr's Breath": "139:340",
         "Avenger's Might": "125:340",
-        "Judicious Defense": "454:340",
         "Synergistic Growth": "102:340",
         "Moment of Compassion": "188:340",
         "Breaking Dawn": "394:340",
-        "Grace of the Justicar": "393:340",
         "Divine Revelations": "233:340",
         "Indomitable Justice": "235:340"
       }
@@ -17,23 +16,18 @@
     "protection": {
       "azerite": {
         "Inner Light": "234:340",
-        "Bulwark of Light": "133:340",
         "Avenger's Might": "125:340",
-        "Judicious Defense": "454:340",
         "Soaring Shield": "150:340",
         "Inspiring Vanguard": "395:340",
-        "Grace of the Justicar": "393:340",
-        "Dauntless Divinity": "189:340",
         "Indomitable Justice": "235:340"
       }
     },
     "retribution": {
       "azerite": {
+        "Zealotry": "396:340",
         "Avenger's Might": "125:340",
-        "Judicious Defense": "454:340",
         "Divine Right": "453:340",
         "Relentless Inquisitor": "154:340",
-        "Grace of the Justicar": "393:340",
         "Indomitable Justice": "235:340",
         "Expurgation": "187:340"
       }

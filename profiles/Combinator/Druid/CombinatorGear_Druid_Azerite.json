@@ -4,7 +4,6 @@
       "azerite": {
         "Dawning Sun": "250:340",
         "Sunblaze": "200:340",
-        "Craggy Bark": "251:340",
         "Lunar Shrapnel": "357:340",
         "High Noon": "356:340",
         "Streaking Stars": "122:340",
@@ -18,7 +17,6 @@
         "Twisted Claws": "241:340",
         "Raking Ferocity": "169:340",
         "Gushing Lacerations": "358:340",
-        "Masterful Instincts": "171:340",
         "Iron Jaws": "247:340",
         "Blood Mist": "111:340",
         "Wild Fleshrending": "359:340"
@@ -27,12 +25,8 @@
     "guardian": {
       "azerite": {
         "Twisted Claws": "241:340",
-        "Craggy Bark": "251:340",
-        "Masterful Instincts": "171:340",
-        "Layered Mane": "112:340",
         "Guardian's Wrath": "361:340",
-        "Wild Fleshrending": "359:340",
-        "Gory Regeneration": "360:340"
+        "Wild Fleshrending": "359:340"
       }
     },
     "restoration": {
@@ -40,7 +34,6 @@
         "Autumn Leaves": "210:340",
         "Synergistic Growth": "102:340",
         "Fungal Essence": "120:340",
-        "Craggy Bark": "251:340",
         "Rampant Growth": "362:340",
         "Grove Tending": "172:340",
         "High Noon": "356:340",

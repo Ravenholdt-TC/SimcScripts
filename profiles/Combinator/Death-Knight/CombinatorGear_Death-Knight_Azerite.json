@@ -3,11 +3,8 @@
     "blood": {
       "azerite": {
         "Bone Spike Graveyard": "140:340",
-        "Embrace of the Darkfallen": "243:340",
-        "Bones of the Damned": "349:340",
         "Eternal Rune Weapon": "348:340",
-        "Deep Cuts": "106:340",
-        "Marrowblood": "197:340"
+        "Deep Cuts": "106:340"
       }
     },
     "frost": {
