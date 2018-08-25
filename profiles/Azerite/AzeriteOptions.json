@@ -2,23 +2,53 @@
     "baseItemLevel": 325, // Used for stacks, 325 is HC dungeon level, 385 Mythic Raid
     "itemLevels": [
         325, // HC Dungeons, WQs
-        340, // LFR Uldir, M+ 0-3 Dungeons, Emissaries
-        355, // Normal Uldir, M+ 4-6, World Bosses, Rep
-        370, // HC Uldir, M+ 7-9
-        385 // M Uldir, M+ 10+
+        340, // LFR Uldir, M Dungeons, M+ 0-3 Chest, Emissaries
+        355, // Normal Uldir, M+ 4-6 Chest, World Bosses, Rep
+        370, // HC Uldir, M+ 7-9 Chest
+        385 // M Uldir, M+ 10+ Chest
     ],
     "blacklistedTiers": [
         0,
         1
     ],
-    // Unknown traits that crash sim
     "blacklistedPowerIds": [
-        1,
-        8,
-        6,
-        2,
-        90,
-        7
+        19, // Shared - Woundbinder
+        42, // Shared - Savior
+        43, // Shared - Winds of War
+        89, // Shared - Azerite Veins
+        98, // Shared - Crystalline Carapace
+        99, // Shared - Ablative Shielding
+        100, // Shared - Strength in Numbers
+        101, // Shared - Shimmering Haven
+        103, // Shared - Concentrated Mending
+        104, // Shared - Bracing Chill
+        105, // Shared - Ephemeral Recovery
+        112, // Guardian Druid - Layered Mane
+        133, // Paladin - Bulwark of Light
+        134, // Vengeance DH - Revel in Pain
+        143, // Paladin - Inspiring Beacon
+        144, // Paladin - Rejuvenating Grace
+        145, // Paladin - Fortifying Auras
+        146, // Paladin - Critical Flash
+        148, // Paladin - Righteous Flames
+        149, // Paladin - Healing Hammer
+        160, // DH - Infernal Armor
+        171, // Druid - Masterful Instincts
+        186, // Brewmaster Monk - Staggering Strikes
+        189, // Paladin - Dauntless Divinity
+        197, // Blood DK - Marrowblood
+        221, // Vengeance DH - Rigid Carapace
+        227, // Priest - Depth of the Shadows
+        238, // Brewmaster Monk - Fit to Burst
+        243, // Blood DK - Embrace of the Darkfallen,
+        246, // Vengeance DH - Gaping Maw
+        251, // Druid - Craggy Bark
+        349, // Blood DK - Bones of the Damned
+        360, // Guardian Druid - Gory Regeneration
+        382, // Brewmaster Monk - Niuzao's Blessing
+        393, // Paladin - Grace of the Justicar
+        454, // Paladin - Judicious Defense
+        463 // Shared - Blessed Portents
     ],
     "pairedPowers": [
         [486, 492], // Glory in Battle H + Liberators Might A
