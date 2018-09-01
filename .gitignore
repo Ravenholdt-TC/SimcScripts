@@ -1,12 +1,15 @@
 # Project #
 ###########
-archives/*
-generated/*
-logs/*
-!logs/simc/
-logs/simc/*
+archives
+!archives/.gitkeep
+generated
+!generated/.gitkeep
+logs
+!logs/.gitkeep
+!logs/simc
 !logs/simc/.gitkeep
-reports/*
+reports
+!reports/.gitkeep
 SimcConfig.yml
 
 # Project dependencies #
@@ -15,8 +18,9 @@ SimcConfig.yml
 
 # IDE #
 #######
-.idea/*
-.vscode/*
+.idea
+SimcScripts.iml
+.vscode
 
 # OS generated files #
 ######################
