@@ -36,7 +36,7 @@ to_run = {
       'PR_Mage_Arcane',
       'PR_Mage_Fire',
       'PR_Mage_Frost',
-      # 'T22_Mage_Arcane',
+      'T22_Mage_Arcane',
       # 'T22_Mage_Fire',
       'T22_Mage_Frost'
     ],
@@ -55,7 +55,7 @@ to_run = {
     'Priest' => [
       'PR_Priest_Holy',
       'PR_Priest_Shadow',
-      # 'T22_Priest_Holy',
+      'T22_Priest_Holy',
       'T22_Priest_Shadow'
     ],
     'Rogue' => [
@@ -73,7 +73,7 @@ to_run = {
     'Shaman' => [
       'PR_Shaman_Elemental',
       'PR_Shaman_Enhancement',
-      # 'T22_Shaman_Elemental',
+      'T22_Shaman_Elemental',
       'T22_Shaman_Enhancement'
     ],
     'Warlock' => [
@@ -128,7 +128,7 @@ to_run = {
       'PR_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
       'PR_Mage_Fire Mage_Azerite Azerite x0xx0xx',
       'PR_Mage_Frost Mage_Azerite Azerite x0xx0xx',
-      # 'T22_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
+      'T22_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
       # 'T22_Mage_Fire Mage_Azerite Azerite x0xx0xx',
       'T22_Mage_Frost Mage_Azerite Azerite x0xx0xx'
     ],
@@ -147,7 +147,7 @@ to_run = {
     'Priest' => [
       'PR_Priest_Holy Priest_Azerite Azerite 00000xx',
       'PR_Priest_Shadow Priest_Azerite Azerite x0x0xxx',
-      # 'T22_Priest_Holy Priest_Azerite Azerite 00000xx',
+      'T22_Priest_Holy Priest_Azerite Azerite 00000xx',
       'T22_Priest_Shadow Priest_Azerite Azerite x0x0xxx'
     ],
     'Rogue' => [
@@ -165,7 +165,7 @@ to_run = {
     'Shaman' => [
       'PR_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx',
       'PR_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx',
-      # 'T22_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx',
+      'T22_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx',
       'T22_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx'
     ],
     'Warlock' => [
@@ -220,7 +220,7 @@ to_run = {
       'PR_Mage_Arcane',
       'PR_Mage_Fire',
       'PR_Mage_Frost',
-      # 'T22_Mage_Arcane',
+      'T22_Mage_Arcane',
       # 'T22_Mage_Fire',
       'T22_Mage_Frost'
     ],
@@ -239,7 +239,7 @@ to_run = {
     'Priest' => [
       'PR_Priest_Holy',
       'PR_Priest_Shadow',
-      # 'T22_Priest_Holy',
+      'T22_Priest_Holy',
       'T22_Priest_Shadow'
     ],
     'Rogue' => [
@@ -257,7 +257,7 @@ to_run = {
     'Shaman' => [
       'PR_Shaman_Elemental',
       'PR_Shaman_Enhancement',
-      # 'T22_Shaman_Elemental',
+      'T22_Shaman_Elemental',
       'T22_Shaman_Enhancement'
     ],
     'Warlock' => [
@@ -274,7 +274,7 @@ to_run = {
       # 'PR_Warrior_Protection',
       'T22_Warrior_Arms',
       'T22_Warrior_Fury'
-    # 'T22_Warrior_Protection'
+      # 'T22_Warrior_Protection'
     ],
   },
   'TrinketSimulation' => {
@@ -312,7 +312,7 @@ to_run = {
       'PR_Mage_Arcane Intelligence',
       'PR_Mage_Fire Intelligence',
       'PR_Mage_Frost Intelligence',
-      # 'T22_Mage_Arcane Intelligence',
+      'T22_Mage_Arcane Intelligence',
       # 'T22_Mage_Fire Intelligence',
       'T22_Mage_Frost Intelligence'
     ],
@@ -331,7 +331,7 @@ to_run = {
     'Priest' => [
       'PR_Priest_Holy Intelligence',
       'PR_Priest_Shadow Intelligence',
-      # 'T22_Priest_Holy Intelligence',
+      'T22_Priest_Holy Intelligence',
       'T22_Priest_Shadow Intelligence'
     ],
     'Rogue' => [
@@ -349,7 +349,7 @@ to_run = {
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
       'PR_Shaman_Enhancement Agility',
-      # 'T22_Shaman_Elemental Intelligence',
+      'T22_Shaman_Elemental Intelligence',
       'T22_Shaman_Enhancement Agility'
     ],
     'Warlock' => [
