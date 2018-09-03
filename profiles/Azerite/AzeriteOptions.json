@@ -1,5 +1,8 @@
 {
-    "baseItemLevel": 325, // Used for stacks, 325 is HC dungeon level, 385 Mythic Raid
+    "baseItemLevels": { // Used for stacks, lookup by beginning of the profile name, otherwise first.
+        "PR": 345,
+        "T22": 390
+    },
     "itemLevels": [
         325, // HC Dungeons, WQs
         340, // LFR Uldir, M Dungeons, M+ 0-3 Chest, Emissaries

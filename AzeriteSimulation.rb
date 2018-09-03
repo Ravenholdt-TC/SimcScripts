@@ -57,6 +57,15 @@ unless headItemString
   exit
 end
 
+# Get Base item level for Stacks based on Profile name beginning
+stackPowerLevel = powerSettings['baseItemLevels'].first
+powerSettings['baseItemLevels'].each do |prefix, ilvl|
+  if template.start_with? prefix
+    stackPowerLevel = ilvl
+    break
+  end
+end
+
 # Create simc inputs
 simcInputLevels = ["#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
 simcInputStacks = []
@@ -90,7 +99,7 @@ powerList.each do |power|
     name = "#{powerName}_#{stacks}"
     prefix = "profileset.\"#{name}\"+="
     simcInputStacks.push(prefix + "name=\"#{name}\"")
-    powerstring = (["#{power['powerId']}:#{powerSettings['baseItemLevel']}"] * stacks).join('/')
+    powerstring = (["#{power['powerId']}:#{stackPowerLevel}"] * stacks).join('/')
     simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
   end
 end
