@@ -87,8 +87,10 @@ class JSONResults
     metas['statistics']['total_iterations_mean'] = iterations.sum.to_f / iterations.size.to_f
     metas['statistics']['total_iterations_variance'] = iterations.inject(0.0) { |s, x| s + (x - metas['statistics']['total_iterations_mean']) ** 2 }
     metas['statistics']['total_iterations_stddev'] = Math.sqrt(metas['statistics']['total_iterations_variance'])
+    metas['statistics']['total_iterations_sem'] = metas['statistics']['total_iterations_stddev'] / Math.sqrt(iterations.size)
     metas['statistics']['total_mean_dps_stddev'] = totalDpsMeanStdDev / iterations.size
     metas['statistics']['total_mean_dps_variance'] = metas['statistics']['total_mean_dps_stddev'] ** 2
+    metas['statistics']['total_mean_dps_sem'] = metas['statistics']['total_mean_dps_stddev'] / Math.sqrt(iterations.size)
 
     # Timestamps
     metas['build_timestamp'] = DateTime.parse(@jsonData['build_date'] + ' ' + @jsonData['build_time'] + ' ' + Time.now.strftime('%:z')).to_time.to_i
