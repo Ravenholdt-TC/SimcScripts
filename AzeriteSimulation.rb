@@ -58,7 +58,7 @@ unless headItemString
 end
 
 # Get Base item level for Stacks based on Profile name beginning
-stackPowerLevel = powerSettings['baseItemLevels'].first
+stackPowerLevel = powerSettings['baseItemLevels'].first.last
 powerSettings['baseItemLevels'].each do |prefix, ilvl|
   if template.start_with? prefix
     stackPowerLevel = ilvl
