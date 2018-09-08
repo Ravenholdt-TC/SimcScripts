@@ -108,7 +108,7 @@ end
 # Process Item Level simulations #
 ##################################
 
-simulationFilename = "AzeriteLevels_#{fightstyle}_#{template}"
+simulationFilename = "Azerite-Levels_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   fightstyleFile,
@@ -167,7 +167,7 @@ ReportWriter.WriteArrayReport(results, report)
 # Process Stack Simulations # (yes, welcome to copy pasta land, deal with it)
 #############################
 
-simulationFilename = "AzeriteStacks_#{fightstyle}_#{template}"
+simulationFilename = "Azerite-Stacks_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   fightstyleFile,
