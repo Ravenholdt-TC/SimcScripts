@@ -1,8 +1,8 @@
 # Path to the folder with the simc executable
 SimcPath: D:\Dev\SimulationCraft
 
-# How many threads to use
-Threads: 3
+# How many threads to use, put a number or a formula using "max" for all cores
+Threads: max - 1
 
 # What file type to write reports to (available: json, csv; you can specify multiple with | as seperator)
 OutputExt: csv

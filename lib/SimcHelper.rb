@@ -1,4 +1,5 @@
 require 'open3'
+require 'etc'
 require_relative 'Logging'
 require_relative 'SimcConfig'
 
@@ -6,6 +7,22 @@ module SimcHelper
   # Convert string into simc name, e.g. "Fortune's Strike" -> "fortunes_strike"
   def self.TokenizeName(name)
     return name.downcase.gsub(/[^0-9a-z_+.% ]/i, '').gsub(' ', '_')
+  end
+
+  # Evaluate number of threads to use for Sim
+  def self.NumThreads
+    begin
+      if SimcConfig['Threads'].kind_of?(String)
+        max = Etc.nprocessors
+        threads = eval(SimcConfig['Threads'])
+        return 1 if threads < 1
+        return threads
+      else
+        return SimcConfig['Threads']
+      end
+    rescue
+      return 1
+    end
   end
 
   # Append a simc file to a filestream, used for generating the full simc input file.
@@ -18,7 +35,7 @@ module SimcHelper
   end
 
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args, simulationFilename="LastInput")
+  def self.RunSimulation(args, simulationFilename = "LastInput")
     # Dirty fix for those class/specs separated by an underscore instead of an hyphen
     simulationFilename = simulationFilename.sub('Death_Knight', 'Death-Knight')
     simulationFilename = simulationFilename.sub('Demon_Hunter', 'Demon-Hunter')
@@ -31,7 +48,7 @@ module SimcHelper
       input.puts
 
       # Special input via script config
-      input.puts "threads=#{SimcConfig['Threads']}"
+      input.puts "threads=#{NumThreads()}"
       input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
 
       # Logs
@@ -59,13 +76,13 @@ module SimcHelper
     # Run simulation with logging and redirecting output to the terminal
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|
       Thread.new do
-        until (line = stdout.gets).nil? do
+        until (line = stdout.gets).nil?
           line.chomp!
           Logging.LogSimcInfo(line)
         end
       end
       Thread.new do
-        until (line = stderr.gets).nil? do
+        until (line = stderr.gets).nil?
           line.chomp!
           Logging.LogSimcError(line)
         end
