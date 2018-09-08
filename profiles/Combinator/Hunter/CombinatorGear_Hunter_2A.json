@@ -1,0 +1,40 @@
+{
+  "specials": {
+    "beast_mastery": {
+      "azerite": {
+        "Haze of Rage": "161:!!ILVL!!/161:!!ILVL!!",
+        "Primal Instincts": "366:!!ILVL!!/366:!!ILVL!!",
+        "Rapid Reload": "369:!!ILVL!!/369:!!ILVL!!",
+        "Feeding Frenzy": "367:!!ILVL!!/367:!!ILVL!!",
+        "Pack Alpha": "365:!!ILVL!!/365:!!ILVL!!",
+        "Dance of Death": "211:!!ILVL!!/211:!!ILVL!!",
+        "Serrated Jaws": "107:!!ILVL!!/107:!!ILVL!!"
+      }
+    },
+    "marksmanship": {
+      "azerite": {
+        "Focused Fire": "370:!!ILVL!!/370:!!ILVL!!",
+        "Rapid Reload": "369:!!ILVL!!/369:!!ILVL!!",
+        "Steady Aim": "368:!!ILVL!!/368:!!ILVL!!",
+        "In The Rhythm": "36:!!ILVL!!/36:!!ILVL!!",
+        "Arcane Flurry": "162:!!ILVL!!/162:!!ILVL!!",
+        "Unerring Vision": "212:!!ILVL!!/212:!!ILVL!!"
+      }
+    },
+    "survival": {
+      "azerite": {
+        "Up Close And Personal": "373:!!ILVL!!/373:!!ILVL!!",
+        "Blur of Talons": "371:!!ILVL!!/371:!!ILVL!!",
+        "Wilderness Survival": "372:!!ILVL!!/372:!!ILVL!!",
+        "Venomous Fangs": "213:!!ILVL!!/213:!!ILVL!!",
+        "Wildfire Cluster": "110:!!ILVL!!/110:!!ILVL!!",
+        "Serrated Jaws": "107:!!ILVL!!/107:!!ILVL!!",
+        "Latent Poison": "163:!!ILVL!!/163:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

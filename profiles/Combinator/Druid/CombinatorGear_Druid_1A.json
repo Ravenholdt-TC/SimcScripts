@@ -1,0 +1,49 @@
+{
+  "specials": {
+    "balance": {
+      "azerite": {
+        "Dawning Sun": "250:!!ILVL!!",
+        "Sunblaze": "200:!!ILVL!!",
+        "Lunar Shrapnel": "357:!!ILVL!!",
+        "High Noon": "356:!!ILVL!!",
+        "Streaking Stars": "122:!!ILVL!!",
+        "Power of the Moon": "173:!!ILVL!!",
+        "Lively Spirit": "364:!!ILVL!!"
+      }
+    },
+    "feral": {
+      "azerite": {
+        "Shredding Fury": "209:!!ILVL!!",
+        "Twisted Claws": "241:!!ILVL!!",
+        "Raking Ferocity": "169:!!ILVL!!",
+        "Gushing Lacerations": "358:!!ILVL!!",
+        "Iron Jaws": "247:!!ILVL!!",
+        "Blood Mist": "111:!!ILVL!!",
+        "Wild Fleshrending": "359:!!ILVL!!"
+      }
+    },
+    "guardian": {
+      "azerite": {
+        "Twisted Claws": "241:!!ILVL!!",
+        "Guardian's Wrath": "361:!!ILVL!!",
+        "Wild Fleshrending": "359:!!ILVL!!"
+      }
+    },
+    "restoration": {
+      "azerite": {
+        "Autumn Leaves": "210:!!ILVL!!",
+        "Synergistic Growth": "102:!!ILVL!!",
+        "Fungal Essence": "120:!!ILVL!!",
+        "Rampant Growth": "362:!!ILVL!!",
+        "Grove Tending": "172:!!ILVL!!",
+        "High Noon": "356:!!ILVL!!",
+        "Waking Dream": "363:!!ILVL!!",
+        "Lively Spirit": "364:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

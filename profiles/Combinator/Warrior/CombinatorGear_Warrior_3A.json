@@ -1,0 +1,39 @@
+{
+  "specials": {
+    "arms": {
+      "azerite": {
+        "Crushing Assault": "434:!!ILVL!!/434:!!ILVL!!/434:!!ILVL!!",
+        "Gathering Storm": "174:!!ILVL!!/174:!!ILVL!!/174:!!ILVL!!",
+        "Lord of War": "435:!!ILVL!!/435:!!ILVL!!/435:!!ILVL!!",
+        "Test of Might": "226:!!ILVL!!/226:!!ILVL!!/226:!!ILVL!!",
+        "Seismic Wave": "433:!!ILVL!!/433:!!ILVL!!/433:!!ILVL!!",
+        "Executioner's Precision": "121:!!ILVL!!/121:!!ILVL!!/121:!!ILVL!!"
+      }
+    },
+    "fury": {
+      "azerite": {
+        "Bloodcraze": "176:!!ILVL!!/176:!!ILVL!!/176:!!ILVL!!",
+        "Gathering Storm": "174:!!ILVL!!/174:!!ILVL!!/174:!!ILVL!!",
+        "Trample the Weak": "119:!!ILVL!!/119:!!ILVL!!/119:!!ILVL!!",
+        "Reckless Flurry": "438:!!ILVL!!/438:!!ILVL!!/438:!!ILVL!!",
+        "Pulverizing Blows": "229:!!ILVL!!/229:!!ILVL!!/229:!!ILVL!!",
+        "Infinite Fury": "451:!!ILVL!!/451:!!ILVL!!/451:!!ILVL!!",
+        "Simmering Rage": "437:!!ILVL!!/437:!!ILVL!!/437:!!ILVL!!"
+      }
+    },
+    "protection": {
+      "azerite": {
+        "Iron Fortress": "441:!!ILVL!!/441:!!ILVL!!/441:!!ILVL!!",
+        "Bloodsport": "177:!!ILVL!!/177:!!ILVL!!/177:!!ILVL!!",
+        "Callous Reprisal": "440:!!ILVL!!/440:!!ILVL!!/440:!!ILVL!!",
+        "Brace for Impact": "450:!!ILVL!!/450:!!ILVL!!/450:!!ILVL!!",
+        "Deafening Crash": "118:!!ILVL!!/118:!!ILVL!!/118:!!ILVL!!",
+        "Reinforced Plating": "237:!!ILVL!!/237:!!ILVL!!/237:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

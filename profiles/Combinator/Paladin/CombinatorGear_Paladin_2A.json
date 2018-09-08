@@ -1,0 +1,40 @@
+{
+  "specials": {
+    "holy": {
+      "azerite": {
+        "Radiant Incandescence": "452:!!ILVL!!/452:!!ILVL!!",
+        "Zealotry": "396:!!ILVL!!/396:!!ILVL!!",
+        "Martyr's Breath": "139:!!ILVL!!/139:!!ILVL!!",
+        "Avenger's Might": "125:!!ILVL!!/125:!!ILVL!!",
+        "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!",
+        "Moment of Compassion": "188:!!ILVL!!/188:!!ILVL!!",
+        "Breaking Dawn": "394:!!ILVL!!/394:!!ILVL!!",
+        "Divine Revelations": "233:!!ILVL!!/233:!!ILVL!!",
+        "Indomitable Justice": "235:!!ILVL!!/235:!!ILVL!!"
+      }
+    },
+    "protection": {
+      "azerite": {
+        "Inner Light": "234:!!ILVL!!/234:!!ILVL!!",
+        "Avenger's Might": "125:!!ILVL!!/125:!!ILVL!!",
+        "Soaring Shield": "150:!!ILVL!!/150:!!ILVL!!",
+        "Inspiring Vanguard": "395:!!ILVL!!/395:!!ILVL!!",
+        "Indomitable Justice": "235:!!ILVL!!/235:!!ILVL!!"
+      }
+    },
+    "retribution": {
+      "azerite": {
+        "Zealotry": "396:!!ILVL!!/396:!!ILVL!!",
+        "Avenger's Might": "125:!!ILVL!!/125:!!ILVL!!",
+        "Divine Right": "453:!!ILVL!!/453:!!ILVL!!",
+        "Relentless Inquisitor": "154:!!ILVL!!/154:!!ILVL!!",
+        "Indomitable Justice": "235:!!ILVL!!/235:!!ILVL!!",
+        "Expurgation": "187:!!ILVL!!/187:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

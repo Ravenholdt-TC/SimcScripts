@@ -49,6 +49,17 @@ gear['specials'][spec]['azerite3'] = gear['specials'][spec]['azerite']
 
 hasAnyAzerite = false
 
+# Get base item level for azerite stacks based on Profile name beginning
+hasAnyAzerite = true if setupsProfile == 'NoAzerite' # Disable azerite for 0A sims.
+powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")
+stackPowerLevel = powerSettings['baseItemLevels'].first.last
+powerSettings['baseItemLevels'].each do |prefix, ilvl|
+  if profile.start_with? prefix
+    stackPowerLevel = ilvl
+    break
+  end
+end
+
 # Build gear combinations
 gearCombinations = {}
 setups['setups'].each do |setup|
@@ -93,9 +104,9 @@ setups['setups'].each do |setup|
             specialOverrides.each do |specialOverride|
               specialStrings.push(specialOverride)
             end
-            # Special treatment for handling Azerite overrides as specials
+            # Special treatment for handling Azerite overrides as specials, also replace !!ILVL!! with fitting ilevel
             if ['azerite', 'azerite2', 'azerite3'].include? specialSlots[idx]
-              specialAzeritePowers.push(gear['specials'][spec][specialSlots[idx]][itemName])
+              specialAzeritePowers.push(gear['specials'][spec][specialSlots[idx]][itemName].gsub('!!ILVL!!', stackPowerLevel.to_s))
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear['specials'][spec][specialSlots[idx]][itemName]}")
             end
@@ -148,7 +159,15 @@ talentdata[0].each do |t1|
   end
 end
 
-simulationFilename = "Combinator_#{fightstyle}_#{profile}"
+# Special naming extension for Azerite stack sims
+azeriteStyle = ''
+if setupsProfile == 'Azerite'
+  azeriteStyle = "-#{gearProfile[-2..-1]}"
+elsif setupsProfile == 'NoAzerite'
+  azeriteStyle = '-0A'
+end
+
+simulationFilename = "Combinator#{azeriteStyle}_#{fightstyle}_#{profile}"
 params = [
   "#{SimcConfig['ConfigFolder']}/SimcCombinatorConfig.simc",
   fightstyleFile,

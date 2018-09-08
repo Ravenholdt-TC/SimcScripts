@@ -1,0 +1,38 @@
+{
+  "specials": {
+    "arcane": {
+      "azerite": {
+        "Arcane Pummeling": "88:!!ILVL!!/88:!!ILVL!!",
+        "Anomalous Impact": "127:!!ILVL!!/127:!!ILVL!!",
+        "Arcane Pressure": "214:!!ILVL!!/214:!!ILVL!!",
+        "Brain Storm": "167:!!ILVL!!/167:!!ILVL!!",
+        "Explosive Echo": "375:!!ILVL!!/375:!!ILVL!!",
+        "Galvanizing Spark": "374:!!ILVL!!/374:!!ILVL!!"
+      }
+    },
+    "fire": {
+      "azerite": {
+        "Duplicative Incineration": "377:!!ILVL!!/377:!!ILVL!!",
+        "Blaster Master": "215:!!ILVL!!/215:!!ILVL!!",
+        "Trailing Embers": "376:!!ILVL!!/376:!!ILVL!!",
+        "Flames of Alacrity": "128:!!ILVL!!/128:!!ILVL!!",
+        "Preheat": "168:!!ILVL!!/168:!!ILVL!!",
+        "Firemind": "378:!!ILVL!!/378:!!ILVL!!"
+      }
+    },
+    "frost": {
+      "azerite": {
+        "Whiteout": "380:!!ILVL!!/380:!!ILVL!!",
+        "Tunnel of Ice": "379:!!ILVL!!/379:!!ILVL!!",
+        "Frigid Grasp": "381:!!ILVL!!/381:!!ILVL!!",
+        "Packed Ice": "132:!!ILVL!!/132:!!ILVL!!",
+        "Glacial Assault": "225:!!ILVL!!/225:!!ILVL!!",
+        "Winter's Reach": "170:!!ILVL!!/170:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "specials": {
+    "elemental": {
+      "azerite": {
+        "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!",
+        "Lava Shock": "178:!!ILVL!!/178:!!ILVL!!",
+        "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!",
+        "Echo of the Elementals": "222:!!ILVL!!/222:!!ILVL!!",
+        "Igneous Potential": "457:!!ILVL!!/457:!!ILVL!!",
+        "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!",
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!"
+      }
+    },
+    "enhancement": {
+      "azerite": {
+        "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!",
+        "Strength of Earth": "179:!!ILVL!!/179:!!ILVL!!",
+        "Primal Primer": "137:!!ILVL!!/137:!!ILVL!!",
+        "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!",
+        "Roiling Storm": "420:!!ILVL!!/420:!!ILVL!!",
+        "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!",
+        "Lightning Conduit": "223:!!ILVL!!/223:!!ILVL!!",
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!"
+      }
+    },
+    "restoration": {
+      "azerite": {
+        "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!",
+        "Surging Tides": "422:!!ILVL!!/422:!!ILVL!!",
+        "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!",
+        "Swelling Stream": "224:!!ILVL!!/224:!!ILVL!!",
+        "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!",
+        "Overflowing Shores": "449:!!ILVL!!/449:!!ILVL!!",
+        "Soothing Waters": "138:!!ILVL!!/138:!!ILVL!!",
+        "Igneous Potential": "457:!!ILVL!!/457:!!ILVL!!",
+        "Spouting Spirits": "423:!!ILVL!!/423:!!ILVL!!",
+        "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!",
+        "Ebb and Flow": "191:!!ILVL!!/191:!!ILVL!!",
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

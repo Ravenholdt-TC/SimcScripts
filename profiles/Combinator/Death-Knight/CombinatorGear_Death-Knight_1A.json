@@ -1,0 +1,36 @@
+{
+  "specials": {
+    "blood": {
+      "azerite": {
+        "Bone Spike Graveyard": "140:!!ILVL!!",
+        "Eternal Rune Weapon": "348:!!ILVL!!",
+        "Deep Cuts": "106:!!ILVL!!"
+      }
+    },
+    "frost": {
+      "azerite": {
+        "Killer Frost": "346:!!ILVL!!",
+        "Latent Chill": "141:!!ILVL!!",
+        "Frozen Tempest": "347:!!ILVL!!",
+        "Echoing Howl": "242:!!ILVL!!",
+        "Icy Citadel": "108:!!ILVL!!",
+        "Glacial Contagion": "198:!!ILVL!!"
+      }
+    },
+    "unholy": {
+      "azerite": {
+        "Bone Spike Graveyard": "140:!!ILVL!!",
+        "Last Surprise": "351:!!ILVL!!",
+        "Festering Doom": "109:!!ILVL!!",
+        "Cankerous Wounds": "350:!!ILVL!!",
+        "Horrid Experimentation": "142:!!ILVL!!",
+        "Festermight": "199:!!ILVL!!",
+        "Harrowing Decay": "244:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

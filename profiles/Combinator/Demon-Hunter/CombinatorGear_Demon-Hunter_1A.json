@@ -1,0 +1,24 @@
+{
+  "specials": {
+    "havoc": {
+      "azerite": {
+        "Unbound Chaos": "220:!!ILVL!!",
+        "Revolving Blades": "126:!!ILVL!!",
+        "Furious Gaze": "159:!!ILVL!!",
+        "Eyes of Rage": "353:!!ILVL!!",
+        "Thirsting Blades": "352:!!ILVL!!",
+        "Seething Power": "245:!!ILVL!!"
+      }
+    },
+    "vengeance": {
+      "azerite": {
+        "Essence Sever": "355:!!ILVL!!",
+        "Cycle of Binding": "354:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

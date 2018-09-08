@@ -1,0 +1,39 @@
+{
+  "specials": {
+    "discipline": {
+      "azerite": {
+        "Contemptuous Homily": "398:!!ILVL!!/398:!!ILVL!!/398:!!ILVL!!",
+        "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!/102:!!ILVL!!",
+        "Moment of Repose": "113:!!ILVL!!/113:!!ILVL!!/113:!!ILVL!!",
+        "Weal and Woe": "164:!!ILVL!!/164:!!ILVL!!/164:!!ILVL!!",
+        "Gift of Forgiveness": "397:!!ILVL!!/397:!!ILVL!!/397:!!ILVL!!",
+        "Enduring Luminescence": "399:!!ILVL!!/399:!!ILVL!!/399:!!ILVL!!"
+      }
+    },
+    "holy": {
+      "azerite": {
+        "Permeating Glow": "114:!!ILVL!!/114:!!ILVL!!/114:!!ILVL!!",
+        "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!/102:!!ILVL!!",
+        "Prayerful Litany": "228:!!ILVL!!/228:!!ILVL!!/228:!!ILVL!!",
+        "Word of Mending": "401:!!ILVL!!/401:!!ILVL!!/401:!!ILVL!!",
+        "Everlasting Light": "400:!!ILVL!!/400:!!ILVL!!/400:!!ILVL!!",
+        "Sacred Flame": "402:!!ILVL!!/402:!!ILVL!!/402:!!ILVL!!",
+        "Blessed Sanctuary": "165:!!ILVL!!/165:!!ILVL!!/165:!!ILVL!!"
+      }
+    },
+    "shadow": {
+      "azerite": {
+        "Death Throes": "404:!!ILVL!!/404:!!ILVL!!/404:!!ILVL!!",
+        "Whispers of the Damned": "236:!!ILVL!!/236:!!ILVL!!/236:!!ILVL!!",
+        "Spiteful Apparitions": "403:!!ILVL!!/403:!!ILVL!!/403:!!ILVL!!",
+        "Thought Harvester": "166:!!ILVL!!/166:!!ILVL!!/166:!!ILVL!!",
+        "Chorus of Insanity": "405:!!ILVL!!/405:!!ILVL!!/405:!!ILVL!!",
+        "Searing Dialogue": "115:!!ILVL!!/115:!!ILVL!!/115:!!ILVL!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
