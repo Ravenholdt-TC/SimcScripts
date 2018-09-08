@@ -391,7 +391,7 @@ orders.each do |order|
               if stacks > 0
                 command.gsub!('Azerite Azerite', "#{stacks}A Azerite")
               else
-                command.gsub!('Azerite Azerite', "0A NoAzerite")
+                command.gsub!('Azerite Azerite', "1A NoAzerite")
               end
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
             end
