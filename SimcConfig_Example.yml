@@ -7,6 +7,9 @@ Threads: max - 1
 # What file type to write reports to (available: json, csv; you can specify multiple with | as seperator)
 OutputExt: csv
 
+# Abort the simulation if the end-of-sim log file already exists.
+AbortOnExistingReport: false
+
 ###
 ### You can most likely leave the following the way they are.
 ###

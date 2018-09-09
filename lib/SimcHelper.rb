@@ -41,6 +41,12 @@ module SimcHelper
     simulationFilename = simulationFilename.sub('Demon_Hunter', 'Demon-Hunter')
     simulationFilename = simulationFilename.sub('Beast_Mastery', 'Beast-Mastery')
 
+    logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
+    if SimcConfig['AbortOnExistingReport'] && File.exists?("#{logFile}.log")
+      Logging.LogScriptInfo "Logfile already exists, aborting simulation!"
+      exit
+    end
+
     generatedFile = "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc"
     Logging.LogScriptInfo "Writing full SimC Input to #{generatedFile}..."
     File.open(generatedFile, 'w') do |input|
@@ -52,7 +58,6 @@ module SimcHelper
       input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
 
       # Logs
-      logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
       input.puts "output=#{logFile}.log"
       input.puts "json=#{logFile}.json"
 
