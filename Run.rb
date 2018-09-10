@@ -12,8 +12,10 @@ to_run = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
+      'PR_Demon_Hunter_Havoc_MomentumAoE',
       'PR_Demon_Hunter_Vengeance',
       'T22_Demon_Hunter_Havoc',
+      'T22_Demon_Hunter_Havoc_MomentumAoE',
       'T22_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
@@ -64,11 +66,13 @@ to_run = {
       'PR_Rogue_Outlaw',
       'PR_Rogue_Outlaw_SnD',
       'PR_Rogue_Subtlety',
+      'PR_Rogue_Subtlety_SecretTechnique',
       'T22_Rogue_Assassination',
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
       'T22_Rogue_Subtlety',
+      'T22_Rogue_Subtlety_SecretTechnique',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
@@ -199,8 +203,10 @@ to_run = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
+      'PR_Demon_Hunter_Havoc_MomentumAoE',
       'PR_Demon_Hunter_Vengeance',
       'T22_Demon_Hunter_Havoc',
+      'T22_Demon_Hunter_Havoc_MomentumAoE',
       'T22_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
@@ -251,11 +257,13 @@ to_run = {
       'PR_Rogue_Outlaw',
       'PR_Rogue_Outlaw_SnD',
       'PR_Rogue_Subtlety',
+      'PR_Rogue_Subtlety_SecretTechnique',
       'T22_Rogue_Assassination',
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
       'T22_Rogue_Subtlety',
+      'T22_Rogue_Subtlety_SecretTechnique',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
@@ -291,8 +299,10 @@ to_run = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Agility',
+      'PR_Demon_Hunter_Havoc_MomentumAoE Agility',
       'PR_Demon_Hunter_Vengeance Agility',
       'T22_Demon_Hunter_Havoc Agility',
+      'T22_Demon_Hunter_Havoc_MomentumAoE Agility',
       'T22_Demon_Hunter_Vengeance Agility',
     ],
     'Druid' => [
@@ -343,11 +353,13 @@ to_run = {
       'PR_Rogue_Outlaw Agility',
       'PR_Rogue_Outlaw_SnD Agility',
       'PR_Rogue_Subtlety Agility',
+      'PR_Rogue_Subtlety_SecretTechnique Agility',
       'T22_Rogue_Assassination Agility',
       'T22_Rogue_Assassination_Exsg Agility',
       'T22_Rogue_Outlaw Agility',
       'T22_Rogue_Outlaw_SnD Agility',
       'T22_Rogue_Subtlety Agility',
+      'T22_Rogue_Subtlety_SecretTechnique Agility',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental Intelligence',
