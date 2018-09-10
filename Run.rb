@@ -400,12 +400,13 @@ orders.each do |order|
         commands.each do |command|
           if script == 'Combinator' && command.include?('Azerite Azerite')
             azeriteStacks.each do |stacks|
+              azCommand = command
               if stacks > 0
-                command.gsub!('Azerite Azerite', "#{stacks}A Azerite")
+                azCommand.gsub!('Azerite Azerite', "#{stacks}A Azerite")
               else
-                command.gsub!('Azerite Azerite', "1A NoAzerite")
+                azCommand.gsub!('Azerite Azerite', "1A NoAzerite")
               end
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
             end
           else
             system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
