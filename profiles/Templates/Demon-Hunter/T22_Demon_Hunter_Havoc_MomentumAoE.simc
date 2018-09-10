@@ -1,2 +1,6 @@
-T22_Demon_Hunter_Havoc.simc
+$(simc_profiles_path)/Tier22/T22_Demon_Hunter_Havoc.simc
+
+spec=havoc
 talents=1310222
+
+head=high_altitude_turban,id=158364,bonus_id=1557/4819/4775/4786,azerite_powers=12/126/21/15/13

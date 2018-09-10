@@ -1,2 +1,6 @@
-PR_Demon_Hunter_Havoc.simc
+$(simc_profiles_path)/PreRaids/PR_Demon_Hunter_Havoc.simc
+
+spec=havoc
 talents=1310222
+
+head=high_altitude_turban,id=158364,bonus_id=4779/1512/4786/4775,azerite_powers=revolving_blades/elemental_whirl/0/azerite_empowered
