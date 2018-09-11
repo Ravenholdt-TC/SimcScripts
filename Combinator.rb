@@ -15,7 +15,7 @@ fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_
 classfolder = Interactive.SelectSubfolder('Combinator')
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ''], classfolder)
 #Read spec from profile
-spec = ProfileHelper.GetSimcSpecFromTemplate(profileFile)
+spec = ProfileHelper.GetValueFromTemplate('spec', profileFile)
 unless spec
   Logging.LogScriptError "No spec= string found in profile!"
   exit

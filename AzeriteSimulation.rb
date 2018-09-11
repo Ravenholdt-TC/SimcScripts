@@ -22,7 +22,7 @@ powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/Aze
 classId = ClassAndSpecIds[classfolder][:class_id]
 
 #Read spec from profile
-spec = ProfileHelper.GetSimcSpecFromTemplate(templateFile)
+spec = ProfileHelper.GetValueFromTemplate('spec', templateFile)
 unless spec
   Logging.LogScriptError "No spec= string found in profile!"
   exit
@@ -44,14 +44,7 @@ simcInput.push 'disable_azerite=items'
 simcInput.push ''
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
-headItemString = nil
-File.open(templateFile, 'r') do |tfile|
-  while line = tfile.gets
-    if line.start_with?('head=')
-      headItemString = line.chomp
-    end
-  end
-end
+headItemString = ProfileHelper.GetValueFromTemplate('head', templateFile)
 unless headItemString
   Logging.LogScriptError "No head= string found in profile!"
   exit
@@ -67,7 +60,7 @@ powerSettings['baseItemLevels'].each do |prefix, ilvl|
 end
 
 # Create simc inputs
-simcInputLevels = ["#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
+simcInputLevels = ["head=#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
 simcInputStacks = []
 powerList.each do |power|
   next if !power['classesId'].include?(classId)
@@ -90,7 +83,7 @@ powerList.each do |power|
     name = "#{powerName}_#{ilvl}"
     prefix = "profileset.\"#{name}\"+="
     simcInputLevels.push(prefix + "name=\"#{name}\"")
-    simcInputLevels.push(prefix + "#{headItemString},ilevel=#{ilvl}")
+    simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
     simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
   end
 

@@ -40,16 +40,20 @@ module ProfileHelper
     return overrideLines
   end
 
-  # Fetch the sim spec string from a profile
-  def self.GetSimcSpecFromTemplate(file)
-    spec = nil
+  # Fetch the sim value for given key string from a profile (works recursively with $(simc_profiles_path))
+  def self.GetValueFromTemplate(simcKey, file)
+    value = nil
     File.open(file, 'r') do |pfile|
       while line = pfile.gets
-        if line.start_with?('spec=')
-          spec = line.chomp.split('=')[1]
+        if line.start_with?("#{simcKey}=")
+          value = line.chomp.split('=', 2)[1]
+        elsif line.chomp.end_with?('.simc')
+          subfile = line.chomp.gsub('input=', '').gsub('$(simc_profiles_path)', "#{SimcConfig['SimcPath']}/profiles")
+          subvalue = GetValueFromTemplate(simcKey, subfile)
+          value = subvalue if subvalue
         end
       end
     end
-    return spec
+    return value
   end
 end
