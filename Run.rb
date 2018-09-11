@@ -409,8 +409,10 @@ if options[:reverse]
 end
 
 orders.each do |order|
-  scripts = order[0]
-  fightstyles = order[1]
+  scripts = order[0].clone
+  scripts.reverse! if options[:reverse]
+  fightstyles = order[1].clone
+  fightstyles.reverse! if options[:reverse]
   scripts.each do |script|
     fightstyles.each do |fightstyle|
       wow_classes.each do |wow_class|
