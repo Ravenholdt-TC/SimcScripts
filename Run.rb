@@ -39,7 +39,7 @@ to_run = {
       'PR_Mage_Fire',
       'PR_Mage_Frost',
       'T22_Mage_Arcane',
-      # 'T22_Mage_Fire',
+      'T22_Mage_Fire',
       'T22_Mage_Frost',
     ],
     'Monk' => [
@@ -136,7 +136,7 @@ to_run = {
       'PR_Mage_Fire Mage_Azerite Azerite x0xx0xx',
       'PR_Mage_Frost Mage_Azerite Azerite x0xx0xx',
       'T22_Mage_Arcane Mage_Azerite Azerite x0xx0xx',
-      # 'T22_Mage_Fire Mage_Azerite Azerite x0xx0xx',
+      'T22_Mage_Fire Mage_Azerite Azerite x0xx0xx',
       'T22_Mage_Frost Mage_Azerite Azerite x0xx0xx',
     ],
     'Monk' => [
@@ -230,7 +230,7 @@ to_run = {
       'PR_Mage_Fire',
       'PR_Mage_Frost',
       'T22_Mage_Arcane',
-      # 'T22_Mage_Fire',
+      'T22_Mage_Fire',
       'T22_Mage_Frost',
     ],
     'Monk' => [
@@ -326,7 +326,7 @@ to_run = {
       'PR_Mage_Fire Intelligence',
       'PR_Mage_Frost Intelligence',
       'T22_Mage_Arcane Intelligence',
-      # 'T22_Mage_Fire Intelligence',
+      'T22_Mage_Fire Intelligence',
       'T22_Mage_Frost Intelligence',
     ],
     'Monk' => [
