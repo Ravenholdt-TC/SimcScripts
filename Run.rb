@@ -1,4 +1,14 @@
+require 'optparse'
 require_relative 'lib/SimcConfig'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: example.rb [-r]"
+
+  opts.on("-r", "Do the run starting from the end") do |r|
+    options[:reverse] = r
+  end
+end.parse!
 
 to_run = {
   'AzeriteSimulation' => {
@@ -390,6 +400,12 @@ orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
 azeriteStacks = SimcConfig["RunCombinatorAzeriteStacks"]
 
+if options[:reverse]
+  orders.reverse!
+  wow_classes.reverse!
+  azeriteStacks.reverse!
+end
+
 orders.each do |order|
   scripts = order[0]
   fightstyles = order[1]
@@ -397,6 +413,9 @@ orders.each do |order|
     fightstyles.each do |fightstyle|
       wow_classes.each do |wow_class|
         commands = to_run[script][wow_class]
+        #if options[:reverse]
+        #  commands.reverse!
+        #end
         commands.each do |command|
           if script == 'Combinator' && command.include?('Azerite Azerite')
             azeriteStacks.each do |stacks|
