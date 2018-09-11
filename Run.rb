@@ -412,10 +412,8 @@ orders.each do |order|
   scripts.each do |script|
     fightstyles.each do |fightstyle|
       wow_classes.each do |wow_class|
-        commands = to_run[script][wow_class]
-        #if options[:reverse]
-        #  commands.reverse!
-        #end
+        commands = to_run[script][wow_class].clone
+        commands.reverse! if options[:reverse]
         commands.each do |command|
           if script == 'Combinator' && command.include?('Azerite Azerite')
             azeriteStacks.each do |stacks|
