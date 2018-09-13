@@ -3557,7 +3557,8 @@
         "spellId": 273367,
         "spellName": "Power of the Moon",
         "specsId": [
-            102
+            102,
+            103
         ],
         "tier": 3,
         "classesId": [
