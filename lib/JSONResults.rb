@@ -59,42 +59,75 @@ class JSONResults
 
     # Get the meta datas from the json report
     metas = {}
-    metas['build_date'] = @jsonData['build_date']
-    metas['build_time'] = @jsonData['build_time']
-    metas['git_revision'] = @jsonData['git_revision']
-    metas['options'] = @jsonData['sim']['options']
-    metas['overrides'] = @jsonData['sim']['overrides']
-    metas['statistics'] = @jsonData['sim']['statistics']
     iterations = []
-    totalDpsMeanStdDev = 0
+    # totalDpsMeanStdDev = 0
+
+    # Fight infos
+    metas['fightLength'] = @jsonData['sim']['options']['max_time'].round
+    metas['fightLengthVariation'] = @jsonData['sim']['options']['vary_combat_length']
+    metas['targetError'] = @jsonData['sim']['options']['target_error']
+
+    # Template infos
     @jsonData['sim']['players'].each do |player|
       if player['name'] == 'Template'
-        metas['player'] = player
+        # Get the gear using items simc encoded string
+        gear = [
+          player['gear']['head']['encoded_item'],
+          player['gear']['neck']['encoded_item'],
+          player['gear']['shoulders']['encoded_item'],
+          player['gear']['back']['encoded_item'],
+          player['gear']['chest']['encoded_item'],
+          player['gear']['wrists']['encoded_item'],
+          player['gear']['hands']['encoded_item'],
+          player['gear']['waist']['encoded_item'],
+          player['gear']['legs']['encoded_item'],
+          player['gear']['feet']['encoded_item'],
+          player['gear']['finger1']['encoded_item'],
+          player['gear']['finger2']['encoded_item'],
+          player['gear']['trinket1']['encoded_item'],
+          player['gear']['trinket2']['encoded_item'],
+          player['gear']['main_hand']['encoded_item']
+        ]
+        if player['gear']['off_hand']
+          gear.push player['gear']['off_hand']['encoded_item']
+        end
+
+        # Get the talents spell id
+        talents = []
+        player['talents'].each do |talent|
+          talents.push talent['spell_id']
+        end
+
+        metas['templateGear'] = gear
+        metas['templateTalents'] = talents
+        metas['templateDPS'] = player['collected_data']['dps']['mean'].round
         iterations.push player['collected_data']['dps']['count']
-        totalDpsMeanStdDev += player['collected_data']['dps']['mean_std_dev']
+        # totalDpsMeanStdDev += player['collected_data']['dps']['mean_std_dev']
       end
     end
-    metas['profilesets_overrides'] = {}
     @jsonData['sim']['profilesets']['results'].each do |player|
       iterations.push player['iterations']
-      totalDpsMeanStdDev += player['stddev'] / Math.sqrt(player['iterations'])
-      next unless player['overrides']
-      metas['profilesets_overrides'][player['name']] = player['overrides']
+      # totalDpsMeanStdDev += player['stddev'] / Math.sqrt(player['iterations'])
     end
-    # Inject additional stats into statistics
-    metas['statistics']['total_iterations'] = iterations.sum
-    metas['statistics']['total_actors'] = iterations.size
-    metas['statistics']['total_iterations_mean'] = iterations.sum.to_f / iterations.size.to_f
-    metas['statistics']['total_iterations_variance'] = iterations.inject(0.0) { |s, x| s + (x - metas['statistics']['total_iterations_mean']) ** 2 }
-    metas['statistics']['total_iterations_stddev'] = Math.sqrt(metas['statistics']['total_iterations_variance'])
-    metas['statistics']['total_iterations_sem'] = metas['statistics']['total_iterations_stddev'] / Math.sqrt(iterations.size)
-    metas['statistics']['total_mean_dps_stddev'] = totalDpsMeanStdDev / iterations.size
-    metas['statistics']['total_mean_dps_variance'] = metas['statistics']['total_mean_dps_stddev'] ** 2
-    metas['statistics']['total_mean_dps_sem'] = metas['statistics']['total_mean_dps_stddev'] / Math.sqrt(iterations.size)
 
-    # Timestamps
-    metas['build_timestamp'] = DateTime.parse(@jsonData['build_date'] + ' ' + @jsonData['build_time'] + ' ' + Time.now.strftime('%:z')).to_time.to_i
-    metas['result_timestamp'] = Time.now.to_i
+    # Statistics
+    metas['elapsedTime'] = @jsonData['sim']['statistics']['elapsed_time_seconds'].round(2)
+    metas['totalEventsProcessed'] = @jsonData['sim']['statistics']['total_events_processed']
+    metas['totalIterations'] = iterations.sum
+    metas['totalActors'] = iterations.size
+    # metas['totalIterationsMean'] = iterations.sum.to_f / iterations.size.to_f
+    # metas['totalIterationsVariance'] = iterations.inject(0.0) { |s, x| s + (x - metas['statistics']['total_iterations_mean']) ** 2 }
+    # metas['totalIterationsStdDev'] = Math.sqrt(metas['statistics']['total_iterations_variance'])
+    # metas['totalIterationsSem'] = metas['statistics']['total_iterations_stddev'] / Math.sqrt(iterations.size)
+    # metas['totalMeanDpsStdDev'] = totalDpsMeanStdDev / iterations.size
+    # metas['totalMeanDpsVariance'] = metas['statistics']['total_mean_dps_stddev'] ** 2
+    # metas['totalMeanDpsSem'] = metas['statistics']['total_mean_dps_stddev'] / Math.sqrt(iterations.size)
+
+    # Build infos
+    metas['simcBuildTimestamp'] = DateTime.parse(@jsonData['build_date'] + ' ' + @jsonData['build_time'] + ' ' + Time.now.strftime('%:z')).to_time.to_i
+    metas['simcGitRevision'] = @jsonData['git_revision']
+    metas['wowVersion'] = @jsonData['sim']['options']['dbc']['Live']['wow_version']
+    metas['wowBuild'] = @jsonData['sim']['options']['dbc']['Live']['build_level']
 
     # Add additional data
     metas.merge!(@additionalMetadata)
