@@ -71,25 +71,13 @@ class JSONResults
     @jsonData['sim']['players'].each do |player|
       if player['name'] == 'Template'
         # Get the gear using items simc encoded string
-        gear = [
-          player['gear']['head']['encoded_item'],
-          player['gear']['neck']['encoded_item'],
-          player['gear']['shoulders']['encoded_item'],
-          player['gear']['back']['encoded_item'],
-          player['gear']['chest']['encoded_item'],
-          player['gear']['wrists']['encoded_item'],
-          player['gear']['hands']['encoded_item'],
-          player['gear']['waist']['encoded_item'],
-          player['gear']['legs']['encoded_item'],
-          player['gear']['feet']['encoded_item'],
-          player['gear']['finger1']['encoded_item'],
-          player['gear']['finger2']['encoded_item'],
-          player['gear']['trinket1']['encoded_item'],
-          player['gear']['trinket2']['encoded_item'],
-          player['gear']['main_hand']['encoded_item']
-        ]
-        if player['gear']['off_hand']
-          gear.push player['gear']['off_hand']['encoded_item']
+        gearSlots = ['head', 'neck', 'shoulders', 'back', 'chest', 'wrists', 'hands', 'waist', 'legs', 'feet', 'finger1', 'finger2', 'trinket1', 'trinket2', 'main_hand', 'off_hand']
+        gear = []
+        gearSlots.each do |gearSlot|
+          item = player['gear'][gearSlot]
+          if item
+            gear.push "#{gearSlot}=#{item['encoded_item']}"
+          end
         end
 
         # Get the talents spell id
