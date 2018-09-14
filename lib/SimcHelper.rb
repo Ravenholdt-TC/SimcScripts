@@ -42,7 +42,7 @@ module SimcHelper
     simulationFilename = simulationFilename.sub('Beast_Mastery', 'Beast-Mastery')
 
     logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
-    if SimcConfig['AbortOnExistingReport'] && File.exists?("#{logFile}.log")
+    if SimcConfig['AbortOnExistingReport'] && File.exists?("#{logFile}.json")
       Logging.LogScriptInfo "Logfile already exists, aborting simulation!"
       exit
     end
