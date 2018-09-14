@@ -58,7 +58,9 @@ module SimcHelper
       input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
 
       # Logs
-      input.puts "output=#{logFile}.log"
+      if SimcConfig['SaveSimcTextLogs']
+        input.puts "output=#{logFile}.log"
+      end
       input.puts "json=#{logFile}.json"
 
       # Use global simc config file

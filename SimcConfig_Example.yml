@@ -10,6 +10,9 @@ OutputExt: csv
 # Abort the simulation if the end-of-sim log file already exists.
 AbortOnExistingReport: false
 
+# Wether or not the simc text logs should be saved
+SaveSimcTextLogs: true
+
 ###
 ### You can most likely leave the following the way they are.
 ###
