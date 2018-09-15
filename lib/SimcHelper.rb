@@ -60,6 +60,12 @@ module SimcHelper
       # Logs
       if SimcConfig['SaveSimcTextLogs']
         input.puts "output=#{logFile}.log"
+      else
+        if Gem.win_platform?
+          input.puts "output=nul"
+        else
+          input.puts "output=/dev/null"
+        end
       end
       input.puts "json=#{logFile}.json"
 
