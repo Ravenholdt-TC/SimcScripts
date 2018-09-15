@@ -1,4 +1,6 @@
+# Triple Targets
 profileset_metric=dps/prioritydps
+
 enemy=Huey
 enemy=Dewey
 enemy=Louie

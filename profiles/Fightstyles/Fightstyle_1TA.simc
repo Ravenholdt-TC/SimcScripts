@@ -1,6 +1,5 @@
+# Single Target w/ Adds
 profileset_metric=dps/prioritydps
 
-raid_events+=/adds,count=1,first=30,cooldown=30,duration=10
-raid_events+=/adds,count=1,first=30,cooldown=30,duration=12
-raid_events+=/adds,count=1,first=30,cooldown=30,duration=14
-raid_events+=/adds,count=1,first=30,cooldown=30,duration=15
+# Spawns 3-5 adds after 30s each 45s that will lasts ~11-19s each.
+raid_events+=/adds,count=4,count_range=1,first=30,cooldown=45,duration=15,duration_stddev=2
