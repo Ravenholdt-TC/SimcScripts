@@ -47,7 +47,7 @@ ArchivesFolder: archives
 RunOrders: [
   [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["1T"]],
   [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["1TA"]],
-  [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["HD"]]
+  [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation"], ["HD"]]
 ]
 
 # Amounts of same Azerite trait stacks to sim. (Combinator-0A, Combinator-1A, ...)
