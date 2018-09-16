@@ -13,6 +13,12 @@ AbortOnExistingReport: false
 # Wether or not the simc text logs should be saved
 SaveSimcTextLogs: true
 
+# Wether or not the simc stdout should be saved (could slow down the sims)
+SaveSimcStdout: false
+
+# Wether or not the simc stderr should be saved (could slow down the sims)
+SaveSimcStderr: true
+
 ###
 ### You can most likely leave the following the way they are.
 ###

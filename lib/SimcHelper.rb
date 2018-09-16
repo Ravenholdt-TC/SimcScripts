@@ -88,17 +88,31 @@ module SimcHelper
 
     # Run simulation with logging and redirecting output to the terminal
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|
-      Thread.new do
-        until (line = stdout.gets).nil?
-          line.chomp!
-          Logging.LogSimcInfo(line)
+      # stdout
+      if SimcConfig['SaveSimcStdout']
+        Thread.new do
+          begin
+            while (result = stdout.readpartial(4096))
+              Logging.LogSimcInfo(result)
+            end
+          rescue EOFError, IOError
+          end
         end
+      else
+        IO.copy_stream(stdout, $stdout)
       end
-      Thread.new do
-        until (line = stderr.gets).nil?
-          line.chomp!
-          Logging.LogSimcError(line)
+      # stderr
+      if SimcConfig['SaveSimcStderr']
+        Thread.new do
+          begin
+            while (result = stderr.readpartial(4096))
+              Logging.LogSimcError(result)
+            end
+          rescue EOFError, IOError
+          end
         end
+      else
+        IO.copy_stream(stderr, $stderr)
       end
       thread.join # Wait for simc process to end
     end

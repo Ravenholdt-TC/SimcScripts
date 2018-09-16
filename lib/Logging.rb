@@ -9,8 +9,8 @@ module Logging
     @@SimcErrorLogger.progname = 'SimulationCraft'
     @@ScriptLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.log", 'a')
     @@ScriptErrorLogger = Logger.new File.new("#{SimcConfig['LogsFolder']}/Scripts.err.log", 'a')
-    @@ScriptLogger.progname = name
-    @@ScriptErrorLogger.progname = name
+    @@ScriptLogger.progname = scriptName
+    @@ScriptErrorLogger.progname = scriptName
   end
 
   def self.LogScriptDebug(msg)
@@ -25,47 +25,41 @@ module Logging
 
   def self.LogScriptWarning(msg)
     puts msg
-    @@ScriptLogger.warn msg
     @@ScriptErrorLogger.warn msg
   end
 
   def self.LogScriptError(msg)
     puts msg
-    @@ScriptLogger.error msg
     @@ScriptErrorLogger.error msg
   end
 
   def self.LogScriptFatal(msg)
     puts msg
-    @@ScriptLogger.fatal msg
     @@ScriptErrorLogger.fatal msg
   end
 
   def self.LogSimcDebug(msg)
-    puts msg
+    print msg
     @@SimcLogger.debug msg
   end
 
   def self.LogSimcInfo(msg)
-    puts msg
+    print msg
     @@SimcLogger.info msg
   end
 
   def self.LogSimcWarning(msg)
-    puts msg
-    @@SimcLogger.warn msg
+    print msg
     @@SimcErrorLogger.warn msg
   end
 
   def self.LogSimcError(msg)
-    puts msg
-    @@SimcLogger.error msg
+    print msg
     @@SimcErrorLogger.error msg
   end
 
   def self.LogSimcFatal(msg)
-    puts msg
-    @@SimcLogger.fatal msg
+    print msg
     @@SimcErrorLogger.fatal msg
   end
 end
