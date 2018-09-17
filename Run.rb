@@ -414,28 +414,30 @@ if options[:reverse]
   azeriteStacks.reverse!
 end
 
-orders.each do |order|
-  scripts = order[0].clone
-  scripts.reverse! if options[:reverse]
-  fightstyles = order[1].clone
-  fightstyles.reverse! if options[:reverse]
-  scripts.each do |script|
-    fightstyles.each do |fightstyle|
-      wow_classes.each do |wow_class|
-        commands = to_run[script][wow_class].clone
-        commands.reverse! if options[:reverse]
-        commands.each do |command|
-          if script == 'Combinator' && command.include?('Azerite Azerite')
-            azeriteStacks.each do |stacks|
-              if stacks > 0
-                azCommand = command.gsub('Azerite Azerite', "#{stacks}A Azerite")
-              else
-                azCommand = command.gsub('Azerite Azerite', "1A NoAzerite")
+orders.each do |steps|
+  steps.each do |order|
+    scripts = order[0].clone
+    scripts.reverse! if options[:reverse]
+    fightstyles = order[1].clone
+    fightstyles.reverse! if options[:reverse]
+    scripts.each do |script|
+      fightstyles.each do |fightstyle|
+        wow_classes.each do |wow_class|
+          commands = to_run[script][wow_class].clone
+          commands.reverse! if options[:reverse]
+          commands.each do |command|
+            if script == 'Combinator' && command.include?('Azerite Azerite')
+              azeriteStacks.each do |stacks|
+                if stacks > 0
+                  azCommand = command.gsub('Azerite Azerite', "#{stacks}A Azerite")
+                else
+                  azCommand = command.gsub('Azerite Azerite', "1A NoAzerite")
+                end
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
               end
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
+            else
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
             end
-          else
-            system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
           end
         end
       end

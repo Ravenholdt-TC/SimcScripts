@@ -51,9 +51,16 @@ ArchivesFolder: archives
 
 # Orders (scripts, fightstyles) to run
 RunOrders: [
-  [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["1T"]],
-  [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["1TA"]],
-  [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "Combinator"], ["HD"]]
+  [
+    [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
+    [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1TA"]],
+    [["RaceSimulation", "TrinketSimulation", "Combinator"], ["HD"]]
+  ],
+  [
+    [["AzeriteSimulation"], ["1T"]],
+    [["AzeriteSimulation"], ["1TA"]],
+    [["AzeriteSimulation"], ["HD"]]
+  ]
 ]
 
 # Amounts of same Azerite trait stacks to sim. (Combinator-0A, Combinator-1A, ...)
