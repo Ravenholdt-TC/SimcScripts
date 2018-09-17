@@ -409,12 +409,12 @@ wow_classes = SimcConfig["RunClasses"]
 azeriteStacks = SimcConfig["RunCombinatorAzeriteStacks"]
 
 if options[:reverse]
-  orders.reverse!
   wow_classes.reverse!
   azeriteStacks.reverse!
 end
 
 orders.each do |steps|
+  steps.reverse! if options[:reverse]
   steps.each do |order|
     scripts = order[0].clone
     scripts.reverse! if options[:reverse]
