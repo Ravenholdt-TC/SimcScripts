@@ -14,7 +14,7 @@
         0,
         1
     ],
-    "blacklistedPowerIds": [
+    "blacklistedPowers": [
         19, // Shared - Woundbinder
         42, // Shared - Savior
         43, // Shared - Winds of War
@@ -60,5 +60,14 @@
         [489, 495], // Sylvanas' Resolve H + Anduin's Determination A
         [490, 496], // Combined Might H + Stronger Together A
         [491, 497] // Collective Will H + Stand As One A
+    ],
+    "reoriginationArrayStacks": [
+        0,
+        5,
+        10
+    ],
+    "reoriginationArrayPowers": [
+        483, // Archive of the Titans
+        485 // Laser Matrix
     ]
 }

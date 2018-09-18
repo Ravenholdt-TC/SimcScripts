@@ -66,7 +66,7 @@ powerList.each do |power|
   next if !power['classesId'].include?(classId)
   next if power['specsId'] && !power['specsId'].include?(specId)
   next if powerSettings['blacklistedTiers'].include?(power['tier'])
-  next if powerSettings['blacklistedPowerIds'].include?(power['powerId'])
+  next if powerSettings['blacklistedPowers'].include?(power['powerId'])
 
   powerName = power['spellName']
   pairedSet = powerSettings['pairedPowers'].find { |x| x.include? power['powerId'] }
@@ -78,22 +78,31 @@ powerList.each do |power|
     end
   end
 
-  # Item Level Simulations
-  powerSettings['itemLevels'].each do |ilvl|
-    name = "#{powerName}_#{ilvl}"
-    prefix = "profileset.\"#{name}\"+="
-    simcInputLevels.push(prefix + "name=\"#{name}\"")
-    simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
-    simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
-  end
+  powerSettings['reoriginationArrayStacks'].each do |raStacks|
+    powerName2 = powerName.dup
+    powerName2 += " -- ra:#{raStacks}" if raStacks > 0
 
-  # Stack Simulations
-  (1..3).each do |stacks|
-    name = "#{powerName}_#{stacks}"
-    prefix = "profileset.\"#{name}\"+="
-    simcInputStacks.push(prefix + "name=\"#{name}\"")
-    powerstring = (["#{power['powerId']}:#{stackPowerLevel}"] * stacks).join('/')
-    simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
+    # Item Level Simulations
+    powerSettings['itemLevels'].each do |ilvl|
+      name = "#{powerName2}_#{ilvl}"
+      prefix = "profileset.\"#{name}\"+="
+      simcInputLevels.push(prefix + "name=\"#{name}\"")
+      simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
+      simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
+      simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{raStacks}") if raStacks > 0
+    end
+
+    # Stack Simulations
+    (1..3).each do |stacks|
+      name = "#{powerName2}_#{stacks}"
+      prefix = "profileset.\"#{name}\"+="
+      simcInputStacks.push(prefix + "name=\"#{name}\"")
+      powerstring = (["#{power['powerId']}:#{stackPowerLevel}"] * stacks).join('/')
+      simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
+      simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{raStacks}") if raStacks > 0
+    end
+
+    break if raStacks == 0 && !powerSettings['reoriginationArrayPowers'].include?(power['powerId'])
   end
 end
 
