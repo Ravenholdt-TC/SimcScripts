@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require_relative 'lib/DataMaps'
+require_relative 'lib/HeroInterface'
 require_relative 'lib/Interactive'
 require_relative 'lib/JSONParser'
 require_relative 'lib/JSONResults'
@@ -59,6 +60,9 @@ powerSettings['baseItemLevels'].each do |prefix, ilvl|
   end
 end
 
+# Get azerite combinations if CombinationBasedAzeriteCharts is enabled.
+azeriteCombinations = HeroInterface.GetAzeriteCombinations(3, fightstyle, template)
+
 # Create simc inputs
 simcInputLevels = ["head=#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
 simcInputStacks = []
@@ -78,31 +82,40 @@ powerList.each do |power|
     end
   end
 
-  powerSettings['reoriginationArrayStacks'].each do |raStacks|
-    powerName2 = powerName.dup
-    powerName2 += " -- ra:#{raStacks}" if raStacks > 0
+  # Sim per stacks for Reorigination Array if specified in options
+  reoriginationArray = [0]
+  if powerSettings['reoriginationArrayPowers'].include?(power['powerId'])
+    reoriginationArray = powerSettings['reoriginationArrayStacks']
+  end
+
+  reoriginationArray.each do |raStacks|
+    # Set up additional options
+    options = {}
+    options['talents'] = azeriteCombinations[powerName] if azeriteCombinations and azeriteCombinations[powerName]
+    options['ra'] = raStacks if raStacks > 0
+    optionsString = (options.empty? ? '' : '--') + options.map { |k, v| "#{k}:#{v}" }.join(';')
 
     # Item Level Simulations
     powerSettings['itemLevels'].each do |ilvl|
-      name = "#{powerName2}_#{ilvl}"
+      name = "#{powerName}#{optionsString}_#{ilvl}"
       prefix = "profileset.\"#{name}\"+="
       simcInputLevels.push(prefix + "name=\"#{name}\"")
       simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
       simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
-      simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{raStacks}") if raStacks > 0
+      simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
+      simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
     end
 
     # Stack Simulations
     (1..3).each do |stacks|
-      name = "#{powerName2}_#{stacks}"
+      name = "#{powerName}#{optionsString}_#{stacks}"
       prefix = "profileset.\"#{name}\"+="
       simcInputStacks.push(prefix + "name=\"#{name}\"")
       powerstring = (["#{power['powerId']}:#{stackPowerLevel}"] * stacks).join('/')
       simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
-      simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{raStacks}") if raStacks > 0
+      simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
+      simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
     end
-
-    break if raStacks == 0 && !powerSettings['reoriginationArrayPowers'].include?(power['powerId'])
   end
 end
 

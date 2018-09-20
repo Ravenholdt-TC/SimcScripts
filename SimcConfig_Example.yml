@@ -7,6 +7,11 @@ Threads: max - 1
 # What file type to write reports to (available: json, csv; you can specify multiple with | as seperator)
 OutputExt: csv
 
+# Enable to sim HD-Combinations based Azerite charts (using best matching talent setups).
+# Requires HeroOutput (see below).
+# Requires HeroDamage git repo in HeroDamagePath if the report file does not exist.
+CombinationBasedAzeriteCharts: false
+
 # Abort the simulation if the end-of-sim log file already exists.
 AbortOnExistingReport: false
 
@@ -77,3 +82,4 @@ RunClasses: ["Death-Knight", "Demon-Hunter", "Druid", "Hunter", "Mage", "Monk", 
 HeroOutput: false
 
 HeroDamagePath: D:\Dev\HeroDamage
+HeroDamageReportsFolder: static/reports
