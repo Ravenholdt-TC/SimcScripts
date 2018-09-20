@@ -57,8 +57,10 @@ to_run = {
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
+      'PR_Monk_Windwalker_Serenity',
       'T22_Monk_Brewmaster',
       'T22_Monk_Windwalker',
+      'T22_Monk_Windwalker_Serenity',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
@@ -250,8 +252,10 @@ to_run = {
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
+      'PR_Monk_Windwalker_Serenity',
       'T22_Monk_Brewmaster',
       'T22_Monk_Windwalker',
+      'T22_Monk_Windwalker_Serenity',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
@@ -348,8 +352,10 @@ to_run = {
     'Monk' => [
       'PR_Monk_Brewmaster Agility',
       'PR_Monk_Windwalker Agility',
+      'PR_Monk_Windwalker_Serenity Agility',
       'T22_Monk_Brewmaster Agility',
       'T22_Monk_Windwalker Agility',
+      'T22_Monk_Windwalker_Serenity Agility',
     ],
     'Paladin' => [
       'PR_Paladin_Protection Strength',
