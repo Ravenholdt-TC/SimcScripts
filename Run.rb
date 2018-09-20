@@ -24,10 +24,8 @@ to_run = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc',
-      'PR_Demon_Hunter_Havoc_Momentum',
       'PR_Demon_Hunter_Vengeance',
       'T22_Demon_Hunter_Havoc',
-      'T22_Demon_Hunter_Havoc_Momentum',
       'T22_Demon_Hunter_Vengeance',
     ],
     'Druid' => [
@@ -57,10 +55,8 @@ to_run = {
     'Monk' => [
       'PR_Monk_Brewmaster',
       'PR_Monk_Windwalker',
-      'PR_Monk_Windwalker_Serenity',
       'T22_Monk_Brewmaster',
       'T22_Monk_Windwalker',
-      'T22_Monk_Windwalker_Serenity',
     ],
     'Paladin' => [
       'PR_Paladin_Protection',
@@ -80,15 +76,11 @@ to_run = {
       'PR_Rogue_Outlaw',
       'PR_Rogue_Outlaw_SnD',
       'PR_Rogue_Subtlety',
-      'PR_Rogue_Subtlety_Secret-Technique',
-      'PR_Rogue_Subtlety_Enveloping-Shadows',
       'T22_Rogue_Assassination',
       'T22_Rogue_Assassination_Exsg',
       'T22_Rogue_Outlaw',
       'T22_Rogue_Outlaw_SnD',
       'T22_Rogue_Subtlety',
-      'T22_Rogue_Subtlety_Secret-Technique',
-      'T22_Rogue_Subtlety_Enveloping-Shadows',
     ],
     'Shaman' => [
       'PR_Shaman_Elemental',
