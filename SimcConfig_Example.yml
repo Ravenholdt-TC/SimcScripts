@@ -69,7 +69,7 @@ RunOrders: [
 ]
 
 # Amounts of same Azerite trait stacks to sim. (Combinator-0A, Combinator-1A, ...)
-RunCombinatorAzeriteStacks: [0, 1, 2, 3]
+RunCombinatorAzeriteStacks: [0, 3]
 
 # Classes to run
 RunClasses: ["Death-Knight", "Demon-Hunter", "Druid", "Hunter", "Mage", "Monk", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"]
