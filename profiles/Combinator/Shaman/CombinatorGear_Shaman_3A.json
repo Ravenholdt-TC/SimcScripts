@@ -3,24 +3,34 @@
     "elemental": {
       "azerite": {
         "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!/416:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Lava Shock": "178:!!ILVL!!/178:!!ILVL!!/178:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!/448:!!ILVL!!",
         "Echo of the Elementals": "222:!!ILVL!!/222:!!ILVL!!/222:!!ILVL!!",
         "Igneous Potential": "457:!!ILVL!!/457:!!ILVL!!/457:!!ILVL!!",
         "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!/447:!!ILVL!!",
-        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!"
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!/485:!!ILVL!!"
       }
     },
     "enhancement": {
       "azerite": {
         "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!/416:!!ILVL!!",
         "Strength of Earth": "179:!!ILVL!!/179:!!ILVL!!/179:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Primal Primer": "137:!!ILVL!!/137:!!ILVL!!/137:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!/448:!!ILVL!!",
         "Roiling Storm": "420:!!ILVL!!/420:!!ILVL!!/420:!!ILVL!!",
         "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!/447:!!ILVL!!",
         "Lightning Conduit": "223:!!ILVL!!/223:!!ILVL!!/223:!!ILVL!!",
-        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!"
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!/485:!!ILVL!!"
       }
     },
     "restoration": {
@@ -28,7 +38,10 @@
         "Natural Harmony": "416:!!ILVL!!/416:!!ILVL!!/416:!!ILVL!!",
         "Surging Tides": "422:!!ILVL!!/422:!!ILVL!!/422:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!/102:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Swelling Stream": "224:!!ILVL!!/224:!!ILVL!!/224:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Synapse Shock": "448:!!ILVL!!/448:!!ILVL!!/448:!!ILVL!!",
         "Overflowing Shores": "449:!!ILVL!!/449:!!ILVL!!/449:!!ILVL!!",
         "Soothing Waters": "138:!!ILVL!!/138:!!ILVL!!/138:!!ILVL!!",
@@ -36,7 +49,9 @@
         "Spouting Spirits": "423:!!ILVL!!/423:!!ILVL!!/423:!!ILVL!!",
         "Ancestral Resonance": "447:!!ILVL!!/447:!!ILVL!!/447:!!ILVL!!",
         "Ebb and Flow": "191:!!ILVL!!/191:!!ILVL!!/191:!!ILVL!!",
-        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!"
+        "Rumbling Tremors": "417:!!ILVL!!/417:!!ILVL!!/417:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!/485:!!ILVL!!"
       }
     }
   },

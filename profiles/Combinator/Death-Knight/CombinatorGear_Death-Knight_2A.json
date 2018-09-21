@@ -3,29 +3,44 @@
     "blood": {
       "azerite": {
         "Bone Spike Graveyard": "140:!!ILVL!!/140:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Eternal Rune Weapon": "348:!!ILVL!!/348:!!ILVL!!",
-        "Deep Cuts": "106:!!ILVL!!/106:!!ILVL!!"
+        "Deep Cuts": "106:!!ILVL!!/106:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!"
       }
     },
     "frost": {
       "azerite": {
         "Killer Frost": "346:!!ILVL!!/346:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Latent Chill": "141:!!ILVL!!/141:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Frozen Tempest": "347:!!ILVL!!/347:!!ILVL!!",
         "Echoing Howl": "242:!!ILVL!!/242:!!ILVL!!",
         "Icy Citadel": "108:!!ILVL!!/108:!!ILVL!!",
-        "Glacial Contagion": "198:!!ILVL!!/198:!!ILVL!!"
+        "Glacial Contagion": "198:!!ILVL!!/198:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!"
       }
     },
     "unholy": {
       "azerite": {
         "Bone Spike Graveyard": "140:!!ILVL!!/140:!!ILVL!!",
         "Last Surprise": "351:!!ILVL!!/351:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Festering Doom": "109:!!ILVL!!/109:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Cankerous Wounds": "350:!!ILVL!!/350:!!ILVL!!",
         "Horrid Experimentation": "142:!!ILVL!!/142:!!ILVL!!",
         "Festermight": "199:!!ILVL!!/199:!!ILVL!!",
-        "Harrowing Decay": "244:!!ILVL!!/244:!!ILVL!!"
+        "Harrowing Decay": "244:!!ILVL!!/244:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!"
       }
     }
   },

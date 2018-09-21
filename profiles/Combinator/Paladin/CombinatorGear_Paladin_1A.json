@@ -7,19 +7,29 @@
         "Martyr's Breath": "139:!!ILVL!!",
         "Avenger's Might": "125:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
         "Moment of Compassion": "188:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Breaking Dawn": "394:!!ILVL!!",
         "Divine Revelations": "233:!!ILVL!!",
-        "Indomitable Justice": "235:!!ILVL!!"
+        "Indomitable Justice": "235:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     },
     "protection": {
       "azerite": {
         "Inner Light": "234:!!ILVL!!",
         "Avenger's Might": "125:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
         "Soaring Shield": "150:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Inspiring Vanguard": "395:!!ILVL!!",
-        "Indomitable Justice": "235:!!ILVL!!"
+        "Indomitable Justice": "235:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     },
     "retribution": {
@@ -27,9 +37,14 @@
         "Zealotry": "396:!!ILVL!!",
         "Avenger's Might": "125:!!ILVL!!",
         "Divine Right": "453:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
         "Relentless Inquisitor": "154:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Indomitable Justice": "235:!!ILVL!!",
-        "Expurgation": "187:!!ILVL!!"
+        "Expurgation": "187:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     }
   },

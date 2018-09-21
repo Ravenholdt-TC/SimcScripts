@@ -3,31 +3,46 @@
     "brewmaster": {
       "azerite": {
         "Boiling Brew": "116:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Elusive Footwork": "384:!!ILVL!!",
-        "Training of Niuzao": "383:!!ILVL!!"
+        "Training of Niuzao": "383:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     },
     "windwalker": {
       "azerite": {
         "Iron Fists": "117:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
         "Sunrise Technique": "184:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Open Palm Strikes": "389:!!ILVL!!",
         "Swift Roundhouse": "388:!!ILVL!!",
         "Pressure Point": "390:!!ILVL!!",
-        "Meridian Strikes": "391:!!ILVL!!"
+        "Meridian Strikes": "391:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     },
     "mistweaver": {
       "azerite": {
         "Overflowing Mists": "185:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!",
+        "Rezan's Fury": "157:!!ILVL!!",
         "Burst of Life": "385:!!ILVL!!",
         "Sunrise Technique": "184:!!ILVL!!",
+        "Dagger in the Back": "479:!!ILVL!!",
+        "Tidal Surge": "478:!!ILVL!!",
         "Uplifted Spirits": "387:!!ILVL!!",
         "Font of Life": "386:!!ILVL!!",
         "Swift Roundhouse": "388:!!ILVL!!",
         "Invigorating Brew": "76:!!ILVL!!",
-        "Misty Peaks": "248:!!ILVL!!"
+        "Misty Peaks": "248:!!ILVL!!",
+        "Archive of the Titans": "483:!!ILVL!!",
+        "Laser Matrix": "485:!!ILVL!!"
       }
     }
   },
