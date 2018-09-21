@@ -69,5 +69,12 @@
     "reoriginationArrayPowers": [
         483, // Archive of the Titans
         485 // Laser Matrix
+    ],
+    "genericCombinatorPowers": [ // These are added to spec specific traits in the Combinator Gear Generator.
+        157, // Rezan's Fury
+        478, // Tidal Surge
+        479, // Dagger in the Back
+        483, // Archive of the Titans
+        485 // Laser Matrix
     ]
 }

@@ -11,9 +11,9 @@ powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/Aze
       gear['specials'][specName] = {'azerite' => {}}
       powerList.each do |power|
         next if !power['classesId'].include?(ClassAndSpecIds[classStr][:class_id])
-        next if !power['specsId'] || !power['specsId'].include?(specId)
+        next if !powerSettings['genericCombinatorPowers'].include?(power['powerId']) && (!power['specsId'] || !power['specsId'].include?(specId))
         next if powerSettings['blacklistedTiers'].include?(power['tier'])
-        next if powerSettings['blacklistedPowerIds'].include?(power['powerId'])
+        next if powerSettings['blacklistedPowers'].include?(power['powerId'])
         gear['specials'][specName]['azerite'][power['spellName']] = (["#{power['powerId']}:!!ILVL!!"] * azeriteStacks).join('/')
       end
     end
