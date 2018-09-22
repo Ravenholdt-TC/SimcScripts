@@ -22,13 +22,20 @@ powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/Aze
 
 classId = ClassAndSpecIds[classfolder][:class_id]
 
-#Read spec from profile
+# Read spec from template profile
 spec = ProfileHelper.GetValueFromTemplate('spec', templateFile)
 unless spec
   Logging.LogScriptError "No spec= string found in profile!"
   exit
 end
 specId = ClassAndSpecIds[classfolder][:specs][spec]
+
+# Read talents from template profile
+talents = ProfileHelper.GetValueFromTemplate('talents', templateFile)
+unless talents
+  Logging.LogScriptError "No talents= string found in profile!"
+  exit
+end
 
 # Log all interactively set settings
 puts
@@ -45,17 +52,17 @@ simcInput.push 'disable_azerite=items'
 simcInput.push ''
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
-headItemString = ProfileHelper.GetValueFromTemplate('head', templateFile)
-unless headItemString
+$headItemString = ProfileHelper.GetValueFromTemplate('head', templateFile)
+unless $headItemString
   Logging.LogScriptError "No head= string found in profile!"
   exit
 end
 
 # Get Base item level for Stacks based on Profile name beginning
-stackPowerLevel = powerSettings['baseItemLevels'].first.last
+$stackPowerLevel = powerSettings['baseItemLevels'].first.last
 powerSettings['baseItemLevels'].each do |prefix, ilvl|
   if template.start_with? prefix
-    stackPowerLevel = ilvl
+    $stackPowerLevel = ilvl
     break
   end
 end
@@ -64,8 +71,36 @@ end
 azeriteCombinations = HeroInterface.GetAzeriteCombinations(3, fightstyle, template)
 
 # Create simc inputs
-simcInputLevels = ["head=#{headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
-simcInputStacks = []
+$simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
+$simcInputStacks = []
+
+def writePowerProfilesets (itemLevels, powerName, power, options = {})
+  optionsString = (options.empty? ? '' : '--') + options.map { |k, v| "#{k}:#{v}" }.join(';')
+  baseName = "#{powerName}#{optionsString}"
+
+  # Item Level Simulations
+  itemLevels.each do |ilvl|
+    name = "#{baseName}_#{ilvl}"
+    prefix = "profileset.\"#{name}\"+="
+    $simcInputLevels.push(prefix + "name=\"#{name}\"")
+    $simcInputLevels.push(prefix + "head=#{$headItemString},ilevel=#{ilvl}")
+    $simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
+    $simcInputLevels.push(prefix + "talents=#{options['talents']}") if options['talents']
+    $simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
+  end
+
+  # Stack Simulations
+  (1..3).each do |stacks|
+    name = "#{baseName}_#{stacks}"
+    prefix = "profileset.\"#{name}\"+="
+    $simcInputStacks.push(prefix + "name=\"#{name}\"")
+    powerstring = (["#{power['powerId']}:#{$stackPowerLevel}"] * stacks).join('/')
+    $simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
+    $simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
+    $simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
+  end
+end
+
 powerList.each do |power|
   next if !power['classesId'].include?(classId)
   next if power['specsId'] && !power['specsId'].include?(specId)
@@ -89,33 +124,14 @@ powerList.each do |power|
   end
 
   reoriginationArray.each do |raStacks|
+    # Write the normal profilesets
+    writePowerProfilesets(powerSettings['itemLevels'], powerName, power)
+
     # Set up additional options
     options = {}
-    options['talents'] = azeriteCombinations[powerName] if azeriteCombinations and azeriteCombinations[powerName]
+    options['talents'] = azeriteCombinations[powerName] if azeriteCombinations and azeriteCombinations[powerName] and azeriteCombinations[powerName] != talents
     options['ra'] = raStacks if raStacks > 0
-    optionsString = (options.empty? ? '' : '--') + options.map { |k, v| "#{k}:#{v}" }.join(';')
-
-    # Item Level Simulations
-    powerSettings['itemLevels'].each do |ilvl|
-      name = "#{powerName}#{optionsString}_#{ilvl}"
-      prefix = "profileset.\"#{name}\"+="
-      simcInputLevels.push(prefix + "name=\"#{name}\"")
-      simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
-      simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
-      simcInputLevels.push(prefix + "talents=#{options['talents']}") if options['talents']
-      simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
-    end
-
-    # Stack Simulations
-    (1..3).each do |stacks|
-      name = "#{powerName}#{optionsString}_#{stacks}"
-      prefix = "profileset.\"#{name}\"+="
-      simcInputStacks.push(prefix + "name=\"#{name}\"")
-      powerstring = (["#{power['powerId']}:#{stackPowerLevel}"] * stacks).join('/')
-      simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
-      simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
-      simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
-    end
+    writePowerProfilesets(powerSettings['itemLevels'], powerName, power, options) if !options.empty?
   end
 end
 
@@ -128,7 +144,7 @@ params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   fightstyleFile,
   templateFile,
-  simcInput + simcInputLevels,
+  simcInput + $simcInputLevels,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
@@ -187,7 +203,7 @@ params = [
   "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
   fightstyleFile,
   templateFile,
-  simcInput + simcInputStacks,
+  simcInput + $simcInputStacks,
 ]
 SimcHelper.RunSimulation(params, simulationFilename)
 
