@@ -83,6 +83,8 @@ class JSONResults
         # Get the talents spell id
         talents = []
         player['talents'].each do |talent|
+          columnOffset = talent['tier'] - (talents.length + 1)
+          talents.fill(0, talents.length, columnOffset) if columnOffset > 0
           talents.push talent['spell_id']
         end
 
