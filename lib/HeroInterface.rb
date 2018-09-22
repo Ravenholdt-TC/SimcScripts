@@ -30,6 +30,12 @@ module HeroInterface
       Logging.LogScriptError 'HeroOutput option off with CombinationBasedAzeriteCharts on! This may cause problems!'
     end
 
+    # Dirty fix for those class/specs separated by an underscore instead of an hyphen
+    # Is also in SimcHelper.rb
+    profile = profile.sub('Death_Knight', 'Death-Knight')
+    profile = profile.sub('Demon_Hunter', 'Demon-Hunter')
+    profile = profile.sub('Beast_Mastery', 'Beast-Mastery')
+
     combinationsFile = "Combinator-#{stacks}A_#{fightstyle}_#{profile}.json"
     localPath = "#{SimcConfig['ReportsFolder']}/#{combinationsFile}"
     hdPath = "#{SimcConfig['HeroDamagePath']}/#{SimcConfig['HeroDamageReportsFolder']}/#{combinationsFile}"

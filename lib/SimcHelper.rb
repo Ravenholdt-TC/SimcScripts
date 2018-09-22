@@ -37,6 +37,7 @@ module SimcHelper
   # Run a simulation with all args applied in order
   def self.RunSimulation(args, simulationFilename = "LastInput")
     # Dirty fix for those class/specs separated by an underscore instead of an hyphen
+    # Is also in HeroInterface.rb
     simulationFilename = simulationFilename.sub('Death_Knight', 'Death-Knight')
     simulationFilename = simulationFilename.sub('Demon_Hunter', 'Demon-Hunter')
     simulationFilename = simulationFilename.sub('Beast_Mastery', 'Beast-Mastery')
