@@ -102,7 +102,7 @@ powerList.each do |power|
       simcInputLevels.push(prefix + "name=\"#{name}\"")
       simcInputLevels.push(prefix + "head=#{headItemString},ilevel=#{ilvl}")
       simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
-      simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
+      simcInputLevels.push(prefix + "talents=#{options['talents']}") if options['talents']
       simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
     end
 
