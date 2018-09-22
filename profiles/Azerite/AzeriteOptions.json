@@ -4,7 +4,6 @@
         "T22": 390
     },
     "itemLevels": [
-        325, // HC Dungeons, WQs
         340, // LFR Uldir, M Dungeons, M+ 0-3 Chest, Emissaries
         355, // Normal Uldir, M+ 4-6 Chest, World Bosses, Rep
         370, // HC Uldir, M+ 7-9 Chest
