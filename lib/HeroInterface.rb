@@ -7,6 +7,18 @@ require 'git'
 module HeroInterface
   @@updatedHD = false
 
+    # Compute minimalDifferenceFromDefaults
+  @@targetError = 0.4 # TODO: Read from SimcCombinatorConfig.simc ?
+  @@minimalDifferenceFromDefaults = @@targetError * 3
+
+  # Create an array of azeritePowerName from genericCombinatorPowers to exclude them from the results
+  @@genericPowers = []
+  @@powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
+  @@powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")
+  @@powerList.each do |power|
+    @@genericPowers.push(power['spellName']) if @@powerSettings['genericCombinatorPowers'].include?(power['powerId'])
+  end
+
   # Check and update HeroDamage repo. Returns false if no repo found or exceptions occur.
   def self.PullLatest
     return true if @@updatedHD
@@ -50,11 +62,11 @@ module HeroInterface
     # Combinations results array mapping:
     # result: 0-rank, 1-talents, 2-set, 3-power, 4-dps
 
-    targetError = 0.4 # TODO: Read from SimcCombinatorConfig.simc ?
-    minimalDifferenceFromDefaults = targetError * 3
+    # Filter the combinations results to keep only non-generic powers
+    filteredResults = data['results'].select { |result| !@@genericPowers.include?(result[3])}
 
     # Create a map of azeritePowerName => DPS using default talent build
-    defaultResults = data['results'].select { |result| result[1] == defaultTalents}
+    defaultResults = filteredResults.select { |result| result[1] == defaultTalents}
     defaultMatchedData = {}
     defaultResults.each do |result|
       unless defaultMatchedData.has_key?(result[3])
@@ -64,14 +76,14 @@ module HeroInterface
 
     # Create a map of azeritePowerName => talent build using best DPS
     matchedData = {}
-    data['results'].each do |result|
+    filteredResults.each do |result|
       # The results are already sorted, so if we already have the key then we already got the best candidate
       unless matchedData.has_key?(result[3])
         # If the dps is not higher than the minimalDifferenceFromDefaults, uses default talents instead.
         defaultDPS = defaultMatchedData[result[3]]
         resultDPS = result[4]
         difference = 100 * resultDPS / defaultDPS - 100
-        if difference > minimalDifferenceFromDefaults
+        if difference > @@minimalDifferenceFromDefaults
           matchedData[result[3]] = result[1]
         else
           matchedData[result[3]] = defaultTalents
