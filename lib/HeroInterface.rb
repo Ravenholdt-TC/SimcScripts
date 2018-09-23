@@ -9,7 +9,7 @@ module HeroInterface
 
     # Compute minimalDifferenceFromDefaults
   @@targetError = 0.4 # TODO: Read from SimcCombinatorConfig.simc ?
-  @@minimalDifferenceFromDefaults = @@targetError * 3
+  @@minimalDifferenceFromDefaults = @@targetError * 2
 
   # Create an array of azeritePowerName from genericCombinatorPowers to exclude them from the results
   @@genericPowers = []
