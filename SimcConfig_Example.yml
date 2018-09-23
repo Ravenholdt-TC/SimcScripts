@@ -15,13 +15,13 @@ CombinationBasedAzeriteCharts: false
 # Abort the simulation if the end-of-sim log file already exists.
 AbortOnExistingReport: false
 
-# Wether or not the simc text logs should be saved
+# Whether or not the simc text logs should be saved
 SaveSimcTextLogs: true
 
-# Wether or not the simc stdout should be saved (could slow down the sims)
+# Whether or not the simc stdout should be saved (could slow down the sims)
 SaveSimcStdout: false
 
-# Wether or not the simc stderr should be saved (could slow down the sims)
+# Whether or not the simc stderr should be saved (could slow down the sims)
 SaveSimcStderr: true
 
 ###
