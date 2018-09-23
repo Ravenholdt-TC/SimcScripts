@@ -68,7 +68,7 @@ powerSettings['baseItemLevels'].each do |prefix, ilvl|
 end
 
 # Get azerite combinations if CombinationBasedAzeriteCharts is enabled.
-azeriteCombinations = HeroInterface.GetAzeriteCombinations(3, fightstyle, template)
+azeriteCombinations = HeroInterface.GetAzeriteCombinations(3, fightstyle, talents, template)
 
 # Create simc inputs
 $simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
