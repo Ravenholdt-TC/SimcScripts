@@ -2,6 +2,7 @@ require 'open3'
 require 'etc'
 require_relative 'Logging'
 require_relative 'SimcConfig'
+require_relative 'ProfileHelper'
 
 module SimcHelper
   # Convert string into simc name, e.g. "Fortune's Strike" -> "fortunes_strike"
@@ -36,11 +37,7 @@ module SimcHelper
 
   # Run a simulation with all args applied in order
   def self.RunSimulation(args, simulationFilename = "LastInput")
-    # Dirty fix for those class/specs separated by an underscore instead of an hyphen
-    # Is also in HeroInterface.rb
-    simulationFilename = simulationFilename.sub('Death_Knight', 'Death-Knight')
-    simulationFilename = simulationFilename.sub('Demon_Hunter', 'Demon-Hunter')
-    simulationFilename = simulationFilename.sub('Beast_Mastery', 'Beast-Mastery')
+    simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
     logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
     if SimcConfig['AbortOnExistingReport'] && File.exists?("#{logFile}.json")

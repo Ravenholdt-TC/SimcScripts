@@ -1,6 +1,7 @@
 require_relative 'SimcConfig'
 require_relative 'JSONParser'
 require_relative 'Logging'
+require_relative 'ProfileHelper'
 require 'git'
 
 module HeroInterface
@@ -30,11 +31,7 @@ module HeroInterface
       Logging.LogScriptError 'HeroOutput option off with CombinationBasedAzeriteCharts on! This may cause problems!'
     end
 
-    # Dirty fix for those class/specs separated by an underscore instead of an hyphen
-    # Is also in SimcHelper.rb
-    profile = profile.sub('Death_Knight', 'Death-Knight')
-    profile = profile.sub('Demon_Hunter', 'Demon-Hunter')
-    profile = profile.sub('Beast_Mastery', 'Beast-Mastery')
+    simulationFilename = ProfileHelper.NormalizeProfileName(profile)
 
     combinationsFile = "Combinator-#{stacks}A_#{fightstyle}_#{profile}.json"
     localPath = "#{SimcConfig['ReportsFolder']}/#{combinationsFile}"

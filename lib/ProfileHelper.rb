@@ -56,4 +56,12 @@ module ProfileHelper
     end
     return value
   end
+
+  # Normalize classes/specs separated by an underscore instead of an hyphen
+  def self.NormalizeProfileName(profileName)
+    profileName.sub!('Death_Knight', 'Death-Knight')
+    profileName.sub!('Demon_Hunter', 'Demon-Hunter')
+    profileName.sub!('Beast_Mastery', 'Beast-Mastery')
+    return profileName
+  end
 end
