@@ -129,7 +129,15 @@ powerList.each do |power|
 
     # Set up additional options
     options = {}
-    options['talents'] = azeriteCombinations[powerName] if azeriteCombinations and azeriteCombinations[powerName] and azeriteCombinations[powerName] != talents
+    if azeriteCombinations
+      if azeriteCombinations[powerName]
+        if azeriteCombinations[powerName] != talents
+          options['talents'] = azeriteCombinations[powerName]
+        end
+      elsif azeriteCombinations['Generic'] && azeriteCombinations['Generic'] != talents
+        options['talents'] = azeriteCombinations['Generic']
+      end
+    end
     options['ra'] = raStacks if raStacks > 0
     writePowerProfilesets(powerSettings['itemLevels'], powerName, power, options) if !options.empty?
   end
