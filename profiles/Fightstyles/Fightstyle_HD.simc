@@ -1,4 +1,5 @@
 # Hero Dungeon
+profileset_metric=dps/prioritydps
 
 # We disable all the buffs/debuffs. Characters that applies something will of course still apply it.
 optimal_raid=0
