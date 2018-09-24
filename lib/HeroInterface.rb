@@ -76,11 +76,13 @@ module HeroInterface
     filteredResults = data['results'].select { |result| !@@genericPowers.include?(result[3]) }
 
     # Create a map of azeritePowerName => DPS using default talent build
-    defaultTalentsFound = true
+    
     defaultResults = filteredResults.select { |result| result[1] == defaultTalents }
+    defaultTalentsFound = false
     if defaultResults.empty?
       Logging.LogScriptWarning 'defaultTalents were not found in combinations results, make sure the default build is included in Combinations simulations to make best usage of this feature.'
-      defaultTalentsFound = false
+    else
+      defaultTalentsFound = true
       defaultMatchedData = {}
       defaultResults.each do |result|
         unless defaultMatchedData.has_key?(result[3])
@@ -99,15 +101,17 @@ module HeroInterface
           # If the dps is not higher than the minimalDifferenceFromDefaults, uses default talents instead.
           defaultDPS = defaultMatchedData[result[3]]
           resultDPS = result[4]
-          difference = 100 * resultDPS / defaultDPS - 100
+          difference = 100 * resultDPS.to_f / defaultDPS.to_f - 100
           if difference > @@minimalDifferenceFromDefaults
             matchedData[result[3]] = result[1]
+            Logging.LogScriptInfo "#{result[3]}: #{result[1]} is better than #{defaultTalents} by #{difference.round(2)}% (#{resultDPS} vs #{defaultDPS})."
           else
             matchedData[result[3]] = defaultTalents
           end
         else
           # Fallback to the result in case the default talents were not present in the combinations
           matchedData[result[3]] = result[1]
+          Logging.LogScriptInfo "#{result[3]}: #{result[1]} will be used as fallback, no defaultTalents found."
         end
       end
     end
@@ -118,9 +122,10 @@ module HeroInterface
       topGenericResult = genericData['results'].first
       defaultGenericDPS = defaultGenericResult[4]
       topGenericDPS = topGenericResult[4]
-      genericDifference = 100 * topGenericDPS / defaultGenericDPS - 100
+      genericDifference = 100 * topGenericDPS.to_f / defaultGenericDPS.to_f - 100
       if genericDifference > @@minimalDifferenceFromDefaults
         matchedData['Generic'] = topGenericResult[1]
+        Logging.LogScriptInfo "Generic: #{topGenericResult[1]} is better than #{defaultTalents} by #{genericDifference.round(2)}% (#{topGenericDPS} vs #{defaultGenericDPS})."
       else
         matchedData['Generic'] = defaultTalents
       end
