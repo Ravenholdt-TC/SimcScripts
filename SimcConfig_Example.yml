@@ -57,12 +57,16 @@ ArchivesFolder: archives
 # Orders (scripts, fightstyles) to run
 RunOrders: [
   [
-    [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]],
+    [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1T"]]
+  ],
+  [
+    [["AzeriteSimulation"], ["1T"]]
+  ],
+  [
     [["RaceSimulation", "TrinketSimulation", "Combinator"], ["1TA"]],
     [["RaceSimulation", "TrinketSimulation", "Combinator"], ["HD"]]
   ],
   [
-    [["AzeriteSimulation"], ["1T"]],
     [["AzeriteSimulation"], ["1TA"]],
     [["AzeriteSimulation"], ["HD"]]
   ]
