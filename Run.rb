@@ -108,10 +108,10 @@ to_run = {
     # Keep the gear called Azerite and setup as well, this will be auto replaced for stacks. #
     ##########################################################################################
     'Death-Knight' => [
-      'PR_Death_Knight_Blood Death-Knight_Azerite Azerite xxx00xx',
+      'PR_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx',
       'PR_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx',
       'PR_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx',
-      'T22_Death_Knight_Blood Death-Knight_Azerite Azerite xxx00xx',
+      'T22_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx',
       'T22_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx',
       'T22_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx'
     ],
@@ -124,10 +124,10 @@ to_run = {
     'Druid' => [
       'PR_Druid_Balance Druid_Azerite Azerite x000xxx',
       'PR_Druid_Feral Druid_Azerite Azerite x000xxx',
-      'PR_Druid_Guardian Druid_Azerite Azerite x000x0x',
+      'PR_Druid_Guardian Druid_Azerite Azerite x111x2x',
       'T22_Druid_Balance Druid_Azerite Azerite x000xxx',
       'T22_Druid_Feral Druid_Azerite Azerite x000xxx',
-      'T22_Druid_Guardian Druid_Azerite Azerite x000x0x'
+      'T22_Druid_Guardian Druid_Azerite Azerite x111x2x'
     ],
     'Hunter' => [
       'PR_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx',
@@ -147,19 +147,19 @@ to_run = {
     ],
     'Monk' => [
       'PR_Monk_Brewmaster Monk_Azerite Azerite x0x00xx',
-      'PR_Monk_Windwalker Monk_Azerite Azerite x0x00xx',
+      'PR_Monk_Windwalker Monk_Azerite Azerite x0x20xx',
       'T22_Monk_Brewmaster Monk_Azerite Azerite x0x00xx',
-      'T22_Monk_Windwalker Monk_Azerite Azerite x0x00xx'
+      'T22_Monk_Windwalker Monk_Azerite Azerite x0x20xx'
     ],
     'Paladin' => [
-      'PR_Paladin_Protection Paladin_Azerite Azerite xx0x00x',
+      'PR_Paladin_Protection Paladin_Azerite Azerite xx0000x',
       'PR_Paladin_Retribution Paladin_Azerite Azerite xx0x00x',
-      'T22_Paladin_Protection Paladin_Azerite Azerite xx0x00x',
+      'T22_Paladin_Protection Paladin_Azerite Azerite xx0000x',
       'T22_Paladin_Retribution Paladin_Azerite Azerite xx0x00x'
     ],
     'Priest' => [
-      'PR_Priest_Shadow Priest_Azerite Azerite x0x0xxx',
-      'T22_Priest_Shadow Priest_Azerite Azerite x0x0xxx'
+      'PR_Priest_Shadow Priest_Azerite Azerite x1x1xxx',
+      'T22_Priest_Shadow Priest_Azerite Azerite x1x1xxx'
     ],
     'Rogue' => [
       'PR_Rogue_Assassination Rogue_Azerite Azerite xxx00[12]x',
@@ -188,11 +188,11 @@ to_run = {
       'T22_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
     ],
     'Warrior' => [
-      'PR_Warrior_Arms Warrior_Azerite Azerite x0x0xxx',
-      'PR_Warrior_Fury Warrior_Azerite Azerite x0x0xxx',
+      'PR_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
+      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
       # 'PR_Warrior_Protection Warrior_Azerite Azerite x0x00xx',
-      'T22_Warrior_Arms Warrior_Azerite Azerite x0x0xxx',
-      'T22_Warrior_Fury Warrior_Azerite Azerite x0x0xxx',
+      'T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
+      'T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
       # 'T22_Warrior_Protection Warrior_Azerite Azerite x0x00xx'
     ],
   },

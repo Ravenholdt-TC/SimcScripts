@@ -80,7 +80,7 @@ module HeroInterface
     defaultResults = filteredResults.select { |result| result[1] == defaultTalents }
     defaultTalentsFound = false
     if defaultResults.empty?
-      Logging.LogScriptWarning 'defaultTalents were not found in combinations results, make sure the default build is included in Combinations simulations to make best usage of this feature.'
+      Logging.LogScriptWarning "defaultTalents were not found in #{combinationsFile}, make sure the default build is included to make best usage of this feature."
     else
       defaultTalentsFound = true
       defaultMatchedData = {}
