@@ -7,10 +7,6 @@ require 'git'
 module HeroInterface
   @@updatedHD = false
 
-    # Compute minimalDifferenceFromDefaults
-  @@targetError = 0.4 # TODO: Read from SimcCombinatorConfig.simc ?
-  @@minimalDifferenceFromDefaults = @@targetError * 2
-
   # Create an array of azeritePowerName from genericCombinatorPowers to exclude them from the results
   @@genericPowers = []
   @@powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
@@ -76,7 +72,7 @@ module HeroInterface
     filteredResults = data['results'].select { |result| !@@genericPowers.include?(result[3]) }
 
     # Create a map of azeritePowerName => DPS using default talent build
-    
+
     defaultResults = filteredResults.select { |result| result[1] == defaultTalents }
     defaultTalentsFound = false
     if defaultResults.empty?
@@ -91,6 +87,10 @@ module HeroInterface
       end
     end
 
+    # Set up threshold for comparison based on target error
+    targetError = [data['metas']['targetError'], genericData['metas']['targetError']].max
+    minimalDifferenceFromDefaults = targetError * 2
+
     # Create a map of azeritePowerName => talent build using best DPS
     matchedData = {}
     filteredResults.each do |result|
@@ -102,7 +102,7 @@ module HeroInterface
           defaultDPS = defaultMatchedData[result[3]]
           resultDPS = result[4]
           difference = 100 * resultDPS.to_f / defaultDPS.to_f - 100
-          if difference > @@minimalDifferenceFromDefaults
+          if difference > minimalDifferenceFromDefaults
             matchedData[result[3]] = result[1]
             Logging.LogScriptInfo "#{result[3]}: #{result[1]} is better than #{defaultTalents} by #{difference.round(2)}% (#{resultDPS} vs #{defaultDPS})."
           else
@@ -123,7 +123,7 @@ module HeroInterface
       defaultGenericDPS = defaultGenericResult[4]
       topGenericDPS = topGenericResult[4]
       genericDifference = 100 * topGenericDPS.to_f / defaultGenericDPS.to_f - 100
-      if genericDifference > @@minimalDifferenceFromDefaults
+      if genericDifference > minimalDifferenceFromDefaults
         matchedData['Generic'] = topGenericResult[1]
         Logging.LogScriptInfo "Generic: #{topGenericResult[1]} is better than #{defaultTalents} by #{genericDifference.round(2)}% (#{topGenericDPS} vs #{defaultGenericDPS})."
       else
