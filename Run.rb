@@ -117,9 +117,9 @@ to_run = {
     ],
     'Demon-Hunter' => [
       'PR_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
-      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx0x0',
+      'PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1',
       'T22_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x',
-      'T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx0x0'
+      'T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1'
     ],
     'Druid' => [
       'PR_Druid_Balance Druid_Azerite Azerite x000xxx',
@@ -188,8 +188,8 @@ to_run = {
       'T22_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx'
     ],
     'Warrior' => [
-      'PR_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
-      'PR_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
+      'PR_Warrior_Arms Warrior_Azerite Azerite x1x2xxx',
+      'PR_Warrior_Fury Warrior_Azerite Azerite x1x2xxx',
       # 'PR_Warrior_Protection Warrior_Azerite Azerite x0x00xx',
       'T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx',
       'T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx',
