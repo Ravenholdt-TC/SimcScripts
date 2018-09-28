@@ -95,7 +95,7 @@ module Interactive
       end
       index = el.to_i
       if profiles.has_key?(index)
-        templates.push("#{profiles[index]}")
+        templates.push(profiles[index])
       else
         Logging.LogScriptFatal "ERROR: Invalid profile index #{el} entered!"
         puts 'Press enter to quit...'
