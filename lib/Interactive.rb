@@ -1,6 +1,6 @@
-require_relative 'Logging'
-require_relative 'SimcConfig'
-require 'yaml'
+require_relative "Logging"
+require_relative "SimcConfig"
+require "yaml"
 
 module Interactive
   # SPECIAL NOTE: By default these function check for existing cmd arguments first.
@@ -27,17 +27,17 @@ module Interactive
     end
     profiles = {}
     index = 1
-    profileSourceFolders = ["#{SimcConfig['ProfilesFolder']}/"] + SimcConfig['SimcProfileFolders'].collect { |x| "#{SimcConfig['SimcPath']}/#{x}" }
+    profileSourceFolders = ["#{SimcConfig["ProfilesFolder"]}/"] + SimcConfig["SimcProfileFolders"].collect { |x| "#{SimcConfig["SimcPath"]}/#{x}" }
     profileSourceFolders.each do |folder|
-      fromSimcString = folder.start_with?(SimcConfig['SimcPath']) ? ' (via SimC profiles)' : ''
-      folder.gsub!('\\', '/')
+      fromSimcString = folder.start_with?(SimcConfig["SimcPath"]) ? " (via SimC profiles)" : ""
+      folder.gsub!('\\', "/")
       prefixes.each do |prefix|
         files = Dir.glob("#{folder}#{prefix}[_\-+a-zA-Z0-9]*\.*")
         files.sort!
         files.each do |file|
           catch (:invalidfile) do
             contains.each do |c|
-              throw :invalidfile if !file.include?(c) && !file.include?(c.gsub('-', '_'))
+              throw :invalidfile if !file.include?(c) && !file.include?(c.gsub("-", "_"))
             end
             if profile = file.match(/#{folder}#{prefix}([_\-+a-zA-Z0-9]*)\.\w+/)
               profiles[index] = [profile[1], file]
@@ -58,7 +58,7 @@ module Interactive
   def self.SelectTemplate(prefixes, contains = [], checkArgs = true)
     puts "Please choose what you want to simulate:"
     profiles = TemplateList(prefixes, contains, checkArgs)
-    print 'Profile: '
+    print "Profile: "
     input = GetInputOrArg(checkArgs)
     if result = profiles.values.find { |x| x.first == input }
       puts
@@ -67,7 +67,7 @@ module Interactive
     index = input.to_i
     unless profiles.has_key?(index)
       Logging.LogScriptFatal "ERROR: Invalid profile index #{input} entered!"
-      puts 'Press enter to quit...'
+      puts "Press enter to quit..."
       GetInputOrArg(checkArgs)
       exit
     end
@@ -82,9 +82,9 @@ module Interactive
   # [[name, file], ...]
   def self.SelectTemplateMulti(prefixes, contains = [], checkArgs = true)
     puts "Please choose what you want to simulate:"
-    puts '(You can either enter one, or multiple using the format [a,b] without spaces.)'
+    puts "(You can either enter one, or multiple using the format [a,b] without spaces.)"
     profiles = TemplateList(prefixes, contains, checkArgs)
-    print 'Profile: '
+    print "Profile: "
     input = GetInputOrArg(checkArgs)
     inputArray = [(YAML.load(input))].flatten # Use YAML to automatically parse arrays as such
     templates = []
@@ -98,7 +98,7 @@ module Interactive
         templates.push(profiles[index])
       else
         Logging.LogScriptFatal "ERROR: Invalid profile index #{el} entered!"
-        puts 'Press enter to quit...'
+        puts "Press enter to quit..."
         GetInputOrArg(checkArgs)
         exit
       end
@@ -112,16 +112,16 @@ module Interactive
     puts "Please choose a #{prefix} template folder:"
     folders = {}
     index = 1
-    files = Dir.glob("#{SimcConfig['ProfilesFolder']}/#{prefix}/*/")
+    files = Dir.glob("#{SimcConfig["ProfilesFolder"]}/#{prefix}/*/")
     files.sort!
     files.each do |file|
-      if folder = file.match(/#{SimcConfig['ProfilesFolder']}\/#{prefix}\/(.*)\//)
+      if folder = file.match(/#{SimcConfig["ProfilesFolder"]}\/#{prefix}\/(.*)\//)
         folders[index] = folder[1]
         puts "#{index}: #{folder[1]}"
         index += 1
       end
     end
-    print 'Folder: '
+    print "Folder: "
     input = GetInputOrArg(checkArgs)
     if folders.has_value?(input)
       puts
@@ -130,7 +130,7 @@ module Interactive
     index = input.to_i
     unless folders.has_key?(index)
       Logging.LogScriptFatal "ERROR: Invalid folder index #{input} entered!"
-      puts 'Press enter to quit...'
+      puts "Press enter to quit..."
       GetInputOrArg(checkArgs)
       exit
     end
@@ -141,40 +141,40 @@ module Interactive
   # Ask for talent permutation input string
   # Returns array of arrays with talents for each row
   def self.SelectTalentPermutations(checkArgs = true)
-    puts 'Please select the talents for permutation:'
-    puts 'Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation'
-    puts 'You can specify more per tier by wrapping the wanted columns in [].'
-    puts 'Examples: xxx00xx, xxx00[12]x'
-    print 'Talents: '
+    puts "Please select the talents for permutation:"
+    puts "Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation"
+    puts "You can specify more per tier by wrapping the wanted columns in []."
+    puts "Examples: xxx00xx, xxx00[12]x"
+    print "Talents: "
     talentstring = GetInputOrArg(checkArgs)
     talentdata = []
     isTierArray = false
     tierArray = []
     talentstring.each_char do |talentpart|
-      if ['0', '1', '2', '3'].include?(talentpart)
+      if ["0", "1", "2", "3"].include?(talentpart)
         if isTierArray
           tierArray.push(talentpart.to_i)
         else
           talentdata.push([talentpart.to_i])
         end
-      elsif !isTierArray && talentpart.downcase.eql?('x')
+      elsif !isTierArray && talentpart.downcase.eql?("x")
         talentdata.push((1..3).to_a)
-      elsif !isTierArray && talentpart.eql?('[')
+      elsif !isTierArray && talentpart.eql?("[")
         isTierArray = true
         tierArray = []
-      elsif isTierArray && talentpart.eql?(']')
+      elsif isTierArray && talentpart.eql?("]")
         isTierArray = false
         talentdata.push(tierArray)
       else
         Logging.LogScriptFatal "ERROR: Invalid talent string input #{talentstring}!"
-        puts 'Press enter to quit...'
+        puts "Press enter to quit..."
         GetInputOrArg(checkArgs)
         exit
       end
     end
     if talentdata.length != 7
       Logging.LogScriptFatal "ERROR: Invalid number of talents! Got #{talentdata.length}"
-      puts 'Press enter to quit...'
+      puts "Press enter to quit..."
       GetInputOrArg(checkArgs)
       exit
     end
@@ -198,7 +198,7 @@ module Interactive
     index = input.to_i
     if index <= 0 || !array[index - 1]
       Logging.LogScriptFatal "ERROR: Invalid #{name} index #{input} entered!"
-      puts 'Press enter to quit...'
+      puts "Press enter to quit..."
       GetInputOrArg(checkArgs)
       exit
     end

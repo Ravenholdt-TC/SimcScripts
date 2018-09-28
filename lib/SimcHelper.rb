@@ -1,25 +1,25 @@
-require 'open3'
-require 'etc'
-require_relative 'Logging'
-require_relative 'SimcConfig'
-require_relative 'ProfileHelper'
+require "open3"
+require "etc"
+require_relative "Logging"
+require_relative "SimcConfig"
+require_relative "ProfileHelper"
 
 module SimcHelper
   # Convert string into simc name, e.g. "Fortune's Strike" -> "fortunes_strike"
   def self.TokenizeName(name)
-    return name.downcase.gsub(/[^0-9a-z_+.% ]/i, '').gsub(' ', '_')
+    return name.downcase.gsub(/[^0-9a-z_+.% ]/i, "").gsub(" ", "_")
   end
 
   # Evaluate number of threads to use for Sim
   def self.NumThreads
     begin
-      if SimcConfig['Threads'].kind_of?(String)
+      if SimcConfig["Threads"].kind_of?(String)
         max = Etc.nprocessors
-        threads = eval(SimcConfig['Threads'])
+        threads = eval(SimcConfig["Threads"])
         return 1 if threads < 1
         return threads
       else
-        return SimcConfig['Threads']
+        return SimcConfig["Threads"]
       end
     rescue
       return 1
@@ -39,24 +39,24 @@ module SimcHelper
   def self.RunSimulation(args, simulationFilename = "LastInput")
     simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
-    logFile = "#{SimcConfig['LogsFolder']}/simc/#{simulationFilename}"
-    if SimcConfig['AbortOnExistingReport'] && File.exists?("#{logFile}.json")
+    logFile = "#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}"
+    if SimcConfig["AbortOnExistingReport"] && File.exists?("#{logFile}.json")
       Logging.LogScriptInfo "Logfile already exists, aborting simulation!"
       exit
     end
 
-    generatedFile = "#{SimcConfig['GeneratedFolder']}/#{simulationFilename}.simc"
+    generatedFile = "#{SimcConfig["GeneratedFolder"]}/#{simulationFilename}.simc"
     Logging.LogScriptInfo "Writing full SimC Input to #{generatedFile}..."
-    File.open(generatedFile, 'w') do |input|
+    File.open(generatedFile, "w") do |input|
       input.puts "### SimcScripts Full Input, generated #{Time.now}"
       input.puts
 
       # Special input via script config
       input.puts "threads=#{NumThreads()}"
-      input.puts "$(simc_profiles_path)=\"#{SimcConfig['SimcPath']}/profiles\""
+      input.puts "$(simc_profiles_path)=\"#{SimcConfig["SimcPath"]}/profiles\""
 
       # Logs
-      if SimcConfig['SaveSimcTextLogs']
+      if SimcConfig["SaveSimcTextLogs"]
         input.puts "output=#{logFile}.log"
       else
         if Gem.win_platform?
@@ -68,10 +68,10 @@ module SimcHelper
       input.puts "json=#{logFile}.json"
 
       # Use global simc config file
-      WriteFileToInput("#{SimcConfig['ConfigFolder']}/SimcGlobalConfig.simc", input)
+      WriteFileToInput("#{SimcConfig["ConfigFolder"]}/SimcGlobalConfig.simc", input)
 
       args.flatten.each do |arg|
-        if arg.end_with?('.simc')
+        if arg.end_with?(".simc")
           # Input File
           WriteFileToInput(arg, input)
         else
@@ -81,13 +81,13 @@ module SimcHelper
     end
 
     # Call executable with full input file
-    Logging.LogScriptInfo 'Starting simulations, this may take a while!'
-    command = ["#{SimcConfig['SimcPath']}/simc", generatedFile]
+    Logging.LogScriptInfo "Starting simulations, this may take a while!"
+    command = ["#{SimcConfig["SimcPath"]}/simc", generatedFile]
 
     # Run simulation with logging and redirecting output to the terminal
     Open3.popen3(*command) do |stdin, stdout, stderr, thread|
       # stdout
-      if SimcConfig['SaveSimcStdout']
+      if SimcConfig["SaveSimcStdout"]
         Thread.new do
           begin
             while (result = stdout.readpartial(4096))
@@ -100,7 +100,7 @@ module SimcHelper
         IO.copy_stream(stdout, $stdout)
       end
       # stderr
-      if SimcConfig['SaveSimcStderr']
+      if SimcConfig["SaveSimcStderr"]
         Thread.new do
           begin
             while (result = stderr.readpartial(4096))

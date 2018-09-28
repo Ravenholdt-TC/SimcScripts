@@ -1,5 +1,5 @@
-require 'json'
-require_relative 'Logging'
+require "json"
+require_relative "Logging"
 
 module JSONParser
   # Returns full JSON hash from a file
@@ -14,14 +14,14 @@ module JSONParser
 
   # Write a hash into a JSON file
   def self.WriteFile(filename, hash)
-    File.open(filename, 'w') do |file|
+    File.open(filename, "w") do |file|
       file.write JSON.generate(hash)
     end
   end
 
   # Write a hash into a JSON file
   def self.WritePrettyFile(filename, hash)
-    File.open(filename, 'w') do |file|
+    File.open(filename, "w") do |file|
       file.write JSON.pretty_generate(hash)
     end
   end
