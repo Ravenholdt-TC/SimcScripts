@@ -1,19 +1,27 @@
-require 'rubygems'
-require 'bundler/setup'
-require_relative 'lib/Interactive'
-require_relative 'lib/JSONParser'
-require_relative 'lib/JSONResults'
-require_relative 'lib/Logging'
-require_relative 'lib/ReportWriter'
-require_relative 'lib/SimcConfig'
-require_relative 'lib/SimcHelper'
+require "rubygems"
+require "bundler/setup"
+require_relative "lib/HeroInterface"
+require_relative "lib/Interactive"
+require_relative "lib/JSONParser"
+require_relative "lib/JSONResults"
+require_relative "lib/Logging"
+require_relative "lib/ReportWriter"
+require_relative "lib/SimcConfig"
+require_relative "lib/SimcHelper"
 
 Logging.Initialize("TrinketSimulation")
 
-fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
-classfolder = Interactive.SelectSubfolder('Templates')
-template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
-trinketListProfiles = Interactive.SelectTemplateMulti('TrinketLists/')
+fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
+classfolder = Interactive.SelectSubfolder("Templates")
+template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ""], classfolder)
+trinketListProfiles = Interactive.SelectTemplateMulti("TrinketLists/")
+p trinketListProfiles
+# Read talents from template profile
+talents = ProfileHelper.GetValueFromTemplate("talents", templateFile)
+unless talents
+  Logging.LogScriptError "No talents= string found in profile!"
+  exit
+end
 
 # Log all interactively set settings
 puts
@@ -27,29 +35,40 @@ puts
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
-simcInput.push 'trinket1=empty'
-simcInput.push 'trinket2=empty'
-simcInput.push ''
+simcInput.push "trinket1=empty"
+simcInput.push "trinket2=empty"
+simcInput.push ""
+
+# Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
+combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
+# Add empty override set for the default loop
+combinationOverrides[nil] = []
+
 trinketListProfiles.each do |pname, pfile|
   trinketList = JSONParser.ReadFile(pfile)
-  trinketList['trinkets'].each do |trinket|
-    bonusIdString = trinket['bonusIds'].empty? ? '' : ',bonus_id=' + trinket['bonusIds'].join('/')
-    trinket['itemLevels'].each do |ilvl|
-      name = "#{trinket['name']}_#{ilvl}"
-      prefix = "profileset.\"#{name}\"+="
-      simcInput.push(prefix + "name=\"#{name}\"")
-      simcInput.push(prefix + "trinket1=,id=#{trinket['itemId']},ilevel=#{ilvl}#{bonusIdString}")
-      trinket['additionalInput'].each do |input|
-        simcInput.push(prefix + "#{input}")
+  combinationOverrides.each do |optionsString, overrides|
+    trinketList["trinkets"].each do |trinket|
+      bonusIdString = trinket["bonusIds"].empty? ? "" : ",bonus_id=" + trinket["bonusIds"].join("/")
+      trinket["itemLevels"].each do |ilvl|
+        name = "#{trinket["name"]}#{"--" if optionsString}#{optionsString}_#{ilvl}"
+        prefix = "profileset.\"#{name}\"+="
+        simcInput.push(prefix + "name=\"#{name}\"")
+        simcInput.push(prefix + "trinket1=,id=#{trinket["itemId"]},ilevel=#{ilvl}#{bonusIdString}")
+        trinket["additionalInput"].each do |input|
+          simcInput.push(prefix + "#{input}")
+        end
+        overrides.each do |override|
+          simcInput.push(prefix + "#{override}")
+        end
       end
+      simcInput.push ""
     end
-    simcInput.push ''
   end
 end
 
 simulationFilename = "TrinketSimulation_#{fightstyle}_#{template}"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcTrinketConfig.simc",
+  "#{SimcConfig["ConfigFolder"]}/SimcTrinketConfig.simc",
   fightstyleFile,
   templateFile,
   simcInput,
@@ -69,7 +88,7 @@ results.getAllDPSResults().each do |name, dps|
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     iLevelList.push(data[2].to_i)
-  elsif name == 'Template'
+  elsif name == "Template"
     templateDPS = dps
   end
 end
@@ -102,5 +121,5 @@ end
 # Write the report(s)
 ReportWriter.WriteArrayReport(results, report)
 
-Logging.LogScriptInfo 'Done! Press enter to quit...'
+Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
