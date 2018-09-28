@@ -37,8 +37,8 @@ module HeroInterface
       Logging.LogScriptInfo "Reading combinations file #{hdPath}..."
       data = JSONParser.ReadFile(hdPath)
     else
-      Logging.LogScriptFatal "File #{combinationsFile} not found for combinations."
-      exit
+      Logging.LogScriptWarning "File #{combinationsFile} not found for combinations."
+      return nil
     end
     return data
   end
@@ -53,6 +53,11 @@ module HeroInterface
     profile = ProfileHelper.NormalizeProfileName(profile)
     data = GetRawCombinationData(3, fightstyle, profile)
     genericData = GetRawCombinationData(0, fightstyle, profile)
+
+    if !data || !genericData
+      Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
+      return {}
+    end
 
     # Create an array of azeritePowerName from genericCombinatorPowers to exclude them from the results
     genericPowers = []
@@ -139,6 +144,11 @@ module HeroInterface
 
     profile = ProfileHelper.NormalizeProfileName(profile)
     genericData = GetRawCombinationData(0, fightstyle, profile)
+
+    if !genericData
+      Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
+      return {}
+    end
 
     # Map of override sets by options name (part including and after --)
     # This can easily extended if we want to support multiple sets.
