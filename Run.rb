@@ -207,10 +207,8 @@ to_run = {
     ],
     "Demon-Hunter" => [
       "PR_Demon_Hunter_Havoc",
-      "PR_Demon_Hunter_Havoc_Momentum",
       "PR_Demon_Hunter_Vengeance",
       "T22_Demon_Hunter_Havoc",
-      "T22_Demon_Hunter_Havoc_Momentum",
       "T22_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
@@ -261,15 +259,11 @@ to_run = {
       "PR_Rogue_Outlaw",
       "PR_Rogue_Outlaw_SnD",
       "PR_Rogue_Subtlety",
-      "PR_Rogue_Subtlety_Secret-Technique",
-      "PR_Rogue_Subtlety_Enveloping-Shadows",
       "T22_Rogue_Assassination",
       "T22_Rogue_Assassination_Exsg",
       "T22_Rogue_Outlaw",
       "T22_Rogue_Outlaw_SnD",
       "T22_Rogue_Subtlety",
-      "T22_Rogue_Subtlety_Secret-Technique",
-      "T22_Rogue_Subtlety_Enveloping-Shadows",
     ],
     "Shaman" => [
       "PR_Shaman_Elemental",
@@ -305,10 +299,8 @@ to_run = {
     ],
     "Demon-Hunter" => [
       "PR_Demon_Hunter_Havoc Agility",
-      "PR_Demon_Hunter_Havoc_Momentum Agility",
       "PR_Demon_Hunter_Vengeance Agility",
       "T22_Demon_Hunter_Havoc Agility",
-      "T22_Demon_Hunter_Havoc_Momentum Agility",
       "T22_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
@@ -359,15 +351,11 @@ to_run = {
       "PR_Rogue_Outlaw Agility",
       "PR_Rogue_Outlaw_SnD Agility",
       "PR_Rogue_Subtlety Agility",
-      "PR_Rogue_Subtlety_Secret-Technique Agility",
-      "PR_Rogue_Subtlety_Enveloping-Shadows Agility",
       "T22_Rogue_Assassination Agility",
       "T22_Rogue_Assassination_Exsg Agility",
       "T22_Rogue_Outlaw Agility",
       "T22_Rogue_Outlaw_SnD Agility",
       "T22_Rogue_Subtlety Agility",
-      "T22_Rogue_Subtlety_Secret-Technique Agility",
-      "T22_Rogue_Subtlety_Enveloping-Shadows Agility",
     ],
     "Shaman" => [
       "PR_Shaman_Elemental Intelligence",
