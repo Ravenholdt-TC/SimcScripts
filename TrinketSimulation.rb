@@ -15,7 +15,7 @@ fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_
 classfolder = Interactive.SelectSubfolder("Templates")
 template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ""], classfolder)
 trinketListProfiles = Interactive.SelectTemplateMulti("TrinketLists/")
-p trinketListProfiles
+
 # Read talents from template profile
 talents = ProfileHelper.GetValueFromTemplate("talents", templateFile)
 unless talents
