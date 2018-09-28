@@ -1,29 +1,29 @@
-require 'rubygems'
-require 'bundler/setup'
-require_relative 'lib/DataMaps'
-require_relative 'lib/HeroInterface'
-require_relative 'lib/Interactive'
-require_relative 'lib/JSONParser'
-require_relative 'lib/JSONResults'
-require_relative 'lib/Logging'
-require_relative 'lib/ProfileHelper'
-require_relative 'lib/ReportWriter'
-require_relative 'lib/SimcConfig'
-require_relative 'lib/SimcHelper'
+require "rubygems"
+require "bundler/setup"
+require_relative "lib/DataMaps"
+require_relative "lib/HeroInterface"
+require_relative "lib/Interactive"
+require_relative "lib/JSONParser"
+require_relative "lib/JSONResults"
+require_relative "lib/Logging"
+require_relative "lib/ProfileHelper"
+require_relative "lib/ReportWriter"
+require_relative "lib/SimcConfig"
+require_relative "lib/SimcHelper"
 
 Logging.Initialize("AzeriteSimulation")
 
-fightstyle, fightstyleFile = Interactive.SelectTemplate('Fightstyles/Fightstyle_')
-classfolder = Interactive.SelectSubfolder('Templates')
-template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ''], classfolder)
+fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
+classfolder = Interactive.SelectSubfolder("Templates")
+template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ""], classfolder)
 
-powerList = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeritePower.json")
-powerSettings = JSONParser.ReadFile("#{SimcConfig['ProfilesFolder']}/Azerite/AzeriteOptions.json")
+powerList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/AzeritePower.json")
+powerSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/AzeriteOptions.json")
 
 classId = ClassAndSpecIds[classfolder][:class_id]
 
 # Read spec from template profile
-spec = ProfileHelper.GetValueFromTemplate('spec', templateFile)
+spec = ProfileHelper.GetValueFromTemplate("spec", templateFile)
 unless spec
   Logging.LogScriptError "No spec= string found in profile!"
   exit
@@ -31,7 +31,7 @@ end
 specId = ClassAndSpecIds[classfolder][:specs][spec]
 
 # Read talents from template profile
-talents = ProfileHelper.GetValueFromTemplate('talents', templateFile)
+talents = ProfileHelper.GetValueFromTemplate("talents", templateFile)
 unless talents
   Logging.LogScriptError "No talents= string found in profile!"
   exit
@@ -48,34 +48,35 @@ puts
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
-simcInput.push 'disable_azerite=items'
-simcInput.push ''
+simcInput.push "disable_azerite=items"
+simcInput.push "bfa.reorigination_array_stacks=0"
+simcInput.push ""
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
-$headItemString = ProfileHelper.GetValueFromTemplate('head', templateFile)
+$headItemString = ProfileHelper.GetValueFromTemplate("head", templateFile)
 unless $headItemString
   Logging.LogScriptError "No head= string found in profile!"
   exit
 end
 
 # Get Base item level for Stacks based on Profile name beginning
-$stackPowerLevel = powerSettings['baseItemLevels'].first.last
-powerSettings['baseItemLevels'].each do |prefix, ilvl|
+$stackPowerLevel = powerSettings["baseItemLevels"].first.last
+powerSettings["baseItemLevels"].each do |prefix, ilvl|
   if template.start_with? prefix
     $stackPowerLevel = ilvl
     break
   end
 end
 
-# Get azerite combinations if CombinationBasedAzeriteCharts is enabled.
-azeriteCombinations = HeroInterface.GetAzeriteCombinations(3, fightstyle, talents, template)
+# Get azerite combinations if CombinationBasedCharts is enabled. These will be run in addition to defaults.
+azeriteCombinations = HeroInterface.GetAzeriteCombinations(fightstyle, template, talents)
 
 # Create simc inputs
-$simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings['itemLevels'].first}", '']
+$simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings["itemLevels"].first}", ""]
 $simcInputStacks = []
 
-def writePowerProfilesets (itemLevels, powerName, power, options = {})
-  optionsString = (options.empty? ? '' : '--') + options.map { |k, v| "#{k}:#{v}" }.join(';')
+def writePowerProfilesets(itemLevels, powerName, power, options = {})
+  optionsString = (options.empty? ? "" : "--") + options.map { |k, v| "#{k}:#{v}" }.join(";")
   baseName = "#{powerName}#{optionsString}"
 
   # Item Level Simulations
@@ -84,9 +85,9 @@ def writePowerProfilesets (itemLevels, powerName, power, options = {})
     prefix = "profileset.\"#{name}\"+="
     $simcInputLevels.push(prefix + "name=\"#{name}\"")
     $simcInputLevels.push(prefix + "head=#{$headItemString},ilevel=#{ilvl}")
-    $simcInputLevels.push(prefix + "azerite_override=#{power['powerId']}:#{ilvl}")
-    $simcInputLevels.push(prefix + "talents=#{options['talents']}") if options['talents']
-    $simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
+    $simcInputLevels.push(prefix + "azerite_override=#{power["powerId"]}:#{ilvl}")
+    $simcInputLevels.push(prefix + "talents=#{options["talents"]}") if options["talents"]
+    $simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options["ra"]}") if options["ra"]
   end
 
   # Stack Simulations
@@ -94,24 +95,24 @@ def writePowerProfilesets (itemLevels, powerName, power, options = {})
     name = "#{baseName}_#{stacks}"
     prefix = "profileset.\"#{name}\"+="
     $simcInputStacks.push(prefix + "name=\"#{name}\"")
-    powerstring = (["#{power['powerId']}:#{$stackPowerLevel}"] * stacks).join('/')
+    powerstring = (["#{power["powerId"]}:#{$stackPowerLevel}"] * stacks).join("/")
     $simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
-    $simcInputStacks.push(prefix + "talents=#{options['talents']}") if options['talents']
-    $simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options['ra']}") if options['ra']
+    $simcInputStacks.push(prefix + "talents=#{options["talents"]}") if options["talents"]
+    $simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options["ra"]}") if options["ra"]
   end
 end
 
 powerList.each do |power|
-  next if !power['classesId'].include?(classId)
-  next if power['specsId'] && !power['specsId'].include?(specId)
-  next if powerSettings['blacklistedTiers'].include?(power['tier'])
-  next if powerSettings['blacklistedPowers'].include?(power['powerId'])
+  next if !power["classesId"].include?(classId)
+  next if power["specsId"] && !power["specsId"].include?(specId)
+  next if powerSettings["blacklistedTiers"].include?(power["tier"])
+  next if powerSettings["blacklistedPowers"].include?(power["powerId"])
 
-  powerName = power['spellName']
-  pairedSet = powerSettings['pairedPowers'].find { |x| x.include? power['powerId'] }
+  powerName = power["spellName"]
+  pairedSet = powerSettings["pairedPowers"].find { |x| x.include? power["powerId"] }
   if pairedSet
-    if power['powerId'] == pairedSet.first
-      powerName = powerList.select { |x| pairedSet.include? x['powerId'] }.collect { |x| x['spellName'] }.join(' / ')
+    if power["powerId"] == pairedSet.first
+      powerName = powerList.select { |x| pairedSet.include? x["powerId"] }.collect { |x| x["spellName"] }.join(" / ")
     else
       next
     end
@@ -119,27 +120,25 @@ powerList.each do |power|
 
   # Sim per stacks for Reorigination Array if specified in options
   reoriginationArray = [0]
-  if powerSettings['reoriginationArrayPowers'].include?(power['powerId'])
-    reoriginationArray = powerSettings['reoriginationArrayStacks']
+  if powerSettings["reoriginationArrayPowers"].include?(power["powerId"])
+    reoriginationArray = powerSettings["reoriginationArrayStacks"]
   end
 
   reoriginationArray.each do |raStacks|
     # Write the normal profilesets
-    writePowerProfilesets(powerSettings['itemLevels'], powerName, power)
+    writePowerProfilesets(powerSettings["itemLevels"], powerName, power)
 
     # Set up additional options
     options = {}
-    if azeriteCombinations
-      if azeriteCombinations[powerName]
-        if azeriteCombinations[powerName] != talents
-          options['talents'] = azeriteCombinations[powerName]
-        end
-      elsif azeriteCombinations['Generic'] && azeriteCombinations['Generic'] != talents
-        options['talents'] = azeriteCombinations['Generic']
+    if azeriteCombinations[powerName]
+      if azeriteCombinations[powerName] != talents
+        options["talents"] = azeriteCombinations[powerName]
       end
+    elsif azeriteCombinations["Generic"] && azeriteCombinations["Generic"] != talents
+      options["talents"] = azeriteCombinations["Generic"]
     end
-    options['ra'] = raStacks if raStacks > 0
-    writePowerProfilesets(powerSettings['itemLevels'], powerName, power, options) if !options.empty?
+    options["ra"] = raStacks if raStacks > 0
+    writePowerProfilesets(powerSettings["itemLevels"], powerName, power, options) if !options.empty?
   end
 end
 
@@ -149,7 +148,7 @@ end
 
 simulationFilename = "Azerite-Levels_#{fightstyle}_#{template}"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
+  "#{SimcConfig["ConfigFolder"]}/SimcAzeriteConfig.simc",
   fightstyleFile,
   templateFile,
   simcInput + $simcInputLevels,
@@ -169,7 +168,7 @@ results.getAllDPSResults().each do |name, dps|
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     iLevelList.push(data[2].to_i)
-  elsif name == 'Template'
+  elsif name == "Template"
     templateDPS = dps
   end
 end
@@ -208,7 +207,7 @@ ReportWriter.WriteArrayReport(results, report)
 
 simulationFilename = "Azerite-Stacks_#{fightstyle}_#{template}"
 params = [
-  "#{SimcConfig['ConfigFolder']}/SimcAzeriteConfig.simc",
+  "#{SimcConfig["ConfigFolder"]}/SimcAzeriteConfig.simc",
   fightstyleFile,
   templateFile,
   simcInput + $simcInputStacks,
@@ -226,7 +225,7 @@ results.getAllDPSResults().each do |name, dps|
   if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
-  elsif name == 'Template'
+  elsif name == "Template"
     templateDPS = dps
   end
 end
@@ -253,5 +252,5 @@ end
 # Write the report(s)
 ReportWriter.WriteArrayReport(results, report)
 
-Logging.LogScriptInfo 'Done! Press enter to quit...'
+Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
