@@ -79,7 +79,7 @@ module HeroInterface
     defaultResults = filteredResults.select { |result| result[1] == defaultTalents }
     defaultTalentsFound = false
     if defaultResults.empty?
-      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found, make sure the default build is included to make best usage of this feature."
+      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
     else
       defaultTalentsFound = true
       defaultMatchedData = {}
@@ -173,7 +173,7 @@ module HeroInterface
         overrideSets["talents:#{best[1]}"] = ["talents=#{best[1]}"]
       end
     elsif !default
-      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found, make sure the default build is included to make best usage of this feature."
+      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
     end
     return overrideSets
   end
