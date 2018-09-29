@@ -25,9 +25,11 @@ module HeroInterface
     return true
   end
 
+  # Azerite stacks will be converted into Combinator-XA_*. nil will just be Combinator_*.
   def self.GetRawCombinationData(azeriteStacks, fightstyle, profile)
     # First look if there is a local report, then check HeroDamage repository.
-    combinationsFile = "Combinator-#{azeriteStacks}A_#{fightstyle}_#{profile}.json"
+    azSuffix = azeriteStacks ? "-#{azeriteStacks}A" : ""
+    combinationsFile = "Combinator#{azSuffix}_#{fightstyle}_#{profile}.json"
     localPath = "#{SimcConfig["ReportsFolder"]}/#{combinationsFile}"
     hdPath = "#{SimcConfig["HeroDamagePath"]}/#{SimcConfig["HeroDamageReportsFolder"]}/#{combinationsFile}"
     if File.exist?(localPath)
@@ -135,7 +137,7 @@ module HeroInterface
     return matchedData
   end
 
-  # Get best talent + azerite build overrides (if better) based on Combinations results.
+  # Get best talent build overrides (if better) based on Combinations results.
   def self.GetBestCombinationOverrides(fightstyle, profile, defaultTalents)
     return {} unless SimcConfig["CombinationBasedCharts"]
     unless SimcConfig["HeroOutput"]
@@ -143,7 +145,7 @@ module HeroInterface
     end
 
     profile = ProfileHelper.NormalizeProfileName(profile)
-    genericData = GetRawCombinationData(0, fightstyle, profile)
+    genericData = GetRawCombinationData(nil, fightstyle, profile)
 
     if !genericData
       Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
@@ -167,7 +169,7 @@ module HeroInterface
     if best && default && best[1] != default[1]
       difference = 100 * best[4].to_f / default[4].to_f - 100
       if difference > minimalDifferenceFromDefaults
-        Logging.LogScriptInfo "0A: Talent build #{best[1]} beats #{default[1]} by #{difference.round(2)}% (#{best[4]} vs #{default[4]})."
+        Logging.LogScriptInfo "Simple: Talent build #{best[1]} beats #{default[1]} by #{difference.round(2)}% (#{best[4]} vs #{default[4]})."
         overrideSets["talents:#{best[1]}"] = ["talents=#{best[1]}"]
       end
     elsif !default
