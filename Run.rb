@@ -413,6 +413,9 @@ orders.each do |steps|
                 end
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
               end
+              # Do an additional run of talents with just the default profile (no azerite overrides)
+              azCommand = command.gsub("Azerite Azerite", "1A Simple")
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
             else
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
             end
