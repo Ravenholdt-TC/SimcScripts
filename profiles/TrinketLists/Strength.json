@@ -4,21 +4,21 @@
         {
             "name": "Disc of Systematic Regression",
             "itemId": 160650,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Vanquished Tendril of G'huun",
             "itemId": 160654,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Syringe of Bloodborne Infirmity",
             "itemId": 160655,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
@@ -26,28 +26,28 @@
         {
             "name": "Prism of Dark Intensity",
             "itemId": 161376,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Galecaller's Beak",
             "itemId": 161379,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Kraulok's Claw",
             "itemId": 161419,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Doom's Fury",
             "itemId": 161463,
-            "itemLevels": [355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
@@ -55,49 +55,49 @@
         {
             "name": "Merektha's Fang",
             "itemId": 158367,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Rezan's Gleaming Eye",
             "itemId": 158712,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Razdunk's Big Red Button",
             "itemId": 159611,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Gore-Crusted Butcher's Block",
             "itemId": 159616,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Briny Barnacle",
             "itemId": 159619,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Vial of Animated Blood",
             "itemId": 159625,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Jes' Howler",
             "itemId": 159627,
-            "itemLevels": [340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
@@ -105,7 +105,7 @@
         {
             "name": "'Bygone Bee' Almanac",
             "itemId": 163936,
-            "itemLevels": [350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [350, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
@@ -113,133 +113,133 @@
         {
             "name": "Galewind Chimes",
             "itemId": 155568,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Gilded Loa Figurine",
             "itemId": 158153,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Emblem of Zandalar",
             "itemId": 158154,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Dinobone Charm",
             "itemId": 158155,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Pearl Diver's Compass",
             "itemId": 158162,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "First Mate's Spyglass",
             "itemId": 158163,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Plunderbeard's Flask",
             "itemId": 158164,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Whirlwing's Plumage",
             "itemId": 158215,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Living Oil Cannister",
             "itemId": 158216,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Vial of Storms",
             "itemId": 158224,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Doom Shroom",
             "itemId": 158555,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Snowpelt Mangler",
             "itemId": 160263,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Incessantly Ticking Clock",
             "itemId": 161113,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Berserker's Juju",
             "itemId": 161117,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Ravasaur Skull Bijou",
             "itemId": 161119,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Kaja-fied Banana",
             "itemId": 161125,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Dread Aspirant's Medallion",
             "itemId": 162897,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Dread Gladiator's Badge", // PVP WQ ?
             "itemId": 161902,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
         {
             "name": "Crawg Gnawed Femur",
             "itemId": 163703,
-            "itemLevels": [325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400],
+            "itemLevels": [325, 340, 355, 370, 385, 400],
             "bonusIds": [],
             "additionalInput": []
         },
