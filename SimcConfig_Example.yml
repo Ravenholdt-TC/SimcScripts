@@ -86,4 +86,4 @@ RunClasses: ["Death-Knight", "Demon-Hunter", "Druid", "Hunter", "Mage", "Monk", 
 HeroOutput: false
 
 HeroDamagePath: D:\Dev\HeroDamage
-HeroDamageReportsFolder: static/reports
+HeroDamageReportsFolder: src/reports

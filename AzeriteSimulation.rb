@@ -120,7 +120,7 @@ powerList.each do |power|
 
   # Sim per stacks for Reorigination Array if specified in options
   reoriginationArray = [0]
-  if powerSettings["reoriginationArrayPowers"].include?(power["powerId"])
+  if powerSettings["reoriginationArrayPowers"].include?(power["powerId"]) && !powerSettings["reoriginationArrayFightstyleBlacklist"].include?(fightstyle)
     reoriginationArray = powerSettings["reoriginationArrayStacks"]
   end
 
