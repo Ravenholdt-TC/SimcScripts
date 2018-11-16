@@ -34,6 +34,7 @@ simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push 'race=""'
+simcInput.push "timeofday=day"
 simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
@@ -44,12 +45,25 @@ combinationOverrides[nil] = []
 combinationOverrides.each do |optionsString, overrides|
   RaceInputMap.each do |name, raceString|
     if ClassRaceMap[classfolder].include?(name)
+      name = "Night Elf (Day)" if raceString == "night_elf"
       psetName = "#{name}#{"--" if optionsString}#{optionsString}"
       prefix = "profileset.\"#{psetName}\"+="
       simcInput.push(prefix + "name=\"#{psetName}\"")
       simcInput.push(prefix + "race=#{raceString}")
       overrides.each do |override|
         simcInput.push(prefix + "#{override}")
+      end
+
+      if raceString == "night_elf"
+        name = "Night Elf (Night)"
+        psetName = "#{name}#{"--" if optionsString}#{optionsString}"
+        prefix = "profileset.\"#{psetName}\"+="
+        simcInput.push(prefix + "name=\"#{psetName}\"")
+        simcInput.push(prefix + "race=#{raceString}")
+        simcInput.push(prefix + "timeofday=day")
+        overrides.each do |override|
+          simcInput.push(prefix + "#{override}")
+        end
       end
     end
   end
