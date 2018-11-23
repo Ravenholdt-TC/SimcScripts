@@ -7,6 +7,7 @@ override.arcane_intellect=1
 override.battle_shout=1
 override.power_word_fortitude=1
 override.bloodlust=1
+ignore_invulnerable_targets=1
 
 max_time=360
 enemy=HeroDungeon
