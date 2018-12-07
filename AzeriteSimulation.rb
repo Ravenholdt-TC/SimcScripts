@@ -71,6 +71,12 @@ end
 # Get azerite combinations if CombinationBasedCharts is enabled. These will be run in addition to defaults.
 azeriteCombinations = HeroInterface.GetAzeriteCombinations(fightstyle, template, talents)
 
+# Create additional Template base profilesets for the talent overrides
+additionalTalents = azeriteCombinations.values.uniq.select { |x| x != talents }
+additionalTalents.each do |talentString|
+  simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
+end
+
 # Create simc inputs
 $simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings["itemLevels"].first}", ""]
 $simcInputStacks = []
@@ -161,10 +167,14 @@ results = JSONResults.new(simulationFilename)
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
+talentDPS = {}
 iLevelList = []
 sims = {}
 results.getAllDPSResults().each do |name, dps|
-  if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+  if name.start_with?("TalentTemplate_")
+    talentString = name.split("_")[1]
+    talentDPS[talentString] = dps
+  elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     iLevelList.push(data[2].to_i)
@@ -190,7 +200,11 @@ sims.each do |name, values|
   actor.push(name)
   iLevelList.each do |ilvl|
     if values[ilvl]
-      actor.push(values[ilvl] - templateDPS)
+      if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
+        actor.push(values[ilvl] - talentDPS[data[1]])
+      else
+        actor.push(values[ilvl] - templateDPS)
+      end
     else
       actor.push(0)
     end
@@ -220,9 +234,13 @@ results = JSONResults.new(simulationFilename)
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
+talentDPS = {}
 sims = {}
 results.getAllDPSResults().each do |name, dps|
-  if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+  if name.start_with?("TalentTemplate_")
+    talentString = name.split("_")[1]
+    talentDPS[talentString] = dps
+  elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
   elsif name == "Template"
@@ -241,7 +259,11 @@ sims.each do |name, values|
   actor.push(name)
   (1..3).each do |stacks|
     if values[stacks]
-      actor.push(values[stacks] - templateDPS)
+      if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
+        actor.push(values[stacks] - talentDPS[data[1]])
+      else
+        actor.push(values[stacks] - templateDPS)
+      end
     else
       actor.push(0)
     end
