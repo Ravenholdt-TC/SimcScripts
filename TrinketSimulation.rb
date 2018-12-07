@@ -41,6 +41,13 @@ simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
 combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
+
+# Create additional Template base profilesets for the talent overrides
+additionalTalents = combinationOverrides.keys.collect { |x| (data = /.*talents:(\p{Digit}+).*\Z/.match(x)) ? data[1] : nil }.uniq.compact
+additionalTalents.each do |talentString|
+  simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
+end
+
 # Add empty override set for the default loop
 combinationOverrides[nil] = []
 
@@ -81,10 +88,14 @@ results = JSONResults.new(simulationFilename)
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
+talentDPS = {}
 iLevelList = []
 sims = {}
 results.getAllDPSResults().each do |name, dps|
-  if data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+  if name.start_with?("TalentTemplate_")
+    talentString = name.split("_")[1]
+    talentDPS[talentString] = dps
+  elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     iLevelList.push(data[2].to_i)
@@ -110,7 +121,11 @@ sims.each do |name, values|
   actor.push(name)
   iLevelList.each do |ilvl|
     if values[ilvl]
-      actor.push(values[ilvl] - templateDPS)
+      if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
+        actor.push(values[ilvl] - talentDPS[data[1]])
+      else
+        actor.push(values[ilvl] - templateDPS)
+      end
     else
       actor.push(0)
     end
