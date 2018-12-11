@@ -242,6 +242,7 @@ results.getAllDPSResults().each do |name, dps|
     talentDPS[talentString] = dps
   elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
+    next if sims[data[1]][data[2].to_i]
     sims[data[1]][data[2].to_i] = dps
   elsif name == "Template"
     templateDPS = dps
