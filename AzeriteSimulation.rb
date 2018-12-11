@@ -108,6 +108,10 @@ def writePowerProfilesets(itemLevels, powerName, power, options = {})
   end
 end
 
+# Special Hacky Powerlist Prefiltering in case we have duplicates. Should prolly be fixed elsewhere but do it as failsafe.
+# Write all processed power Names to this array, skip if we already ran it.
+processedPowers = []
+
 powerList.each do |power|
   next if !power["classesId"].include?(classId)
   next if power["specsId"] && !power["specsId"].include?(specId)
@@ -115,6 +119,9 @@ powerList.each do |power|
   next if powerSettings["blacklistedPowers"].include?(power["powerId"])
 
   powerName = power["spellName"]
+  next if processedPowers.include?(powerName)
+  processedPowers.push(powerName)
+
   pairedSet = powerSettings["pairedPowers"].find { |x| x.include? power["powerId"] }
   if pairedSet
     if power["powerId"] == pairedSet.first
