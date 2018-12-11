@@ -2,7 +2,7 @@
   "specials": {
     "havoc": {
       "azerite": {
-        "Unbound Chaos": "220:!!ILVL!!/220:!!ILVL!!/220:!!ILVL!!",
+        "Chaotic Transformation": "555:!!ILVL!!/555:!!ILVL!!/555:!!ILVL!!",
         "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Revolving Blades": "126:!!ILVL!!/126:!!ILVL!!/126:!!ILVL!!",
         "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
@@ -23,7 +23,8 @@
         "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
         "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Archive of the Titans": "483:!!ILVL!!/483:!!ILVL!!/483:!!ILVL!!",
-        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!/485:!!ILVL!!"
+        "Laser Matrix": "485:!!ILVL!!/485:!!ILVL!!/485:!!ILVL!!",
+        "Hour of Reaping": "558:!!ILVL!!/558:!!ILVL!!/558:!!ILVL!!"
       }
     }
   },

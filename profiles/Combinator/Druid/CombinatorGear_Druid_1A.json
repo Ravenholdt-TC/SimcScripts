@@ -4,7 +4,7 @@
       "azerite": {
         "Dawning Sun": "250:!!ILVL!!",
         "Rezan's Fury": "157:!!ILVL!!",
-        "Sunblaze": "200:!!ILVL!!",
+        "Arcanic Pulsar": "529:!!ILVL!!",
         "Dagger in the Back": "479:!!ILVL!!",
         "Tidal Surge": "478:!!ILVL!!",
         "Lunar Shrapnel": "357:!!ILVL!!",
@@ -18,10 +18,10 @@
     },
     "feral": {
       "azerite": {
-        "Shredding Fury": "209:!!ILVL!!",
+        "Jungle Fury": "209:!!ILVL!!",
         "Twisted Claws": "241:!!ILVL!!",
         "Rezan's Fury": "157:!!ILVL!!",
-        "Raking Ferocity": "169:!!ILVL!!",
+        "Untamed Ferocity": "169:!!ILVL!!",
         "Dagger in the Back": "479:!!ILVL!!",
         "Tidal Surge": "478:!!ILVL!!",
         "Gushing Lacerations": "358:!!ILVL!!",
@@ -50,7 +50,7 @@
         "Autumn Leaves": "210:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!",
         "Rezan's Fury": "157:!!ILVL!!",
-        "Fungal Essence": "120:!!ILVL!!",
+        "Early Harvest": "532:!!ILVL!!",
         "Dagger in the Back": "479:!!ILVL!!",
         "Tidal Surge": "478:!!ILVL!!",
         "Rampant Growth": "362:!!ILVL!!",
