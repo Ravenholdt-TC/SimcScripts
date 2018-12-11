@@ -191,14 +191,14 @@ report = []
 sims.each do |name, value|
   actor = []
   # Split profile name (mostly for web display)
-  if data = name.match(/\A(\d+)_([^_]+)_?([^,]*)\Z/)
+  if data = name.match(/\A(\d+)_([^_]+)_?([^;]*)\Z/)
     # Talents
     actor.push(data[1])
     # Tiers
     actor.push(data[2].gsub("+", " + "))
     # Legendaries
     if not data[3].empty?
-      legos = data[3].gsub(/_/, ", ")
+      legos = data[3].gsub(/_/, "; ")
     else
       legos = "None"
     end
