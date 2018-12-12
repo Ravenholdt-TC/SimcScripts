@@ -9,12 +9,22 @@ powerSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/Aze
     gear = {"specials" => {}, "sets" => {"None" => {}}}
     ClassAndSpecIds[classStr][:specs].each do |specName, specId|
       gear["specials"][specName] = {"azerite" => {}}
+
+      # Special Hacky Powerlist Prefiltering in case we have duplicates. Should prolly be fixed elsewhere but do it as failsafe.
+      # Write all processed power Names to this array, skip if we already ran it.
+      processedPowers = []
+
       powerList.each do |power|
         next if !power["classesId"].include?(ClassAndSpecIds[classStr][:class_id])
         next if !powerSettings["genericCombinatorPowers"].include?(power["powerId"]) && (!power["specsId"] || !power["specsId"].include?(specId))
         next if powerSettings["blacklistedTiers"].include?(power["tier"])
         next if powerSettings["blacklistedPowers"].include?(power["powerId"])
-        gear["specials"][specName]["azerite"][power["spellName"]] = (["#{power["powerId"]}:!!ILVL!!"] * azeriteStacks).join("/")
+
+        powerName = power["spellName"]
+        next if processedPowers.include?(powerName)
+        processedPowers.push(powerName)
+
+        gear["specials"][specName]["azerite"][powerName] = (["#{power["powerId"]}:!!ILVL!!"] * azeriteStacks).join("/")
       end
     end
     puts "Writing #{classStr}..."
