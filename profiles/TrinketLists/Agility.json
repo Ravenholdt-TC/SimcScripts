@@ -259,16 +259,9 @@
             "additionalInput": []
         },
         {
-            "name": "Surging Alchemist Stone",
-            "itemId": 152632,
-            "itemLevels": [300, 355],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
             "name": "Emblazoned Alchemist Stone",
             "itemId": 166976,
-            "itemLevels": [370, 385],
+            "itemLevels": [300, 355, 370, 385],
             "bonusIds": [],
             "additionalInput": []
         },
