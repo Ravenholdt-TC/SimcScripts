@@ -51,6 +51,13 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        {
+            "name": "Ancient Knot of Wisdom",
+            "itemId": 166793,
+            "itemLevels": [385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Dungeons
         {
             "name": "Vessel of Skittering Shadows",

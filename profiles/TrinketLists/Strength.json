@@ -51,6 +51,13 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        {
+            "name": "Knot of Ancient Fury",
+            "itemId": 166795,
+            "itemLevels": [385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Dungeons
         {
             "name": "Merektha's Fang",

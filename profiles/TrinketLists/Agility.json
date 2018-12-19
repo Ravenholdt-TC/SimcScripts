@@ -51,6 +51,13 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        {
+            "name": "Forest Lord's Razorleaf",
+            "itemId": 166794,
+            "itemLevels": [385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Dungeons
         {
             "name": "Harlan's Loaded Dice",
