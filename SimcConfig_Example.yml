@@ -46,6 +46,7 @@ ProfilesFolder: profiles
 SimcProfileFolders:
 - profiles/PreRaids/
 - profiles/Tier22/
+- profiles/Tier23/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
