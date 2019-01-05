@@ -43,9 +43,12 @@ setups = JSONParser.ReadFile(setupsProfileFile)
 gear["specials"][spec]["finger2"] = gear["specials"][spec]["finger1"]
 gear["specials"][spec]["trinket2"] = gear["specials"][spec]["trinket1"]
 
-# Duplicate Azerite as "three slots"
+# Duplicate Azerite as "six slots"
 gear["specials"][spec]["azerite2"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["azerite3"] = gear["specials"][spec]["azerite"]
+gear["specials"][spec]["azerite4"] = gear["specials"][spec]["azerite"]
+gear["specials"][spec]["azerite5"] = gear["specials"][spec]["azerite"]
+gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
 
 hasAnyAzerite = false
 
@@ -70,8 +73,11 @@ setups["setups"].each do |setup|
         # Always use first slot for multi slot specials before considering the next ones
         throw :invalidCombination if specialSlots.include?("finger2") && !specialSlots.include?("finger1")
         throw :invalidCombination if specialSlots.include?("trinket2") && !specialSlots.include?("trinket1")
-        throw :invalidCombination if specialSlots.include?("azerite2") && !specialSlots.include?("azerite")
-        throw :invalidCombination if specialSlots.include?("azerite3") && (!specialSlots.include?("azerite2") || !specialSlots.include?("azerite"))
+        (2..6).each do |azNum|
+          prevAzNum = azNum - 1
+          prevAzNum = "" if prevAzNum == 1
+          throw :invalidCombination if specialSlots.include?("azerite#{azNum}") && !specialSlots.include?("azerite#{prevAzNum}")
+        end
 
         # Create matching set combination
         usedSlots = [] + specialSlots
@@ -92,10 +98,15 @@ setups["setups"].each do |setup|
           next
         end
         specialCombinations = specialSlots.collect { |specialSlot| gear["specials"][spec][specialSlot].keys }
-        specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1
-        specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1
-        specialCombinations = specialCombinations.collect(&:flatten).collect(&:uniq).uniq { |x| x.sort }.select { |x| x.length == numSpecials }
+        specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1 # Create multi-slot cross product
+        specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1 # Special handling for only one slot
+        specialCombinations = specialCombinations.collect(&:flatten) # Remove inner nested arrays
+        specialCombinations = specialCombinations.collect(&:uniq) unless specialSlots.any? { |x| x.include? "azerite" } # No double elements unless azerite combination
+        specialCombinations = specialCombinations.uniq { |x| x.sort }.select { |x| x.length == numSpecials } # Only unique combinations with desired amount of specials
         specialCombinations.each do |specialCombination|
+          # Special for Azerite: Reject combinations that have more than 3 of the same azerite power
+          next if specialSlots.any?("azerite") && gear["specials"][spec]["azerite"].keys.collect { |x| specialCombination.count(x) }.any? { |x| x > 3 }
+
           specialProfileName = specialCombination.join("_")
           specialStrings = []
           specialAzeritePowers = []
@@ -105,7 +116,7 @@ setups["setups"].each do |setup|
               specialStrings.push(specialOverride)
             end
             # Special treatment for handling Azerite overrides as specials, also replace !!ILVL!! with fitting ilevel
-            if ["azerite", "azerite2", "azerite3"].include? specialSlots[idx]
+            if specialSlots[idx].include? "azerite"
               specialAzeritePowers.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!ILVL!!", stackPowerLevel.to_s))
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
