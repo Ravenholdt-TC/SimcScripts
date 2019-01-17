@@ -1,6 +1,6 @@
 {
     "trinkets": [
-        // Raids
+        // Uldir Raid
         {
             "name": "Frenetic Corpuscle",
             "itemId": 160648,
@@ -19,6 +19,28 @@
             "name": "Vanquished Tendril of G'huun",
             "itemId": 160654,
             "itemLevels": [340, 355, 370, 385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        // Bazar'alor Raid
+        {
+            "name": "Invocation of Yu'lon",
+            "itemId": 165568,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Variable Intensity Gigavolt Oscillating Reactor",
+            "itemId": 165572,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Kimbul's Razor Claw",
+            "itemId": 165579,
+            "itemLevels": [370, 385, 400, 415],
             "bonusIds": [],
             "additionalInput": []
         },

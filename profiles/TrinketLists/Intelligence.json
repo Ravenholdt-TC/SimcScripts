@@ -1,6 +1,6 @@
 {
     "trinkets": [
-        // Raids
+        // Uldir Raid
         {
             "name": "Vigilant's Bloodshaper",
             "itemId": 160651,
@@ -19,6 +19,28 @@
             "name": "Twitching Tentacle of Xalzaix",
             "itemId": 160656,
             "itemLevels": [340, 355, 370, 385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        // Dazar'alor Raid
+        {
+            "name": "Crest of Pa'ku",
+            "itemId": 165581,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Incandescent Sliver",
+            "itemId": 165571,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Tidestorm Codex",
+            "itemId": 165576,
+            "itemLevels": [370, 385, 400, 415],
             "bonusIds": [],
             "additionalInput": []
         },

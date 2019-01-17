@@ -1,6 +1,6 @@
 {
     "trinkets": [
-        // Raids
+        // Uldir Raid
         {
             "name": "Disc of Systematic Regression",
             "itemId": 160650,
@@ -19,6 +19,28 @@
             "name": "Syringe of Bloodborne Infirmity",
             "itemId": 160655,
             "itemLevels": [340, 355, 370, 385, 400],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        // Dazar'alor Raid
+        {
+            "name": "Everchill Anchor",
+            "itemId": 165570,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Grong's Primal Rage",
+            "itemId": 165574,
+            "itemLevels": [370, 385, 400, 415],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Ramping Amplitude Gigavolt Engine",
+            "itemId": 165580,
+            "itemLevels": [370, 385, 400, 415],
             "bonusIds": [],
             "additionalInput": []
         },
