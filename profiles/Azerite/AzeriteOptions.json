@@ -5,10 +5,10 @@
         "T23": 420
     },
     "itemLevels": [
-        340, // LFR Uldir, M Dungeons, M+ 0-3 Chest, Emissaries
-        355, // Normal Uldir, M+ 4-6 Chest, World Bosses, Rep
-        370, // HC Uldir, M+ 7-9 Chest
-        385 // M Uldir, M+ 10+ Chest
+        370, // LFR BDA, M Dungeons
+        385, // Normal BDA
+        400, // HC BDA
+        415 // M BDA
     ],
     "blacklistedTiers": [
         0,
@@ -76,7 +76,6 @@
         157, // Rezan's Fury
         478, // Tidal Surge
         479, // Dagger in the Back
-        483, // Archive of the Titans
-        485 // Laser Matrix
+        562 // Treacherous Covenant
     ]
 }
