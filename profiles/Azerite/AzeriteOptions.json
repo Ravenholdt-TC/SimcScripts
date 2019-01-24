@@ -1,8 +1,8 @@
 {
     "baseItemLevels": { // Used for stacks, lookup by beginning of the profile name, otherwise first.
-        "PR": 345,
+        "T23": 420,
         "T22": 390,
-        "T23": 420
+        "PR": 345
     },
     "itemLevels": [
         370, // LFR BDA, M Dungeons
@@ -68,6 +68,9 @@
     "reoriginationArrayPowers": [
         483, // Archive of the Titans
         485 // Laser Matrix
+    ],
+    "reoriginationArrayProfileWhitelist": [
+        "T22"
     ],
     "reoriginationArrayFightstyleBlacklist": [
         "HD"

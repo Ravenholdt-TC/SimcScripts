@@ -77,6 +77,12 @@ additionalTalents.each do |talentString|
   simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
 end
 
+# Special checks for Reorigination Array
+enabledRA = false
+if powerSettings["reoriginationArrayProfileWhitelist"].any? { |x| template.start_with?(x) } && !powerSettings["reoriginationArrayFightstyleBlacklist"].include?(fightstyle)
+  enabledRA = true
+end
+
 # Create simc inputs
 $simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings["itemLevels"].first}", ""]
 $simcInputStacks = []
@@ -133,7 +139,7 @@ powerList.each do |power|
 
   # Sim per stacks for Reorigination Array if specified in options
   reoriginationArray = [0]
-  if powerSettings["reoriginationArrayPowers"].include?(power["powerId"]) && !powerSettings["reoriginationArrayFightstyleBlacklist"].include?(fightstyle)
+  if enabledRA && powerSettings["reoriginationArrayPowers"].include?(power["powerId"])
     reoriginationArray = powerSettings["reoriginationArrayStacks"]
   end
 
