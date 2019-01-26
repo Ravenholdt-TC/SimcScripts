@@ -31,6 +31,7 @@ to_run = {
       "T22_Demon_Hunter_Havoc",
       "T22_Demon_Hunter_Vengeance",
       "T23_Demon_Hunter_Havoc",
+      "T23_Demon_Hunter_Havoc_Momentum",
     # "T23_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
@@ -153,7 +154,8 @@ to_run = {
       # "PR_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
       "T22_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x",
       "T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
-      "T23_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2x",
+      "T23_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2[13]",
+      "T23_Demon_Hunter_Havoc_Momentum Demon-Hunter_Azerite Azerite xxx0x22",
     # "T23_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
     ],
     "Druid" => [
@@ -274,6 +276,7 @@ to_run = {
       "T22_Demon_Hunter_Havoc",
       "T22_Demon_Hunter_Vengeance",
       "T23_Demon_Hunter_Havoc",
+      "T23_Demon_Hunter_Havoc_Momentum",
     # "T23_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
@@ -397,6 +400,7 @@ to_run = {
       "T22_Demon_Hunter_Havoc Agility",
       "T22_Demon_Hunter_Vengeance Agility",
       "T23_Demon_Hunter_Havoc Agility",
+      "T23_Demon_Hunter_Havoc_Momentum Agility",
     # "T23_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
