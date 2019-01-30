@@ -128,10 +128,10 @@ to_run = {
       # 'PR_Warrior_Protection',
       "T22_Warrior_Arms",
       "T22_Warrior_Fury",
-      'T22_Warrior_Protection'
+      'T22_Warrior_Protection',
       "T23_Warrior_Arms",
       "T23_Warrior_Fury",
-      'T23_Warrior_Protection'
+      'T23_Warrior_Protection',
     ],
   },
   "Combinator" => {
@@ -252,7 +252,7 @@ to_run = {
       # 'PR_Warrior_Protection Warrior_Azerite Azerite x0x00xx',
       "T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
       "T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx",
-      'T22_Warrior_Protection Warrior_Azerite Azerite x0x00xx'
+      'T22_Warrior_Protection Warrior_Azerite Azerite x0x00xx',
       "T23_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
       "T23_Warrior_Fury Warrior_Azerite Azerite x3x2xxx",
       "T23_Warrior_Protection Warrior_Azerite Azerite x0x00xx",
@@ -376,10 +376,10 @@ to_run = {
       # 'PR_Warrior_Protection',
       "T22_Warrior_Arms",
       "T22_Warrior_Fury",
-      'T22_Warrior_Protection'
+      'T22_Warrior_Protection',
       "T23_Warrior_Arms",
       "T23_Warrior_Fury",
-      'T23_Warrior_Protection'
+      'T23_Warrior_Protection',
     ],
   },
   "TrinketSimulation" => {
@@ -500,10 +500,10 @@ to_run = {
       # 'PR_Warrior_Protection Strength',
       "T22_Warrior_Arms Strength",
       "T22_Warrior_Fury Strength",
-      'T22_Warrior_Protection Strength'
+      'T22_Warrior_Protection Strength',
       "T23_Warrior_Arms Strength",
       "T23_Warrior_Fury Strength",
-      'T23_Warrior_Protection Strength'
+      'T23_Warrior_Protection Strength',
     ],
   },
 }
