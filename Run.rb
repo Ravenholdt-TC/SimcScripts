@@ -21,7 +21,7 @@ to_run = {
       "T22_Death_Knight_Blood",
       "T22_Death_Knight_Frost",
       "T22_Death_Knight_Unholy",
-      # "T23_Death_Knight_Blood",
+      "T23_Death_Knight_Blood",
       "T23_Death_Knight_Frost",
       "T23_Death_Knight_Unholy",
     ],
@@ -32,7 +32,7 @@ to_run = {
       "T22_Demon_Hunter_Vengeance",
       "T23_Demon_Hunter_Havoc",
       "T23_Demon_Hunter_Havoc_Momentum",
-    # "T23_Demon_Hunter_Vengeance",
+      "T23_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
       # "PR_Druid_Balance",
@@ -43,7 +43,7 @@ to_run = {
       "T22_Druid_Guardian",
       "T23_Druid_Balance",
       "T23_Druid_Feral",
-    # "T23_Druid_Guardian",
+      "T23_Druid_Guardian",
     ],
     "Hunter" => [
       # "PR_Hunter_Beast_Mastery",
@@ -128,10 +128,10 @@ to_run = {
       # 'PR_Warrior_Protection',
       "T22_Warrior_Arms",
       "T22_Warrior_Fury",
-      # 'T22_Warrior_Protection'
+      'T22_Warrior_Protection'
       "T23_Warrior_Arms",
       "T23_Warrior_Fury",
-    # 'T23_Warrior_Protection'
+      'T23_Warrior_Protection'
     ],
   },
   "Combinator" => {
@@ -145,7 +145,7 @@ to_run = {
       "T22_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
       "T22_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx",
       "T22_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx",
-      # "T23_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
+      "T23_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
       "T23_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx",
       "T23_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx",
     ],
@@ -156,7 +156,7 @@ to_run = {
       "T22_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
       "T23_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2[13]",
       "T23_Demon_Hunter_Havoc_Momentum Demon-Hunter_Azerite Azerite xxx0x22",
-    # "T23_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
+      "T23_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
     ],
     "Druid" => [
       # "PR_Druid_Balance Druid_Azerite Azerite x000xxx",
@@ -167,7 +167,7 @@ to_run = {
       "T22_Druid_Guardian Druid_Azerite Azerite x111x2x",
       "T23_Druid_Balance Druid_Azerite Azerite x000xxx",
       "T23_Druid_Feral Druid_Azerite Azerite x000xxx",
-    # "T23_Druid_Guardian Druid_Azerite Azerite x111x2x",
+      "T23_Druid_Guardian Druid_Azerite Azerite x111x2x",
     ],
     "Hunter" => [
       # "PR_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx",
@@ -252,10 +252,10 @@ to_run = {
       # 'PR_Warrior_Protection Warrior_Azerite Azerite x0x00xx',
       "T22_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
       "T22_Warrior_Fury Warrior_Azerite Azerite x3x2xxx",
-      # 'T22_Warrior_Protection Warrior_Azerite Azerite x0x00xx'
+      'T22_Warrior_Protection Warrior_Azerite Azerite x0x00xx'
       "T23_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
       "T23_Warrior_Fury Warrior_Azerite Azerite x3x2xxx",
-    # "T23_Warrior_Protection Warrior_Azerite Azerite x0x00xx",
+      "T23_Warrior_Protection Warrior_Azerite Azerite x0x00xx",
     ],
   },
   "RaceSimulation" => {
@@ -266,7 +266,7 @@ to_run = {
       "T22_Death_Knight_Blood",
       "T22_Death_Knight_Frost",
       "T22_Death_Knight_Unholy",
-      # "T23_Death_Knight_Blood",
+      "T23_Death_Knight_Blood",
       "T23_Death_Knight_Frost",
       "T23_Death_Knight_Unholy",
     ],
@@ -277,7 +277,7 @@ to_run = {
       "T22_Demon_Hunter_Vengeance",
       "T23_Demon_Hunter_Havoc",
       "T23_Demon_Hunter_Havoc_Momentum",
-    # "T23_Demon_Hunter_Vengeance",
+      "T23_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
       # "PR_Druid_Balance",
@@ -288,7 +288,7 @@ to_run = {
       "T22_Druid_Guardian",
       "T23_Druid_Balance",
       "T23_Druid_Feral",
-    # "T23_Druid_Guardian",
+      "T23_Druid_Guardian",
     ],
     "Hunter" => [
       # "PR_Hunter_Beast_Mastery",
@@ -319,7 +319,7 @@ to_run = {
       "T22_Monk_Brewmaster",
       "T22_Monk_Windwalker",
       "T22_Monk_Windwalker_Serenity",
-      "T23_Monk_Brewmaster",
+      # "T23_Monk_Brewmaster",
       "T23_Monk_Windwalker",
       "T23_Monk_Windwalker_Serenity",
     ],
@@ -376,10 +376,10 @@ to_run = {
       # 'PR_Warrior_Protection',
       "T22_Warrior_Arms",
       "T22_Warrior_Fury",
-      # 'T22_Warrior_Protection'
+      'T22_Warrior_Protection'
       "T23_Warrior_Arms",
       "T23_Warrior_Fury",
-    # 'T23_Warrior_Protection'
+      'T23_Warrior_Protection'
     ],
   },
   "TrinketSimulation" => {
@@ -390,7 +390,7 @@ to_run = {
       "T22_Death_Knight_Blood Strength",
       "T22_Death_Knight_Frost Strength",
       "T22_Death_Knight_Unholy Strength",
-      # "T23_Death_Knight_Blood Strength",
+      "T23_Death_Knight_Blood Strength",
       "T23_Death_Knight_Frost Strength",
       "T23_Death_Knight_Unholy Strength",
     ],
@@ -401,7 +401,7 @@ to_run = {
       "T22_Demon_Hunter_Vengeance Agility",
       "T23_Demon_Hunter_Havoc Agility",
       "T23_Demon_Hunter_Havoc_Momentum Agility",
-    # "T23_Demon_Hunter_Vengeance Agility",
+      "T23_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
       # "PR_Druid_Balance Intelligence",
@@ -412,7 +412,7 @@ to_run = {
       "T22_Druid_Guardian Agility",
       "T23_Druid_Balance Intelligence",
       "T23_Druid_Feral Agility",
-    # "T23_Druid_Guardian Agility",
+      "T23_Druid_Guardian Agility",
     ],
     "Hunter" => [
       # "PR_Hunter_Beast_Mastery Agility",
@@ -500,10 +500,10 @@ to_run = {
       # 'PR_Warrior_Protection Strength',
       "T22_Warrior_Arms Strength",
       "T22_Warrior_Fury Strength",
-      # 'T22_Warrior_Protection Strength'
+      'T22_Warrior_Protection Strength'
       "T23_Warrior_Arms Strength",
       "T23_Warrior_Fury Strength",
-    # 'T23_Warrior_Protection Strength'
+      'T23_Warrior_Protection Strength'
     ],
   },
 }
