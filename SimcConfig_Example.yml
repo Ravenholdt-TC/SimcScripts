@@ -44,6 +44,7 @@ GeneratedFolder: generated
 ProfilesFolder: profiles
 # Additional template sources in the SimC source
 SimcProfileFolders:
+- profiles/DungeonSlice/
 - profiles/PreRaids/
 - profiles/Tier22/
 - profiles/Tier23/
