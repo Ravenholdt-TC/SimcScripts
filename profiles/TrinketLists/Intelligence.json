@@ -272,6 +272,13 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        {
+            "name": "Moonstone of Zin-Azshari",
+            "itemId": 165666,
+            "itemLevels": [370, 385, 400, 415, 425],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // Professions
         {
             "name": "Darkmoon Deck: Squalls",
