@@ -66,11 +66,11 @@ RunOrders: [
   ],
   [
     [["Combinator"], ["1TA"]],
-    [["Combinator"], ["HD"]]
+    [["Combinator"], ["DS"]]
   ],
   [
     [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation"], ["1TA"]],
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation"], ["HD"]]
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation"], ["DS"]]
   ]
 ]
 

@@ -652,7 +652,7 @@ orders.each do |steps|
           commands = to_run[script][wow_class].clone
           commands.reverse! if options[:reverse]
           commands.each do |command|
-            next if command.start_with?("DS_") && fightstyle != "HD" || !command.start_with?("DS_") && fightstyle == "HD"
+            next if command.start_with?("DS_") && fightstyle != "DS" || !command.start_with?("DS_") && fightstyle == "DS"
             if script == "Combinator" && command.include?("Azerite Azerite")
               azeriteStacks.each do |stacks|
                 if stacks > 0

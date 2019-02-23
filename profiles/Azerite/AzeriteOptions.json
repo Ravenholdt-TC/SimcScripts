@@ -73,7 +73,7 @@
         "T22"
     ],
     "reoriginationArrayFightstyleBlacklist": [
-        "HD"
+        "DS"
     ],
     "genericCombinatorPowers": [ // These are added to spec specific traits in the Combinator Gear Generator.
         157, // Rezan's Fury
