@@ -675,5 +675,11 @@ orders.each do |steps|
   end
 end
 
+### HAX: For display on HeroDamage, rename our DS reports to include T23 so they show as T23 fightstyle.
+Dir.glob("#{SimcConfig["ReportsFolder"]}/*_DS_DS_*.{json,csv}").each do |file|
+  puts "Renaming #{file} for T23..."
+  File.rename(file, file.gsub(/_DS_DS_/, "_DS_T23_"))
+end
+
 puts "All batch simulations done! Press enter!"
 gets
