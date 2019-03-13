@@ -34,7 +34,6 @@ simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push 'race=""'
-simcInput.push "timeofday=day"
 simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
@@ -52,22 +51,31 @@ combinationOverrides[nil] = []
 combinationOverrides.each do |optionsString, overrides|
   RaceInputMap.each do |name, raceString|
     if ClassRaceMap[classfolder].include?(name)
-      name = "Night Elf (Day)" if raceString == "night_elf"
-      psetName = "#{name}#{"--" if optionsString}#{optionsString}"
-      prefix = "profileset.\"#{psetName}\"+="
-      simcInput.push(prefix + "name=\"#{psetName}\"")
-      simcInput.push(prefix + "race=#{raceString}")
-      overrides.each do |override|
-        simcInput.push(prefix + "#{override}")
-      end
+      multiOptMap =
+        case raceString
+        when "night_elf"
+          {
+            "Night Elf (Day)" => ["timeofday=day"],
+            "Night Elf (Night)" => ["timeofday=night"],
+          }
+        when "zandalari_troll"
+          {
+            "Zandalari Troll (Pa'ku)" => ["zandalari_loa=paku"],
+            "Zandalari Troll (Bwonsamdi)" => ["zandalari_loa=bwonsamdi"],
+            "Zandalari Troll (Kimbul)" => ["zandalari_loa=kimbul"],
+          }
+        else
+          {name => []}
+        end
 
-      if raceString == "night_elf"
-        name = "Night Elf (Night)"
-        psetName = "#{name}#{"--" if optionsString}#{optionsString}"
+      multiOptMap.each do |raceName, specialOpts|
+        psetName = "#{raceName}#{"--" if optionsString}#{optionsString}"
         prefix = "profileset.\"#{psetName}\"+="
         simcInput.push(prefix + "name=\"#{psetName}\"")
         simcInput.push(prefix + "race=#{raceString}")
-        simcInput.push(prefix + "timeofday=day")
+        specialOpts.each do |opt|
+          simcInput.push(prefix + opt)
+        end
         overrides.each do |override|
           simcInput.push(prefix + "#{override}")
         end

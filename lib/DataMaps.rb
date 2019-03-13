@@ -120,23 +120,22 @@ RaceInputMap = {
   "Nightborne" => "nightborne",
   "Dark Iron Dwarf" => "dark_iron_dwarf",
   'Mag\'har Orc' => "maghar_orc",
-###### Later this xpac, strings to be confirmed
-#'Zandalari Troll' => 'zandalari_troll',
-#'Kul Tiran Human' => 'kul_tiran_human',
+  "Zandalari Troll" => "zandalari_troll",
+  "Kul Tiran" => "kul_tiran",
 }
 
 # Map class folder and race name
 ClassRaceMap = {
   "Death-Knight" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin"],
   "Demon-Hunter" => ["Night Elf", "Blood Elf"],
-  "Druid" => ["Night Elf", "Worgen", "Tauren", "Troll", "Highmountain Tauren"],
-  "Hunter" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
-  "Mage" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
-  "Monk" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
-  "Paladin" => ["Human", "Dwarf", "Draenei", "Lightforged Draenei", "Tauren", "Blood Elf", "Dark Iron Dwarf"],
-  "Priest" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
-  "Rogue" => ["Human", "Dwarf", "Night Elf", "Gnome", "Worgen", "Void Elf", "Pandaren", "Orc", "Undead", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
-  "Shaman" => ["Dwarf", "Draenei", "Pandaren", "Orc", "Tauren", "Troll", "Goblin", "Highmountain Tauren", "Dark Iron Dwarf", 'Mag\'har Orc'],
+  "Druid" => ["Night Elf", "Worgen", "Tauren", "Troll", "Highmountain Tauren", "Zandalari Troll", "Kul Tiran"],
+  "Hunter" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
+  "Mage" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
+  "Monk" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
+  "Paladin" => ["Human", "Dwarf", "Draenei", "Lightforged Draenei", "Tauren", "Blood Elf", "Dark Iron Dwarf", "Zandalari Troll"],
+  "Priest" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
+  "Rogue" => ["Human", "Dwarf", "Night Elf", "Gnome", "Worgen", "Void Elf", "Pandaren", "Orc", "Undead", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
+  "Shaman" => ["Dwarf", "Draenei", "Pandaren", "Orc", "Tauren", "Troll", "Goblin", "Highmountain Tauren", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
   "Warlock" => ["Human", "Dwarf", "Gnome", "Worgen", "Void Elf", "Orc", "Undead", "Troll", "Blood Elf", "Goblin", "Nightborne", "Dark Iron Dwarf"],
-  "Warrior" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc'],
+  "Warrior" => ["Human", "Dwarf", "Night Elf", "Gnome", "Draenei", "Worgen", "Lightforged Draenei", "Void Elf", "Pandaren", "Orc", "Undead", "Tauren", "Troll", "Blood Elf", "Goblin", "Highmountain Tauren", "Nightborne", "Dark Iron Dwarf", 'Mag\'har Orc', "Zandalari Troll", "Kul Tiran"],
 }
