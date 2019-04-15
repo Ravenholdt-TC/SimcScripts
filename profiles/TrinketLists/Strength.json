@@ -44,6 +44,35 @@
             "bonusIds": [],
             "additionalInput": []
         },
+        // Crucible of Storms Raid
+        {
+            "name": "Lurker's Insidious Gift (Full)",
+            "itemId": 167866,
+            "itemLevels": [395, 410, 425],
+            "bonusIds": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Lurker's Insidious Gift (20s)",
+            "itemId": 167866,
+            "itemLevels": [395, 410, 425],
+            "bonusIds": [],
+            "additionalInput": ["bfa.lurkers_insidious_gift_duration=20"]
+        },
+        {
+            "name": "Lurker's Insidious Gift (10s)",
+            "itemId": 167866,
+            "itemLevels": [395, 410, 425],
+            "bonusIds": [],
+            "additionalInput": ["bfa.lurkers_insidious_gift_duration=10"]
+        },
+        {
+            "name": "Idol of Indiscriminate Consumption",
+            "itemId": 167868,
+            "itemLevels": [395, 410, 425],
+            "bonusIds": [],
+            "additionalInput": []
+        },
         // World Boss
         {
             "name": "Prism of Dark Intensity",
