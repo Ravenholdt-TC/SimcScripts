@@ -46,32 +46,25 @@
         },
         // Crucible of Storms Raid
         {
-            "name": "Harbinger's Inscrutable Will (Best Case)",
-            "itemId": 167867,
-            "itemLevels": [395, 410, 425],
-            "bonusIds": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Harbinger's Inscrutable Will (Sidestep)",
+            "name": "Harbinger's Inscrutable Will",
             "itemId": 167867,
             "itemLevels": [395, 410, 425],
             "bonusIds": [],
             "additionalInput": ["bfa.harbingers_inscrutable_will_silence_chance=0", "bfa.harbingers_inscrutable_will_move_chance=1"]
         },
         {
-            "name": "Harbinger's Inscrutable Will (50% Silenced, Sidestep)",
+            "name": "Harbinger's Inscrutable Will (50% Silenced)",
             "itemId": 167867,
             "itemLevels": [395, 410, 425],
             "bonusIds": [],
             "additionalInput": ["bfa.harbingers_inscrutable_will_silence_chance=0.5", "bfa.harbingers_inscrutable_will_move_chance=0.5"]
         },
         {
-            "name": "Harbinger's Inscrutable Will (50% Silenced, Never Moving)",
+            "name": "Harbinger's Inscrutable Will (20% Silenced)",
             "itemId": 167867,
             "itemLevels": [395, 410, 425],
             "bonusIds": [],
-            "additionalInput": ["bfa.harbingers_inscrutable_will_silence_chance=0.5", "bfa.harbingers_inscrutable_will_move_chance=0"]
+            "additionalInput": ["bfa.harbingers_inscrutable_will_silence_chance=0.2", "bfa.harbingers_inscrutable_will_move_chance=0.8"]
         },
         // World Boss
         {
