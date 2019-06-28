@@ -71,6 +71,9 @@ combinationOverrides.each do |optionsString, overrides|
         prefix = "profileset.\"#{name}\"+="
         simcInput.push(prefix + "name=\"#{name}\"")
         simcInput.push(prefix + "azerite_essences=#{essence["essenceId"]}:#{rank}:#{type == "Major" ? 1 : 0}")
+        essence["additionalInput"].each do |input|
+          simcInput.push(prefix + "#{input}")
+        end
         overrides.each do |override|
           simcInput.push(prefix + "#{override}")
         end
