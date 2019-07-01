@@ -160,11 +160,11 @@
             "bonusIds": [],
             "additionalInput": []
         },
-        // Red Punchcards, TODO: Support forges
+        // Red Punchcards
         {
             "name": "Subroutine: Overclock",
             "itemId": 167556,
-            "itemLevels": [404],
+            "itemLevels": [404, 412, 415, 424],
             "bonusIds": [],
             "additionalInput": [],
             "gemmedInto": 167555
@@ -172,7 +172,7 @@
         {
             "name": "Cyclotronic Blast",
             "itemId": 167672,
-            "itemLevels": [404],
+            "itemLevels": [404, 412, 415, 424],
             "bonusIds": [],
             "additionalInput": [],
             "gemmedInto": 167555
@@ -180,7 +180,7 @@
         {
             "name": "Harmonic Dematerializer",
             "itemId": 167677,
-            "itemLevels": [404],
+            "itemLevels": [404, 412, 415, 424],
             "bonusIds": [],
             "additionalInput": [],
             "gemmedInto": 167555
@@ -188,7 +188,7 @@
         {
             "name": "Subroutine: Recalibration",
             "itemId": 168800,
-            "itemLevels": [404],
+            "itemLevels": [404, 412, 415, 424],
             "bonusIds": [],
             "additionalInput": [],
             "gemmedInto": 167555

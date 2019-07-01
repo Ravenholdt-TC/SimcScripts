@@ -58,13 +58,15 @@ trinketListProfiles.each do |pname, pfile|
       bonusIdString = trinket["bonusIds"].empty? ? "" : ",bonus_id=" + trinket["bonusIds"].join("/")
       trinket["itemLevels"].each do |ilvl|
         trinketString = trinket["itemId"]
+        ilevelString = "ilevel=#{ilvl}"
         if trinket["gemmedInto"]
           trinketString = "#{trinket["gemmedInto"]},gem_id=#{trinket["itemId"]}"
+          ilevelString = "gem_ilevel=#{ilvl}"
         end
         name = "#{trinket["name"]}#{"--" if optionsString}#{optionsString}_#{ilvl}"
         prefix = "profileset.\"#{name}\"+="
         simcInput.push(prefix + "name=\"#{name}\"")
-        simcInput.push(prefix + "trinket1=,id=#{trinketString},ilevel=#{ilvl}#{bonusIdString}")
+        simcInput.push(prefix + "trinket1=,id=#{trinketString},#{ilevelString}#{bonusIdString}")
         trinket["additionalInput"].each do |input|
           simcInput.push(prefix + "#{input}")
         end
