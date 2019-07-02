@@ -1,0 +1,98 @@
+{
+  "specials": {
+    "discipline": {
+      "essenceMajor": {
+        "The Crucible of Flame": "12:3:1",
+        "Worldvein Resonance": "4:3:1",
+        "Worldvein Resonance (3 Allies)": "4:3:1",
+        "Ripple in Space": "15:3:1",
+        "Vision of Perfection": "22:3:1",
+        "Memory of Lucid Dreams": "27:3:1",
+        "Conflict and Strife": "32:3:1",
+        "Essence of the Focusing Iris": "5:3:1",
+        "Condensed Life-Force": "14:3:1",
+        "Blood of the Enemy": "23:3:1",
+        "Purification Protocol": "6:3:1",
+        "The Unbound Force": "28:3:1"
+      },
+      "essenceMinor": {
+        "The Crucible of Flame": "12:3:0",
+        "Worldvein Resonance": "4:3:0",
+        "Worldvein Resonance (3 Allies)": "4:3:0",
+        "Ripple in Space": "15:3:0",
+        "Vision of Perfection": "22:3:0",
+        "Memory of Lucid Dreams": "27:3:0",
+        "Conflict and Strife": "32:3:0",
+        "Essence of the Focusing Iris": "5:3:0",
+        "Condensed Life-Force": "14:3:0",
+        "Blood of the Enemy": "23:3:0",
+        "Purification Protocol": "6:3:0",
+        "The Unbound Force": "28:3:0"
+      }
+    },
+    "holy": {
+      "essenceMajor": {
+        "The Crucible of Flame": "12:3:1",
+        "Worldvein Resonance": "4:3:1",
+        "Worldvein Resonance (3 Allies)": "4:3:1",
+        "Ripple in Space": "15:3:1",
+        "Vision of Perfection": "22:3:1",
+        "Memory of Lucid Dreams": "27:3:1",
+        "Conflict and Strife": "32:3:1",
+        "Essence of the Focusing Iris": "5:3:1",
+        "Condensed Life-Force": "14:3:1",
+        "Blood of the Enemy": "23:3:1",
+        "Purification Protocol": "6:3:1",
+        "The Unbound Force": "28:3:1"
+      },
+      "essenceMinor": {
+        "The Crucible of Flame": "12:3:0",
+        "Worldvein Resonance": "4:3:0",
+        "Worldvein Resonance (3 Allies)": "4:3:0",
+        "Ripple in Space": "15:3:0",
+        "Vision of Perfection": "22:3:0",
+        "Memory of Lucid Dreams": "27:3:0",
+        "Conflict and Strife": "32:3:0",
+        "Essence of the Focusing Iris": "5:3:0",
+        "Condensed Life-Force": "14:3:0",
+        "Blood of the Enemy": "23:3:0",
+        "Purification Protocol": "6:3:0",
+        "The Unbound Force": "28:3:0"
+      }
+    },
+    "shadow": {
+      "essenceMajor": {
+        "The Crucible of Flame": "12:3:1",
+        "Worldvein Resonance": "4:3:1",
+        "Worldvein Resonance (3 Allies)": "4:3:1",
+        "Ripple in Space": "15:3:1",
+        "Vision of Perfection": "22:3:1",
+        "Memory of Lucid Dreams": "27:3:1",
+        "Conflict and Strife": "32:3:1",
+        "Essence of the Focusing Iris": "5:3:1",
+        "Condensed Life-Force": "14:3:1",
+        "Blood of the Enemy": "23:3:1",
+        "Purification Protocol": "6:3:1",
+        "The Unbound Force": "28:3:1"
+      },
+      "essenceMinor": {
+        "The Crucible of Flame": "12:3:0",
+        "Worldvein Resonance": "4:3:0",
+        "Worldvein Resonance (3 Allies)": "4:3:0",
+        "Ripple in Space": "15:3:0",
+        "Vision of Perfection": "22:3:0",
+        "Memory of Lucid Dreams": "27:3:0",
+        "Conflict and Strife": "32:3:0",
+        "Essence of the Focusing Iris": "5:3:0",
+        "Condensed Life-Force": "14:3:0",
+        "Blood of the Enemy": "23:3:0",
+        "Purification Protocol": "6:3:0",
+        "The Unbound Force": "28:3:0"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
