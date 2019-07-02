@@ -139,46 +139,55 @@ module Interactive
   end
 
   # Ask for talent permutation input string
-  # Returns array of arrays with talents for each row
-  def self.SelectTalentPermutations(checkArgs = true)
+  # Returns array (sets) of array (7 tiers) of arrays (talents)
+  # Beware that when specifying multiple sets with overlaps there will be duplicates
+  def self.SelectTalentPermutations(defaultTalents, checkArgs = true)
     puts "Please select the talents for permutation:"
     puts "Options: 0-off, 1-left, 2-middle, 3-right, x-Permutation"
     puts "You can specify more per tier by wrapping the wanted columns in []."
-    puts "Examples: xxx00xx, xxx00[12]x"
+    puts "Examples: xxx003x,xxx00[12]x"
+    puts "Specifying multiple permutation sets split by a comma without spaces works too."
+    puts "To only use the default talents enter: default"
     print "Talents: "
-    talentstring = GetInputOrArg(checkArgs)
-    talentdata = []
-    isTierArray = false
-    tierArray = []
-    talentstring.each_char do |talentpart|
-      if ["0", "1", "2", "3"].include?(talentpart)
-        if isTierArray
-          tierArray.push(talentpart.to_i)
+    talentstringinput = GetInputOrArg(checkArgs)
+    talentstrings = talentstringinput.split(",")
+    talentdataset = []
+    talentstrings.each do |talentstring|
+      talentstring = defaultTalents if talentstring == "default"
+      talentdata = []
+      isTierArray = false
+      tierArray = []
+      talentstring.each_char do |talentpart|
+        if ["0", "1", "2", "3"].include?(talentpart)
+          if isTierArray
+            tierArray.push(talentpart.to_i)
+          else
+            talentdata.push([talentpart.to_i])
+          end
+        elsif !isTierArray && talentpart.downcase.eql?("x")
+          talentdata.push((1..3).to_a)
+        elsif !isTierArray && talentpart.eql?("[")
+          isTierArray = true
+          tierArray = []
+        elsif isTierArray && talentpart.eql?("]")
+          isTierArray = false
+          talentdata.push(tierArray)
         else
-          talentdata.push([talentpart.to_i])
+          Logging.LogScriptFatal "ERROR: Invalid talent string input #{talentstring}!"
+          puts "Press enter to quit..."
+          GetInputOrArg(checkArgs)
+          exit
         end
-      elsif !isTierArray && talentpart.downcase.eql?("x")
-        talentdata.push((1..3).to_a)
-      elsif !isTierArray && talentpart.eql?("[")
-        isTierArray = true
-        tierArray = []
-      elsif isTierArray && talentpart.eql?("]")
-        isTierArray = false
-        talentdata.push(tierArray)
-      else
-        Logging.LogScriptFatal "ERROR: Invalid talent string input #{talentstring}!"
+      end
+      if talentdata.length != 7
+        Logging.LogScriptFatal "ERROR: Invalid number of talents! Got #{talentdata.length}"
         puts "Press enter to quit..."
         GetInputOrArg(checkArgs)
         exit
       end
+      talentdataset.push(talentdata)
     end
-    if talentdata.length != 7
-      Logging.LogScriptFatal "ERROR: Invalid number of talents! Got #{talentdata.length}"
-      puts "Press enter to quit..."
-      GetInputOrArg(checkArgs)
-      exit
-    end
-    return talentdata
+    return talentdataset
   end
 
   # Choose from a given array. Prompt will show "Please choose a <name>:"

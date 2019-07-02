@@ -14,15 +14,24 @@ Logging.Initialize("Combinator")
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
 classfolder = Interactive.SelectSubfolder("Combinator")
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ""], classfolder)
+
 #Read spec from profile
 spec = ProfileHelper.GetValueFromTemplate("spec", profileFile)
 unless spec
   Logging.LogScriptError "No spec= string found in profile!"
   exit
 end
+
+# Read talents from template profile
+talents = ProfileHelper.GetValueFromTemplate("talents", profileFile)
+unless talents
+  Logging.LogScriptError "No talents= string found in profile!"
+  exit
+end
+
 gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear_")
 setupsProfile, setupsProfileFile = Interactive.SelectTemplate("Combinator/CombinatorSetups_")
-talentdata = Interactive.SelectTalentPermutations()
+talentdatasets = Interactive.SelectTalentPermutations(talents)
 
 # Log all interactively set settings
 puts
@@ -32,7 +41,7 @@ Logging.LogScriptInfo "-- Profile: #{profile}"
 Logging.LogScriptInfo "-- Gear: #{gearProfile}"
 Logging.LogScriptInfo "-- Setups: #{setupsProfile}"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
-Logging.LogScriptInfo "-- Talents: #{talentdata}"
+Logging.LogScriptInfo "-- Talents: #{talentdatasets}"
 puts
 
 # Read gear setups from JSON
@@ -168,27 +177,29 @@ simcInput.push "azerite_essences=" if hasAnyEssences
 simcInput.push ""
 
 Logging.LogScriptInfo "Generating combinations..."
-talentdata[0].each do |t1|
-  talentdata[1].each do |t2|
-    talentdata[2].each do |t3|
-      talentdata[3].each do |t4|
-        talentdata[4].each do |t5|
-          talentdata[5].each do |t6|
-            talentdata[6].each do |t7|
-              talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
-              talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
-              gearCombinations.each do |gearName, strings|
-                name = "#{talentInput}_#{gearName}"
-                prefix = "profileset.\"#{name}\"+="
-                simcInput.push(prefix + "name=\"#{name}\"")
-                simcInput.push(prefix + "talents=#{talentInput}")
-                talentOverrides.each do |talentOverride|
-                  simcInput.push(prefix + talentOverride)
+talentdatasets.each do |talentdata|
+  talentdata[0].each do |t1|
+    talentdata[1].each do |t2|
+      talentdata[2].each do |t3|
+        talentdata[3].each do |t4|
+          talentdata[4].each do |t5|
+            talentdata[5].each do |t6|
+              talentdata[6].each do |t7|
+                talentInput = "#{t1}#{t2}#{t3}#{t4}#{t5}#{t6}#{t7}"
+                talentOverrides = ProfileHelper.GetTalentOverrides("Combinator/#{classfolder}/TalentOverrides/#{profile}", talentInput)
+                gearCombinations.each do |gearName, strings|
+                  name = "#{talentInput}_#{gearName}"
+                  prefix = "profileset.\"#{name}\"+="
+                  simcInput.push(prefix + "name=\"#{name}\"")
+                  simcInput.push(prefix + "talents=#{talentInput}")
+                  talentOverrides.each do |talentOverride|
+                    simcInput.push(prefix + talentOverride)
+                  end
+                  strings.each do |string|
+                    simcInput.push(prefix + string)
+                  end
+                  simcInput.push ""
                 end
-                strings.each do |string|
-                  simcInput.push(prefix + string)
-                end
-                simcInput.push ""
               end
             end
           end
