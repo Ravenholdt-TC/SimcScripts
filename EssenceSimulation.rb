@@ -51,20 +51,24 @@ simcInput.push "azerite_essences="
 simcInput.push "bfa.reorigination_array_stacks=0"
 simcInput.push ""
 
-# Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
-combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
+# Get azerite combinations if CombinationBasedCharts is enabled. These will be run in addition to defaults.
+essenceCombinations = HeroInterface.GetEssenceCombinations(fightstyle, template, talents)
 
 # Create additional Template base profilesets for the talent overrides
-additionalTalents = combinationOverrides.keys.collect { |x| (data = /.*talents:(\p{Digit}+).*\Z/.match(x)) ? data[1] : nil }.uniq.compact
+additionalTalents = essenceCombinations.values.uniq.select { |x| x != talents }
 additionalTalents.each do |talentString|
   simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
 end
 
 # Add empty override set for the default loop
-combinationOverrides[nil] = []
+passes = ["default", "override"]
 
-combinationOverrides.each do |optionsString, overrides|
+passes.each do |pass|
   essenceList.each do |essence|
+    optionsString = nil
+    bestTalents = essenceCombinations.dig(essence["name"])
+    next if pass == "override" && (!bestTalents || bestTalents == talents)
+    optionsString = "talents:#{bestTalents}" if pass == "override"
     ["Major", "Minor"].each do |type|
       (1..3).each do |rank|
         name = "#{essence["name"]} (#{type})#{"--" if optionsString}#{optionsString}_#{rank}"
@@ -74,8 +78,8 @@ combinationOverrides.each do |optionsString, overrides|
         essence["additionalInput"].each do |input|
           simcInput.push(prefix + "#{input}")
         end
-        overrides.each do |override|
-          simcInput.push(prefix + "#{override}")
+        if pass == "override"
+          simcInput.push(prefix + "talents=\"#{bestTalents}\"")
         end
       end
     end

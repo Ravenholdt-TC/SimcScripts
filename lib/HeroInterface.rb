@@ -26,10 +26,10 @@ module HeroInterface
   end
 
   # Azerite stacks will be converted into Combinator-XA_*. nil will just be Combinator_*.
-  def self.GetRawCombinationData(azeriteStacks, fightstyle, profile)
+  def self.GetRawCombinationData(combinatorStyle, fightstyle, profile)
     # First look if there is a local report, then check HeroDamage repository.
-    azSuffix = azeriteStacks ? "-#{azeriteStacks}A" : ""
-    combinationsFile = "Combinator#{azSuffix}_#{fightstyle}_#{profile}.json"
+    csSuffix = combinatorStyle ? "-#{combinatorStyle}" : ""
+    combinationsFile = "Combinator#{csSuffix}_#{fightstyle}_#{profile}.json"
     localPath = "#{SimcConfig["ReportsFolder"]}/#{combinationsFile}"
     hdPath = "#{SimcConfig["HeroDamagePath"]}/#{SimcConfig["HeroDamageReportsFolder"]}/#{combinationsFile}"
     if File.exist?(localPath)
@@ -53,8 +53,8 @@ module HeroInterface
     end
 
     profile = ProfileHelper.NormalizeProfileName(profile)
-    data = GetRawCombinationData(3, fightstyle, profile)
-    genericData = GetRawCombinationData(0, fightstyle, profile)
+    data = GetRawCombinationData("3A", fightstyle, profile)
+    genericData = GetRawCombinationData("0A", fightstyle, profile)
 
     if !data || !genericData
       Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
@@ -131,6 +131,71 @@ module HeroInterface
         Logging.LogScriptInfo "Generic: #{topGenericResult[1]} is better than #{defaultTalents} by #{genericDifference.round(2)}% (#{topGenericDPS} vs #{defaultGenericDPS})."
       else
         matchedData["Generic"] = defaultTalents
+      end
+    end
+
+    return matchedData
+  end
+
+  # Get best talent builds for the essence sim using Combinations results.
+  def self.GetEssenceCombinations(fightstyle, profile, defaultTalents)
+    return {} unless SimcConfig["CombinationBasedCharts"]
+    unless SimcConfig["HeroOutput"]
+      Logging.LogScriptError "HeroOutput option off with CombinationBasedCharts on! This may cause problems!"
+    end
+
+    profile = ProfileHelper.NormalizeProfileName(profile)
+    data = GetRawCombinationData("1E", fightstyle, profile)
+
+    if !data
+      Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
+      return {}
+    end
+
+    # Combinations results array mapping:
+    # result: 0-rank, 1-talents, 2-set, 3-powerName, 4-dps
+
+    # Create a map of essenceName => DPS using default talent build
+    defaultResults = data["results"].select { |result| result[1] == defaultTalents }
+    defaultTalentsFound = false
+    if defaultResults.empty?
+      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
+    else
+      defaultTalentsFound = true
+      defaultMatchedData = {}
+      defaultResults.each do |result|
+        unless defaultMatchedData.has_key?(result[3])
+          defaultMatchedData[result[3]] = result[4]
+        end
+      end
+    end
+
+    # Set up threshold for comparison based on target error
+    targetError = data["metas"]["targetError"]
+    minimalDifferenceFromDefaults = targetError * TargetErrorDiffFactor
+
+    # Create a map of essenceName => talent build using best DPS
+    matchedData = {}
+    data["results"].each do |result|
+      # The results are pre-sorted in DESC order, so if we have an existing entry then we already got the best candidate
+      unless matchedData.has_key?(result[3])
+        # Check the result against default talents
+        if defaultTalentsFound
+          # If the dps is not higher than the minimalDifferenceFromDefaults, uses default talents instead.
+          defaultDPS = defaultMatchedData[result[3]]
+          resultDPS = result[4]
+          difference = 100 * resultDPS.to_f / defaultDPS.to_f - 100
+          if difference > minimalDifferenceFromDefaults
+            matchedData[result[3]] = result[1]
+            Logging.LogScriptInfo "#{result[3]}: #{result[1]} is better than #{defaultTalents} by #{difference.round(2)}% (#{resultDPS} vs #{defaultDPS})."
+          else
+            matchedData[result[3]] = defaultTalents
+          end
+        else
+          # Fallback to the result in case the default talents were not present in the combinations
+          matchedData[result[3]] = result[1]
+          Logging.LogScriptInfo "#{result[3]}: #{result[1]} will be used as fallback, no defaultTalents found."
+        end
       end
     end
 
