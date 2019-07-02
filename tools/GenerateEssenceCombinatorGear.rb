@@ -15,7 +15,7 @@ ClassAndSpecIds.keys.each do |classStr|
     end
   end
   puts "Writing #{classStr}..."
-  JSONParser.WritePrettyFile("#{SimcConfig["ProfilesFolder"]}/Combinator/#{classStr}/CombinatorGear_#{classStr}_Esssences.json", gear)
+  JSONParser.WritePrettyFile("#{SimcConfig["ProfilesFolder"]}/Combinator/#{classStr}/CombinatorGear_#{classStr}_Essences.json", gear)
 end
 
 puts
