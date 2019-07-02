@@ -50,7 +50,11 @@ gear["specials"][spec]["azerite4"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["azerite5"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
 
+# Duplicate Essences as 3 slots
+gear["specials"][spec]["essenceMinor2"] = gear["specials"][spec]["essenceMinor"]
+
 hasAnyAzerite = false
+hasAnyEssences = false
 
 # Get base item level for azerite stacks based on Profile name beginning
 hasAnyAzerite = true if setupsProfile == "NoAzerite" # Disable azerite for 0A sims.
@@ -62,6 +66,9 @@ powerSettings["baseItemLevels"].each do |prefix, ilvl|
     break
   end
 end
+
+# Import essence list in case we need the additonal inputs
+essenceList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/Essences.json")
 
 # Build gear combinations
 gearCombinations = {}
@@ -78,6 +85,8 @@ setups["setups"].each do |setup|
           prevAzNum = "" if prevAzNum == 1
           throw :invalidCombination if specialSlots.include?("azerite#{azNum}") && !specialSlots.include?("azerite#{prevAzNum}")
         end
+        throw :invalidCombination if specialSlots.include?("essenceMinor") && !specialSlots.include?("essenceMajor")
+        throw :invalidCombination if specialSlots.include?("essenceMinor2") && !specialSlots.include?("essenceMinor")
 
         # Create matching set combination
         usedSlots = [] + specialSlots
@@ -101,15 +110,23 @@ setups["setups"].each do |setup|
         specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1 # Create multi-slot cross product
         specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1 # Special handling for only one slot
         specialCombinations = specialCombinations.collect(&:flatten) # Remove inner nested arrays
-        specialCombinations = specialCombinations.collect(&:uniq) unless specialSlots.any? { |x| x.include? "azerite" } # No double elements unless azerite combination
-        specialCombinations = specialCombinations.uniq { |x| x.sort }.select { |x| x.length == numSpecials } # Only unique combinations with desired amount of specials
+        specialCombinations = specialCombinations.collect(&:uniq) unless specialSlots.any? { |x| x.include?("azerite") } # No double elements unless azerite combination
+        if specialSlots.any? { |x| x.include?("essence") }
+          specialCombinations = specialCombinations.uniq { |x| [x[0]] + x[1..-1].sort } # Only unique minor combinations for essences
+        else
+          specialCombinations = specialCombinations.uniq { |x| x.sort } # Only generally unique combinations
+        end
+        specialCombinations = specialCombinations.select { |x| x.length == numSpecials } # Only desired amount of specials
         specialCombinations.each do |specialCombination|
           # Special for Azerite: Reject combinations that have more than 3 of the same azerite power
           next if specialSlots.any?("azerite") && gear["specials"][spec]["azerite"].keys.collect { |x| specialCombination.count(x) }.any? { |x| x > 3 }
+          # Special for Essences: Get essence ID and ensure they are unique (for Worldvein Allies special case)
+          next if specialCombination.collect { |x| essenceList.find { |y| y["name"] == x }&.dig("essenceId") || x }.uniq.count != specialCombination.count
 
           specialProfileName = specialCombination.join("_")
           specialStrings = []
           specialAzeritePowers = []
+          specialEssences = []
           specialCombination.each_with_index do |itemName, idx|
             specialOverrides = ProfileHelper.GetSpecialOverrides("Combinator/#{classfolder}/SpecialOverrides/#{profile}", itemName)
             specialOverrides.each do |specialOverride|
@@ -118,6 +135,12 @@ setups["setups"].each do |setup|
             # Special treatment for handling Azerite overrides as specials, also replace !!ILVL!! with fitting ilevel
             if specialSlots[idx].include? "azerite"
               specialAzeritePowers.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!ILVL!!", stackPowerLevel.to_s))
+            elsif specialSlots[idx].include? "essence"
+              specialEssences.push(gear["specials"][spec][specialSlots[idx]][itemName])
+              # Handle additional essence input
+              if essence = essenceList.find { |x| x["name"] == itemName }
+                specialStrings += essence["additionalInput"]
+              end
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
             end
@@ -125,6 +148,10 @@ setups["setups"].each do |setup|
           unless specialAzeritePowers.empty?
             hasAnyAzerite = true
             specialStrings.push("azerite_override=#{specialAzeritePowers.join("/")}")
+          end
+          unless specialEssences.empty?
+            hasAnyEssences = true
+            specialStrings.push("azerite_essences=#{specialEssences.join("/")}")
           end
           gearCombinations["#{setProfileName}_#{specialProfileName}"] = specialStrings + setStrings
         end
@@ -137,6 +164,7 @@ end
 simcInput = []
 simcInput.push "name=Template"
 simcInput.push "disable_azerite=items" if hasAnyAzerite
+simcInput.push "azerite_essences=" if hasAnyEssences
 simcInput.push ""
 
 Logging.LogScriptInfo "Generating combinations..."
@@ -171,14 +199,16 @@ talentdata[0].each do |t1|
 end
 
 # Special naming extension for Azerite stack sims
-azeriteStyle = ""
+combinatorStyle = ""
 if setupsProfile == "Azerite"
-  azeriteStyle = "-#{gearProfile[-2..-1]}"
+  combinatorStyle = "-#{gearProfile[-2..-1]}"
 elsif setupsProfile == "NoAzerite"
-  azeriteStyle = "-0A"
+  combinatorStyle = "-0A"
+elsif ["1E", "2E", "3E"].include? setupsProfile
+  combinatorStyle = "-#{setupsProfile}"
 end
 
-simulationFilename = "Combinator#{azeriteStyle}_#{fightstyle}_#{profile}"
+simulationFilename = "Combinator#{combinatorStyle}_#{fightstyle}_#{profile}"
 params = [
   "#{SimcConfig["ConfigFolder"]}/SimcCombinatorConfig.simc",
   fightstyleFile,
