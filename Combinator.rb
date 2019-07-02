@@ -173,7 +173,7 @@ end
 simcInput = []
 simcInput.push "name=Template"
 simcInput.push "disable_azerite=items" if hasAnyAzerite
-simcInput.push "azerite_essences=" if hasAnyEssences
+simcInput.push "azerite_essences=" if hasAnyEssences || hasAnyAzerite
 simcInput.push ""
 
 Logging.LogScriptInfo "Generating combinations..."
