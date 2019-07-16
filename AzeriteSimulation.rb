@@ -87,7 +87,7 @@ end
 $simcInputLevels = ["head=#{$headItemString},ilevel=#{powerSettings["itemLevels"].first}", ""]
 $simcInputStacks = []
 
-def writePowerProfilesets(itemLevels, powerName, power, options = {})
+def writePowerProfilesets(itemLevels, powerName, power, additionalInput = [], options = {})
   optionsString = (options.empty? ? "" : "--") + options.map { |k, v| "#{k}:#{v}" }.join(";")
   baseName = "#{powerName}#{optionsString}"
 
@@ -100,6 +100,9 @@ def writePowerProfilesets(itemLevels, powerName, power, options = {})
     $simcInputLevels.push(prefix + "azerite_override=#{power["powerId"]}:#{ilvl}")
     $simcInputLevels.push(prefix + "talents=#{options["talents"]}") if options["talents"]
     $simcInputLevels.push(prefix + "bfa.reorigination_array_stacks=#{options["ra"]}") if options["ra"]
+    additionalInput.each do |add|
+      $simcInputLevels.push(prefix + add)
+    end
   end
 
   # Stack Simulations
@@ -111,6 +114,9 @@ def writePowerProfilesets(itemLevels, powerName, power, options = {})
     $simcInputStacks.push(prefix + "azerite_override=#{powerstring}")
     $simcInputStacks.push(prefix + "talents=#{options["talents"]}") if options["talents"]
     $simcInputStacks.push(prefix + "bfa.reorigination_array_stacks=#{options["ra"]}") if options["ra"]
+    additionalInput.each do |add|
+      $simcInputStacks.push(prefix + add)
+    end
   end
 end
 
@@ -147,6 +153,11 @@ powerList.each do |power|
     # Write the normal profilesets
     writePowerProfilesets(powerSettings["itemLevels"], powerName, power)
 
+    addedProfile = powerSettings["additionalPowerProfiles"].find { |x| x["powerId"] == power["powerId"] }
+    if addedProfile
+      writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, addedProfile["additionalOptions"])
+    end
+
     # Set up additional options
     options = {}
     if azeriteCombinations[powerName]
@@ -157,7 +168,12 @@ powerList.each do |power|
       options["talents"] = azeriteCombinations["Generic"]
     end
     options["ra"] = raStacks if raStacks > 0
-    writePowerProfilesets(powerSettings["itemLevels"], powerName, power, options) if !options.empty?
+    if !options.empty?
+      writePowerProfilesets(powerSettings["itemLevels"], powerName, power, [], options)
+      if addedProfile
+        writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, addedProfile["additionalOptions"], options)
+      end
+    end
   end
 end
 

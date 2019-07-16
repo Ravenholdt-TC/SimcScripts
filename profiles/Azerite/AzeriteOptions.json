@@ -81,5 +81,28 @@
         478, // Tidal Surge
         479, // Dagger in the Back
         562 // Treacherous Covenant
+    ],
+    "additionalPowerProfiles": [
+        {
+            "powerId": 576,
+            "variantName": "4 Allies",
+            "additionalOptions": [
+                "bfa.loyal_to_the_end_allies=4"
+            ]
+        },
+        {
+            "powerId": 575,
+            "variantName": "25% Lockout per Min",
+            "additionalOptions": [
+                "bfa.undulating_tides_lockout_chance=0.25"
+            ]
+        },
+        {
+            "powerId": 575,
+            "variantName": "50% Lockout per Min",
+            "additionalOptions": [
+                "bfa.undulating_tides_lockout_chance=0.50"
+            ]
+        }
     ]
 }
