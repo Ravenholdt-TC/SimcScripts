@@ -76,7 +76,7 @@ module HeroInterface
     filteredResults = data["results"].select { |result| !genericPowers.include?(result[3]) }
 
     # Create a map of azeritePowerName => DPS using default talent build
-    defaultResults = filteredResults.select { |result| result[1] == defaultTalents }
+    defaultResults = filteredResults.select { |result| ProfileHelper.TalentsEqual?(result[1], defaultTalents) }
     defaultTalentsFound = false
     if defaultResults.empty?
       Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
@@ -121,7 +121,7 @@ module HeroInterface
 
     # Find the best performing talents build for generics (i.e. no specific power)
     if defaultTalentsFound
-      defaultGenericResult = genericData["results"].select { |result| result[1] == defaultTalents }.first
+      defaultGenericResult = genericData["results"].select { |result| ProfileHelper.TalentsEqual?(result[1], defaultTalents) }.first
       topGenericResult = genericData["results"].first
       defaultGenericDPS = defaultGenericResult[4]
       topGenericDPS = topGenericResult[4]
@@ -156,7 +156,7 @@ module HeroInterface
     # result: 0-rank, 1-talents, 2-set, 3-powerName, 4-dps
 
     # Create a map of essenceName => DPS using default talent build
-    defaultResults = data["results"].select { |result| result[1] == defaultTalents }
+    defaultResults = data["results"].select { |result| ProfileHelper.TalentsEqual?(result[1], defaultTalents) }
     defaultTalentsFound = false
     if defaultResults.empty?
       Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
@@ -230,7 +230,7 @@ module HeroInterface
 
     # Get the best combination without azerite (if better) and create an override set for it
     best = genericData["results"].first
-    default = genericData["results"].find { |x| x[1] == defaultTalents }
+    default = genericData["results"].find { |x| ProfileHelper.TalentsEqual?(x[1], defaultTalents) }
     if best && default && best[1] != default[1]
       difference = 100 * best[4].to_f / default[4].to_f - 100
       if difference > minimalDifferenceFromDefaults

@@ -64,4 +64,13 @@ module ProfileHelper
     normalized.sub!("Beast_Mastery", "Beast-Mastery")
     return normalized
   end
+
+  def self.TalentsEqual?(talentStringA, talentStringB)
+    return false if talentStringA.length != talentStringB.length
+    talentStringA.length.times do |tier|
+      next if talentStringA[tier] == "0" || talentStringB[tier] == "0"
+      return false if talentStringA[tier] != talentStringB[tier]
+    end
+    return true
+  end
 end
