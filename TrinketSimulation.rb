@@ -61,7 +61,7 @@ trinketListProfiles.each do |pname, pfile|
         ilevelString = "ilevel=#{ilvl}"
         if trinket["gemmedInto"]
           trinketString = "#{trinket["gemmedInto"]},gem_id=#{trinket["itemId"]}"
-          ilevelString = "gem_ilevel=#{ilvl}"
+          ilevelString += "gem_ilevel=#{ilvl}"
         end
         name = "#{trinket["name"]}#{"--" if optionsString}#{optionsString}_#{ilvl}"
         prefix = "profileset.\"#{name}\"+="
