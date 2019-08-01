@@ -65,6 +65,9 @@ passes = ["default", "override"]
 
 passes.each do |pass|
   essenceList.each do |essence|
+    next if TankSpecs.include?(spec) && essence["roleOnly"] == "damage"
+    next if !TankSpecs.include?(spec) && essence["roleOnly"] == "tank"
+
     optionsString = nil
     bestTalents = essenceCombinations.dig(essence["name"])
     next if pass == "override" && (!bestTalents || bestTalents == talents)
