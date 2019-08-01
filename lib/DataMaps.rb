@@ -99,6 +99,8 @@ ClassAndSpecIds = {
   },
 }
 
+TankSpecs = ["protection", "blood", "brewmaster", "vengeance", "guardian"]
+
 # Map race name and simc string
 RaceInputMap = {
   "Night Elf" => "night_elf",
