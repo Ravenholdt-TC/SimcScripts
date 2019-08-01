@@ -9,6 +9,8 @@ ClassAndSpecIds.keys.each do |classStr|
     gear["specials"][specName] = {"essenceMajor" => {}, "essenceMinor" => {}}
 
     essenceList.each do |essence|
+      next if TankSpecs.include?(specName) && essence["roleOnly"] == "damage"
+      next if !TankSpecs.include?(specName) && essence["roleOnly"] == "tank"
       essenceName = essence["name"]
       gear["specials"][specName]["essenceMajor"][essenceName] = "#{essence["essenceId"]}:3:1"
       gear["specials"][specName]["essenceMinor"][essenceName] = "#{essence["essenceId"]}:3:0"
