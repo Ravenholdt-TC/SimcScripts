@@ -4,8 +4,9 @@ require_relative "SimcConfig"
 require "csv"
 
 module ReportWriter
-  def self.WriteArrayReport(results, array)
-    reportFile = "#{SimcConfig["ReportsFolder"]}/#{results.simulationFilename}"
+  def self.WriteArrayReport(results, array, nameOverride = nil)
+    fileName = nameOverride ? nameOverride : results.simulationFilename
+    reportFile = "#{SimcConfig["ReportsFolder"]}/#{fileName}"
     exts = SimcConfig["OutputExt"].split("|")
     exts.each do |ext|
       Logging.LogScriptInfo "Writing report to #{reportFile}.#{ext}..."

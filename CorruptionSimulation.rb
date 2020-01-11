@@ -75,7 +75,7 @@ combinationOverrides.each do |optionsString, overrides|
   end
 end
 
-simulationFilename = "Corruptions_#{fightstyle}_#{template}"
+simulationFilename = "Corruptions-Absolute_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig["ConfigFolder"]}/SimcCorruptionConfig.simc",
   fightstyleFile,
@@ -111,17 +111,20 @@ corruptionTiers.sort!
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
 report = []
-# Header
+reportRelative = []
+# Headers
 header = ["Corruption"]
 corruptionTiers.each do |corr|
   header.push(corr.to_s)
 end
-header.push("DPS per Corruption")
 report.push(header)
+reportRelative.push(["Corruption", "DPS per Corruption"])
 # Body
 sims.each do |name, values|
   actor = []
+  actorRelative = []
   actor.push(name)
+  actorRelative.push(name)
   dpsPerCorrList = []
   corruptionTiers.each do |corr|
     tierVal = 0
@@ -136,12 +139,14 @@ sims.each do |name, values|
     end
     actor.push(tierVal)
   end
-  actor.push(dpsPerCorrList.inject(:+).to_f / dpsPerCorrList.size) #Average DPS per corruption where values exist
+  actorRelative.push(dpsPerCorrList.inject(:+).to_f / dpsPerCorrList.size) #Average DPS per corruption where values exist
   report.push(actor)
+  reportRelative.push(actorRelative)
 end
 
 # Write the report(s)
 ReportWriter.WriteArrayReport(results, report)
+ReportWriter.WriteArrayReport(results, reportRelative, "Corruptions-Relative_#{fightstyle}_#{template}")
 
 Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
