@@ -7,7 +7,7 @@
     },
     "itemLevels": [
         400, // LFR EP
-        315, // Normal EP
+        415, // Normal EP
         430, // HC EP
         445 // M EP
     ],
@@ -77,10 +77,7 @@
         "DS"
     ],
     "genericCombinatorPowers": [ // These are added to spec specific traits in the Combinator Gear Generator.
-        157, // Rezan's Fury
-        478, // Tidal Surge
-        479, // Dagger in the Back
-        562 // Treacherous Covenant
+        193 // Blightborne Infusion
     ],
     "additionalPowerProfiles": [
         {
