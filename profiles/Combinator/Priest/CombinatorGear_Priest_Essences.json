@@ -13,7 +13,9 @@
         "Condensed Life-Force": "14:3:1",
         "Blood of the Enemy": "23:3:1",
         "Purification Protocol": "6:3:1",
-        "The Unbound Force": "28:3:1"
+        "The Unbound Force": "28:3:1",
+        "Breath of the Dying": "35:3:1",
+        "Spark of Inspiration": "36:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -27,7 +29,9 @@
         "Condensed Life-Force": "14:3:0",
         "Blood of the Enemy": "23:3:0",
         "Purification Protocol": "6:3:0",
-        "The Unbound Force": "28:3:0"
+        "The Unbound Force": "28:3:0",
+        "Breath of the Dying": "35:3:0",
+        "Spark of Inspiration": "36:3:0"
       }
     },
     "holy": {
@@ -43,7 +47,9 @@
         "Condensed Life-Force": "14:3:1",
         "Blood of the Enemy": "23:3:1",
         "Purification Protocol": "6:3:1",
-        "The Unbound Force": "28:3:1"
+        "The Unbound Force": "28:3:1",
+        "Breath of the Dying": "35:3:1",
+        "Spark of Inspiration": "36:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -57,7 +63,9 @@
         "Condensed Life-Force": "14:3:0",
         "Blood of the Enemy": "23:3:0",
         "Purification Protocol": "6:3:0",
-        "The Unbound Force": "28:3:0"
+        "The Unbound Force": "28:3:0",
+        "Breath of the Dying": "35:3:0",
+        "Spark of Inspiration": "36:3:0"
       }
     },
     "shadow": {
@@ -73,7 +81,9 @@
         "Condensed Life-Force": "14:3:1",
         "Blood of the Enemy": "23:3:1",
         "Purification Protocol": "6:3:1",
-        "The Unbound Force": "28:3:1"
+        "The Unbound Force": "28:3:1",
+        "Breath of the Dying": "35:3:1",
+        "Spark of Inspiration": "36:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -87,7 +97,9 @@
         "Condensed Life-Force": "14:3:0",
         "Blood of the Enemy": "23:3:0",
         "Purification Protocol": "6:3:0",
-        "The Unbound Force": "28:3:0"
+        "The Unbound Force": "28:3:0",
+        "Breath of the Dying": "35:3:0",
+        "Spark of Inspiration": "36:3:0"
       }
     }
   },
