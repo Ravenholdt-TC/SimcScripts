@@ -49,6 +49,7 @@ SimcProfileFolders:
 - profiles/Tier22/
 - profiles/Tier23/
 - profiles/Tier24/
+- profiles/Tier25/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
@@ -63,15 +64,15 @@ RunOrders: [
     [["Combinator"], ["1T"]]
   ],
   [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1T"]]
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["1T"]]
   ],
   [
     [["Combinator"], ["1TA"]],
     [["Combinator"], ["DS"]]
   ],
   [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1TA"]],
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["DS"]]
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["1TA"]],
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["DS"]]
   ]
 ]
 
