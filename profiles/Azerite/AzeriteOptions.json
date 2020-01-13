@@ -79,7 +79,10 @@
     "genericCombinatorPowers": [ // These are added to spec specific traits in the Combinator Gear Generator.
         193 // Blightborne Infusion
     ],
-    "additionalPowerProfiles": [
+    "additionalPowerInputs": { // These are always added as additional input to the corresponding powers
+        "582": ["shirt=,id=52019,bonus_id=6448"] // Add just 800 corruption to Heart of Darkness to ensure it works
+    },
+    "additionalPowerProfiles": [ // These are run as additional variations for certain powers
         {
             "powerId": 576,
             "variantName": "4 Allies",

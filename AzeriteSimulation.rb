@@ -50,6 +50,7 @@ Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push "disable_azerite=items"
 simcInput.push "bfa.reorigination_array_stacks=0"
+simcInput.push "shirt="
 simcInput.push ""
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
@@ -143,6 +144,8 @@ powerList.each do |power|
     end
   end
 
+  additionalInput = powerSettings["additionalPowerInputs"][power["powerId"].to_s] || []
+
   # Sim per stacks for Reorigination Array if specified in options
   reoriginationArray = [0]
   if enabledRA && powerSettings["reoriginationArrayPowers"].include?(power["powerId"])
@@ -151,11 +154,11 @@ powerList.each do |power|
 
   reoriginationArray.each do |raStacks|
     # Write the normal profilesets
-    writePowerProfilesets(powerSettings["itemLevels"], powerName, power)
+    writePowerProfilesets(powerSettings["itemLevels"], powerName, power, additionalInput)
 
     addedProfile = powerSettings["additionalPowerProfiles"].find { |x| x["powerId"] == power["powerId"] }
     if addedProfile
-      writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, addedProfile["additionalOptions"])
+      writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, additionalInput + addedProfile["additionalOptions"])
     end
 
     # Set up additional options
@@ -169,9 +172,9 @@ powerList.each do |power|
     end
     options["ra"] = raStacks if raStacks > 0
     if !options.empty?
-      writePowerProfilesets(powerSettings["itemLevels"], powerName, power, [], options)
+      writePowerProfilesets(powerSettings["itemLevels"], powerName, power, additionalInput, options)
       if addedProfile
-        writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, addedProfile["additionalOptions"], options)
+        writePowerProfilesets(powerSettings["itemLevels"], "#{powerName} (#{addedProfile["variantName"]})", power, additionalInput + addedProfile["additionalOptions"], options)
       end
     end
   end
