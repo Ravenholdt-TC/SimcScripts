@@ -73,4 +73,24 @@ module ProfileHelper
     end
     return true
   end
+
+  # Create an array of simc inputs with bonus ids removed
+  def self.RemoveBonusIds(bonusIdsArr, file)
+    bonusIdsArr = bonusIdsArr.collect { |x| x.to_s }
+    overrides = []
+    File.open(file, "r") do |pfile|
+      while line = pfile.gets
+        if line.chomp.end_with?(".simc")
+          subfile = line.chomp.gsub("input=", "").gsub("$(simc_profiles_path)", "#{SimcConfig["SimcPath"]}/profiles")
+          overrides.push(RemoveBonusIds(bonusIdsArr, subfile))
+        elsif m_data = /(.*bonus_id=)([^,]*)(.*)/.match(line.chomp)
+          ids_present = m_data[2].split("/")
+          next if (ids_present & bonusIdsArr).empty?
+          ids_new = ids_present - bonusIdsArr
+          overrides.push(m_data[1] + ids_new.join("/") + m_data[3])
+        end
+      end
+    end
+    return overrides
+  end
 end

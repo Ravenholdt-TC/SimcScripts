@@ -35,12 +35,19 @@ Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 puts
 
 # Using shirt slot for corruption testing
-# TODO: Remove corruption bonus ids to support T25 sims
-
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push "shirt="
+simcInput.push ""
+
+# Remove corruption bonus ids to support T25 sims
+corruptionBonusIds = corruptionsList.collect { |x| x["tiers"].collect { |t| t["bonusId"] } }.flatten
+simcInput.push "# Overrides with removed corruption bonus ids where present"
+ProfileHelper.RemoveBonusIds(corruptionBonusIds, templateFile).each do |override|
+  simcInput.push override
+end
+simcInput.push "# Overrides done!"
 simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
