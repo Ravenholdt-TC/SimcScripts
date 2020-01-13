@@ -1,15 +1,13 @@
 require "date"
 require_relative "JSONParser"
+require_relative "ProfileHelper"
 
 # Used for parsing json output from simc
 class JSONResults
   attr_reader :simulationFilename
 
   def initialize(simulationFilename = "LastInput")
-    # Dirty fix for those class/specs separated by an underscore instead of an hyphen
-    simulationFilename = simulationFilename.sub("Death_Knight", "Death-Knight")
-    simulationFilename = simulationFilename.sub("Demon_Hunter", "Demon-Hunter")
-    simulationFilename = simulationFilename.sub("Beast_Mastery", "Beast-Mastery")
+    simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
     @simulationFilename = simulationFilename
     @logFile = "#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}.json"
