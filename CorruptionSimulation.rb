@@ -153,7 +153,7 @@ end
 
 # Write the report(s)
 ReportWriter.WriteArrayReport(results, report)
-ReportWriter.WriteArrayReport(results, reportRelative, "Corruptions-Relative_#{fightstyle}_#{template}")
+ReportWriter.WriteArrayReport(results, reportRelative, ProfileHelper.NormalizeProfileName("Corruptions-Relative_#{fightstyle}_#{template}"))
 
 Logging.LogScriptInfo "Done! Press enter to quit..."
 Interactive.GetInputOrArg()
