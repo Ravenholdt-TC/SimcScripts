@@ -480,7 +480,7 @@
         },
         {
             "name": "Peerless Alchemist Stone",
-            "itemId": 305992,
+            "itemId": 171085,
             "itemLevels": [440, 455, 470],
             "bonusIds": [],
             "additionalInput": []
