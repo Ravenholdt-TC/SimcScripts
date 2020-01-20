@@ -39,9 +39,9 @@ to_run = {
       "DS_Druid_Guardian",
     ],
     "Hunter" => [
-      "T24_Hunter_Beast_Mastery",
-      "T24_Hunter_Marksmanship",
-      "T24_Hunter_Survival",
+      "T25_Hunter_Beast_Mastery",
+      "T25_Hunter_Marksmanship",
+      "T25_Hunter_Survival",
       "DS_Hunter_Beast_Mastery",
       "DS_Hunter_Marksmanship",
       "DS_Hunter_Survival",
@@ -87,9 +87,9 @@ to_run = {
       "DS_Shaman_Enhancement",
     ],
     "Warlock" => [
-      "T24_Warlock_Affliction",
-      "T24_Warlock_Demonology",
-      "T24_Warlock_Destruction",
+      "T25_Warlock_Affliction",
+      "T25_Warlock_Demonology",
+      "T25_Warlock_Destruction",
       "DS_Warlock_Affliction",
       "DS_Warlock_Demonology",
       "DS_Warlock_Destruction",
@@ -171,22 +171,22 @@ to_run = {
       "DS_Druid_Guardian Druid_Essences 3E default",
     ],
     "Hunter" => [
-      "T24_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx",
-      "T24_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx",
-      "T24_Hunter_Survival Hunter_Azerite Azerite xx0x0xx",
+      "T25_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx",
+      "T25_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx",
+      "T25_Hunter_Survival Hunter_Azerite Azerite xx0x0xx",
       "DS_Hunter_Beast_Mastery Hunter_Azerite Azerite xx0x0xx",
       "DS_Hunter_Marksmanship Hunter_Azerite Azerite xx0x0xx",
       "DS_Hunter_Survival Hunter_Azerite Azerite xx0x0xx",
       # Essence sims
-      "T24_Hunter_Beast_Mastery Hunter_Essences 1E xx0x0xx",
-      "T24_Hunter_Marksmanship Hunter_Essences 1E xx0x0xx",
-      "T24_Hunter_Survival Hunter_Essences 1E xx0x0xx",
+      "T25_Hunter_Beast_Mastery Hunter_Essences 1E xx0x0xx",
+      "T25_Hunter_Marksmanship Hunter_Essences 1E xx0x0xx",
+      "T25_Hunter_Survival Hunter_Essences 1E xx0x0xx",
       "DS_Hunter_Beast_Mastery Hunter_Essences 1E xx0x0xx",
       "DS_Hunter_Marksmanship Hunter_Essences 1E xx0x0xx",
       "DS_Hunter_Survival Hunter_Essences 1E xx0x0xx",
-      "T24_Hunter_Beast_Mastery Hunter_Essences 3E default",
-      "T24_Hunter_Marksmanship Hunter_Essences 3E default",
-      "T24_Hunter_Survival Hunter_Essences 3E default",
+      "T25_Hunter_Beast_Mastery Hunter_Essences 3E default",
+      "T25_Hunter_Marksmanship Hunter_Essences 3E default",
+      "T25_Hunter_Survival Hunter_Essences 3E default",
       "DS_Hunter_Beast_Mastery Hunter_Essences 3E default",
       "DS_Hunter_Marksmanship Hunter_Essences 3E default",
       "DS_Hunter_Survival Hunter_Essences 3E default",
@@ -288,22 +288,22 @@ to_run = {
       "DS_Shaman_Enhancement Shaman_Essences 3E default",
     ],
     "Warlock" => [
-      "T24_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx",
-      "T24_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx",
-      "T24_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx",
+      "T25_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx",
+      "T25_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx",
+      "T25_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx",
       "DS_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx",
       "DS_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx",
       "DS_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx",
       # Essence sims
-      "T24_Warlock_Affliction Warlock_Essences 1E xx0x0xx",
-      "T24_Warlock_Demonology Warlock_Essences 1E xx0x0xx",
-      "T24_Warlock_Destruction Warlock_Essences 1E xx0x0xx",
+      "T25_Warlock_Affliction Warlock_Essences 1E xx0x0xx",
+      "T25_Warlock_Demonology Warlock_Essences 1E xx0x0xx",
+      "T25_Warlock_Destruction Warlock_Essences 1E xx0x0xx",
       "DS_Warlock_Affliction Warlock_Essences 1E xx0x0xx",
       "DS_Warlock_Demonology Warlock_Essences 1E xx0x0xx",
       "DS_Warlock_Destruction Warlock_Essences 1E xx0x0xx",
-      "T24_Warlock_Affliction Warlock_Essences 3E default",
-      "T24_Warlock_Demonology Warlock_Essences 3E default",
-      "T24_Warlock_Destruction Warlock_Essences 3E default",
+      "T25_Warlock_Affliction Warlock_Essences 3E default",
+      "T25_Warlock_Demonology Warlock_Essences 3E default",
+      "T25_Warlock_Destruction Warlock_Essences 3E default",
       "DS_Warlock_Affliction Warlock_Essences 3E default",
       "DS_Warlock_Demonology Warlock_Essences 3E default",
       "DS_Warlock_Destruction Warlock_Essences 3E default",
@@ -356,9 +356,9 @@ to_run = {
       "DS_Druid_Guardian Agility",
     ],
     "Hunter" => [
-      "T24_Hunter_Beast_Mastery Agility",
-      "T24_Hunter_Marksmanship Agility",
-      "T24_Hunter_Survival Agility",
+      "T25_Hunter_Beast_Mastery Agility",
+      "T25_Hunter_Marksmanship Agility",
+      "T25_Hunter_Survival Agility",
       "DS_Hunter_Beast_Mastery Agility",
       "DS_Hunter_Marksmanship Agility",
       "DS_Hunter_Survival Agility",
@@ -402,9 +402,9 @@ to_run = {
       "DS_Shaman_Enhancement Agility",
     ],
     "Warlock" => [
-      "T24_Warlock_Affliction Intelligence",
-      "T24_Warlock_Demonology Intelligence",
-      "T24_Warlock_Destruction Intelligence",
+      "T25_Warlock_Affliction Intelligence",
+      "T25_Warlock_Demonology Intelligence",
+      "T25_Warlock_Destruction Intelligence",
       "DS_Warlock_Affliction Intelligence",
       "DS_Warlock_Demonology Intelligence",
       "DS_Warlock_Destruction Intelligence",
@@ -472,8 +472,8 @@ end
 
 ### HAX: For display on HeroDamage, rename our DS reports to include T23 so they show as T23 fightstyle.
 Dir.glob("#{SimcConfig["ReportsFolder"]}/*_DS_DS_*.{json,csv}").each do |file|
-  puts "Renaming #{file} for T24..."
-  File.rename(file, file.gsub(/_DS_DS_/, "_DS_T24_"))
+  puts "Renaming #{file} for T25..."
+  File.rename(file, file.gsub(/_DS_DS_/, "_DS_T25_"))
 end
 
 puts "All batch simulations done! Press enter!"
