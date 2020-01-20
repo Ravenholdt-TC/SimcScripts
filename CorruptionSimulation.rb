@@ -19,6 +19,13 @@ template, templateFile = Interactive.SelectTemplate(["Templates/#{classfolder}/"
 
 corruptionsList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Corruptions.json")
 
+# Read spec from template profile
+spec = ProfileHelper.GetValueFromTemplate("spec", templateFile)
+unless spec
+  Logging.LogScriptError "No spec= string found in profile!"
+  exit
+end
+
 # Read talents from template profile
 talents = ProfileHelper.GetValueFromTemplate("talents", templateFile)
 unless talents
@@ -64,6 +71,9 @@ combinationOverrides[nil] = []
 
 combinationOverrides.each do |optionsString, overrides|
   corruptionsList.each do |corruption|
+    if corruption["specs"]
+      next unless corruption["specs"].include?(spec)
+    end
     corruption["tiers"].each do |tier|
       name = "#{corruption["name"]}#{"--" if optionsString}#{optionsString}_#{tier["corruption"]}"
       prefix = "profileset.\"#{name}\"+="
