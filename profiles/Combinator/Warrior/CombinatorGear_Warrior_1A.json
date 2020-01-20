@@ -3,45 +3,32 @@
     "arms": {
       "azerite": {
         "Crushing Assault": "434:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Gathering Storm": "174:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Lord of War": "435:!!ILVL!!",
         "Test of Might": "226:!!ILVL!!",
         "Seismic Wave": "433:!!ILVL!!",
-        "Striking the Anvil": "121:!!ILVL!!",
-        "Bastion of Might": "520:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Striking the Anvil": "121:!!ILVL!!"
       }
     },
     "fury": {
       "azerite": {
         "Cold Steel, Hot Blood": "176:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Gathering Storm": "174:!!ILVL!!",
         "Unbridled Ferocity": "119:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Reckless Flurry": "438:!!ILVL!!",
         "Pulverizing Blows": "229:!!ILVL!!",
         "Infinite Fury": "451:!!ILVL!!",
-        "Simmering Rage": "437:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Simmering Rage": "437:!!ILVL!!"
       }
     },
     "protection": {
       "azerite": {
         "Iron Fortress": "441:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Bloodsport": "177:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Callous Reprisal": "440:!!ILVL!!",
         "Brace for Impact": "450:!!ILVL!!",
         "Deafening Crash": "118:!!ILVL!!",
-        "Bastion of Might": "237:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Bastion of Might": "237:!!ILVL!!"
       }
     }
   },

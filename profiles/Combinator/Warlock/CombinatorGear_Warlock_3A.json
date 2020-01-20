@@ -3,43 +3,31 @@
     "affliction": {
       "azerite": {
         "Sudden Onset": "425:!!ILVL!!/425:!!ILVL!!/425:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Pandemic Invocation": "442:!!ILVL!!/442:!!ILVL!!/442:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
         "Inevitable Demise": "183:!!ILVL!!/183:!!ILVL!!/183:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Wracking Brilliance": "123:!!ILVL!!/123:!!ILVL!!/123:!!ILVL!!",
         "Cascading Calamity": "230:!!ILVL!!/230:!!ILVL!!/230:!!ILVL!!",
-        "Dreadful Calling": "426:!!ILVL!!/426:!!ILVL!!/426:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Dreadful Calling": "426:!!ILVL!!/426:!!ILVL!!/426:!!ILVL!!"
       }
     },
     "demonology": {
       "azerite": {
         "Shadow's Bite": "130:!!ILVL!!/130:!!ILVL!!/130:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Demonic Meteor": "428:!!ILVL!!/428:!!ILVL!!/428:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
         "Supreme Commander": "458:!!ILVL!!/458:!!ILVL!!/458:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
-        "Baleful Invocation": "515:!!ILVL!!/515:!!ILVL!!/515:!!ILVL!!",
         "Umbral Blaze": "190:!!ILVL!!/190:!!ILVL!!/190:!!ILVL!!",
-        "Explosive Potential": "231:!!ILVL!!/231:!!ILVL!!/231:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Baleful Invocation": "429:!!ILVL!!/429:!!ILVL!!/429:!!ILVL!!",
+        "Explosive Potential": "231:!!ILVL!!/231:!!ILVL!!/231:!!ILVL!!"
       }
     },
     "destruction": {
       "azerite": {
         "Flashpoint": "232:!!ILVL!!/232:!!ILVL!!/232:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Chaotic Inferno": "432:!!ILVL!!/432:!!ILVL!!/432:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
         "Rolling Havoc": "431:!!ILVL!!/431:!!ILVL!!/431:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Crashing Chaos": "444:!!ILVL!!/444:!!ILVL!!/444:!!ILVL!!",
         "Bursting Flare": "460:!!ILVL!!/460:!!ILVL!!/460:!!ILVL!!",
-        "Chaos Shards": "131:!!ILVL!!/131:!!ILVL!!/131:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Chaos Shards": "131:!!ILVL!!/131:!!ILVL!!/131:!!ILVL!!"
       }
     }
   },

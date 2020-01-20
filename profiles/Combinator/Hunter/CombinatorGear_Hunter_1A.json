@@ -3,46 +3,34 @@
     "beast_mastery": {
       "azerite": {
         "Haze of Rage": "161:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Primal Instincts": "366:!!ILVL!!",
         "Rapid Reload": "369:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Feeding Frenzy": "367:!!ILVL!!",
         "Dire Consequences": "365:!!ILVL!!",
         "Dance of Death": "211:!!ILVL!!",
-        "Serrated Jaws": "107:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Serrated Jaws": "107:!!ILVL!!"
       }
     },
     "marksmanship": {
       "azerite": {
         "Focused Fire": "370:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Rapid Reload": "369:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Steady Aim": "368:!!ILVL!!",
         "In The Rhythm": "36:!!ILVL!!",
         "Surging Shots": "162:!!ILVL!!",
-        "Unerring Vision": "212:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Unerring Vision": "212:!!ILVL!!"
       }
     },
     "survival": {
       "azerite": {
         "Primeval Intuition": "373:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Blur of Talons": "371:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Wilderness Survival": "372:!!ILVL!!",
         "Dire Consequences": "365:!!ILVL!!",
         "Venomous Fangs": "213:!!ILVL!!",
         "Wildfire Cluster": "110:!!ILVL!!",
         "Serrated Jaws": "107:!!ILVL!!",
-        "Latent Poison": "163:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Latent Poison": "163:!!ILVL!!"
       }
     }
   },

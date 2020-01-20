@@ -3,44 +3,31 @@
     "brewmaster": {
       "azerite": {
         "Boiling Brew": "116:!!ILVL!!/116:!!ILVL!!/116:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Elusive Footwork": "384:!!ILVL!!/384:!!ILVL!!/384:!!ILVL!!",
-        "Training of Niuzao": "383:!!ILVL!!/383:!!ILVL!!/383:!!ILVL!!",
-        "Straight, No Chaser": "513:!!ILVL!!/513:!!ILVL!!/513:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Training of Niuzao": "383:!!ILVL!!/383:!!ILVL!!/383:!!ILVL!!"
       }
     },
     "windwalker": {
       "azerite": {
         "Fury of Xuen": "117:!!ILVL!!/117:!!ILVL!!/117:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Sunrise Technique": "184:!!ILVL!!/184:!!ILVL!!/184:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Open Palm Strikes": "389:!!ILVL!!/389:!!ILVL!!/389:!!ILVL!!",
         "Glory of the Dawn": "388:!!ILVL!!/388:!!ILVL!!/388:!!ILVL!!",
         "Pressure Point": "390:!!ILVL!!/390:!!ILVL!!/390:!!ILVL!!",
-        "Dance of Chi-Ji": "391:!!ILVL!!/391:!!ILVL!!/391:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Dance of Chi-Ji": "391:!!ILVL!!/391:!!ILVL!!/391:!!ILVL!!"
       }
     },
     "mistweaver": {
       "azerite": {
         "Overflowing Mists": "185:!!ILVL!!/185:!!ILVL!!/185:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!/102:!!ILVL!!/102:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!/157:!!ILVL!!",
         "Burst of Life": "385:!!ILVL!!/385:!!ILVL!!/385:!!ILVL!!",
         "Sunrise Technique": "184:!!ILVL!!/184:!!ILVL!!/184:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!/478:!!ILVL!!",
         "Uplifted Spirits": "387:!!ILVL!!/387:!!ILVL!!/387:!!ILVL!!",
         "Font of Life": "386:!!ILVL!!/386:!!ILVL!!/386:!!ILVL!!",
         "Glory of the Dawn": "388:!!ILVL!!/388:!!ILVL!!/388:!!ILVL!!",
         "Secret Infusion": "76:!!ILVL!!/76:!!ILVL!!/76:!!ILVL!!",
-        "Misty Peaks": "248:!!ILVL!!/248:!!ILVL!!/248:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!/562:!!ILVL!!"
+        "Misty Peaks": "248:!!ILVL!!/248:!!ILVL!!/248:!!ILVL!!"
       }
     }
   },

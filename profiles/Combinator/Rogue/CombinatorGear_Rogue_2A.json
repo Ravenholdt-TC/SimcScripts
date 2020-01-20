@@ -3,43 +3,31 @@
     "assassination": {
       "azerite": {
         "Shrouded Suffocation": "408:!!ILVL!!/408:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Twist the Knife": "181:!!ILVL!!/181:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Scent of Blood": "406:!!ILVL!!/406:!!ILVL!!",
         "Double Dose": "136:!!ILVL!!/136:!!ILVL!!",
         "Nothing Personal": "249:!!ILVL!!/249:!!ILVL!!",
-        "Echoing Blades": "407:!!ILVL!!/407:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!"
+        "Echoing Blades": "407:!!ILVL!!/407:!!ILVL!!"
       }
     },
     "outlaw": {
       "azerite": {
         "Keep Your Wits About You": "180:!!ILVL!!/180:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Ace Up Your Sleeve": "411:!!ILVL!!/411:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Paradise Lost": "410:!!ILVL!!/410:!!ILVL!!",
         "Brigand's Blitz": "446:!!ILVL!!/446:!!ILVL!!",
         "Deadshot": "129:!!ILVL!!/129:!!ILVL!!",
-        "Snake Eyes": "239:!!ILVL!!/239:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!"
+        "Snake Eyes": "239:!!ILVL!!/239:!!ILVL!!"
       }
     },
     "subtlety": {
       "azerite": {
         "The First Dance": "413:!!ILVL!!/413:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Blade In The Shadows": "240:!!ILVL!!/240:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Replicating Shadows": "124:!!ILVL!!/124:!!ILVL!!",
         "Night's Vengeance": "175:!!ILVL!!/175:!!ILVL!!",
         "Inevitability": "414:!!ILVL!!/414:!!ILVL!!",
-        "Perforate": "445:!!ILVL!!/445:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!"
+        "Perforate": "445:!!ILVL!!/445:!!ILVL!!"
       }
     }
   },

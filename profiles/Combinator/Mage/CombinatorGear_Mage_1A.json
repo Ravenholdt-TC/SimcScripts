@@ -3,43 +3,31 @@
     "arcane": {
       "azerite": {
         "Arcane Pummeling": "88:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Equipoise": "127:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
         "Arcane Pressure": "214:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Brain Storm": "167:!!ILVL!!",
         "Explosive Echo": "375:!!ILVL!!",
-        "Galvanizing Spark": "374:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Galvanizing Spark": "374:!!ILVL!!"
       }
     },
     "fire": {
       "azerite": {
         "Duplicative Incineration": "377:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Blaster Master": "215:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
         "Trailing Embers": "376:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Flames of Alacrity": "128:!!ILVL!!",
         "Wildfire": "168:!!ILVL!!",
-        "Firemind": "378:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Firemind": "378:!!ILVL!!"
       }
     },
     "frost": {
       "azerite": {
         "Whiteout": "380:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Tunnel of Ice": "379:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
         "Frigid Grasp": "381:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Packed Ice": "132:!!ILVL!!",
         "Glacial Assault": "225:!!ILVL!!",
-        "Flash Freeze": "170:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Flash Freeze": "170:!!ILVL!!"
       }
     }
   },

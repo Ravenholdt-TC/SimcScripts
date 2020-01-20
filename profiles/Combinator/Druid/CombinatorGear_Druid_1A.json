@@ -3,59 +3,43 @@
     "balance": {
       "azerite": {
         "Dawning Sun": "250:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Arcanic Pulsar": "200:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Lunar Shrapnel": "357:!!ILVL!!",
         "High Noon": "356:!!ILVL!!",
         "Streaking Stars": "122:!!ILVL!!",
         "Power of the Moon": "173:!!ILVL!!",
-        "Lively Spirit": "364:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Lively Spirit": "364:!!ILVL!!"
       }
     },
     "feral": {
       "azerite": {
         "Jungle Fury": "209:!!ILVL!!",
         "Twisted Claws": "241:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Untamed Ferocity": "169:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Gushing Lacerations": "358:!!ILVL!!",
         "Iron Jaws": "247:!!ILVL!!",
         "Blood Mist": "111:!!ILVL!!",
         "Power of the Moon": "173:!!ILVL!!",
-        "Wild Fleshrending": "359:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Wild Fleshrending": "359:!!ILVL!!"
       }
     },
     "guardian": {
       "azerite": {
         "Twisted Claws": "241:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Guardian's Wrath": "361:!!ILVL!!",
-        "Wild Fleshrending": "359:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Wild Fleshrending": "359:!!ILVL!!"
       }
     },
     "restoration": {
       "azerite": {
         "Autumn Leaves": "210:!!ILVL!!",
         "Synergistic Growth": "102:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!",
         "Early Harvest": "120:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!",
         "Rampant Growth": "362:!!ILVL!!",
         "Grove Tending": "172:!!ILVL!!",
         "High Noon": "356:!!ILVL!!",
         "Waking Dream": "363:!!ILVL!!",
-        "Lively Spirit": "364:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!"
+        "Lively Spirit": "364:!!ILVL!!"
       }
     }
   },

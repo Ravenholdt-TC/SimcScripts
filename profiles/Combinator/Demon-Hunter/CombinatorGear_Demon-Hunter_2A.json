@@ -3,26 +3,17 @@
     "havoc": {
       "azerite": {
         "Chaotic Transformation": "220:!!ILVL!!/220:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
         "Revolving Blades": "126:!!ILVL!!/126:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
         "Furious Gaze": "159:!!ILVL!!/159:!!ILVL!!",
         "Eyes of Rage": "353:!!ILVL!!/353:!!ILVL!!",
         "Thirsting Blades": "352:!!ILVL!!/352:!!ILVL!!",
-        "Seething Power": "245:!!ILVL!!/245:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!"
+        "Seething Power": "245:!!ILVL!!/245:!!ILVL!!"
       }
     },
     "vengeance": {
       "azerite": {
         "Essence Sever": "355:!!ILVL!!/355:!!ILVL!!",
-        "Rezan's Fury": "157:!!ILVL!!/157:!!ILVL!!",
-        "Cycle of Binding": "354:!!ILVL!!/354:!!ILVL!!",
-        "Dagger in the Back": "479:!!ILVL!!/479:!!ILVL!!",
-        "Tidal Surge": "478:!!ILVL!!/478:!!ILVL!!",
-        "Hour of Reaping": "558:!!ILVL!!/558:!!ILVL!!",
-        "Treacherous Covenant": "562:!!ILVL!!/562:!!ILVL!!"
+        "Cycle of Binding": "354:!!ILVL!!/354:!!ILVL!!"
       }
     }
   },
