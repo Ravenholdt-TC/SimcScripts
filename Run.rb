@@ -15,7 +15,7 @@ end.parse!
 to_run = {
   "AzeriteSimulation" => { ### !!! This will also be used for Essence, Race, and Corruption simulations
     "Death-Knight" => [
-      "T24_Death_Knight_Blood",
+      "T25_Death_Knight_Blood",
       "T25_Death_Knight_Frost",
       "T25_Death_Knight_Unholy",
       "DS_Death_Knight_Blood",
@@ -25,7 +25,7 @@ to_run = {
     "Demon-Hunter" => [
       "T25_Demon_Hunter_Havoc",
       "T25_Demon_Hunter_Havoc_Momentum",
-      "T24_Demon_Hunter_Vengeance",
+      "T25_Demon_Hunter_Vengeance",
       "DS_Demon_Hunter_Havoc",
       "DS_Demon_Hunter_Havoc_Momentum",
       "DS_Demon_Hunter_Vengeance",
@@ -63,7 +63,7 @@ to_run = {
       "DS_Monk_Windwalker",
     ],
     "Paladin" => [
-      "T24_Paladin_Protection",
+      "T25_Paladin_Protection",
       "T24_Paladin_Retribution",
       "DS_Paladin_Protection",
       "DS_Paladin_Retribution",
@@ -108,20 +108,20 @@ to_run = {
     # Keep the gear called Azerite and setup as well, this will be auto replaced for stacks. #
     ##########################################################################################
     "Death-Knight" => [
-      "T24_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
+      "T25_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
       "T25_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx",
       "T25_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx",
       "DS_Death_Knight_Blood Death-Knight_Azerite Azerite xxx20xx",
       "DS_Death_Knight_Frost Death-Knight_Azerite Azerite xx0x0xx",
       "DS_Death_Knight_Unholy Death-Knight_Azerite Azerite xx0x0xx",
       # Essence sims
-      "T24_Death_Knight_Blood Death-Knight_Essences 1E xxx20xx",
+      "T25_Death_Knight_Blood Death-Knight_Essences 1E xxx20xx",
       "T25_Death_Knight_Frost Death-Knight_Essences 1E xx0x0xx",
       "T25_Death_Knight_Unholy Death-Knight_Essences 1E xx0x0xx",
       "DS_Death_Knight_Blood Death-Knight_Essences 1E xxx20xx",
       "DS_Death_Knight_Frost Death-Knight_Essences 1E xx0x0xx",
       "DS_Death_Knight_Unholy Death-Knight_Essences 1E xx0x0xx",
-      "T24_Death_Knight_Blood Death-Knight_Essences 3E default",
+      "T25_Death_Knight_Blood Death-Knight_Essences 3E default",
       "T25_Death_Knight_Frost Death-Knight_Essences 3E default",
       "T25_Death_Knight_Unholy Death-Knight_Essences 3E default",
       "DS_Death_Knight_Blood Death-Knight_Essences 3E default",
@@ -131,20 +131,20 @@ to_run = {
     "Demon-Hunter" => [
       "T25_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2[13]",
       "T25_Demon_Hunter_Havoc_Momentum Demon-Hunter_Azerite Azerite xxx0x22",
-      "T24_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
+      "T25_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
       "DS_Demon_Hunter_Havoc Demon-Hunter_Azerite Azerite xxx0x2[13]",
       "DS_Demon_Hunter_Havoc_Momentum Demon-Hunter_Azerite Azerite xxx0x22",
       "DS_Demon_Hunter_Vengeance Demon-Hunter_Azerite Azerite xxxx1x1",
       # Essence sims
       "T25_Demon_Hunter_Havoc Demon-Hunter_Essences 1E xxx0x2[13]",
       "T25_Demon_Hunter_Havoc_Momentum Demon-Hunter_Essences 1E xxx0x22",
-      "T24_Demon_Hunter_Vengeance Demon-Hunter_Essences 1E xxxx1x1",
+      "T25_Demon_Hunter_Vengeance Demon-Hunter_Essences 1E xxxx1x1",
       "DS_Demon_Hunter_Havoc Demon-Hunter_Essences 1E xxx0x2[13]",
       "DS_Demon_Hunter_Havoc_Momentum Demon-Hunter_Essences 1E xxx0x22",
       "DS_Demon_Hunter_Vengeance Demon-Hunter_Essences 1E xxxx1x1",
       "T25_Demon_Hunter_Havoc Demon-Hunter_Essences 3E default",
       "T25_Demon_Hunter_Havoc_Momentum Demon-Hunter_Essences 3E default",
-      "T24_Demon_Hunter_Vengeance Demon-Hunter_Essences 3E default",
+      "T25_Demon_Hunter_Vengeance Demon-Hunter_Essences 3E default",
       "DS_Demon_Hunter_Havoc Demon-Hunter_Essences 3E default",
       "DS_Demon_Hunter_Havoc_Momentum Demon-Hunter_Essences 3E default",
       "DS_Demon_Hunter_Vengeance Demon-Hunter_Essences 3E default",
@@ -228,16 +228,16 @@ to_run = {
       "DS_Monk_Windwalker Monk_Essences 3E default",
     ],
     "Paladin" => [
-      "T24_Paladin_Protection Paladin_Azerite Azerite xx0000x",
+      "T25_Paladin_Protection Paladin_Azerite Azerite xx0000x",
       "T24_Paladin_Retribution Paladin_Azerite Azerite xx0x00x",
       "DS_Paladin_Protection Paladin_Azerite Azerite xx0000x",
       "DS_Paladin_Retribution Paladin_Azerite Azerite xx0x00x",
       # Essence sims
-      "T24_Paladin_Protection Paladin_Essences 1E xx0000x",
+      "T25_Paladin_Protection Paladin_Essences 1E xx0000x",
       "T24_Paladin_Retribution Paladin_Essences 1E xx0x00x",
       "DS_Paladin_Protection Paladin_Essences 1E xx0000x",
       "DS_Paladin_Retribution Paladin_Essences 1E xx0x00x",
-      "T24_Paladin_Protection Paladin_Essences 3E default",
+      "T25_Paladin_Protection Paladin_Essences 3E default",
       "T24_Paladin_Retribution Paladin_Essences 3E default",
       "DS_Paladin_Protection Paladin_Essences 3E default",
       "DS_Paladin_Retribution Paladin_Essences 3E default",
@@ -332,7 +332,7 @@ to_run = {
   },
   "TrinketSimulation" => {
     "Death-Knight" => [
-      "T24_Death_Knight_Blood Strength",
+      "T25_Death_Knight_Blood Strength",
       "T25_Death_Knight_Frost Strength",
       "T25_Death_Knight_Unholy Strength",
       "DS_Death_Knight_Blood Strength",
@@ -342,7 +342,7 @@ to_run = {
     "Demon-Hunter" => [
       "T25_Demon_Hunter_Havoc Agility",
       "T25_Demon_Hunter_Havoc_Momentum Agility",
-      "T24_Demon_Hunter_Vengeance Agility",
+      "T25_Demon_Hunter_Vengeance Agility",
       "DS_Demon_Hunter_Havoc Agility",
       "DS_Demon_Hunter_Havoc_Momentum Agility",
       "DS_Demon_Hunter_Vengeance Agility",
@@ -378,7 +378,7 @@ to_run = {
       "DS_Monk_Brewmaster Agility",
     ],
     "Paladin" => [
-      "T24_Paladin_Protection Strength",
+      "T25_Paladin_Protection Strength",
       "T24_Paladin_Retribution Strength",
       "DS_Paladin_Protection Strength",
       "DS_Paladin_Retribution Strength",
