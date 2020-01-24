@@ -78,7 +78,7 @@ combinationOverrides.each do |optionsString, overrides|
       name = "#{corruption["name"]}#{"--" if optionsString}#{optionsString}_#{tier["corruption"]}"
       prefix = "profileset.\"#{name}\"+="
       simcInput.push(prefix + "name=\"#{name}\"")
-      simcInput.push(prefix + "shirt=,id=52019,bonus_id=#{tier["bonusId"]}")
+      simcInput.push(prefix + "shirt=,id=52019,bonus_id=#{tier["bonusId"]},ilevel=475")
       if corruption["additionalInput"]
         corruption["additionalInput"].each do |input|
           simcInput.push(prefix + "#{input}")
