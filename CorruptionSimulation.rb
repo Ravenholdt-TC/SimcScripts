@@ -69,6 +69,7 @@ end
 # Add empty override set for the default loop
 combinationOverrides[nil] = []
 
+usedItemLevels = []
 combinationOverrides.each do |optionsString, overrides|
   corruptionsList.each do |corruption|
     if corruption["specs"]
@@ -79,6 +80,7 @@ combinationOverrides.each do |optionsString, overrides|
     if corruption["itemLevels"]
       itemLevels = corruption["itemLevels"]
       scalesItemLevel = true
+      usedItemLevels += itemLevels
     end
     itemLevels.each do |ilvl|
       corruption["tiers"].each do |tier|
@@ -133,6 +135,10 @@ end
 corruptionTiers.uniq!
 corruptionTiers.sort!
 
+usedItemLevels.uniq!
+usedItemLevels.sort!
+usedItemLevels = usedItemLevels.collect { |x| x.to_s }
+
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
 report = []
@@ -143,13 +149,12 @@ corruptionTiers.each do |corr|
   header.push(corr.to_s)
 end
 report.push(header)
-reportRelative.push(["Corruption", "DPS per Corruption"])
+reportRelative.push(["Corruption"] + usedItemLevels + ["Any"])
+dpsPerCorrMulti = {}
 # Body
 sims.each do |name, values|
   actor = []
-  actorRelative = []
   actor.push(name)
-  actorRelative.push(name)
   dpsPerCorrList = []
   corruptionTiers.each do |corr|
     tierVal = 0
@@ -164,8 +169,25 @@ sims.each do |name, values|
     end
     actor.push(tierVal)
   end
-  actorRelative.push(dpsPerCorrList.inject(:+).to_f / dpsPerCorrList.size) #Average DPS per corruption where values exist
+  if data = /(.*) \((\p{Digit}+)\).*\Z/.match(name)
+    dpsPerCorrMulti[data[1]] = {} unless dpsPerCorrMulti[data[1]]
+    dpsPerCorrMulti[data[1]][data[2]] = dpsPerCorrList.inject(:+).to_f / dpsPerCorrList.size
+  else
+    actorRelative = []
+    actorRelative.push(name)
+    usedItemLevels.size.times { actorRelative.push(0) }
+    actorRelative.push(dpsPerCorrList.inject(:+).to_f / dpsPerCorrList.size)
+    reportRelative.push(actorRelative)
+  end
   report.push(actor)
+end
+dpsPerCorrMulti.each do |name, values|
+  actorRelative = []
+  actorRelative.push(name)
+  usedItemLevels.each do |ilvl|
+    actorRelative.push(values[ilvl].to_i)
+  end
+  actorRelative.push(0)
   reportRelative.push(actorRelative)
 end
 
