@@ -198,6 +198,12 @@
                 "bonusId": 6554,
                 "corruption": 75
             }
+        ],
+        "itemLevels": [
+            430,
+            445,
+            460,
+            475
         ]
     },
     {
@@ -248,6 +254,12 @@
                 "bonusId": 6545,
                 "corruption": 66
             }
+        ],
+        "itemLevels": [
+            430,
+            445,
+            460,
+            475
         ]
     },
     {
@@ -300,6 +312,12 @@
                 "bonusId": 6573,
                 "corruption": 15
             }
+        ],
+        "itemLevels": [
+            430,
+            445,
+            460,
+            475
         ]
     },
     {
@@ -371,6 +389,12 @@
             "windwalker",
             "havoc",
             "vengeance"
+        ],
+        "itemLevels": [
+            430,
+            445,
+            460,
+            475
         ]
     },
     {
