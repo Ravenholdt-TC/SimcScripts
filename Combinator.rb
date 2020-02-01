@@ -8,6 +8,7 @@ require_relative "lib/ProfileHelper"
 require_relative "lib/ReportWriter"
 require_relative "lib/SimcConfig"
 require_relative "lib/SimcHelper"
+require_relative "lib/HeroInterface"
 
 Logging.Initialize("Combinator")
 
@@ -48,6 +49,15 @@ puts
 gear = JSONParser.ReadFile(gearProfileFile)
 setups = JSONParser.ReadFile(setupsProfileFile)
 
+# Special case, try to use HD top essences for 3E/4E combinations
+if ["3E", "4E"].include?(setupsProfile)
+  topMajors, topMinors = HeroInterface.GetTopEssences(fightstyle, profile)
+  if !topMajors.empty? && !topMinors.empty?
+    gear["specials"][spec]["essenceMajor"].reject! { |x, v| !topMajors.keys.any? { |t| x.include?(t) } }
+    gear["specials"][spec]["essenceMinor"].reject! { |x, v| !topMinors.keys.any? { |t| x.include?(t) } }
+  end
+end
+
 # Duplicate two-slot items
 gear["specials"][spec]["finger2"] = gear["specials"][spec]["finger1"]
 gear["specials"][spec]["trinket2"] = gear["specials"][spec]["trinket1"]
@@ -59,8 +69,9 @@ gear["specials"][spec]["azerite4"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["azerite5"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
 
-# Duplicate Essences as 3 slots
+# Duplicate Essences as 4 slots
 gear["specials"][spec]["essenceMinor2"] = gear["specials"][spec]["essenceMinor"]
+gear["specials"][spec]["essenceMinor3"] = gear["specials"][spec]["essenceMinor"]
 
 hasAnyAzerite = false
 hasAnyEssences = false
@@ -96,6 +107,7 @@ setups["setups"].each do |setup|
         end
         throw :invalidCombination if specialSlots.include?("essenceMinor") && !specialSlots.include?("essenceMajor")
         throw :invalidCombination if specialSlots.include?("essenceMinor2") && !specialSlots.include?("essenceMinor")
+        throw :invalidCombination if specialSlots.include?("essenceMinor3") && !specialSlots.include?("essenceMinor2")
 
         # Create matching set combination
         usedSlots = [] + specialSlots
@@ -215,7 +227,7 @@ if setupsProfile == "Azerite"
   combinatorStyle = "-#{gearProfile[-2..-1]}"
 elsif setupsProfile == "NoAzerite"
   combinatorStyle = "-0A"
-elsif ["1E", "2E", "3E"].include? setupsProfile
+elsif ["1E", "2E", "3E", "4E"].include? setupsProfile
   combinatorStyle = "-#{setupsProfile}"
 end
 

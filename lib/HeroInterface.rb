@@ -242,4 +242,42 @@ module HeroInterface
     end
     return overrideSets
   end
+
+  # Get top performing Essences, used to generate limited sets for combinations.
+  def self.GetTopEssences(fightstyle, profile)
+    return {}, {} unless SimcConfig["CombinationBasedCharts"]
+    unless SimcConfig["HeroOutput"]
+      Logging.LogScriptError "HeroOutput option off with CombinationBasedCharts on! This may cause problems!"
+    end
+
+    profile = ProfileHelper.NormalizeProfileName(profile)
+
+    # First look if there is a local report, then check HeroDamage repository.
+    essenceFile = "Essences_#{fightstyle}_#{profile}.json"
+    localPath = "#{SimcConfig["ReportsFolder"]}/#{essenceFile}"
+    hdPath = "#{SimcConfig["HeroDamagePath"]}/#{SimcConfig["HeroDamageReportsFolder"]}/#{essenceFile}"
+    if File.exist?(localPath)
+      Logging.LogScriptInfo "Reading combinations file #{localPath}..."
+      data = JSONParser.ReadFile(localPath)
+    elsif PullLatest() && File.exist?(hdPath)
+      Logging.LogScriptInfo "Reading combinations file #{hdPath}..."
+      data = JSONParser.ReadFile(hdPath)
+    else
+      Logging.LogScriptWarning "File #{essenceFile} not found for combinations."
+      return {}, {}
+    end
+    majors = {}
+    minors = {}
+    data["results"].drop(1).each do |result|
+      name = result[0].split("--")[0].split(" (")[0]
+      if result[0].include?("(Major)")
+        majors[name] = result[3] if !majors[name] || majors[name] < result[3]
+      elsif result[0].include?("(Minor)")
+        minors[name] = result[3] if !minors[name] || minors[name] < result[3]
+      end
+    end
+    majors = majors.sort_by { |name, val| -val }.first(5).to_h
+    minors = minors.sort_by { |name, val| -val }.first(6).to_h
+    return majors, minors
+  end
 end
