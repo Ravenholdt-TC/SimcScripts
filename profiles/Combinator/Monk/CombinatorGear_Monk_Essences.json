@@ -11,7 +11,8 @@
         "Conflict and Strife": "32:3:1",
         "Anima of Life and Death": "7:3:1",
         "Aegis of the Deep": "25:3:1",
-        "Nullification Dynamo": "13:3:1"
+        "Nullification Dynamo": "13:3:1",
+        "The Formless Void": "37:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -23,7 +24,8 @@
         "Conflict and Strife": "32:3:0",
         "Anima of Life and Death": "7:3:0",
         "Aegis of the Deep": "25:3:0",
-        "Nullification Dynamo": "13:3:0"
+        "Nullification Dynamo": "13:3:0",
+        "The Formless Void": "37:3:0"
       }
     },
     "windwalker": {
@@ -41,7 +43,8 @@
         "Purification Protocol": "6:3:1",
         "The Unbound Force": "28:3:1",
         "Breath of the Dying": "35:3:1",
-        "Spark of Inspiration": "36:3:1"
+        "Spark of Inspiration": "36:3:1",
+        "The Formless Void": "37:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -57,7 +60,8 @@
         "Purification Protocol": "6:3:0",
         "The Unbound Force": "28:3:0",
         "Breath of the Dying": "35:3:0",
-        "Spark of Inspiration": "36:3:0"
+        "Spark of Inspiration": "36:3:0",
+        "The Formless Void": "37:3:0"
       }
     },
     "mistweaver": {
@@ -75,7 +79,8 @@
         "Purification Protocol": "6:3:1",
         "The Unbound Force": "28:3:1",
         "Breath of the Dying": "35:3:1",
-        "Spark of Inspiration": "36:3:1"
+        "Spark of Inspiration": "36:3:1",
+        "The Formless Void": "37:3:1"
       },
       "essenceMinor": {
         "The Crucible of Flame": "12:3:0",
@@ -91,7 +96,8 @@
         "Purification Protocol": "6:3:0",
         "The Unbound Force": "28:3:0",
         "Breath of the Dying": "35:3:0",
-        "Spark of Inspiration": "36:3:0"
+        "Spark of Inspiration": "36:3:0",
+        "The Formless Void": "37:3:0"
       }
     }
   },
