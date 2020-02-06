@@ -87,7 +87,7 @@ combinationOverrides.each do |optionsString, overrides|
         name = "#{corruption["name"]}#{" (" + ilvl.to_s + ")" if scalesItemLevel}#{"--" if optionsString}#{optionsString}_#{tier["corruption"]}"
         prefix = "profileset.\"#{name}\"+="
         simcInput.push(prefix + "name=\"#{name}\"")
-        simcInput.push(prefix + "shirt=,id=52019,bonus_id=#{tier["bonusId"]},ilevel=#{ilvl}")
+        simcInput.push(prefix + "shirt=,id=52019,bonus_id=#{tier["bonusId"]}/6448,ilevel=#{ilvl}")
         if corruption["additionalInput"]
           corruption["additionalInput"].each do |input|
             simcInput.push(prefix + "#{input}")
