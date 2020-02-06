@@ -45,7 +45,7 @@ puts
 simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
-simcInput.push "shirt="
+simcInput.push "shirt=,id=52019,bonus_id=6448" # Base corruption has to be high already for Heart of Darkness
 simcInput.push ""
 
 # Remove corruption bonus ids to support T25 sims
