@@ -7,3 +7,17 @@ optimal_raid=1
 optimize_expressions=1
 profileset_metric=dps
 # profileset_output_data=race/talents/artifact/crucible/gear
+
+override.spell_data=effect.804327.base_value=10
+override.spell_data=effect.804325.base_value=5
+override.spell_data=effect.803990.base_value=4
+
+override.spell_data=spell.318219.duration=30000
+
+override.spell_data=effect.804315.base_value=64
+override.spell_data=effect.804312.base_value=34
+override.spell_data=effect.803999.base_value=14
+
+override.spell_data=effect.804360.base_value=800
+override.spell_data=effect.804352.base_value=457
+override.spell_data=effect.803976.base_value=343
