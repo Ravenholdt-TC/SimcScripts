@@ -207,13 +207,19 @@
         ]
     },
     {
-        "name": "Ineffable Truth",
+        "name": "Ineffable Truth (T1)",
         "spellId": 318484,
         "tiers": [
             {
                 "bonusId": 6547,
                 "corruption": 12
-            },
+            }
+        ]
+    },
+    {
+        "name": "Ineffable Truth (T2)",
+        "spellId": 318484,
+        "tiers": [
             {
                 "bonusId": 6548,
                 "corruption": 30
