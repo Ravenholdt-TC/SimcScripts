@@ -13,7 +13,7 @@ OptionParser.new do |opts|
 end.parse!
 
 to_run = {
-  "AzeriteSimulation" => { ### !!! This will also be used for Essence, Race, and Corruption simulations
+  "AzeriteSimulation" => { ### !!! This will also be used for Essence and Race simulations
     "Death-Knight" => [
       "T25_Death_Knight_Blood",
       "T25_Death_Knight_Frost",
@@ -421,7 +421,6 @@ to_run = {
 # Make links for sims using the same input
 to_run["EssenceSimulation"] = to_run["AzeriteSimulation"]
 to_run["RaceSimulation"] = to_run["AzeriteSimulation"]
-to_run["CorruptionSimulation"] = to_run["AzeriteSimulation"]
 
 orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
@@ -473,7 +472,7 @@ orders.each do |steps|
   end
 end
 
-### HAX: For display on HeroDamage, rename our DS reports to include T23 so they show as T23 fightstyle.
+### HAX: For display on HeroDamage, rename our DS reports to include T25 so they show as T25 fightstyle.
 Dir.glob("#{SimcConfig["ReportsFolder"]}/*_DS_DS_*.{json,csv}").each do |file|
   puts "Renaming #{file} for T25..."
   File.rename(file, file.gsub(/_DS_DS_/, "_DS_T25_"))
