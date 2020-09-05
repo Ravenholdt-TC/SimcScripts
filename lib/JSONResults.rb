@@ -114,8 +114,8 @@ class JSONResults
     # Build infos
     metas["simcBuildTimestamp"] = DateTime.parse(@jsonData["build_date"] + " " + @jsonData["build_time"] + " " + Time.now.strftime("%:z")).to_time.to_i
     metas["simcGitRevision"] = @jsonData["git_revision"]
-    metas["wowVersion"] = @jsonData["sim"]["options"]["dbc"]["Live"]["wow_version"]
-    metas["wowBuild"] = @jsonData["sim"]["options"]["dbc"]["Live"]["build_level"]
+    metas["wowVersion"] = @jsonData["sim"]["options"]["dbc"][@jsonData["sim"]["options"]["dbc"]["version_used"]]["wow_version"]
+    metas["wowBuild"] = @jsonData["sim"]["options"]["dbc"][@jsonData["sim"]["options"]["dbc"]["version_used"]]["build_level"]
 
     # Add additional data
     metas.merge!(@additionalMetadata)
