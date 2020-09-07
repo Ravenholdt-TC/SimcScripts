@@ -1,16 +1,10 @@
 {
     "baseItemLevels": { // Used for stacks, lookup by beginning of the profile name, otherwise first.
-        "T25": 480,
-        "T24": 450,
-        "T23": 420,
-        "T22": 390,
-        "PR": 345
+        "T25": 135,
     },
     "itemLevels": [
-        430, // LFR Nyalotha
-        445, // Normal Nyalotha
-        460, // HC Nyalotha
-        475 // M Nyalotha
+        120, // HC Nyalotha
+        135 // M Nyalotha
     ],
     "blacklistedTiers": [
         0,

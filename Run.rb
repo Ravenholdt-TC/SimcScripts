@@ -263,9 +263,9 @@ to_run = {
       "DS_Rogue_Assassination Rogue_Essences 1E xxx00xx",
       "DS_Rogue_Outlaw Rogue_Essences 1E x0x00xx",
       "DS_Rogue_Subtlety Rogue_Essences 1E xxx00xx",
-      "T25_Rogue_Assassination Rogue_Essences ME 2[23]10021",
+      "T25_Rogue_Assassination Rogue_Essences ME default",
       "T25_Rogue_Outlaw Rogue_Essences ME default",
-      "T25_Rogue_Subtlety Rogue_Essences ME 2[13]20031",
+      "T25_Rogue_Subtlety Rogue_Essences ME default",
       "DS_Rogue_Assassination Rogue_Essences ME default",
       "DS_Rogue_Outlaw Rogue_Essences ME default",
       "DS_Rogue_Subtlety Rogue_Essences ME default",
@@ -458,7 +458,7 @@ orders.each do |steps|
               azCommand = command.gsub("Azerite Azerite", "1A Simple")
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
             elsif script == "Combinator" && command.include?("Essences ME")
-              ["3E", "4E"].each do |etype|
+              ["4E"].each do |etype|
                 essenceCommand = command.gsub("Essences ME", "Essences #{etype}")
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{essenceCommand} q"
               end
