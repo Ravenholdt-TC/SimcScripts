@@ -1,6 +1,6 @@
 {
     "baseItemLevels": { // Used for stacks, lookup by beginning of the profile name, otherwise first.
-        "T25": 135,
+        "T25": 135
     },
     "itemLevels": [
         120, // HC Nyalotha
