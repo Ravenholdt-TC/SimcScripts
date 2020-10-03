@@ -51,6 +51,15 @@ simcInput.push 'name="Template"'
 simcInput.push "disable_azerite=items"
 simcInput.push "bfa.reorigination_array_stacks=0"
 simcInput.push "shirt="
+
+# 9.0 Prepatch HAX, remove me later
+if profile.start_with?("T25") || profile.start_with?("DS")
+  simcInput.push "level=50"
+  simcInput.push "scale_itemlevel_down_only=1"
+  simcInput.push "scale_to_itemlevel=145"
+  simcInput.push "default_actions=1"
+end
+
 simcInput.push ""
 
 # Get head slot from profile. We will scale this up together with the trait to account for main stat increase.
@@ -184,6 +193,7 @@ end
 # Process Item Level simulations #
 ##################################
 
+=begin
 simulationFilename = "Azerite-Levels_#{fightstyle}_#{template}"
 params = [
   "#{SimcConfig["ConfigFolder"]}/SimcAzeriteConfig.simc",
@@ -246,6 +256,7 @@ end
 
 # Write the report(s)
 ReportWriter.WriteArrayReport(results, report)
+=end
 
 #############################
 # Process Stack Simulations # (yes, welcome to copy pasta land, deal with it)

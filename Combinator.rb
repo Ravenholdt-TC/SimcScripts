@@ -186,6 +186,15 @@ simcInput = []
 simcInput.push "name=Template"
 simcInput.push "disable_azerite=items" if hasAnyAzerite
 simcInput.push "azerite_essences=" if hasAnyEssences || hasAnyAzerite
+
+# 9.0 Prepatch HAX, remove me later
+if profile.start_with?("T25") || profile.start_with?("DS")
+  simcInput.push "level=50"
+  simcInput.push "scale_itemlevel_down_only=1"
+  simcInput.push "scale_to_itemlevel=145"
+  simcInput.push "default_actions=1"
+end
+
 simcInput.push ""
 
 Logging.LogScriptInfo "Generating combinations..."

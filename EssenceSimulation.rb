@@ -49,6 +49,15 @@ Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push "azerite_essences="
 simcInput.push "bfa.reorigination_array_stacks=0"
+
+# 9.0 Prepatch HAX, remove me later
+if profile.start_with?("T25") || profile.start_with?("DS")
+  simcInput.push "level=50"
+  simcInput.push "scale_itemlevel_down_only=1"
+  simcInput.push "scale_to_itemlevel=145"
+  simcInput.push "default_actions=1"
+end
+
 simcInput.push ""
 
 # Get azerite combinations if CombinationBasedCharts is enabled. These will be run in addition to defaults.
