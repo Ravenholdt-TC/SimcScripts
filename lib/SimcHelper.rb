@@ -1,5 +1,6 @@
 require "open3"
 require "etc"
+require_relative "JSONResults"
 require_relative "Logging"
 require_relative "SimcConfig"
 require_relative "ProfileHelper"
@@ -36,7 +37,7 @@ module SimcHelper
   end
 
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args, simulationFilename = "LastInput")
+  def self.RunSimulation(args, simulationFilename = "LastInput", overrideError = nil)
     simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
     logFile = "#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}"
@@ -78,10 +79,14 @@ module SimcHelper
           input.puts arg
         end
       end
+
+      if overrideError
+        input.puts "target_error=#{overrideError}"
+      end
     end
 
     # Call executable with full input file
-    Logging.LogScriptInfo "Starting simulations, this may take a while!"
+    Logging.LogScriptInfo "Invoking simc, this may take a while!"
     command = ["#{SimcConfig["SimcPath"]}/simc", generatedFile]
 
     # Run simulation with logging and redirecting output to the terminal
@@ -113,6 +118,44 @@ module SimcHelper
         IO.copy_stream(stderr, $stderr)
       end
       thread.join # Wait for simc process to end
+    end
+  end
+
+  # Run a smart simulation with multiple stages of smaller target error.
+  # Wrapper for RunSimulation. This eliminates all results below a certain threshold for following stages.
+  # Assumes sims are run with and only eliminates input using profilesets.
+  # Config options are in the main config file.
+  def self.RunMultiStageSimulation(args, simulationFilename = "LastInput")
+    Logging.LogScriptInfo "Running simulation as multi stage sim..."
+
+    if !SimcConfig["MultiStageSimStages"]
+      Logging.LogScriptError "Stage definitions not found in config file!"
+      exit
+    end
+
+    args.flatten!
+
+    number_of_stages = SimcConfig["MultiStageSimStages"].size
+    SimcConfig["MultiStageSimStages"].each.with_index(1) do |stage_error, stage_num|
+      Logging.LogScriptInfo "Stage #{stage_num} of #{number_of_stages}"
+
+      stage_file = simulationFilename
+      if stage_num < number_of_stages
+        stage_file += "-stage#{stage_num}"
+      end
+
+      RunSimulation(args, stage_file, stage_error)
+
+      if stage_num < number_of_stages
+        results = JSONResults.new(stage_file)
+        sims = results.getAllDPSResults()
+        target_count = SimcConfig["MultiStageSimTarget"] && SimcConfig["MultiStageSimTarget"] > 0 ? SimcConfig["MultiStageSimTarget"] : 1
+        dps_cutoff = sims.values.sort { |a, b| b <=> a }[target_count - 1] * (1.0 - stage_error * 0.03)
+        Logging.LogScriptInfo "Stage cutoff is #{dps_cutoff}."
+        eliminate = sims.select { |k, v| v < dps_cutoff }.keys
+        Logging.LogScriptInfo "Removing #{eliminate.size} combinations for next stage."
+        args.delete_if { |x| x.start_with?("profileset.\"") && eliminate.include?(x.split("\"")[2]) }
+      end
     end
   end
 end

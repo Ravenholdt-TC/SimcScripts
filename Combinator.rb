@@ -247,10 +247,14 @@ params = [
   profileFile,
   simcInput,
 ]
-SimcHelper.RunSimulation(params, simulationFilename)
+if SimcConfig["CombinatorUseMultiStage"]
+  SimcHelper.RunMultiStageSimulation(params, simulationFilename)
+else
+  SimcHelper.RunSimulation(params, simulationFilename)
+end
 
 # Read JSON Output
-results = JSONResults.new(simulationFilename)
+results = JSONResults.new(simulationFilename, SimcConfig["CombinatorUseMultiStage"])
 
 # Process results
 Logging.LogScriptInfo "Processing results..."

@@ -6,13 +6,28 @@ require_relative "ProfileHelper"
 class JSONResults
   attr_reader :simulationFilename
 
-  def initialize(simulationFilename = "LastInput")
+  def initialize(simulationFilename = "LastInput", multiStage = false)
     simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
     @simulationFilename = simulationFilename
     @logFile = "#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}.json"
     @jsonData = JSONParser.ReadFile(@logFile)
     @additionalMetadata = {}
+
+    if multiStage && SimcConfig["MultiStageLowResultPolicy"] == "keep"
+      # Merge in lower accuracy results from previous stages.
+      (SimcConfig["MultiStageSimStages"].size - 1).downto(1) do |i|
+        json = JSONParser.ReadFile("#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}-stage#{i}.json")
+        json["sim"]["players"].each do |player|
+          next if @jsonData["sim"]["players"].find { |x| x["name"] == player["name"] }
+          @jsonData["sim"]["players"].push player
+        end
+        json["sim"]["profilesets"]["results"].each do |player|
+          next if @jsonData["sim"]["profilesets"]["results"].find { |x| x["name"] == player["name"] }
+          @jsonData["sim"]["profilesets"]["results"].push player
+        end
+      end
+    end
   end
 
   def getRawJSON()
