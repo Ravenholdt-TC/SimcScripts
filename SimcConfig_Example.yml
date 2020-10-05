@@ -33,7 +33,7 @@ MultiStageSimStages: [1.0, 0.2, 0.05]
 
 # Define if there is a specific number of results to sim and keep at the highest stage if possible. 0 = no threshold
 # Will sim to have at least X results plus possible elements within target error of rank X.
-MultiStageSimTarget: 20
+MultiStageSimTarget: 10
 
 # What to do with lower accuracy results from earlier stages: discard, keep
 MultiStageLowResultPolicy: keep
