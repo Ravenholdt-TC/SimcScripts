@@ -14,7 +14,7 @@ Logging.Initialize("Combinator")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
 classfolder = Interactive.SelectSubfolder("Combinator")
-covenant = Interactive.SelectFromArray("Covenant", ["Default", "Kyrian", "Necrolord", "Night-Fae"])
+covenant = Interactive.SelectFromArray("Covenant", ["Default", "Kyrian", "Necrolord", "Night-Fae", "Venthyr"])
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ""], classfolder)
 
 #Read spec from profile
