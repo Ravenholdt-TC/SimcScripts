@@ -1,0 +1,32 @@
+{
+  "specials": {
+    "elemental": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "enhancement": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "restoration": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

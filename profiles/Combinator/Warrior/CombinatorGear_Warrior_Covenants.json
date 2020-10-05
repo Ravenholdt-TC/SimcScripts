@@ -1,0 +1,32 @@
+{
+  "specials": {
+    "arms": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "fury": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "protection": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

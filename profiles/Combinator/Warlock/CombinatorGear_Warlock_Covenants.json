@@ -1,0 +1,32 @@
+{
+  "specials": {
+    "affliction": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "demonology": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "destruction": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "specials": {
+    "holy": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "protection": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "retribution": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "specials": {
+    "assassination": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "outlaw": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    },
+    "subtlety": {
+      "covenant": {
+        "Kyrian": "kyrian",
+        "Necrolord": "necrolord",
+        "Night Fae": "night_fae",
+        "Venthyr": "venthyr"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
