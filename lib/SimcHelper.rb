@@ -154,7 +154,7 @@ module SimcHelper
         Logging.LogScriptInfo "Stage cutoff is #{dps_cutoff}."
         eliminate = sims.select { |k, v| v < dps_cutoff }.keys
         Logging.LogScriptInfo "Removing #{eliminate.size} combinations for next stage."
-        args.delete_if { |x| x.start_with?("profileset.\"") && eliminate.include?(x.split("\"")[2]) }
+        args.delete_if { |x| x.start_with?('profileset."') && eliminate.include?(x.split('"')[1]) }
       end
     end
   end
