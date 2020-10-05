@@ -14,6 +14,7 @@ Logging.Initialize("Combinator")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
 classfolder = Interactive.SelectSubfolder("Combinator")
+covenant = Interactive.SelectFromArray("Covenant", ["Default", "Kyrian", "Necrolord", "Night-Fae"])
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ""], classfolder)
 
 #Read spec from profile
@@ -37,11 +38,12 @@ talentdatasets = Interactive.SelectTalentPermutations(talents)
 # Log all interactively set settings
 puts
 Logging.LogScriptInfo "Summarizing input:"
+Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 Logging.LogScriptInfo "-- Class: #{classfolder}"
+Logging.LogScriptInfo "-- Covenant: #{covenant}"
 Logging.LogScriptInfo "-- Profile: #{profile}"
 Logging.LogScriptInfo "-- Gear: #{gearProfile}"
 Logging.LogScriptInfo "-- Setups: #{setupsProfile}"
-Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 Logging.LogScriptInfo "-- Talents: #{talentdatasets}"
 puts
 
@@ -195,6 +197,10 @@ if profile.start_with?("T25") || profile.start_with?("DS")
   simcInput.push "default_actions=1"
 end
 
+if covenant.downcase != "default"
+  simcInput.push "covenant=" + covenant.downcase.gsub("-", "_")
+end
+
 simcInput.push ""
 
 Logging.LogScriptInfo "Generating combinations..."
@@ -236,11 +242,14 @@ if setupsProfile == "Azerite"
   combinatorStyle = "-#{gearProfile[-2..-1]}"
 elsif setupsProfile == "NoAzerite"
   combinatorStyle = "-0A"
-elsif ["1E", "2E", "3E", "4E"].include? setupsProfile
+elsif ["1E", "2E", "3E", "4E", "1L", "3C"].include? setupsProfile
   combinatorStyle = "-#{setupsProfile}"
 end
 
 simulationFilename = "Combinator#{combinatorStyle}_#{fightstyle}_#{profile}"
+if covenant.downcase != "default"
+  simulationFilename += "_" + covenant
+end
 params = [
   "#{SimcConfig["ConfigFolder"]}/SimcCombinatorConfig.simc",
   fightstyleFile,
@@ -253,11 +262,9 @@ else
   SimcHelper.RunSimulation(params, simulationFilename)
 end
 
-# Read JSON Output
-results = JSONResults.new(simulationFilename, SimcConfig["CombinatorUseMultiStage"])
-
 # Process results
 Logging.LogScriptInfo "Processing results..."
+results = JSONResults.new(simulationFilename, SimcConfig["CombinatorUseMultiStage"])
 sims = results.getAllDPSResults()
 sims.delete("Template")
 priorityDps = results.getPriorityDPSResults()

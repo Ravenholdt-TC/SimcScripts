@@ -452,18 +452,19 @@ orders.each do |steps|
                 else
                   azCommand = command.gsub("Azerite Azerite", "1A NoAzerite")
                 end
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{azCommand} q"
               end
               # Do an additional run of talents with just the default profile (no azerite overrides)
               azCommand = command.gsub("Azerite Azerite", "1A Simple")
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{azCommand} q"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{azCommand} q"
             elsif script == "Combinator" && command.include?("Essences ME")
               ["4E"].each do |etype|
                 essenceCommand = command.gsub("Essences ME", "Essences #{etype}")
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{essenceCommand} q"
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{essenceCommand} q"
               end
             else
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
+              # TODO: Remove manual no covenant hack when updating for Shadowlands and update commands above
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{command} q"
             end
           end
         end
