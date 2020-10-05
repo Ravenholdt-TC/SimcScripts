@@ -1,0 +1,68 @@
+{
+  "specials": {
+    "elemental": {
+      "shirt": {
+        "Ancestral Reminder": "sl_legendary,bonus_id=6985",
+        "Deeptremor Stone": "sl_legendary,bonus_id=6986",
+        "Deeply Rooted Elements": "sl_legendary,bonus_id=6987",
+        "Chains of Devastation": "sl_legendary,bonus_id=6988",
+        "Skybreaker's Fiery Demise": "sl_legendary,bonus_id=6989",
+        "Elemental Equilibrium": "sl_legendary,bonus_id=6990",
+        "Echoes of Great Sundering": "sl_legendary,bonus_id=6991",
+        "Windspeaker's Lava Resurgence": "sl_legendary,bonus_id=6992",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "enhancement": {
+      "shirt": {
+        "Ancestral Reminder": "sl_legendary,bonus_id=6985",
+        "Deeptremor Stone": "sl_legendary,bonus_id=6986",
+        "Deeply Rooted Elements": "sl_legendary,bonus_id=6987",
+        "Chains of Devastation": "sl_legendary,bonus_id=6988",
+        "Doom Winds": "sl_legendary,bonus_id=6993",
+        "Legacy of the Frost Witch": "sl_legendary,bonus_id=6994",
+        "Witch Doctor's Wolf Bones": "sl_legendary,bonus_id=6995",
+        "Primal Lava Actuators": "sl_legendary,bonus_id=6996",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "restoration": {
+      "shirt": {
+        "Ancestral Reminder": "sl_legendary,bonus_id=6985",
+        "Deeptremor Stone": "sl_legendary,bonus_id=6986",
+        "Deeply Rooted Elements": "sl_legendary,bonus_id=6987",
+        "Chains of Devastation": "sl_legendary,bonus_id=6988",
+        "Jonat's Natural Focus": "sl_legendary,bonus_id=6997",
+        "Spiritwalker's Tidal Totem": "sl_legendary,bonus_id=6998",
+        "Primal Tide Core": "sl_legendary,bonus_id=6999",
+        "Earthen Harmony": "sl_legendary,bonus_id=7000",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

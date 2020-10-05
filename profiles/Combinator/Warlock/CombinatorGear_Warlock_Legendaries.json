@@ -1,0 +1,68 @@
+{
+  "specials": {
+    "affliction": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Perpetual Agony of Azj'Aqir": "sl_legendary,bonus_id=7029",
+        "Sacrolash's Dark Strike": "sl_legendary,bonus_id=7030",
+        "Malefic Wrath": "sl_legendary,bonus_id=7031",
+        "Wrath of Consumption": "sl_legendary,bonus_id=7032",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "demonology": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Implosive Potential": "sl_legendary,bonus_id=7033",
+        "Grim Inquisitor's Dread Calling": "sl_legendary,bonus_id=7034",
+        "Forces of the Horned Nightmare": "sl_legendary,bonus_id=7035",
+        "Balespider's Burning Core": "sl_legendary,bonus_id=7036",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "destruction": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Odr, Shawl of the Ymirjar": "sl_legendary,bonus_id=7037",
+        "Cinders of the Azj'Aqir": "sl_legendary,bonus_id=7038",
+        "Madness of the Azj'Aqir": "sl_legendary,bonus_id=7039",
+        "Embers of the Diabolic Raiment": "sl_legendary,bonus_id=7040",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

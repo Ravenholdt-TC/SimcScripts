@@ -1,0 +1,68 @@
+{
+  "specials": {
+    "arms": {
+      "shirt": {
+        "Leaper": "sl_legendary,bonus_id=6955",
+        "Misshapen Mirror": "sl_legendary,bonus_id=6958",
+        "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
+        "Battlelord": "sl_legendary,bonus_id=6960",
+        "Exploiter": "sl_legendary,bonus_id=6961",
+        "Enduring Blow": "sl_legendary,bonus_id=6962",
+        "Unhinged": "sl_legendary,bonus_id=6970",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "fury": {
+      "shirt": {
+        "Leaper": "sl_legendary,bonus_id=6955",
+        "Misshapen Mirror": "sl_legendary,bonus_id=6958",
+        "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
+        "Cadence of Fujieda": "sl_legendary,bonus_id=6963",
+        "Deathmaker": "sl_legendary,bonus_id=6964",
+        "Reckless Defense": "sl_legendary,bonus_id=6965",
+        "Will of the Berserker": "sl_legendary,bonus_id=6966",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    },
+    "protection": {
+      "shirt": {
+        "Leaper": "sl_legendary,bonus_id=6955",
+        "Thunderlord": "sl_legendary,bonus_id=6956",
+        "The Wall": "sl_legendary,bonus_id=6957",
+        "Misshapen Mirror": "sl_legendary,bonus_id=6958",
+        "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
+        "Unbreakable Will": "sl_legendary,bonus_id=6967",
+        "Reprisal": "sl_legendary,bonus_id=6969",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
