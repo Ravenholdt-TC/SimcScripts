@@ -64,7 +64,7 @@ legoList += JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/LegendariesAddi
 combinationOverrides.each do |optionsString, overrides|
   legoList.each do |lego|
     next unless lego["specs"].include?(specId)
-    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}_1"
+    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}"
     prefix = "profileset.\"#{name}\"+="
     simcInput.push(prefix + "name=\"#{name}\"")
     simcInput.push(prefix + "shirt=sl_legendary,bonus_id=#{lego["legendaryBonusID"]}")
