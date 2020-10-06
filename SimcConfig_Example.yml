@@ -81,15 +81,15 @@ RunOrders: [
     [["Combinator"], ["1T"]]
   ],
   [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["1T"]]
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1T"]]
   ],
   [
     [["Combinator"], ["1TA"]],
     [["Combinator"], ["DS"]]
   ],
   [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["1TA"]],
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation", "CorruptionSimulation"], ["DS"]]
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1TA"]],
+    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["DS"]]
   ]
 ]
 
