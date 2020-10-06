@@ -28,8 +28,8 @@ SaveSimcStderr: true
 ### MultiStage options
 ###
 
-# Define multi stage sim stages via their target errors
-MultiStageSimStages: [1.0, 0.4, 0.2]
+# Define multi stage sim stages via additional config files to use from the config folder.
+MultiStageSimStages: ["Stage100", "Stage040", "Stage020"]
 
 # Define if there is a specific number of results to sim and keep at the highest stage if possible. 0 = no threshold
 # Will sim to have at least X results plus possible elements within target error of rank X.
@@ -63,9 +63,6 @@ ProfilesFolder: profiles
 SimcProfileFolders:
 - profiles/DungeonSlice/
 - profiles/PreRaids/
-- profiles/Tier22/
-- profiles/Tier23/
-- profiles/Tier24/
 - profiles/Tier25/
 
 # Where archiver puts packed reports, logs and input

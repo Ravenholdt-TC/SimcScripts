@@ -37,7 +37,7 @@ module SimcHelper
   end
 
   # Run a simulation with all args applied in order
-  def self.RunSimulation(args, simulationFilename = "LastInput", overrideError = nil)
+  def self.RunSimulation(args, simulationFilename = "LastInput", extraOverridesFile = nil)
     simulationFilename = ProfileHelper.NormalizeProfileName(simulationFilename)
 
     logFile = "#{SimcConfig["LogsFolder"]}/simc/#{simulationFilename}"
@@ -80,8 +80,8 @@ module SimcHelper
         end
       end
 
-      if overrideError
-        input.puts "target_error=#{overrideError}"
+      if extraOverridesFile
+        WriteFileToInput(extraOverridesFile, input)
       end
     end
 
@@ -136,15 +136,24 @@ module SimcHelper
     args.flatten!
 
     number_of_stages = SimcConfig["MultiStageSimStages"].size
-    SimcConfig["MultiStageSimStages"].each.with_index(1) do |stage_error, stage_num|
+    SimcConfig["MultiStageSimStages"].each.with_index(1) do |stage_conf, stage_num|
       Logging.LogScriptInfo "Stage #{stage_num} of #{number_of_stages}"
+
+      stage_conf_file = "#{SimcConfig["ConfigFolder"]}/#{stage_conf}.simc"
+      stage_error = ProfileHelper.GetValueFromTemplate("target_error", stage_conf_file)
+      unless stage_error
+        Logging.LogScriptError "No target error found in stage config file!"
+        exit
+      end
+      stage_error = stage_error.to_f
+      Logging.LogScriptInfo "Target error set to #{stage_error} via #{stage_conf} configuration."
 
       stage_file = simulationFilename
       if stage_num < number_of_stages
         stage_file += "-stage#{stage_num}"
       end
 
-      RunSimulation(args, stage_file, stage_error)
+      RunSimulation(args, stage_file, stage_conf_file)
 
       if stage_num < number_of_stages
         results = JSONResults.new(stage_file)
