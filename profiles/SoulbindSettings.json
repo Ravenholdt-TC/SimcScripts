@@ -1,0 +1,122 @@
+{
+    "conduitRanks": [1, 4, 7, 10, 13, 15],
+    "combinatorConduitRank": 7,
+    "covenantConduitsMap": {
+        // TODO: Add other classes and update
+        // Rogue
+        "341264": "kyrian",
+        "341272": "necrolord",
+        "341309": "night_fae",
+        "341310": "venthyr"
+    },
+    "soulbindSims": [
+        {
+            "spellName": "Combat Meditation",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 328266
+        },
+        {
+            "spellName": "Let Go of the Past",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 328257
+        },
+        {
+            "spellName": "Pointed Courage",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 329778
+        },
+        {
+            "spellName": "Valiant Strikes",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 329791
+        },
+        {
+            "spellName": "Hammer of Genesis",
+            "soulbindName": "Mikanikos",
+            "covenant": "kyrian",
+            "spellId": 333935
+        },
+        {
+            "spellName": "Bron's Call to Action",
+            "soulbindName": "Mikanikos",
+            "covenant": "kyrian",
+            "spellId": 333950
+        },
+        /*{
+            "spellName": "Volatile Solvent",
+            "soulbindName": "Marileth",
+            "covenant": "necrolord",
+            "spellId": 323074
+        },*/
+        {
+            "spellName": "Plaguey's Preemptive Strike",
+            "soulbindName": "Marileth",
+            "covenant": "necrolord",
+            "spellId": 323090
+        },
+        {
+            "spellName": "Gnashing Chompers",
+            "soulbindName": "Emeni",
+            "covenant": "necrolord",
+            "spellId": 323919
+        },
+        {
+            "spellName": "Lead by Example",
+            "soulbindName": "Emeni",
+            "covenant": "necrolord",
+            "spellId": 342156
+        },
+        {
+            "spellName": "Heirmir's Arsenal: Marrowed Gemstone",
+            "soulbindName": "Heirmir",
+            "covenant": "necrolord",
+            "spellId": 326572
+        },
+        {
+            "spellName": "Niya's Tools: Burrs",
+            "soulbindName": "Niya",
+            "covenant": "night_fae",
+            "spellId": 320659
+        },
+        {
+            "spellName": "Niya's Tools: Poison",
+            "soulbindName": "Niya",
+            "covenant": "night_fae",
+            "spellId": 320660
+        },
+        {
+            "spellName": "Grove Invigoration",
+            "soulbindName": "Niya",
+            "covenant": "night_fae",
+            "spellId": 322721
+        },
+        {
+            "spellName": "Field of Blossoms",
+            "soulbindName": "Dreamweaver",
+            "covenant": "night_fae",
+            "spellId": 319191
+        },
+        {
+            "spellName": "Social Butterfly",
+            "soulbindName": "Dreamweaver",
+            "covenant": "night_fae",
+            "spellId": 319210
+        },
+        {
+            "spellName": "First Strike",
+            "soulbindName": "Korayn",
+            "covenant": "night_fae",
+            "spellId": 325069
+        },
+        {
+            "spellName": "Wild Hunt Tactics",
+            "soulbindName": "Korayn",
+            "covenant": "night_fae",
+            "spellId": 325066
+        }
+    ]
+}

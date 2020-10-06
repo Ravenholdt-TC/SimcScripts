@@ -13,7 +13,7 @@ OptionParser.new do |opts|
 end.parse!
 
 to_run = {
-  "RaceSimulation" => { ### !!! This will also be used for Legendary simulations
+  "RaceSimulation" => { ### !!! This will also be used for Legendary, and Soulbind simulations
     "Rogue" => [
       "PR_Rogue_Assassination",
       "PR_Rogue_Outlaw",
@@ -31,6 +31,7 @@ to_run = {
 
 # Make links for sims using the same input
 to_run["LegendarySimulation"] = to_run["RaceSimulation"]
+to_run["SoulbindSimulation"] = to_run["RaceSimulation"]
 
 orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
@@ -63,6 +64,11 @@ wow_classes.each do |wow_class|
                 specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Legendaries 1L")
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
               end
+            elsif script == "SoulbindSimulation"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Kyrian q"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Necrolord q"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Night-Fae q"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Venthyr q"
             else
               if script == "Combinator"
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{command} q"
