@@ -53,7 +53,7 @@ simcInput.push "bfa.reorigination_array_stacks=0"
 simcInput.push "shirt="
 
 # 9.0 Prepatch HAX, remove me later
-if profile.start_with?("T25") || profile.start_with?("DS")
+if template.start_with?("T25") || template.start_with?("DS")
   simcInput.push "level=50"
   simcInput.push "scale_itemlevel_down_only=1"
   simcInput.push "scale_to_itemlevel=145"
