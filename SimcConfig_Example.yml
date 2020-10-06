@@ -29,7 +29,7 @@ SaveSimcStderr: true
 ###
 
 # Define multi stage sim stages via their target errors
-MultiStageSimStages: [1.0, 0.2, 0.05]
+MultiStageSimStages: [1.0, 0.4, 0.2]
 
 # Define if there is a specific number of results to sim and keep at the highest stage if possible. 0 = no threshold
 # Will sim to have at least X results plus possible elements within target error of rank X.

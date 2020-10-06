@@ -1,4 +1,0 @@
-# Put overrides for the Azerite Simulations here
-target_error=0.1
-profileset_work_threads=1
-default_actions=1
