@@ -1,1 +1,4 @@
+# Put here any override for a Stage040 Combinator Simulation
 target_error=0.4
+profileset_work_threads=1
+profileset_init_threads=1
