@@ -61,7 +61,7 @@ wow_classes.each do |wow_class|
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{specialCommand} q"
               ["Kyrian", "Necrolord", "Night-Fae", "Venthyr"].each do |cov|
                 specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Legendaries 1L")
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{covCommand} q"
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
               end
             else
               if script == "Combinator"
