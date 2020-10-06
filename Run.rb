@@ -425,16 +425,16 @@ if options[:reverse]
   azeriteStacks.reverse!
 end
 
-orders.each do |steps|
-  steps.reverse! if options[:reverse]
-  steps.each do |order|
-    scripts = order[0].clone
-    scripts.reverse! if options[:reverse]
-    fightstyles = order[1].clone
-    fightstyles.reverse! if options[:reverse]
-    scripts.each do |script|
-      fightstyles.each do |fightstyle|
-        wow_classes.each do |wow_class|
+wow_classes.each do |wow_class|
+  orders.each do |steps|
+    steps.reverse! if options[:reverse]
+    steps.each do |order|
+      scripts = order[0].clone
+      scripts.reverse! if options[:reverse]
+      fightstyles = order[1].clone
+      fightstyles.reverse! if options[:reverse]
+      scripts.each do |script|
+        fightstyles.each do |fightstyle|
           commands = to_run[script][wow_class].clone
           commands.reverse! if options[:reverse]
           commands.each do |command|
@@ -458,7 +458,11 @@ orders.each do |steps|
               end
             else
               # TODO: Remove manual no covenant hack when updating for Shadowlands and update commands above
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{command} q"
+              if script == "Combinator"
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{command} q"
+              else
+                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
+              end
             end
           end
         end
