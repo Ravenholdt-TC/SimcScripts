@@ -159,6 +159,7 @@ module SimcHelper
         results = JSONResults.new(stage_file)
         sims = results.getAllDPSResults()
         target_count = SimcConfig["MultiStageSimTarget"] && SimcConfig["MultiStageSimTarget"] > 0 ? SimcConfig["MultiStageSimTarget"] : 1
+        target_count = [target_count, sims.size].min
         dps_cutoff = sims.values.sort { |a, b| b <=> a }[target_count - 1] * (1.0 - stage_error * 0.03)
         Logging.LogScriptInfo "Stage cutoff is #{dps_cutoff}."
         eliminate = sims.select { |k, v| v < dps_cutoff }.keys
