@@ -7,7 +7,7 @@ require "git"
 module HeroInterface
   @updatedHD = false
 
-  TargetErrorDiffFactor = 2
+  TargetErrorDiffFactor = 3
 
   # Check and update HeroDamage repo. Returns false if no repo found or exceptions occur.
   def self.PullLatest
