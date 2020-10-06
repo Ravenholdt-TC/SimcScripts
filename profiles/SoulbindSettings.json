@@ -117,6 +117,54 @@
             "soulbindName": "Korayn",
             "covenant": "night_fae",
             "spellId": 325066
+        },
+        {
+            "spellName": "Exacting Preparation",
+            "soulbindName": "Nadjia",
+            "covenant": "venthyr",
+            "spellId": 331580
+        },
+        {
+            "spellName": "Dauntless Duelist",
+            "soulbindName": "Nadjia",
+            "covenant": "venthyr",
+            "spellId": 331584
+        },
+        {
+            "spellName": "Thrill Seeker",
+            "soulbindName": "Nadjia",
+            "covenant": "venthyr",
+            "spellId": 331586
+        },
+        {
+            "spellName": "Refined Palate",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 336243
+        },
+        {
+            "spellName": "Soothing Shade",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 336239
+        },
+        {
+            "spellName": "Wasteland Propriety",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 319983
+        },
+        {
+            "spellName": "Built for War",
+            "soulbindName": "Draven",
+            "covenant": "venthyr",
+            "spellId": 319973
+        },
+        {
+            "spellName": "Superior Tactics",
+            "soulbindName": "Draven",
+            "covenant": "venthyr",
+            "spellId": 332753
         }
     ]
 }
