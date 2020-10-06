@@ -1,0 +1,54 @@
+[
+    {
+        "itemSlot": [
+            "Finger",
+            "Wrist"
+        ],
+        "legendaryBonusID": 7111,
+        "legendaryId": 117,
+        "legendaryName": "Mark of the Master Assassin (Night Fae)",
+        "legendarySpellID": 340076,
+        "specs": [
+            259,
+            260,
+            261
+        ],
+        "additionalInput": [
+            "covenant=night_fae"
+        ]
+    },
+    {
+        "itemSlot": [
+            "Legs",
+            "Waist"
+        ],
+        "legendaryBonusID": 7126,
+        "legendaryId": 129,
+        "legendaryName": "Deathly Shadows (Night Fae)",
+        "legendarySpellID": 340092,
+        "specs": [
+            261
+        ],
+        "additionalInput": [
+            "covenant=night_fae"
+        ]
+    },
+    {
+        "itemSlot": [
+            "Chest",
+            "Neck"
+        ],
+        "legendaryBonusID": 7114,
+        "legendaryId": 114,
+        "legendaryName": "Invigorating Shadowdust (Night Fae)",
+        "legendarySpellID": 340080,
+        "specs": [
+            259,
+            260,
+            261
+        ],
+        "additionalInput": [
+            "covenant=night_fae"
+        ]
+    }
+]
