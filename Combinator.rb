@@ -15,6 +15,7 @@ Logging.Initialize("Combinator")
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
 classfolder = Interactive.SelectSubfolder("Combinator")
 covenant = Interactive.SelectFromArray("Covenant", ["Default", "Kyrian", "Necrolord", "Night-Fae", "Venthyr"])
+covenant_simc = covenant.downcase.gsub("-", "_")
 profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ""], classfolder)
 
 #Read spec from profile
@@ -98,6 +99,7 @@ end
 essenceList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/Essences.json")
 
 # Import soulbind settings file for conduit rank
+conduitList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Conduits.json")
 soulbindSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/SoulbindSettings.json")
 conduitRank = soulbindSettings["combinatorConduitRank"]
 
@@ -156,6 +158,9 @@ setups["setups"].each do |setup|
           next if specialSlots.any?("azerite") && gear["specials"][spec]["azerite"].keys.collect { |x| specialCombination.count(x) }.any? { |x| x > 3 }
           # Special for Essences: Get essence ID and ensure they are unique (for Worldvein Allies special case)
           next if specialCombination.collect { |x| essenceList.find { |y| y["name"] == x }&.dig("essenceId") || x }.uniq.count != specialCombination.count
+          # Special for Conduits: Exclude other covenant conduits if combinator covenant is set
+          cov_requirements = specialCombination.collect { |x| soulbindSettings["covenantConduitsMap"][conduitList.find { |y| y["conduitName"] == x }&.dig("conduitSpellID")&.to_s] }
+          next if covenant_simc != "default" && cov_requirements.any? { |x| ![covenant_simc, nil].include?(x) }
 
           specialProfileName = specialCombination.join("_")
           specialStrings = []
@@ -215,10 +220,10 @@ if profile.start_with?("T25") || profile.start_with?("DS")
   simcInput.push "default_actions=1"
 end
 
-if covenant.downcase != "default"
-  simcInput.push "covenant=" + covenant.downcase.gsub("-", "_")
+if covenant_simc != "default"
+  simcInput.push "covenant=" + covenant_simc
 end
-simcInput.push "soulbind=" if hasAnyConduits || covenant.downcase != "default"
+simcInput.push "soulbind=" if hasAnyConduits || covenant_simc != "default"
 
 if gearProfile.include?("Legendaries") || gearProfile.include?("ShadowlandsFull")
   # Create overrides with legendary bonus_ids removed from input
@@ -277,7 +282,7 @@ elsif ["1E", "2E", "3E", "4E", "1L", "3C", "3CL"].include? setupsProfile
 end
 
 simulationFilename = "Combinator#{combinatorStyle}_#{fightstyle}_#{profile}"
-if covenant.downcase != "default"
+if covenant_simc != "default"
   simulationFilename += "_" + covenant
 end
 params = [
