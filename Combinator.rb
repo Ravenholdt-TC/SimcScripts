@@ -32,6 +32,9 @@ unless talents
   exit
 end
 
+# Read covenant from template profile
+covenant_default = ProfileHelper.GetValueFromTemplate("covenant", profileFile)
+
 gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear_")
 setupsProfile, setupsProfileFile = Interactive.SelectTemplate("Combinator/CombinatorSetups_")
 talentdatasets = Interactive.SelectTalentPermutations(talents)
@@ -76,9 +79,8 @@ gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["essenceMinor2"] = gear["specials"][spec]["essenceMinor"]
 gear["specials"][spec]["essenceMinor3"] = gear["specials"][spec]["essenceMinor"]
 
-# Duplicate Conduits as 3 slots
+# Duplicate Conduits for 2 potency slots
 gear["specials"][spec]["conduit2"] = gear["specials"][spec]["conduit"]
-gear["specials"][spec]["conduit3"] = gear["specials"][spec]["conduit"]
 
 hasAnyAzerite = false
 hasAnyEssences = false
@@ -122,7 +124,6 @@ setups["setups"].each do |setup|
         throw :invalidCombination if specialSlots.include?("essenceMinor2") && !specialSlots.include?("essenceMinor")
         throw :invalidCombination if specialSlots.include?("essenceMinor3") && !specialSlots.include?("essenceMinor2")
         throw :invalidCombination if specialSlots.include?("conduit2") && !specialSlots.include?("conduit")
-        throw :invalidCombination if specialSlots.include?("conduit3") && !specialSlots.include?("conduit2")
 
         # Create matching set combination
         usedSlots = [] + specialSlots
@@ -161,6 +162,7 @@ setups["setups"].each do |setup|
           # Special for Conduits: Exclude other covenant conduits if combinator covenant is set
           cov_requirements = specialCombination.collect { |x| soulbindSettings["covenantConduitsMap"][conduitList.find { |y| y["conduitName"] == x }&.dig("conduitSpellID")&.to_s] }
           next if covenant_simc != "default" && cov_requirements.any? { |x| ![covenant_simc, nil].include?(x) }
+          next if covenant_simc == "default" && (!covenant_default || cov_requirements.any? { |x| ![covenant_default, nil].include?(x) })
 
           specialProfileName = specialCombination.join("_")
           specialStrings = []

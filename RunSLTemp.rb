@@ -46,7 +46,7 @@ wow_classes.each do |wow_class|
               ["Kyrian", "Necrolord", "Night-Fae", "Venthyr"].each do |cov|
                 specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Legendaries 1L")
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
-                specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Conduits 3C")
+                specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Conduits 2C")
                 system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
               end
             elsif script == "SoulbindSimulation"
