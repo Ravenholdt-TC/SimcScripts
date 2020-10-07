@@ -279,7 +279,7 @@ if setupsProfile == "Azerite"
   combinatorStyle = "-#{gearProfile[-2..-1]}"
 elsif setupsProfile == "NoAzerite"
   combinatorStyle = "-0A"
-elsif ["1E", "2E", "3E", "4E", "1L", "3C", "3CL"].include? setupsProfile
+elsif ["1E", "2E", "3E", "4E", "1L", "2C", "2CL"].include? setupsProfile
   combinatorStyle = "-#{setupsProfile}"
 end
 
