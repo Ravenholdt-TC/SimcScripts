@@ -75,8 +75,13 @@ gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
 gear["specials"][spec]["essenceMinor2"] = gear["specials"][spec]["essenceMinor"]
 gear["specials"][spec]["essenceMinor3"] = gear["specials"][spec]["essenceMinor"]
 
+# Duplicate Conduits as 3 slots
+gear["specials"][spec]["conduit2"] = gear["specials"][spec]["conduit"]
+gear["specials"][spec]["conduit3"] = gear["specials"][spec]["conduit"]
+
 hasAnyAzerite = false
 hasAnyEssences = false
+hasAnyConduits = false
 
 # Get base item level for azerite stacks based on Profile name beginning
 hasAnyAzerite = true if setupsProfile == "NoAzerite" # Disable azerite for 0A sims.
@@ -91,6 +96,10 @@ end
 
 # Import essence list in case we need the additonal inputs
 essenceList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/Essences.json")
+
+# Import soulbind settings file for conduit rank
+soulbindSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/SoulbindSettings.json")
+conduitRank = soulbindSettings["combinatorConduitRank"]
 
 # Build gear combinations
 gearCombinations = {}
@@ -110,6 +119,8 @@ setups["setups"].each do |setup|
         throw :invalidCombination if specialSlots.include?("essenceMinor") && !specialSlots.include?("essenceMajor")
         throw :invalidCombination if specialSlots.include?("essenceMinor2") && !specialSlots.include?("essenceMinor")
         throw :invalidCombination if specialSlots.include?("essenceMinor3") && !specialSlots.include?("essenceMinor2")
+        throw :invalidCombination if specialSlots.include?("conduit2") && !specialSlots.include?("conduit")
+        throw :invalidCombination if specialSlots.include?("conduit3") && !specialSlots.include?("conduit2")
 
         # Create matching set combination
         usedSlots = [] + specialSlots
@@ -150,6 +161,7 @@ setups["setups"].each do |setup|
           specialStrings = []
           specialAzeritePowers = []
           specialEssences = []
+          specialConduits = []
           specialCombination.each_with_index do |itemName, idx|
             specialOverrides = ProfileHelper.GetSpecialOverrides("Combinator/#{classfolder}/SpecialOverrides/#{profile}", itemName)
             specialOverrides.each do |specialOverride|
@@ -164,6 +176,8 @@ setups["setups"].each do |setup|
               if essence = essenceList.find { |x| x["name"] == itemName }
                 specialStrings += essence["additionalInput"]
               end
+            elsif specialSlots[idx].include? "conduit"
+              specialConduits.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!RANK!!", conduitRank.to_s))
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
             end
@@ -175,6 +189,10 @@ setups["setups"].each do |setup|
           unless specialEssences.empty?
             hasAnyEssences = true
             specialStrings.push("azerite_essences=#{specialEssences.join("/")}")
+          end
+          unless specialConduits.empty?
+            hasAnyConduits = true
+            specialStrings.push("soulbind=#{specialConduits.join("/")}")
           end
           gearCombinations["#{setProfileName}_#{specialProfileName}"] = specialStrings + setStrings
         end
@@ -199,6 +217,18 @@ end
 
 if covenant.downcase != "default"
   simcInput.push "covenant=" + covenant.downcase.gsub("-", "_")
+end
+simcInput.push "soulbind=" if hasAnyConduits || covenant.downcase != "default"
+
+if gearProfile.include?("Legendaries") || gearProfile.include?("ShadowlandsFull")
+  # Create overrides with legendary bonus_ids removed from input
+  legoList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Legendaries.json")
+  legoBonusIds = legoList.collect { |x| x["legendaryBonusID"] }
+  simcInput.push "# Overrides with removed legendary bonus ids where present"
+  ProfileHelper.RemoveBonusIds(legoBonusIds, profileFile).each do |override|
+    simcInput.push override
+  end
+  simcInput.push "# Overrides done!"
 end
 
 simcInput.push ""
@@ -242,7 +272,7 @@ if setupsProfile == "Azerite"
   combinatorStyle = "-#{gearProfile[-2..-1]}"
 elsif setupsProfile == "NoAzerite"
   combinatorStyle = "-0A"
-elsif ["1E", "2E", "3E", "4E", "1L", "3C"].include? setupsProfile
+elsif ["1E", "2E", "3E", "4E", "1L", "3C", "3CL"].include? setupsProfile
   combinatorStyle = "-#{setupsProfile}"
 end
 

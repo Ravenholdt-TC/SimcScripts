@@ -1,4 +1,5 @@
 [
+    // You can put additional profiles for the legendary chart sim here. By copying the structure from the Legendaries file. "additionalInput" array supported for overrides.
     {
         "itemSlot": [
             "Finger",
