@@ -3,15 +3,6 @@ require "bundler/setup"
 require "optparse"
 require_relative "lib/SimcConfig"
 
-options = {}
-OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [-r]"
-
-  opts.on("-r", "Do the run starting from the end") do |r|
-    options[:reverse] = r
-  end
-end.parse!
-
 to_run = {
   "RaceSimulation" => { ### !!! This will also be used for Legendary, and Soulbind simulations
     "Rogue" => [
@@ -36,24 +27,16 @@ to_run["SoulbindSimulation"] = to_run["RaceSimulation"]
 orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
 
-if options[:reverse]
-  wow_classes.reverse!
-end
-
 wow_classes.each do |wow_class|
   orders.each do |steps|
-    steps.reverse! if options[:reverse]
     steps.each do |order|
       scripts = order[0].clone
-      scripts.reverse! if options[:reverse]
       fightstyles = order[1].clone
-      fightstyles.reverse! if options[:reverse]
-      scripts.each do |script|
-        fightstyles.each do |fightstyle|
+      fightstyles.each do |fightstyle|
+        scripts.each do |script|
           next unless to_run[script]
           next unless to_run[script][wow_class]
           commands = to_run[script][wow_class].clone
-          commands.reverse! if options[:reverse]
           commands.each do |command|
             #next if command.start_with?("DS_") && fightstyle != "DS" || !command.start_with?("DS_") && fightstyle == "DS"
             if script == "Combinator" && command.include?("!!SetSL!!")

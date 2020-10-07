@@ -3,15 +3,6 @@ require "bundler/setup"
 require "optparse"
 require_relative "lib/SimcConfig"
 
-options = {}
-OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [-r]"
-
-  opts.on("-r", "Do the run starting from the end") do |r|
-    options[:reverse] = r
-  end
-end.parse!
-
 to_run = {
   "AzeriteSimulation" => { ### !!! This will also be used for Essence and Race simulations
     "Death-Knight" => [
@@ -90,7 +81,7 @@ to_run = {
       # "T25_Warlock_Destruction",
       # "DS_Warlock_Affliction",
       "DS_Warlock_Demonology",
-      # "DS_Warlock_Destruction",
+    # "DS_Warlock_Destruction",
     ],
     "Warrior" => [
       "T25_Warrior_Arms",
@@ -98,7 +89,7 @@ to_run = {
       # "T25_Warrior_Protection",
       "DS_Warrior_Arms",
       "DS_Warrior_Fury",
-      # "DS_Warrior_Protection",
+    # "DS_Warrior_Protection",
     ],
   },
   "Combinator" => {
@@ -298,7 +289,7 @@ to_run = {
       # "T25_Warlock_Destruction Warlock_Essences ME default",
       # "DS_Warlock_Affliction Warlock_Essences ME default",
       "DS_Warlock_Demonology Warlock_Essences ME default",
-      # "DS_Warlock_Destruction Warlock_Essences ME default",
+    # "DS_Warlock_Destruction Warlock_Essences ME default",
     ],
     "Warrior" => [
       "T25_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
@@ -319,7 +310,7 @@ to_run = {
       # "T25_Warrior_Protection Warrior_Essences ME default",
       "DS_Warrior_Arms Warrior_Essences ME default",
       "DS_Warrior_Fury Warrior_Essences ME default",
-      # "DS_Warrior_Protection Warrior_Essences ME default",
+    # "DS_Warrior_Protection Warrior_Essences ME default",
     ],
   },
   "TrinketSimulation" => {
@@ -399,7 +390,7 @@ to_run = {
       # "T25_Warlock_Destruction Intelligence",
       # "DS_Warlock_Affliction Intelligence",
       "DS_Warlock_Demonology Intelligence",
-      # "DS_Warlock_Destruction Intelligence",
+    # "DS_Warlock_Destruction Intelligence",
     ],
     "Warrior" => [
       "T25_Warrior_Arms Strength",
@@ -407,7 +398,7 @@ to_run = {
       # "T25_Warrior_Protection Strength",
       "DS_Warrior_Arms Strength",
       "DS_Warrior_Fury Strength",
-      # "DS_Warrior_Protection Strength",
+    # "DS_Warrior_Protection Strength",
     ],
   },
 }
@@ -420,23 +411,14 @@ orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
 azeriteStacks = SimcConfig["RunCombinatorAzeriteStacks"]
 
-if options[:reverse]
-  wow_classes.reverse!
-  azeriteStacks.reverse!
-end
-
 wow_classes.each do |wow_class|
   orders.each do |steps|
-    steps.reverse! if options[:reverse]
     steps.each do |order|
       scripts = order[0].clone
-      scripts.reverse! if options[:reverse]
       fightstyles = order[1].clone
-      fightstyles.reverse! if options[:reverse]
-      scripts.each do |script|
-        fightstyles.each do |fightstyle|
+      fightstyles.each do |fightstyle|
+        scripts.each do |script|
           commands = to_run[script][wow_class].clone
-          commands.reverse! if options[:reverse]
           commands.each do |command|
             next if command.start_with?("DS_") && fightstyle != "DS" || !command.start_with?("DS_") && fightstyle == "DS"
             if script == "Combinator" && command.include?("Azerite Azerite")
