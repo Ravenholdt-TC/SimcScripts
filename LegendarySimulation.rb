@@ -43,8 +43,17 @@ simcInput = []
 Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push "shirt=empty"
-simcInput.push "covenant=none"
-simcInput.push "soulbind="
+simcInput.push ""
+
+legoList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Legendaries.json")
+
+# Create overrides with legendary bonus_ids removed from input
+legoBonusIds = legoList.collect { |x| x["legendaryBonusID"] }
+simcInput.push "# Overrides with removed legendary bonus ids where present"
+ProfileHelper.RemoveBonusIds(legoBonusIds, templateFile).each do |override|
+  simcInput.push override
+end
+simcInput.push "# Overrides done!"
 simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
@@ -59,8 +68,9 @@ end
 # Add empty override set for the default loop
 combinationOverrides[nil] = []
 
-legoList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Legendaries.json")
+# Include potential lego copies
 legoList += JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/LegendariesAdditional.json")
+
 combinationOverrides.each do |optionsString, overrides|
   legoList.each do |lego|
     next unless lego["specs"].include?(specId)
