@@ -1,0 +1,119 @@
+{
+  "specials": {
+    "beast_mastery": {
+      "shirt": {
+        "Call of the Wild": "sl_legendary,bonus_id=7003",
+        "Nessingwary's Trapping Apparatus": "sl_legendary,bonus_id=7004",
+        "Soulforge Embers": "sl_legendary,bonus_id=7005",
+        "Craven Strategem": "sl_legendary,bonus_id=7006",
+        "Dire Command": "sl_legendary,bonus_id=7007",
+        "Flamewaker's Cobra Sting": "sl_legendary,bonus_id=7008",
+        "Qa'pla, Eredun War Order": "sl_legendary,bonus_id=7009",
+        "Rylakstalker's Piercing Fangs": "sl_legendary,bonus_id=7010",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Enfeebled Mark": "137:!!RANK!!",
+        "Empowered Release": "139:!!RANK!!",
+        "Spirit Attunement": "140:!!RANK!!",
+        "Necrotic Barrage": "143:!!RANK!!",
+        "Markman's Advantage": "157:!!RANK!!",
+        "Harmony of the Tortollan": "166:!!RANK!!",
+        "Rejuvenating Wind": "170:!!RANK!!",
+        "Resilience of the Hunter": "173:!!RANK!!",
+        "Reversal of Fortune": "175:!!RANK!!",
+        "Cheetah's Vigor": "178:!!RANK!!",
+        "Tactical Retreat": "181:!!RANK!!",
+        "Ferocious Appetite": "183:!!RANK!!",
+        "One With the Beast": "185:!!RANK!!",
+        "Echoing Call": "223:!!RANK!!",
+        "Bloodletting": "253:!!RANK!!"
+      }
+    },
+    "marksmanship": {
+      "shirt": {
+        "Call of the Wild": "sl_legendary,bonus_id=7003",
+        "Nessingwary's Trapping Apparatus": "sl_legendary,bonus_id=7004",
+        "Soulforge Embers": "sl_legendary,bonus_id=7005",
+        "Craven Strategem": "sl_legendary,bonus_id=7006",
+        "Eagletalon's True Focus": "sl_legendary,bonus_id=7011",
+        "Surging Shots": "sl_legendary,bonus_id=7012",
+        "Serpentstalker's Trickery": "sl_legendary,bonus_id=7013",
+        "Secrets of the Unblinking Vigil": "sl_legendary,bonus_id=7014",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Enfeebled Mark": "137:!!RANK!!",
+        "Empowered Release": "139:!!RANK!!",
+        "Spirit Attunement": "140:!!RANK!!",
+        "Necrotic Barrage": "143:!!RANK!!",
+        "Markman's Advantage": "157:!!RANK!!",
+        "Harmony of the Tortollan": "166:!!RANK!!",
+        "Rejuvenating Wind": "170:!!RANK!!",
+        "Resilience of the Hunter": "173:!!RANK!!",
+        "Reversal of Fortune": "175:!!RANK!!",
+        "Cheetah's Vigor": "178:!!RANK!!",
+        "Tactical Retreat": "181:!!RANK!!",
+        "Sharpshooter's Focus": "188:!!RANK!!",
+        "Brutal Projectiles": "189:!!RANK!!",
+        "Deadly Chain": "192:!!RANK!!",
+        "Powerful Precision": "199:!!RANK!!"
+      }
+    },
+    "survival": {
+      "shirt": {
+        "Call of the Wild": "sl_legendary,bonus_id=7003",
+        "Nessingwary's Trapping Apparatus": "sl_legendary,bonus_id=7004",
+        "Soulforge Embers": "sl_legendary,bonus_id=7005",
+        "Craven Strategem": "sl_legendary,bonus_id=7006",
+        "Wildfire Cluster": "sl_legendary,bonus_id=7015",
+        "Rylakstalker's Confounding Strikes": "sl_legendary,bonus_id=7016",
+        "Latent Poison Injectors": "sl_legendary,bonus_id=7017",
+        "Butcher's Bone Fragments": "sl_legendary,bonus_id=7018",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Enfeebled Mark": "137:!!RANK!!",
+        "Empowered Release": "139:!!RANK!!",
+        "Spirit Attunement": "140:!!RANK!!",
+        "Necrotic Barrage": "143:!!RANK!!",
+        "Markman's Advantage": "157:!!RANK!!",
+        "Harmony of the Tortollan": "166:!!RANK!!",
+        "Rejuvenating Wind": "170:!!RANK!!",
+        "Resilience of the Hunter": "173:!!RANK!!",
+        "Reversal of Fortune": "175:!!RANK!!",
+        "Cheetah's Vigor": "178:!!RANK!!",
+        "Tactical Retreat": "181:!!RANK!!",
+        "Strength of the Pack": "224:!!RANK!!",
+        "Stinging Strike": "226:!!RANK!!",
+        "Deadly Tandem": "251:!!RANK!!",
+        "Flame Infusion": "252:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

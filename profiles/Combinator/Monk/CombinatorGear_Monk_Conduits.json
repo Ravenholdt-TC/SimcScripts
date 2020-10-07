@@ -1,0 +1,65 @@
+{
+  "specials": {
+    "brewmaster": {
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Scalding Brew": "46:!!RANK!!",
+        "Celestial Effervescence": "47:!!RANK!!",
+        "Evasive Stride": "56:!!RANK!!",
+        "Walk with the Ox": "57:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    },
+    "windwalker": {
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Inner Fury": "16:!!RANK!!",
+        "Calculated Strikes": "19:!!RANK!!",
+        "Coordinated Offensive": "22:!!RANK!!",
+        "Xuen's Bond": "24:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    },
+    "mistweaver": {
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Jade Bond": "28:!!RANK!!",
+        "Resplendent Mist": "31:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Rising Sun Revival": "44:!!RANK!!",
+        "Nourishing Chi": "54:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

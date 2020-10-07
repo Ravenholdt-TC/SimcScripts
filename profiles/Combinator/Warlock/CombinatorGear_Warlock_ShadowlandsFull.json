@@ -1,0 +1,119 @@
+{
+  "specials": {
+    "affliction": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Perpetual Agony of Azj'Aqir": "sl_legendary,bonus_id=7029",
+        "Sacrolash's Dark Strike": "sl_legendary,bonus_id=7030",
+        "Malefic Wrath": "sl_legendary,bonus_id=7031",
+        "Wrath of Consumption": "sl_legendary,bonus_id=7032",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Fel Celerity": "144:!!RANK!!",
+        "Resolute Barrier": "160:!!RANK!!",
+        "Accrued Vitality": "162:!!RANK!!",
+        "Shade of Terror": "168:!!RANK!!",
+        "Demonic Momentum": "171:!!RANK!!",
+        "Corrupting Leer": "174:!!RANK!!",
+        "Rolling Agony": "201:!!RANK!!",
+        "Focused Malignancy": "202:!!RANK!!",
+        "Cold Embrace": "203:!!RANK!!",
+        "Soul Tithe": "217:!!RANK!!",
+        "Prolonged Decimation": "218:!!RANK!!",
+        "Catastrophic Origin": "219:!!RANK!!",
+        "Soul Eater": "220:!!RANK!!",
+        "Kilrogg's Cunning": "221:!!RANK!!",
+        "Diabolic Bloodstone": "222:!!RANK!!"
+      }
+    },
+    "demonology": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Implosive Potential": "sl_legendary,bonus_id=7033",
+        "Grim Inquisitor's Dread Calling": "sl_legendary,bonus_id=7034",
+        "Forces of the Horned Nightmare": "sl_legendary,bonus_id=7035",
+        "Balespider's Burning Core": "sl_legendary,bonus_id=7036",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Fel Celerity": "144:!!RANK!!",
+        "Resolute Barrier": "160:!!RANK!!",
+        "Accrued Vitality": "162:!!RANK!!",
+        "Shade of Terror": "168:!!RANK!!",
+        "Demonic Momentum": "171:!!RANK!!",
+        "Borne of Blood": "204:!!RANK!!",
+        "Carnivorous Stalkers": "205:!!RANK!!",
+        "Tyrant's Soul": "206:!!RANK!!",
+        "Fel Commando": "207:!!RANK!!",
+        "Soul Tithe": "217:!!RANK!!",
+        "Prolonged Decimation": "218:!!RANK!!",
+        "Catastrophic Origin": "219:!!RANK!!",
+        "Soul Eater": "220:!!RANK!!",
+        "Kilrogg's Cunning": "221:!!RANK!!",
+        "Diabolic Bloodstone": "222:!!RANK!!"
+      }
+    },
+    "destruction": {
+      "shirt": {
+        "Wilfred's Sigil of Superior Summoning": "sl_legendary,bonus_id=7025",
+        "Claw of Endereth": "sl_legendary,bonus_id=7026",
+        "Mark of Borrowed Power": "sl_legendary,bonus_id=7027",
+        "Pillars of the Dark Portal": "sl_legendary,bonus_id=7028",
+        "Odr, Shawl of the Ymirjar": "sl_legendary,bonus_id=7037",
+        "Cinders of the Azj'Aqir": "sl_legendary,bonus_id=7038",
+        "Madness of the Azj'Aqir": "sl_legendary,bonus_id=7039",
+        "Embers of the Diabolic Raiment": "sl_legendary,bonus_id=7040",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Fel Celerity": "144:!!RANK!!",
+        "Resolute Barrier": "160:!!RANK!!",
+        "Accrued Vitality": "162:!!RANK!!",
+        "Shade of Terror": "168:!!RANK!!",
+        "Demonic Momentum": "171:!!RANK!!",
+        "Duplicitous Havoc": "208:!!RANK!!",
+        "Ashen Remains": "211:!!RANK!!",
+        "Combusting Engine": "212:!!RANK!!",
+        "Infernal Brand": "214:!!RANK!!",
+        "Soul Tithe": "217:!!RANK!!",
+        "Prolonged Decimation": "218:!!RANK!!",
+        "Catastrophic Origin": "219:!!RANK!!",
+        "Soul Eater": "220:!!RANK!!",
+        "Kilrogg's Cunning": "221:!!RANK!!",
+        "Diabolic Bloodstone": "222:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

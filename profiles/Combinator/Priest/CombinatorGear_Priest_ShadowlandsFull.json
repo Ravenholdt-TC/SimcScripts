@@ -1,0 +1,119 @@
+{
+  "specials": {
+    "discipline": {
+      "shirt": {
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "The Penitent One": "sl_legendary,bonus_id=6976",
+        "Crystalline Reflection": "sl_legendary,bonus_id=6978",
+        "Kiss of Death": "sl_legendary,bonus_id=6979",
+        "Clarity of Mind": "sl_legendary,bonus_id=6980",
+        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161"
+      },
+      "conduit": {
+        "Translucent Image": "66:!!RANK!!",
+        "Move with Grace": "67:!!RANK!!",
+        "Clear Mind": "69:!!RANK!!",
+        "Charitable Soul": "71:!!RANK!!",
+        "Light's Inspiration": "72:!!RANK!!",
+        "Power Unto Others": "73:!!RANK!!",
+        "Shining Radiance": "75:!!RANK!!",
+        "Pain Transformation": "76:!!RANK!!",
+        "Exaltation": "77:!!RANK!!",
+        "Swift Penitence": "81:!!RANK!!",
+        "Mental Recovery": "85:!!RANK!!",
+        "Courageous Ascension": "87:!!RANK!!",
+        "Festering Transfusion": "90:!!RANK!!",
+        "Fae Fermata": "101:!!RANK!!",
+        "Shattered Perceptions": "105:!!RANK!!"
+      }
+    },
+    "holy": {
+      "shirt": {
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "Divine Image": "sl_legendary,bonus_id=6973",
+        "Flash Concentration": "sl_legendary,bonus_id=6974",
+        "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "Harmonious Apparatus": "sl_legendary,bonus_id=6977",
+        "X'anshi, Return of Archbishop Benedictus": "sl_legendary,bonus_id=6984",
+        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161"
+      },
+      "conduit": {
+        "Translucent Image": "66:!!RANK!!",
+        "Move with Grace": "67:!!RANK!!",
+        "Clear Mind": "69:!!RANK!!",
+        "Charitable Soul": "71:!!RANK!!",
+        "Light's Inspiration": "72:!!RANK!!",
+        "Power Unto Others": "73:!!RANK!!",
+        "Lasting Spirit": "78:!!RANK!!",
+        "Focused Mending": "82:!!RANK!!",
+        "Resonant Words": "84:!!RANK!!",
+        "Mental Recovery": "85:!!RANK!!",
+        "Courageous Ascension": "87:!!RANK!!",
+        "Festering Transfusion": "90:!!RANK!!",
+        "Fae Fermata": "101:!!RANK!!",
+        "Shattered Perceptions": "105:!!RANK!!",
+        "Holy Oration": "116:!!RANK!!"
+      }
+    },
+    "shadow": {
+      "shirt": {
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "Painbreaker Psalm": "sl_legendary,bonus_id=6981",
+        "Shadowflame Prism": "sl_legendary,bonus_id=6982",
+        "Eternal Call to the Void": "sl_legendary,bonus_id=6983",
+        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161",
+        "Talbadar's Stratagem": "sl_legendary,bonus_id=7162"
+      },
+      "conduit": {
+        "Translucent Image": "66:!!RANK!!",
+        "Move with Grace": "67:!!RANK!!",
+        "Clear Mind": "69:!!RANK!!",
+        "Charitable Soul": "71:!!RANK!!",
+        "Light's Inspiration": "72:!!RANK!!",
+        "Power Unto Others": "73:!!RANK!!",
+        "Mental Recovery": "85:!!RANK!!",
+        "Courageous Ascension": "87:!!RANK!!",
+        "Festering Transfusion": "90:!!RANK!!",
+        "Fae Fermata": "101:!!RANK!!",
+        "Shattered Perceptions": "105:!!RANK!!",
+        "Haunting Apparitions": "107:!!RANK!!",
+        "Mind Devourer": "113:!!RANK!!",
+        "Rabid Shadows": "114:!!RANK!!",
+        "Dissonant Echoes": "115:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

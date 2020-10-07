@@ -1,0 +1,119 @@
+{
+  "specials": {
+    "blood": {
+      "shirt": {
+        "Bryndaor's Might": "sl_legendary,bonus_id=6940",
+        "Crimson Rune Weapon": "sl_legendary,bonus_id=6941",
+        "Vampiric Aura": "sl_legendary,bonus_id=6942",
+        "Gorefiend's Domination": "sl_legendary,bonus_id=6943",
+        "Death's Embrace": "sl_legendary,bonus_id=6947",
+        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
+        "Superstrain": "sl_legendary,bonus_id=6953",
+        "Phearomones": "sl_legendary,bonus_id=6954",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Chilled Resilience": "68:!!RANK!!",
+        "Spirit Drain": "70:!!RANK!!",
+        "Reinforced Shell": "74:!!RANK!!",
+        "Withering Plague": "80:!!RANK!!",
+        "Blood Bond": "86:!!RANK!!",
+        "Hardened Bones": "88:!!RANK!!",
+        "Fleeting Wind": "99:!!RANK!!",
+        "Unending Grip": "106:!!RANK!!",
+        "Insatiable Appetite": "108:!!RANK!!",
+        "Meat Shield": "121:!!RANK!!",
+        "Debilitating Malady": "123:!!RANK!!",
+        "Impenetrable Gloom": "126:!!RANK!!",
+        "Brutal Grasp": "127:!!RANK!!",
+        "Proliferation": "128:!!RANK!!",
+        "Withering Ground": "250:!!RANK!!"
+      }
+    },
+    "frost": {
+      "shirt": {
+        "Koltira's Favor": "sl_legendary,bonus_id=6944",
+        "Biting Cold": "sl_legendary,bonus_id=6945",
+        "Absolute Zero": "sl_legendary,bonus_id=6946",
+        "Death's Embrace": "sl_legendary,bonus_id=6947",
+        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
+        "Superstrain": "sl_legendary,bonus_id=6953",
+        "Phearomones": "sl_legendary,bonus_id=6954",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Rage of the Frozen Champion": "sl_legendary,bonus_id=7160"
+      },
+      "conduit": {
+        "Chilled Resilience": "68:!!RANK!!",
+        "Spirit Drain": "70:!!RANK!!",
+        "Reinforced Shell": "74:!!RANK!!",
+        "Accelerated Cold": "79:!!RANK!!",
+        "Eradicating Blow": "83:!!RANK!!",
+        "Hardened Bones": "88:!!RANK!!",
+        "Biting Cold": "91:!!RANK!!",
+        "Fleeting Wind": "99:!!RANK!!",
+        "Unending Grip": "106:!!RANK!!",
+        "Insatiable Appetite": "108:!!RANK!!",
+        "Unleashed Frenzy": "122:!!RANK!!",
+        "Impenetrable Gloom": "126:!!RANK!!",
+        "Brutal Grasp": "127:!!RANK!!",
+        "Proliferation": "128:!!RANK!!",
+        "Withering Ground": "250:!!RANK!!"
+      }
+    },
+    "unholy": {
+      "shirt": {
+        "Death's Embrace": "sl_legendary,bonus_id=6947",
+        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
+        "Reanimated Shambler": "sl_legendary,bonus_id=6949",
+        "Frenzied Monstrosity": "sl_legendary,bonus_id=6950",
+        "Death's Certainty": "sl_legendary,bonus_id=6951",
+        "Deadliest Coil": "sl_legendary,bonus_id=6952",
+        "Superstrain": "sl_legendary,bonus_id=6953",
+        "Phearomones": "sl_legendary,bonus_id=6954",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
+      },
+      "conduit": {
+        "Eternal Hunger": "65:!!RANK!!",
+        "Chilled Resilience": "68:!!RANK!!",
+        "Spirit Drain": "70:!!RANK!!",
+        "Reinforced Shell": "74:!!RANK!!",
+        "Hardened Bones": "88:!!RANK!!",
+        "Embrace Death": "89:!!RANK!!",
+        "Fleeting Wind": "99:!!RANK!!",
+        "Unending Grip": "106:!!RANK!!",
+        "Insatiable Appetite": "108:!!RANK!!",
+        "Convocation of the Dead": "124:!!RANK!!",
+        "Lingering Plague": "125:!!RANK!!",
+        "Impenetrable Gloom": "126:!!RANK!!",
+        "Brutal Grasp": "127:!!RANK!!",
+        "Proliferation": "128:!!RANK!!",
+        "Withering Ground": "250:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}

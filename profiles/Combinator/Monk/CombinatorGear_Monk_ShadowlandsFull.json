@@ -1,0 +1,119 @@
+{
+  "specials": {
+    "brewmaster": {
+      "shirt": {
+        "Charred Passions": "sl_legendary,bonus_id=7076",
+        "Stormstout's Last Keg": "sl_legendary,bonus_id=7077",
+        "Celestial Infusion": "sl_legendary,bonus_id=7078",
+        "Shaohao's Might": "sl_legendary,bonus_id=7079",
+        "Swiftsure Wraps": "sl_legendary,bonus_id=7080",
+        "Fatal Touch": "sl_legendary,bonus_id=7081",
+        "Invoker's Delight": "sl_legendary,bonus_id=7082",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Escape from Reality": "sl_legendary,bonus_id=7184"
+      },
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Scalding Brew": "46:!!RANK!!",
+        "Celestial Effervescence": "47:!!RANK!!",
+        "Evasive Stride": "56:!!RANK!!",
+        "Walk with the Ox": "57:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    },
+    "windwalker": {
+      "shirt": {
+        "Keefer's Skyreach": "sl_legendary,bonus_id=7068",
+        "Last Emperor's Capacitor": "sl_legendary,bonus_id=7069",
+        "Xuen's Treasure": "sl_legendary,bonus_id=7070",
+        "Jade Ignition": "sl_legendary,bonus_id=7071",
+        "Swiftsure Wraps": "sl_legendary,bonus_id=7080",
+        "Fatal Touch": "sl_legendary,bonus_id=7081",
+        "Invoker's Delight": "sl_legendary,bonus_id=7082",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Escape from Reality": "sl_legendary,bonus_id=7184"
+      },
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Inner Fury": "16:!!RANK!!",
+        "Calculated Strikes": "19:!!RANK!!",
+        "Coordinated Offensive": "22:!!RANK!!",
+        "Xuen's Bond": "24:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    },
+    "mistweaver": {
+      "shirt": {
+        "Tear of Morning": "sl_legendary,bonus_id=7072",
+        "Yu'lon's Whisper": "sl_legendary,bonus_id=7073",
+        "Clouded Focus": "sl_legendary,bonus_id=7074",
+        "Ancient Teachings of the Monastery": "sl_legendary,bonus_id=7075",
+        "Swiftsure Wraps": "sl_legendary,bonus_id=7080",
+        "Fatal Touch": "sl_legendary,bonus_id=7081",
+        "Invoker's Delight": "sl_legendary,bonus_id=7082",
+        "Echo of Eonar": "sl_legendary,bonus_id=7100",
+        "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
+        "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
+        "Sephuz's Proclamation": "sl_legendary,bonus_id=7103",
+        "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
+        "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
+        "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
+        "Maw Rattle": "sl_legendary,bonus_id=7159",
+        "Escape from Reality": "sl_legendary,bonus_id=7184"
+      },
+      "conduit": {
+        "Harm Denial": "15:!!RANK!!",
+        "Grounding Breath": "25:!!RANK!!",
+        "Jade Bond": "28:!!RANK!!",
+        "Resplendent Mist": "31:!!RANK!!",
+        "Fortifying Ingredients": "33:!!RANK!!",
+        "Lingering Numbness": "35:!!RANK!!",
+        "Dizzying Tumble": "37:!!RANK!!",
+        "Swift Transference": "41:!!RANK!!",
+        "Tumbling Technique": "42:!!RANK!!",
+        "Rising Sun Revival": "44:!!RANK!!",
+        "Nourishing Chi": "54:!!RANK!!",
+        "Strike with Clarity": "59:!!RANK!!",
+        "Bone Marrow Hops": "60:!!RANK!!",
+        "Imbued Reflections": "62:!!RANK!!",
+        "Way of the Fae": "63:!!RANK!!"
+      }
+    }
+  },
+  "sets": {
+    "None": {
+    }
+  }
+}
