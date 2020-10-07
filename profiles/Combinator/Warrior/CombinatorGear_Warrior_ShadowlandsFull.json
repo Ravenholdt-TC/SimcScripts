@@ -20,21 +20,14 @@
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
-        "Stalwart Guardian": "5:!!RANK!!",
-        "Brutal Vitality": "7:!!RANK!!",
-        "Inspiring Presence": "8:!!RANK!!",
-        "Safeguard": "9:!!RANK!!",
         "Ashen Juggernaut": "11:!!RANK!!",
         "Crash the Ramparts": "12:!!RANK!!",
-        "Cacophonous Roar": "13:!!RANK!!",
         "Merciless Bonegrinder": "14:!!RANK!!",
-        "Indelible Victory": "27:!!RANK!!",
         "Piercing Verdict": "154:!!RANK!!",
         "Veteran's Repute": "158:!!RANK!!",
         "Harrowing Punishment": "165:!!RANK!!",
         "Mortal Combo": "169:!!RANK!!",
-        "Destructive Reverberations": "190:!!RANK!!",
-        "Disturb the Peace": "191:!!RANK!!"
+        "Destructive Reverberations": "190:!!RANK!!"
       }
     },
     "fury": {
@@ -57,21 +50,14 @@
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
-        "Stalwart Guardian": "5:!!RANK!!",
-        "Brutal Vitality": "7:!!RANK!!",
-        "Inspiring Presence": "8:!!RANK!!",
-        "Safeguard": "9:!!RANK!!",
         "Ashen Juggernaut": "11:!!RANK!!",
-        "Cacophonous Roar": "13:!!RANK!!",
-        "Indelible Victory": "27:!!RANK!!",
         "Depths of Insanity": "50:!!RANK!!",
         "Hack and Slash": "52:!!RANK!!",
         "Vicious Contempt": "64:!!RANK!!",
         "Piercing Verdict": "154:!!RANK!!",
         "Veteran's Repute": "158:!!RANK!!",
         "Harrowing Punishment": "165:!!RANK!!",
-        "Destructive Reverberations": "190:!!RANK!!",
-        "Disturb the Peace": "191:!!RANK!!"
+        "Destructive Reverberations": "190:!!RANK!!"
       }
     },
     "protection": {
@@ -94,21 +80,12 @@
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
-        "Stalwart Guardian": "5:!!RANK!!",
-        "Brutal Vitality": "7:!!RANK!!",
-        "Inspiring Presence": "8:!!RANK!!",
-        "Safeguard": "9:!!RANK!!",
-        "Iron Maiden": "10:!!RANK!!",
         "Ashen Juggernaut": "11:!!RANK!!",
-        "Cacophonous Roar": "13:!!RANK!!",
-        "Indelible Victory": "27:!!RANK!!",
-        "Unnerving Focus": "49:!!RANK!!",
         "Piercing Verdict": "154:!!RANK!!",
         "Veteran's Repute": "158:!!RANK!!",
         "Harrowing Punishment": "165:!!RANK!!",
         "Show of Force": "186:!!RANK!!",
-        "Destructive Reverberations": "190:!!RANK!!",
-        "Disturb the Peace": "191:!!RANK!!"
+        "Destructive Reverberations": "190:!!RANK!!"
       }
     }
   },

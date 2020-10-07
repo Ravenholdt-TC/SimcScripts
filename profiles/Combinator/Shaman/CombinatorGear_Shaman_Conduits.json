@@ -2,13 +2,6 @@
   "specials": {
     "elemental": {
       "conduit": {
-        "Astral Protection": "92:!!RANK!!",
-        "Refreshing Waters": "93:!!RANK!!",
-        "Vital Accretion": "94:!!RANK!!",
-        "Thunderous Paws": "95:!!RANK!!",
-        "Totemic Surge": "96:!!RANK!!",
-        "Crippling Hex": "97:!!RANK!!",
-        "Spiritual Resonance": "98:!!RANK!!",
         "Pyroclastic Shock": "100:!!RANK!!",
         "High Voltage": "102:!!RANK!!",
         "Shake the Foundations": "103:!!RANK!!",
@@ -21,13 +14,6 @@
     },
     "enhancement": {
       "conduit": {
-        "Astral Protection": "92:!!RANK!!",
-        "Refreshing Waters": "93:!!RANK!!",
-        "Vital Accretion": "94:!!RANK!!",
-        "Thunderous Paws": "95:!!RANK!!",
-        "Totemic Surge": "96:!!RANK!!",
-        "Crippling Hex": "97:!!RANK!!",
-        "Spiritual Resonance": "98:!!RANK!!",
         "Unruly Winds": "109:!!RANK!!",
         "Focused Lightning": "110:!!RANK!!",
         "Magma Fist": "111:!!RANK!!",
@@ -40,13 +26,6 @@
     },
     "restoration": {
       "conduit": {
-        "Astral Protection": "92:!!RANK!!",
-        "Refreshing Waters": "93:!!RANK!!",
-        "Vital Accretion": "94:!!RANK!!",
-        "Thunderous Paws": "95:!!RANK!!",
-        "Totemic Surge": "96:!!RANK!!",
-        "Crippling Hex": "97:!!RANK!!",
-        "Spiritual Resonance": "98:!!RANK!!",
         "Embrace of Earth": "117:!!RANK!!",
         "Swirling Currents": "118:!!RANK!!",
         "Heavy Rainfall": "119:!!RANK!!",

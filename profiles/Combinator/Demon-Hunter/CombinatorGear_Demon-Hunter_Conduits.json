@@ -2,13 +2,6 @@
   "specials": {
     "havoc": {
       "conduit": {
-        "Fel Defender": "130:!!RANK!!",
-        "Viscous Ink": "131:!!RANK!!",
-        "Shattered Restoration": "132:!!RANK!!",
-        "Felfire Haste": "134:!!RANK!!",
-        "Ravenous Consumption": "135:!!RANK!!",
-        "Demonic Parole": "138:!!RANK!!",
-        "Lost in Darkness": "145:!!RANK!!",
         "Relentless Onslaught": "150:!!RANK!!",
         "Dancing with Fate": "151:!!RANK!!",
         "Serrated Glaive": "152:!!RANK!!",
@@ -21,17 +14,8 @@
     },
     "vengeance": {
       "conduit": {
-        "Fel Defender": "130:!!RANK!!",
-        "Viscous Ink": "131:!!RANK!!",
-        "Shattered Restoration": "132:!!RANK!!",
-        "Felfire Haste": "134:!!RANK!!",
-        "Ravenous Consumption": "135:!!RANK!!",
-        "Demonic Parole": "138:!!RANK!!",
-        "Lost in Darkness": "145:!!RANK!!",
         "Growing Inferno": "153:!!RANK!!",
         "Soul Furnace": "172:!!RANK!!",
-        "Demon Muzzle": "179:!!RANK!!",
-        "Roaring Fire": "180:!!RANK!!",
         "Repeat Decree": "187:!!RANK!!",
         "Increased Scrutiny": "198:!!RANK!!",
         "Brooding Pool": "200:!!RANK!!",

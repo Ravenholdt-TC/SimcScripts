@@ -2,13 +2,6 @@
   "specials": {
     "holy": {
       "conduit": {
-        "Divine Call": "129:!!RANK!!",
-        "Shielding Words": "133:!!RANK!!",
-        "Golden Path": "141:!!RANK!!",
-        "Pure Concentration": "142:!!RANK!!",
-        "Light's Barding": "159:!!RANK!!",
-        "Wrench Evil": "161:!!RANK!!",
-        "Echoing Blessings": "163:!!RANK!!",
         "Enkindled Spirit": "177:!!RANK!!",
         "Resplendent Light": "184:!!RANK!!",
         "Focused Light": "193:!!RANK!!",
@@ -21,17 +14,8 @@
     },
     "protection": {
       "conduit": {
-        "Divine Call": "129:!!RANK!!",
-        "Shielding Words": "133:!!RANK!!",
-        "Golden Path": "141:!!RANK!!",
-        "Pure Concentration": "142:!!RANK!!",
-        "Light's Barding": "159:!!RANK!!",
-        "Wrench Evil": "161:!!RANK!!",
-        "Echoing Blessings": "163:!!RANK!!",
         "Vengeful Shock": "195:!!RANK!!",
         "Punish the Guilty": "196:!!RANK!!",
-        "Resolute Defender": "197:!!RANK!!",
-        "Royal Decree": "209:!!RANK!!",
         "The Long Summer": "210:!!RANK!!",
         "Righteous Might": "213:!!RANK!!",
         "Hallowed Discernment": "215:!!RANK!!",
@@ -40,13 +24,6 @@
     },
     "retribution": {
       "conduit": {
-        "Divine Call": "129:!!RANK!!",
-        "Shielding Words": "133:!!RANK!!",
-        "Golden Path": "141:!!RANK!!",
-        "Pure Concentration": "142:!!RANK!!",
-        "Light's Barding": "159:!!RANK!!",
-        "Wrench Evil": "161:!!RANK!!",
-        "Echoing Blessings": "163:!!RANK!!",
         "Expurgation": "164:!!RANK!!",
         "Truth's Wake": "167:!!RANK!!",
         "Templar's Vindication": "176:!!RANK!!",

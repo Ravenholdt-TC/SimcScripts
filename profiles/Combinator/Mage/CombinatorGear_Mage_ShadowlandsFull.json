@@ -20,21 +20,14 @@
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
-        "Winter's Protection": "23:!!RANK!!",
-        "Flow of Time": "26:!!RANK!!",
-        "Grounding Surge": "29:!!RANK!!",
         "Arcane Prodigy": "34:!!RANK!!",
         "Nether Precision": "36:!!RANK!!",
         "Discipline of the Grove": "38:!!RANK!!",
         "Gift of the Lich": "39:!!RANK!!",
         "Ire of the Ascended": "40:!!RANK!!",
         "Siphoned Malice": "43:!!RANK!!",
-        "Cryo-Freeze": "45:!!RANK!!",
-        "Diverted Energy": "48:!!RANK!!",
         "Magi's Brand": "51:!!RANK!!",
-        "Artifice of the Archmage": "55:!!RANK!!",
-        "Incantation of Swiftness": "58:!!RANK!!",
-        "Tempest Barrier": "61:!!RANK!!"
+        "Artifice of the Archmage": "55:!!RANK!!"
       }
     },
     "fire": {
@@ -57,20 +50,13 @@
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
-        "Winter's Protection": "23:!!RANK!!",
-        "Flow of Time": "26:!!RANK!!",
-        "Grounding Surge": "29:!!RANK!!",
         "Infernal Cascade": "30:!!RANK!!",
         "Master Flame": "32:!!RANK!!",
         "Discipline of the Grove": "38:!!RANK!!",
         "Gift of the Lich": "39:!!RANK!!",
         "Ire of the Ascended": "40:!!RANK!!",
         "Siphoned Malice": "43:!!RANK!!",
-        "Cryo-Freeze": "45:!!RANK!!",
-        "Diverted Energy": "48:!!RANK!!",
         "Flame Accretion": "53:!!RANK!!",
-        "Incantation of Swiftness": "58:!!RANK!!",
-        "Tempest Barrier": "61:!!RANK!!",
         "Controlled Destruction": "249:!!RANK!!"
       }
     },
@@ -98,17 +84,10 @@
         "Shivering Core": "18:!!RANK!!",
         "Icy Propulsion": "20:!!RANK!!",
         "Ice Bite": "21:!!RANK!!",
-        "Winter's Protection": "23:!!RANK!!",
-        "Flow of Time": "26:!!RANK!!",
-        "Grounding Surge": "29:!!RANK!!",
         "Discipline of the Grove": "38:!!RANK!!",
         "Gift of the Lich": "39:!!RANK!!",
         "Ire of the Ascended": "40:!!RANK!!",
-        "Siphoned Malice": "43:!!RANK!!",
-        "Cryo-Freeze": "45:!!RANK!!",
-        "Diverted Energy": "48:!!RANK!!",
-        "Incantation of Swiftness": "58:!!RANK!!",
-        "Tempest Barrier": "61:!!RANK!!"
+        "Siphoned Malice": "43:!!RANK!!"
       }
     }
   },

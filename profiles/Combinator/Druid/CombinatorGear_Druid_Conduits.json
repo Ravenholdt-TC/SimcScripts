@@ -2,13 +2,6 @@
   "specials": {
     "balance": {
       "conduit": {
-        "Tough as Bark": "254:!!RANK!!",
-        "Ursine Vigor": "255:!!RANK!!",
-        "Innate Resolve": "256:!!RANK!!",
-        "Tireless Pursuit": "257:!!RANK!!",
-        "Born Anew": "258:!!RANK!!",
-        "Front of the Pack": "259:!!RANK!!",
-        "Born of the Wilds": "260:!!RANK!!",
         "Stellar Inspiration": "261:!!RANK!!",
         "Precise Alignment": "262:!!RANK!!",
         "Fury of the Skies": "263:!!RANK!!",
@@ -21,13 +14,6 @@
     },
     "feral": {
       "conduit": {
-        "Tough as Bark": "254:!!RANK!!",
-        "Ursine Vigor": "255:!!RANK!!",
-        "Innate Resolve": "256:!!RANK!!",
-        "Tireless Pursuit": "257:!!RANK!!",
-        "Born Anew": "258:!!RANK!!",
-        "Front of the Pack": "259:!!RANK!!",
-        "Born of the Wilds": "260:!!RANK!!",
         "Taste for Blood": "265:!!RANK!!",
         "Incessant Hunter": "266:!!RANK!!",
         "Sudden Ambush": "267:!!RANK!!",
@@ -40,17 +26,8 @@
     },
     "guardian": {
       "conduit": {
-        "Tough as Bark": "254:!!RANK!!",
-        "Ursine Vigor": "255:!!RANK!!",
-        "Innate Resolve": "256:!!RANK!!",
-        "Tireless Pursuit": "257:!!RANK!!",
-        "Born Anew": "258:!!RANK!!",
-        "Front of the Pack": "259:!!RANK!!",
-        "Born of the Wilds": "260:!!RANK!!",
         "Unchecked Aggression": "269:!!RANK!!",
         "Savage Combatant": "270:!!RANK!!",
-        "Well-Honed Instincts": "271:!!RANK!!",
-        "Layered Mane": "272:!!RANK!!",
         "Deep Allegiance": "277:!!RANK!!",
         "Evolved Swarm": "278:!!RANK!!",
         "Conflux of Elements": "279:!!RANK!!",
@@ -59,13 +36,6 @@
     },
     "restoration": {
       "conduit": {
-        "Tough as Bark": "254:!!RANK!!",
-        "Ursine Vigor": "255:!!RANK!!",
-        "Innate Resolve": "256:!!RANK!!",
-        "Tireless Pursuit": "257:!!RANK!!",
-        "Born Anew": "258:!!RANK!!",
-        "Front of the Pack": "259:!!RANK!!",
-        "Born of the Wilds": "260:!!RANK!!",
         "Unstoppable Growth": "273:!!RANK!!",
         "Flash of Clarity": "274:!!RANK!!",
         "Floral Recycling": "275:!!RANK!!",

@@ -2,17 +2,10 @@
   "specials": {
     "discipline": {
       "conduit": {
-        "Translucent Image": "66:!!RANK!!",
-        "Move with Grace": "67:!!RANK!!",
-        "Clear Mind": "69:!!RANK!!",
-        "Charitable Soul": "71:!!RANK!!",
-        "Light's Inspiration": "72:!!RANK!!",
-        "Power Unto Others": "73:!!RANK!!",
         "Shining Radiance": "75:!!RANK!!",
         "Pain Transformation": "76:!!RANK!!",
         "Exaltation": "77:!!RANK!!",
         "Swift Penitence": "81:!!RANK!!",
-        "Mental Recovery": "85:!!RANK!!",
         "Courageous Ascension": "87:!!RANK!!",
         "Festering Transfusion": "90:!!RANK!!",
         "Fae Fermata": "101:!!RANK!!",
@@ -21,16 +14,9 @@
     },
     "holy": {
       "conduit": {
-        "Translucent Image": "66:!!RANK!!",
-        "Move with Grace": "67:!!RANK!!",
-        "Clear Mind": "69:!!RANK!!",
-        "Charitable Soul": "71:!!RANK!!",
-        "Light's Inspiration": "72:!!RANK!!",
-        "Power Unto Others": "73:!!RANK!!",
         "Lasting Spirit": "78:!!RANK!!",
         "Focused Mending": "82:!!RANK!!",
         "Resonant Words": "84:!!RANK!!",
-        "Mental Recovery": "85:!!RANK!!",
         "Courageous Ascension": "87:!!RANK!!",
         "Festering Transfusion": "90:!!RANK!!",
         "Fae Fermata": "101:!!RANK!!",
@@ -40,13 +26,6 @@
     },
     "shadow": {
       "conduit": {
-        "Translucent Image": "66:!!RANK!!",
-        "Move with Grace": "67:!!RANK!!",
-        "Clear Mind": "69:!!RANK!!",
-        "Charitable Soul": "71:!!RANK!!",
-        "Light's Inspiration": "72:!!RANK!!",
-        "Power Unto Others": "73:!!RANK!!",
-        "Mental Recovery": "85:!!RANK!!",
         "Courageous Ascension": "87:!!RANK!!",
         "Festering Transfusion": "90:!!RANK!!",
         "Fae Fermata": "101:!!RANK!!",

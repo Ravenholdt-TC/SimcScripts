@@ -21,6 +21,7 @@ ClassAndSpecIds.keys.each do |classStr|
     conduitGear["specials"][specName] = {"conduit" => {}}
     conduitList.each do |conduit|
       next if !conduit["specs"].include?(specId)
+      next if conduit["conduitType"] != 1
 
       itemName = conduit["conduitName"]
       conduitGear["specials"][specName]["conduit"][itemName] = "#{conduit["conduitId"]}:!!RANK!!"

@@ -2,16 +2,7 @@
   "specials": {
     "blood": {
       "conduit": {
-        "Chilled Resilience": "68:!!RANK!!",
-        "Spirit Drain": "70:!!RANK!!",
-        "Reinforced Shell": "74:!!RANK!!",
         "Withering Plague": "80:!!RANK!!",
-        "Blood Bond": "86:!!RANK!!",
-        "Hardened Bones": "88:!!RANK!!",
-        "Fleeting Wind": "99:!!RANK!!",
-        "Unending Grip": "106:!!RANK!!",
-        "Insatiable Appetite": "108:!!RANK!!",
-        "Meat Shield": "121:!!RANK!!",
         "Debilitating Malady": "123:!!RANK!!",
         "Impenetrable Gloom": "126:!!RANK!!",
         "Brutal Grasp": "127:!!RANK!!",
@@ -21,16 +12,9 @@
     },
     "frost": {
       "conduit": {
-        "Chilled Resilience": "68:!!RANK!!",
-        "Spirit Drain": "70:!!RANK!!",
-        "Reinforced Shell": "74:!!RANK!!",
         "Accelerated Cold": "79:!!RANK!!",
         "Eradicating Blow": "83:!!RANK!!",
-        "Hardened Bones": "88:!!RANK!!",
         "Biting Cold": "91:!!RANK!!",
-        "Fleeting Wind": "99:!!RANK!!",
-        "Unending Grip": "106:!!RANK!!",
-        "Insatiable Appetite": "108:!!RANK!!",
         "Unleashed Frenzy": "122:!!RANK!!",
         "Impenetrable Gloom": "126:!!RANK!!",
         "Brutal Grasp": "127:!!RANK!!",
@@ -41,14 +25,7 @@
     "unholy": {
       "conduit": {
         "Eternal Hunger": "65:!!RANK!!",
-        "Chilled Resilience": "68:!!RANK!!",
-        "Spirit Drain": "70:!!RANK!!",
-        "Reinforced Shell": "74:!!RANK!!",
-        "Hardened Bones": "88:!!RANK!!",
         "Embrace Death": "89:!!RANK!!",
-        "Fleeting Wind": "99:!!RANK!!",
-        "Unending Grip": "106:!!RANK!!",
-        "Insatiable Appetite": "108:!!RANK!!",
         "Convocation of the Dead": "124:!!RANK!!",
         "Lingering Plague": "125:!!RANK!!",
         "Impenetrable Gloom": "126:!!RANK!!",
