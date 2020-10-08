@@ -2880,6 +2880,8 @@
         "legendaryName": "Deathly Shadows",
         "legendarySpellID": 340092,
         "specs": [
+            259,
+            260,
             261
         ]
     },
