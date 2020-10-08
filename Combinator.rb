@@ -162,7 +162,7 @@ setups["setups"].each do |setup|
           # Special for Conduits: Exclude other covenant conduits if combinator covenant is set
           cov_requirements = specialCombination.collect { |x| soulbindSettings["covenantConduitsMap"][conduitList.find { |y| y["conduitName"] == x }&.dig("conduitSpellID")&.to_s] }
           next if covenant_simc != "default" && cov_requirements.any? { |x| ![covenant_simc, nil].include?(x) }
-          next if covenant_simc == "default" && (!covenant_default || cov_requirements.any? { |x| ![covenant_default, nil].include?(x) })
+          next if covenant_simc == "default" && cov_requirements.any? { |x| ![covenant_default, nil].include?(x) }
 
           specialProfileName = specialCombination.join("_")
           specialStrings = []
