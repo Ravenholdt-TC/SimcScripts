@@ -16,8 +16,8 @@ to_run = {
       "T25_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
-      "T25_Druid_Balance",
-      "T25_Druid_Feral",
+      # "T25_Druid_Balance",
+      # "T25_Druid_Feral",
       "T25_Druid_Guardian",
     ],
     "Hunter" => [
@@ -47,7 +47,7 @@ to_run = {
       "T25_Rogue_Subtlety",
     ],
     "Shaman" => [
-      "T25_Shaman_Elemental",
+      # "T25_Shaman_Elemental",
       "T25_Shaman_Enhancement",
     ],
     "Warlock" => [
@@ -90,15 +90,15 @@ to_run = {
       "T25_Demon_Hunter_Vengeance Demon-Hunter_Essences ME default",
     ],
     "Druid" => [
-      "T25_Druid_Balance Druid_Azerite Azerite x000xxx",
-      "T25_Druid_Feral Druid_Azerite Azerite x000xxx",
+      # "T25_Druid_Balance Druid_Azerite Azerite x000xxx",
+      # "T25_Druid_Feral Druid_Azerite Azerite x000xxx",
       "T25_Druid_Guardian Druid_Azerite Azerite x111x2x",
       # Essence sims
-      "T25_Druid_Balance Druid_Essences 1E x000xxx",
-      "T25_Druid_Feral Druid_Essences 1E x000xxx",
+      # "T25_Druid_Balance Druid_Essences 1E x000xxx",
+      # "T25_Druid_Feral Druid_Essences 1E x000xxx",
       "T25_Druid_Guardian Druid_Essences 1E x111x2x",
-      "T25_Druid_Balance Druid_Essences ME default",
-      "T25_Druid_Feral Druid_Essences ME default",
+      # "T25_Druid_Balance Druid_Essences ME default",
+      # "T25_Druid_Feral Druid_Essences ME default",
       "T25_Druid_Guardian Druid_Essences ME default",
     ],
     "Hunter" => [
@@ -159,18 +159,18 @@ to_run = {
       "T25_Rogue_Subtlety Rogue_Essences ME default",
     ],
     "Shaman" => [
-      "T25_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx",
+      # "T25_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx",
       "T25_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx",
       # Essence sims
-      "T25_Shaman_Elemental Shaman_Essences 1E xx0x0xx",
+      # "T25_Shaman_Elemental Shaman_Essences 1E xx0x0xx",
       "T25_Shaman_Enhancement Shaman_Essences 1E xx0x0xx",
-      "T25_Shaman_Elemental Shaman_Essences ME default",
+      # "T25_Shaman_Elemental Shaman_Essences ME default",
       "T25_Shaman_Enhancement Shaman_Essences ME default",
     ],
     "Warlock" => [
-      "T25_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx",
+      # "T25_Warlock_Affliction Warlock_Azerite Azerite xx0x0xx",
       "T25_Warlock_Demonology Warlock_Azerite Azerite xx0x0xx",
-      "T25_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx",
+      # "T25_Warlock_Destruction Warlock_Azerite Azerite xx0x0xx",
       # Essence sims
       # "T25_Warlock_Affliction Warlock_Essences 1E xx0x0xx",
       "T25_Warlock_Demonology Warlock_Essences 1E xx0x0xx",
@@ -204,8 +204,8 @@ to_run = {
       "T25_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
-      "T25_Druid_Balance Intelligence",
-      "T25_Druid_Feral Agility",
+      # "T25_Druid_Balance Intelligence",
+      # "T25_Druid_Feral Agility",
       "T25_Druid_Guardian Agility",
     ],
     "Hunter" => [
@@ -235,7 +235,7 @@ to_run = {
       "T25_Rogue_Subtlety Agility",
     ],
     "Shaman" => [
-      "T25_Shaman_Elemental Intelligence",
+      # "T25_Shaman_Elemental Intelligence",
       "T25_Shaman_Enhancement Agility",
     ],
     "Warlock" => [
