@@ -2,24 +2,23 @@
   "specials": {
     "havoc": {
       "conduit": {
-        "Relentless Onslaught": "150:!!RANK!!",
+        "Demon's Touch": "150:!!RANK!!",
         "Dancing with Fate": "151:!!RANK!!",
         "Serrated Glaive": "152:!!RANK!!",
         "Growing Inferno": "153:!!RANK!!",
         "Repeat Decree": "187:!!RANK!!",
         "Increased Scrutiny": "198:!!RANK!!",
         "Brooding Pool": "200:!!RANK!!",
-        "Unnatural Malice": "281:!!RANK!!"
+        "Unnatural Mailce": "281:!!RANK!!"
       }
     },
     "vengeance": {
       "conduit": {
-        "Growing Inferno": "153:!!RANK!!",
         "Soul Furnace": "172:!!RANK!!",
         "Repeat Decree": "187:!!RANK!!",
         "Increased Scrutiny": "198:!!RANK!!",
         "Brooding Pool": "200:!!RANK!!",
-        "Unnatural Malice": "281:!!RANK!!"
+        "Unnatural Mailce": "281:!!RANK!!"
       }
     }
   },
