@@ -59,6 +59,7 @@ GeneratedFolder: generated
 
 # Where templates for the scripts are placed
 ProfilesFolder: profiles
+
 # Additional template sources in the SimC source
 SimcProfileFolders:
 - profiles/DungeonSlice/
@@ -75,18 +76,7 @@ ArchivesFolder: archives
 # Orders (scripts, fightstyles) to run
 RunOrders: [
   [
-    [["Combinator"], ["1T"]]
-  ],
-  [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1T"]]
-  ],
-  [
-    [["Combinator"], ["1TA"]],
-    [["Combinator"], ["DS"]]
-  ],
-  [
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1TA"]],
-    [["RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["DS"]]
+    [["Combinator", "RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1T", "1TA", "DS"]]
   ]
 ]
 

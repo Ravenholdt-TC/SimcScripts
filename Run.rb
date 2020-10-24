@@ -33,6 +33,7 @@ to_run = {
     "Monk" => [
       "T25_Monk_Brewmaster",
       "T25_Monk_Windwalker",
+      "T25_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
       # "T25_Paladin_Protection",
@@ -47,7 +48,7 @@ to_run = {
       "T25_Rogue_Subtlety",
     ],
     "Shaman" => [
-      # "T25_Shaman_Elemental",
+      "T25_Shaman_Elemental",
       "T25_Shaman_Enhancement",
     ],
     "Warlock" => [
@@ -92,11 +93,11 @@ to_run = {
     "Druid" => [
       "T25_Druid_Balance Druid_Azerite Azerite x000xxx",
       "T25_Druid_Feral Druid_Azerite Azerite x000xxx",
-      "T25_Druid_Guardian Druid_Azerite Azerite x111x2x",
+      "T25_Druid_Guardian Druid_Azerite Azerite x030xxx",
       # Essence sims
       "T25_Druid_Balance Druid_Essences 1E x000xxx",
       "T25_Druid_Feral Druid_Essences 1E x000xxx",
-      "T25_Druid_Guardian Druid_Essences 1E x111x2x",
+      "T25_Druid_Guardian Druid_Essences 1E x030xxx",
       "T25_Druid_Balance Druid_Essences ME default",
       "T25_Druid_Feral Druid_Essences ME default",
       "T25_Druid_Guardian Druid_Essences ME default",
@@ -126,24 +127,30 @@ to_run = {
       "T25_Mage_Frost Mage_Essences ME default",
     ],
     "Monk" => [
-      "T25_Monk_Windwalker Monk_Azerite Azerite x0x20xx",
+      "T25_Monk_Brewmaster Monk_Azerite Azerite x0x01xx",
+      "T25_Monk_Windwalker Monk_Azerite Azerite x0x20x[12]",
+      "T25_Monk_Windwalker_Serenity Monk_Azerite Azerite x0x20x3",
       # Essence sims
-      "T25_Monk_Windwalker Monk_Essences 1E x0x20xx",
+      "T25_Monk_Brewmaster Monk_Essences 1E x0x01xx",
+      "T25_Monk_Windwalker Monk_Essences 1E x0x20x[12]",
+      "T25_Monk_Windwalker_Serenity Monk_Essences 1E x0x20x3",
+      "T25_Monk_Brewmaster Monk_Essences ME default",
       "T25_Monk_Windwalker Monk_Essences ME default",
+      "T25_Monk_Windwalker_Serenity Monk_Essences ME default",
     ],
     "Paladin" => [
-      # "T25_Paladin_Protection Paladin_Azerite Azerite xx0000x",
-      "T25_Paladin_Retribution Paladin_Azerite Azerite xx0x00x",
+      # "T25_Paladin_Protection Paladin_Azerite Azerite xx00x0x",
+      "T25_Paladin_Retribution Paladin_Azerite Azerite xx00x0x",
       # Essence sims
-      # "T25_Paladin_Protection Paladin_Essences 1E xx0000x",
-      "T25_Paladin_Retribution Paladin_Essences 1E xx0x00x",
+      # "T25_Paladin_Protection Paladin_Essences 1E xx00x0x",
+      "T25_Paladin_Retribution Paladin_Essences 1E xx00x0x",
       # "T25_Paladin_Protection Paladin_Essences ME default",
       "T25_Paladin_Retribution Paladin_Essences ME default",
     ],
     "Priest" => [
-      "T25_Priest_Shadow Priest_Azerite Azerite x1x1xxx",
+      "T25_Priest_Shadow Priest_Azerite Azerite x0x0xxx",
       # Essence sims
-      "T25_Priest_Shadow Priest_Essences 1E x1x1xxx",
+      "T25_Priest_Shadow Priest_Essences 1E x0x0xxx",
       "T25_Priest_Shadow Priest_Essences ME default",
     ],
     "Rogue" => [
@@ -159,12 +166,12 @@ to_run = {
       "T25_Rogue_Subtlety Rogue_Essences ME default",
     ],
     "Shaman" => [
-      # "T25_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx",
+      "T25_Shaman_Elemental Shaman_Azerite Azerite xx0x0xx",
       "T25_Shaman_Enhancement Shaman_Azerite Azerite xx0x0xx",
       # Essence sims
-      # "T25_Shaman_Elemental Shaman_Essences 1E xx0x0xx",
+      "T25_Shaman_Elemental Shaman_Essences 1E xx0x0xx",
       "T25_Shaman_Enhancement Shaman_Essences 1E xx0x0xx",
-      # "T25_Shaman_Elemental Shaman_Essences ME default",
+      "T25_Shaman_Elemental Shaman_Essences ME default",
       "T25_Shaman_Enhancement Shaman_Essences ME default",
     ],
     "Warlock" => [
@@ -182,11 +189,11 @@ to_run = {
     "Warrior" => [
       "T25_Warrior_Arms Warrior_Azerite Azerite x3x2xxx",
       "T25_Warrior_Fury Warrior_Azerite Azerite x3x2xxx",
-      # "T25_Warrior_Protection Warrior_Azerite Azerite x0x00xx",
+      # "T25_Warrior_Protection Warrior_Azerite Azerite x3x22xx",
       # Essence sims
       "T25_Warrior_Arms Warrior_Essences 1E x3x2xxx",
       "T25_Warrior_Fury Warrior_Essences 1E x3x2xxx",
-      # "T25_Warrior_Protection Warrior_Essences 1E x0x00xx",
+      # "T25_Warrior_Protection Warrior_Essences 1E x3x22xx",
       "T25_Warrior_Arms Warrior_Essences ME default",
       "T25_Warrior_Fury Warrior_Essences ME default",
       # "T25_Warrior_Protection Warrior_Essences ME default",
@@ -219,8 +226,9 @@ to_run = {
       "T25_Mage_Frost Intelligence",
     ],
     "Monk" => [
-      "T25_Monk_Windwalker Agility",
       "T25_Monk_Brewmaster Agility",
+      "T25_Monk_Windwalker Agility",
+      "T25_Monk_Windwalker_Serenity Agility",
     ],
     "Paladin" => [
       # "T25_Paladin_Protection Strength",
@@ -235,7 +243,7 @@ to_run = {
       "T25_Rogue_Subtlety Agility",
     ],
     "Shaman" => [
-      # "T25_Shaman_Elemental Intelligence",
+      "T25_Shaman_Elemental Intelligence",
       "T25_Shaman_Enhancement Agility",
     ],
     "Warlock" => [
