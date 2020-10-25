@@ -150,6 +150,13 @@
             "itemLevels": [125],
             "bonusIds": [],
             "additionalInput": []
+        },
+        {
+            "name": "Highborne Compendium of Storms",
+            "itemId": 169328,
+            "itemLevels": [72],
+            "bonusIds": [],
+            "additionalInput": []
         }
     ]
 }
