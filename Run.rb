@@ -36,7 +36,7 @@ to_run = {
       "T25_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
-      # "T25_Paladin_Protection",
+      "T25_Paladin_Protection",
       "T25_Paladin_Retribution",
     ],
     "Priest" => [
@@ -139,12 +139,12 @@ to_run = {
       "T25_Monk_Windwalker_Serenity Monk_Essences ME default",
     ],
     "Paladin" => [
-      # "T25_Paladin_Protection Paladin_Azerite Azerite xx00x0x",
+      "T25_Paladin_Protection Paladin_Azerite Azerite xx00x0x",
       "T25_Paladin_Retribution Paladin_Azerite Azerite xx00x0x",
       # Essence sims
-      # "T25_Paladin_Protection Paladin_Essences 1E xx00x0x",
+      "T25_Paladin_Protection Paladin_Essences 1E xx00x0x",
       "T25_Paladin_Retribution Paladin_Essences 1E xx00x0x",
-      # "T25_Paladin_Protection Paladin_Essences ME default",
+      "T25_Paladin_Protection Paladin_Essences ME default",
       "T25_Paladin_Retribution Paladin_Essences ME default",
     ],
     "Priest" => [
@@ -231,7 +231,7 @@ to_run = {
       "T25_Monk_Windwalker_Serenity Agility",
     ],
     "Paladin" => [
-      # "T25_Paladin_Protection Strength",
+      "T25_Paladin_Protection Strength",
       "T25_Paladin_Retribution Strength",
     ],
     "Priest" => [
