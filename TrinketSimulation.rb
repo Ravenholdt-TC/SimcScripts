@@ -65,9 +65,10 @@ trinketListProfiles.each do |pname, pfile|
   combinationOverrides.each do |optionsString, overrides|
     trinketList["trinkets"].each do |trinket|
       bonusIdString = trinket["bonusIds"].empty? ? "" : ",bonus_id=" + trinket["bonusIds"].join("/")
-      trinket["itemLevels"].each do |ilvl|
+      trinket["itemLevels"].each_with_index do |ilvl, index|
         trinketString = trinket["itemId"]
         ilevelString = "ilevel=#{ilvl}"
+        enchantString = trinket["enchants"].empty? ? "" : ",enchant=" + trinket["enchants"][index]
         if trinket["gemmedInto"]
           trinketString = "#{trinket["gemmedInto"]},gem_id=#{trinket["itemId"]}"
           ilevelString += "gem_ilevel=#{ilvl}"
@@ -75,7 +76,7 @@ trinketListProfiles.each do |pname, pfile|
         name = "#{trinket["name"]}#{"--" if optionsString}#{optionsString}_#{ilvl}"
         prefix = "profileset.\"#{name}\"+="
         simcInput.push(prefix + "name=\"#{name}\"")
-        simcInput.push(prefix + "trinket1=,id=#{trinketString},#{ilevelString}#{bonusIdString}")
+        simcInput.push(prefix + "trinket1=,id=#{trinketString},#{ilevelString}#{bonusIdString}#{enchantString}")
         trinket["additionalInput"].each do |input|
           simcInput.push(prefix + "#{input}")
         end

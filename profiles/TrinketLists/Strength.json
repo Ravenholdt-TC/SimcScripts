@@ -6,6 +6,7 @@
             "itemId": 169314,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -13,6 +14,7 @@
             "itemId": 169319,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -20,6 +22,7 @@
             "itemId": 169307,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -27,6 +30,7 @@
             "itemId": 169313,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -34,6 +38,7 @@
             "itemId": 169311,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Nyalotha Raid
@@ -42,6 +47,7 @@
             "itemId": 173943,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -49,6 +55,7 @@
             "itemId": 173946,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -56,6 +63,15 @@
             "itemId": 174500,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vita-Charged Titanshard (~4 Allies)",
+            "itemId": 174500,
+            "itemLevels": [115, 130],
+            "bonusIds": [],
+            "enchants": ["42haste", "44haste"],
             "additionalInput": []
         },
         {
@@ -63,6 +79,7 @@
             "itemId": 174528,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -70,6 +87,7 @@
             "itemId": 174044,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Dungeons
@@ -78,6 +96,7 @@
             "itemId": 158367,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -85,6 +104,7 @@
             "itemId": 158712,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -92,6 +112,7 @@
             "itemId": 159611,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -99,6 +120,7 @@
             "itemId": 159616,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -106,6 +128,7 @@
             "itemId": 159619,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -113,6 +136,7 @@
             "itemId": 159625,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -120,6 +144,7 @@
             "itemId": 159627,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -127,6 +152,7 @@
             "itemId": 169769,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Professions
@@ -135,6 +161,7 @@
             "itemId": 171085,
             "itemLevels": [125],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         }
     ]

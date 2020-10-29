@@ -6,6 +6,7 @@
             "itemId": 169314,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -13,6 +14,7 @@
             "itemId": 168905,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -20,6 +22,7 @@
             "itemId": 169304,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -27,6 +30,7 @@
             "itemId": 169306,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -34,6 +38,7 @@
             "itemId": 169305,
             "itemLevels": [100],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Nyalotha Raid
@@ -42,6 +47,7 @@
             "itemId": 174180,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -49,6 +55,7 @@
             "itemId": 173944,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -56,6 +63,7 @@
             "itemId": 174103,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -63,6 +71,7 @@
             "itemId": 174060,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -70,6 +79,15 @@
             "itemId": 174500,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vita-Charged Titanshard (~4 Allies)",
+            "itemId": 174500,
+            "itemLevels": [115, 130],
+            "bonusIds": [],
+            "enchants": ["42haste", "44haste"],
             "additionalInput": []
         },
         {
@@ -77,6 +95,7 @@
             "itemId": 174528,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -84,6 +103,7 @@
             "itemId": 174044,
             "itemLevels": [115, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Dungeons
@@ -92,6 +112,7 @@
             "itemId": 159610,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -99,6 +120,7 @@
             "itemId": 159615,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -106,6 +128,7 @@
             "itemId": 159620,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -113,6 +136,7 @@
             "itemId": 159622,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -120,6 +144,7 @@
             "itemId": 159624,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -127,6 +152,7 @@
             "itemId": 159630,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -134,6 +160,7 @@
             "itemId": 159631,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -141,6 +168,7 @@
             "itemId": 169344,
             "itemLevels": [120, 130],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         // Professions
@@ -149,6 +177,7 @@
             "itemId": 171085,
             "itemLevels": [125],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         },
         {
@@ -156,6 +185,7 @@
             "itemId": 169328,
             "itemLevels": [72],
             "bonusIds": [],
+            "enchants": [],
             "additionalInput": []
         }
     ]
