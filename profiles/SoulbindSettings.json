@@ -17,12 +17,6 @@
             "spellId": 328266
         },
         {
-            "spellName": "Let Go of the Past",
-            "soulbindName": "Pelagos",
-            "covenant": "kyrian",
-            "spellId": 328257
-        },
-        {
             "spellName": "Pointed Courage",
             "soulbindName": "Kleia",
             "covenant": "kyrian",
@@ -65,6 +59,12 @@
             "spellId": 342156
         },
         {
+            "spellName": "Forgeborne Reveries",
+            "soulbindName": "Heirmir",
+            "covenant": "necrolord",
+            "spellId": 326514
+        },
+        {
             "spellName": "Heirmir's Arsenal: Marrowed Gemstone",
             "soulbindName": "Heirmir",
             "covenant": "necrolord",
@@ -81,6 +81,12 @@
             "soulbindName": "Niya",
             "covenant": "night_fae",
             "spellId": 320660
+        },
+        {
+            "spellName": "Niya's Tools: Herbs",
+            "soulbindName": "Niya",
+            "covenant": "night_fae",
+            "spellId": 320662
         },
         {
             "spellName": "Grove Invigoration",
