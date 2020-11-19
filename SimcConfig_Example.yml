@@ -76,7 +76,7 @@ ArchivesFolder: archives
 # Orders (scripts, fightstyles) to run
 RunOrders: [
   [
-    [["Combinator", "RaceSimulation", "TrinketSimulation", "AzeriteSimulation", "EssenceSimulation"], ["1T", "1TA", "DS"]]
+    [["Combinator", "RaceSimulation", "TrinketSimulation", "SoulbindSimulation", "LegendarySimulation"], ["1T", "1TA", "DS"]]
   ]
 ]
 
