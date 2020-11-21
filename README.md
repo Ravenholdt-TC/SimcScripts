@@ -40,20 +40,6 @@ compared to the Template profile.
 
 Special Trinket simulation settings can be set in `conf/SimcTrinketConfig.simc`.
 
-## AzeriteSimulation
-
-Usage:
-1. Create a simulation profile file in your `profiles/Templates` class folder. This file defines the
-   base character to simulate.
-2. Run `AzeriteSimulation.rb`. It will ask you to select the profiles.
-3. Wait for the simulation to run until it says it's done.
-4. The result will be two CSV files in the `reports` folder.
-
-One file contains the DPS increases for each Trait and Item Level compared to the Template profile.
-The other one has the results for multiple stacks of the traits.
-
-Special Azerite simulation settings can be set in `conf/SimcAzeriteConfig.simc`.
-
 ## RaceSimulation
 
 Usage:

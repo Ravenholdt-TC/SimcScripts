@@ -37,15 +37,6 @@ Logging.LogScriptInfo "Generating profilesets..."
 simcInput.push 'name="Template"'
 simcInput.push "trinket1=empty"
 simcInput.push "trinket2=empty"
-
-# 9.0 Prepatch HAX, remove me later
-if template.start_with?("T25") || template.start_with?("DS")
-  simcInput.push "level=50"
-  simcInput.push "scale_itemlevel_down_only=1"
-  simcInput.push "scale_to_itemlevel=145"
-  simcInput.push "default_actions=1"
-end
-
 simcInput.push ""
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.

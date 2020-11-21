@@ -55,50 +55,14 @@ puts
 gear = JSONParser.ReadFile(gearProfileFile)
 setups = JSONParser.ReadFile(setupsProfileFile)
 
-# Special case, try to use HD top essences for 3E/4E combinations
-if ["3E", "4E"].include?(setupsProfile)
-  topMajors, topMinors = HeroInterface.GetTopEssences(fightstyle, profile)
-  if !topMajors.empty? && !topMinors.empty?
-    gear["specials"][spec]["essenceMajor"].reject! { |x, v| !topMajors.keys.any? { |t| x.include?(t) } }
-    gear["specials"][spec]["essenceMinor"].reject! { |x, v| !topMinors.keys.any? { |t| x.include?(t) } }
-  end
-end
-
 # Duplicate two-slot items
 gear["specials"][spec]["finger2"] = gear["specials"][spec]["finger1"]
 gear["specials"][spec]["trinket2"] = gear["specials"][spec]["trinket1"]
 
-# Duplicate Azerite as "six slots"
-gear["specials"][spec]["azerite2"] = gear["specials"][spec]["azerite"]
-gear["specials"][spec]["azerite3"] = gear["specials"][spec]["azerite"]
-gear["specials"][spec]["azerite4"] = gear["specials"][spec]["azerite"]
-gear["specials"][spec]["azerite5"] = gear["specials"][spec]["azerite"]
-gear["specials"][spec]["azerite6"] = gear["specials"][spec]["azerite"]
-
-# Duplicate Essences as 4 slots
-gear["specials"][spec]["essenceMinor2"] = gear["specials"][spec]["essenceMinor"]
-gear["specials"][spec]["essenceMinor3"] = gear["specials"][spec]["essenceMinor"]
-
 # Duplicate Conduits for 2 potency slots
 gear["specials"][spec]["conduit2"] = gear["specials"][spec]["conduit"]
 
-hasAnyAzerite = false
-hasAnyEssences = false
 hasAnyConduits = false
-
-# Get base item level for azerite stacks based on Profile name beginning
-hasAnyAzerite = true if setupsProfile == "NoAzerite" # Disable azerite for 0A sims.
-powerSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/AzeriteOptions.json")
-stackPowerLevel = powerSettings["baseItemLevels"].first.last
-powerSettings["baseItemLevels"].each do |prefix, ilvl|
-  if profile.start_with? prefix
-    stackPowerLevel = ilvl
-    break
-  end
-end
-
-# Import essence list in case we need the additonal inputs
-essenceList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Azerite/Essences.json")
 
 # Import soulbind settings file for conduit rank
 conduitList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Conduits.json")
@@ -115,14 +79,6 @@ setups["setups"].each do |setup|
         # Always use first slot for multi slot specials before considering the next ones
         throw :invalidCombination if specialSlots.include?("finger2") && !specialSlots.include?("finger1")
         throw :invalidCombination if specialSlots.include?("trinket2") && !specialSlots.include?("trinket1")
-        (2..6).each do |azNum|
-          prevAzNum = azNum - 1
-          prevAzNum = "" if prevAzNum == 1
-          throw :invalidCombination if specialSlots.include?("azerite#{azNum}") && !specialSlots.include?("azerite#{prevAzNum}")
-        end
-        throw :invalidCombination if specialSlots.include?("essenceMinor") && !specialSlots.include?("essenceMajor")
-        throw :invalidCombination if specialSlots.include?("essenceMinor2") && !specialSlots.include?("essenceMinor")
-        throw :invalidCombination if specialSlots.include?("essenceMinor3") && !specialSlots.include?("essenceMinor2")
         throw :invalidCombination if specialSlots.include?("conduit2") && !specialSlots.include?("conduit")
 
         # Create matching set combination
@@ -147,18 +103,10 @@ setups["setups"].each do |setup|
         specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1 # Create multi-slot cross product
         specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1 # Special handling for only one slot
         specialCombinations = specialCombinations.collect(&:flatten) # Remove inner nested arrays
-        specialCombinations = specialCombinations.collect(&:uniq) unless specialSlots.any? { |x| x.include?("azerite") } # No double elements unless azerite combination
-        if specialSlots.any? { |x| x.include?("essence") }
-          specialCombinations = specialCombinations.uniq { |x| [x[0]] + x[1..-1].sort } # Only unique minor combinations for essences
-        else
-          specialCombinations = specialCombinations.uniq { |x| x.sort } # Only generally unique combinations
-        end
+        specialCombinations = specialCombinations.collect(&:uniq)
+        specialCombinations = specialCombinations.uniq { |x| x.sort } # Only generally unique combinations
         specialCombinations = specialCombinations.select { |x| x.length == numSpecials } # Only desired amount of specials
         specialCombinations.each do |specialCombination|
-          # Special for Azerite: Reject combinations that have more than 3 of the same azerite power
-          next if specialSlots.any?("azerite") && gear["specials"][spec]["azerite"].keys.collect { |x| specialCombination.count(x) }.any? { |x| x > 3 }
-          # Special for Essences: Get essence ID and ensure they are unique (for Worldvein Allies special case)
-          next if specialCombination.collect { |x| essenceList.find { |y| y["name"] == x }&.dig("essenceId") || x }.uniq.count != specialCombination.count
           # Special for Conduits: Exclude other covenant conduits if combinator covenant is set
           cov_requirements = specialCombination.collect { |x| soulbindSettings["covenantConduitsMap"][conduitList.find { |y| y["conduitName"] == x }&.dig("conduitSpellID")&.to_s] }
           next if covenant_simc != "default" && cov_requirements.any? { |x| ![covenant_simc, nil].include?(x) }
@@ -166,36 +114,18 @@ setups["setups"].each do |setup|
 
           specialProfileName = specialCombination.join("_")
           specialStrings = []
-          specialAzeritePowers = []
-          specialEssences = []
           specialConduits = []
           specialCombination.each_with_index do |itemName, idx|
             specialOverrides = ProfileHelper.GetSpecialOverrides("Combinator/#{classfolder}/SpecialOverrides/#{profile}", itemName)
             specialOverrides.each do |specialOverride|
               specialStrings.push(specialOverride)
             end
-            # Special treatment for handling Azerite overrides as specials, also replace !!ILVL!! with fitting ilevel
-            if specialSlots[idx].include? "azerite"
-              specialAzeritePowers.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!ILVL!!", stackPowerLevel.to_s))
-            elsif specialSlots[idx].include? "essence"
-              specialEssences.push(gear["specials"][spec][specialSlots[idx]][itemName])
-              # Handle additional essence input
-              if essence = essenceList.find { |x| x["name"] == itemName }
-                specialStrings += essence["additionalInput"]
-              end
-            elsif specialSlots[idx].include? "conduit"
+            # Special treatment for handling Conduit overrides as specials, also replace !!RANK!! with fitting rank
+            if specialSlots[idx].include? "conduit"
               specialConduits.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!RANK!!", conduitRank.to_s))
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
             end
-          end
-          unless specialAzeritePowers.empty?
-            hasAnyAzerite = true
-            specialStrings.push("azerite_override=#{specialAzeritePowers.join("/")}")
-          end
-          unless specialEssences.empty?
-            hasAnyEssences = true
-            specialStrings.push("azerite_essences=#{specialEssences.join("/")}")
           end
           unless specialConduits.empty?
             hasAnyConduits = true
@@ -211,16 +141,6 @@ end
 # Combine gear with talents and write simc input to file
 simcInput = []
 simcInput.push "name=Template"
-simcInput.push "disable_azerite=items" if hasAnyAzerite
-simcInput.push "azerite_essences=" if hasAnyEssences || hasAnyAzerite
-
-# 9.0 Prepatch HAX, remove me later
-if profile.start_with?("T25") || profile.start_with?("DS")
-  simcInput.push "level=50"
-  simcInput.push "scale_itemlevel_down_only=1"
-  simcInput.push "scale_to_itemlevel=145"
-  simcInput.push "default_actions=1"
-end
 
 if covenant_simc != "default"
   simcInput.push "covenant=" + covenant_simc
@@ -273,13 +193,9 @@ talentdatasets.each do |talentdata|
   end
 end
 
-# Special naming extension for Azerite stack sims
+# Special naming extensions
 combinatorStyle = ""
-if setupsProfile == "Azerite"
-  combinatorStyle = "-#{gearProfile[-2..-1]}"
-elsif setupsProfile == "NoAzerite"
-  combinatorStyle = "-0A"
-elsif ["1E", "2E", "3E", "4E", "1L", "2C", "2CL"].include? setupsProfile
+if ["1L", "2C", "2CL"].include? setupsProfile
   combinatorStyle = "-#{setupsProfile}"
 end
 
