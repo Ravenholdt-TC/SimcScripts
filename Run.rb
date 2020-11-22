@@ -39,8 +39,8 @@ to_run = {
            #"PR_Paladin_Retribution",
       ],
     "Priest" => [
- #"PR_Priest_Shadow",
-      ],
+      "PR_Priest_Shadow",
+    ],
     "Rogue" => [
       "PR_Rogue_Assassination",
       "PR_Rogue_Outlaw",
@@ -98,8 +98,8 @@ to_run = {
            #"PR_Paladin_Retribution !!SetSL!! xx0x00x",
       ],
     "Priest" => [
- #"PR_Priest_Shadow !!SetSL!! x1x1xxx",
-      ],
+      "PR_Priest_Shadow !!SetSL!! x1x1xxx",
+    ],
     "Rogue" => [
       "PR_Rogue_Assassination !!SetSL!! xxx00xx",
       "PR_Rogue_Outlaw !!SetSL!! x0x00xx",
@@ -155,8 +155,8 @@ to_run = {
            #"PR_Paladin_Retribution Strength",
       ],
     "Priest" => [
- #"PR_Priest_Shadow Intelligence",
-      ],
+      "PR_Priest_Shadow Intelligence",
+    ],
     "Rogue" => [
       "PR_Rogue_Assassination Agility",
       "PR_Rogue_Outlaw Agility",
