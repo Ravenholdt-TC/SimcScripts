@@ -1,189 +1,222 @@
 {
     "trinkets": [
-        // The Eternal Palace Raid
+        // Castle Nathria Raid
         {
-            "name": "Azshara's Font of Power",
-            "itemId": 169314,
-            "itemLevels": [100],
+            "name": "Dreadfire Vessel",
+            "itemId": 184030,
+            "itemLevels": [207, 220, 233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Shiver Venom Relic",
-            "itemId": 168905,
-            "itemLevels": [100],
+            "name": "Cabalist's Hymnal",
+            "itemId": 184028,
+            "itemLevels": [207, 220, 233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Leviathan's Lure",
-            "itemId": 169304,
-            "itemLevels": [100],
+            "name": "Macabre Sheet Music",
+            "itemId": 184024,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Za'qul's Portal Key",
-            "itemId": 169306,
-            "itemLevels": [100],
+            "name": "Glyph of Assimilation",
+            "itemId": 184021,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Aquipotent Nautilus",
-            "itemId": 169305,
-            "itemLevels": [100],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        // Nyalotha Raid
-        {
-            "name": "Oozing Coagulum",
-            "itemId": 174180,
-            "itemLevels": [115, 130],
+            "name": "Soul Igniter",
+            "itemId": 184019,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Forbidden Obsidian Claw",
-            "itemId": 173944,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Manifesto of Madness",
-            "itemId": 174103,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Psyche Shredder",
-            "itemId": 174060,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vita-Charged Titanshard",
-            "itemId": 174500,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vita-Charged Titanshard (~4 Allies)",
-            "itemId": 174500,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": ["32haste", "33haste"],
-            "additionalInput": []
-        },
-        {
-            "name": "Void-Twisted Titanshard",
-            "itemId": 174528,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Humming Black Dragonscale",
-            "itemId": 174044,
-            "itemLevels": [115, 130],
+            "name": "Memory of Past Sins",
+            "itemId": 184025,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Dungeons
         {
-            "name": "Vessel of Skittering Shadows",
-            "itemId": 159610,
-            "itemLevels": [120, 130],
+            "name": "Inscrutable Quantum Device",
+            "itemId": 179350,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Ignition Mage's Fuse",
-            "itemId": 159615,
-            "itemLevels": [120, 130],
+            "name": "Unbound Changeling",
+            "itemId": 178708,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Conch of Dark Whispers",
-            "itemId": 159620,
-            "itemLevels": [120, 130],
+            "name": "Soulletting Ruby",
+            "itemId": 178809,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Hadal's Nautilus",
-            "itemId": 159622,
-            "itemLevels": [120, 130],
+            "name": "Overflowing Anima Cage",
+            "itemId": 178849,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Rotcrusted Voodoo Doll",
-            "itemId": 159624,
-            "itemLevels": [120, 130],
+            "name": "Satchel of Misbegotten Minions",
+            "itemId": 178772,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Balefire Branch",
-            "itemId": 159630,
-            "itemLevels": [120, 130],
+            "name": "Infinitely Divisible Ooze",
+            "itemId": 178769,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Lady Waycrest's Music Box",
-            "itemId": 159631,
-            "itemLevels": [120, 130],
+            "name": "Empyreal Ordnance",
+            "itemId": 180117,
+            "itemLevels": [171, 184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        // World Quests
+        {
+            "name": "Wakener's Frond",
+            "itemId": 181457,
+            "itemLevels": [148, 158, 171],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Ingenious Mana Battery",
-            "itemId": 169344,
-            "itemLevels": [120, 130],
+            "name": "Vial of Caustic Liquid",
+            "itemId": 181503,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Everchill Brambles",
+            "itemId": 182452,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Flame of Battle",
+            "itemId": 181501,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Withergrove Shardling",
+            "itemId": 181459,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Rotbriar Sprout",
+            "itemId": 175729,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Murmurs in the Dark",
+            "itemId": 182454,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Master Duelist's Chit",
+            "itemId": 181358,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Instructor's Divine Bell",
+            "itemId": 184842,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Tablet of Despair",
+            "itemId": 181357,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        // PvP
+        {
+            "name": "Sinful Gladiator's Badge of Ferocity",
+            "itemId": 175921,
+            "itemLevels": [158, 184, 197],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Sinful Gladiator's Insignia of Alacrity",
+            "itemId": 178386,
+            "itemLevels": [158, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Professions
         {
-            "name": "Peerless Alchemist Stone",
-            "itemId": 171085,
-            "itemLevels": [125],
+            "name": "Darkmoon Deck: Putrescence",
+            "itemId": 173069,
+            "itemLevels": [200],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Highborne Compendium of Storms",
-            "itemId": 169328,
-            "itemLevels": [72],
+            "name": "Spiritual Alchemy Stone",
+            "itemId": 173087,
+            "itemLevels": [165],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

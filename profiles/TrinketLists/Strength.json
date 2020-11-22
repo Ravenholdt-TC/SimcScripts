@@ -1,165 +1,230 @@
 {
     "trinkets": [
-        // The Eternal Palace Raid
+        // Castle Nathria Raid
         {
-            "name": "Azshara's Font of Power",
-            "itemId": 169314,
-            "itemLevels": [100],
+            "name": "Dreadfire Vessel",
+            "itemId": 184030,
+            "itemLevels": [207, 220, 233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Dribbling Inkpod",
-            "itemId": 169319,
-            "itemLevels": [100],
+            "name": "Stone Legion Heraldry",
+            "itemId": 184027,
+            "itemLevels": [207, 220, 233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Vision of Demise",
-            "itemId": 169307,
-            "itemLevels": [100],
+            "name": "Macabre Sheet Music",
+            "itemId": 184024,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Phial of the Arcane Tempest",
-            "itemId": 169313,
-            "itemLevels": [100],
+            "name": "Skulker's Wing",
+            "itemId": 184016,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Ashvane's Razor Coral",
-            "itemId": 169311,
-            "itemLevels": [100],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        // Nyalotha Raid
-        {
-            "name": "Torment in a Jar",
-            "itemId": 173943,
-            "itemLevels": [115, 130],
+            "name": "Hateful Chain",
+            "itemId": 184026,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Writhing Segment of Drest'agath",
-            "itemId": 173946,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vita-Charged Titanshard",
-            "itemId": 174500,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Vita-Charged Titanshard (~4 Allies)",
-            "itemId": 174500,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": ["32haste", "33haste"],
-            "additionalInput": []
-        },
-        {
-            "name": "Void-Twisted Titanshard",
-            "itemId": 174528,
-            "itemLevels": [115, 130],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Humming Black Dragonscale",
-            "itemId": 174044,
-            "itemLevels": [115, 130],
+            "name": "Memory of Past Sins",
+            "itemId": 184025,
+            "itemLevels": [200, 213, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Dungeons
         {
-            "name": "Merektha's Fang",
-            "itemId": 158367,
-            "itemLevels": [120, 130],
+            "name": "Inscrutable Quantum Device",
+            "itemId": 179350,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Rezan's Gleaming Eye",
-            "itemId": 158712,
-            "itemLevels": [120, 130],
+            "name": "Blood-Spattered Scale",
+            "itemId": 179331,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Razdunk's Big Red Button",
-            "itemId": 159611,
-            "itemLevels": [120, 130],
+            "name": "Phial of Putrefaction",
+            "itemId": 178771,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Gore-Crusted Butcher's Block",
-            "itemId": 159616,
-            "itemLevels": [120, 130],
+            "name": "Spare Meat Hook",
+            "itemId": 178751,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Briny Barnacle",
-            "itemId": 159619,
-            "itemLevels": [120, 130],
+            "name": "Grim Codex",
+            "itemId": 178811,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Vial of Animated Blood",
-            "itemId": 159625,
-            "itemLevels": [120, 130],
+            "name": "Decanter of Anima-Charged Winds",
+            "itemId": 178861,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Jes' Howler",
-            "itemId": 159627,
-            "itemLevels": [120, 130],
+            "name": "Anima Field Emitter",
+            "itemId": 180118,
+            "itemLevels": [171, 184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Remote Guidance Device",
-            "itemId": 169769,
-            "itemLevels": [120, 130],
+            "name": "Overwhelming Power Crystal",
+            "itemId": 179342,
+            "itemLevels": [171, 184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Viscera of Coalesced Hatred",
+            "itemId": 178808,
+            "itemLevels": [171, 184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        // World Quests
+        {
+            "name": "Wakener's Frond",
+            "itemId": 181457,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Vial of Caustic Liquid",
+            "itemId": 181503,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Everchill Brambles",
+            "itemId": 182452,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Flame of Battle",
+            "itemId": 181501,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Withergrove Shardling",
+            "itemId": 181459,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Rotbriar Sprout",
+            "itemId": 175729,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Murmurs in the Dark",
+            "itemId": 182454,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Master Duelist's Chit",
+            "itemId": 181358,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Instructor's Divine Bell",
+            "itemId": 184842,
+            "itemLevels": [148, 158, 171],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        // PvP
+        {
+            "name": "Sinful Gladiator's Badge of Ferocity",
+            "itemId": 175921,
+            "itemLevels": [158, 184, 197],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Sinful Gladiator's Insignia of Alacrity",
+            "itemId": 178386,
+            "itemLevels": [158, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Professions
         {
-            "name": "Peerless Alchemist Stone",
-            "itemId": 171085,
-            "itemLevels": [125],
+            "name": "Darkmoon Deck: Voracity",
+            "itemId": 173087,
+            "itemLevels": [200],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Spiritual Alchemy Stone",
+            "itemId": 173087,
+            "itemLevels": [165],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
