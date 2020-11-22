@@ -64,7 +64,7 @@ ProfilesFolder: profiles
 SimcProfileFolders:
 - profiles/DungeonSlice/
 - profiles/PreRaids/
-- profiles/Tier25/
+- profiles/Tier26/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
@@ -76,7 +76,7 @@ ArchivesFolder: archives
 # Orders (scripts, fightstyles) to run
 RunOrders: [
   [
-    [["Combinator", "RaceSimulation", "TrinketSimulation", "SoulbindSimulation", "LegendarySimulation"], ["1T", "1TA", "DS"]]
+    [["Combinator", "SoulbindSimulation", "LegendarySimulation", "TrinketSimulation", "RaceSimulation"], ["1T", "1TA", "DS"]]
   ]
 ]
 
