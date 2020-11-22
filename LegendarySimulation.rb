@@ -71,10 +71,38 @@ combinationOverrides[nil] = []
 # Include potential lego copies
 legoList += JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/LegendariesAdditional.json")
 
+# TODO: Possibly refactor this into more customizable json input
+LegoStatMap = {
+  "Head/Chest/Legs Stats" => {
+    "1" => "58str_58agi_58int_58crit_58versatility",
+    "2" => "70str_70agi_70int_65crit_65versatility",
+    "3" => "80str_80agi_80int_71crit_71versatility",
+    "4" => "88str_88agi_88int_74crit_74versatility",
+  },
+  "Shoulders/Waist/Hands/Boots Stats" => {
+    "1" => "44str_44agi_44int_43crit_43versatility",
+    "2" => "53str_53agi_53int_48crit_48versatility",
+    "3" => "60str_60agi_60int_52crit_52versatility",
+    "4" => "66str_66agi_66int_55crit_55versatility",
+  },
+  "Back/Wrists Stats" => {
+    "1" => "33str_33agi_33int_32crit_32versatility",
+    "2" => "39str_39agi_39int_36crit_36versatility",
+    "3" => "45str_45agi_45int_39crit_39versatility",
+    "4" => "50str_50agi_50int_41crit_41versatility",
+  },
+  "Neck/Finger Stats" => {
+    "1" => "77crit_77versatility",
+    "2" => "95crit_95versatility",
+    "3" => "106crit_106versatility",
+    "4" => "115crit_115versatility",
+  },
+}
+
 combinationOverrides.each do |optionsString, overrides|
   legoList.each do |lego|
     next unless lego["specs"].include?(specId)
-    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}"
+    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}_1"
     prefix = "profileset.\"#{name}\"+="
     simcInput.push(prefix + "name=\"#{name}\"")
     simcInput.push(prefix + "shirt=sl_legendary,bonus_id=#{lego["legendaryBonusID"]}")
@@ -85,6 +113,18 @@ combinationOverrides.each do |optionsString, overrides|
     end
     overrides.each do |override|
       simcInput.push(prefix + "#{override}")
+    end
+    simcInput.push ""
+  end
+  LegoStatMap.each do |slotsName, rankMap|
+    rankMap.each do |rank, statStr|
+      name = "#{slotsName}#{"--" if optionsString}#{optionsString}_#{rank}"
+      prefix = "profileset.\"#{name}\"+="
+      simcInput.push(prefix + "name=\"#{name}\"")
+      simcInput.push(prefix + "shirt=sl_legendary,stats=#{statStr}")
+      overrides.each do |override|
+        simcInput.push(prefix + "#{override}")
+      end
     end
     simcInput.push ""
   end
@@ -106,27 +146,44 @@ results = JSONResults.new(simulationFilename)
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
 talentDPS = {}
+columns = []
 sims = {}
 results.getAllDPSResults().each do |name, dps|
   if name.start_with?("TalentTemplate_")
     talentString = name.split("_")[1]
     talentDPS[talentString] = dps
+  elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
+    sims[data[1]] = {} unless sims[data[1]]
+    sims[data[1]][data[2].to_i] = dps
+    columns.push(data[2].to_i)
   elsif name == "Template"
     templateDPS = dps
-  else
-    sims[name] = dps
   end
 end
+columns.uniq!
+columns.sort!
 
 # Construct the report
 Logging.LogScriptInfo "Construct the report..."
 report = []
-header = ["Legendary", "DPS"]
+header = ["Legendary"]
+columns.each do |col|
+  header.push(col.to_s)
+end
 report.push(header)
-sims.each do |name, value|
-  actor = [name, value - templateDPS]
-  if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
-    actor = [name, value - talentDPS[data[1]]]
+sims.each do |name, values|
+  actor = []
+  actor.push(name)
+  columns.each do |col|
+    if values[col]
+      if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
+        actor.push(values[col] - talentDPS[data[1]])
+      else
+        actor.push(values[col] - templateDPS)
+      end
+    else
+      actor.push(0)
+    end
   end
   report.push(actor)
 end
