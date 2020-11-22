@@ -2,12 +2,66 @@
     "conduitRanks": [1, 4, 7, 10, 13, 15],
     "combinatorConduitRank": 7,
     "covenantConduitsMap": {
-        // TODO: Add other classes and update
+        // DK
+        "338664": "kyrian",
+        "338651": "necrolord",
+        "341344": "night_fae",
+        "338628": "venthyr",
+        // DH
+        "339895": "kyrian",
+        "340063": "necrolord",
+        "344358": "night_fae",
+        "340028": "venthyr",
+        // Druid
+        "341378": "kyrian",
+        "341447": "necrolord",
+        "341446": "night_fae",
+        "341383": "venthyr",
+        // Hunter
+        "339018": "kyrian",
+        "339129": "necrolord",
+        "339109": "night_fae",
+        "339059": "venthyr",
+        // Mage
+        "337058": "kyrian",
+        "336999": "necrolord",
+        "336992": "night_fae",
+        "337087": "venthyr",
+        // Monk
+        "337286": "kyrian",
+        "337295": "necrolord",
+        "337303": "night_fae",
+        "337301": "venthyr",
+        // Paladin
+        "340218": "kyrian",
+        "340192": "necrolord",
+        "340185": "night_fae",
+        "340212": "venthyr",
+        // Priest
+        "337966": "kyrian",
+        "337979": "necrolord",
+        "338305": "night_fae",
+        "338315": "venthyr",
         // Rogue
         "341264": "kyrian",
         "341272": "necrolord",
         "341309": "night_fae",
-        "341310": "venthyr"
+        "341310": "venthyr",
+        // Shaman
+        "339182": "kyrian",
+        "339186": "necrolord",
+        "339183": "night_fae",
+        "339185": "venthyr",
+        // Warlock
+        "340229": "kyrian",
+        "340268": "necrolord",
+        "340348": "night_fae",
+        "340316": "venthyr",
+        // Warrior
+        "339259": "kyrian",
+        "339265": "necrolord",
+        "339939": "night_fae",
+        "339370": "venthyr"
     },
     "soulbindSims": [
         {
