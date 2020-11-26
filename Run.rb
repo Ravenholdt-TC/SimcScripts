@@ -21,7 +21,7 @@ to_run = {
       #"PR_Druid_Guardian",
     ],
     "Hunter" => [
-      #"PR_Hunter_Beast_Mastery",
+      "PR_Hunter_Beast_Mastery",
       #"PR_Hunter_Marksmanship",
       #"PR_Hunter_Survival",
     ],
@@ -36,7 +36,7 @@ to_run = {
     ],
     "Paladin" => [
       #"PR_Paladin_Protection",
-      #"PR_Paladin_Retribution",
+      "PR_Paladin_Retribution",
     ],
     "Priest" => [
       "PR_Priest_Shadow",
@@ -81,7 +81,7 @@ to_run = {
       #"PR_Druid_Guardian !!SetSL!! x111x2x",
     ],
     "Hunter" => [
-      #"PR_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
+      "PR_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
       #"PR_Hunter_Marksmanship !!SetSL!! xx0x0xx",
       #"PR_Hunter_Survival !!SetSL!! xx0x0xx",
       ],
@@ -95,7 +95,7 @@ to_run = {
     ],
     "Paladin" => [
       #"PR_Paladin_Protection !!SetSL!! xx0000x",
-      #"PR_Paladin_Retribution !!SetSL!! xx0x00x",
+      "PR_Paladin_Retribution !!SetSL!! xx0x00x",
     ],
     "Priest" => [
       "PR_Priest_Shadow !!SetSL!! x1x1xxx",
@@ -137,7 +137,7 @@ to_run = {
       #"PR_Druid_Guardian Agility",
     ],
     "Hunter" => [
-      #"PR_Hunter_Beast_Mastery Agility",
+      "PR_Hunter_Beast_Mastery Agility",
       #"PR_Hunter_Marksmanship Agility",
       #"PR_Hunter_Survival Agility",
     ],
@@ -152,7 +152,7 @@ to_run = {
     ],
     "Paladin" => [
       #"PR_Paladin_Protection Strength",
-      #"PR_Paladin_Retribution Strength",
+      "PR_Paladin_Retribution Strength",
     ],
     "Priest" => [
       "PR_Priest_Shadow Intelligence",
