@@ -26,8 +26,8 @@ to_run = {
       #"PR_Hunter_Survival",
     ],
     "Mage" => [
-      #"PR_Mage_Arcane",
-      #"PR_Mage_Fire",
+      "PR_Mage_Arcane",
+      "PR_Mage_Fire",
       "PR_Mage_Frost",
     ],
     "Monk" => [
@@ -86,8 +86,8 @@ to_run = {
       #"PR_Hunter_Survival !!SetSL!! xx0x0xx",
       ],
     "Mage" => [
-      #"PR_Mage_Arcane !!SetSL!! x0xx0xx",
-      #"PR_Mage_Fire !!SetSL!! x0xx0xx",
+      "PR_Mage_Arcane !!SetSL!! x0xx0xx",
+      "PR_Mage_Fire !!SetSL!! x0xx0xx",
       "PR_Mage_Frost !!SetSL!! x0xx0xx",
     ],
     "Monk" => [
@@ -142,8 +142,8 @@ to_run = {
       #"PR_Hunter_Survival Agility",
     ],
     "Mage" => [
-      #"PR_Mage_Arcane Intelligence",
-      #"PR_Mage_Fire Intelligence",
+      "PR_Mage_Arcane Intelligence",
+      "PR_Mage_Fire Intelligence",
       "PR_Mage_Frost Intelligence",
     ],
     "Monk" => [
