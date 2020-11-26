@@ -90,10 +90,10 @@ combinationOverrides.each do |optionsString, overrides|
     specific_covenant = soulbindSettings["covenantConduitsMap"][conduit["conduitSpellID"].to_s]
     next if specific_covenant && specific_covenant != covenant_simc
     soulbindSettings["conduitRanks"].each do |rank|
-      name = "#{conduit["conduitName"]}#{"--" if optionsString}#{optionsString}_#{rank}"
+      name = "#{conduit["conduitName"]}#{"--" if optionsString}#{optionsString}_#{rank[1]}"
       prefix = "profileset.\"#{name}\"+="
       simcInput.push(prefix + "name=\"#{name}\"")
-      simcInput.push(prefix + "soulbind=#{conduit["conduitId"]}:#{rank}")
+      simcInput.push(prefix + "soulbind=#{conduit["conduitId"]}:#{rank[0]}")
       if conduit["additionalInput"]
         conduit["additionalInput"].each do |input|
           simcInput.push(prefix + "#{input}")

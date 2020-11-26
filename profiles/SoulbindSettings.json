@@ -1,5 +1,5 @@
 {
-    "conduitRanks": [1, 4, 7, 10, 13, 15],
+    "conduitRanks": [[1, 145], [2, 158], [3, 171], [4, 184], [5, 200], [6, 213], [7, 226]],
     "combinatorConduitRank": 7,
     "covenantConduitsMap": {
         // DK
