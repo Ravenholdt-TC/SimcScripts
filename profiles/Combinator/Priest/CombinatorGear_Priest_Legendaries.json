@@ -2,13 +2,14 @@
   "specials": {
     "discipline": {
       "shirt": {
-        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161",
+        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
         "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
         "The Penitent One": "sl_legendary,bonus_id=6976",
         "Crystalline Reflection": "sl_legendary,bonus_id=6978",
         "Kiss of Death": "sl_legendary,bonus_id=6979",
         "Clarity of Mind": "sl_legendary,bonus_id=6980",
-        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -16,19 +17,19 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Maw Rattle": "sl_legendary,bonus_id=7159",
-        "Measured Contemplation": "sl_legendary,bonus_id=7161"
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
       }
     },
     "holy": {
       "shirt": {
-        "Vault of Heavens": "sl_legendary,bonus_id=6972",
-        "Divine Image": "sl_legendary,bonus_id=6973",
-        "Flash Concentration": "sl_legendary,bonus_id=6974",
-        "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
-        "Harmonious Apparatus": "sl_legendary,bonus_id=6977",
-        "X'anshi, Return of Archbishop Benedictus": "sl_legendary,bonus_id=6984",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161",
         "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
+        "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "X'anshi, Return of Archbishop Benedictus": "sl_legendary,bonus_id=6984",
+        "Harmonious Apparatus": "sl_legendary,bonus_id=6977",
+        "Flash Concentration": "sl_legendary,bonus_id=6974",
+        "Divine Image": "sl_legendary,bonus_id=6973",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -36,18 +37,19 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Maw Rattle": "sl_legendary,bonus_id=7159",
-        "Measured Contemplation": "sl_legendary,bonus_id=7161"
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
       }
     },
     "shadow": {
       "shirt": {
-        "Vault of Heavens": "sl_legendary,bonus_id=6972",
+        "Measured Contemplation": "sl_legendary,bonus_id=7161",
+        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
         "Cauterizing Shadows": "sl_legendary,bonus_id=6975",
+        "Vault of Heavens": "sl_legendary,bonus_id=6972",
         "Painbreaker Psalm": "sl_legendary,bonus_id=6981",
         "Shadowflame Prism": "sl_legendary,bonus_id=6982",
         "Eternal Call to the Void": "sl_legendary,bonus_id=6983",
-        "Twins of the Sun Priestess": "sl_legendary,bonus_id=7002",
+        "Talbadar's Stratagem": "sl_legendary,bonus_id=7162",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -55,9 +57,7 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Maw Rattle": "sl_legendary,bonus_id=7159",
-        "Measured Contemplation": "sl_legendary,bonus_id=7161",
-        "Talbadar's Stratagem": "sl_legendary,bonus_id=7162"
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
       }
     }
   },

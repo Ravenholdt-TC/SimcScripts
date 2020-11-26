@@ -3,13 +3,13 @@
     "arms": {
       "shirt": {
         "Leaper": "sl_legendary,bonus_id=6955",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Misshapen Mirror": "sl_legendary,bonus_id=6958",
         "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
+        "Enduring Blow": "sl_legendary,bonus_id=6962",
         "Battlelord": "sl_legendary,bonus_id=6960",
         "Exploiter": "sl_legendary,bonus_id=6961",
-        "Enduring Blow": "sl_legendary,bonus_id=6962",
         "Unhinged": "sl_legendary,bonus_id=6970",
-        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -23,13 +23,13 @@
     "fury": {
       "shirt": {
         "Leaper": "sl_legendary,bonus_id=6955",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Misshapen Mirror": "sl_legendary,bonus_id=6958",
         "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
         "Cadence of Fujieda": "sl_legendary,bonus_id=6963",
         "Deathmaker": "sl_legendary,bonus_id=6964",
         "Reckless Defense": "sl_legendary,bonus_id=6965",
         "Will of the Berserker": "sl_legendary,bonus_id=6966",
-        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -43,13 +43,13 @@
     "protection": {
       "shirt": {
         "Leaper": "sl_legendary,bonus_id=6955",
-        "Thunderlord": "sl_legendary,bonus_id=6956",
-        "The Wall": "sl_legendary,bonus_id=6957",
+        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Misshapen Mirror": "sl_legendary,bonus_id=6958",
         "Signet of Tormented Kings": "sl_legendary,bonus_id=6959",
+        "Thunderlord": "sl_legendary,bonus_id=6956",
+        "The Wall": "sl_legendary,bonus_id=6957",
         "Unbreakable Will": "sl_legendary,bonus_id=6967",
         "Reprisal": "sl_legendary,bonus_id=6969",
-        "Seismic Reverberation": "sl_legendary,bonus_id=6971",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",

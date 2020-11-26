@@ -1,7 +1,7 @@
 {
     "setups": [
         {
-            "specials": [0, 1],
+            "specials": [1],
             "sets": [
                 {
                     "set": "None",

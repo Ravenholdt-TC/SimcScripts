@@ -3,13 +3,13 @@
     "havoc": {
       "shirt": {
         "Collective Anguish": "sl_legendary,bonus_id=7041",
-        "Half-Giant Empowerment": "sl_legendary,bonus_id=7042",
+        "Fel Bombardment": "sl_legendary,bonus_id=7052",
         "Darkglare Medallion": "sl_legendary,bonus_id=7043",
         "Darkest Hour": "sl_legendary,bonus_id=7044",
-        "Inner Demons": "sl_legendary,bonus_id=7049",
+        "Darker Nature": "sl_legendary,bonus_id=7218",
         "Chaos Theory": "sl_legendary,bonus_id=7050",
         "Erratic Fel Core": "sl_legendary,bonus_id=7051",
-        "Fel Bombardment": "sl_legendary,bonus_id=7052",
+        "Burning Wound": "sl_legendary,bonus_id=7219",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -23,7 +23,7 @@
     "vengeance": {
       "shirt": {
         "Collective Anguish": "sl_legendary,bonus_id=7041",
-        "Half-Giant Empowerment": "sl_legendary,bonus_id=7042",
+        "Fel Bombardment": "sl_legendary,bonus_id=7052",
         "Darkglare Medallion": "sl_legendary,bonus_id=7043",
         "Darkest Hour": "sl_legendary,bonus_id=7044",
         "Spirit of the Darkness Flame": "sl_legendary,bonus_id=7045",

@@ -2,14 +2,14 @@
   "specials": {
     "blood": {
       "shirt": {
-        "Bryndaor's Might": "sl_legendary,bonus_id=6940",
-        "Crimson Rune Weapon": "sl_legendary,bonus_id=6941",
-        "Vampiric Aura": "sl_legendary,bonus_id=6942",
-        "Gorefiend's Domination": "sl_legendary,bonus_id=6943",
-        "Death's Embrace": "sl_legendary,bonus_id=6947",
-        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
         "Superstrain": "sl_legendary,bonus_id=6953",
         "Phearomones": "sl_legendary,bonus_id=6954",
+        "Death's Embrace": "sl_legendary,bonus_id=6947",
+        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
+        "Bryndaor's Might": "sl_legendary,bonus_id=6940",
+        "Crimson Rune Weapon": "sl_legendary,bonus_id=6941",
+        "Gorefiend's Domination": "sl_legendary,bonus_id=6943",
+        "Vampiric Aura": "sl_legendary,bonus_id=6942",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -22,13 +22,14 @@
     },
     "frost": {
       "shirt": {
+        "Superstrain": "sl_legendary,bonus_id=6953",
+        "Phearomones": "sl_legendary,bonus_id=6954",
+        "Death's Embrace": "sl_legendary,bonus_id=6947",
+        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
         "Koltira's Favor": "sl_legendary,bonus_id=6944",
         "Biting Cold": "sl_legendary,bonus_id=6945",
         "Absolute Zero": "sl_legendary,bonus_id=6946",
-        "Death's Embrace": "sl_legendary,bonus_id=6947",
-        "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
-        "Superstrain": "sl_legendary,bonus_id=6953",
-        "Phearomones": "sl_legendary,bonus_id=6954",
+        "Rage of the Frozen Champion": "sl_legendary,bonus_id=7160",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -36,20 +37,19 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Maw Rattle": "sl_legendary,bonus_id=7159",
-        "Rage of the Frozen Champion": "sl_legendary,bonus_id=7160"
+        "Maw Rattle": "sl_legendary,bonus_id=7159"
       }
     },
     "unholy": {
       "shirt": {
+        "Superstrain": "sl_legendary,bonus_id=6953",
+        "Phearomones": "sl_legendary,bonus_id=6954",
         "Death's Embrace": "sl_legendary,bonus_id=6947",
         "Grip of the Everlasting": "sl_legendary,bonus_id=6948",
         "Reanimated Shambler": "sl_legendary,bonus_id=6949",
         "Frenzied Monstrosity": "sl_legendary,bonus_id=6950",
         "Death's Certainty": "sl_legendary,bonus_id=6951",
         "Deadliest Coil": "sl_legendary,bonus_id=6952",
-        "Superstrain": "sl_legendary,bonus_id=6953",
-        "Phearomones": "sl_legendary,bonus_id=6954",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",

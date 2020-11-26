@@ -31,10 +31,10 @@ ClassAndSpecIds.keys.each do |classStr|
     fullGear["specials"][specName].merge!(conduitGear["specials"][specName])
 
     covenants["specials"][specName] = {"covenant" => {
-      "Kyrian" => "kyrian",
-      "Necrolord" => "necrolord",
-      "Night Fae" => "night_fae",
-      "Venthyr" => "venthyr",
+      "Kyrian Class Ability" => "kyrian",
+      "Necrolord Class Ability" => "necrolord",
+      "Night Fae Class Ability" => "night_fae",
+      "Venthyr Class Ability" => "venthyr",
     }}
   end
   puts "Writing Legendaries for #{classStr}..."

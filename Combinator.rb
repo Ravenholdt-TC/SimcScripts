@@ -62,6 +62,7 @@ gear["specials"][spec]["trinket2"] = gear["specials"][spec]["trinket1"]
 # Duplicate Conduits for 2 potency slots
 gear["specials"][spec]["conduit2"] = gear["specials"][spec]["conduit"]
 
+hasAnyCovenants = false
 hasAnyConduits = false
 
 # Import soulbind settings file for conduit rank
@@ -125,6 +126,7 @@ setups["setups"].each do |setup|
               specialConduits.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!RANK!!", conduitRank.to_s))
             else
               specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
+              hasAnyCovenants = true if specialSlots[idx] == "covenant"
             end
           end
           unless specialConduits.empty?
@@ -144,8 +146,10 @@ simcInput.push "name=Template"
 
 if covenant_simc != "default"
   simcInput.push "covenant=" + covenant_simc
+elsif hasAnyCovenants
+  simcInput.push "covenant=none"
 end
-simcInput.push "soulbind=" if hasAnyConduits || covenant_simc != "default"
+simcInput.push "soulbind=" if hasAnyConduits || hasAnyCovenants || covenant_simc != "default"
 
 if gearProfile.include?("Legendaries") || gearProfile.include?("ShadowlandsFull")
   # Create overrides with legendary bonus_ids removed from input

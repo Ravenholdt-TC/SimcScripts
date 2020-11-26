@@ -2,26 +2,26 @@
   "specials": {
     "brewmaster": {
       "covenant": {
-        "Kyrian": "kyrian",
-        "Necrolord": "necrolord",
-        "Night Fae": "night_fae",
-        "Venthyr": "venthyr"
+        "Kyrian Class Ability": "kyrian",
+        "Necrolord Class Ability": "necrolord",
+        "Night Fae Class Ability": "night_fae",
+        "Venthyr Class Ability": "venthyr"
       }
     },
     "windwalker": {
       "covenant": {
-        "Kyrian": "kyrian",
-        "Necrolord": "necrolord",
-        "Night Fae": "night_fae",
-        "Venthyr": "venthyr"
+        "Kyrian Class Ability": "kyrian",
+        "Necrolord Class Ability": "necrolord",
+        "Night Fae Class Ability": "night_fae",
+        "Venthyr Class Ability": "venthyr"
       }
     },
     "mistweaver": {
       "covenant": {
-        "Kyrian": "kyrian",
-        "Necrolord": "necrolord",
-        "Night Fae": "night_fae",
-        "Venthyr": "venthyr"
+        "Kyrian Class Ability": "kyrian",
+        "Necrolord Class Ability": "necrolord",
+        "Night Fae Class Ability": "night_fae",
+        "Venthyr Class Ability": "venthyr"
       }
     }
   },

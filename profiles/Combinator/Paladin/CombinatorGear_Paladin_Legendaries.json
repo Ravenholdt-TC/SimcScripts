@@ -3,12 +3,13 @@
     "holy": {
       "shirt": {
         "Uther's Devotion": "sl_legendary,bonus_id=7053",
-        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Of Dusk and Dawn": "sl_legendary,bonus_id=7055",
         "The Magistrate's Judgment": "sl_legendary,bonus_id=7056",
+        "Maraad's Dying Breath": "sl_legendary,bonus_id=7128",
+        "Shock Barrier": "sl_legendary,bonus_id=7059",
         "Shadowbreaker, Dawn of the Sun": "sl_legendary,bonus_id=7057",
         "Inflorescence of the Sunwell": "sl_legendary,bonus_id=7058",
-        "Shock Barrier": "sl_legendary,bonus_id=7059",
+        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -16,20 +17,19 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Maraad's Dying Breath": "sl_legendary,bonus_id=7128",
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       }
     },
     "protection": {
       "shirt": {
         "Uther's Devotion": "sl_legendary,bonus_id=7053",
-        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Of Dusk and Dawn": "sl_legendary,bonus_id=7055",
         "The Magistrate's Judgment": "sl_legendary,bonus_id=7056",
         "Holy Avenger's Engraved Sigil": "sl_legendary,bonus_id=7060",
         "The Ardent Protector's Sanctum": "sl_legendary,bonus_id=7061",
         "Bulwark of Righteous Fury": "sl_legendary,bonus_id=7062",
         "Reign of Endless Kings": "sl_legendary,bonus_id=7063",
+        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -43,13 +43,13 @@
     "retribution": {
       "shirt": {
         "Uther's Devotion": "sl_legendary,bonus_id=7053",
-        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Of Dusk and Dawn": "sl_legendary,bonus_id=7055",
         "The Magistrate's Judgment": "sl_legendary,bonus_id=7056",
-        "Final Verdict": "sl_legendary,bonus_id=7064",
-        "Vanguard's Momentum": "sl_legendary,bonus_id=7065",
-        "Relentless Inquisitor": "sl_legendary,bonus_id=7066",
         "Tempest of the Lightbringer": "sl_legendary,bonus_id=7067",
+        "Relentless Inquisitor": "sl_legendary,bonus_id=7066",
+        "Vanguard's Momentum": "sl_legendary,bonus_id=7065",
+        "Final Verdict": "sl_legendary,bonus_id=7064",
+        "The Mad Paragon": "sl_legendary,bonus_id=7054",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",

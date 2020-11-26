@@ -2,11 +2,14 @@
   "specials": {
     "balance": {
       "shirt": {
-        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
-        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
         "Draught of Deep Focus": "sl_legendary,bonus_id=7086",
+        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
+        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
+        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
         "Oneth's Clear Vision": "sl_legendary,bonus_id=7087",
         "Primordial Arcanic Pulsar": "sl_legendary,bonus_id=7088",
+        "Balance of All Things": "sl_legendary,bonus_id=7107",
+        "Timeworn Dreambinder": "sl_legendary,bonus_id=7108",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -14,9 +17,6 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Balance of All Things": "sl_legendary,bonus_id=7107",
-        "Timeworn Dreambinder": "sl_legendary,bonus_id=7108",
-        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
@@ -32,12 +32,14 @@
     },
     "feral": {
       "shirt": {
-        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
-        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
         "Draught of Deep Focus": "sl_legendary,bonus_id=7086",
-        "Cat-eye Curio": "sl_legendary,bonus_id=7089",
-        "Eye of Fearful Symmetry": "sl_legendary,bonus_id=7090",
+        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
+        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
+        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
+        "Frenzyband": "sl_legendary,bonus_id=7109",
         "Apex Predator's Craving": "sl_legendary,bonus_id=7091",
+        "Eye of Fearful Symmetry": "sl_legendary,bonus_id=7090",
+        "Cat-eye Curio": "sl_legendary,bonus_id=7089",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
         "Norgannon's Sagacity": "sl_legendary,bonus_id=7102",
@@ -45,8 +47,6 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Frenzyband": "sl_legendary,bonus_id=7109",
-        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
@@ -62,12 +62,13 @@
     },
     "guardian": {
       "shirt": {
-        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
-        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
         "Draught of Deep Focus": "sl_legendary,bonus_id=7086",
+        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
+        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
+        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
         "Luffa-Infused Embrace": "sl_legendary,bonus_id=7092",
         "The Natural Order's Will": "sl_legendary,bonus_id=7093",
-        "Ursoc's Lingering Spirit": "sl_legendary,bonus_id=7094",
+        "Ursoc's Fury Remembered": "sl_legendary,bonus_id=7094",
         "Legacy of the Sleeper": "sl_legendary,bonus_id=7095",
         "Echo of Eonar": "sl_legendary,bonus_id=7100",
         "Judgment of the Arbiter": "sl_legendary,bonus_id=7101",
@@ -76,7 +77,6 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
@@ -90,9 +90,10 @@
     },
     "restoration": {
       "shirt": {
-        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
-        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
         "Draught of Deep Focus": "sl_legendary,bonus_id=7086",
+        "Circle of Life and Death": "sl_legendary,bonus_id=7085",
+        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
+        "Oath of the Elder Druid": "sl_legendary,bonus_id=7084",
         "Memory of the Mother Tree": "sl_legendary,bonus_id=7096",
         "The Dark Titan's Lesson": "sl_legendary,bonus_id=7097",
         "Verdant Infusion": "sl_legendary,bonus_id=7098",
@@ -104,7 +105,6 @@
         "Stable Phantasma Lure": "sl_legendary,bonus_id=7104",
         "Third Eye of the Jailer": "sl_legendary,bonus_id=7105",
         "Vitality Sacrifice": "sl_legendary,bonus_id=7106",
-        "Lycara's Fleeting Glimpse": "sl_legendary,bonus_id=7110",
         "Maw Rattle": "sl_legendary,bonus_id=7159"
       },
       "conduit": {
