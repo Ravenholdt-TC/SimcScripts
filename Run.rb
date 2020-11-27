@@ -95,10 +95,10 @@ to_run = {
     ],
     "Paladin" => [
       #"PR_Paladin_Protection !!SetSL!! xx0000x",
-      "PR_Paladin_Retribution !!SetSL!! xx0x00x",
+      "PR_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
-      "PR_Priest_Shadow !!SetSL!! x1x1xxx",
+      "PR_Priest_Shadow !!SetSL!! x0x0xxx",
     ],
     "Rogue" => [
       "PR_Rogue_Assassination !!SetSL!! xxx00xx",
