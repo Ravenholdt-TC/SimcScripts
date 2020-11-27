@@ -22,8 +22,8 @@ to_run = {
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery",
-      #"PR_Hunter_Marksmanship",
-      #"PR_Hunter_Survival",
+      "PR_Hunter_Marksmanship",
+      "PR_Hunter_Survival",
     ],
     "Mage" => [
       "PR_Mage_Arcane",
@@ -31,8 +31,9 @@ to_run = {
       "PR_Mage_Frost",
     ],
     "Monk" => [
-      #"PR_Monk_Brewmaster",
-      #"PR_Monk_Windwalker",
+      "PR_Monk_Brewmaster",
+      "PR_Monk_Windwalker",
+      "PR_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
       #"PR_Paladin_Protection",
@@ -82,16 +83,18 @@ to_run = {
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
-      #"PR_Hunter_Marksmanship !!SetSL!! xx0x0xx",
-      #"PR_Hunter_Survival !!SetSL!! xx0x0xx",
-      ],
+      "PR_Hunter_Marksmanship !!SetSL!! xx0x0xx",
+      "PR_Hunter_Survival !!SetSL!! xx0x0xx",
+    ],
     "Mage" => [
       "PR_Mage_Arcane !!SetSL!! x0xx0xx",
       "PR_Mage_Fire !!SetSL!! x0xx0xx",
       "PR_Mage_Frost !!SetSL!! x0xx0xx",
     ],
     "Monk" => [
-      #"PR_Monk_Windwalker !!SetSL!! x0x20xx",
+      "PR_Monk_Brewmaster !!SetSL!! x0x01xx",
+      "PR_Monk_Windwalker !!SetSL!! x0x20x[12]",
+      "PR_Monk_Windwalker_Serenity !!SetSL!! x0x20x3",
     ],
     "Paladin" => [
       #"PR_Paladin_Protection !!SetSL!! xx0000x",
@@ -138,8 +141,8 @@ to_run = {
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery Agility",
-      #"PR_Hunter_Marksmanship Agility",
-      #"PR_Hunter_Survival Agility",
+      "PR_Hunter_Marksmanship Agility",
+      "PR_Hunter_Survival Agility",
     ],
     "Mage" => [
       "PR_Mage_Arcane Intelligence",
@@ -147,8 +150,9 @@ to_run = {
       "PR_Mage_Frost Intelligence",
     ],
     "Monk" => [
-      #"PR_Monk_Windwalker Agility",
-      #"PR_Monk_Brewmaster Agility",
+      "PR_Monk_Brewmaster Agility",
+      "PR_Monk_Windwalker Agility",
+      "PR_Monk_Windwalker_Serenity Agility",
     ],
     "Paladin" => [
       #"PR_Paladin_Protection Strength",
