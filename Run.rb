@@ -17,7 +17,7 @@ to_run = {
     ],
     "Druid" => [
       #"PR_Druid_Balance",
-      #"PR_Druid_Feral",
+      "PR_Druid_Feral",
       #"PR_Druid_Guardian",
     ],
     "Hunter" => [
@@ -77,7 +77,7 @@ to_run = {
     ],
     "Druid" => [
       #"PR_Druid_Balance !!SetSL!! x000xxx",
-      #"PR_Druid_Feral !!SetSL!! x000xxx",
+      "PR_Druid_Feral !!SetSL!! x000xxx",
       #"PR_Druid_Guardian !!SetSL!! x111x2x",
     ],
     "Hunter" => [
@@ -133,7 +133,7 @@ to_run = {
     ],
     "Druid" => [
       #"PR_Druid_Balance Intelligence",
-      #"PR_Druid_Feral Agility",
+      "PR_Druid_Feral Agility",
       #"PR_Druid_Guardian Agility",
     ],
     "Hunter" => [
