@@ -56,8 +56,8 @@ to_run = {
       "PR_Warlock_Destruction",
     ],
     "Warrior" => [
-      #"PR_Warrior_Arms",
-      #"PR_Warrior_Fury",
+      "PR_Warrior_Arms",
+      "PR_Warrior_Fury",
       #"PR_Warrior_Protection",
     ],
   },
@@ -115,8 +115,8 @@ to_run = {
       "PR_Warlock_Destruction !!SetSL!! xx0x0xx",
     ],
     "Warrior" => [
-      #"PR_Warrior_Arms !!SetSL!! x3x2xxx",
-      #"PR_Warrior_Fury !!SetSL!! x3x2xxx",
+      "PR_Warrior_Arms !!SetSL!! x3x2xxx",
+      "PR_Warrior_Fury !!SetSL!! x3x2xxx",
       #"PR_Warrior_Protection !!SetSL!! x0x00xx",
     ],
   },
@@ -172,8 +172,8 @@ to_run = {
       "PR_Warlock_Destruction Intelligence",
     ],
     "Warrior" => [
-      #"PR_Warrior_Arms Strength",
-      #"PR_Warrior_Fury Strength",
+      "PR_Warrior_Arms Strength",
+      "PR_Warrior_Fury Strength",
       #"PR_Warrior_Protection Strength",
     ],
   },
