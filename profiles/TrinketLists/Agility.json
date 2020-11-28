@@ -53,7 +53,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -61,7 +61,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -69,7 +69,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -77,7 +77,7 @@
         {
             "name": "Bottled Flayedwing Toxin",
             "itemId": 178742,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -85,7 +85,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -93,7 +93,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -101,7 +101,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -109,7 +109,7 @@
         {
             "name": "Mistcaller Ocarina",
             "itemId": 178715,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -117,7 +117,7 @@
         {
             "name": "Shadowgrasp Totem",
             "itemId": 179356,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -125,7 +125,7 @@
         {
             "name": "Overcharged Anima Battery",
             "itemId": 180116,
-            "itemLevels": [171, 184, 200, 210, 226],
+            "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -134,7 +134,7 @@
         {
             "name": "Wakener's Frond",
             "itemId": 181457,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -142,7 +142,7 @@
         {
             "name": "Vial of Caustic Liquid",
             "itemId": 181503,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -150,7 +150,7 @@
         {
             "name": "Everchill Brambles",
             "itemId": 182452,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -158,7 +158,7 @@
         {
             "name": "Flame of Battle",
             "itemId": 181501,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -166,7 +166,7 @@
         {
             "name": "Withergrove Shardling",
             "itemId": 181459,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -174,7 +174,7 @@
         {
             "name": "Rotbriar Sprout",
             "itemId": 175729,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -182,7 +182,7 @@
         {
             "name": "Murmurs in the Dark",
             "itemId": 182454,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -190,7 +190,7 @@
         {
             "name": "Master Duelist's Chit",
             "itemId": 181358,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -198,16 +198,32 @@
         {
             "name": "Instructor's Divine Bell",
             "itemId": 184842,
-            "itemLevels": [148, 158, 171],
+            "itemLevels": [148, 158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // PvP
         {
+            "name": "Sinful Aspirant's Badge of Ferocity",
+            "itemId": 175884,
+            "itemLevels": [158, 171, 184, 197],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
             "name": "Sinful Gladiator's Badge of Ferocity",
             "itemId": 175921,
-            "itemLevels": [158, 184, 197],
+            "itemLevels": [200, 207, 213, 220],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Sinful Aspirant's Insignia of Alacrity",
+            "itemId": 178298,
+            "itemLevels": [158, 171, 184, 197],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -215,7 +231,7 @@
         {
             "name": "Sinful Gladiator's Insignia of Alacrity",
             "itemId": 178386,
-            "itemLevels": [158, 184, 197],
+            "itemLevels": [200, 207, 213, 220],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -232,7 +248,7 @@
         {
             "name": "Spiritual Alchemy Stone",
             "itemId": 171323,
-            "itemLevels": [165],
+            "itemLevels": [165, 180, 200],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
