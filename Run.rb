@@ -207,9 +207,9 @@ wow_classes.each do |wow_class|
               specialCommand = command.gsub("!!SetSL!!", "1L_Generated")
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
               # Default talents for advanced covenant combinations
-              specialCommand = command.split("!!SetSL!!")[0] + "Full_Generated default"
+              specialCommand = command.split("!!SetSL!!")[0] + "FullS_Generated default"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
-              specialCommand = command.split("!!SetSL!!")[0] + "Early_Generated default"
+              specialCommand = command.split("!!SetSL!!")[0] + "EarlyS_Generated default"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
             elsif script == "SoulbindSimulation"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Kyrian q"

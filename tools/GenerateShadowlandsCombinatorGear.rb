@@ -5,14 +5,14 @@ SbSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/SoulbindSettin
 LegoList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Legendaries.json")
 ConduitList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Conduits.json")
 
-template = YAML.load(File.read("#{SimcConfig["ProfilesFolder"]}/Combinator/GearTemplate_Full.yml"))
-templateEarly = YAML.load(File.read("#{SimcConfig["ProfilesFolder"]}/Combinator/GearTemplate_Early.yml"))
+templateFull = YAML.load(File.read("#{SimcConfig["ProfilesFolder"]}/Combinator/GearTemplate_FullS.yml"))
+templateEarly = YAML.load(File.read("#{SimcConfig["ProfilesFolder"]}/Combinator/GearTemplate_EarlyS.yml"))
 template1L = YAML.load(File.read("#{SimcConfig["ProfilesFolder"]}/Combinator/GearTemplate_1L.yml"))
 
 # Insert conduit options
-def insertConduits(template, slots)
+def insertConduits(templateFull, slots)
   slots.each do |sb|
-    section = template[sb]["options"]
+    section = templateFull[sb]["options"]
     conduit_placeholders = section.find_all { |x| x["replace"] == "Conduit" }
     conduit_placeholders.each do |conduit_placeholder|
       section.delete(conduit_placeholder)
@@ -50,13 +50,13 @@ def insertConduits(template, slots)
   end
 end
 
-insertConduits(template, ["soulbind1", "soulbind2", "soulbind3"])
+insertConduits(templateFull, ["soulbind1", "soulbind2", "soulbind3"])
 insertConduits(templateEarly, ["soulbind1", "soulbind2"])
 
 # Add legendaries
-def insertLegendaries(template, slots)
+def insertLegendaries(templateFull, slots)
   slots.each do |slot|
-    template[slot] = {
+    templateFull[slot] = {
       "simcSlot" => "shirt",
       "select" => 1,
       "options" => [],
@@ -77,15 +77,15 @@ def insertLegendaries(template, slots)
         end
       end
       lego_entry["requires"]["spec"] = required_specs
-      template["legendary"]["options"].push lego_entry
+      templateFull["legendary"]["options"].push lego_entry
     end
   end
 end
 
-insertLegendaries(template, ["legendary"])
+insertLegendaries(templateFull, ["legendary"])
 insertLegendaries(templateEarly, ["legendary"])
 insertLegendaries(template1L, ["legendary"])
 
-File.open("#{SimcConfig["ProfilesFolder"]}/Combinator/CombinatorGear_Full_Generated.yml", "w") { |file| file.write(template.to_yaml) }
-File.open("#{SimcConfig["ProfilesFolder"]}/Combinator/CombinatorGear_Early_Generated.yml", "w") { |file| file.write(templateEarly.to_yaml) }
+File.open("#{SimcConfig["ProfilesFolder"]}/Combinator/CombinatorGear_FullS_Generated.yml", "w") { |file| file.write(templateFull.to_yaml) }
+File.open("#{SimcConfig["ProfilesFolder"]}/Combinator/CombinatorGear_EarlyS_Generated.yml", "w") { |file| file.write(templateEarly.to_yaml) }
 File.open("#{SimcConfig["ProfilesFolder"]}/Combinator/CombinatorGear_1L_Generated.yml", "w") { |file| file.write(template1L.to_yaml) }
