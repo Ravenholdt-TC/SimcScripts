@@ -1,0 +1,106 @@
+combinatorExtension: Early
+combinatorSlots:
+  - covenant
+  - soulbind
+  - soulbind1
+  - soulbind2
+  - legendary
+covenant:
+  simcSlot: covenant
+  options:
+    - name: Kyrian
+      simcString: kyrian
+    - name: Necrolord
+      simcString: necrolord
+    - name: Night Fae
+      simcString: night_fae
+    - name: Venthyr
+      simcString: venthyr
+soulbind:
+  options:
+    - name: Pelagos
+      requires:
+        covenant: Kyrian
+    - name: Kleia
+      requires:
+        covenant: Kyrian
+    - name: Marileth
+      requires:
+        covenant: Necrolord
+    - name: Emeni
+      requires:
+        covenant: Necrolord
+    - name: Niya
+      requires:
+        covenant: Night Fae
+    - name: Dreamweaver
+      requires:
+        covenant: Night Fae
+    - name: Nadjia
+      requires:
+        covenant: Venthyr
+    - name: Theotar
+      requires:
+        covenant: Venthyr
+soulbind1:
+  simcSlot: "soulbind"
+  options:
+    - name: Combat Meditation
+      simcString: "328266"
+      requires:
+        soulbind: Pelagos
+    - name: Valiant Strikes
+      hidden: true
+      requires:
+        soulbind: Kleia
+    - name: Bron's Call to Action
+      simcString: "333950"
+      requires:
+        soulbind: Mikanikos
+    - name: Marileth PH
+      hidden: true
+      requires:
+        soulbind: Marileth
+    - name: Lead by Example
+      simcString: "342156"
+      requires:
+        soulbind: Emeni
+    - name: Forgeborne Reveries
+      simcString: "326514"
+      requires:
+        soulbind: Heirmir
+    - name: Grove Invigoration
+      simcString: "322721"
+      requires:
+        soulbind: Niya
+    - replace: Conduit
+      requires:
+        soulbind: Dreamweaver
+    - name: Wild Hunt Tactics
+      simcString: "325066"
+      requires:
+        soulbind: Korayn
+    - name: Thrill Seeker
+      simcString: "331586"
+      requires:
+        soulbind: Nadjia
+    - name: Soothing Shade
+      simcString: "336239"
+      requires:
+        soulbind: Theotar
+    - name: Draven PH
+      hidden: true
+      requires:
+        soulbind: Draven
+soulbind2:
+  simcSlot: "soulbind"
+  options:
+    - replace: Conduit
+    - name: Plaguey's Preemptive Strike
+      simcString: "323090"
+      requires:
+        soulbind: Marileth
+    - name: Social Butterfly
+      simcString: "319210"
+      requires:
+        soulbind: Dreamweaver

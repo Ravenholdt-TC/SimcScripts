@@ -1,0 +1,1066 @@
+---
+combinatorExtension: 1L
+combinatorSlots:
+- legendary
+legendary:
+  simcSlot: shirt
+  select: 1
+  options:
+  - name: Slick Ice
+    simcString: sl_legendary,bonus_id=6823
+    requires:
+      spec:
+      - frost
+  - name: Cold Front
+    simcString: sl_legendary,bonus_id=6828
+    requires:
+      spec:
+      - frost
+  - name: Freezing Winds
+    simcString: sl_legendary,bonus_id=6829
+    requires:
+      spec:
+      - frost
+  - name: Glacial Fragments
+    simcString: sl_legendary,bonus_id=6830
+    requires:
+      spec:
+      - frost
+  - name: Expanded Potential
+    simcString: sl_legendary,bonus_id=6831
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Disciplinary Command
+    simcString: sl_legendary,bonus_id=6832
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Grisly Icicle
+    simcString: sl_legendary,bonus_id=6937
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Temporal Warp
+    simcString: sl_legendary,bonus_id=6834
+    requires:
+      spec:
+      - arcane
+  - name: Fevered Incantation
+    simcString: sl_legendary,bonus_id=6931
+    requires:
+      spec:
+      - fire
+  - name: Firestorm
+    simcString: sl_legendary,bonus_id=6932
+    requires:
+      spec:
+      - fire
+  - name: Molten Skyfall
+    simcString: sl_legendary,bonus_id=6933
+    requires:
+      spec:
+      - fire
+  - name: Sun King's Blessing
+    simcString: sl_legendary,bonus_id=6934
+    requires:
+      spec:
+      - fire
+  - name: Arcane Infinity
+    simcString: sl_legendary,bonus_id=6926
+    requires:
+      spec:
+      - arcane
+  - name: Arcane Bombardment
+    simcString: sl_legendary,bonus_id=6927
+    requires:
+      spec:
+      - arcane
+  - name: Siphon Storm
+    simcString: sl_legendary,bonus_id=6928
+    requires:
+      spec:
+      - arcane
+  - name: Triune Ward
+    simcString: sl_legendary,bonus_id=6936
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Collective Anguish
+    simcString: sl_legendary,bonus_id=7041
+    requires:
+      spec:
+      - havoc
+      - vengeance
+  - name: Fel Bombardment
+    simcString: sl_legendary,bonus_id=7052
+    requires:
+      spec:
+      - havoc
+      - vengeance
+  - name: Darkglare Medallion
+    simcString: sl_legendary,bonus_id=7043
+    requires:
+      spec:
+      - havoc
+      - vengeance
+  - name: Darkest Hour
+    simcString: sl_legendary,bonus_id=7044
+    requires:
+      spec:
+      - havoc
+      - vengeance
+  - name: Darker Nature
+    simcString: sl_legendary,bonus_id=7218
+    requires:
+      spec:
+      - havoc
+  - name: Chaos Theory
+    simcString: sl_legendary,bonus_id=7050
+    requires:
+      spec:
+      - havoc
+  - name: Erratic Fel Core
+    simcString: sl_legendary,bonus_id=7051
+    requires:
+      spec:
+      - havoc
+  - name: Burning Wound
+    simcString: sl_legendary,bonus_id=7219
+    requires:
+      spec:
+      - havoc
+  - name: Spirit of the Darkness Flame
+    simcString: sl_legendary,bonus_id=7045
+    requires:
+      spec:
+      - vengeance
+  - name: Razelikh's Defilement
+    simcString: sl_legendary,bonus_id=7046
+    requires:
+      spec:
+      - vengeance
+  - name: Fel Flame Fortification
+    simcString: sl_legendary,bonus_id=7047
+    requires:
+      spec:
+      - vengeance
+  - name: Fiery Soul
+    simcString: sl_legendary,bonus_id=7048
+    requires:
+      spec:
+      - vengeance
+  - name: Superstrain
+    simcString: sl_legendary,bonus_id=6953
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Phearomones
+    simcString: sl_legendary,bonus_id=6954
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Death's Embrace
+    simcString: sl_legendary,bonus_id=6947
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Grip of the Everlasting
+    simcString: sl_legendary,bonus_id=6948
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Bryndaor's Might
+    simcString: sl_legendary,bonus_id=6940
+    requires:
+      spec:
+      - blood
+  - name: Crimson Rune Weapon
+    simcString: sl_legendary,bonus_id=6941
+    requires:
+      spec:
+      - blood
+  - name: Gorefiend's Domination
+    simcString: sl_legendary,bonus_id=6943
+    requires:
+      spec:
+      - blood
+  - name: Vampiric Aura
+    simcString: sl_legendary,bonus_id=6942
+    requires:
+      spec:
+      - blood
+  - name: Koltira's Favor
+    simcString: sl_legendary,bonus_id=6944
+    requires:
+      spec:
+      - frost
+  - name: Biting Cold
+    simcString: sl_legendary,bonus_id=6945
+    requires:
+      spec:
+      - frost
+  - name: Absolute Zero
+    simcString: sl_legendary,bonus_id=6946
+    requires:
+      spec:
+      - frost
+  - name: Rage of the Frozen Champion
+    simcString: sl_legendary,bonus_id=7160
+    requires:
+      spec:
+      - frost
+  - name: Reanimated Shambler
+    simcString: sl_legendary,bonus_id=6949
+    requires:
+      spec:
+      - unholy
+  - name: Frenzied Monstrosity
+    simcString: sl_legendary,bonus_id=6950
+    requires:
+      spec:
+      - unholy
+  - name: Death's Certainty
+    simcString: sl_legendary,bonus_id=6951
+    requires:
+      spec:
+      - unholy
+  - name: Deadliest Coil
+    simcString: sl_legendary,bonus_id=6952
+    requires:
+      spec:
+      - unholy
+  - name: Draught of Deep Focus
+    simcString: sl_legendary,bonus_id=7086
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Circle of Life and Death
+    simcString: sl_legendary,bonus_id=7085
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Lycara's Fleeting Glimpse
+    simcString: sl_legendary,bonus_id=7110
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Oath of the Elder Druid
+    simcString: sl_legendary,bonus_id=7084
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Oneth's Clear Vision
+    simcString: sl_legendary,bonus_id=7087
+    requires:
+      spec:
+      - balance
+  - name: Primordial Arcanic Pulsar
+    simcString: sl_legendary,bonus_id=7088
+    requires:
+      spec:
+      - balance
+  - name: Balance of All Things
+    simcString: sl_legendary,bonus_id=7107
+    requires:
+      spec:
+      - balance
+  - name: Timeworn Dreambinder
+    simcString: sl_legendary,bonus_id=7108
+    requires:
+      spec:
+      - balance
+  - name: Frenzyband
+    simcString: sl_legendary,bonus_id=7109
+    requires:
+      spec:
+      - feral
+  - name: Apex Predator's Craving
+    simcString: sl_legendary,bonus_id=7091
+    requires:
+      spec:
+      - feral
+  - name: Eye of Fearful Symmetry
+    simcString: sl_legendary,bonus_id=7090
+    requires:
+      spec:
+      - feral
+  - name: Cat-eye Curio
+    simcString: sl_legendary,bonus_id=7089
+    requires:
+      spec:
+      - feral
+  - name: Luffa-Infused Embrace
+    simcString: sl_legendary,bonus_id=7092
+    requires:
+      spec:
+      - guardian
+  - name: The Natural Order's Will
+    simcString: sl_legendary,bonus_id=7093
+    requires:
+      spec:
+      - guardian
+  - name: Ursoc's Fury Remembered
+    simcString: sl_legendary,bonus_id=7094
+    requires:
+      spec:
+      - guardian
+  - name: Legacy of the Sleeper
+    simcString: sl_legendary,bonus_id=7095
+    requires:
+      spec:
+      - guardian
+  - name: Memory of the Mother Tree
+    simcString: sl_legendary,bonus_id=7096
+    requires:
+      spec:
+      - restoration
+  - name: The Dark Titan's Lesson
+    simcString: sl_legendary,bonus_id=7097
+    requires:
+      spec:
+      - restoration
+  - name: Verdant Infusion
+    simcString: sl_legendary,bonus_id=7098
+    requires:
+      spec:
+      - restoration
+  - name: Vision of Unending Growth
+    simcString: sl_legendary,bonus_id=7099
+    requires:
+      spec:
+      - restoration
+  - name: Call of the Wild
+    simcString: sl_legendary,bonus_id=7003
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Nessingwary's Trapping Apparatus
+    simcString: sl_legendary,bonus_id=7004
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Soulforge Embers
+    simcString: sl_legendary,bonus_id=7005
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Craven Strategem
+    simcString: sl_legendary,bonus_id=7006
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Dire Command
+    simcString: sl_legendary,bonus_id=7007
+    requires:
+      spec:
+      - beast_mastery
+  - name: Flamewaker's Cobra Sting
+    simcString: sl_legendary,bonus_id=7008
+    requires:
+      spec:
+      - beast_mastery
+  - name: Qa'pla, Eredun War Order
+    simcString: sl_legendary,bonus_id=7009
+    requires:
+      spec:
+      - beast_mastery
+  - name: Rylakstalker's Piercing Fangs
+    simcString: sl_legendary,bonus_id=7010
+    requires:
+      spec:
+      - beast_mastery
+  - name: Eagletalon's True Focus
+    simcString: sl_legendary,bonus_id=7011
+    requires:
+      spec:
+      - marksmanship
+  - name: Surging Shots
+    simcString: sl_legendary,bonus_id=7012
+    requires:
+      spec:
+      - marksmanship
+  - name: Serpentstalker's Trickery
+    simcString: sl_legendary,bonus_id=7013
+    requires:
+      spec:
+      - marksmanship
+  - name: Secrets of the Unblinking Vigil
+    simcString: sl_legendary,bonus_id=7014
+    requires:
+      spec:
+      - marksmanship
+  - name: Wildfire Cluster
+    simcString: sl_legendary,bonus_id=7015
+    requires:
+      spec:
+      - survival
+  - name: Rylakstalker's Confounding Strikes
+    simcString: sl_legendary,bonus_id=7016
+    requires:
+      spec:
+      - survival
+  - name: Latent Poison Injectors
+    simcString: sl_legendary,bonus_id=7017
+    requires:
+      spec:
+      - survival
+  - name: Butcher's Bone Fragments
+    simcString: sl_legendary,bonus_id=7018
+    requires:
+      spec:
+      - survival
+  - name: Escape from Reality
+    simcString: sl_legendary,bonus_id=7184
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Invoker's Delight
+    simcString: sl_legendary,bonus_id=7082
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Swiftsure Wraps
+    simcString: sl_legendary,bonus_id=7080
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Fatal Touch
+    simcString: sl_legendary,bonus_id=7081
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Charred Passions
+    simcString: sl_legendary,bonus_id=7076
+    requires:
+      spec:
+      - brewmaster
+  - name: Stormstout's Last Keg
+    simcString: sl_legendary,bonus_id=7077
+    requires:
+      spec:
+      - brewmaster
+  - name: Celestial Infusion
+    simcString: sl_legendary,bonus_id=7078
+    requires:
+      spec:
+      - brewmaster
+  - name: Shaohao's Might
+    simcString: sl_legendary,bonus_id=7079
+    requires:
+      spec:
+      - brewmaster
+  - name: Ancient Teachings of the Monastery
+    simcString: sl_legendary,bonus_id=7075
+    requires:
+      spec:
+      - mistweaver
+  - name: Yu'lon's Whisper
+    simcString: sl_legendary,bonus_id=7073
+    requires:
+      spec:
+      - mistweaver
+  - name: Clouded Focus
+    simcString: sl_legendary,bonus_id=7074
+    requires:
+      spec:
+      - mistweaver
+  - name: Tear of Morning
+    simcString: sl_legendary,bonus_id=7072
+    requires:
+      spec:
+      - mistweaver
+  - name: Xuen's Treasure
+    simcString: sl_legendary,bonus_id=7070
+    requires:
+      spec:
+      - windwalker
+  - name: Keefer's Skyreach
+    simcString: sl_legendary,bonus_id=7068
+    requires:
+      spec:
+      - windwalker
+  - name: Jade Ignition
+    simcString: sl_legendary,bonus_id=7071
+    requires:
+      spec:
+      - windwalker
+  - name: Last Emperor's Capacitor
+    simcString: sl_legendary,bonus_id=7069
+    requires:
+      spec:
+      - windwalker
+  - name: Uther's Devotion
+    simcString: sl_legendary,bonus_id=7053
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Of Dusk and Dawn
+    simcString: sl_legendary,bonus_id=7055
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: The Magistrate's Judgment
+    simcString: sl_legendary,bonus_id=7056
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Maraad's Dying Breath
+    simcString: sl_legendary,bonus_id=7128
+    requires:
+      spec:
+      - holy
+  - name: Shock Barrier
+    simcString: sl_legendary,bonus_id=7059
+    requires:
+      spec:
+      - holy
+  - name: Shadowbreaker, Dawn of the Sun
+    simcString: sl_legendary,bonus_id=7057
+    requires:
+      spec:
+      - holy
+  - name: Inflorescence of the Sunwell
+    simcString: sl_legendary,bonus_id=7058
+    requires:
+      spec:
+      - holy
+  - name: Holy Avenger's Engraved Sigil
+    simcString: sl_legendary,bonus_id=7060
+    requires:
+      spec:
+      - protection
+  - name: The Ardent Protector's Sanctum
+    simcString: sl_legendary,bonus_id=7061
+    requires:
+      spec:
+      - protection
+  - name: Bulwark of Righteous Fury
+    simcString: sl_legendary,bonus_id=7062
+    requires:
+      spec:
+      - protection
+  - name: Reign of Endless Kings
+    simcString: sl_legendary,bonus_id=7063
+    requires:
+      spec:
+      - protection
+  - name: Tempest of the Lightbringer
+    simcString: sl_legendary,bonus_id=7067
+    requires:
+      spec:
+      - retribution
+  - name: Relentless Inquisitor
+    simcString: sl_legendary,bonus_id=7066
+    requires:
+      spec:
+      - retribution
+  - name: Vanguard's Momentum
+    simcString: sl_legendary,bonus_id=7065
+    requires:
+      spec:
+      - retribution
+  - name: Final Verdict
+    simcString: sl_legendary,bonus_id=7064
+    requires:
+      spec:
+      - retribution
+  - name: Invigorating Shadowdust
+    simcString: sl_legendary,bonus_id=7114
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Essence of Bloodfang
+    simcString: sl_legendary,bonus_id=7113
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Tiny Toxic Blade
+    simcString: sl_legendary,bonus_id=7112
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Mark of the Master Assassin
+    simcString: sl_legendary,bonus_id=7111
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Dashing Scoundrel
+    simcString: sl_legendary,bonus_id=7115
+    requires:
+      spec:
+      - assassination
+  - name: Doomblade
+    simcString: sl_legendary,bonus_id=7116
+    requires:
+      spec:
+      - assassination
+  - name: Zoldyck Insignia
+    simcString: sl_legendary,bonus_id=7117
+    requires:
+      spec:
+      - assassination
+  - name: Duskwalker's Patch
+    simcString: sl_legendary,bonus_id=7118
+    requires:
+      spec:
+      - assassination
+  - name: Concealed Blunderbuss
+    simcString: sl_legendary,bonus_id=7122
+    requires:
+      spec:
+      - outlaw
+  - name: Celerity
+    simcString: sl_legendary,bonus_id=7121
+    requires:
+      spec:
+      - outlaw
+  - name: Guile Charm
+    simcString: sl_legendary,bonus_id=7120
+    requires:
+      spec:
+      - outlaw
+  - name: Greenskin's Wickers
+    simcString: sl_legendary,bonus_id=7119
+    requires:
+      spec:
+      - outlaw
+  - name: Finality
+    simcString: sl_legendary,bonus_id=7123
+    requires:
+      spec:
+      - subtlety
+  - name: Akaari's Soul Fragment
+    simcString: sl_legendary,bonus_id=7124
+    requires:
+      spec:
+      - subtlety
+  - name: The Rotten
+    simcString: sl_legendary,bonus_id=7125
+    requires:
+      spec:
+      - subtlety
+  - name: Deathly Shadows
+    simcString: sl_legendary,bonus_id=7126
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Ancestral Reminder
+    simcString: sl_legendary,bonus_id=6985
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Deeptremor Stone
+    simcString: sl_legendary,bonus_id=6986
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Deeply Rooted Elements
+    simcString: sl_legendary,bonus_id=6987
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Chains of Devastation
+    simcString: sl_legendary,bonus_id=6988
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Skybreaker's Fiery Demise
+    simcString: sl_legendary,bonus_id=6989
+    requires:
+      spec:
+      - elemental
+  - name: Elemental Equilibrium
+    simcString: sl_legendary,bonus_id=6990
+    requires:
+      spec:
+      - elemental
+  - name: Echoes of Great Sundering
+    simcString: sl_legendary,bonus_id=6991
+    requires:
+      spec:
+      - elemental
+  - name: Windspeaker's Lava Resurgence
+    simcString: sl_legendary,bonus_id=6992
+    requires:
+      spec:
+      - elemental
+  - name: Doom Winds
+    simcString: sl_legendary,bonus_id=6993
+    requires:
+      spec:
+      - enhancement
+  - name: Legacy of the Frost Witch
+    simcString: sl_legendary,bonus_id=6994
+    requires:
+      spec:
+      - enhancement
+  - name: Witch Doctor's Wolf Bones
+    simcString: sl_legendary,bonus_id=6995
+    requires:
+      spec:
+      - enhancement
+  - name: Primal Lava Actuators
+    simcString: sl_legendary,bonus_id=6996
+    requires:
+      spec:
+      - enhancement
+  - name: Jonat's Natural Focus
+    simcString: sl_legendary,bonus_id=6997
+    requires:
+      spec:
+      - restoration
+  - name: Spiritwalker's Tidal Totem
+    simcString: sl_legendary,bonus_id=6998
+    requires:
+      spec:
+      - restoration
+  - name: Primal Tide Core
+    simcString: sl_legendary,bonus_id=6999
+    requires:
+      spec:
+      - restoration
+  - name: Earthen Harmony
+    simcString: sl_legendary,bonus_id=7000
+    requires:
+      spec:
+      - restoration
+  - name: Measured Contemplation
+    simcString: sl_legendary,bonus_id=7161
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Twins of the Sun Priestess
+    simcString: sl_legendary,bonus_id=7002
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Cauterizing Shadows
+    simcString: sl_legendary,bonus_id=6975
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Vault of Heavens
+    simcString: sl_legendary,bonus_id=6972
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: The Penitent One
+    simcString: sl_legendary,bonus_id=6976
+    requires:
+      spec:
+      - discipline
+  - name: Crystalline Reflection
+    simcString: sl_legendary,bonus_id=6978
+    requires:
+      spec:
+      - discipline
+  - name: Kiss of Death
+    simcString: sl_legendary,bonus_id=6979
+    requires:
+      spec:
+      - discipline
+  - name: Clarity of Mind
+    simcString: sl_legendary,bonus_id=6980
+    requires:
+      spec:
+      - discipline
+  - name: X'anshi, Return of Archbishop Benedictus
+    simcString: sl_legendary,bonus_id=6984
+    requires:
+      spec:
+      - holy
+  - name: Harmonious Apparatus
+    simcString: sl_legendary,bonus_id=6977
+    requires:
+      spec:
+      - holy
+  - name: Flash Concentration
+    simcString: sl_legendary,bonus_id=6974
+    requires:
+      spec:
+      - holy
+  - name: Divine Image
+    simcString: sl_legendary,bonus_id=6973
+    requires:
+      spec:
+      - holy
+  - name: Painbreaker Psalm
+    simcString: sl_legendary,bonus_id=6981
+    requires:
+      spec:
+      - shadow
+  - name: Shadowflame Prism
+    simcString: sl_legendary,bonus_id=6982
+    requires:
+      spec:
+      - shadow
+  - name: Eternal Call to the Void
+    simcString: sl_legendary,bonus_id=6983
+    requires:
+      spec:
+      - shadow
+  - name: Talbadar's Stratagem
+    simcString: sl_legendary,bonus_id=7162
+    requires:
+      spec:
+      - shadow
+  - name: Wilfred's Sigil of Superior Summoning
+    simcString: sl_legendary,bonus_id=7025
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Claw of Endereth
+    simcString: sl_legendary,bonus_id=7026
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Relic of Demonic Synergy
+    simcString: sl_legendary,bonus_id=7027
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Pillars of the Dark Portal
+    simcString: sl_legendary,bonus_id=7028
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Perpetual Agony of Azj'Aqir
+    simcString: sl_legendary,bonus_id=7029
+    requires:
+      spec:
+      - affliction
+  - name: Sacrolash's Dark Strike
+    simcString: sl_legendary,bonus_id=7030
+    requires:
+      spec:
+      - affliction
+  - name: Malefic Wrath
+    simcString: sl_legendary,bonus_id=7031
+    requires:
+      spec:
+      - affliction
+  - name: Wrath of Consumption
+    simcString: sl_legendary,bonus_id=7032
+    requires:
+      spec:
+      - affliction
+  - name: Implosive Potential
+    simcString: sl_legendary,bonus_id=7033
+    requires:
+      spec:
+      - demonology
+  - name: Grim Inquisitor's Dread Calling
+    simcString: sl_legendary,bonus_id=7034
+    requires:
+      spec:
+      - demonology
+  - name: Forces of the Horned Nightmare
+    simcString: sl_legendary,bonus_id=7035
+    requires:
+      spec:
+      - demonology
+  - name: Balespider's Burning Core
+    simcString: sl_legendary,bonus_id=7036
+    requires:
+      spec:
+      - demonology
+  - name: Odr, Shawl of the Ymirjar
+    simcString: sl_legendary,bonus_id=7037
+    requires:
+      spec:
+      - destruction
+  - name: Cinders of the Azj'Aqir
+    simcString: sl_legendary,bonus_id=7038
+    requires:
+      spec:
+      - destruction
+  - name: Madness of the Azj'Aqir
+    simcString: sl_legendary,bonus_id=7039
+    requires:
+      spec:
+      - destruction
+  - name: Embers of the Diabolic Raiment
+    simcString: sl_legendary,bonus_id=7040
+    requires:
+      spec:
+      - destruction
+  - name: Leaper
+    simcString: sl_legendary,bonus_id=6955
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Seismic Reverberation
+    simcString: sl_legendary,bonus_id=6971
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Misshapen Mirror
+    simcString: sl_legendary,bonus_id=6958
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Signet of Tormented Kings
+    simcString: sl_legendary,bonus_id=6959
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Enduring Blow
+    simcString: sl_legendary,bonus_id=6962
+    requires:
+      spec:
+      - arms
+  - name: Battlelord
+    simcString: sl_legendary,bonus_id=6960
+    requires:
+      spec:
+      - arms
+  - name: Exploiter
+    simcString: sl_legendary,bonus_id=6961
+    requires:
+      spec:
+      - arms
+  - name: Unhinged
+    simcString: sl_legendary,bonus_id=6970
+    requires:
+      spec:
+      - arms
+  - name: Cadence of Fujieda
+    simcString: sl_legendary,bonus_id=6963
+    requires:
+      spec:
+      - fury
+  - name: Deathmaker
+    simcString: sl_legendary,bonus_id=6964
+    requires:
+      spec:
+      - fury
+  - name: Reckless Defense
+    simcString: sl_legendary,bonus_id=6965
+    requires:
+      spec:
+      - fury
+  - name: Will of the Berserker
+    simcString: sl_legendary,bonus_id=6966
+    requires:
+      spec:
+      - fury
+  - name: Thunderlord
+    simcString: sl_legendary,bonus_id=6956
+    requires:
+      spec:
+      - protection
+  - name: The Wall
+    simcString: sl_legendary,bonus_id=6957
+    requires:
+      spec:
+      - protection
+  - name: Unbreakable Will
+    simcString: sl_legendary,bonus_id=6967
+    requires:
+      spec:
+      - protection
+  - name: Reprisal
+    simcString: sl_legendary,bonus_id=6969
+    requires:
+      spec:
+      - protection
+  - name: The Mad Paragon
+    simcString: sl_legendary,bonus_id=7054
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution

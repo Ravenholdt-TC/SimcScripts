@@ -13,10 +13,8 @@ require_relative "lib/HeroInterface"
 Logging.Initialize("Combinator")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
-classfolder = Interactive.SelectSubfolder("Combinator")
-covenant = Interactive.SelectFromArray("Covenant", ["Default", "Kyrian", "Necrolord", "Night-Fae", "Venthyr"])
-covenant_simc = covenant.downcase.gsub("-", "_")
-profile, profileFile = Interactive.SelectTemplate(["Combinator/#{classfolder}/Combinator_", "Templates/#{classfolder}/", ""], classfolder)
+classfolder = Interactive.SelectSubfolder("Templates")
+profile, profileFile = Interactive.SelectTemplate(["Templates/#{classfolder}/", ""], classfolder)
 
 #Read spec from profile
 spec = ProfileHelper.GetValueFromTemplate("spec", profileFile)
@@ -32,11 +30,7 @@ unless talents
   exit
 end
 
-# Read covenant from template profile
-covenant_default = ProfileHelper.GetValueFromTemplate("covenant", profileFile)
-
-gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/#{classfolder}/CombinatorGear_")
-setupsProfile, setupsProfileFile = Interactive.SelectTemplate("Combinator/CombinatorSetups_")
+gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/CombinatorGear_")
 talentdatasets = Interactive.SelectTalentPermutations(talents)
 
 # Log all interactively set settings
@@ -44,114 +38,97 @@ puts
 Logging.LogScriptInfo "Summarizing input:"
 Logging.LogScriptInfo "-- Fightstyle: #{fightstyle}"
 Logging.LogScriptInfo "-- Class: #{classfolder}"
-Logging.LogScriptInfo "-- Covenant: #{covenant}"
 Logging.LogScriptInfo "-- Profile: #{profile}"
 Logging.LogScriptInfo "-- Gear: #{gearProfile}"
-Logging.LogScriptInfo "-- Setups: #{setupsProfile}"
 Logging.LogScriptInfo "-- Talents: #{talentdatasets}"
 puts
 
 # Read gear setups from JSON
-gear = JSONParser.ReadFile(gearProfileFile)
-setups = JSONParser.ReadFile(setupsProfileFile)
+gear = YAML.load(File.read(gearProfileFile))
 
-# Duplicate two-slot items
-gear["specials"][spec]["finger2"] = gear["specials"][spec]["finger1"]
-gear["specials"][spec]["trinket2"] = gear["specials"][spec]["trinket1"]
+# Step by step cross products with requirement checks
+rawCombinations = []
+gear["combinatorSlots"].each.with_index(1) do |slot, slotNum|
+  gear[slot]["options"].delete_if { |x| x["requires"] && x["requires"]["spec"] && !x["requires"]["spec"].include?(spec) }
+  newOptions = gear[slot]["options"]
 
-# Duplicate Conduits for 2 potency slots
-gear["specials"][spec]["conduit2"] = gear["specials"][spec]["conduit"]
+  if slotNum > 1
+    rawCombinations = rawCombinations.product(newOptions) # Cross product everything
+    rawCombinations = rawCombinations.collect(&:flatten) # Remove inner nested arrays
+  else
+    rawCombinations = newOptions.collect { |x| [x] } # Create nested arrays for first/single slot combinations
+  end
 
-hasAnyCovenants = false
-hasAnyConduits = false
-
-# Import soulbind settings file for conduit rank
-conduitList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Conduits.json")
-soulbindSettings = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/SoulbindSettings.json")
-conduitRank = soulbindSettings["combinatorConduitRank"]
-
-# Build gear combinations
-gearCombinations = {}
-setups["setups"].each do |setup|
-  setup["specials"].each do |numSpecials|
-    # Iterate over legendary slot combinations
-    gear["specials"][spec].keys.combination(numSpecials).to_a.each do |specialSlots|
-      catch (:invalidCombination) do
-        # Always use first slot for multi slot specials before considering the next ones
-        throw :invalidCombination if specialSlots.include?("finger2") && !specialSlots.include?("finger1")
-        throw :invalidCombination if specialSlots.include?("trinket2") && !specialSlots.include?("trinket1")
-        throw :invalidCombination if specialSlots.include?("conduit2") && !specialSlots.include?("conduit")
-
-        # Create matching set combination
-        usedSlots = [] + specialSlots
-        setStrings = []
-        setup["sets"].each do |set|
-          availableSlots = gear["sets"][set["set"]].keys - usedSlots
-          throw :invalidCombination if availableSlots.length < set["pieces"]
-          availableSlots.take(set["pieces"]).each do |setSlot|
-            setStrings.push("#{setSlot}=#{gear["sets"][set["set"]][setSlot]}")
-            usedSlots.push(setSlot)
-          end
-        end
-        setProfileName = setup["sets"].collect { |set| set["pieces"] > 0 ? "#{set["set"]}(#{set["pieces"]})" : "#{set["set"]}" }.join("+")
-
-        # Iterate over special combinations for the current special slot combination
-        if specialSlots.empty?
-          gearCombinations["#{setProfileName}_None"] = setStrings
-          next
-        end
-        specialCombinations = specialSlots.collect { |specialSlot| gear["specials"][spec][specialSlot].keys }
-        specialCombinations = specialCombinations.reduce(&:product) if specialSlots.length > 1 # Create multi-slot cross product
-        specialCombinations = specialCombinations.flatten.collect { |x| [x] } if specialSlots.length == 1 # Special handling for only one slot
-        specialCombinations = specialCombinations.collect(&:flatten) # Remove inner nested arrays
-        specialCombinations = specialCombinations.collect(&:uniq)
-        specialCombinations = specialCombinations.uniq { |x| x.sort } # Only generally unique combinations
-        specialCombinations = specialCombinations.select { |x| x.length == numSpecials } # Only desired amount of specials
-        specialCombinations.each do |specialCombination|
-          # Special for Conduits: Exclude other covenant conduits if combinator covenant is set
-          cov_requirements = specialCombination.collect { |x| soulbindSettings["covenantConduitsMap"][conduitList.find { |y| y["conduitName"] == x }&.dig("conduitSpellID")&.to_s] }
-          next if covenant_simc != "default" && cov_requirements.any? { |x| ![covenant_simc, nil].include?(x) }
-          next if covenant_simc == "default" && cov_requirements.any? { |x| ![covenant_default, nil].include?(x) }
-
-          specialProfileName = specialCombination.join("_")
-          specialStrings = []
-          specialConduits = []
-          specialCombination.each_with_index do |itemName, idx|
-            specialOverrides = ProfileHelper.GetSpecialOverrides("Combinator/#{classfolder}/SpecialOverrides/#{profile}", itemName)
-            specialOverrides.each do |specialOverride|
-              specialStrings.push(specialOverride)
-            end
-            # Special treatment for handling Conduit overrides as specials, also replace !!RANK!! with fitting rank
-            if specialSlots[idx].include? "conduit"
-              specialConduits.push(gear["specials"][spec][specialSlots[idx]][itemName].gsub("!!RANK!!", conduitRank.to_s))
-            else
-              specialStrings.push("#{specialSlots[idx]}=#{gear["specials"][spec][specialSlots[idx]][itemName]}")
-              hasAnyCovenants = true if specialSlots[idx] == "covenant"
-            end
-          end
-          unless specialConduits.empty?
-            hasAnyConduits = true
-            specialStrings.push("soulbind=#{specialConduits.join("/")}")
-          end
-          gearCombinations["#{setProfileName}_#{specialProfileName}"] = specialStrings + setStrings
+  # Delete invalid combinations via requirements
+  rawCombinations.delete_if do |combination|
+    delete = false
+    combination.each_with_index do |part, idx|
+      combinatorSlot = gear[gear["combinatorSlots"][idx]]
+      combinatorOption = part
+      # Check requirements
+      if combinatorOption["requires"]
+        combinatorOption["requires"].each do |reqSlot, req|
+          next if reqSlot == "spec" # handled above
+          refidx = gear["combinatorSlots"].index(reqSlot)
+          req = [req] if req.is_a?(String)
+          delete = true if !req.include?(combination[refidx]["name"])
         end
       end
     end
+    next delete
   end
+
+  # Final cleanups, after checking requirements because there might be duplicate options with different requirements
+  rawCombinations = rawCombinations.collect { |x| x.uniq { |y| y["name"] } } # Everything inside should be unique (AAB -> AB)
+  rawCombinations = rawCombinations.select { |x| x.length == slotNum } # Only desired amount of combinator slots
+  rawCombinations = rawCombinations.uniq { |x| x.sort_by { |y| y["name"] } } # Only generally unique combinations (no ABC and ACB)
 end
+
+# Build gear combination inputs
+gearCombinations = {}
+rawCombinations.each do |combination|
+  inputStringsBySimcSlot = {}
+  names = combination.collect { |x| x["name"] }
+  hideFromName = []
+
+  # Go through slots
+  combination.each_with_index do |part, idx|
+    combinatorSlot = gear[gear["combinatorSlots"][idx]]
+    combinatorOption = part
+    hideFromName.push(combinatorOption["name"]) if combinatorOption["hidden"]
+
+    # Fetch simc input info
+    next unless combinatorSlot["simcSlot"] # Skip virtual slots
+    next unless combinatorOption["simcString"] # Skip virtual options
+    inputStringsBySimcSlot[combinatorSlot["simcSlot"]] ||= []
+    inputStringsBySimcSlot[combinatorSlot["simcSlot"]].push(combinatorOption["simcString"])
+    if combinatorOption["additionalInput"]
+      combinatorOption["additionalInput"].each do |add|
+        inputStringsBySimcSlot[add["simcSlot"]] ||= []
+        inputStringsBySimcSlot[add["simcSlot"]].push(add["simcString"])
+      end
+    end
+  end
+
+  # Generate and store actual simc input
+  inputStrings = []
+  inputStringsBySimcSlot.each do |slot, arr|
+    inputStrings.push("#{slot}=#{arr.join("/")}")
+  end
+  nameArr = names - hideFromName
+  profileName = nameArr.join("_")
+  gearCombinations[profileName] = inputStrings
+end
+
+# Debug write
+#File.open("temp.yml", "w") { |file| file.write(gearCombinations.to_yaml) }
+#exit
 
 # Combine gear with talents and write simc input to file
 simcInput = []
 simcInput.push "name=Template"
 
-if covenant_simc != "default"
-  simcInput.push "covenant=" + covenant_simc
-elsif hasAnyCovenants
-  simcInput.push "covenant=none"
-end
-simcInput.push "soulbind=" if hasAnyConduits || hasAnyCovenants || covenant_simc != "default"
-
-if gearProfile.include?("Legendaries") || gearProfile.include?("ShadowlandsFull")
+if gear["legendary"]
   # Create overrides with legendary bonus_ids removed from input
   legoList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Legendaries.json")
   legoBonusIds = legoList.collect { |x| x["legendaryBonusID"] }
@@ -199,14 +176,15 @@ end
 
 # Special naming extensions
 combinatorStyle = ""
-if ["1L", "2C", "2CL"].include? setupsProfile
-  combinatorStyle = "-#{setupsProfile}"
+if gear["combinatorExtension"]
+  combinatorStyle = "-#{gear["combinatorExtension"]}"
+end
+combinatorVariation = ""
+if gear["combinatorVariation"]
+  combinatorVariation = "_#{gear["combinatorVariation"]}"
 end
 
-simulationFilename = "Combinator#{combinatorStyle}_#{fightstyle}_#{profile}"
-if covenant_simc != "default"
-  simulationFilename += "_" + covenant
-end
+simulationFilename = "Combinator#{combinatorStyle}_#{fightstyle}_#{profile}#{combinatorVariation}"
 params = [
   "#{SimcConfig["ConfigFolder"]}/SimcCombinatorConfig.simc",
   fightstyleFile,
@@ -232,18 +210,16 @@ report = []
 sims.each do |name, value|
   actor = []
   # Split profile name (mostly for web display)
-  if data = name.match(/\A(\d+)_([^_]+)_?([^;]*)\Z/)
+  if data = name.match(/\A(\d+)_?([^;]*)\Z/)
     # Talents
     actor.push(data[1])
-    # Tiers
-    actor.push(data[2].gsub("+", " + "))
-    # Legendaries
-    if not data[3].empty?
-      legos = data[3].gsub(/_/, "; ")
+    # Gear
+    if not data[2].empty?
+      gearName = data[2].gsub(/_/, "; ")
     else
-      legos = "None"
+      gearName = "None"
     end
-    actor.push(legos)
+    actor.push(gearName)
   else
     # We should not get here, but leave it as failsafe
     Logging.LogScriptError "Matching result name failed: #{name}"
@@ -254,7 +230,7 @@ sims.each do |name, value|
   report.push(actor)
 end
 # Sort the report by the DPS value in DESC order
-report.sort! { |x, y| y[3] <=> x[3] }
+report.sort! { |x, y| y[2] <=> x[2] }
 # Add the initial rank
 report.each_with_index { |actor, index|
   actor.unshift(index + 1)

@@ -203,26 +203,21 @@ wow_classes.each do |wow_class|
           commands.each do |command|
             #next if command.start_with?("DS_") && fightstyle != "DS" || !command.start_with?("DS_") && fightstyle == "DS"
             if script == "Combinator" && command.include?("!!SetSL!!")
-              # Base run for talents + covenants
-              specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Covenants SLBaseCovenants")
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{specialCommand} q"
-              ["Kyrian", "Necrolord", "Night-Fae", "Venthyr"].each do |cov|
-                specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Legendaries 1L")
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
-                specialCommand = command.gsub("!!SetSL!!", "#{wow_class}_Conduits 2C")
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{cov} #{specialCommand} q"
-              end
+              # Specified talents for legendaries
+              specialCommand = command.gsub("!!SetSL!!", "1L_Generated")
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
+              # Default talents for advanced covenant combinations
+              specialCommand = command.split("!!SetSL!!")[0] + "Full_Generated default"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
+              specialCommand = command.split("!!SetSL!!")[0] + "Early_Generated default"
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
             elsif script == "SoulbindSimulation"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Kyrian q"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Necrolord q"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Night-Fae q"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Venthyr q"
             else
-              if script == "Combinator"
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} Default #{command} q"
-              else
-                system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
-              end
+              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} q"
             end
           end
         end

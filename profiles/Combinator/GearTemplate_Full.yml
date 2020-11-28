@@ -1,0 +1,196 @@
+combinatorSlots:
+  - covenant
+  - soulbind
+  - soulbind1
+  - soulbind2
+  - soulbind3
+  - legendary
+covenant:
+  simcSlot: covenant
+  options:
+    - name: Kyrian
+      simcString: kyrian
+    - name: Necrolord
+      simcString: necrolord
+    - name: Night Fae
+      simcString: night_fae
+    - name: Venthyr
+      simcString: venthyr
+soulbind:
+  options:
+    - name: Pelagos
+      requires:
+        covenant: Kyrian
+    - name: Kleia
+      requires:
+        covenant: Kyrian
+    - name: Mikanikos
+      requires:
+        covenant: Kyrian
+    - name: Marileth
+      requires:
+        covenant: Necrolord
+    - name: Emeni
+      requires:
+        covenant: Necrolord
+    - name: Heirmir
+      requires:
+        covenant: Necrolord
+    - name: Niya
+      requires:
+        covenant: Night Fae
+    - name: Dreamweaver
+      requires:
+        covenant: Night Fae
+    - name: Korayn
+      requires:
+        covenant: Night Fae
+    - name: Nadjia
+      requires:
+        covenant: Venthyr
+    - name: Theotar
+      requires:
+        covenant: Venthyr
+    - name: Draven
+      requires:
+        covenant: Venthyr
+soulbind1:
+  simcSlot: "soulbind"
+  options:
+    - name: Combat Meditation
+      simcString: "328266"
+      requires:
+        soulbind: Pelagos
+    - name: Kleia PH
+      hidden: true
+      requires:
+        soulbind: Kleia
+    - name: Bron's Call to Action
+      simcString: "333950"
+      requires:
+        soulbind: Mikanikos
+    - name: Marileth PH
+      hidden: true
+      requires:
+        soulbind: Marileth
+    - name: Lead by Example
+      simcString: "342156"
+      requires:
+        soulbind: Emeni
+    - name: Forgeborne Reveries
+      simcString: "326514"
+      requires:
+        soulbind: Heirmir
+    - name: Grove Invigoration
+      simcString: "322721"
+      requires:
+        soulbind: Niya
+    - replace: Conduit
+      requires:
+        soulbind: Dreamweaver
+    - name: Wild Hunt Tactics
+      simcString: "325066"
+      requires:
+        soulbind: Korayn
+    - name: Thrill Seeker
+      simcString: "331586"
+      requires:
+        soulbind: Nadjia
+    - name: Soothing Shade
+      simcString: "336239"
+      requires:
+        soulbind: Theotar
+    - name: Draven PH
+      hidden: true
+      requires:
+        soulbind: Draven
+soulbind2:
+  simcSlot: "soulbind"
+  options:
+    - replace: Conduit
+    - name: Plaguey's Preemptive Strike
+      simcString: "323090"
+      requires:
+        soulbind: Marileth
+    - name: Social Butterfly
+      simcString: "319210"
+      requires:
+        soulbind: Dreamweaver
+soulbind3:
+  simcSlot: "soulbind"
+  options:
+    - replace: Conduit
+      requires:
+        soulbind:
+          - Pelagos
+          - Kleia
+          - Mikanikos
+          - Marileth
+          - Emeni
+          - Heirmir
+          - Korayn
+          - Nadjia
+          - Theotar
+          - Draven
+    - replace: Conduit
+      additionalInput: # Niya's Poison, special handling, add to conduit
+        - simcSlot: soulbind
+          simcString: "320660"
+      requires:
+        soulbind: Niya
+    - name: Pointed Courage
+      simcString: "329778"
+      requires:
+        soulbind: Kleia
+    - name: Hammer of Genesis
+      simcString: "333935"
+      requires:
+        soulbind: Mikanikos
+    - name: Gnashing Chompers
+      simcString: "323919"
+      requires:
+        soulbind: Emeni
+    - name: "Heirmir's Arsenal: Marrowed Gemstone"
+      simcString: "326572"
+      requires:
+        soulbind: Heirmir
+    - name: "Niya's Tools: Burrs"
+      simcString: "320659"
+      requires:
+        soulbind: Niya
+    - name: "Niya's Tools: Herbs"
+      simcString: "320662"
+      requires:
+        soulbind: Niya
+    - name: Field of Blossoms
+      simcString: "319191"
+      requires:
+        soulbind: Dreamweaver
+    - name: First Strike
+      simcString: "325069"
+      requires:
+        soulbind: Korayn
+    - name: Dauntless Duelist
+      simcString: "331584"
+      requires:
+        soulbind: Nadjia
+    - name: Exacting Preparation
+      simcString: "331580"
+      requires:
+        soulbind: Nadjia
+    - name: Refined Palate
+      simcString: "336243"
+      requires:
+        soulbind: Theotar
+    - name: Wasteland Propriety
+      simcString: "319983"
+      requires:
+        soulbind: Theotar
+    - name: Built for War
+      simcString: "319973"
+      requires:
+        soulbind: Draven
+    - name: Superior Tactics
+      simcString: "332753"
+      requires:
+        soulbind: Draven

@@ -57,17 +57,17 @@ This script will run a template for whatever talent and gear combinations you wo
 investigate. It is an interactive script prompting for any input required.
 
 All you have to do is create a `Combinator_<PROFILENAME>.simc` file in a class folder in
-`profiles/Combinator`. You can also use your classes folder in `profiles/Templates`.
+`profiles/Templates`.
 
 You can override baseline gear for certain talents setups by creating another profile in
 a `TalentOverrides` subfolder. That files name has to match the profile name and a talent
-permutation. (e.g. `<NAME>_xxx123x`) The same principle applies for special item overrides.
-Create a `SpecialOverrides` subfolder and name it the same as the profile followed by a
-special item name from the Gear file. (e.g. `<NAME>_Bracers`)
+permutation. (e.g. `<NAME>_xxx123x`)
 
 Also make sure gear and setup definitions are available. For an example, look at the
-files `CombinatorGear_*.json` and `CombinatorSetups_*.json`. These
-define what gear is available to the class and what setups of those to simulate.
+files `CombinatorGear_*.yml` files. These define what gear is available to the class and what
+setups of those to simulate. Check the
+[specs](https://github.com/Ravenholdt-TC/SimcScripts/wiki/Combinator-Gear-Specification)
+for more info.
 
 Special Combinator simulation settings can be modified in `conf/SimcCombinatorConfig.simc`.
 

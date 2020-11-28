@@ -1,0 +1,6 @@
+---
+combinatorSlots:
+- "none"
+none:
+  options:
+  - name: None
