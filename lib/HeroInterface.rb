@@ -25,7 +25,7 @@ module HeroInterface
     return true
   end
 
-  # Azerite stacks will be converted into Combinator-XA_*. nil will just be Combinator_*.
+  # Extension gear will be converted into Combinator-XXX_*. nil will just be Combinator_*.
   def self.GetRawCombinationData(combinatorStyle, fightstyle, profile)
     # First look if there is a local report, then check HeroDamage repository.
     csSuffix = combinatorStyle ? "-#{combinatorStyle}" : ""
@@ -53,7 +53,7 @@ module HeroInterface
     end
 
     profile = ProfileHelper.NormalizeProfileName(profile)
-    genericData = GetRawCombinationData(nil, fightstyle, profile)
+    genericData = GetRawCombinationData("1L", fightstyle, profile)
 
     if !genericData
       Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
