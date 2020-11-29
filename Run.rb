@@ -16,7 +16,7 @@ to_run = {
       #"PR_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
-      #"PR_Druid_Balance",
+      "PR_Druid_Balance",
       "PR_Druid_Feral",
       #"PR_Druid_Guardian",
     ],
@@ -77,7 +77,7 @@ to_run = {
       #"PR_Demon_Hunter_Vengeance !!SetSL!! xxxx1x1",
     ],
     "Druid" => [
-      #"PR_Druid_Balance !!SetSL!! x000xxx",
+      "PR_Druid_Balance !!SetSL!! x000xxx",
       "PR_Druid_Feral !!SetSL!! x000xxx",
       #"PR_Druid_Guardian !!SetSL!! x111x2x",
     ],
@@ -140,7 +140,7 @@ to_run = {
       #"PR_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
-      #"PR_Druid_Balance Intelligence",
+      "PR_Druid_Balance Intelligence",
       "PR_Druid_Feral Agility",
       #"PR_Druid_Guardian Agility",
     ],
