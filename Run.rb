@@ -102,15 +102,20 @@ to_run = {
     ],
     "Priest" => [
       "PR_Priest_Shadow !!SetSL!! x0x0xxx",
+      "T26_Priest_Shadow !!SetSL!! x0x0xxx",
     ],
     "Rogue" => [
       "PR_Rogue_Assassination !!SetSL!! xxx00xx",
       "PR_Rogue_Outlaw !!SetSL!! x0x00xx",
       "PR_Rogue_Subtlety !!SetSL!! xxx00xx",
+      "T26_Rogue_Assassination !!SetSL!! xxx00xx",
+      "T26_Rogue_Outlaw !!SetSL!! x0x00xx",
+      "T26_Rogue_Subtlety !!SetSL!! xxx00xx",
     ],
     "Shaman" => [
       "PR_Shaman_Elemental !!SetSL!! xx0x0xx",
       "PR_Shaman_Enhancement !!SetSL!! xx0x0xx",
+      "T26_Shaman_Enhancement !!SetSL!! xx0x0xx",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction !!SetSL!! xx0x0xx",
