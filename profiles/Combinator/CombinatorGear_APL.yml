@@ -1,0 +1,11 @@
+---
+combinatorSlots:
+- "APL"
+APL:
+  simcSlot: "input"
+  options:
+  - name: Default
+    simcString: "profiles/Combinator/apl-default.simc"
+  - name: New
+    simcString: "profiles/Combinator/apl-new.simc"
+

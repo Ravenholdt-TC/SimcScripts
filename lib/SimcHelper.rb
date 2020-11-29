@@ -28,10 +28,19 @@ module SimcHelper
   end
 
   # Append a simc file to a filestream, used for generating the full simc input file.
-  def self.WriteFileToInput(filename, out)
+  def self.WriteFileToInput(filename, out, profileset = nil)
     out.puts
     out.puts("# --- #{filename} ---")
-    out.puts(File.read(filename))
+    File.open(filename).each do |line|
+      line.chomp!
+      if profileset
+        if !line.empty? && !line.start_with?("#")
+          out.puts "#{profileset}+=#{line}"
+        end
+      else
+        out.puts line
+      end
+    end
     out.puts("# --- End of File ---")
     out.puts
   end
@@ -72,7 +81,10 @@ module SimcHelper
       WriteFileToInput("#{SimcConfig["ConfigFolder"]}/SimcGlobalConfig.simc", input)
 
       args.flatten.each do |arg|
-        if arg.end_with?(".simc")
+        if arg.end_with?(".simc") && arg.start_with?("profileset.")
+          splits = arg.split("+=input=")
+          WriteFileToInput(splits[1].gsub("\"", ""), input, splits[0])
+        elsif arg.end_with?(".simc")
           # Input File
           WriteFileToInput(arg, input)
         else
