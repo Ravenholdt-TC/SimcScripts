@@ -107,10 +107,34 @@
             "additionalInput": []
         },
         {
-            "name": "Mistcaller Ocarina",
+            "name": "Mistcaller Ocarina (Crit)",
             "itemId": 178715,
             "itemLevels": [184, 200, 210, 226],
-            "bonusIds": [],
+            "bonusIds": [6920],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Mistcaller Ocarina (Haste)",
+            "itemId": 178715,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [6921],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Mistcaller Ocarina (Mastery)",
+            "itemId": 178715,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [6922],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Mistcaller Ocarina (Versa)",
+            "itemId": 178715,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [6923],
             "enchants": [],
             "additionalInput": []
         },
