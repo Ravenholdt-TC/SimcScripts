@@ -6,7 +6,7 @@ require_relative "lib/SimcConfig"
 to_run = {
   "RaceSimulation" => { ### !!! This will also be used for Legendary, and Soulbind simulations
     "Death-Knight" => [
-      #"PR_Death_Knight_Blood",
+      "PR_Death_Knight_Blood",
       "PR_Death_Knight_Frost",
       "PR_Death_Knight_Unholy",
     ],
@@ -67,7 +67,7 @@ to_run = {
     # Keep the part called !!SetSL!!, this will be auto replaced with different gear and setups. #
     ##############################################################################################
     "Death-Knight" => [
-      #"PR_Death_Knight_Blood !!SetSL!! xxx20xx",
+      "PR_Death_Knight_Blood !!SetSL!! xxx20xx",
       "PR_Death_Knight_Frost !!SetSL!! xx0x0xx",
       "PR_Death_Knight_Unholy !!SetSL!! xx0x0xx",
     ],
@@ -130,7 +130,7 @@ to_run = {
   },
   "TrinketSimulation" => {
     "Death-Knight" => [
-      #"PR_Death_Knight_Blood Strength",
+      "PR_Death_Knight_Blood Strength",
       "PR_Death_Knight_Frost Strength",
       "PR_Death_Knight_Unholy Strength",
     ],
