@@ -59,12 +59,36 @@
             "additionalInput": []
         },
         {
-            "name": "Unbound Changeling",
+            "name": "Unbound Changeling (All)",
             "itemId": 178708,
             "itemLevels": [184, 200, 210, 226],
             "bonusIds": [],
             "enchants": [],
-            "additionalInput": []
+            "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"all\""]
+        },
+        {
+            "name": "Unbound Changeling (Crit)",
+            "itemId": 178708,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"crit\""]
+        },
+        {
+            "name": "Unbound Changeling (Haste)",
+            "itemId": 178708,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"haste\""]
+        },
+        {
+            "name": "Unbound Changeling (Mastery)",
+            "itemId": 178708,
+            "itemLevels": [184, 200, 210, 226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"mastery\""]
         },
         {
             "name": "Soulletting Ruby",
