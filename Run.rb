@@ -13,12 +13,12 @@ to_run = {
     "Demon-Hunter" => [
       "PR_Demon_Hunter_Havoc",
       "PR_Demon_Hunter_Havoc_Momentum",
-      #"PR_Demon_Hunter_Vengeance",
+      "PR_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
       "PR_Druid_Balance",
       "PR_Druid_Feral",
-      #"PR_Druid_Guardian",
+      "PR_Druid_Guardian",
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery",
@@ -36,7 +36,7 @@ to_run = {
       "PR_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
-      #"PR_Paladin_Protection",
+      "PR_Paladin_Protection",
       "PR_Paladin_Retribution",
     ],
     "Priest" => [
@@ -84,7 +84,7 @@ to_run = {
     "Druid" => [
       "PR_Druid_Balance !!SetSL!! x000xxx",
       "PR_Druid_Feral !!SetSL!! x000xxx",
-      #"PR_Druid_Guardian !!SetSL!! x111x2x",
+      "PR_Druid_Guardian !!SetSL!! x111x2x",
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
@@ -102,7 +102,7 @@ to_run = {
       "PR_Monk_Windwalker_Serenity !!SetSL!! x0x20x3",
     ],
     "Paladin" => [
-      #"PR_Paladin_Protection !!SetSL!! xx0000x",
+      "PR_Paladin_Protection !!SetSL!! xx0000x",
       "PR_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
@@ -142,12 +142,12 @@ to_run = {
     "Demon-Hunter" => [
       "PR_Demon_Hunter_Havoc Agility",
       "PR_Demon_Hunter_Havoc_Momentum Agility",
-      #"PR_Demon_Hunter_Vengeance Agility",
+      "PR_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
       "PR_Druid_Balance Intelligence",
       "PR_Druid_Feral Agility",
-      #"PR_Druid_Guardian Agility",
+      "PR_Druid_Guardian Agility",
     ],
     "Hunter" => [
       "PR_Hunter_Beast_Mastery Agility",
@@ -165,7 +165,7 @@ to_run = {
       "PR_Monk_Windwalker_Serenity Agility",
     ],
     "Paladin" => [
-      #"PR_Paladin_Protection Strength",
+      "PR_Paladin_Protection Strength",
       "PR_Paladin_Retribution Strength",
     ],
     "Priest" => [
