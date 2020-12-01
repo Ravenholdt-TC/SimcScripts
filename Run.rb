@@ -41,15 +41,20 @@ to_run = {
     ],
     "Priest" => [
       "PR_Priest_Shadow",
+      "T26_Priest_Shadow",
     ],
     "Rogue" => [
       "PR_Rogue_Assassination",
       "PR_Rogue_Outlaw",
       "PR_Rogue_Subtlety",
+      "T26_Rogue_Assassination",
+      "T26_Rogue_Outlaw",
+      "T26_Rogue_Subtlety",
     ],
     "Shaman" => [
       "PR_Shaman_Elemental",
       "PR_Shaman_Enhancement",
+      "T26_Shaman_Enhancement",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction",
@@ -165,15 +170,20 @@ to_run = {
     ],
     "Priest" => [
       "PR_Priest_Shadow Intelligence",
+      "T26_Priest_Shadow Intelligence",
     ],
     "Rogue" => [
       "PR_Rogue_Assassination Agility",
       "PR_Rogue_Outlaw Agility",
       "PR_Rogue_Subtlety Agility",
+      "T26_Rogue_Assassination Agility",
+      "T26_Rogue_Outlaw Agility",
+      "T26_Rogue_Subtlety Agility",
     ],
     "Shaman" => [
       "PR_Shaman_Elemental Intelligence",
       "PR_Shaman_Enhancement Agility",
+      "T26_Shaman_Enhancement Agility",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction Intelligence",
