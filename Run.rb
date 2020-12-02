@@ -24,6 +24,9 @@ to_run = {
       "PR_Hunter_Beast_Mastery",
       "PR_Hunter_Marksmanship",
       "PR_Hunter_Survival",
+      "T26_Hunter_Beast_Mastery",
+      "T26_Hunter_Marksmanship",
+      "T26_Hunter_Survival",
     ],
     "Mage" => [
       "PR_Mage_Arcane",
@@ -38,6 +41,8 @@ to_run = {
     "Paladin" => [
       "PR_Paladin_Protection",
       "PR_Paladin_Retribution",
+      "T26_Paladin_Protection",
+      "T26_Paladin_Retribution",
     ],
     "Priest" => [
       "PR_Priest_Shadow",
@@ -54,6 +59,7 @@ to_run = {
     "Shaman" => [
       "PR_Shaman_Elemental",
       "PR_Shaman_Enhancement",
+      "T26_Shaman_Elemental",
       "T26_Shaman_Enhancement",
     ],
     "Warlock" => [
@@ -79,7 +85,7 @@ to_run = {
     "Demon-Hunter" => [
       "PR_Demon_Hunter_Havoc !!SetSL!! xxx0x2[13]",
       "PR_Demon_Hunter_Havoc_Momentum !!SetSL!! xxx0x22",
-      #"PR_Demon_Hunter_Vengeance !!SetSL!! xxxx1x1",
+      "PR_Demon_Hunter_Vengeance !!SetSL!! xxxx1x1",
     ],
     "Druid" => [
       "PR_Druid_Balance !!SetSL!! x000xxx",
@@ -90,6 +96,9 @@ to_run = {
       "PR_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
       "PR_Hunter_Marksmanship !!SetSL!! xx0x0xx",
       "PR_Hunter_Survival !!SetSL!! xx0x0xx",
+      "T26_Hunter_Beast_Mastery !!SetSL!! xx0x0xx",
+      "T26_Hunter_Marksmanship !!SetSL!! xx0x0xx",
+      "T26_Hunter_Survival !!SetSL!! xx0x0xx",
     ],
     "Mage" => [
       "PR_Mage_Arcane !!SetSL!! x0xx0xx",
@@ -104,6 +113,8 @@ to_run = {
     "Paladin" => [
       "PR_Paladin_Protection !!SetSL!! xx0000x",
       "PR_Paladin_Retribution !!SetSL!! xx01x0x",
+      "T26_Paladin_Protection !!SetSL!! xx0000x",
+      "T26_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
       "PR_Priest_Shadow !!SetSL!! x0x0xxx",
@@ -120,6 +131,7 @@ to_run = {
     "Shaman" => [
       "PR_Shaman_Elemental !!SetSL!! xx0x0xx",
       "PR_Shaman_Enhancement !!SetSL!! xx0x0xx",
+      "T26_Shaman_Elemental !!SetSL!! xx0x0xx",
       "T26_Shaman_Enhancement !!SetSL!! xx0x0xx",
     ],
     "Warlock" => [
@@ -153,6 +165,9 @@ to_run = {
       "PR_Hunter_Beast_Mastery Agility",
       "PR_Hunter_Marksmanship Agility",
       "PR_Hunter_Survival Agility",
+      "T26_Hunter_Beast_Mastery Agility",
+      "T26_Hunter_Marksmanship Agility",
+      "T26_Hunter_Survival Agility",
     ],
     "Mage" => [
       "PR_Mage_Arcane Intelligence",
@@ -167,6 +182,8 @@ to_run = {
     "Paladin" => [
       "PR_Paladin_Protection Strength",
       "PR_Paladin_Retribution Strength",
+      "T26_Paladin_Protection Strength",
+      "T26_Paladin_Retribution Strength",
     ],
     "Priest" => [
       "PR_Priest_Shadow Intelligence",
@@ -183,6 +200,7 @@ to_run = {
     "Shaman" => [
       "PR_Shaman_Elemental Intelligence",
       "PR_Shaman_Enhancement Agility",
+      "T26_Shaman_Elemental Intelligence",
       "T26_Shaman_Enhancement Agility",
     ],
     "Warlock" => [
