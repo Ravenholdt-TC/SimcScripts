@@ -81,7 +81,7 @@ gear["combinatorSlots"].each.with_index(1) do |slot, slotNum|
   # Final cleanups, after checking requirements because there might be duplicate options with different requirements
   rawCombinations = rawCombinations.collect { |x| x.uniq { |y| y["name"] } } # Everything inside should be unique (AAB -> AB)
   rawCombinations = rawCombinations.select { |x| x.length == slotNum } # Only desired amount of combinator slots
-  rawCombinations = rawCombinations.uniq { |x| x.sort_by { |y| y["name"] } } # Only generally unique combinations (no ABC and ACB)
+  rawCombinations = rawCombinations.uniq { |x| x.collect { |y| y["name"] }.sort } # Only generally unique combinations (no ABC and ACB)
 end
 
 # Build gear combination inputs
