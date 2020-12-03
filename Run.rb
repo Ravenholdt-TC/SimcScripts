@@ -45,6 +45,7 @@ to_run = {
       "T26_Paladin_Retribution",
     ],
     "Priest" => [
+      "PR_Priest_Discipline",
       "PR_Priest_Shadow",
       "T26_Priest_Shadow",
     ],
@@ -117,6 +118,7 @@ to_run = {
       "T26_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
+      "PR_Priest_Discipline !!SetSL!! x0x0xxx",
       "PR_Priest_Shadow !!SetSL!! x0x0xxx",
       "T26_Priest_Shadow !!SetSL!! x0x0xxx",
     ],
@@ -186,6 +188,7 @@ to_run = {
       "T26_Paladin_Retribution Strength",
     ],
     "Priest" => [
+      "PR_Priest_Discipline Intelligence",
       "PR_Priest_Shadow Intelligence",
       "T26_Priest_Shadow Intelligence",
     ],
