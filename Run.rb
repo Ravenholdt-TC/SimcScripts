@@ -71,7 +71,7 @@ to_run = {
     "Warrior" => [
       "PR_Warrior_Arms",
       "PR_Warrior_Fury",
-      #"PR_Warrior_Protection",
+      "PR_Warrior_Protection",
     ],
   },
   "Combinator" => {
@@ -144,7 +144,7 @@ to_run = {
     "Warrior" => [
       "PR_Warrior_Arms !!SetSL!! x3x2xxx",
       "PR_Warrior_Fury !!SetSL!! x3x2xxx",
-      #"PR_Warrior_Protection !!SetSL!! x0x00xx",
+      "PR_Warrior_Protection !!SetSL!! x0x00xx",
     ],
   },
   "TrinketSimulation" => {
@@ -214,7 +214,7 @@ to_run = {
     "Warrior" => [
       "PR_Warrior_Arms Strength",
       "PR_Warrior_Fury Strength",
-      #"PR_Warrior_Protection Strength",
+      "PR_Warrior_Protection Strength",
     ],
   },
 }
