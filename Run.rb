@@ -72,6 +72,9 @@ to_run = {
       "PR_Warrior_Arms",
       "PR_Warrior_Fury",
       "PR_Warrior_Protection",
+      "T26_Warrior_Arms",
+      "T26_Warrior_Fury",
+      "T26_Warrior_Protection",
     ],
   },
   "Combinator" => {
@@ -145,6 +148,9 @@ to_run = {
       "PR_Warrior_Arms !!SetSL!! x3x2xxx",
       "PR_Warrior_Fury !!SetSL!! x3x2xxx",
       "PR_Warrior_Protection !!SetSL!! x0x00xx",
+      "T26_Warrior_Arms !!SetSL!! x3x2xxx",
+      "T26_Warrior_Fury !!SetSL!! x3x2xxx",
+      "T26_Warrior_Protection !!SetSL!! x0x00xx",
     ],
   },
   "TrinketSimulation" => {
@@ -215,6 +221,9 @@ to_run = {
       "PR_Warrior_Arms Strength",
       "PR_Warrior_Fury Strength",
       "PR_Warrior_Protection Strength",
+      "T26_Warrior_Arms Strength",
+      "T26_Warrior_Fury Strength",
+      "T26_Warrior_Protection Strength",
     ],
   },
 }
