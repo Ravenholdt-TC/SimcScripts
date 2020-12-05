@@ -37,6 +37,8 @@ to_run = {
       "PR_Monk_Brewmaster",
       "PR_Monk_Windwalker",
       "PR_Monk_Windwalker_Serenity",
+      "T26_Monk_Windwalker",
+      "T26_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
       "PR_Paladin_Protection",
@@ -47,6 +49,7 @@ to_run = {
     "Priest" => [
       "PR_Priest_Discipline",
       "PR_Priest_Shadow",
+      "T26_Priest_Discipline",
       "T26_Priest_Shadow",
     ],
     "Rogue" => [
@@ -62,6 +65,7 @@ to_run = {
       "PR_Shaman_Enhancement",
       "T26_Shaman_Elemental",
       "T26_Shaman_Enhancement",
+      "T26_Shaman_Enhancement_VDW",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction",
@@ -113,16 +117,19 @@ to_run = {
       "PR_Monk_Brewmaster !!SetSL!! x0x01xx",
       "PR_Monk_Windwalker !!SetSL!! x0x20x[12]",
       "PR_Monk_Windwalker_Serenity !!SetSL!! x0x20x3",
+      "T26_Monk_Windwalker !!SetSL!! x0x20x[12]",
+      "T26_Monk_Windwalker_Serenity !!SetSL!! x0x20x3",
     ],
     "Paladin" => [
-      "PR_Paladin_Protection !!SetSL!! xx0000x",
+      "PR_Paladin_Protection !!SetSL!! xx01x3x",
       "PR_Paladin_Retribution !!SetSL!! xx01x0x",
-      "T26_Paladin_Protection !!SetSL!! xx0000x",
+      "T26_Paladin_Protection !!SetSL!! xx01x3x",
       "T26_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
       "PR_Priest_Discipline !!SetSL!! x0x0xxx",
       "PR_Priest_Shadow !!SetSL!! x0x0xxx",
+      "T26_Priest_Discipline !!SetSL!! x0x0xxx",
       "T26_Priest_Shadow !!SetSL!! x0x0xxx",
     ],
     "Rogue" => [
@@ -138,6 +145,7 @@ to_run = {
       "PR_Shaman_Enhancement !!SetSL!! xx0x0xx",
       "T26_Shaman_Elemental !!SetSL!! xx0x0xx",
       "T26_Shaman_Enhancement !!SetSL!! xx0x0xx",
+      "T26_Shaman_Enhancement_VDW !!SetSL!! xx0x0xx",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction !!SetSL!! xx0x0xx",
@@ -186,6 +194,8 @@ to_run = {
       "PR_Monk_Brewmaster Agility",
       "PR_Monk_Windwalker Agility",
       "PR_Monk_Windwalker_Serenity Agility",
+      "T26_Monk_Windwalker Agility",
+      "T26_Monk_Windwalker_Serenity Agility",
     ],
     "Paladin" => [
       "PR_Paladin_Protection Strength",
@@ -196,6 +206,7 @@ to_run = {
     "Priest" => [
       "PR_Priest_Discipline Intelligence",
       "PR_Priest_Shadow Intelligence",
+      "T26_Priest_Discipline Intelligence",
       "T26_Priest_Shadow Intelligence",
     ],
     "Rogue" => [
@@ -211,6 +222,7 @@ to_run = {
       "PR_Shaman_Enhancement Agility",
       "T26_Shaman_Elemental Intelligence",
       "T26_Shaman_Enhancement Agility",
+      "T26_Shaman_Enhancement_VDW Agility",
     ],
     "Warlock" => [
       "PR_Warlock_Affliction Intelligence",
