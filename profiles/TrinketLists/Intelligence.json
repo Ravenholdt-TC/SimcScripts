@@ -211,6 +211,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Sunblood Amethyst",
+            "itemId": 178826,
+            "itemLevels": [148, 158, 171, 184, 197],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // PvP
         {
             "name": "Sinful Aspirant's Badge of Ferocity",
