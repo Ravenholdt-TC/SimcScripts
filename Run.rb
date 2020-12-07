@@ -4,7 +4,7 @@ require "optparse"
 require_relative "lib/SimcConfig"
 
 to_run = {
-  "RaceSimulation" => { ### !!! This will also be used for Legendary, and Soulbind simulations
+  "RaceSimulation" => { ### !!! This will also be used for Consumable, Legendary, and Soulbind simulations
     "Death-Knight" => [
       "PR_Death_Knight_Blood",
       "PR_Death_Knight_Frost",
@@ -291,6 +291,7 @@ to_run = {
 # Make links for sims using the same input
 to_run["LegendarySimulation"] = to_run["RaceSimulation"]
 to_run["SoulbindSimulation"] = to_run["RaceSimulation"]
+to_run["ConsumablesSimulation"] = to_run["RaceSimulation"]
 
 orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
