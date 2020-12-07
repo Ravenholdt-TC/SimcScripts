@@ -9,7 +9,7 @@ require_relative "lib/ReportWriter"
 require_relative "lib/SimcConfig"
 require_relative "lib/SimcHelper"
 
-Logging.Initialize("ConsumablesSimulation")
+Logging.Initialize("ConsumableSimulation")
 
 fightstyle, fightstyleFile = Interactive.SelectTemplate("Fightstyles/Fightstyle_")
 classfolder = Interactive.SelectSubfolder("Templates")
@@ -48,8 +48,8 @@ simcInput.push 'augmentation=disabled'
 simcInput.push 'temporary_enchant=disabled'
 simcInput.push ""
 
-consumablesList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Consumables.json")
-useOilTemplates = consumablesList.any? {|x| x["specs"].include?(specId) && x["useOilTemplate"]}
+consumableList = JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/Consumables.json")
+useOilTemplates = consumableList.any? {|x| x["specs"].include?(specId) && x["useOilTemplate"]}
 oilProfilesets = []
 
 # Additional template with shadowcore oil for potion interactions
@@ -73,7 +73,7 @@ combinationOverrides[nil] = []
 
 combinationOverrides.each do |optionsString, overrides|
   # Generate soulbind profiles
-  consumablesList.each do |consumable|
+  consumableList.each do |consumable|
     next if !consumable["specs"].include?(specId)
     name = "#{consumable["name"]}#{"--" if optionsString}#{optionsString}_1"
     prefix = "profileset.\"#{name}\"+="
@@ -91,9 +91,9 @@ combinationOverrides.each do |optionsString, overrides|
   end
 end
 
-simulationFilename = "ConsumablesSimulation_#{fightstyle}_#{template}"
+simulationFilename = "ConsumableSimulation_#{fightstyle}_#{template}"
 params = [
-  "#{SimcConfig["ConfigFolder"]}/SimcConsumablesConfig.simc",
+  "#{SimcConfig["ConfigFolder"]}/SimcConsumableConfig.simc",
   fightstyleFile,
   templateFile,
   simcInput,

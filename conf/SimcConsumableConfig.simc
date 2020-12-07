@@ -1,0 +1,3 @@
+# Put here any override for the Consumable Simulation
+target_error=0.2
+default_actions=1

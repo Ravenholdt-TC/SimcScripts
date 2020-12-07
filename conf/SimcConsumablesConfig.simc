@@ -1,3 +1,0 @@
-# Put here any override for the Race Simulation
-target_error=0.2
-default_actions=1
