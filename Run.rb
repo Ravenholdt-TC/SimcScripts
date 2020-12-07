@@ -285,7 +285,7 @@ to_run = {
 # Make links for sims using the same input
 to_run["LegendarySimulation"] = to_run["RaceSimulation"]
 to_run["SoulbindSimulation"] = to_run["RaceSimulation"]
-to_run["ConsumablesSimulation"] = to_run["RaceSimulation"]
+to_run["ConsumableSimulation"] = to_run["RaceSimulation"]
 
 orders = SimcConfig["RunOrders"]
 wow_classes = SimcConfig["RunClasses"]
