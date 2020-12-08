@@ -56,7 +56,8 @@ oilProfilesets = []
 simcInput.push("profileset.\"Oil_Template\"+=temporary_enchant=main_hand:shadowcore_oil") if useOilTemplates
 
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
-combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
+#combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
+combinationOverrides = {}
 
 # Create additional Template base profilesets for the talent overrides
 additionalTalents = combinationOverrides.keys.collect { |x| (data = /.*talents:(\p{Digit}+).*\Z/.match(x)) ? data[1] : nil }.uniq.compact
