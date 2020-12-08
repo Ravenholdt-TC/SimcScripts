@@ -75,7 +75,7 @@ combinationOverrides.each do |optionsString, overrides|
   # Generate soulbind profiles
   consumableList.each do |consumable|
     next if !consumable["specs"].include?(specId)
-    name = "#{consumable["name"]}#{"--" if optionsString}#{optionsString}_1"
+    name = "#{consumable["name"]}#{"--" if optionsString}#{optionsString}"
     prefix = "profileset.\"#{name}\"+="
     simcInput.push(prefix + "name=\"#{name}\"")
     inputValue = consumable["value"] ? consumable["value"] : SimcHelper.TokenizeName(consumable["name"])
