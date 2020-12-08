@@ -189,7 +189,7 @@
   {
     "type": "temporary_enchant",
     "name": "Oil + 16 AP Stone",
-    "value": "main_hand:shadowcore_oil/off_hand:shaded_sharpening_stone",
+    "value": "main_hand:shadowcore_oil/off_hand:porous_sharpening_stone",
     "itemID": 171436,
     "specs": [70, 71, 72, 103, 104, 250, 251, 252, 255, 259, 260, 261, 263, 268, 269, 577, 581]
   }
