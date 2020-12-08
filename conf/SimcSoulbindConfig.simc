@@ -1,4 +1,4 @@
 # Put overrides for the Essence Simulations here
 target_error=0.2
-profileset_work_threads=1
+profileset_work_threads=2
 default_actions=1
