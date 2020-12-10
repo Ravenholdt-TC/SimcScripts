@@ -65,16 +65,58 @@
     },
     "soulbindSims": [
         {
-            "spellName": "Combat Meditation",
+            "spellName": "Combat Meditation (Always Extend)",
             "soulbindName": "Pelagos",
             "covenant": "kyrian",
-            "spellId": 328266
+            "spellId": 328266,
+            "additionalInput": [
+                "shadowlands.combat_meditation_extend_chance=1.0"
+            ]
         },
         {
-            "spellName": "Pointed Courage",
+            "spellName": "Combat Meditation (50% Extend)",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 328266,
+            "additionalInput": [
+                "shadowlands.combat_meditation_extend_chance=0.5"
+            ]
+        },
+        {
+            "spellName": "Combat Meditation (Never Extend)",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 328266,
+            "additionalInput": [
+                "shadowlands.combat_meditation_extend_chance=0"
+            ]
+        },
+        {
+            "spellName": "Pointed Courage (1 Ally)",
             "soulbindName": "Kleia",
             "covenant": "kyrian",
-            "spellId": 329778
+            "spellId": 329778,
+            "additionalInput": [
+                "shadowlands.pointed_courage_nearby=1"
+            ]
+        },
+        {
+            "spellName": "Pointed Courage (3 Allies)",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 329778,
+            "additionalInput": [
+                "shadowlands.pointed_courage_nearby=3"
+            ]
+        },
+        {
+            "spellName": "Pointed Courage (5 Allies)",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 329778,
+            "additionalInput": [
+                "shadowlands.pointed_courage_nearby=5"
+            ]
         },
         {
             "spellName": "Hammer of Genesis",
@@ -107,10 +149,31 @@
             "spellId": 323919
         },
         {
-            "spellName": "Lead by Example",
+            "spellName": "Lead by Example (4 Allies)",
             "soulbindName": "Emeni",
             "covenant": "necrolord",
-            "spellId": 342156
+            "spellId": 342156,
+            "additionalInput": [
+                "shadowlands.lead_by_example_nearby=4"
+            ]
+        },
+        {
+            "spellName": "Lead by Example (2 Allies)",
+            "soulbindName": "Emeni",
+            "covenant": "necrolord",
+            "spellId": 342156,
+            "additionalInput": [
+                "shadowlands.lead_by_example_nearby=2"
+            ]
+        },
+        {
+            "spellName": "Lead by Example (0 Allies)",
+            "soulbindName": "Emeni",
+            "covenant": "necrolord",
+            "spellId": 342156,
+            "additionalInput": [
+                "shadowlands.lead_by_example_nearby=0"
+            ]
         },
         {
             "spellName": "Forgeborne Reveries",
