@@ -18,6 +18,26 @@
             "additionalInput": []
         },
         {
+            "name": "Cabalist's Hymnal (1 Ally)",
+            "itemId": 184028,
+            "itemLevels": [207, 220, 233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.crimson_choir_in_party=1"
+            ]
+        },
+        {
+            "name": "Cabalist's Hymnal (2 Allies)",
+            "itemId": 184028,
+            "itemLevels": [207, 220, 233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.crimson_choir_in_party=2"
+            ]
+        },
+        {
             "name": "Macabre Sheet Music",
             "itemId": 184024,
             "itemLevels": [200, 213, 226],
