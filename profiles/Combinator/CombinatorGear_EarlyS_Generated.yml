@@ -2392,6 +2392,8 @@ legendary:
     requires:
       spec:
       - arcane
+      - fire
+      - frost
   - name: Fevered Incantation
     simcString: sl_legendary,bonus_id=6931
     requires:
@@ -2944,6 +2946,8 @@ legendary:
     simcString: sl_legendary,bonus_id=7066
     requires:
       spec:
+      - holy
+      - protection
       - retribution
   - name: Vanguard's Momentum
     simcString: sl_legendary,bonus_id=7065
