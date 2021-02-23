@@ -134,9 +134,9 @@ soulbind3:
           - Theotar
           - Draven
     - replace: Conduit
-      additionalInput: # Niya's Poison, special handling, add to conduit
-        - simcSlot: soulbind
-          simcString: "320660"
+      #additionalInput: # Niya's Poison, special handling, add to conduit
+      #  - simcSlot: soulbind
+      #    simcString: "320660"
       requires:
         soulbind: Niya
     - name: Pointed Courage

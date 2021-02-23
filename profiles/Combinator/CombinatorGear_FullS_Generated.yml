@@ -3641,138 +3641,102 @@ soulbind3:
       - arms
       - fury
       - protection
-    additionalInput:
-    - &2
-      simcSlot: soulbind
-      simcString: '320660'
   - name: Crash the Ramparts
     simcString: '12:7'
     requires:
       soulbind: Niya
       spec:
       - arms
-    additionalInput:
-    - *2
   - name: Merciless Bonegrinder
     simcString: '14:7'
     requires:
       soulbind: Niya
       spec:
       - arms
-    additionalInput:
-    - *2
   - name: Inner Fury
     simcString: '16:7'
     requires:
       soulbind: Niya
       spec:
       - windwalker
-    additionalInput:
-    - *2
   - name: Unrelenting Cold
     simcString: '17:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Shivering Core
     simcString: '18:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Calculated Strikes
     simcString: '19:7'
     requires:
       soulbind: Niya
       spec:
       - windwalker
-    additionalInput:
-    - *2
   - name: Icy Propulsion
     simcString: '20:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Ice Bite
     simcString: '21:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Coordinated Offensive
     simcString: '22:7'
     requires:
       soulbind: Niya
       spec:
       - windwalker
-    additionalInput:
-    - *2
   - name: Xuen's Bond
     simcString: '24:7'
     requires:
       soulbind: Niya
       spec:
       - windwalker
-    additionalInput:
-    - *2
   - name: Jade Bond
     simcString: '28:7'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
-    additionalInput:
-    - *2
   - name: Infernal Cascade
     simcString: '30:7'
     requires:
       soulbind: Niya
       spec:
       - fire
-    additionalInput:
-    - *2
   - name: Resplendent Mist
     simcString: '31:7'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
-    additionalInput:
-    - *2
   - name: Master Flame
     simcString: '32:7'
     requires:
       soulbind: Niya
       spec:
       - fire
-    additionalInput:
-    - *2
   - name: Arcane Prodigy
     simcString: '34:7'
     requires:
       soulbind: Niya
       spec:
       - arcane
-    additionalInput:
-    - *2
   - name: Nether Precision
     simcString: '36:7'
     requires:
       soulbind: Niya
       spec:
       - arcane
-    additionalInput:
-    - *2
   - name: Discipline of the Grove
     simcString: '38:7'
     requires:
@@ -3782,8 +3746,6 @@ soulbind3:
       - arcane
       - fire
       - frost
-    additionalInput:
-    - *2
   - name: Gift of the Lich
     simcString: '39:7'
     requires:
@@ -3793,8 +3755,6 @@ soulbind3:
       - arcane
       - fire
       - frost
-    additionalInput:
-    - *2
   - name: Ire of the Ascended
     simcString: '40:7'
     requires:
@@ -3804,8 +3764,6 @@ soulbind3:
       - arcane
       - fire
       - frost
-    additionalInput:
-    - *2
   - name: Siphoned Malice
     simcString: '43:7'
     requires:
@@ -3815,80 +3773,60 @@ soulbind3:
       - arcane
       - fire
       - frost
-    additionalInput:
-    - *2
   - name: Rising Sun Revival
     simcString: '44:7'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
-    additionalInput:
-    - *2
   - name: Scalding Brew
     simcString: '46:7'
     requires:
       soulbind: Niya
       spec:
       - brewmaster
-    additionalInput:
-    - *2
   - name: Depths of Insanity
     simcString: '50:7'
     requires:
       soulbind: Niya
       spec:
       - fury
-    additionalInput:
-    - *2
   - name: Magi's Brand
     simcString: '51:7'
     requires:
       soulbind: Niya
       spec:
       - arcane
-    additionalInput:
-    - *2
   - name: Hack and Slash
     simcString: '52:7'
     requires:
       soulbind: Niya
       spec:
       - fury
-    additionalInput:
-    - *2
   - name: Flame Accretion
     simcString: '53:7'
     requires:
       soulbind: Niya
       spec:
       - fire
-    additionalInput:
-    - *2
   - name: Nourishing Chi
     simcString: '54:7'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
-    additionalInput:
-    - *2
   - name: Artifice of the Archmage
     simcString: '55:7'
     requires:
       soulbind: Niya
       spec:
       - arcane
-    additionalInput:
-    - *2
   - name: Walk with the Ox
     simcString: '57:7'
     requires:
       soulbind: Niya
       spec:
       - brewmaster
-    additionalInput:
-    - *2
   - name: Strike with Clarity
     simcString: '59:7'
     requires:
@@ -3898,8 +3836,6 @@ soulbind3:
       - brewmaster
       - windwalker
       - mistweaver
-    additionalInput:
-    - *2
   - name: Bone Marrow Hops
     simcString: '60:7'
     requires:
@@ -3909,8 +3845,6 @@ soulbind3:
       - brewmaster
       - windwalker
       - mistweaver
-    additionalInput:
-    - *2
   - name: Imbued Reflections
     simcString: '62:7'
     requires:
@@ -3920,8 +3854,6 @@ soulbind3:
       - brewmaster
       - windwalker
       - mistweaver
-    additionalInput:
-    - *2
   - name: Way of the Fae
     simcString: '63:7'
     requires:
@@ -3931,104 +3863,78 @@ soulbind3:
       - brewmaster
       - windwalker
       - mistweaver
-    additionalInput:
-    - *2
   - name: Vicious Contempt
     simcString: '64:7'
     requires:
       soulbind: Niya
       spec:
       - fury
-    additionalInput:
-    - *2
   - name: Eternal Hunger
     simcString: '65:7'
     requires:
       soulbind: Niya
       spec:
       - unholy
-    additionalInput:
-    - *2
   - name: Shining Radiance
     simcString: '75:7'
     requires:
       soulbind: Niya
       spec:
       - discipline
-    additionalInput:
-    - *2
   - name: Pain Transformation
     simcString: '76:7'
     requires:
       soulbind: Niya
       spec:
       - discipline
-    additionalInput:
-    - *2
   - name: Exaltation
     simcString: '77:7'
     requires:
       soulbind: Niya
       spec:
       - discipline
-    additionalInput:
-    - *2
   - name: Lasting Spirit
     simcString: '78:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Accelerated Cold
     simcString: '79:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Withering Plague
     simcString: '80:7'
     requires:
       soulbind: Niya
       spec:
       - blood
-    additionalInput:
-    - *2
   - name: Swift Penitence
     simcString: '81:7'
     requires:
       soulbind: Niya
       spec:
       - discipline
-    additionalInput:
-    - *2
   - name: Focused Mending
     simcString: '82:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Eradicating Blow
     simcString: '83:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Resonant Words
     simcString: '84:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Courageous Ascension
     simcString: '87:7'
     requires:
@@ -4038,16 +3944,12 @@ soulbind3:
       - discipline
       - holy
       - shadow
-    additionalInput:
-    - *2
   - name: Embrace Death
     simcString: '89:7'
     requires:
       soulbind: Niya
       spec:
       - unholy
-    additionalInput:
-    - *2
   - name: Festering Transfusion
     simcString: '90:7'
     requires:
@@ -4057,24 +3959,18 @@ soulbind3:
       - discipline
       - holy
       - shadow
-    additionalInput:
-    - *2
   - name: Everfrost
     simcString: '91:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Pyroclastic Shock
     simcString: '100:7'
     requires:
       soulbind: Niya
       spec:
       - elemental
-    additionalInput:
-    - *2
   - name: Fae Fermata
     simcString: '101:7'
     requires:
@@ -4084,32 +3980,24 @@ soulbind3:
       - discipline
       - holy
       - shadow
-    additionalInput:
-    - *2
   - name: High Voltage
     simcString: '102:7'
     requires:
       soulbind: Niya
       spec:
       - elemental
-    additionalInput:
-    - *2
   - name: Shake the Foundations
     simcString: '103:7'
     requires:
       soulbind: Niya
       spec:
       - elemental
-    additionalInput:
-    - *2
   - name: Call of Flame
     simcString: '104:7'
     requires:
       soulbind: Niya
       spec:
       - elemental
-    additionalInput:
-    - *2
   - name: Shattered Perceptions
     simcString: '105:7'
     requires:
@@ -4119,144 +4007,108 @@ soulbind3:
       - discipline
       - holy
       - shadow
-    additionalInput:
-    - *2
   - name: Haunting Apparitions
     simcString: '107:7'
     requires:
       soulbind: Niya
       spec:
       - shadow
-    additionalInput:
-    - *2
   - name: Unruly Winds
     simcString: '109:7'
     requires:
       soulbind: Niya
       spec:
       - enhancement
-    additionalInput:
-    - *2
   - name: Focused Lightning
     simcString: '110:7'
     requires:
       soulbind: Niya
       spec:
       - enhancement
-    additionalInput:
-    - *2
   - name: Magma Fist
     simcString: '111:7'
     requires:
       soulbind: Niya
       spec:
       - enhancement
-    additionalInput:
-    - *2
   - name: Chilled to the Core
     simcString: '112:7'
     requires:
       soulbind: Niya
       spec:
       - enhancement
-    additionalInput:
-    - *2
   - name: Mind Devourer
     simcString: '113:7'
     requires:
       soulbind: Niya
       spec:
       - shadow
-    additionalInput:
-    - *2
   - name: Rabid Shadows
     simcString: '114:7'
     requires:
       soulbind: Niya
       spec:
       - shadow
-    additionalInput:
-    - *2
   - name: Dissonant Echoes
     simcString: '115:7'
     requires:
       soulbind: Niya
       spec:
       - shadow
-    additionalInput:
-    - *2
   - name: Holy Oration
     simcString: '116:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Embrace of Earth
     simcString: '117:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Swirling Currents
     simcString: '118:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Heavy Rainfall
     simcString: '119:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Nature's Focus
     simcString: '120:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Unleashed Frenzy
     simcString: '122:7'
     requires:
       soulbind: Niya
       spec:
       - frost
-    additionalInput:
-    - *2
   - name: Debilitating Malady
     simcString: '123:7'
     requires:
       soulbind: Niya
       spec:
       - blood
-    additionalInput:
-    - *2
   - name: Convocation of the Dead
     simcString: '124:7'
     requires:
       soulbind: Niya
       spec:
       - unholy
-    additionalInput:
-    - *2
   - name: Lingering Plague
     simcString: '125:7'
     requires:
       soulbind: Niya
       spec:
       - unholy
-    additionalInput:
-    - *2
   - name: Impenetrable Gloom
     simcString: '126:7'
     requires:
@@ -4266,8 +4118,6 @@ soulbind3:
       - blood
       - frost
       - unholy
-    additionalInput:
-    - *2
   - name: Brutal Grasp
     simcString: '127:7'
     requires:
@@ -4277,8 +4127,6 @@ soulbind3:
       - blood
       - frost
       - unholy
-    additionalInput:
-    - *2
   - name: Proliferation
     simcString: '128:7'
     requires:
@@ -4288,8 +4136,6 @@ soulbind3:
       - blood
       - frost
       - unholy
-    additionalInput:
-    - *2
   - name: Enfeebled Mark
     simcString: '137:7'
     requires:
@@ -4299,8 +4145,6 @@ soulbind3:
       - beast_mastery
       - marksmanship
       - survival
-    additionalInput:
-    - *2
   - name: Empowered Release
     simcString: '139:7'
     requires:
@@ -4310,8 +4154,6 @@ soulbind3:
       - beast_mastery
       - marksmanship
       - survival
-    additionalInput:
-    - *2
   - name: Spirit Attunement
     simcString: '140:7'
     requires:
@@ -4321,8 +4163,6 @@ soulbind3:
       - beast_mastery
       - marksmanship
       - survival
-    additionalInput:
-    - *2
   - name: Necrotic Barrage
     simcString: '143:7'
     requires:
@@ -4332,8 +4172,6 @@ soulbind3:
       - beast_mastery
       - marksmanship
       - survival
-    additionalInput:
-    - *2
   - name: Elysian Dirge
     simcString: '146:7'
     requires:
@@ -4343,8 +4181,6 @@ soulbind3:
       - elemental
       - enhancement
       - restoration
-    additionalInput:
-    - *2
   - name: Tumbling Waves
     simcString: '147:7'
     requires:
@@ -4354,8 +4190,6 @@ soulbind3:
       - elemental
       - enhancement
       - restoration
-    additionalInput:
-    - *2
   - name: Essential Extraction
     simcString: '148:7'
     requires:
@@ -4365,8 +4199,6 @@ soulbind3:
       - elemental
       - enhancement
       - restoration
-    additionalInput:
-    - *2
   - name: Lavish Harvest
     simcString: '149:7'
     requires:
@@ -4376,32 +4208,24 @@ soulbind3:
       - elemental
       - enhancement
       - restoration
-    additionalInput:
-    - *2
   - name: Relentless Onslaught
     simcString: '150:7'
     requires:
       soulbind: Niya
       spec:
       - havoc
-    additionalInput:
-    - *2
   - name: Dancing with Fate
     simcString: '151:7'
     requires:
       soulbind: Niya
       spec:
       - havoc
-    additionalInput:
-    - *2
   - name: Serrated Glaive
     simcString: '152:7'
     requires:
       soulbind: Niya
       spec:
       - havoc
-    additionalInput:
-    - *2
   - name: Growing Inferno
     simcString: '153:7'
     requires:
@@ -4409,8 +4233,6 @@ soulbind3:
       spec:
       - havoc
       - vengeance
-    additionalInput:
-    - *2
   - name: Piercing Verdict
     simcString: '154:7'
     requires:
@@ -4420,8 +4242,6 @@ soulbind3:
       - arms
       - fury
       - protection
-    additionalInput:
-    - *2
   - name: Veteran's Repute
     simcString: '158:7'
     requires:
@@ -4431,16 +4251,12 @@ soulbind3:
       - arms
       - fury
       - protection
-    additionalInput:
-    - *2
   - name: Expurgation
     simcString: '164:7'
     requires:
       soulbind: Niya
       spec:
       - retribution
-    additionalInput:
-    - *2
   - name: Harrowing Punishment
     simcString: '165:7'
     requires:
@@ -4450,96 +4266,72 @@ soulbind3:
       - arms
       - fury
       - protection
-    additionalInput:
-    - *2
   - name: Truth's Wake
     simcString: '167:7'
     requires:
       soulbind: Niya
       spec:
       - retribution
-    additionalInput:
-    - *2
   - name: Mortal Combo
     simcString: '169:7'
     requires:
       soulbind: Niya
       spec:
       - arms
-    additionalInput:
-    - *2
   - name: Soul Furnace
     simcString: '172:7'
     requires:
       soulbind: Niya
       spec:
       - vengeance
-    additionalInput:
-    - *2
   - name: Corrupting Leer
     simcString: '174:7'
     requires:
       soulbind: Niya
       spec:
       - affliction
-    additionalInput:
-    - *2
   - name: Templar's Vindication
     simcString: '176:7'
     requires:
       soulbind: Niya
       spec:
       - retribution
-    additionalInput:
-    - *2
   - name: Enkindled Spirit
     simcString: '177:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Virtuous Command
     simcString: '182:7'
     requires:
       soulbind: Niya
       spec:
       - retribution
-    additionalInput:
-    - *2
   - name: Ferocious Appetite
     simcString: '183:7'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
-    additionalInput:
-    - *2
   - name: Resplendent Light
     simcString: '184:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: One With the Beast
     simcString: '185:7'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
-    additionalInput:
-    - *2
   - name: Show of Force
     simcString: '186:7'
     requires:
       soulbind: Niya
       spec:
       - protection
-    additionalInput:
-    - *2
   - name: Repeat Decree
     simcString: '187:7'
     requires:
@@ -4548,24 +4340,18 @@ soulbind3:
       spec:
       - havoc
       - vengeance
-    additionalInput:
-    - *2
   - name: Sharpshooter's Focus
     simcString: '188:7'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
-    additionalInput:
-    - *2
   - name: Brutal Projectiles
     simcString: '189:7'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
-    additionalInput:
-    - *2
   - name: Destructive Reverberations
     simcString: '190:7'
     requires:
@@ -4575,48 +4361,36 @@ soulbind3:
       - arms
       - fury
       - protection
-    additionalInput:
-    - *2
   - name: Deadly Chain
     simcString: '192:7'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
-    additionalInput:
-    - *2
   - name: Focused Light
     simcString: '193:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Untempered Dedication
     simcString: '194:7'
     requires:
       soulbind: Niya
       spec:
       - holy
-    additionalInput:
-    - *2
   - name: Vengeful Shock
     simcString: '195:7'
     requires:
       soulbind: Niya
       spec:
       - protection
-    additionalInput:
-    - *2
   - name: Punish the Guilty
     simcString: '196:7'
     requires:
       soulbind: Niya
       spec:
       - protection
-    additionalInput:
-    - *2
   - name: Increased Scrutiny
     simcString: '198:7'
     requires:
@@ -4625,16 +4399,12 @@ soulbind3:
       spec:
       - havoc
       - vengeance
-    additionalInput:
-    - *2
   - name: Powerful Precision
     simcString: '199:7'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
-    additionalInput:
-    - *2
   - name: Brooding Pool
     simcString: '200:7'
     requires:
@@ -4643,72 +4413,54 @@ soulbind3:
       spec:
       - havoc
       - vengeance
-    additionalInput:
-    - *2
   - name: Rolling Agony
     simcString: '201:7'
     requires:
       soulbind: Niya
       spec:
       - affliction
-    additionalInput:
-    - *2
   - name: Focused Malignancy
     simcString: '202:7'
     requires:
       soulbind: Niya
       spec:
       - affliction
-    additionalInput:
-    - *2
   - name: Cold Embrace
     simcString: '203:7'
     requires:
       soulbind: Niya
       spec:
       - affliction
-    additionalInput:
-    - *2
   - name: Borne of Blood
     simcString: '204:7'
     requires:
       soulbind: Niya
       spec:
       - demonology
-    additionalInput:
-    - *2
   - name: Carnivorous Stalkers
     simcString: '205:7'
     requires:
       soulbind: Niya
       spec:
       - demonology
-    additionalInput:
-    - *2
   - name: Tyrant's Soul
     simcString: '206:7'
     requires:
       soulbind: Niya
       spec:
       - demonology
-    additionalInput:
-    - *2
   - name: Fel Commando
     simcString: '207:7'
     requires:
       soulbind: Niya
       spec:
       - demonology
-    additionalInput:
-    - *2
   - name: Duplicitous Havoc
     simcString: '208:7'
     requires:
       soulbind: Niya
       spec:
       - destruction
-    additionalInput:
-    - *2
   - name: The Long Summer
     simcString: '210:7'
     requires:
@@ -4718,24 +4470,18 @@ soulbind3:
       - holy
       - protection
       - retribution
-    additionalInput:
-    - *2
   - name: Ashen Remains
     simcString: '211:7'
     requires:
       soulbind: Niya
       spec:
       - destruction
-    additionalInput:
-    - *2
   - name: Combusting Engine
     simcString: '212:7'
     requires:
       soulbind: Niya
       spec:
       - destruction
-    additionalInput:
-    - *2
   - name: Righteous Might
     simcString: '213:7'
     requires:
@@ -4745,16 +4491,12 @@ soulbind3:
       - holy
       - protection
       - retribution
-    additionalInput:
-    - *2
   - name: Infernal Brand
     simcString: '214:7'
     requires:
       soulbind: Niya
       spec:
       - destruction
-    additionalInput:
-    - *2
   - name: Hallowed Discernment
     simcString: '215:7'
     requires:
@@ -4764,8 +4506,6 @@ soulbind3:
       - holy
       - protection
       - retribution
-    additionalInput:
-    - *2
   - name: Ringing Clarity
     simcString: '216:7'
     requires:
@@ -4775,8 +4515,6 @@ soulbind3:
       - holy
       - protection
       - retribution
-    additionalInput:
-    - *2
   - name: Soul Tithe
     simcString: '217:7'
     requires:
@@ -4786,8 +4524,6 @@ soulbind3:
       - affliction
       - demonology
       - destruction
-    additionalInput:
-    - *2
   - name: Fatal Decimation
     simcString: '218:7'
     requires:
@@ -4797,8 +4533,6 @@ soulbind3:
       - affliction
       - demonology
       - destruction
-    additionalInput:
-    - *2
   - name: Catastrophic Origin
     simcString: '219:7'
     requires:
@@ -4808,8 +4542,6 @@ soulbind3:
       - affliction
       - demonology
       - destruction
-    additionalInput:
-    - *2
   - name: Soul Eater
     simcString: '220:7'
     requires:
@@ -4819,24 +4551,18 @@ soulbind3:
       - affliction
       - demonology
       - destruction
-    additionalInput:
-    - *2
   - name: Echoing Call
     simcString: '223:7'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
-    additionalInput:
-    - *2
   - name: Strength of the Pack
     simcString: '224:7'
     requires:
       soulbind: Niya
       spec:
       - survival
-    additionalInput:
-    - *2
   - name: Reverberation
     simcString: '225:7'
     requires:
@@ -4846,16 +4572,12 @@ soulbind3:
       - assassination
       - outlaw
       - subtlety
-    additionalInput:
-    - *2
   - name: Stinging Strike
     simcString: '226:7'
     requires:
       soulbind: Niya
       spec:
       - survival
-    additionalInput:
-    - *2
   - name: Sudden Fractures
     simcString: '227:7'
     requires:
@@ -4865,8 +4587,6 @@ soulbind3:
       - assassination
       - outlaw
       - subtlety
-    additionalInput:
-    - *2
   - name: Septic Shock
     simcString: '228:7'
     requires:
@@ -4876,8 +4596,6 @@ soulbind3:
       - assassination
       - outlaw
       - subtlety
-    additionalInput:
-    - *2
   - name: Lashing Scars
     simcString: '229:7'
     requires:
@@ -4887,112 +4605,84 @@ soulbind3:
       - assassination
       - outlaw
       - subtlety
-    additionalInput:
-    - *2
   - name: Poisoned Katar
     simcString: '237:7'
     requires:
       soulbind: Niya
       spec:
       - assassination
-    additionalInput:
-    - *2
   - name: Well-Placed Steel
     simcString: '238:7'
     requires:
       soulbind: Niya
       spec:
       - assassination
-    additionalInput:
-    - *2
   - name: Maim, Mangle
     simcString: '239:7'
     requires:
       soulbind: Niya
       spec:
       - assassination
-    additionalInput:
-    - *2
   - name: Lethal Poisons
     simcString: '240:7'
     requires:
       soulbind: Niya
       spec:
       - assassination
-    additionalInput:
-    - *2
   - name: Triple Threat
     simcString: '241:7'
     requires:
       soulbind: Niya
       spec:
       - outlaw
-    additionalInput:
-    - *2
   - name: Ambidexterity
     simcString: '242:7'
     requires:
       soulbind: Niya
       spec:
       - outlaw
-    additionalInput:
-    - *2
   - name: Sleight of Hand
     simcString: '243:7'
     requires:
       soulbind: Niya
       spec:
       - outlaw
-    additionalInput:
-    - *2
   - name: Count the Odds
     simcString: '244:7'
     requires:
       soulbind: Niya
       spec:
       - outlaw
-    additionalInput:
-    - *2
   - name: Deeper Daggers
     simcString: '245:7'
     requires:
       soulbind: Niya
       spec:
       - subtlety
-    additionalInput:
-    - *2
   - name: Planned Execution
     simcString: '246:7'
     requires:
       soulbind: Niya
       spec:
       - subtlety
-    additionalInput:
-    - *2
   - name: Stiletto Staccato
     simcString: '247:7'
     requires:
       soulbind: Niya
       spec:
       - subtlety
-    additionalInput:
-    - *2
   - name: Perforated Veins
     simcString: '248:7'
     requires:
       soulbind: Niya
       spec:
       - subtlety
-    additionalInput:
-    - *2
   - name: Controlled Destruction
     simcString: '249:7'
     requires:
       soulbind: Niya
       spec:
       - fire
-    additionalInput:
-    - *2
   - name: Withering Ground
     simcString: '250:7'
     requires:
@@ -5002,144 +4692,108 @@ soulbind3:
       - blood
       - frost
       - unholy
-    additionalInput:
-    - *2
   - name: Deadly Tandem
     simcString: '251:7'
     requires:
       soulbind: Niya
       spec:
       - survival
-    additionalInput:
-    - *2
   - name: Flame Infusion
     simcString: '252:7'
     requires:
       soulbind: Niya
       spec:
       - survival
-    additionalInput:
-    - *2
   - name: Bloodletting
     simcString: '253:7'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
-    additionalInput:
-    - *2
   - name: Stellar Inspiration
     simcString: '261:7'
     requires:
       soulbind: Niya
       spec:
       - balance
-    additionalInput:
-    - *2
   - name: Precise Alignment
     simcString: '262:7'
     requires:
       soulbind: Niya
       spec:
       - balance
-    additionalInput:
-    - *2
   - name: Fury of the Skies
     simcString: '263:7'
     requires:
       soulbind: Niya
       spec:
       - balance
-    additionalInput:
-    - *2
   - name: Umbral Intensity
     simcString: '264:7'
     requires:
       soulbind: Niya
       spec:
       - balance
-    additionalInput:
-    - *2
   - name: Taste for Blood
     simcString: '265:7'
     requires:
       soulbind: Niya
       spec:
       - feral
-    additionalInput:
-    - *2
   - name: Incessant Hunter
     simcString: '266:7'
     requires:
       soulbind: Niya
       spec:
       - feral
-    additionalInput:
-    - *2
   - name: Sudden Ambush
     simcString: '267:7'
     requires:
       soulbind: Niya
       spec:
       - feral
-    additionalInput:
-    - *2
   - name: Carnivorous Instinct
     simcString: '268:7'
     requires:
       soulbind: Niya
       spec:
       - feral
-    additionalInput:
-    - *2
   - name: Unchecked Aggression
     simcString: '269:7'
     requires:
       soulbind: Niya
       spec:
       - guardian
-    additionalInput:
-    - *2
   - name: Savage Combatant
     simcString: '270:7'
     requires:
       soulbind: Niya
       spec:
       - guardian
-    additionalInput:
-    - *2
   - name: Unstoppable Growth
     simcString: '273:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Flash of Clarity
     simcString: '274:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Floral Recycling
     simcString: '275:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Ready for Anything
     simcString: '276:7'
     requires:
       soulbind: Niya
       spec:
       - restoration
-    additionalInput:
-    - *2
   - name: Deep Allegiance
     simcString: '277:7'
     requires:
@@ -5150,8 +4804,6 @@ soulbind3:
       - feral
       - guardian
       - restoration
-    additionalInput:
-    - *2
   - name: Evolved Swarm
     simcString: '278:7'
     requires:
@@ -5162,8 +4814,6 @@ soulbind3:
       - feral
       - guardian
       - restoration
-    additionalInput:
-    - *2
   - name: Conflux of Elements
     simcString: '279:7'
     requires:
@@ -5174,8 +4824,6 @@ soulbind3:
       - feral
       - guardian
       - restoration
-    additionalInput:
-    - *2
   - name: Endless Thirst
     simcString: '280:7'
     requires:
@@ -5186,8 +4834,6 @@ soulbind3:
       - feral
       - guardian
       - restoration
-    additionalInput:
-    - *2
   - name: Unnatural Malice
     simcString: '281:7'
     requires:
@@ -5196,8 +4842,6 @@ soulbind3:
       spec:
       - havoc
       - vengeance
-    additionalInput:
-    - *2
 legendary:
   simcSlot: shirt
   select: 1
