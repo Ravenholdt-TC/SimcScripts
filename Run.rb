@@ -213,8 +213,6 @@ wow_classes.each do |wow_class|
               # Default talents for advanced covenant combinations
               specialCommand = command.split("!!SetSL!!")[0] + "FullS_Generated default"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
-              specialCommand = command.split("!!SetSL!!")[0] + "EarlyS_Generated default"
-              system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{specialCommand} q"
             elsif script == "SoulbindSimulation"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Kyrian q"
               system "bundle exec ruby #{script}.rb #{fightstyle} #{wow_class} #{command} Necrolord q"
