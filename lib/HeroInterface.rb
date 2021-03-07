@@ -45,6 +45,44 @@ module HeroInterface
     return data
   end
 
+  # Simply get the best talent build string from combinator results
+  def self.GetBestTalentBuild(fightstyle, profile, defaultTalents)
+    return {} unless SimcConfig["CombinationBasedCharts"]
+    unless SimcConfig["HeroOutput"]
+      Logging.LogScriptError "HeroOutput option off with CombinationBasedCharts on! This may cause problems!"
+    end
+
+    profile = ProfileHelper.NormalizeProfileName(profile)
+    genericData = GetRawCombinationData("1L", fightstyle, profile)
+
+    if !genericData
+      Logging.LogScriptWarning "Skipping combinator based profileset generation for #{profile}. This may or may not be intended and should be double checked."
+      return nil
+    end
+
+    # Set up threshold for comparison based on target error
+    targetError = genericData["metas"]["targetError"]
+    minimalDifferenceFromDefaults = targetError * TargetErrorDiffFactor
+
+    # Combinations results array mapping:
+    # result: 0-rank, 1-talents, 2-gear, 3-dps
+
+    best = genericData["results"].first
+    default = genericData["results"].find { |x| ProfileHelper.TalentsEqual?(x[1], defaultTalents) }
+    if best && default && best[1] != default[1]
+      difference = 100 * best[3].to_f / default[3].to_f - 100
+      if difference > minimalDifferenceFromDefaults
+        Logging.LogScriptInfo "Simple: Talent build #{best[1]} beats #{default[1]} by #{difference.round(2)}% (#{best[3]} vs #{default[3]})."
+        return best[1]
+      end
+      return default[1]
+    elsif !default
+      Logging.LogScriptWarning "Default talents #{defaultTalents} were not found for #{profile}, make sure the default build is included to make best usage of this feature."
+    end
+    return best[1] if best
+    return nil
+  end
+
   # Get best talent build overrides (if better) based on Combinations results.
   def self.GetBestCombinationOverrides(fightstyle, profile, defaultTalents)
     return {} unless SimcConfig["CombinationBasedCharts"]

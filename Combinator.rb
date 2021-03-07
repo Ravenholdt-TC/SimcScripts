@@ -33,6 +33,22 @@ end
 gearProfile, gearProfileFile = Interactive.SelectTemplate("Combinator/CombinatorGear_")
 talentdatasets = Interactive.SelectTalentPermutations(talents)
 
+# Handle if top talents is required
+top_tds = nil
+talentdatasets.each do |tds|
+  if tds == "top"
+    toptalents = HeroInterface.GetBestTalentBuild(fightstyle, profile, talents)
+    top_tds = toptalents.chars.collect {|x| [x.to_i] } if toptalents
+    break
+  end
+end
+if top_tds
+  talentdatasets.delete_if {|x| x == "top" }
+  if !talentdatasets.any? {|tds| tds.reduce(&:product).collect(&:flatten).include?(top_tds.flatten)}
+    talentdatasets.push(top_tds)
+  end
+end
+
 # Log all interactively set settings
 puts
 Logging.LogScriptInfo "Summarizing input:"

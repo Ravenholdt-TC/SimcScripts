@@ -153,7 +153,13 @@ module Interactive
     talentstrings = talentstringinput.split(",")
     talentdataset = []
     talentstrings.each do |talentstring|
-      talentstring = defaultTalents if talentstring == "default"
+      if talentstring == "default"
+        talentstring = defaultTalents
+      elsif talentstring == "top"
+        # Special case, push a talent data set that is a placeholder
+        talentdataset.push("top")
+        next
+      end
       talentdata = []
       isTierArray = false
       tierArray = []
