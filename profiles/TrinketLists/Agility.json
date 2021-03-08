@@ -73,7 +73,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -81,7 +81,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -89,7 +89,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -97,7 +97,7 @@
         {
             "name": "Bottled Flayedwing Toxin",
             "itemId": 178742,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -105,7 +105,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -113,7 +113,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -121,7 +121,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -129,7 +129,7 @@
         {
             "name": "Mistcaller Ocarina (Crit)",
             "itemId": 178715,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [6920],
             "enchants": [],
             "additionalInput": []
@@ -137,7 +137,7 @@
         {
             "name": "Mistcaller Ocarina (Haste)",
             "itemId": 178715,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [6921],
             "enchants": [],
             "additionalInput": []
@@ -145,7 +145,7 @@
         {
             "name": "Mistcaller Ocarina (Mastery)",
             "itemId": 178715,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [6922],
             "enchants": [],
             "additionalInput": []
@@ -153,7 +153,7 @@
         {
             "name": "Mistcaller Ocarina (Versa)",
             "itemId": 178715,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [6923],
             "enchants": [],
             "additionalInput": []
@@ -161,7 +161,7 @@
         {
             "name": "Shadowgrasp Totem",
             "itemId": 179356,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -169,7 +169,7 @@
         {
             "name": "Overcharged Anima Battery",
             "itemId": 180116,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

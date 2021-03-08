@@ -73,7 +73,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -81,7 +81,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -89,7 +89,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -97,7 +97,7 @@
         {
             "name": "Spare Meat Hook",
             "itemId": 178751,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -105,7 +105,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -113,7 +113,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -121,7 +121,7 @@
         {
             "name": "Anima Field Emitter",
             "itemId": 180118,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -129,7 +129,7 @@
         {
             "name": "Overwhelming Power Crystal",
             "itemId": 179342,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -137,7 +137,7 @@
         {
             "name": "Viscera of Coalesced Hatred",
             "itemId": 178808,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

@@ -73,7 +73,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -81,7 +81,7 @@
         {
             "name": "Unbound Changeling (All)",
             "itemId": 178708,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"all\""]
@@ -89,7 +89,7 @@
         {
             "name": "Unbound Changeling (Crit)",
             "itemId": 178708,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"crit\""]
@@ -97,7 +97,7 @@
         {
             "name": "Unbound Changeling (Haste)",
             "itemId": 178708,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"haste\""]
@@ -105,7 +105,7 @@
         {
             "name": "Unbound Changeling (Mastery)",
             "itemId": 178708,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"mastery\""]
@@ -113,7 +113,7 @@
         {
             "name": "Soulletting Ruby",
             "itemId": 178809,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -121,7 +121,7 @@
         {
             "name": "Overflowing Anima Cage",
             "itemId": 178849,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -129,7 +129,7 @@
         {
             "name": "Satchel of Misbegotten Minions",
             "itemId": 178772,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -137,7 +137,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -145,7 +145,7 @@
         {
             "name": "Empyreal Ordnance",
             "itemId": 180117,
-            "itemLevels": [184, 210, 226],
+            "itemLevels": [210, 220, 226],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
