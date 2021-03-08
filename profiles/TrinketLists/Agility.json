@@ -178,7 +178,7 @@
         {
             "name": "Wakener's Frond",
             "itemId": 181457,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -186,7 +186,7 @@
         {
             "name": "Vial of Caustic Liquid",
             "itemId": 181503,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -194,7 +194,7 @@
         {
             "name": "Everchill Brambles",
             "itemId": 182452,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -202,7 +202,7 @@
         {
             "name": "Flame of Battle",
             "itemId": 181501,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -210,7 +210,7 @@
         {
             "name": "Withergrove Shardling",
             "itemId": 181459,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -218,7 +218,7 @@
         {
             "name": "Rotbriar Sprout",
             "itemId": 175729,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -226,7 +226,7 @@
         {
             "name": "Murmurs in the Dark",
             "itemId": 182454,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -234,7 +234,7 @@
         {
             "name": "Master Duelist's Chit",
             "itemId": 181358,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -242,7 +242,7 @@
         {
             "name": "Instructor's Divine Bell",
             "itemId": 184842,
-            "itemLevels": [155, 184, 200],
+            "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
