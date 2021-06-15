@@ -69,10 +69,18 @@ combinationOverrides.each do |optionsString, overrides|
   # Generate soulbind profiles
   soulbindSettings["soulbindSims"].each do |soulbind_trait|
     next if soulbind_trait["covenant"] != covenant_simc
-    name = "#{soulbind_trait["spellName"]} (#{soulbind_trait["soulbindName"]})#{"--" if optionsString}#{optionsString}_1"
+    name = "#{soulbind_trait["spellName"]} (#{soulbind_trait["soulbindName"]})#{"--" if optionsString}#{optionsString}"
+    name += "@Use#{soulbind_trait["useFinalBase"]}" if soulbind_trait["useFinalBase"]
+    name += "@Base#{soulbind_trait["isFinalBase"]}" if soulbind_trait["isFinalBase"]
+    name += "_1"
     prefix = "profileset.\"#{name}\"+="
     simcInput.push(prefix + "name=\"#{name}\"")
-    simcInput.push(prefix + "soulbind=#{soulbind_trait["spellId"]}")
+    soulbind_str = "#{soulbind_trait["spellId"]}"
+    if soulbind_trait["useFinalBase"]
+      basetrait = soulbindSettings["soulbindSims"].find {|x| x["isFinalBase"] == soulbind_trait["useFinalBase"] }
+      soulbind_str += "/#{basetrait["spellId"]}"
+    end
+    simcInput.push(prefix + "soulbind=#{soulbind_str}")
     if soulbind_trait["additionalInput"]
       soulbind_trait["additionalInput"].each do |input|
         simcInput.push(prefix + "#{input}")
@@ -122,6 +130,7 @@ results = JSONResults.new(simulationFilename)
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
+otherBases = {}
 talentDPS = {}
 columns = []
 sims = {}
@@ -133,6 +142,12 @@ results.getAllDPSResults().each do |name, dps|
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     columns.push(data[2].to_i)
+    splitcheck = data[1].split("@Base")
+    if splitcheck.count > 1
+      basename = splitcheck[1]
+      basename += "T" if data[1].include?("talents:") #HAX
+      otherBases[basename] = dps
+    end
   elsif name == "Template"
     templateDPS = dps
   end
@@ -152,13 +167,23 @@ report.push(header)
 # Body
 sims.each do |name, values|
   actor = []
-  actor.push(name)
+  actor.push(name.split("@Use")[0].split("@Base")[0])
   columns.each do |col|
     if values[col]
       if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
-        actor.push(values[col] - talentDPS[data[1]])
+        compare = talentDPS[data[1]]
+        splitcheck = name.split("@Use")
+        if splitcheck.count > 1
+          compare = otherBases["#{splitcheck[1]}T"]
+        end
+        actor.push(values[col] - compare)
       else
-        actor.push(values[col] - templateDPS)
+        compare = templateDPS
+        splitcheck = name.split("@Use")
+        if splitcheck.count > 1
+          compare = otherBases[splitcheck[1]]
+        end
+        actor.push(values[col] - compare)
       end
     else
       actor.push(0)
