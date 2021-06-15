@@ -5,6 +5,9 @@ combinatorSlots:
   - soulbind1
   - soulbind2
   - soulbind3
+  - soulbind4
+  - soulbind5
+  - soulbind6
   - legendary
 covenant:
   simcSlot: covenant
@@ -193,5 +196,91 @@ soulbind3:
         soulbind: Draven
     - name: Superior Tactics
       simcString: "332753"
+      requires:
+        soulbind: Draven
+soulbind4:
+  simcSlot: soulbind
+  options:
+    - replace: Conduit
+soulbind5:
+  simcSlot: soulbind
+  options:
+    - name: No DPS S5 PH
+      hidden: true
+      requires:
+        soulbind:
+          - Marileth
+          - Emeni
+          - Niya
+          - Dreamweaver
+          - Korayn
+          - Nadjia
+          - Theotar
+          - Draven
+    - name: Better Together
+      simcString: "351146"
+      requires:
+        soulbind: Pelagos
+    - name: Spear of the Archon
+      simcString: "351488"
+      requires:
+        soulbind: Kleia
+    - name: Soulglow Spectrometer
+      simcString: "352186"
+      requires:
+        soulbind: Mikanikos
+    - name: Carver's Eye
+      simcString: "350899"
+      requires:
+        soulbind: Heirmir
+soulbind6:
+  simcSlot: soulbind
+  options:
+    - name: Newfound Resolve
+      simcString: "351149"
+      requires:
+        soulbind: Pelagos
+    - name: Light the Path
+      simcString: "351491"
+      requires:
+        soulbind: Kleia
+    - name: Effusive Anima Accelerator
+      simcString: "352188"
+      requires:
+        soulbind: Mikanikos
+    - name: Kevin's Oozeling
+      simcString: "352110"
+      requires:
+        soulbind: Marileth
+    - name: Pustule Eruption
+      simcString: "351094"
+      requires:
+        soulbind: Emeni
+    - name: Mnemonic Equipment
+      simcString: "350936"
+      requires:
+        soulbind: Heirmir
+    - name: Bonded Hearts
+      simcString: "352503"
+      requires:
+        soulbind: Niya
+    - name: Dream Delver
+      simcString: "352786"
+      requires:
+        soulbind: Dreamweaver
+    - name: Wild Hunt Strategem
+      simcString: "352805"
+      requires:
+        soulbind: Korayn
+    - name: Fatal Flaw
+      simcString: "352373"
+      requires:
+        soulbind: Nadjia
+    - name: Party Favors
+      simcString: "351750"
+      requires:
+        soulbind: Theotar
+    - name: Battlefield Presence
+      simcString: "352417"
       requires:
         soulbind: Draven

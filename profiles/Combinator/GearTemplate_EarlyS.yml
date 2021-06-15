@@ -4,6 +4,7 @@ combinatorSlots:
   - soulbind
   - soulbind1
   - soulbind2
+  - soulbind3
   - legendary
 covenant:
   simcSlot: covenant
@@ -24,10 +25,16 @@ soulbind:
     - name: Kleia
       requires:
         covenant: Kyrian
+    - name: Mikanikos
+      requires:
+        covenant: Kyrian
     - name: Marileth
       requires:
         covenant: Necrolord
     - name: Emeni
+      requires:
+        covenant: Necrolord
+    - name: Heirmir
       requires:
         covenant: Necrolord
     - name: Niya
@@ -36,10 +43,16 @@ soulbind:
     - name: Dreamweaver
       requires:
         covenant: Night Fae
+    - name: Korayn
+      requires:
+        covenant: Night Fae
     - name: Nadjia
       requires:
         covenant: Venthyr
     - name: Theotar
+      requires:
+        covenant: Venthyr
+    - name: Draven
       requires:
         covenant: Venthyr
 soulbind1:
@@ -49,7 +62,7 @@ soulbind1:
       simcString: "328266"
       requires:
         soulbind: Pelagos
-    - name: Valiant Strikes
+    - name: Kleia PH
       hidden: true
       requires:
         soulbind: Kleia
@@ -104,3 +117,81 @@ soulbind2:
       simcString: "319210"
       requires:
         soulbind: Dreamweaver
+soulbind3:
+  simcSlot: "soulbind"
+  options:
+    - replace: Conduit
+      requires:
+        soulbind:
+          - Pelagos
+          - Kleia
+          - Mikanikos
+          - Marileth
+          - Emeni
+          - Heirmir
+          - Korayn
+          - Nadjia
+          - Theotar
+          - Draven
+    - replace: Conduit
+      #additionalInput: # Niya's Poison, special handling, add to conduit
+      #  - simcSlot: soulbind
+      #    simcString: "320660"
+      requires:
+        soulbind: Niya
+    - name: Pointed Courage
+      simcString: "329778"
+      requires:
+        soulbind: Kleia
+    - name: Hammer of Genesis
+      simcString: "333935"
+      requires:
+        soulbind: Mikanikos
+    - name: Gnashing Chompers
+      simcString: "323919"
+      requires:
+        soulbind: Emeni
+    - name: "Heirmir's Arsenal: Marrowed Gemstone"
+      simcString: "326572"
+      requires:
+        soulbind: Heirmir
+    - name: "Niya's Tools: Burrs"
+      simcString: "320659"
+      requires:
+        soulbind: Niya
+    - name: "Niya's Tools: Herbs"
+      simcString: "320662"
+      requires:
+        soulbind: Niya
+    - name: Field of Blossoms
+      simcString: "319191"
+      requires:
+        soulbind: Dreamweaver
+    - name: First Strike
+      simcString: "325069"
+      requires:
+        soulbind: Korayn
+    - name: Dauntless Duelist
+      simcString: "331584"
+      requires:
+        soulbind: Nadjia
+    - name: Exacting Preparation
+      simcString: "331580"
+      requires:
+        soulbind: Nadjia
+    - name: Refined Palate
+      simcString: "336243"
+      requires:
+        soulbind: Theotar
+    - name: Wasteland Propriety
+      simcString: "319983"
+      requires:
+        soulbind: Theotar
+    - name: Built for War
+      simcString: "319973"
+      requires:
+        soulbind: Draven
+    - name: Superior Tactics
+      simcString: "332753"
+      requires:
+        soulbind: Draven

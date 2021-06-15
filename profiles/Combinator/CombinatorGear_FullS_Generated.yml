@@ -6,6 +6,9 @@ combinatorSlots:
 - soulbind1
 - soulbind2
 - soulbind3
+- soulbind4
+- soulbind5
+- soulbind6
 - legendary
 covenant:
   simcSlot: covenant
@@ -104,7 +107,7 @@ soulbind1:
     requires:
       soulbind: Draven
   - name: Ashen Juggernaut
-    simcString: '11:7'
+    simcString: '11:11'
     requires:
       soulbind: Dreamweaver
       spec:
@@ -112,103 +115,103 @@ soulbind1:
       - fury
       - protection
   - name: Crash the Ramparts
-    simcString: '12:7'
+    simcString: '12:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arms
   - name: Merciless Bonegrinder
-    simcString: '14:7'
+    simcString: '14:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arms
   - name: Inner Fury
-    simcString: '16:7'
+    simcString: '16:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - windwalker
   - name: Unrelenting Cold
-    simcString: '17:7'
+    simcString: '17:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Shivering Core
-    simcString: '18:7'
+    simcString: '18:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Calculated Strikes
-    simcString: '19:7'
+    simcString: '19:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - windwalker
   - name: Icy Propulsion
-    simcString: '20:7'
+    simcString: '20:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Ice Bite
-    simcString: '21:7'
+    simcString: '21:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Coordinated Offensive
-    simcString: '22:7'
+    simcString: '22:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - windwalker
   - name: Xuen's Bond
-    simcString: '24:7'
+    simcString: '24:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - windwalker
   - name: Jade Bond
-    simcString: '28:7'
+    simcString: '28:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - mistweaver
   - name: Infernal Cascade
-    simcString: '30:7'
+    simcString: '30:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fire
   - name: Resplendent Mist
-    simcString: '31:7'
+    simcString: '31:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - mistweaver
   - name: Master Flame
-    simcString: '32:7'
+    simcString: '32:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fire
   - name: Arcane Prodigy
-    simcString: '34:7'
+    simcString: '34:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arcane
   - name: Nether Precision
-    simcString: '36:7'
+    simcString: '36:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arcane
   - name: Discipline of the Grove
-    simcString: '38:7'
+    simcString: '38:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -217,7 +220,7 @@ soulbind1:
       - fire
       - frost
   - name: Gift of the Lich
-    simcString: '39:7'
+    simcString: '39:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -226,7 +229,7 @@ soulbind1:
       - fire
       - frost
   - name: Ire of the Ascended
-    simcString: '40:7'
+    simcString: '40:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -235,7 +238,7 @@ soulbind1:
       - fire
       - frost
   - name: Siphoned Malice
-    simcString: '43:7'
+    simcString: '43:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -244,61 +247,61 @@ soulbind1:
       - fire
       - frost
   - name: Rising Sun Revival
-    simcString: '44:7'
+    simcString: '44:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - mistweaver
   - name: Scalding Brew
-    simcString: '46:7'
+    simcString: '46:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - brewmaster
   - name: Depths of Insanity
-    simcString: '50:7'
+    simcString: '50:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fury
   - name: Magi's Brand
-    simcString: '51:7'
+    simcString: '51:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arcane
   - name: Hack and Slash
-    simcString: '52:7'
+    simcString: '52:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fury
   - name: Flame Accretion
-    simcString: '53:7'
+    simcString: '53:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fire
   - name: Nourishing Chi
-    simcString: '54:7'
+    simcString: '54:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - mistweaver
   - name: Artifice of the Archmage
-    simcString: '55:7'
+    simcString: '55:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arcane
   - name: Walk with the Ox
-    simcString: '57:7'
+    simcString: '57:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - brewmaster
   - name: Strike with Clarity
-    simcString: '59:7'
+    simcString: '59:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -307,7 +310,7 @@ soulbind1:
       - windwalker
       - mistweaver
   - name: Bone Marrow Hops
-    simcString: '60:7'
+    simcString: '60:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -316,7 +319,7 @@ soulbind1:
       - windwalker
       - mistweaver
   - name: Imbued Reflections
-    simcString: '62:7'
+    simcString: '62:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -325,7 +328,7 @@ soulbind1:
       - windwalker
       - mistweaver
   - name: Way of the Fae
-    simcString: '63:7'
+    simcString: '63:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -334,79 +337,79 @@ soulbind1:
       - windwalker
       - mistweaver
   - name: Vicious Contempt
-    simcString: '64:7'
+    simcString: '64:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fury
   - name: Eternal Hunger
-    simcString: '65:7'
+    simcString: '65:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - unholy
   - name: Shining Radiance
-    simcString: '75:7'
+    simcString: '75:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - discipline
   - name: Pain Transformation
-    simcString: '76:7'
+    simcString: '76:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - discipline
   - name: Exaltation
-    simcString: '77:7'
+    simcString: '77:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - discipline
   - name: Lasting Spirit
-    simcString: '78:7'
+    simcString: '78:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Accelerated Cold
-    simcString: '79:7'
+    simcString: '79:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Withering Plague
-    simcString: '80:7'
+    simcString: '80:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - blood
   - name: Swift Penitence
-    simcString: '81:7'
+    simcString: '81:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - discipline
   - name: Focused Mending
-    simcString: '82:7'
+    simcString: '82:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Eradicating Blow
-    simcString: '83:7'
+    simcString: '83:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Resonant Words
-    simcString: '84:7'
+    simcString: '84:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Courageous Ascension
-    simcString: '87:7'
+    simcString: '87:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -415,13 +418,13 @@ soulbind1:
       - holy
       - shadow
   - name: Embrace Death
-    simcString: '89:7'
+    simcString: '89:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - unholy
   - name: Festering Transfusion
-    simcString: '90:7'
+    simcString: '90:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -430,19 +433,19 @@ soulbind1:
       - holy
       - shadow
   - name: Everfrost
-    simcString: '91:7'
+    simcString: '91:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Pyroclastic Shock
-    simcString: '100:7'
+    simcString: '100:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - elemental
   - name: Fae Fermata
-    simcString: '101:7'
+    simcString: '101:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -451,25 +454,25 @@ soulbind1:
       - holy
       - shadow
   - name: High Voltage
-    simcString: '102:7'
+    simcString: '102:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - elemental
   - name: Shake the Foundations
-    simcString: '103:7'
+    simcString: '103:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - elemental
   - name: Call of Flame
-    simcString: '104:7'
+    simcString: '104:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - elemental
   - name: Shattered Perceptions
-    simcString: '105:7'
+    simcString: '105:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -478,109 +481,109 @@ soulbind1:
       - holy
       - shadow
   - name: Haunting Apparitions
-    simcString: '107:7'
+    simcString: '107:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - shadow
   - name: Unruly Winds
-    simcString: '109:7'
+    simcString: '109:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - enhancement
   - name: Focused Lightning
-    simcString: '110:7'
+    simcString: '110:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - enhancement
   - name: Magma Fist
-    simcString: '111:7'
+    simcString: '111:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - enhancement
   - name: Chilled to the Core
-    simcString: '112:7'
+    simcString: '112:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - enhancement
   - name: Mind Devourer
-    simcString: '113:7'
+    simcString: '113:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - shadow
   - name: Rabid Shadows
-    simcString: '114:7'
+    simcString: '114:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - shadow
   - name: Dissonant Echoes
-    simcString: '115:7'
+    simcString: '115:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - shadow
   - name: Holy Oration
-    simcString: '116:7'
+    simcString: '116:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Embrace of Earth
-    simcString: '117:7'
+    simcString: '117:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Swirling Currents
-    simcString: '118:7'
+    simcString: '118:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Heavy Rainfall
-    simcString: '119:7'
+    simcString: '119:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Nature's Focus
-    simcString: '120:7'
+    simcString: '120:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Unleashed Frenzy
-    simcString: '122:7'
+    simcString: '122:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - frost
   - name: Debilitating Malady
-    simcString: '123:7'
+    simcString: '123:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - blood
   - name: Convocation of the Dead
-    simcString: '124:7'
+    simcString: '124:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - unholy
   - name: Lingering Plague
-    simcString: '125:7'
+    simcString: '125:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - unholy
   - name: Impenetrable Gloom
-    simcString: '126:7'
+    simcString: '126:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -589,7 +592,7 @@ soulbind1:
       - frost
       - unholy
   - name: Brutal Grasp
-    simcString: '127:7'
+    simcString: '127:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -598,7 +601,7 @@ soulbind1:
       - frost
       - unholy
   - name: Proliferation
-    simcString: '128:7'
+    simcString: '128:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -607,7 +610,7 @@ soulbind1:
       - frost
       - unholy
   - name: Enfeebled Mark
-    simcString: '137:7'
+    simcString: '137:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -616,7 +619,7 @@ soulbind1:
       - marksmanship
       - survival
   - name: Empowered Release
-    simcString: '139:7'
+    simcString: '139:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -625,7 +628,7 @@ soulbind1:
       - marksmanship
       - survival
   - name: Spirit Attunement
-    simcString: '140:7'
+    simcString: '140:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -634,7 +637,7 @@ soulbind1:
       - marksmanship
       - survival
   - name: Necrotic Barrage
-    simcString: '143:7'
+    simcString: '143:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -643,7 +646,7 @@ soulbind1:
       - marksmanship
       - survival
   - name: Elysian Dirge
-    simcString: '146:7'
+    simcString: '146:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -652,7 +655,7 @@ soulbind1:
       - enhancement
       - restoration
   - name: Tumbling Waves
-    simcString: '147:7'
+    simcString: '147:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -661,7 +664,7 @@ soulbind1:
       - enhancement
       - restoration
   - name: Essential Extraction
-    simcString: '148:7'
+    simcString: '148:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -670,7 +673,7 @@ soulbind1:
       - enhancement
       - restoration
   - name: Lavish Harvest
-    simcString: '149:7'
+    simcString: '149:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -679,32 +682,32 @@ soulbind1:
       - enhancement
       - restoration
   - name: Relentless Onslaught
-    simcString: '150:7'
+    simcString: '150:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - havoc
   - name: Dancing with Fate
-    simcString: '151:7'
+    simcString: '151:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - havoc
   - name: Serrated Glaive
-    simcString: '152:7'
+    simcString: '152:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - havoc
   - name: Growing Inferno
-    simcString: '153:7'
+    simcString: '153:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - havoc
       - vengeance
   - name: Piercing Verdict
-    simcString: '154:7'
+    simcString: '154:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -713,7 +716,7 @@ soulbind1:
       - fury
       - protection
   - name: Veteran's Repute
-    simcString: '158:7'
+    simcString: '158:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -722,13 +725,13 @@ soulbind1:
       - fury
       - protection
   - name: Expurgation
-    simcString: '164:7'
+    simcString: '164:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - retribution
   - name: Harrowing Punishment
-    simcString: '165:7'
+    simcString: '165:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -737,73 +740,73 @@ soulbind1:
       - fury
       - protection
   - name: Truth's Wake
-    simcString: '167:7'
+    simcString: '167:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - retribution
   - name: Mortal Combo
-    simcString: '169:7'
+    simcString: '169:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - arms
   - name: Soul Furnace
-    simcString: '172:7'
+    simcString: '172:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - vengeance
   - name: Corrupting Leer
-    simcString: '174:7'
+    simcString: '174:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - affliction
   - name: Templar's Vindication
-    simcString: '176:7'
+    simcString: '176:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - retribution
   - name: Enkindled Spirit
-    simcString: '177:7'
+    simcString: '177:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Virtuous Command
-    simcString: '182:7'
+    simcString: '182:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - retribution
   - name: Ferocious Appetite
-    simcString: '183:7'
+    simcString: '183:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - beast_mastery
   - name: Resplendent Light
-    simcString: '184:7'
+    simcString: '184:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: One With the Beast
-    simcString: '185:7'
+    simcString: '185:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - beast_mastery
   - name: Show of Force
-    simcString: '186:7'
+    simcString: '186:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - protection
   - name: Repeat Decree
-    simcString: '187:7'
+    simcString: '187:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -811,19 +814,19 @@ soulbind1:
       - havoc
       - vengeance
   - name: Sharpshooter's Focus
-    simcString: '188:7'
+    simcString: '188:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - marksmanship
   - name: Brutal Projectiles
-    simcString: '189:7'
+    simcString: '189:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - marksmanship
   - name: Destructive Reverberations
-    simcString: '190:7'
+    simcString: '190:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -832,37 +835,37 @@ soulbind1:
       - fury
       - protection
   - name: Deadly Chain
-    simcString: '192:7'
+    simcString: '192:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - marksmanship
   - name: Focused Light
-    simcString: '193:7'
+    simcString: '193:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Untempered Dedication
-    simcString: '194:7'
+    simcString: '194:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - holy
   - name: Vengeful Shock
-    simcString: '195:7'
+    simcString: '195:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - protection
   - name: Punish the Guilty
-    simcString: '196:7'
+    simcString: '196:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - protection
   - name: Increased Scrutiny
-    simcString: '198:7'
+    simcString: '198:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -870,13 +873,13 @@ soulbind1:
       - havoc
       - vengeance
   - name: Powerful Precision
-    simcString: '199:7'
+    simcString: '199:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - marksmanship
   - name: Brooding Pool
-    simcString: '200:7'
+    simcString: '200:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -884,55 +887,55 @@ soulbind1:
       - havoc
       - vengeance
   - name: Rolling Agony
-    simcString: '201:7'
+    simcString: '201:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - affliction
   - name: Focused Malignancy
-    simcString: '202:7'
+    simcString: '202:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - affliction
-  - name: Cold Embrace
-    simcString: '203:7'
+  - name: Withering Bolt
+    simcString: '203:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - affliction
   - name: Borne of Blood
-    simcString: '204:7'
+    simcString: '204:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - demonology
   - name: Carnivorous Stalkers
-    simcString: '205:7'
+    simcString: '205:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - demonology
   - name: Tyrant's Soul
-    simcString: '206:7'
+    simcString: '206:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - demonology
   - name: Fel Commando
-    simcString: '207:7'
+    simcString: '207:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - demonology
   - name: Duplicitous Havoc
-    simcString: '208:7'
+    simcString: '208:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - destruction
   - name: The Long Summer
-    simcString: '210:7'
+    simcString: '210:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -941,19 +944,19 @@ soulbind1:
       - protection
       - retribution
   - name: Ashen Remains
-    simcString: '211:7'
+    simcString: '211:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - destruction
   - name: Combusting Engine
-    simcString: '212:7'
+    simcString: '212:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - destruction
   - name: Righteous Might
-    simcString: '213:7'
+    simcString: '213:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -962,13 +965,13 @@ soulbind1:
       - protection
       - retribution
   - name: Infernal Brand
-    simcString: '214:7'
+    simcString: '214:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - destruction
   - name: Hallowed Discernment
-    simcString: '215:7'
+    simcString: '215:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -977,7 +980,7 @@ soulbind1:
       - protection
       - retribution
   - name: Ringing Clarity
-    simcString: '216:7'
+    simcString: '216:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -986,7 +989,7 @@ soulbind1:
       - protection
       - retribution
   - name: Soul Tithe
-    simcString: '217:7'
+    simcString: '217:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -995,7 +998,7 @@ soulbind1:
       - demonology
       - destruction
   - name: Fatal Decimation
-    simcString: '218:7'
+    simcString: '218:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -1004,7 +1007,7 @@ soulbind1:
       - demonology
       - destruction
   - name: Catastrophic Origin
-    simcString: '219:7'
+    simcString: '219:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -1013,7 +1016,7 @@ soulbind1:
       - demonology
       - destruction
   - name: Soul Eater
-    simcString: '220:7'
+    simcString: '220:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -1022,19 +1025,19 @@ soulbind1:
       - demonology
       - destruction
   - name: Echoing Call
-    simcString: '223:7'
+    simcString: '223:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - beast_mastery
   - name: Strength of the Pack
-    simcString: '224:7'
+    simcString: '224:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - survival
   - name: Reverberation
-    simcString: '225:7'
+    simcString: '225:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -1043,13 +1046,13 @@ soulbind1:
       - outlaw
       - subtlety
   - name: Stinging Strike
-    simcString: '226:7'
+    simcString: '226:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - survival
   - name: Sudden Fractures
-    simcString: '227:7'
+    simcString: '227:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -1058,7 +1061,7 @@ soulbind1:
       - outlaw
       - subtlety
   - name: Septic Shock
-    simcString: '228:7'
+    simcString: '228:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -1067,7 +1070,7 @@ soulbind1:
       - outlaw
       - subtlety
   - name: Lashing Scars
-    simcString: '229:7'
+    simcString: '229:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -1076,85 +1079,85 @@ soulbind1:
       - outlaw
       - subtlety
   - name: Poisoned Katar
-    simcString: '237:7'
+    simcString: '237:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - assassination
   - name: Well-Placed Steel
-    simcString: '238:7'
+    simcString: '238:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - assassination
   - name: Maim, Mangle
-    simcString: '239:7'
+    simcString: '239:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - assassination
   - name: Lethal Poisons
-    simcString: '240:7'
+    simcString: '240:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - assassination
   - name: Triple Threat
-    simcString: '241:7'
+    simcString: '241:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - outlaw
   - name: Ambidexterity
-    simcString: '242:7'
+    simcString: '242:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - outlaw
   - name: Sleight of Hand
-    simcString: '243:7'
+    simcString: '243:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - outlaw
   - name: Count the Odds
-    simcString: '244:7'
+    simcString: '244:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - outlaw
   - name: Deeper Daggers
-    simcString: '245:7'
+    simcString: '245:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - subtlety
   - name: Planned Execution
-    simcString: '246:7'
+    simcString: '246:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - subtlety
   - name: Stiletto Staccato
-    simcString: '247:7'
+    simcString: '247:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - subtlety
   - name: Perforated Veins
-    simcString: '248:7'
+    simcString: '248:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - subtlety
   - name: Controlled Destruction
-    simcString: '249:7'
+    simcString: '249:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - fire
   - name: Withering Ground
-    simcString: '250:7'
+    simcString: '250:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -1163,109 +1166,109 @@ soulbind1:
       - frost
       - unholy
   - name: Deadly Tandem
-    simcString: '251:7'
+    simcString: '251:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - survival
   - name: Flame Infusion
-    simcString: '252:7'
+    simcString: '252:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - survival
   - name: Bloodletting
-    simcString: '253:7'
+    simcString: '253:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - beast_mastery
   - name: Stellar Inspiration
-    simcString: '261:7'
+    simcString: '261:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - balance
   - name: Precise Alignment
-    simcString: '262:7'
+    simcString: '262:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - balance
   - name: Fury of the Skies
-    simcString: '263:7'
+    simcString: '263:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - balance
   - name: Umbral Intensity
-    simcString: '264:7'
+    simcString: '264:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - balance
   - name: Taste for Blood
-    simcString: '265:7'
+    simcString: '265:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - feral
   - name: Incessant Hunter
-    simcString: '266:7'
+    simcString: '266:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - feral
   - name: Sudden Ambush
-    simcString: '267:7'
+    simcString: '267:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - feral
   - name: Carnivorous Instinct
-    simcString: '268:7'
+    simcString: '268:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - feral
   - name: Unchecked Aggression
-    simcString: '269:7'
+    simcString: '269:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - guardian
   - name: Savage Combatant
-    simcString: '270:7'
+    simcString: '270:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - guardian
   - name: Unstoppable Growth
-    simcString: '273:7'
+    simcString: '273:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Flash of Clarity
-    simcString: '274:7'
+    simcString: '274:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Floral Recycling
-    simcString: '275:7'
+    simcString: '275:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Ready for Anything
-    simcString: '276:7'
+    simcString: '276:11'
     requires:
       soulbind: Dreamweaver
       spec:
       - restoration
   - name: Deep Allegiance
-    simcString: '277:7'
+    simcString: '277:11'
     requires:
       soulbind: Dreamweaver
       covenant: Kyrian
@@ -1275,7 +1278,7 @@ soulbind1:
       - guardian
       - restoration
   - name: Evolved Swarm
-    simcString: '278:7'
+    simcString: '278:11'
     requires:
       soulbind: Dreamweaver
       covenant: Necrolord
@@ -1285,7 +1288,7 @@ soulbind1:
       - guardian
       - restoration
   - name: Conflux of Elements
-    simcString: '279:7'
+    simcString: '279:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
@@ -1295,7 +1298,7 @@ soulbind1:
       - guardian
       - restoration
   - name: Endless Thirst
-    simcString: '280:7'
+    simcString: '280:11'
     requires:
       soulbind: Dreamweaver
       covenant: Venthyr
@@ -1305,12 +1308,23 @@ soulbind1:
       - guardian
       - restoration
   - name: Unnatural Malice
-    simcString: '281:7'
+    simcString: '281:11'
     requires:
       soulbind: Dreamweaver
       covenant: Night Fae
       spec:
       - havoc
+      - vengeance
+  - name: Adaptive Armor Fragment
+    simcString: '284:11'
+    requires:
+      soulbind: Dreamweaver
+      spec:
+      - protection
+      - protection
+      - blood
+      - brewmaster
+      - guardian
       - vengeance
 soulbind2:
   simcSlot: soulbind
@@ -1324,94 +1338,94 @@ soulbind2:
     requires:
       soulbind: Dreamweaver
   - name: Ashen Juggernaut
-    simcString: '11:7'
+    simcString: '11:11'
     requires:
       spec:
       - arms
       - fury
       - protection
   - name: Crash the Ramparts
-    simcString: '12:7'
+    simcString: '12:11'
     requires:
       spec:
       - arms
   - name: Merciless Bonegrinder
-    simcString: '14:7'
+    simcString: '14:11'
     requires:
       spec:
       - arms
   - name: Inner Fury
-    simcString: '16:7'
+    simcString: '16:11'
     requires:
       spec:
       - windwalker
   - name: Unrelenting Cold
-    simcString: '17:7'
+    simcString: '17:11'
     requires:
       spec:
       - frost
   - name: Shivering Core
-    simcString: '18:7'
+    simcString: '18:11'
     requires:
       spec:
       - frost
   - name: Calculated Strikes
-    simcString: '19:7'
+    simcString: '19:11'
     requires:
       spec:
       - windwalker
   - name: Icy Propulsion
-    simcString: '20:7'
+    simcString: '20:11'
     requires:
       spec:
       - frost
   - name: Ice Bite
-    simcString: '21:7'
+    simcString: '21:11'
     requires:
       spec:
       - frost
   - name: Coordinated Offensive
-    simcString: '22:7'
+    simcString: '22:11'
     requires:
       spec:
       - windwalker
   - name: Xuen's Bond
-    simcString: '24:7'
+    simcString: '24:11'
     requires:
       spec:
       - windwalker
   - name: Jade Bond
-    simcString: '28:7'
+    simcString: '28:11'
     requires:
       spec:
       - mistweaver
   - name: Infernal Cascade
-    simcString: '30:7'
+    simcString: '30:11'
     requires:
       spec:
       - fire
   - name: Resplendent Mist
-    simcString: '31:7'
+    simcString: '31:11'
     requires:
       spec:
       - mistweaver
   - name: Master Flame
-    simcString: '32:7'
+    simcString: '32:11'
     requires:
       spec:
       - fire
   - name: Arcane Prodigy
-    simcString: '34:7'
+    simcString: '34:11'
     requires:
       spec:
       - arcane
   - name: Nether Precision
-    simcString: '36:7'
+    simcString: '36:11'
     requires:
       spec:
       - arcane
   - name: Discipline of the Grove
-    simcString: '38:7'
+    simcString: '38:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1419,7 +1433,7 @@ soulbind2:
       - fire
       - frost
   - name: Gift of the Lich
-    simcString: '39:7'
+    simcString: '39:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1427,7 +1441,7 @@ soulbind2:
       - fire
       - frost
   - name: Ire of the Ascended
-    simcString: '40:7'
+    simcString: '40:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1435,7 +1449,7 @@ soulbind2:
       - fire
       - frost
   - name: Siphoned Malice
-    simcString: '43:7'
+    simcString: '43:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1443,52 +1457,52 @@ soulbind2:
       - fire
       - frost
   - name: Rising Sun Revival
-    simcString: '44:7'
+    simcString: '44:11'
     requires:
       spec:
       - mistweaver
   - name: Scalding Brew
-    simcString: '46:7'
+    simcString: '46:11'
     requires:
       spec:
       - brewmaster
   - name: Depths of Insanity
-    simcString: '50:7'
+    simcString: '50:11'
     requires:
       spec:
       - fury
   - name: Magi's Brand
-    simcString: '51:7'
+    simcString: '51:11'
     requires:
       spec:
       - arcane
   - name: Hack and Slash
-    simcString: '52:7'
+    simcString: '52:11'
     requires:
       spec:
       - fury
   - name: Flame Accretion
-    simcString: '53:7'
+    simcString: '53:11'
     requires:
       spec:
       - fire
   - name: Nourishing Chi
-    simcString: '54:7'
+    simcString: '54:11'
     requires:
       spec:
       - mistweaver
   - name: Artifice of the Archmage
-    simcString: '55:7'
+    simcString: '55:11'
     requires:
       spec:
       - arcane
   - name: Walk with the Ox
-    simcString: '57:7'
+    simcString: '57:11'
     requires:
       spec:
       - brewmaster
   - name: Strike with Clarity
-    simcString: '59:7'
+    simcString: '59:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1496,7 +1510,7 @@ soulbind2:
       - windwalker
       - mistweaver
   - name: Bone Marrow Hops
-    simcString: '60:7'
+    simcString: '60:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1504,7 +1518,7 @@ soulbind2:
       - windwalker
       - mistweaver
   - name: Imbued Reflections
-    simcString: '62:7'
+    simcString: '62:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1512,7 +1526,7 @@ soulbind2:
       - windwalker
       - mistweaver
   - name: Way of the Fae
-    simcString: '63:7'
+    simcString: '63:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1520,67 +1534,67 @@ soulbind2:
       - windwalker
       - mistweaver
   - name: Vicious Contempt
-    simcString: '64:7'
+    simcString: '64:11'
     requires:
       spec:
       - fury
   - name: Eternal Hunger
-    simcString: '65:7'
+    simcString: '65:11'
     requires:
       spec:
       - unholy
   - name: Shining Radiance
-    simcString: '75:7'
+    simcString: '75:11'
     requires:
       spec:
       - discipline
   - name: Pain Transformation
-    simcString: '76:7'
+    simcString: '76:11'
     requires:
       spec:
       - discipline
   - name: Exaltation
-    simcString: '77:7'
+    simcString: '77:11'
     requires:
       spec:
       - discipline
   - name: Lasting Spirit
-    simcString: '78:7'
+    simcString: '78:11'
     requires:
       spec:
       - holy
   - name: Accelerated Cold
-    simcString: '79:7'
+    simcString: '79:11'
     requires:
       spec:
       - frost
   - name: Withering Plague
-    simcString: '80:7'
+    simcString: '80:11'
     requires:
       spec:
       - blood
   - name: Swift Penitence
-    simcString: '81:7'
+    simcString: '81:11'
     requires:
       spec:
       - discipline
   - name: Focused Mending
-    simcString: '82:7'
+    simcString: '82:11'
     requires:
       spec:
       - holy
   - name: Eradicating Blow
-    simcString: '83:7'
+    simcString: '83:11'
     requires:
       spec:
       - frost
   - name: Resonant Words
-    simcString: '84:7'
+    simcString: '84:11'
     requires:
       spec:
       - holy
   - name: Courageous Ascension
-    simcString: '87:7'
+    simcString: '87:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1588,12 +1602,12 @@ soulbind2:
       - holy
       - shadow
   - name: Embrace Death
-    simcString: '89:7'
+    simcString: '89:11'
     requires:
       spec:
       - unholy
   - name: Festering Transfusion
-    simcString: '90:7'
+    simcString: '90:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1601,17 +1615,17 @@ soulbind2:
       - holy
       - shadow
   - name: Everfrost
-    simcString: '91:7'
+    simcString: '91:11'
     requires:
       spec:
       - frost
   - name: Pyroclastic Shock
-    simcString: '100:7'
+    simcString: '100:11'
     requires:
       spec:
       - elemental
   - name: Fae Fermata
-    simcString: '101:7'
+    simcString: '101:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1619,22 +1633,22 @@ soulbind2:
       - holy
       - shadow
   - name: High Voltage
-    simcString: '102:7'
+    simcString: '102:11'
     requires:
       spec:
       - elemental
   - name: Shake the Foundations
-    simcString: '103:7'
+    simcString: '103:11'
     requires:
       spec:
       - elemental
   - name: Call of Flame
-    simcString: '104:7'
+    simcString: '104:11'
     requires:
       spec:
       - elemental
   - name: Shattered Perceptions
-    simcString: '105:7'
+    simcString: '105:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1642,92 +1656,92 @@ soulbind2:
       - holy
       - shadow
   - name: Haunting Apparitions
-    simcString: '107:7'
+    simcString: '107:11'
     requires:
       spec:
       - shadow
   - name: Unruly Winds
-    simcString: '109:7'
+    simcString: '109:11'
     requires:
       spec:
       - enhancement
   - name: Focused Lightning
-    simcString: '110:7'
+    simcString: '110:11'
     requires:
       spec:
       - enhancement
   - name: Magma Fist
-    simcString: '111:7'
+    simcString: '111:11'
     requires:
       spec:
       - enhancement
   - name: Chilled to the Core
-    simcString: '112:7'
+    simcString: '112:11'
     requires:
       spec:
       - enhancement
   - name: Mind Devourer
-    simcString: '113:7'
+    simcString: '113:11'
     requires:
       spec:
       - shadow
   - name: Rabid Shadows
-    simcString: '114:7'
+    simcString: '114:11'
     requires:
       spec:
       - shadow
   - name: Dissonant Echoes
-    simcString: '115:7'
+    simcString: '115:11'
     requires:
       spec:
       - shadow
   - name: Holy Oration
-    simcString: '116:7'
+    simcString: '116:11'
     requires:
       spec:
       - holy
   - name: Embrace of Earth
-    simcString: '117:7'
+    simcString: '117:11'
     requires:
       spec:
       - restoration
   - name: Swirling Currents
-    simcString: '118:7'
+    simcString: '118:11'
     requires:
       spec:
       - restoration
   - name: Heavy Rainfall
-    simcString: '119:7'
+    simcString: '119:11'
     requires:
       spec:
       - restoration
   - name: Nature's Focus
-    simcString: '120:7'
+    simcString: '120:11'
     requires:
       spec:
       - restoration
   - name: Unleashed Frenzy
-    simcString: '122:7'
+    simcString: '122:11'
     requires:
       spec:
       - frost
   - name: Debilitating Malady
-    simcString: '123:7'
+    simcString: '123:11'
     requires:
       spec:
       - blood
   - name: Convocation of the Dead
-    simcString: '124:7'
+    simcString: '124:11'
     requires:
       spec:
       - unholy
   - name: Lingering Plague
-    simcString: '125:7'
+    simcString: '125:11'
     requires:
       spec:
       - unholy
   - name: Impenetrable Gloom
-    simcString: '126:7'
+    simcString: '126:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1735,7 +1749,7 @@ soulbind2:
       - frost
       - unholy
   - name: Brutal Grasp
-    simcString: '127:7'
+    simcString: '127:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1743,7 +1757,7 @@ soulbind2:
       - frost
       - unholy
   - name: Proliferation
-    simcString: '128:7'
+    simcString: '128:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1751,7 +1765,7 @@ soulbind2:
       - frost
       - unholy
   - name: Enfeebled Mark
-    simcString: '137:7'
+    simcString: '137:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1759,7 +1773,7 @@ soulbind2:
       - marksmanship
       - survival
   - name: Empowered Release
-    simcString: '139:7'
+    simcString: '139:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1767,7 +1781,7 @@ soulbind2:
       - marksmanship
       - survival
   - name: Spirit Attunement
-    simcString: '140:7'
+    simcString: '140:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1775,7 +1789,7 @@ soulbind2:
       - marksmanship
       - survival
   - name: Necrotic Barrage
-    simcString: '143:7'
+    simcString: '143:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1783,7 +1797,7 @@ soulbind2:
       - marksmanship
       - survival
   - name: Elysian Dirge
-    simcString: '146:7'
+    simcString: '146:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1791,7 +1805,7 @@ soulbind2:
       - enhancement
       - restoration
   - name: Tumbling Waves
-    simcString: '147:7'
+    simcString: '147:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1799,7 +1813,7 @@ soulbind2:
       - enhancement
       - restoration
   - name: Essential Extraction
-    simcString: '148:7'
+    simcString: '148:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1807,7 +1821,7 @@ soulbind2:
       - enhancement
       - restoration
   - name: Lavish Harvest
-    simcString: '149:7'
+    simcString: '149:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1815,28 +1829,28 @@ soulbind2:
       - enhancement
       - restoration
   - name: Relentless Onslaught
-    simcString: '150:7'
+    simcString: '150:11'
     requires:
       spec:
       - havoc
   - name: Dancing with Fate
-    simcString: '151:7'
+    simcString: '151:11'
     requires:
       spec:
       - havoc
   - name: Serrated Glaive
-    simcString: '152:7'
+    simcString: '152:11'
     requires:
       spec:
       - havoc
   - name: Growing Inferno
-    simcString: '153:7'
+    simcString: '153:11'
     requires:
       spec:
       - havoc
       - vengeance
   - name: Piercing Verdict
-    simcString: '154:7'
+    simcString: '154:11'
     requires:
       covenant: Kyrian
       spec:
@@ -1844,7 +1858,7 @@ soulbind2:
       - fury
       - protection
   - name: Veteran's Repute
-    simcString: '158:7'
+    simcString: '158:11'
     requires:
       covenant: Necrolord
       spec:
@@ -1852,12 +1866,12 @@ soulbind2:
       - fury
       - protection
   - name: Expurgation
-    simcString: '164:7'
+    simcString: '164:11'
     requires:
       spec:
       - retribution
   - name: Harrowing Punishment
-    simcString: '165:7'
+    simcString: '165:11'
     requires:
       covenant: Venthyr
       spec:
@@ -1865,79 +1879,79 @@ soulbind2:
       - fury
       - protection
   - name: Truth's Wake
-    simcString: '167:7'
+    simcString: '167:11'
     requires:
       spec:
       - retribution
   - name: Mortal Combo
-    simcString: '169:7'
+    simcString: '169:11'
     requires:
       spec:
       - arms
   - name: Soul Furnace
-    simcString: '172:7'
+    simcString: '172:11'
     requires:
       spec:
       - vengeance
   - name: Corrupting Leer
-    simcString: '174:7'
+    simcString: '174:11'
     requires:
       spec:
       - affliction
   - name: Templar's Vindication
-    simcString: '176:7'
+    simcString: '176:11'
     requires:
       spec:
       - retribution
   - name: Enkindled Spirit
-    simcString: '177:7'
+    simcString: '177:11'
     requires:
       spec:
       - holy
   - name: Virtuous Command
-    simcString: '182:7'
+    simcString: '182:11'
     requires:
       spec:
       - retribution
   - name: Ferocious Appetite
-    simcString: '183:7'
+    simcString: '183:11'
     requires:
       spec:
       - beast_mastery
   - name: Resplendent Light
-    simcString: '184:7'
+    simcString: '184:11'
     requires:
       spec:
       - holy
   - name: One With the Beast
-    simcString: '185:7'
+    simcString: '185:11'
     requires:
       spec:
       - beast_mastery
   - name: Show of Force
-    simcString: '186:7'
+    simcString: '186:11'
     requires:
       spec:
       - protection
   - name: Repeat Decree
-    simcString: '187:7'
+    simcString: '187:11'
     requires:
       covenant: Kyrian
       spec:
       - havoc
       - vengeance
   - name: Sharpshooter's Focus
-    simcString: '188:7'
+    simcString: '188:11'
     requires:
       spec:
       - marksmanship
   - name: Brutal Projectiles
-    simcString: '189:7'
+    simcString: '189:11'
     requires:
       spec:
       - marksmanship
   - name: Destructive Reverberations
-    simcString: '190:7'
+    simcString: '190:11'
     requires:
       covenant: Night Fae
       spec:
@@ -1945,91 +1959,91 @@ soulbind2:
       - fury
       - protection
   - name: Deadly Chain
-    simcString: '192:7'
+    simcString: '192:11'
     requires:
       spec:
       - marksmanship
   - name: Focused Light
-    simcString: '193:7'
+    simcString: '193:11'
     requires:
       spec:
       - holy
   - name: Untempered Dedication
-    simcString: '194:7'
+    simcString: '194:11'
     requires:
       spec:
       - holy
   - name: Vengeful Shock
-    simcString: '195:7'
+    simcString: '195:11'
     requires:
       spec:
       - protection
   - name: Punish the Guilty
-    simcString: '196:7'
+    simcString: '196:11'
     requires:
       spec:
       - protection
   - name: Increased Scrutiny
-    simcString: '198:7'
+    simcString: '198:11'
     requires:
       covenant: Venthyr
       spec:
       - havoc
       - vengeance
   - name: Powerful Precision
-    simcString: '199:7'
+    simcString: '199:11'
     requires:
       spec:
       - marksmanship
   - name: Brooding Pool
-    simcString: '200:7'
+    simcString: '200:11'
     requires:
       covenant: Necrolord
       spec:
       - havoc
       - vengeance
   - name: Rolling Agony
-    simcString: '201:7'
+    simcString: '201:11'
     requires:
       spec:
       - affliction
   - name: Focused Malignancy
-    simcString: '202:7'
+    simcString: '202:11'
     requires:
       spec:
       - affliction
-  - name: Cold Embrace
-    simcString: '203:7'
+  - name: Withering Bolt
+    simcString: '203:11'
     requires:
       spec:
       - affliction
   - name: Borne of Blood
-    simcString: '204:7'
+    simcString: '204:11'
     requires:
       spec:
       - demonology
   - name: Carnivorous Stalkers
-    simcString: '205:7'
+    simcString: '205:11'
     requires:
       spec:
       - demonology
   - name: Tyrant's Soul
-    simcString: '206:7'
+    simcString: '206:11'
     requires:
       spec:
       - demonology
   - name: Fel Commando
-    simcString: '207:7'
+    simcString: '207:11'
     requires:
       spec:
       - demonology
   - name: Duplicitous Havoc
-    simcString: '208:7'
+    simcString: '208:11'
     requires:
       spec:
       - destruction
   - name: The Long Summer
-    simcString: '210:7'
+    simcString: '210:11'
     requires:
       covenant: Night Fae
       spec:
@@ -2037,17 +2051,17 @@ soulbind2:
       - protection
       - retribution
   - name: Ashen Remains
-    simcString: '211:7'
+    simcString: '211:11'
     requires:
       spec:
       - destruction
   - name: Combusting Engine
-    simcString: '212:7'
+    simcString: '212:11'
     requires:
       spec:
       - destruction
   - name: Righteous Might
-    simcString: '213:7'
+    simcString: '213:11'
     requires:
       covenant: Necrolord
       spec:
@@ -2055,12 +2069,12 @@ soulbind2:
       - protection
       - retribution
   - name: Infernal Brand
-    simcString: '214:7'
+    simcString: '214:11'
     requires:
       spec:
       - destruction
   - name: Hallowed Discernment
-    simcString: '215:7'
+    simcString: '215:11'
     requires:
       covenant: Venthyr
       spec:
@@ -2068,7 +2082,7 @@ soulbind2:
       - protection
       - retribution
   - name: Ringing Clarity
-    simcString: '216:7'
+    simcString: '216:11'
     requires:
       covenant: Kyrian
       spec:
@@ -2076,7 +2090,7 @@ soulbind2:
       - protection
       - retribution
   - name: Soul Tithe
-    simcString: '217:7'
+    simcString: '217:11'
     requires:
       covenant: Kyrian
       spec:
@@ -2084,7 +2098,7 @@ soulbind2:
       - demonology
       - destruction
   - name: Fatal Decimation
-    simcString: '218:7'
+    simcString: '218:11'
     requires:
       covenant: Necrolord
       spec:
@@ -2092,7 +2106,7 @@ soulbind2:
       - demonology
       - destruction
   - name: Catastrophic Origin
-    simcString: '219:7'
+    simcString: '219:11'
     requires:
       covenant: Venthyr
       spec:
@@ -2100,7 +2114,7 @@ soulbind2:
       - demonology
       - destruction
   - name: Soul Eater
-    simcString: '220:7'
+    simcString: '220:11'
     requires:
       covenant: Night Fae
       spec:
@@ -2108,17 +2122,17 @@ soulbind2:
       - demonology
       - destruction
   - name: Echoing Call
-    simcString: '223:7'
+    simcString: '223:11'
     requires:
       spec:
       - beast_mastery
   - name: Strength of the Pack
-    simcString: '224:7'
+    simcString: '224:11'
     requires:
       spec:
       - survival
   - name: Reverberation
-    simcString: '225:7'
+    simcString: '225:11'
     requires:
       covenant: Kyrian
       spec:
@@ -2126,12 +2140,12 @@ soulbind2:
       - outlaw
       - subtlety
   - name: Stinging Strike
-    simcString: '226:7'
+    simcString: '226:11'
     requires:
       spec:
       - survival
   - name: Sudden Fractures
-    simcString: '227:7'
+    simcString: '227:11'
     requires:
       covenant: Necrolord
       spec:
@@ -2139,7 +2153,7 @@ soulbind2:
       - outlaw
       - subtlety
   - name: Septic Shock
-    simcString: '228:7'
+    simcString: '228:11'
     requires:
       covenant: Night Fae
       spec:
@@ -2147,7 +2161,7 @@ soulbind2:
       - outlaw
       - subtlety
   - name: Lashing Scars
-    simcString: '229:7'
+    simcString: '229:11'
     requires:
       covenant: Venthyr
       spec:
@@ -2155,72 +2169,72 @@ soulbind2:
       - outlaw
       - subtlety
   - name: Poisoned Katar
-    simcString: '237:7'
+    simcString: '237:11'
     requires:
       spec:
       - assassination
   - name: Well-Placed Steel
-    simcString: '238:7'
+    simcString: '238:11'
     requires:
       spec:
       - assassination
   - name: Maim, Mangle
-    simcString: '239:7'
+    simcString: '239:11'
     requires:
       spec:
       - assassination
   - name: Lethal Poisons
-    simcString: '240:7'
+    simcString: '240:11'
     requires:
       spec:
       - assassination
   - name: Triple Threat
-    simcString: '241:7'
+    simcString: '241:11'
     requires:
       spec:
       - outlaw
   - name: Ambidexterity
-    simcString: '242:7'
+    simcString: '242:11'
     requires:
       spec:
       - outlaw
   - name: Sleight of Hand
-    simcString: '243:7'
+    simcString: '243:11'
     requires:
       spec:
       - outlaw
   - name: Count the Odds
-    simcString: '244:7'
+    simcString: '244:11'
     requires:
       spec:
       - outlaw
   - name: Deeper Daggers
-    simcString: '245:7'
+    simcString: '245:11'
     requires:
       spec:
       - subtlety
   - name: Planned Execution
-    simcString: '246:7'
+    simcString: '246:11'
     requires:
       spec:
       - subtlety
   - name: Stiletto Staccato
-    simcString: '247:7'
+    simcString: '247:11'
     requires:
       spec:
       - subtlety
   - name: Perforated Veins
-    simcString: '248:7'
+    simcString: '248:11'
     requires:
       spec:
       - subtlety
   - name: Controlled Destruction
-    simcString: '249:7'
+    simcString: '249:11'
     requires:
       spec:
       - fire
   - name: Withering Ground
-    simcString: '250:7'
+    simcString: '250:11'
     requires:
       covenant: Night Fae
       spec:
@@ -2228,92 +2242,92 @@ soulbind2:
       - frost
       - unholy
   - name: Deadly Tandem
-    simcString: '251:7'
+    simcString: '251:11'
     requires:
       spec:
       - survival
   - name: Flame Infusion
-    simcString: '252:7'
+    simcString: '252:11'
     requires:
       spec:
       - survival
   - name: Bloodletting
-    simcString: '253:7'
+    simcString: '253:11'
     requires:
       spec:
       - beast_mastery
   - name: Stellar Inspiration
-    simcString: '261:7'
+    simcString: '261:11'
     requires:
       spec:
       - balance
   - name: Precise Alignment
-    simcString: '262:7'
+    simcString: '262:11'
     requires:
       spec:
       - balance
   - name: Fury of the Skies
-    simcString: '263:7'
+    simcString: '263:11'
     requires:
       spec:
       - balance
   - name: Umbral Intensity
-    simcString: '264:7'
+    simcString: '264:11'
     requires:
       spec:
       - balance
   - name: Taste for Blood
-    simcString: '265:7'
+    simcString: '265:11'
     requires:
       spec:
       - feral
   - name: Incessant Hunter
-    simcString: '266:7'
+    simcString: '266:11'
     requires:
       spec:
       - feral
   - name: Sudden Ambush
-    simcString: '267:7'
+    simcString: '267:11'
     requires:
       spec:
       - feral
   - name: Carnivorous Instinct
-    simcString: '268:7'
+    simcString: '268:11'
     requires:
       spec:
       - feral
   - name: Unchecked Aggression
-    simcString: '269:7'
+    simcString: '269:11'
     requires:
       spec:
       - guardian
   - name: Savage Combatant
-    simcString: '270:7'
+    simcString: '270:11'
     requires:
       spec:
       - guardian
   - name: Unstoppable Growth
-    simcString: '273:7'
+    simcString: '273:11'
     requires:
       spec:
       - restoration
   - name: Flash of Clarity
-    simcString: '274:7'
+    simcString: '274:11'
     requires:
       spec:
       - restoration
   - name: Floral Recycling
-    simcString: '275:7'
+    simcString: '275:11'
     requires:
       spec:
       - restoration
   - name: Ready for Anything
-    simcString: '276:7'
+    simcString: '276:11'
     requires:
       spec:
       - restoration
   - name: Deep Allegiance
-    simcString: '277:7'
+    simcString: '277:11'
     requires:
       covenant: Kyrian
       spec:
@@ -2322,7 +2336,7 @@ soulbind2:
       - guardian
       - restoration
   - name: Evolved Swarm
-    simcString: '278:7'
+    simcString: '278:11'
     requires:
       covenant: Necrolord
       spec:
@@ -2331,7 +2345,7 @@ soulbind2:
       - guardian
       - restoration
   - name: Conflux of Elements
-    simcString: '279:7'
+    simcString: '279:11'
     requires:
       covenant: Night Fae
       spec:
@@ -2340,7 +2354,7 @@ soulbind2:
       - guardian
       - restoration
   - name: Endless Thirst
-    simcString: '280:7'
+    simcString: '280:11'
     requires:
       covenant: Venthyr
       spec:
@@ -2349,11 +2363,21 @@ soulbind2:
       - guardian
       - restoration
   - name: Unnatural Malice
-    simcString: '281:7'
+    simcString: '281:11'
     requires:
       covenant: Night Fae
       spec:
       - havoc
+      - vengeance
+  - name: Adaptive Armor Fragment
+    simcString: '284:11'
+    requires:
+      spec:
+      - protection
+      - protection
+      - blood
+      - brewmaster
+      - guardian
       - vengeance
 soulbind3:
   simcSlot: soulbind
@@ -2415,7 +2439,7 @@ soulbind3:
     requires:
       soulbind: Draven
   - name: Ashen Juggernaut
-    simcString: '11:7'
+    simcString: '11:11'
     requires:
       soulbind: &1
       - Pelagos
@@ -2433,103 +2457,103 @@ soulbind3:
       - fury
       - protection
   - name: Crash the Ramparts
-    simcString: '12:7'
+    simcString: '12:11'
     requires:
       soulbind: *1
       spec:
       - arms
   - name: Merciless Bonegrinder
-    simcString: '14:7'
+    simcString: '14:11'
     requires:
       soulbind: *1
       spec:
       - arms
   - name: Inner Fury
-    simcString: '16:7'
+    simcString: '16:11'
     requires:
       soulbind: *1
       spec:
       - windwalker
   - name: Unrelenting Cold
-    simcString: '17:7'
+    simcString: '17:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Shivering Core
-    simcString: '18:7'
+    simcString: '18:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Calculated Strikes
-    simcString: '19:7'
+    simcString: '19:11'
     requires:
       soulbind: *1
       spec:
       - windwalker
   - name: Icy Propulsion
-    simcString: '20:7'
+    simcString: '20:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Ice Bite
-    simcString: '21:7'
+    simcString: '21:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Coordinated Offensive
-    simcString: '22:7'
+    simcString: '22:11'
     requires:
       soulbind: *1
       spec:
       - windwalker
   - name: Xuen's Bond
-    simcString: '24:7'
+    simcString: '24:11'
     requires:
       soulbind: *1
       spec:
       - windwalker
   - name: Jade Bond
-    simcString: '28:7'
+    simcString: '28:11'
     requires:
       soulbind: *1
       spec:
       - mistweaver
   - name: Infernal Cascade
-    simcString: '30:7'
+    simcString: '30:11'
     requires:
       soulbind: *1
       spec:
       - fire
   - name: Resplendent Mist
-    simcString: '31:7'
+    simcString: '31:11'
     requires:
       soulbind: *1
       spec:
       - mistweaver
   - name: Master Flame
-    simcString: '32:7'
+    simcString: '32:11'
     requires:
       soulbind: *1
       spec:
       - fire
   - name: Arcane Prodigy
-    simcString: '34:7'
+    simcString: '34:11'
     requires:
       soulbind: *1
       spec:
       - arcane
   - name: Nether Precision
-    simcString: '36:7'
+    simcString: '36:11'
     requires:
       soulbind: *1
       spec:
       - arcane
   - name: Discipline of the Grove
-    simcString: '38:7'
+    simcString: '38:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -2538,7 +2562,7 @@ soulbind3:
       - fire
       - frost
   - name: Gift of the Lich
-    simcString: '39:7'
+    simcString: '39:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2547,7 +2571,7 @@ soulbind3:
       - fire
       - frost
   - name: Ire of the Ascended
-    simcString: '40:7'
+    simcString: '40:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2556,7 +2580,7 @@ soulbind3:
       - fire
       - frost
   - name: Siphoned Malice
-    simcString: '43:7'
+    simcString: '43:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -2565,61 +2589,61 @@ soulbind3:
       - fire
       - frost
   - name: Rising Sun Revival
-    simcString: '44:7'
+    simcString: '44:11'
     requires:
       soulbind: *1
       spec:
       - mistweaver
   - name: Scalding Brew
-    simcString: '46:7'
+    simcString: '46:11'
     requires:
       soulbind: *1
       spec:
       - brewmaster
   - name: Depths of Insanity
-    simcString: '50:7'
+    simcString: '50:11'
     requires:
       soulbind: *1
       spec:
       - fury
   - name: Magi's Brand
-    simcString: '51:7'
+    simcString: '51:11'
     requires:
       soulbind: *1
       spec:
       - arcane
   - name: Hack and Slash
-    simcString: '52:7'
+    simcString: '52:11'
     requires:
       soulbind: *1
       spec:
       - fury
   - name: Flame Accretion
-    simcString: '53:7'
+    simcString: '53:11'
     requires:
       soulbind: *1
       spec:
       - fire
   - name: Nourishing Chi
-    simcString: '54:7'
+    simcString: '54:11'
     requires:
       soulbind: *1
       spec:
       - mistweaver
   - name: Artifice of the Archmage
-    simcString: '55:7'
+    simcString: '55:11'
     requires:
       soulbind: *1
       spec:
       - arcane
   - name: Walk with the Ox
-    simcString: '57:7'
+    simcString: '57:11'
     requires:
       soulbind: *1
       spec:
       - brewmaster
   - name: Strike with Clarity
-    simcString: '59:7'
+    simcString: '59:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2628,7 +2652,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Bone Marrow Hops
-    simcString: '60:7'
+    simcString: '60:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2637,7 +2661,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Imbued Reflections
-    simcString: '62:7'
+    simcString: '62:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -2646,7 +2670,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Way of the Fae
-    simcString: '63:7'
+    simcString: '63:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -2655,79 +2679,79 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Vicious Contempt
-    simcString: '64:7'
+    simcString: '64:11'
     requires:
       soulbind: *1
       spec:
       - fury
   - name: Eternal Hunger
-    simcString: '65:7'
+    simcString: '65:11'
     requires:
       soulbind: *1
       spec:
       - unholy
   - name: Shining Radiance
-    simcString: '75:7'
+    simcString: '75:11'
     requires:
       soulbind: *1
       spec:
       - discipline
   - name: Pain Transformation
-    simcString: '76:7'
+    simcString: '76:11'
     requires:
       soulbind: *1
       spec:
       - discipline
   - name: Exaltation
-    simcString: '77:7'
+    simcString: '77:11'
     requires:
       soulbind: *1
       spec:
       - discipline
   - name: Lasting Spirit
-    simcString: '78:7'
+    simcString: '78:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Accelerated Cold
-    simcString: '79:7'
+    simcString: '79:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Withering Plague
-    simcString: '80:7'
+    simcString: '80:11'
     requires:
       soulbind: *1
       spec:
       - blood
   - name: Swift Penitence
-    simcString: '81:7'
+    simcString: '81:11'
     requires:
       soulbind: *1
       spec:
       - discipline
   - name: Focused Mending
-    simcString: '82:7'
+    simcString: '82:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Eradicating Blow
-    simcString: '83:7'
+    simcString: '83:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Resonant Words
-    simcString: '84:7'
+    simcString: '84:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Courageous Ascension
-    simcString: '87:7'
+    simcString: '87:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2736,13 +2760,13 @@ soulbind3:
       - holy
       - shadow
   - name: Embrace Death
-    simcString: '89:7'
+    simcString: '89:11'
     requires:
       soulbind: *1
       spec:
       - unholy
   - name: Festering Transfusion
-    simcString: '90:7'
+    simcString: '90:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2751,19 +2775,19 @@ soulbind3:
       - holy
       - shadow
   - name: Everfrost
-    simcString: '91:7'
+    simcString: '91:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Pyroclastic Shock
-    simcString: '100:7'
+    simcString: '100:11'
     requires:
       soulbind: *1
       spec:
       - elemental
   - name: Fae Fermata
-    simcString: '101:7'
+    simcString: '101:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -2772,25 +2796,25 @@ soulbind3:
       - holy
       - shadow
   - name: High Voltage
-    simcString: '102:7'
+    simcString: '102:11'
     requires:
       soulbind: *1
       spec:
       - elemental
   - name: Shake the Foundations
-    simcString: '103:7'
+    simcString: '103:11'
     requires:
       soulbind: *1
       spec:
       - elemental
   - name: Call of Flame
-    simcString: '104:7'
+    simcString: '104:11'
     requires:
       soulbind: *1
       spec:
       - elemental
   - name: Shattered Perceptions
-    simcString: '105:7'
+    simcString: '105:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -2799,109 +2823,109 @@ soulbind3:
       - holy
       - shadow
   - name: Haunting Apparitions
-    simcString: '107:7'
+    simcString: '107:11'
     requires:
       soulbind: *1
       spec:
       - shadow
   - name: Unruly Winds
-    simcString: '109:7'
+    simcString: '109:11'
     requires:
       soulbind: *1
       spec:
       - enhancement
   - name: Focused Lightning
-    simcString: '110:7'
+    simcString: '110:11'
     requires:
       soulbind: *1
       spec:
       - enhancement
   - name: Magma Fist
-    simcString: '111:7'
+    simcString: '111:11'
     requires:
       soulbind: *1
       spec:
       - enhancement
   - name: Chilled to the Core
-    simcString: '112:7'
+    simcString: '112:11'
     requires:
       soulbind: *1
       spec:
       - enhancement
   - name: Mind Devourer
-    simcString: '113:7'
+    simcString: '113:11'
     requires:
       soulbind: *1
       spec:
       - shadow
   - name: Rabid Shadows
-    simcString: '114:7'
+    simcString: '114:11'
     requires:
       soulbind: *1
       spec:
       - shadow
   - name: Dissonant Echoes
-    simcString: '115:7'
+    simcString: '115:11'
     requires:
       soulbind: *1
       spec:
       - shadow
   - name: Holy Oration
-    simcString: '116:7'
+    simcString: '116:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Embrace of Earth
-    simcString: '117:7'
+    simcString: '117:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Swirling Currents
-    simcString: '118:7'
+    simcString: '118:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Heavy Rainfall
-    simcString: '119:7'
+    simcString: '119:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Nature's Focus
-    simcString: '120:7'
+    simcString: '120:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Unleashed Frenzy
-    simcString: '122:7'
+    simcString: '122:11'
     requires:
       soulbind: *1
       spec:
       - frost
   - name: Debilitating Malady
-    simcString: '123:7'
+    simcString: '123:11'
     requires:
       soulbind: *1
       spec:
       - blood
   - name: Convocation of the Dead
-    simcString: '124:7'
+    simcString: '124:11'
     requires:
       soulbind: *1
       spec:
       - unholy
   - name: Lingering Plague
-    simcString: '125:7'
+    simcString: '125:11'
     requires:
       soulbind: *1
       spec:
       - unholy
   - name: Impenetrable Gloom
-    simcString: '126:7'
+    simcString: '126:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -2910,7 +2934,7 @@ soulbind3:
       - frost
       - unholy
   - name: Brutal Grasp
-    simcString: '127:7'
+    simcString: '127:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2919,7 +2943,7 @@ soulbind3:
       - frost
       - unholy
   - name: Proliferation
-    simcString: '128:7'
+    simcString: '128:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2928,7 +2952,7 @@ soulbind3:
       - frost
       - unholy
   - name: Enfeebled Mark
-    simcString: '137:7'
+    simcString: '137:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2937,7 +2961,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Empowered Release
-    simcString: '139:7'
+    simcString: '139:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -2946,7 +2970,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Spirit Attunement
-    simcString: '140:7'
+    simcString: '140:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -2955,7 +2979,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Necrotic Barrage
-    simcString: '143:7'
+    simcString: '143:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2964,7 +2988,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Elysian Dirge
-    simcString: '146:7'
+    simcString: '146:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -2973,7 +2997,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Tumbling Waves
-    simcString: '147:7'
+    simcString: '147:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -2982,7 +3006,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Essential Extraction
-    simcString: '148:7'
+    simcString: '148:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -2991,7 +3015,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Lavish Harvest
-    simcString: '149:7'
+    simcString: '149:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3000,32 +3024,32 @@ soulbind3:
       - enhancement
       - restoration
   - name: Relentless Onslaught
-    simcString: '150:7'
+    simcString: '150:11'
     requires:
       soulbind: *1
       spec:
       - havoc
   - name: Dancing with Fate
-    simcString: '151:7'
+    simcString: '151:11'
     requires:
       soulbind: *1
       spec:
       - havoc
   - name: Serrated Glaive
-    simcString: '152:7'
+    simcString: '152:11'
     requires:
       soulbind: *1
       spec:
       - havoc
   - name: Growing Inferno
-    simcString: '153:7'
+    simcString: '153:11'
     requires:
       soulbind: *1
       spec:
       - havoc
       - vengeance
   - name: Piercing Verdict
-    simcString: '154:7'
+    simcString: '154:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3034,7 +3058,7 @@ soulbind3:
       - fury
       - protection
   - name: Veteran's Repute
-    simcString: '158:7'
+    simcString: '158:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3043,13 +3067,13 @@ soulbind3:
       - fury
       - protection
   - name: Expurgation
-    simcString: '164:7'
+    simcString: '164:11'
     requires:
       soulbind: *1
       spec:
       - retribution
   - name: Harrowing Punishment
-    simcString: '165:7'
+    simcString: '165:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3058,73 +3082,73 @@ soulbind3:
       - fury
       - protection
   - name: Truth's Wake
-    simcString: '167:7'
+    simcString: '167:11'
     requires:
       soulbind: *1
       spec:
       - retribution
   - name: Mortal Combo
-    simcString: '169:7'
+    simcString: '169:11'
     requires:
       soulbind: *1
       spec:
       - arms
   - name: Soul Furnace
-    simcString: '172:7'
+    simcString: '172:11'
     requires:
       soulbind: *1
       spec:
       - vengeance
   - name: Corrupting Leer
-    simcString: '174:7'
+    simcString: '174:11'
     requires:
       soulbind: *1
       spec:
       - affliction
   - name: Templar's Vindication
-    simcString: '176:7'
+    simcString: '176:11'
     requires:
       soulbind: *1
       spec:
       - retribution
   - name: Enkindled Spirit
-    simcString: '177:7'
+    simcString: '177:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Virtuous Command
-    simcString: '182:7'
+    simcString: '182:11'
     requires:
       soulbind: *1
       spec:
       - retribution
   - name: Ferocious Appetite
-    simcString: '183:7'
+    simcString: '183:11'
     requires:
       soulbind: *1
       spec:
       - beast_mastery
   - name: Resplendent Light
-    simcString: '184:7'
+    simcString: '184:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: One With the Beast
-    simcString: '185:7'
+    simcString: '185:11'
     requires:
       soulbind: *1
       spec:
       - beast_mastery
   - name: Show of Force
-    simcString: '186:7'
+    simcString: '186:11'
     requires:
       soulbind: *1
       spec:
       - protection
   - name: Repeat Decree
-    simcString: '187:7'
+    simcString: '187:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3132,19 +3156,19 @@ soulbind3:
       - havoc
       - vengeance
   - name: Sharpshooter's Focus
-    simcString: '188:7'
+    simcString: '188:11'
     requires:
       soulbind: *1
       spec:
       - marksmanship
   - name: Brutal Projectiles
-    simcString: '189:7'
+    simcString: '189:11'
     requires:
       soulbind: *1
       spec:
       - marksmanship
   - name: Destructive Reverberations
-    simcString: '190:7'
+    simcString: '190:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3153,37 +3177,37 @@ soulbind3:
       - fury
       - protection
   - name: Deadly Chain
-    simcString: '192:7'
+    simcString: '192:11'
     requires:
       soulbind: *1
       spec:
       - marksmanship
   - name: Focused Light
-    simcString: '193:7'
+    simcString: '193:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Untempered Dedication
-    simcString: '194:7'
+    simcString: '194:11'
     requires:
       soulbind: *1
       spec:
       - holy
   - name: Vengeful Shock
-    simcString: '195:7'
+    simcString: '195:11'
     requires:
       soulbind: *1
       spec:
       - protection
   - name: Punish the Guilty
-    simcString: '196:7'
+    simcString: '196:11'
     requires:
       soulbind: *1
       spec:
       - protection
   - name: Increased Scrutiny
-    simcString: '198:7'
+    simcString: '198:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3191,13 +3215,13 @@ soulbind3:
       - havoc
       - vengeance
   - name: Powerful Precision
-    simcString: '199:7'
+    simcString: '199:11'
     requires:
       soulbind: *1
       spec:
       - marksmanship
   - name: Brooding Pool
-    simcString: '200:7'
+    simcString: '200:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3205,55 +3229,55 @@ soulbind3:
       - havoc
       - vengeance
   - name: Rolling Agony
-    simcString: '201:7'
+    simcString: '201:11'
     requires:
       soulbind: *1
       spec:
       - affliction
   - name: Focused Malignancy
-    simcString: '202:7'
+    simcString: '202:11'
     requires:
       soulbind: *1
       spec:
       - affliction
-  - name: Cold Embrace
-    simcString: '203:7'
+  - name: Withering Bolt
+    simcString: '203:11'
     requires:
       soulbind: *1
       spec:
       - affliction
   - name: Borne of Blood
-    simcString: '204:7'
+    simcString: '204:11'
     requires:
       soulbind: *1
       spec:
       - demonology
   - name: Carnivorous Stalkers
-    simcString: '205:7'
+    simcString: '205:11'
     requires:
       soulbind: *1
       spec:
       - demonology
   - name: Tyrant's Soul
-    simcString: '206:7'
+    simcString: '206:11'
     requires:
       soulbind: *1
       spec:
       - demonology
   - name: Fel Commando
-    simcString: '207:7'
+    simcString: '207:11'
     requires:
       soulbind: *1
       spec:
       - demonology
   - name: Duplicitous Havoc
-    simcString: '208:7'
+    simcString: '208:11'
     requires:
       soulbind: *1
       spec:
       - destruction
   - name: The Long Summer
-    simcString: '210:7'
+    simcString: '210:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3262,19 +3286,19 @@ soulbind3:
       - protection
       - retribution
   - name: Ashen Remains
-    simcString: '211:7'
+    simcString: '211:11'
     requires:
       soulbind: *1
       spec:
       - destruction
   - name: Combusting Engine
-    simcString: '212:7'
+    simcString: '212:11'
     requires:
       soulbind: *1
       spec:
       - destruction
   - name: Righteous Might
-    simcString: '213:7'
+    simcString: '213:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3283,13 +3307,13 @@ soulbind3:
       - protection
       - retribution
   - name: Infernal Brand
-    simcString: '214:7'
+    simcString: '214:11'
     requires:
       soulbind: *1
       spec:
       - destruction
   - name: Hallowed Discernment
-    simcString: '215:7'
+    simcString: '215:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3298,7 +3322,7 @@ soulbind3:
       - protection
       - retribution
   - name: Ringing Clarity
-    simcString: '216:7'
+    simcString: '216:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3307,7 +3331,7 @@ soulbind3:
       - protection
       - retribution
   - name: Soul Tithe
-    simcString: '217:7'
+    simcString: '217:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3316,7 +3340,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Fatal Decimation
-    simcString: '218:7'
+    simcString: '218:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3325,7 +3349,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Catastrophic Origin
-    simcString: '219:7'
+    simcString: '219:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3334,7 +3358,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Soul Eater
-    simcString: '220:7'
+    simcString: '220:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3343,19 +3367,19 @@ soulbind3:
       - demonology
       - destruction
   - name: Echoing Call
-    simcString: '223:7'
+    simcString: '223:11'
     requires:
       soulbind: *1
       spec:
       - beast_mastery
   - name: Strength of the Pack
-    simcString: '224:7'
+    simcString: '224:11'
     requires:
       soulbind: *1
       spec:
       - survival
   - name: Reverberation
-    simcString: '225:7'
+    simcString: '225:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3364,13 +3388,13 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Stinging Strike
-    simcString: '226:7'
+    simcString: '226:11'
     requires:
       soulbind: *1
       spec:
       - survival
   - name: Sudden Fractures
-    simcString: '227:7'
+    simcString: '227:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3379,7 +3403,7 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Septic Shock
-    simcString: '228:7'
+    simcString: '228:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3388,7 +3412,7 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Lashing Scars
-    simcString: '229:7'
+    simcString: '229:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3397,85 +3421,85 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Poisoned Katar
-    simcString: '237:7'
+    simcString: '237:11'
     requires:
       soulbind: *1
       spec:
       - assassination
   - name: Well-Placed Steel
-    simcString: '238:7'
+    simcString: '238:11'
     requires:
       soulbind: *1
       spec:
       - assassination
   - name: Maim, Mangle
-    simcString: '239:7'
+    simcString: '239:11'
     requires:
       soulbind: *1
       spec:
       - assassination
   - name: Lethal Poisons
-    simcString: '240:7'
+    simcString: '240:11'
     requires:
       soulbind: *1
       spec:
       - assassination
   - name: Triple Threat
-    simcString: '241:7'
+    simcString: '241:11'
     requires:
       soulbind: *1
       spec:
       - outlaw
   - name: Ambidexterity
-    simcString: '242:7'
+    simcString: '242:11'
     requires:
       soulbind: *1
       spec:
       - outlaw
   - name: Sleight of Hand
-    simcString: '243:7'
+    simcString: '243:11'
     requires:
       soulbind: *1
       spec:
       - outlaw
   - name: Count the Odds
-    simcString: '244:7'
+    simcString: '244:11'
     requires:
       soulbind: *1
       spec:
       - outlaw
   - name: Deeper Daggers
-    simcString: '245:7'
+    simcString: '245:11'
     requires:
       soulbind: *1
       spec:
       - subtlety
   - name: Planned Execution
-    simcString: '246:7'
+    simcString: '246:11'
     requires:
       soulbind: *1
       spec:
       - subtlety
   - name: Stiletto Staccato
-    simcString: '247:7'
+    simcString: '247:11'
     requires:
       soulbind: *1
       spec:
       - subtlety
   - name: Perforated Veins
-    simcString: '248:7'
+    simcString: '248:11'
     requires:
       soulbind: *1
       spec:
       - subtlety
   - name: Controlled Destruction
-    simcString: '249:7'
+    simcString: '249:11'
     requires:
       soulbind: *1
       spec:
       - fire
   - name: Withering Ground
-    simcString: '250:7'
+    simcString: '250:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3484,109 +3508,109 @@ soulbind3:
       - frost
       - unholy
   - name: Deadly Tandem
-    simcString: '251:7'
+    simcString: '251:11'
     requires:
       soulbind: *1
       spec:
       - survival
   - name: Flame Infusion
-    simcString: '252:7'
+    simcString: '252:11'
     requires:
       soulbind: *1
       spec:
       - survival
   - name: Bloodletting
-    simcString: '253:7'
+    simcString: '253:11'
     requires:
       soulbind: *1
       spec:
       - beast_mastery
   - name: Stellar Inspiration
-    simcString: '261:7'
+    simcString: '261:11'
     requires:
       soulbind: *1
       spec:
       - balance
   - name: Precise Alignment
-    simcString: '262:7'
+    simcString: '262:11'
     requires:
       soulbind: *1
       spec:
       - balance
   - name: Fury of the Skies
-    simcString: '263:7'
+    simcString: '263:11'
     requires:
       soulbind: *1
       spec:
       - balance
   - name: Umbral Intensity
-    simcString: '264:7'
+    simcString: '264:11'
     requires:
       soulbind: *1
       spec:
       - balance
   - name: Taste for Blood
-    simcString: '265:7'
+    simcString: '265:11'
     requires:
       soulbind: *1
       spec:
       - feral
   - name: Incessant Hunter
-    simcString: '266:7'
+    simcString: '266:11'
     requires:
       soulbind: *1
       spec:
       - feral
   - name: Sudden Ambush
-    simcString: '267:7'
+    simcString: '267:11'
     requires:
       soulbind: *1
       spec:
       - feral
   - name: Carnivorous Instinct
-    simcString: '268:7'
+    simcString: '268:11'
     requires:
       soulbind: *1
       spec:
       - feral
   - name: Unchecked Aggression
-    simcString: '269:7'
+    simcString: '269:11'
     requires:
       soulbind: *1
       spec:
       - guardian
   - name: Savage Combatant
-    simcString: '270:7'
+    simcString: '270:11'
     requires:
       soulbind: *1
       spec:
       - guardian
   - name: Unstoppable Growth
-    simcString: '273:7'
+    simcString: '273:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Flash of Clarity
-    simcString: '274:7'
+    simcString: '274:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Floral Recycling
-    simcString: '275:7'
+    simcString: '275:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Ready for Anything
-    simcString: '276:7'
+    simcString: '276:11'
     requires:
       soulbind: *1
       spec:
       - restoration
   - name: Deep Allegiance
-    simcString: '277:7'
+    simcString: '277:11'
     requires:
       soulbind: *1
       covenant: Kyrian
@@ -3596,7 +3620,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Evolved Swarm
-    simcString: '278:7'
+    simcString: '278:11'
     requires:
       soulbind: *1
       covenant: Necrolord
@@ -3606,7 +3630,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Conflux of Elements
-    simcString: '279:7'
+    simcString: '279:11'
     requires:
       soulbind: *1
       covenant: Night Fae
@@ -3616,7 +3640,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Endless Thirst
-    simcString: '280:7'
+    simcString: '280:11'
     requires:
       soulbind: *1
       covenant: Venthyr
@@ -3626,15 +3650,26 @@ soulbind3:
       - guardian
       - restoration
   - name: Unnatural Malice
-    simcString: '281:7'
+    simcString: '281:11'
     requires:
       soulbind: *1
       covenant: Night Fae
       spec:
       - havoc
       - vengeance
+  - name: Adaptive Armor Fragment
+    simcString: '284:11'
+    requires:
+      soulbind: *1
+      spec:
+      - protection
+      - protection
+      - blood
+      - brewmaster
+      - guardian
+      - vengeance
   - name: Ashen Juggernaut
-    simcString: '11:7'
+    simcString: '11:11'
     requires:
       soulbind: Niya
       spec:
@@ -3642,103 +3677,103 @@ soulbind3:
       - fury
       - protection
   - name: Crash the Ramparts
-    simcString: '12:7'
+    simcString: '12:11'
     requires:
       soulbind: Niya
       spec:
       - arms
   - name: Merciless Bonegrinder
-    simcString: '14:7'
+    simcString: '14:11'
     requires:
       soulbind: Niya
       spec:
       - arms
   - name: Inner Fury
-    simcString: '16:7'
+    simcString: '16:11'
     requires:
       soulbind: Niya
       spec:
       - windwalker
   - name: Unrelenting Cold
-    simcString: '17:7'
+    simcString: '17:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Shivering Core
-    simcString: '18:7'
+    simcString: '18:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Calculated Strikes
-    simcString: '19:7'
+    simcString: '19:11'
     requires:
       soulbind: Niya
       spec:
       - windwalker
   - name: Icy Propulsion
-    simcString: '20:7'
+    simcString: '20:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Ice Bite
-    simcString: '21:7'
+    simcString: '21:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Coordinated Offensive
-    simcString: '22:7'
+    simcString: '22:11'
     requires:
       soulbind: Niya
       spec:
       - windwalker
   - name: Xuen's Bond
-    simcString: '24:7'
+    simcString: '24:11'
     requires:
       soulbind: Niya
       spec:
       - windwalker
   - name: Jade Bond
-    simcString: '28:7'
+    simcString: '28:11'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
   - name: Infernal Cascade
-    simcString: '30:7'
+    simcString: '30:11'
     requires:
       soulbind: Niya
       spec:
       - fire
   - name: Resplendent Mist
-    simcString: '31:7'
+    simcString: '31:11'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
   - name: Master Flame
-    simcString: '32:7'
+    simcString: '32:11'
     requires:
       soulbind: Niya
       spec:
       - fire
   - name: Arcane Prodigy
-    simcString: '34:7'
+    simcString: '34:11'
     requires:
       soulbind: Niya
       spec:
       - arcane
   - name: Nether Precision
-    simcString: '36:7'
+    simcString: '36:11'
     requires:
       soulbind: Niya
       spec:
       - arcane
   - name: Discipline of the Grove
-    simcString: '38:7'
+    simcString: '38:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -3747,7 +3782,7 @@ soulbind3:
       - fire
       - frost
   - name: Gift of the Lich
-    simcString: '39:7'
+    simcString: '39:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -3756,7 +3791,7 @@ soulbind3:
       - fire
       - frost
   - name: Ire of the Ascended
-    simcString: '40:7'
+    simcString: '40:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -3765,7 +3800,7 @@ soulbind3:
       - fire
       - frost
   - name: Siphoned Malice
-    simcString: '43:7'
+    simcString: '43:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -3774,61 +3809,61 @@ soulbind3:
       - fire
       - frost
   - name: Rising Sun Revival
-    simcString: '44:7'
+    simcString: '44:11'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
   - name: Scalding Brew
-    simcString: '46:7'
+    simcString: '46:11'
     requires:
       soulbind: Niya
       spec:
       - brewmaster
   - name: Depths of Insanity
-    simcString: '50:7'
+    simcString: '50:11'
     requires:
       soulbind: Niya
       spec:
       - fury
   - name: Magi's Brand
-    simcString: '51:7'
+    simcString: '51:11'
     requires:
       soulbind: Niya
       spec:
       - arcane
   - name: Hack and Slash
-    simcString: '52:7'
+    simcString: '52:11'
     requires:
       soulbind: Niya
       spec:
       - fury
   - name: Flame Accretion
-    simcString: '53:7'
+    simcString: '53:11'
     requires:
       soulbind: Niya
       spec:
       - fire
   - name: Nourishing Chi
-    simcString: '54:7'
+    simcString: '54:11'
     requires:
       soulbind: Niya
       spec:
       - mistweaver
   - name: Artifice of the Archmage
-    simcString: '55:7'
+    simcString: '55:11'
     requires:
       soulbind: Niya
       spec:
       - arcane
   - name: Walk with the Ox
-    simcString: '57:7'
+    simcString: '57:11'
     requires:
       soulbind: Niya
       spec:
       - brewmaster
   - name: Strike with Clarity
-    simcString: '59:7'
+    simcString: '59:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -3837,7 +3872,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Bone Marrow Hops
-    simcString: '60:7'
+    simcString: '60:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -3846,7 +3881,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Imbued Reflections
-    simcString: '62:7'
+    simcString: '62:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -3855,7 +3890,7 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Way of the Fae
-    simcString: '63:7'
+    simcString: '63:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -3864,79 +3899,79 @@ soulbind3:
       - windwalker
       - mistweaver
   - name: Vicious Contempt
-    simcString: '64:7'
+    simcString: '64:11'
     requires:
       soulbind: Niya
       spec:
       - fury
   - name: Eternal Hunger
-    simcString: '65:7'
+    simcString: '65:11'
     requires:
       soulbind: Niya
       spec:
       - unholy
   - name: Shining Radiance
-    simcString: '75:7'
+    simcString: '75:11'
     requires:
       soulbind: Niya
       spec:
       - discipline
   - name: Pain Transformation
-    simcString: '76:7'
+    simcString: '76:11'
     requires:
       soulbind: Niya
       spec:
       - discipline
   - name: Exaltation
-    simcString: '77:7'
+    simcString: '77:11'
     requires:
       soulbind: Niya
       spec:
       - discipline
   - name: Lasting Spirit
-    simcString: '78:7'
+    simcString: '78:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Accelerated Cold
-    simcString: '79:7'
+    simcString: '79:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Withering Plague
-    simcString: '80:7'
+    simcString: '80:11'
     requires:
       soulbind: Niya
       spec:
       - blood
   - name: Swift Penitence
-    simcString: '81:7'
+    simcString: '81:11'
     requires:
       soulbind: Niya
       spec:
       - discipline
   - name: Focused Mending
-    simcString: '82:7'
+    simcString: '82:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Eradicating Blow
-    simcString: '83:7'
+    simcString: '83:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Resonant Words
-    simcString: '84:7'
+    simcString: '84:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Courageous Ascension
-    simcString: '87:7'
+    simcString: '87:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -3945,13 +3980,13 @@ soulbind3:
       - holy
       - shadow
   - name: Embrace Death
-    simcString: '89:7'
+    simcString: '89:11'
     requires:
       soulbind: Niya
       spec:
       - unholy
   - name: Festering Transfusion
-    simcString: '90:7'
+    simcString: '90:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -3960,19 +3995,19 @@ soulbind3:
       - holy
       - shadow
   - name: Everfrost
-    simcString: '91:7'
+    simcString: '91:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Pyroclastic Shock
-    simcString: '100:7'
+    simcString: '100:11'
     requires:
       soulbind: Niya
       spec:
       - elemental
   - name: Fae Fermata
-    simcString: '101:7'
+    simcString: '101:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -3981,25 +4016,25 @@ soulbind3:
       - holy
       - shadow
   - name: High Voltage
-    simcString: '102:7'
+    simcString: '102:11'
     requires:
       soulbind: Niya
       spec:
       - elemental
   - name: Shake the Foundations
-    simcString: '103:7'
+    simcString: '103:11'
     requires:
       soulbind: Niya
       spec:
       - elemental
   - name: Call of Flame
-    simcString: '104:7'
+    simcString: '104:11'
     requires:
       soulbind: Niya
       spec:
       - elemental
   - name: Shattered Perceptions
-    simcString: '105:7'
+    simcString: '105:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4008,109 +4043,109 @@ soulbind3:
       - holy
       - shadow
   - name: Haunting Apparitions
-    simcString: '107:7'
+    simcString: '107:11'
     requires:
       soulbind: Niya
       spec:
       - shadow
   - name: Unruly Winds
-    simcString: '109:7'
+    simcString: '109:11'
     requires:
       soulbind: Niya
       spec:
       - enhancement
   - name: Focused Lightning
-    simcString: '110:7'
+    simcString: '110:11'
     requires:
       soulbind: Niya
       spec:
       - enhancement
   - name: Magma Fist
-    simcString: '111:7'
+    simcString: '111:11'
     requires:
       soulbind: Niya
       spec:
       - enhancement
   - name: Chilled to the Core
-    simcString: '112:7'
+    simcString: '112:11'
     requires:
       soulbind: Niya
       spec:
       - enhancement
   - name: Mind Devourer
-    simcString: '113:7'
+    simcString: '113:11'
     requires:
       soulbind: Niya
       spec:
       - shadow
   - name: Rabid Shadows
-    simcString: '114:7'
+    simcString: '114:11'
     requires:
       soulbind: Niya
       spec:
       - shadow
   - name: Dissonant Echoes
-    simcString: '115:7'
+    simcString: '115:11'
     requires:
       soulbind: Niya
       spec:
       - shadow
   - name: Holy Oration
-    simcString: '116:7'
+    simcString: '116:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Embrace of Earth
-    simcString: '117:7'
+    simcString: '117:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Swirling Currents
-    simcString: '118:7'
+    simcString: '118:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Heavy Rainfall
-    simcString: '119:7'
+    simcString: '119:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Nature's Focus
-    simcString: '120:7'
+    simcString: '120:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Unleashed Frenzy
-    simcString: '122:7'
+    simcString: '122:11'
     requires:
       soulbind: Niya
       spec:
       - frost
   - name: Debilitating Malady
-    simcString: '123:7'
+    simcString: '123:11'
     requires:
       soulbind: Niya
       spec:
       - blood
   - name: Convocation of the Dead
-    simcString: '124:7'
+    simcString: '124:11'
     requires:
       soulbind: Niya
       spec:
       - unholy
   - name: Lingering Plague
-    simcString: '125:7'
+    simcString: '125:11'
     requires:
       soulbind: Niya
       spec:
       - unholy
   - name: Impenetrable Gloom
-    simcString: '126:7'
+    simcString: '126:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4119,7 +4154,7 @@ soulbind3:
       - frost
       - unholy
   - name: Brutal Grasp
-    simcString: '127:7'
+    simcString: '127:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4128,7 +4163,7 @@ soulbind3:
       - frost
       - unholy
   - name: Proliferation
-    simcString: '128:7'
+    simcString: '128:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4137,7 +4172,7 @@ soulbind3:
       - frost
       - unholy
   - name: Enfeebled Mark
-    simcString: '137:7'
+    simcString: '137:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4146,7 +4181,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Empowered Release
-    simcString: '139:7'
+    simcString: '139:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4155,7 +4190,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Spirit Attunement
-    simcString: '140:7'
+    simcString: '140:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4164,7 +4199,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Necrotic Barrage
-    simcString: '143:7'
+    simcString: '143:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4173,7 +4208,7 @@ soulbind3:
       - marksmanship
       - survival
   - name: Elysian Dirge
-    simcString: '146:7'
+    simcString: '146:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4182,7 +4217,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Tumbling Waves
-    simcString: '147:7'
+    simcString: '147:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4191,7 +4226,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Essential Extraction
-    simcString: '148:7'
+    simcString: '148:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4200,7 +4235,7 @@ soulbind3:
       - enhancement
       - restoration
   - name: Lavish Harvest
-    simcString: '149:7'
+    simcString: '149:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4209,32 +4244,32 @@ soulbind3:
       - enhancement
       - restoration
   - name: Relentless Onslaught
-    simcString: '150:7'
+    simcString: '150:11'
     requires:
       soulbind: Niya
       spec:
       - havoc
   - name: Dancing with Fate
-    simcString: '151:7'
+    simcString: '151:11'
     requires:
       soulbind: Niya
       spec:
       - havoc
   - name: Serrated Glaive
-    simcString: '152:7'
+    simcString: '152:11'
     requires:
       soulbind: Niya
       spec:
       - havoc
   - name: Growing Inferno
-    simcString: '153:7'
+    simcString: '153:11'
     requires:
       soulbind: Niya
       spec:
       - havoc
       - vengeance
   - name: Piercing Verdict
-    simcString: '154:7'
+    simcString: '154:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4243,7 +4278,7 @@ soulbind3:
       - fury
       - protection
   - name: Veteran's Repute
-    simcString: '158:7'
+    simcString: '158:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4252,13 +4287,13 @@ soulbind3:
       - fury
       - protection
   - name: Expurgation
-    simcString: '164:7'
+    simcString: '164:11'
     requires:
       soulbind: Niya
       spec:
       - retribution
   - name: Harrowing Punishment
-    simcString: '165:7'
+    simcString: '165:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4267,73 +4302,73 @@ soulbind3:
       - fury
       - protection
   - name: Truth's Wake
-    simcString: '167:7'
+    simcString: '167:11'
     requires:
       soulbind: Niya
       spec:
       - retribution
   - name: Mortal Combo
-    simcString: '169:7'
+    simcString: '169:11'
     requires:
       soulbind: Niya
       spec:
       - arms
   - name: Soul Furnace
-    simcString: '172:7'
+    simcString: '172:11'
     requires:
       soulbind: Niya
       spec:
       - vengeance
   - name: Corrupting Leer
-    simcString: '174:7'
+    simcString: '174:11'
     requires:
       soulbind: Niya
       spec:
       - affliction
   - name: Templar's Vindication
-    simcString: '176:7'
+    simcString: '176:11'
     requires:
       soulbind: Niya
       spec:
       - retribution
   - name: Enkindled Spirit
-    simcString: '177:7'
+    simcString: '177:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Virtuous Command
-    simcString: '182:7'
+    simcString: '182:11'
     requires:
       soulbind: Niya
       spec:
       - retribution
   - name: Ferocious Appetite
-    simcString: '183:7'
+    simcString: '183:11'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
   - name: Resplendent Light
-    simcString: '184:7'
+    simcString: '184:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: One With the Beast
-    simcString: '185:7'
+    simcString: '185:11'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
   - name: Show of Force
-    simcString: '186:7'
+    simcString: '186:11'
     requires:
       soulbind: Niya
       spec:
       - protection
   - name: Repeat Decree
-    simcString: '187:7'
+    simcString: '187:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4341,19 +4376,19 @@ soulbind3:
       - havoc
       - vengeance
   - name: Sharpshooter's Focus
-    simcString: '188:7'
+    simcString: '188:11'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
   - name: Brutal Projectiles
-    simcString: '189:7'
+    simcString: '189:11'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
   - name: Destructive Reverberations
-    simcString: '190:7'
+    simcString: '190:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4362,37 +4397,37 @@ soulbind3:
       - fury
       - protection
   - name: Deadly Chain
-    simcString: '192:7'
+    simcString: '192:11'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
   - name: Focused Light
-    simcString: '193:7'
+    simcString: '193:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Untempered Dedication
-    simcString: '194:7'
+    simcString: '194:11'
     requires:
       soulbind: Niya
       spec:
       - holy
   - name: Vengeful Shock
-    simcString: '195:7'
+    simcString: '195:11'
     requires:
       soulbind: Niya
       spec:
       - protection
   - name: Punish the Guilty
-    simcString: '196:7'
+    simcString: '196:11'
     requires:
       soulbind: Niya
       spec:
       - protection
   - name: Increased Scrutiny
-    simcString: '198:7'
+    simcString: '198:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4400,13 +4435,13 @@ soulbind3:
       - havoc
       - vengeance
   - name: Powerful Precision
-    simcString: '199:7'
+    simcString: '199:11'
     requires:
       soulbind: Niya
       spec:
       - marksmanship
   - name: Brooding Pool
-    simcString: '200:7'
+    simcString: '200:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4414,55 +4449,55 @@ soulbind3:
       - havoc
       - vengeance
   - name: Rolling Agony
-    simcString: '201:7'
+    simcString: '201:11'
     requires:
       soulbind: Niya
       spec:
       - affliction
   - name: Focused Malignancy
-    simcString: '202:7'
+    simcString: '202:11'
     requires:
       soulbind: Niya
       spec:
       - affliction
-  - name: Cold Embrace
-    simcString: '203:7'
+  - name: Withering Bolt
+    simcString: '203:11'
     requires:
       soulbind: Niya
       spec:
       - affliction
   - name: Borne of Blood
-    simcString: '204:7'
+    simcString: '204:11'
     requires:
       soulbind: Niya
       spec:
       - demonology
   - name: Carnivorous Stalkers
-    simcString: '205:7'
+    simcString: '205:11'
     requires:
       soulbind: Niya
       spec:
       - demonology
   - name: Tyrant's Soul
-    simcString: '206:7'
+    simcString: '206:11'
     requires:
       soulbind: Niya
       spec:
       - demonology
   - name: Fel Commando
-    simcString: '207:7'
+    simcString: '207:11'
     requires:
       soulbind: Niya
       spec:
       - demonology
   - name: Duplicitous Havoc
-    simcString: '208:7'
+    simcString: '208:11'
     requires:
       soulbind: Niya
       spec:
       - destruction
   - name: The Long Summer
-    simcString: '210:7'
+    simcString: '210:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4471,19 +4506,19 @@ soulbind3:
       - protection
       - retribution
   - name: Ashen Remains
-    simcString: '211:7'
+    simcString: '211:11'
     requires:
       soulbind: Niya
       spec:
       - destruction
   - name: Combusting Engine
-    simcString: '212:7'
+    simcString: '212:11'
     requires:
       soulbind: Niya
       spec:
       - destruction
   - name: Righteous Might
-    simcString: '213:7'
+    simcString: '213:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4492,13 +4527,13 @@ soulbind3:
       - protection
       - retribution
   - name: Infernal Brand
-    simcString: '214:7'
+    simcString: '214:11'
     requires:
       soulbind: Niya
       spec:
       - destruction
   - name: Hallowed Discernment
-    simcString: '215:7'
+    simcString: '215:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4507,7 +4542,7 @@ soulbind3:
       - protection
       - retribution
   - name: Ringing Clarity
-    simcString: '216:7'
+    simcString: '216:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4516,7 +4551,7 @@ soulbind3:
       - protection
       - retribution
   - name: Soul Tithe
-    simcString: '217:7'
+    simcString: '217:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4525,7 +4560,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Fatal Decimation
-    simcString: '218:7'
+    simcString: '218:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4534,7 +4569,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Catastrophic Origin
-    simcString: '219:7'
+    simcString: '219:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4543,7 +4578,7 @@ soulbind3:
       - demonology
       - destruction
   - name: Soul Eater
-    simcString: '220:7'
+    simcString: '220:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4552,19 +4587,19 @@ soulbind3:
       - demonology
       - destruction
   - name: Echoing Call
-    simcString: '223:7'
+    simcString: '223:11'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
   - name: Strength of the Pack
-    simcString: '224:7'
+    simcString: '224:11'
     requires:
       soulbind: Niya
       spec:
       - survival
   - name: Reverberation
-    simcString: '225:7'
+    simcString: '225:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4573,13 +4608,13 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Stinging Strike
-    simcString: '226:7'
+    simcString: '226:11'
     requires:
       soulbind: Niya
       spec:
       - survival
   - name: Sudden Fractures
-    simcString: '227:7'
+    simcString: '227:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4588,7 +4623,7 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Septic Shock
-    simcString: '228:7'
+    simcString: '228:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4597,7 +4632,7 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Lashing Scars
-    simcString: '229:7'
+    simcString: '229:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4606,85 +4641,85 @@ soulbind3:
       - outlaw
       - subtlety
   - name: Poisoned Katar
-    simcString: '237:7'
+    simcString: '237:11'
     requires:
       soulbind: Niya
       spec:
       - assassination
   - name: Well-Placed Steel
-    simcString: '238:7'
+    simcString: '238:11'
     requires:
       soulbind: Niya
       spec:
       - assassination
   - name: Maim, Mangle
-    simcString: '239:7'
+    simcString: '239:11'
     requires:
       soulbind: Niya
       spec:
       - assassination
   - name: Lethal Poisons
-    simcString: '240:7'
+    simcString: '240:11'
     requires:
       soulbind: Niya
       spec:
       - assassination
   - name: Triple Threat
-    simcString: '241:7'
+    simcString: '241:11'
     requires:
       soulbind: Niya
       spec:
       - outlaw
   - name: Ambidexterity
-    simcString: '242:7'
+    simcString: '242:11'
     requires:
       soulbind: Niya
       spec:
       - outlaw
   - name: Sleight of Hand
-    simcString: '243:7'
+    simcString: '243:11'
     requires:
       soulbind: Niya
       spec:
       - outlaw
   - name: Count the Odds
-    simcString: '244:7'
+    simcString: '244:11'
     requires:
       soulbind: Niya
       spec:
       - outlaw
   - name: Deeper Daggers
-    simcString: '245:7'
+    simcString: '245:11'
     requires:
       soulbind: Niya
       spec:
       - subtlety
   - name: Planned Execution
-    simcString: '246:7'
+    simcString: '246:11'
     requires:
       soulbind: Niya
       spec:
       - subtlety
   - name: Stiletto Staccato
-    simcString: '247:7'
+    simcString: '247:11'
     requires:
       soulbind: Niya
       spec:
       - subtlety
   - name: Perforated Veins
-    simcString: '248:7'
+    simcString: '248:11'
     requires:
       soulbind: Niya
       spec:
       - subtlety
   - name: Controlled Destruction
-    simcString: '249:7'
+    simcString: '249:11'
     requires:
       soulbind: Niya
       spec:
       - fire
   - name: Withering Ground
-    simcString: '250:7'
+    simcString: '250:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4693,109 +4728,109 @@ soulbind3:
       - frost
       - unholy
   - name: Deadly Tandem
-    simcString: '251:7'
+    simcString: '251:11'
     requires:
       soulbind: Niya
       spec:
       - survival
   - name: Flame Infusion
-    simcString: '252:7'
+    simcString: '252:11'
     requires:
       soulbind: Niya
       spec:
       - survival
   - name: Bloodletting
-    simcString: '253:7'
+    simcString: '253:11'
     requires:
       soulbind: Niya
       spec:
       - beast_mastery
   - name: Stellar Inspiration
-    simcString: '261:7'
+    simcString: '261:11'
     requires:
       soulbind: Niya
       spec:
       - balance
   - name: Precise Alignment
-    simcString: '262:7'
+    simcString: '262:11'
     requires:
       soulbind: Niya
       spec:
       - balance
   - name: Fury of the Skies
-    simcString: '263:7'
+    simcString: '263:11'
     requires:
       soulbind: Niya
       spec:
       - balance
   - name: Umbral Intensity
-    simcString: '264:7'
+    simcString: '264:11'
     requires:
       soulbind: Niya
       spec:
       - balance
   - name: Taste for Blood
-    simcString: '265:7'
+    simcString: '265:11'
     requires:
       soulbind: Niya
       spec:
       - feral
   - name: Incessant Hunter
-    simcString: '266:7'
+    simcString: '266:11'
     requires:
       soulbind: Niya
       spec:
       - feral
   - name: Sudden Ambush
-    simcString: '267:7'
+    simcString: '267:11'
     requires:
       soulbind: Niya
       spec:
       - feral
   - name: Carnivorous Instinct
-    simcString: '268:7'
+    simcString: '268:11'
     requires:
       soulbind: Niya
       spec:
       - feral
   - name: Unchecked Aggression
-    simcString: '269:7'
+    simcString: '269:11'
     requires:
       soulbind: Niya
       spec:
       - guardian
   - name: Savage Combatant
-    simcString: '270:7'
+    simcString: '270:11'
     requires:
       soulbind: Niya
       spec:
       - guardian
   - name: Unstoppable Growth
-    simcString: '273:7'
+    simcString: '273:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Flash of Clarity
-    simcString: '274:7'
+    simcString: '274:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Floral Recycling
-    simcString: '275:7'
+    simcString: '275:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Ready for Anything
-    simcString: '276:7'
+    simcString: '276:11'
     requires:
       soulbind: Niya
       spec:
       - restoration
   - name: Deep Allegiance
-    simcString: '277:7'
+    simcString: '277:11'
     requires:
       soulbind: Niya
       covenant: Kyrian
@@ -4805,7 +4840,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Evolved Swarm
-    simcString: '278:7'
+    simcString: '278:11'
     requires:
       soulbind: Niya
       covenant: Necrolord
@@ -4815,7 +4850,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Conflux of Elements
-    simcString: '279:7'
+    simcString: '279:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
@@ -4825,7 +4860,7 @@ soulbind3:
       - guardian
       - restoration
   - name: Endless Thirst
-    simcString: '280:7'
+    simcString: '280:11'
     requires:
       soulbind: Niya
       covenant: Venthyr
@@ -4835,13 +4870,1151 @@ soulbind3:
       - guardian
       - restoration
   - name: Unnatural Malice
-    simcString: '281:7'
+    simcString: '281:11'
     requires:
       soulbind: Niya
       covenant: Night Fae
       spec:
       - havoc
       - vengeance
+  - name: Adaptive Armor Fragment
+    simcString: '284:11'
+    requires:
+      soulbind: Niya
+      spec:
+      - protection
+      - protection
+      - blood
+      - brewmaster
+      - guardian
+      - vengeance
+soulbind4:
+  simcSlot: soulbind
+  options:
+  - name: Ashen Juggernaut
+    simcString: '11:11'
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Crash the Ramparts
+    simcString: '12:11'
+    requires:
+      spec:
+      - arms
+  - name: Merciless Bonegrinder
+    simcString: '14:11'
+    requires:
+      spec:
+      - arms
+  - name: Inner Fury
+    simcString: '16:11'
+    requires:
+      spec:
+      - windwalker
+  - name: Unrelenting Cold
+    simcString: '17:11'
+    requires:
+      spec:
+      - frost
+  - name: Shivering Core
+    simcString: '18:11'
+    requires:
+      spec:
+      - frost
+  - name: Calculated Strikes
+    simcString: '19:11'
+    requires:
+      spec:
+      - windwalker
+  - name: Icy Propulsion
+    simcString: '20:11'
+    requires:
+      spec:
+      - frost
+  - name: Ice Bite
+    simcString: '21:11'
+    requires:
+      spec:
+      - frost
+  - name: Coordinated Offensive
+    simcString: '22:11'
+    requires:
+      spec:
+      - windwalker
+  - name: Xuen's Bond
+    simcString: '24:11'
+    requires:
+      spec:
+      - windwalker
+  - name: Jade Bond
+    simcString: '28:11'
+    requires:
+      spec:
+      - mistweaver
+  - name: Infernal Cascade
+    simcString: '30:11'
+    requires:
+      spec:
+      - fire
+  - name: Resplendent Mist
+    simcString: '31:11'
+    requires:
+      spec:
+      - mistweaver
+  - name: Master Flame
+    simcString: '32:11'
+    requires:
+      spec:
+      - fire
+  - name: Arcane Prodigy
+    simcString: '34:11'
+    requires:
+      spec:
+      - arcane
+  - name: Nether Precision
+    simcString: '36:11'
+    requires:
+      spec:
+      - arcane
+  - name: Discipline of the Grove
+    simcString: '38:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Gift of the Lich
+    simcString: '39:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Ire of the Ascended
+    simcString: '40:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Siphoned Malice
+    simcString: '43:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - arcane
+      - fire
+      - frost
+  - name: Rising Sun Revival
+    simcString: '44:11'
+    requires:
+      spec:
+      - mistweaver
+  - name: Scalding Brew
+    simcString: '46:11'
+    requires:
+      spec:
+      - brewmaster
+  - name: Depths of Insanity
+    simcString: '50:11'
+    requires:
+      spec:
+      - fury
+  - name: Magi's Brand
+    simcString: '51:11'
+    requires:
+      spec:
+      - arcane
+  - name: Hack and Slash
+    simcString: '52:11'
+    requires:
+      spec:
+      - fury
+  - name: Flame Accretion
+    simcString: '53:11'
+    requires:
+      spec:
+      - fire
+  - name: Nourishing Chi
+    simcString: '54:11'
+    requires:
+      spec:
+      - mistweaver
+  - name: Artifice of the Archmage
+    simcString: '55:11'
+    requires:
+      spec:
+      - arcane
+  - name: Walk with the Ox
+    simcString: '57:11'
+    requires:
+      spec:
+      - brewmaster
+  - name: Strike with Clarity
+    simcString: '59:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Bone Marrow Hops
+    simcString: '60:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Imbued Reflections
+    simcString: '62:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Way of the Fae
+    simcString: '63:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+  - name: Vicious Contempt
+    simcString: '64:11'
+    requires:
+      spec:
+      - fury
+  - name: Eternal Hunger
+    simcString: '65:11'
+    requires:
+      spec:
+      - unholy
+  - name: Shining Radiance
+    simcString: '75:11'
+    requires:
+      spec:
+      - discipline
+  - name: Pain Transformation
+    simcString: '76:11'
+    requires:
+      spec:
+      - discipline
+  - name: Exaltation
+    simcString: '77:11'
+    requires:
+      spec:
+      - discipline
+  - name: Lasting Spirit
+    simcString: '78:11'
+    requires:
+      spec:
+      - holy
+  - name: Accelerated Cold
+    simcString: '79:11'
+    requires:
+      spec:
+      - frost
+  - name: Withering Plague
+    simcString: '80:11'
+    requires:
+      spec:
+      - blood
+  - name: Swift Penitence
+    simcString: '81:11'
+    requires:
+      spec:
+      - discipline
+  - name: Focused Mending
+    simcString: '82:11'
+    requires:
+      spec:
+      - holy
+  - name: Eradicating Blow
+    simcString: '83:11'
+    requires:
+      spec:
+      - frost
+  - name: Resonant Words
+    simcString: '84:11'
+    requires:
+      spec:
+      - holy
+  - name: Courageous Ascension
+    simcString: '87:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Embrace Death
+    simcString: '89:11'
+    requires:
+      spec:
+      - unholy
+  - name: Festering Transfusion
+    simcString: '90:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Everfrost
+    simcString: '91:11'
+    requires:
+      spec:
+      - frost
+  - name: Pyroclastic Shock
+    simcString: '100:11'
+    requires:
+      spec:
+      - elemental
+  - name: Fae Fermata
+    simcString: '101:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: High Voltage
+    simcString: '102:11'
+    requires:
+      spec:
+      - elemental
+  - name: Shake the Foundations
+    simcString: '103:11'
+    requires:
+      spec:
+      - elemental
+  - name: Call of Flame
+    simcString: '104:11'
+    requires:
+      spec:
+      - elemental
+  - name: Shattered Perceptions
+    simcString: '105:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - discipline
+      - holy
+      - shadow
+  - name: Haunting Apparitions
+    simcString: '107:11'
+    requires:
+      spec:
+      - shadow
+  - name: Unruly Winds
+    simcString: '109:11'
+    requires:
+      spec:
+      - enhancement
+  - name: Focused Lightning
+    simcString: '110:11'
+    requires:
+      spec:
+      - enhancement
+  - name: Magma Fist
+    simcString: '111:11'
+    requires:
+      spec:
+      - enhancement
+  - name: Chilled to the Core
+    simcString: '112:11'
+    requires:
+      spec:
+      - enhancement
+  - name: Mind Devourer
+    simcString: '113:11'
+    requires:
+      spec:
+      - shadow
+  - name: Rabid Shadows
+    simcString: '114:11'
+    requires:
+      spec:
+      - shadow
+  - name: Dissonant Echoes
+    simcString: '115:11'
+    requires:
+      spec:
+      - shadow
+  - name: Holy Oration
+    simcString: '116:11'
+    requires:
+      spec:
+      - holy
+  - name: Embrace of Earth
+    simcString: '117:11'
+    requires:
+      spec:
+      - restoration
+  - name: Swirling Currents
+    simcString: '118:11'
+    requires:
+      spec:
+      - restoration
+  - name: Heavy Rainfall
+    simcString: '119:11'
+    requires:
+      spec:
+      - restoration
+  - name: Nature's Focus
+    simcString: '120:11'
+    requires:
+      spec:
+      - restoration
+  - name: Unleashed Frenzy
+    simcString: '122:11'
+    requires:
+      spec:
+      - frost
+  - name: Debilitating Malady
+    simcString: '123:11'
+    requires:
+      spec:
+      - blood
+  - name: Convocation of the Dead
+    simcString: '124:11'
+    requires:
+      spec:
+      - unholy
+  - name: Lingering Plague
+    simcString: '125:11'
+    requires:
+      spec:
+      - unholy
+  - name: Impenetrable Gloom
+    simcString: '126:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Brutal Grasp
+    simcString: '127:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Proliferation
+    simcString: '128:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Enfeebled Mark
+    simcString: '137:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Empowered Release
+    simcString: '139:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Spirit Attunement
+    simcString: '140:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Necrotic Barrage
+    simcString: '143:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+  - name: Elysian Dirge
+    simcString: '146:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Tumbling Waves
+    simcString: '147:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Essential Extraction
+    simcString: '148:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Lavish Harvest
+    simcString: '149:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+  - name: Relentless Onslaught
+    simcString: '150:11'
+    requires:
+      spec:
+      - havoc
+  - name: Dancing with Fate
+    simcString: '151:11'
+    requires:
+      spec:
+      - havoc
+  - name: Serrated Glaive
+    simcString: '152:11'
+    requires:
+      spec:
+      - havoc
+  - name: Growing Inferno
+    simcString: '153:11'
+    requires:
+      spec:
+      - havoc
+      - vengeance
+  - name: Piercing Verdict
+    simcString: '154:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Veteran's Repute
+    simcString: '158:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Expurgation
+    simcString: '164:11'
+    requires:
+      spec:
+      - retribution
+  - name: Harrowing Punishment
+    simcString: '165:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Truth's Wake
+    simcString: '167:11'
+    requires:
+      spec:
+      - retribution
+  - name: Mortal Combo
+    simcString: '169:11'
+    requires:
+      spec:
+      - arms
+  - name: Soul Furnace
+    simcString: '172:11'
+    requires:
+      spec:
+      - vengeance
+  - name: Corrupting Leer
+    simcString: '174:11'
+    requires:
+      spec:
+      - affliction
+  - name: Templar's Vindication
+    simcString: '176:11'
+    requires:
+      spec:
+      - retribution
+  - name: Enkindled Spirit
+    simcString: '177:11'
+    requires:
+      spec:
+      - holy
+  - name: Virtuous Command
+    simcString: '182:11'
+    requires:
+      spec:
+      - retribution
+  - name: Ferocious Appetite
+    simcString: '183:11'
+    requires:
+      spec:
+      - beast_mastery
+  - name: Resplendent Light
+    simcString: '184:11'
+    requires:
+      spec:
+      - holy
+  - name: One With the Beast
+    simcString: '185:11'
+    requires:
+      spec:
+      - beast_mastery
+  - name: Show of Force
+    simcString: '186:11'
+    requires:
+      spec:
+      - protection
+  - name: Repeat Decree
+    simcString: '187:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - havoc
+      - vengeance
+  - name: Sharpshooter's Focus
+    simcString: '188:11'
+    requires:
+      spec:
+      - marksmanship
+  - name: Brutal Projectiles
+    simcString: '189:11'
+    requires:
+      spec:
+      - marksmanship
+  - name: Destructive Reverberations
+    simcString: '190:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - arms
+      - fury
+      - protection
+  - name: Deadly Chain
+    simcString: '192:11'
+    requires:
+      spec:
+      - marksmanship
+  - name: Focused Light
+    simcString: '193:11'
+    requires:
+      spec:
+      - holy
+  - name: Untempered Dedication
+    simcString: '194:11'
+    requires:
+      spec:
+      - holy
+  - name: Vengeful Shock
+    simcString: '195:11'
+    requires:
+      spec:
+      - protection
+  - name: Punish the Guilty
+    simcString: '196:11'
+    requires:
+      spec:
+      - protection
+  - name: Increased Scrutiny
+    simcString: '198:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - havoc
+      - vengeance
+  - name: Powerful Precision
+    simcString: '199:11'
+    requires:
+      spec:
+      - marksmanship
+  - name: Brooding Pool
+    simcString: '200:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - havoc
+      - vengeance
+  - name: Rolling Agony
+    simcString: '201:11'
+    requires:
+      spec:
+      - affliction
+  - name: Focused Malignancy
+    simcString: '202:11'
+    requires:
+      spec:
+      - affliction
+  - name: Withering Bolt
+    simcString: '203:11'
+    requires:
+      spec:
+      - affliction
+  - name: Borne of Blood
+    simcString: '204:11'
+    requires:
+      spec:
+      - demonology
+  - name: Carnivorous Stalkers
+    simcString: '205:11'
+    requires:
+      spec:
+      - demonology
+  - name: Tyrant's Soul
+    simcString: '206:11'
+    requires:
+      spec:
+      - demonology
+  - name: Fel Commando
+    simcString: '207:11'
+    requires:
+      spec:
+      - demonology
+  - name: Duplicitous Havoc
+    simcString: '208:11'
+    requires:
+      spec:
+      - destruction
+  - name: The Long Summer
+    simcString: '210:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Ashen Remains
+    simcString: '211:11'
+    requires:
+      spec:
+      - destruction
+  - name: Combusting Engine
+    simcString: '212:11'
+    requires:
+      spec:
+      - destruction
+  - name: Righteous Might
+    simcString: '213:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Infernal Brand
+    simcString: '214:11'
+    requires:
+      spec:
+      - destruction
+  - name: Hallowed Discernment
+    simcString: '215:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Ringing Clarity
+    simcString: '216:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - holy
+      - protection
+      - retribution
+  - name: Soul Tithe
+    simcString: '217:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Fatal Decimation
+    simcString: '218:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Catastrophic Origin
+    simcString: '219:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Soul Eater
+    simcString: '220:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - affliction
+      - demonology
+      - destruction
+  - name: Echoing Call
+    simcString: '223:11'
+    requires:
+      spec:
+      - beast_mastery
+  - name: Strength of the Pack
+    simcString: '224:11'
+    requires:
+      spec:
+      - survival
+  - name: Reverberation
+    simcString: '225:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Stinging Strike
+    simcString: '226:11'
+    requires:
+      spec:
+      - survival
+  - name: Sudden Fractures
+    simcString: '227:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Septic Shock
+    simcString: '228:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Lashing Scars
+    simcString: '229:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+  - name: Poisoned Katar
+    simcString: '237:11'
+    requires:
+      spec:
+      - assassination
+  - name: Well-Placed Steel
+    simcString: '238:11'
+    requires:
+      spec:
+      - assassination
+  - name: Maim, Mangle
+    simcString: '239:11'
+    requires:
+      spec:
+      - assassination
+  - name: Lethal Poisons
+    simcString: '240:11'
+    requires:
+      spec:
+      - assassination
+  - name: Triple Threat
+    simcString: '241:11'
+    requires:
+      spec:
+      - outlaw
+  - name: Ambidexterity
+    simcString: '242:11'
+    requires:
+      spec:
+      - outlaw
+  - name: Sleight of Hand
+    simcString: '243:11'
+    requires:
+      spec:
+      - outlaw
+  - name: Count the Odds
+    simcString: '244:11'
+    requires:
+      spec:
+      - outlaw
+  - name: Deeper Daggers
+    simcString: '245:11'
+    requires:
+      spec:
+      - subtlety
+  - name: Planned Execution
+    simcString: '246:11'
+    requires:
+      spec:
+      - subtlety
+  - name: Stiletto Staccato
+    simcString: '247:11'
+    requires:
+      spec:
+      - subtlety
+  - name: Perforated Veins
+    simcString: '248:11'
+    requires:
+      spec:
+      - subtlety
+  - name: Controlled Destruction
+    simcString: '249:11'
+    requires:
+      spec:
+      - fire
+  - name: Withering Ground
+    simcString: '250:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - blood
+      - frost
+      - unholy
+  - name: Deadly Tandem
+    simcString: '251:11'
+    requires:
+      spec:
+      - survival
+  - name: Flame Infusion
+    simcString: '252:11'
+    requires:
+      spec:
+      - survival
+  - name: Bloodletting
+    simcString: '253:11'
+    requires:
+      spec:
+      - beast_mastery
+  - name: Stellar Inspiration
+    simcString: '261:11'
+    requires:
+      spec:
+      - balance
+  - name: Precise Alignment
+    simcString: '262:11'
+    requires:
+      spec:
+      - balance
+  - name: Fury of the Skies
+    simcString: '263:11'
+    requires:
+      spec:
+      - balance
+  - name: Umbral Intensity
+    simcString: '264:11'
+    requires:
+      spec:
+      - balance
+  - name: Taste for Blood
+    simcString: '265:11'
+    requires:
+      spec:
+      - feral
+  - name: Incessant Hunter
+    simcString: '266:11'
+    requires:
+      spec:
+      - feral
+  - name: Sudden Ambush
+    simcString: '267:11'
+    requires:
+      spec:
+      - feral
+  - name: Carnivorous Instinct
+    simcString: '268:11'
+    requires:
+      spec:
+      - feral
+  - name: Unchecked Aggression
+    simcString: '269:11'
+    requires:
+      spec:
+      - guardian
+  - name: Savage Combatant
+    simcString: '270:11'
+    requires:
+      spec:
+      - guardian
+  - name: Unstoppable Growth
+    simcString: '273:11'
+    requires:
+      spec:
+      - restoration
+  - name: Flash of Clarity
+    simcString: '274:11'
+    requires:
+      spec:
+      - restoration
+  - name: Floral Recycling
+    simcString: '275:11'
+    requires:
+      spec:
+      - restoration
+  - name: Ready for Anything
+    simcString: '276:11'
+    requires:
+      spec:
+      - restoration
+  - name: Deep Allegiance
+    simcString: '277:11'
+    requires:
+      covenant: Kyrian
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Evolved Swarm
+    simcString: '278:11'
+    requires:
+      covenant: Necrolord
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Conflux of Elements
+    simcString: '279:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Endless Thirst
+    simcString: '280:11'
+    requires:
+      covenant: Venthyr
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+  - name: Unnatural Malice
+    simcString: '281:11'
+    requires:
+      covenant: Night Fae
+      spec:
+      - havoc
+      - vengeance
+  - name: Adaptive Armor Fragment
+    simcString: '284:11'
+    requires:
+      spec:
+      - protection
+      - protection
+      - blood
+      - brewmaster
+      - guardian
+      - vengeance
+soulbind5:
+  simcSlot: soulbind
+  options:
+  - name: No DPS S5 PH
+    hidden: true
+    requires:
+      soulbind:
+      - Marileth
+      - Emeni
+      - Niya
+      - Dreamweaver
+      - Korayn
+      - Nadjia
+      - Theotar
+      - Draven
+  - name: Better Together
+    simcString: '351146'
+    requires:
+      soulbind: Pelagos
+  - name: Spear of the Archon
+    simcString: '351488'
+    requires:
+      soulbind: Kleia
+  - name: Soulglow Spectrometer
+    simcString: '352186'
+    requires:
+      soulbind: Mikanikos
+  - name: Carver's Eye
+    simcString: '350899'
+    requires:
+      soulbind: Heirmir
+soulbind6:
+  simcSlot: soulbind
+  options:
+  - name: Newfound Resolve
+    simcString: '351149'
+    requires:
+      soulbind: Pelagos
+  - name: Light the Path
+    simcString: '351491'
+    requires:
+      soulbind: Kleia
+  - name: Effusive Anima Accelerator
+    simcString: '352188'
+    requires:
+      soulbind: Mikanikos
+  - name: Kevin's Oozeling
+    simcString: '352110'
+    requires:
+      soulbind: Marileth
+  - name: Pustule Eruption
+    simcString: '351094'
+    requires:
+      soulbind: Emeni
+  - name: Mnemonic Equipment
+    simcString: '350936'
+    requires:
+      soulbind: Heirmir
+  - name: Bonded Hearts
+    simcString: '352503'
+    requires:
+      soulbind: Niya
+  - name: Dream Delver
+    simcString: '352786'
+    requires:
+      soulbind: Dreamweaver
+  - name: Wild Hunt Strategem
+    simcString: '352805'
+    requires:
+      soulbind: Korayn
+  - name: Fatal Flaw
+    simcString: '352373'
+    requires:
+      soulbind: Nadjia
+  - name: Party Favors
+    simcString: '351750'
+    requires:
+      soulbind: Theotar
+  - name: Battlefield Presence
+    simcString: '352417'
+    requires:
+      soulbind: Draven
 legendary:
   simcSlot: shirt
   select: 1
@@ -5155,7 +6328,7 @@ legendary:
     requires:
       spec:
       - feral
-  - name: Cat-eye Curio
+  - name: Cat-Eye Curio
     simcString: sl_legendary,bonus_id=7089
     requires:
       spec:
@@ -5908,3 +7081,387 @@ legendary:
       - holy
       - protection
       - retribution
+  - name: Rampant Transference
+    simcString: sl_legendary,bonus_id=7466
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+      covenant: Night Fae
+  - name: Final Sentence
+    simcString: sl_legendary,bonus_id=7467
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+      covenant: Kyrian
+  - name: Insatiable Hunger
+    simcString: sl_legendary,bonus_id=7468
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+      covenant: Venthyr
+  - name: Abomination's Frenzy
+    simcString: sl_legendary,bonus_id=7458
+    requires:
+      spec:
+      - blood
+      - frost
+      - unholy
+      covenant: Necrolord
+  - name: Glory
+    simcString: sl_legendary,bonus_id=7469
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+      covenant: Necrolord
+  - name: Sinful Surge
+    simcString: sl_legendary,bonus_id=7470
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+      covenant: Venthyr
+  - name: Nature's Fury
+    simcString: sl_legendary,bonus_id=7471
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+      covenant: Night Fae
+  - name: Locust Swarm
+    simcString: sl_legendary,bonus_id=7472
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+      covenant: Necrolord
+  - name: Harmonic Echo
+    simcString: sl_legendary,bonus_id=7473
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+      covenant: Kyrian
+  - name: Sinful Hysteria
+    simcString: sl_legendary,bonus_id=7474
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+      covenant: Venthyr
+  - name: Death's Fathom
+    simcString: sl_legendary,bonus_id=7475
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+      covenant: Necrolord
+  - name: Sinful Delight
+    simcString: sl_legendary,bonus_id=7476
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+      covenant: Venthyr
+  - name: Kindred Affinity
+    simcString: sl_legendary,bonus_id=7477
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+      covenant: Kyrian
+  - name: Toxic Onslaught
+    simcString: sl_legendary,bonus_id=7478
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+      covenant: Night Fae
+  - name: Celestial Spirits
+    simcString: sl_legendary,bonus_id=7571
+    requires:
+      spec:
+      - balance
+      - feral
+      - guardian
+      - restoration
+      covenant: Night Fae
+  - name: Splintered Elements
+    simcString: sl_legendary,bonus_id=7570
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+      covenant: Necrolord
+  - name: Obedience
+    simcString: sl_legendary,bonus_id=7572
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+      covenant: Venthyr
+  - name: Deathspike
+    simcString: sl_legendary,bonus_id=7573
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+      covenant: Necrolord
+  - name: Resounding Clarity
+    simcString: sl_legendary,bonus_id=7577
+    requires:
+      spec:
+      - assassination
+      - outlaw
+      - subtlety
+      covenant: Kyrian
+  - name: Divine Resonance
+    simcString: sl_legendary,bonus_id=7679
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+      covenant: Kyrian
+  - name: Duty-Bound Gavel
+    simcString: sl_legendary,bonus_id=7680
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+      covenant: Necrolord
+  - name: Agony Gaze
+    simcString: sl_legendary,bonus_id=7681
+    requires:
+      spec:
+      - havoc
+      - vengeance
+      covenant: Venthyr
+  - name: Blazing Slaughter
+    simcString: sl_legendary,bonus_id=7698
+    requires:
+      spec:
+      - havoc
+      - vengeance
+      covenant: Night Fae
+  - name: Blind Faith
+    simcString: sl_legendary,bonus_id=7699
+    requires:
+      spec:
+      - havoc
+      - vengeance
+      covenant: Kyrian
+  - name: Demonic Oath
+    simcString: sl_legendary,bonus_id=7700
+    requires:
+      spec:
+      - havoc
+      - vengeance
+      covenant: Necrolord
+  - name: Radiant Embers
+    simcString: sl_legendary,bonus_id=7701
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+      covenant: Venthyr
+  - name: Seasons of Plenty
+    simcString: sl_legendary,bonus_id=7702
+    requires:
+      spec:
+      - holy
+      - protection
+      - retribution
+      covenant: Night Fae
+  - name: Bwonsamdi's Pact
+    simcString: sl_legendary,bonus_id=7703
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+      covenant: Night Fae
+  - name: 'Shadow Word: Manipulation'
+    simcString: sl_legendary,bonus_id=7704
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+      covenant: Venthyr
+  - name: Bountiful Brew
+    simcString: sl_legendary,bonus_id=7707
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+      covenant: Necrolord
+  - name: Seeds of Rampant Growth
+    simcString: sl_legendary,bonus_id=7708
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+      covenant: Night Fae
+  - name: Elemental Conduit
+    simcString: sl_legendary,bonus_id=7709
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+      covenant: Venthyr
+  - name: Languishing Soul Detritus
+    simcString: sl_legendary,bonus_id=7710
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+      covenant: Kyrian
+  - name: Shard of Annihilation
+    simcString: sl_legendary,bonus_id=7711
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+      covenant: Necrolord
+  - name: Decaying Soul Satchel
+    simcString: sl_legendary,bonus_id=7712
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+      covenant: Night Fae
+  - name: Contained Perpetual Explosion
+    simcString: sl_legendary,bonus_id=7713
+    requires:
+      spec:
+      - affliction
+      - demonology
+      - destruction
+      covenant: Venthyr
+  - name: Pact of the Soulstalkers
+    simcString: sl_legendary,bonus_id=7714
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+      covenant: Kyrian
+  - name: Bag of Munitions
+    simcString: sl_legendary,bonus_id=7715
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+      covenant: Necrolord
+  - name: Fragments of the Elder Antlers
+    simcString: sl_legendary,bonus_id=7716
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+      covenant: Night Fae
+  - name: Pouch of Razor Fragments
+    simcString: sl_legendary,bonus_id=7717
+    requires:
+      spec:
+      - beast_mastery
+      - marksmanship
+      - survival
+      covenant: Venthyr
+  - name: Call to Arms
+    simcString: sl_legendary,bonus_id=7718
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+      covenant: Kyrian
+  - name: Faeline Harmony
+    simcString: sl_legendary,bonus_id=7721
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+      covenant: Night Fae
+  - name: Raging Vesper Vortex
+    simcString: sl_legendary,bonus_id=7722
+    requires:
+      spec:
+      - elemental
+      - enhancement
+      - restoration
+      covenant: Kyrian
+  - name: Sinister Teachings
+    simcString: sl_legendary,bonus_id=7726
+    requires:
+      spec:
+      - brewmaster
+      - windwalker
+      - mistweaver
+      covenant: Venthyr
+  - name: Heart of the Fae
+    simcString: sl_legendary,bonus_id=7727
+    requires:
+      spec:
+      - arcane
+      - fire
+      - frost
+      covenant: Night Fae
+  - name: Spheres' Harmony
+    simcString: sl_legendary,bonus_id=7728
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+      covenant: Kyrian
+  - name: Pallid Command
+    simcString: sl_legendary,bonus_id=7729
+    requires:
+      spec:
+      - discipline
+      - holy
+      - shadow
+      covenant: Necrolord
+  - name: Elysian Might
+    simcString: sl_legendary,bonus_id=7730
+    requires:
+      spec:
+      - arms
+      - fury
+      - protection
+      covenant: Kyrian

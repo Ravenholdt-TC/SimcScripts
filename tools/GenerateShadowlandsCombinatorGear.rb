@@ -18,6 +18,7 @@ def insertConduits(templateFull, slots)
       section.delete(conduit_placeholder)
       ConduitList.each do |conduit|
         next if conduit["conduitType"] != 1
+        next if conduit["specs"].count > 10 #Cheap hack to ignore multiclass conduits
 
         conduit_entry = {
           "name" => conduit["conduitName"],
@@ -50,8 +51,8 @@ def insertConduits(templateFull, slots)
   end
 end
 
-insertConduits(templateFull, ["soulbind1", "soulbind2", "soulbind3"])
-insertConduits(templateEarly, ["soulbind1", "soulbind2"])
+insertConduits(templateFull, ["soulbind1", "soulbind2", "soulbind3", "soulbind4", "soulbind5", "soulbind6"])
+insertConduits(templateEarly, ["soulbind1", "soulbind2", "soulbind3"])
 
 # Add legendaries
 def insertLegendaries(templateFull, slots)
@@ -77,6 +78,9 @@ def insertLegendaries(templateFull, slots)
         end
       end
       lego_entry["requires"]["spec"] = required_specs
+      if lego["covenant"]
+        lego_entry["requires"]["covenant"] = lego["covenant"].clone
+      end
       templateFull["legendary"]["options"].push lego_entry
     end
   end

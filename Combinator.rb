@@ -86,6 +86,10 @@ gear["combinatorSlots"].each.with_index(1) do |slot, slotNum|
         combinatorOption["requires"].each do |reqSlot, req|
           next if reqSlot == "spec" # handled above
           refidx = gear["combinatorSlots"].index(reqSlot)
+          if refidx == nil
+            delete = true
+            next
+          end
           req = [req] if req.is_a?(String)
           delete = true if !req.include?(combination[refidx]["name"])
         end
