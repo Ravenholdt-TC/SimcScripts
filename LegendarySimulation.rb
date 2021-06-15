@@ -71,11 +71,11 @@ additionalTalents.each do |talentString|
   simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
   simcInput.push "profileset.\"TalentTemplate_Kyrian_#{talentString}\"+=talents=#{talentString}"
   simcInput.push "profileset.\"TalentTemplate_Kyrian_#{talentString}\"+=covenant=kyrian"
-  imcInput.push "profileset.\"TalentTemplate_Night Fae_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Night Fae_#{talentString}\"+=talents=#{talentString}"
   simcInput.push "profileset.\"TalentTemplate_Night Fae_#{talentString}\"+=covenant=night_fae"
-  imcInput.push "profileset.\"TalentTemplate_Necrolord_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Necrolord_#{talentString}\"+=talents=#{talentString}"
   simcInput.push "profileset.\"TalentTemplate_Necrolord_#{talentString}\"+=covenant=necrolord"
-  imcInput.push "profileset.\"TalentTemplate_Venthyr_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Venthyr_#{talentString}\"+=talents=#{talentString}"
   simcInput.push "profileset.\"TalentTemplate_Venthyr_#{talentString}\"+=covenant=venthyr"
 end
 
