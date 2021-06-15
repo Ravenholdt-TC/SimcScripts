@@ -56,6 +56,12 @@ end
 simcInput.push "# Overrides done!"
 simcInput.push ""
 
+# Covenant templates, not great but hack enough to keep all legos in one chart i hope
+simcInput.push "profileset.\"Template_Kyrian\"+=covenant=kyrian"
+simcInput.push "profileset.\"Template_Night Fae\"+=covenant=night_fae"
+simcInput.push "profileset.\"Template_Necrolord\"+=covenant=necrolord"
+simcInput.push "profileset.\"Template_Venthyr\"+=covenant=venthyr"
+
 # Get better combination overrides if CombinationBasedCharts is enabled. These will be run in addition to defaults.
 combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, template, talents)
 
@@ -63,6 +69,14 @@ combinationOverrides = HeroInterface.GetBestCombinationOverrides(fightstyle, tem
 additionalTalents = combinationOverrides.keys.collect { |x| (data = /.*talents:(\p{Digit}+).*\Z/.match(x)) ? data[1] : nil }.uniq.compact
 additionalTalents.each do |talentString|
   simcInput.push "profileset.\"TalentTemplate_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Kyrian_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Kyrian_#{talentString}\"+=covenant=kyrian"
+  imcInput.push "profileset.\"TalentTemplate_Night Fae_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Night Fae_#{talentString}\"+=covenant=night_fae"
+  imcInput.push "profileset.\"TalentTemplate_Necrolord_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Necrolord_#{talentString}\"+=covenant=necrolord"
+  imcInput.push "profileset.\"TalentTemplate_Venthyr_#{talentString}\"+=talents=#{talentString}"
+  simcInput.push "profileset.\"TalentTemplate_Venthyr_#{talentString}\"+=covenant=venthyr"
 end
 
 # Add empty override set for the default loop
@@ -102,10 +116,16 @@ LegoStatMap = {
 combinationOverrides.each do |optionsString, overrides|
   legoList.each do |lego|
     next unless lego["specs"].include?(specId)
-    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}_1"
+    name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}"
+    name += "_#{lego["covenant"]}" if lego["covenant"]
+    name += "_1"
     prefix = "profileset.\"#{name}\"+="
     simcInput.push(prefix + "name=\"#{name}\"")
     simcInput.push(prefix + "shirt=sl_legendary,bonus_id=#{lego["legendaryBonusID"]}")
+    if lego["covenant"]
+      covstr = lego["covenant"].downcase.gsub(" ", "_")
+      simcInput.push(prefix + "covenant=\"#{covstr}\"")
+    end
     if lego["additionalInput"]
       lego["additionalInput"].each do |input|
         simcInput.push(prefix + "#{input}")
@@ -145,19 +165,47 @@ results = JSONResults.new(simulationFilename)
 # Process results
 Logging.LogScriptInfo "Processing results..."
 templateDPS = 0
+templateDPS_K = 0
+templateDPS_NF = 0
+templateDPS_N = 0
+templateDPS_V = 0
 talentDPS = {}
+talentDPS_K = {}
+talentDPS_N = {}
+talentDPS_NF = {}
+talentDPS_V = {}
 columns = []
 sims = {}
 results.getAllDPSResults().each do |name, dps|
-  if name.start_with?("TalentTemplate_")
+  if name.start_with?("TalentTemplate_Kyrian") # Thar be ugly hacks here
+    talentString = name.split("_")[2]
+    talentDPS_K[talentString] = dps
+  elsif name.start_with?("TalentTemplate_Night Fae")
+    talentString = name.split("_")[2]
+    talentDPS_NF[talentString] = dps
+  elsif name.start_with?("TalentTemplate_Necrolord")
+    talentString = name.split("_")[2]
+    talentDPS_N[talentString] = dps
+  elsif name.start_with?("TalentTemplate_Venthyr")
+    talentString = name.split("_")[2]
+    talentDPS_V[talentString] = dps
+  elsif name.start_with?("TalentTemplate_")
     talentString = name.split("_")[1]
     talentDPS[talentString] = dps
+  elsif name == "Template"
+    templateDPS = dps
+  elsif name == "Template_Kyrian"
+    templateDPS_K = dps
+  elsif name == "Template_Night Fae"
+    templateDPS_NF = dps
+  elsif name == "Template_Necrolord"
+    templateDPS_N = dps
+  elsif name == "Template_Venthyr"
+    templateDPS_V = dps
   elsif data = /\A(.+)_(\p{Digit}+)\Z/.match(name)
     sims[data[1]] = {} unless sims[data[1]]
     sims[data[1]][data[2].to_i] = dps
     columns.push(data[2].to_i)
-  elsif name == "Template"
-    templateDPS = dps
   end
 end
 columns.uniq!
@@ -173,13 +221,33 @@ end
 report.push(header)
 sims.each do |name, values|
   actor = []
-  actor.push(name)
+  actor.push(name.gsub("_Kyrian", "").gsub("_Night Fae", "").gsub("_Necrolord", "").gsub("_Venthyr", ""))
   columns.each do |col|
     if values[col]
       if (data = /.*talents:(\p{Digit}+).*\Z/.match(name)) && talentDPS[data[1]]
-        actor.push(values[col] - talentDPS[data[1]])
+        compare = talentDPS[data[1]]
+        if name.end_with?("_Kyrian")
+          compare = talentDPS_K[data[1]]
+        elsif name.end_with?("_Night Fae")
+          compare = talentDPS_NF[data[1]]
+        elsif name.end_with?("_Necrolord")
+          compare = talentDPS_N[data[1]]
+        elsif name.end_with?("_Venthyr")
+          compare = talentDPS_V[data[1]]
+        end
+        actor.push(values[col] - compare)
       else
-        actor.push(values[col] - templateDPS)
+        compare = templateDPS
+        if name.end_with?("_Kyrian")
+          compare = templateDPS_K
+        elsif name.end_with?("_Night Fae")
+          compare = templateDPS_NF
+        elsif name.end_with?("_Necrolord")
+          compare = templateDPS_N
+        elsif name.end_with?("_Venthyr")
+          compare = templateDPS_V
+        end
+        actor.push(values[col] - compare)
       end
     else
       actor.push(0)
