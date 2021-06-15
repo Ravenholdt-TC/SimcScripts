@@ -1,6 +1,6 @@
 {
-    "conduitRanks": [[1, 145], [2, 158], [3, 171], [4, 184], [5, 200], [6, 213], [7, 226]],
-    "combinatorConduitRank": 7,
+    "conduitRanks": [[5, 200], [6, 213], [7, 226], [8, 239], [9, 252], [10, 265], [11, 278]],
+    "combinatorConduitRank": 11,
     "covenantConduitsMap": {
         // DK
         "338664": "kyrian",
@@ -92,6 +92,25 @@
             ]
         },
         {
+            "spellName": "Better Together",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 351146
+        },
+        {
+            "spellName": "Newfound Resolve",
+            "soulbindName": "Pelagos",
+            "covenant": "kyrian",
+            "spellId": 351149
+        },
+        {
+            "spellName": "Valiant Strikes",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 329791,
+            "isFinalBase": "K2"
+        },
+        {
             "spellName": "Pointed Courage (1 Ally)",
             "soulbindName": "Kleia",
             "covenant": "kyrian",
@@ -119,6 +138,19 @@
             ]
         },
         {
+            "spellName": "Spear of the Archon",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 351488
+        },
+        {
+            "spellName": "Light the Path",
+            "soulbindName": "Kleia",
+            "covenant": "kyrian",
+            "spellId": 351491,
+            "useFinalBase": "K2"
+        },
+        {
             "spellName": "Hammer of Genesis",
             "soulbindName": "Mikanikos",
             "covenant": "kyrian",
@@ -129,6 +161,18 @@
             "soulbindName": "Mikanikos",
             "covenant": "kyrian",
             "spellId": 333950
+        },
+        {
+            "spellName": "Soulglow Spectrometer",
+            "soulbindName": "Mikanikos",
+            "covenant": "kyrian",
+            "spellId": 352186
+        },
+        {
+            "spellName": "Effusive Anima Accelerator",
+            "soulbindName": "Mikanikos",
+            "covenant": "kyrian",
+            "spellId": 352188
         },
         /*{
             "spellName": "Volatile Solvent",
@@ -141,6 +185,12 @@
             "soulbindName": "Marileth",
             "covenant": "necrolord",
             "spellId": 323090
+        },
+        {
+            "spellName": "Kevin's Oozeling",
+            "soulbindName": "Marileth",
+            "covenant": "necrolord",
+            "spellId": 352110
         },
         {
             "spellName": "Gnashing Chompers",
@@ -176,6 +226,12 @@
             ]
         },
         {
+            "spellName": "Pustule Eruption",
+            "soulbindName": "Emeni",
+            "covenant": "necrolord",
+            "spellId": 351094
+        },
+        {
             "spellName": "Forgeborne Reveries",
             "soulbindName": "Heirmir",
             "covenant": "necrolord",
@@ -186,6 +242,18 @@
             "soulbindName": "Heirmir",
             "covenant": "necrolord",
             "spellId": 326572
+        },
+        {
+            "spellName": "Carver's Eye",
+            "soulbindName": "Heirmir",
+            "covenant": "necrolord",
+            "spellId": 350899
+        },
+        {
+            "spellName": "Mnemonic Equipment",
+            "soulbindName": "Heirmir",
+            "covenant": "necrolord",
+            "spellId": 350936
         },
         {
             "spellName": "Niya's Tools: Burrs",
@@ -209,7 +277,15 @@
             "spellName": "Grove Invigoration",
             "soulbindName": "Niya",
             "covenant": "night_fae",
-            "spellId": 322721
+            "spellId": 322721,
+            "isFinalBase": "NF1"
+        },
+        {
+            "spellName": "Bonded Hearts",
+            "soulbindName": "Niya",
+            "covenant": "night_fae",
+            "spellId": 352503,
+            "useFinalBase": "NF1"
         },
         {
             "spellName": "Field of Blossoms",
@@ -224,6 +300,12 @@
             "spellId": 319210
         },
         {
+            "spellName": "Dream Delver",
+            "soulbindName": "Dreamweaver",
+            "covenant": "night_fae",
+            "spellId": 352786
+        },
+        {
             "spellName": "First Strike",
             "soulbindName": "Korayn",
             "covenant": "night_fae",
@@ -233,7 +315,15 @@
             "spellName": "Wild Hunt Tactics",
             "soulbindName": "Korayn",
             "covenant": "night_fae",
-            "spellId": 325066
+            "spellId": 325066,
+            "isFinalBase": "NF3"
+        },
+        {
+            "spellName": "Wild Hunt Strategem",
+            "soulbindName": "Korayn",
+            "covenant": "night_fae",
+            "spellId": 352805,
+            "useFinalBase": "NF3"
         },
         {
             "spellName": "Exacting Preparation",
@@ -251,7 +341,15 @@
             "spellName": "Thrill Seeker",
             "soulbindName": "Nadjia",
             "covenant": "venthyr",
-            "spellId": 331586
+            "spellId": 331586,
+            "isFinalBase": "V1"
+        },
+        {
+            "spellName": "Fatal Flaw",
+            "soulbindName": "Nadjia",
+            "covenant": "venthyr",
+            "spellId": 352373,
+            "useFinalBase": "V1"
         },
         {
             "spellName": "Refined Palate",
@@ -272,6 +370,12 @@
             "spellId": 319983
         },
         {
+            "spellName": "Party Favors",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 351750
+        },
+        {
             "spellName": "Built for War",
             "soulbindName": "Draven",
             "covenant": "venthyr",
@@ -282,6 +386,12 @@
             "soulbindName": "Draven",
             "covenant": "venthyr",
             "spellId": 332753
+        },
+        {
+            "spellName": "Battlefield Presence",
+            "soulbindName": "Draven",
+            "covenant": "venthyr",
+            "spellId": 352417
         }
     ]
 }
