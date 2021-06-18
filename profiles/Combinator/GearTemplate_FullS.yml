@@ -276,8 +276,15 @@ soulbind6:
       simcString: "352373"
       requires:
         soulbind: Nadjia
-    - name: Party Favors
-      simcString: "351750"
+#    - name: Party Favors
+#      simcString: "351750"
+#      additionalInput:
+#        - simcSlot: shadowlands.party_favor_type
+#          simcString: versatility
+#      requires:
+#        soulbind: Theotar
+    - name: Party Favors Inactive
+      hidden: true
       requires:
         soulbind: Theotar
     - name: Battlefield Presence

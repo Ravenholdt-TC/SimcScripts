@@ -6007,8 +6007,8 @@ soulbind6:
     simcString: '352373'
     requires:
       soulbind: Nadjia
-  - name: Party Favors
-    simcString: '351750'
+  - name: Party Favors Inactive
+    hidden: true
     requires:
       soulbind: Theotar
   - name: Battlefield Presence

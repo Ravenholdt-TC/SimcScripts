@@ -370,10 +370,40 @@
             "spellId": 319983
         },
         {
-            "spellName": "Party Favors",
+            "spellName": "Party Favors (Haste)",
             "soulbindName": "Theotar",
             "covenant": "venthyr",
-            "spellId": 351750
+            "spellId": 351750,
+            "additionalInput": [
+                "shadowlands.party_favor_type=haste"
+            ]
+        },
+        {
+            "spellName": "Party Favors (Crit)",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 351750,
+            "additionalInput": [
+                "shadowlands.party_favor_type=crit"
+            ]
+        },
+        {
+            "spellName": "Party Favors (Primary)",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 351750,
+            "additionalInput": [
+                "shadowlands.party_favor_type=primary"
+            ]
+        },
+        {
+            "spellName": "Party Favors (Versatility)",
+            "soulbindName": "Theotar",
+            "covenant": "venthyr",
+            "spellId": 351750,
+            "additionalInput": [
+                "shadowlands.party_favor_type=versatility"
+            ]
         },
         {
             "spellName": "Built for War",
