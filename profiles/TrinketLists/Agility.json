@@ -1,5 +1,68 @@
 {
     "trinkets": [
+        // Sanctum of Domination Raid
+        {
+            "name": "Titanic Ocular Gland (100%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=1.0"
+            ]
+        },
+        {
+            "name": "Titanic Ocular Gland (75%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=0.75"
+            ]
+        },
+        {
+            "name": "Titanic Ocular Gland (50%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=0.5"
+            ]
+        },
+        {
+            "name": "Relic of the Frozen Wastes",
+            "itemId": 186437,
+            "itemLevels": [233, 246, 259],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Salvaged Fusion Amplifier",
+            "itemId": 186432,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Tormented Rack Fragment",
+            "itemId": 186430,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Decanter of Endless Howling",
+            "itemId": 186429,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // Castle Nathria Raid
         {
             "name": "Dreadfire Vessel",
@@ -71,9 +134,25 @@
         },
         // Dungeons
         {
+            "name": "Miniscule Mailemental in an Envelope",
+            "itemId": 179350,
+            "itemLevels": [226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Ticking Sack of Terror",
+            "itemId": 185844,
+            "itemLevels": [226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -81,7 +160,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -89,7 +168,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -97,7 +176,7 @@
         {
             "name": "Bottled Flayedwing Toxin",
             "itemId": 178742,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -105,7 +184,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -113,7 +192,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -121,7 +200,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -129,7 +208,7 @@
         {
             "name": "Mistcaller Ocarina (Crit)",
             "itemId": 178715,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [6920],
             "enchants": [],
             "additionalInput": []
@@ -137,7 +216,7 @@
         {
             "name": "Mistcaller Ocarina (Haste)",
             "itemId": 178715,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [6921],
             "enchants": [],
             "additionalInput": []
@@ -145,7 +224,7 @@
         {
             "name": "Mistcaller Ocarina (Mastery)",
             "itemId": 178715,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [6922],
             "enchants": [],
             "additionalInput": []
@@ -153,7 +232,7 @@
         {
             "name": "Mistcaller Ocarina (Versa)",
             "itemId": 178715,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [6923],
             "enchants": [],
             "additionalInput": []
@@ -161,7 +240,7 @@
         {
             "name": "Shadowgrasp Totem",
             "itemId": 179356,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -169,7 +248,7 @@
         {
             "name": "Overcharged Anima Battery",
             "itemId": 180116,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

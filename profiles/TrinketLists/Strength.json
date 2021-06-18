@@ -1,5 +1,76 @@
 {
     "trinkets": [
+        // Sanctum of Domination Raid
+        {
+            "name": "Titanic Ocular Gland (100%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=1.0"
+            ]
+        },
+        {
+            "name": "Titanic Ocular Gland (75%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=0.75"
+            ]
+        },
+        {
+            "name": "Titanic Ocular Gland (50%)",
+            "itemId": 186423,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": [
+                "shadowlands.titanic_ocular_gland_worthy_chance=0.5"
+            ]
+        },
+        {
+            "name": "Salvaged Fusion Amplifier",
+            "itemId": 186432,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Tormented Rack Fragment",
+            "itemId": 186430,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Decanter of Endless Howling",
+            "itemId": 186429,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Old Warrior's Soul",
+            "itemId": 186438,
+            "itemLevels": [233, 246, 259],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Whispering Shard of Power",
+            "itemId": 186427,
+            "itemLevels": [226, 239, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // Castle Nathria Raid
         {
             "name": "Dreadfire Vessel",
@@ -71,9 +142,17 @@
         },
         // Dungeons
         {
+            "name": "Ticking Sack of Terror",
+            "itemId": 185844,
+            "itemLevels": [226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -81,7 +160,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -89,7 +168,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -97,7 +176,7 @@
         {
             "name": "Spare Meat Hook",
             "itemId": 178751,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -105,7 +184,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -113,7 +192,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -121,7 +200,7 @@
         {
             "name": "Anima Field Emitter",
             "itemId": 180118,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -129,7 +208,7 @@
         {
             "name": "Overwhelming Power Crystal",
             "itemId": 179342,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -137,7 +216,7 @@
         {
             "name": "Viscera of Coalesced Hatred",
             "itemId": 178808,
-            "itemLevels": [210, 220, 226],
+            "itemLevels": [236, 246, 252],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
