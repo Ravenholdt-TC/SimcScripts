@@ -142,6 +142,14 @@
             "additionalInput": []
         },
         {
+            "name": "So'leah's Secret Technique",
+            "itemId": 185818,
+            "itemLevels": [226],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
             "itemLevels": [236, 246, 252],
