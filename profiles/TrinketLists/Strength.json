@@ -144,7 +144,7 @@
         {
             "name": "Ticking Sack of Terror",
             "itemId": 185844,
-            "itemLevels": [226],
+            "itemLevels": [226,233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -152,7 +152,7 @@
         {
             "name": "So'leah's Secret Technique",
             "itemId": 185818,
-            "itemLevels": [226],
+            "itemLevels": [226,233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
