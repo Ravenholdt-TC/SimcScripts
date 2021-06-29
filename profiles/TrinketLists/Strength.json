@@ -314,7 +314,7 @@
         {
             "name": "Sinful Gladiator's Badge of Ferocity",
             "itemId": 175921,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [194, 207, 220],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -330,7 +330,7 @@
         {
             "name": "Sinful Gladiator's Insignia of Alacrity",
             "itemId": 178386,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [194, 207, 220],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
