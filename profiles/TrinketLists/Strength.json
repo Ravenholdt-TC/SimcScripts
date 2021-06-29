@@ -306,7 +306,7 @@
         {
             "name": "Sinful Aspirant's Badge of Ferocity",
             "itemId": 175884,
-            "itemLevels": [158, 184, 197],
+            "itemLevels": [177, 197, 216],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -314,7 +314,7 @@
         {
             "name": "Sinful Gladiator's Badge of Ferocity",
             "itemId": 175921,
-            "itemLevels": [194, 207, 220],
+            "itemLevels": [220, 233, 246],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -322,7 +322,7 @@
         {
             "name": "Sinful Aspirant's Insignia of Alacrity",
             "itemId": 178298,
-            "itemLevels": [158, 184, 197],
+            "itemLevels": [177, 197, 216],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -330,7 +330,7 @@
         {
             "name": "Sinful Gladiator's Insignia of Alacrity",
             "itemId": 178386,
-            "itemLevels": [194, 207, 220],
+            "itemLevels": [220, 233, 246],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
