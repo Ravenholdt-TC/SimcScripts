@@ -129,15 +129,6 @@
             ]
         },
         {
-            "spellName": "Pointed Courage (5 Allies)",
-            "soulbindName": "Kleia",
-            "covenant": "kyrian",
-            "spellId": 329778,
-            "additionalInput": [
-                "shadowlands.pointed_courage_nearby=5"
-            ]
-        },
-        {
             "spellName": "Spear of the Archon",
             "soulbindName": "Kleia",
             "covenant": "kyrian",
