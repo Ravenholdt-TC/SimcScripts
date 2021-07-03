@@ -64,7 +64,7 @@ ProfilesFolder: profiles
 SimcProfileFolders:
 - profiles/DungeonSlice/
 - profiles/PreRaids/
-- profiles/Tier26/
+- profiles/Tier27/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
