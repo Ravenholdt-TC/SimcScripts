@@ -318,6 +318,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Tome of Insight",
+            "itemId": 186156,
+            "itemLevels": [233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // PvP
         {
             "name": "Sinful Aspirant's Badge of Ferocity",
