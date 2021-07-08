@@ -124,14 +124,6 @@
             "enchants": [],
             "additionalInput": []
         },
-        {
-            "name": "Memory of Past Sins",
-            "itemId": 184025,
-            "itemLevels": [200, 213, 226],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
@@ -281,14 +273,6 @@
         {
             "name": "Murmurs in the Dark",
             "itemId": 182454,
-            "itemLevels": [184, 198, 203],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Master Duelist's Chit",
-            "itemId": 181358,
             "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
