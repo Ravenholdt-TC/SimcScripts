@@ -347,7 +347,7 @@
         {
             "name": "Spiritual Alchemy Stone",
             "itemId": 171323,
-            "itemLevels": [165, 180, 200],
+            "itemLevels": [200, 230],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
