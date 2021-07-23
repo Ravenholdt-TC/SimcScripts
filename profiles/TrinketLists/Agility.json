@@ -334,6 +334,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Fine Razorwing Quill",
+            "itemId": 186976,
+            "itemLevels": [233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // PvP
         {
             "name": "Sinful Aspirant's Badge of Ferocity",

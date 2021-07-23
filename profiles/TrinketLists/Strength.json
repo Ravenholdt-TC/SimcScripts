@@ -302,6 +302,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Harmonic Crowd Breaker",
+            "itemId": 186155,
+            "itemLevels": [233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // PvP
         {
             "name": "Sinful Aspirant's Badge of Ferocity",
