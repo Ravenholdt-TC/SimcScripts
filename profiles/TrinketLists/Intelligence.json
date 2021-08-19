@@ -221,6 +221,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Sunblood Amethyst",
+            "itemId": 178826,
+            "itemLevels": [236, 246, 252],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // World Quests / Adventures
         {
             "name": "Wakener's Frond",
@@ -289,14 +297,6 @@
         {
             "name": "Tablet of Despair",
             "itemId": 181357,
-            "itemLevels": [184, 198, 203],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Sunblood Amethyst",
-            "itemId": 178826,
             "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
