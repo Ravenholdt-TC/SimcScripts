@@ -125,14 +125,6 @@
             "additionalInput": []
         },
         {
-            "name": "Hateful Chain",
-            "itemId": 184026,
-            "itemLevels": [200, 213, 226],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
             "name": "Memory of Past Sins",
             "itemId": 184025,
             "itemLevels": [200, 213, 226],
