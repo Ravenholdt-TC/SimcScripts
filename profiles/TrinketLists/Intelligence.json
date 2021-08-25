@@ -310,6 +310,14 @@
             "enchants": [],
             "additionalInput": []
         },
+        {
+            "name": "Soul Cage Fragment",
+            "itemId": 187447,
+            "itemLevels": [233],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // PvP
         {
             "name": "Sinful Aspirant's Badge of Ferocity",
