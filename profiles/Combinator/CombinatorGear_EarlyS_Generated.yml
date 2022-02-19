@@ -4887,7 +4887,6 @@ soulbind3:
       - vengeance
 legendary:
   simcSlot: shirt
-  select: 1
   options:
   - name: Slick Ice
     simcString: sl_legendary,bonus_id=6823

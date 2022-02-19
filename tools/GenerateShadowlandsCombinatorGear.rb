@@ -55,20 +55,31 @@ insertConduits(templateFull, ["soulbind1", "soulbind2", "soulbind3", "soulbind4"
 insertConduits(templateEarly, ["soulbind1", "soulbind2", "soulbind3"])
 
 # Add legendaries
-def insertLegendaries(templateFull, slots)
-  slots.each do |slot|
+# If covenantSplitSlots is not empty then elements in slots that are in covenantSplitSlots will be covenant only
+# while all other slots will be spec only.
+def insertLegendaries(templateFull, slots, covenantSplitSlots = [])
+  slots.each_with_index do |slot, slotIdx|
     templateFull[slot] = {
       "simcSlot" => "shirt",
-      "select" => 1,
       "options" => [],
     }
     LegoList.each do |lego|
       next if lego["specs"].count > 10 #Cheap hack to ignore multiclass legendaries
+      # Split covenant legos if specified
+      if covenantSplitSlots.count > 0
+        if lego["covenant"] && !covenantSplitSlots.include?(slot) || !lego["covenant"] && covenantSplitSlots.include?(slot)
+          next
+        end
+      end
+
       lego_entry = {
         "name" => lego["legendaryName"],
         "simcString" => "sl_legendary,bonus_id=#{lego["legendaryBonusID"]}",
         "requires" => {},
       }
+      if slotIdx > 0
+        lego_entry["simcString"] = lego["legendaryBonusID"].to_s # Additional slot use id only for combinator concatenation
+      end
       required_specs = []
       ClassAndSpecIds.keys.each do |classStr|
         ClassAndSpecIds[classStr][:specs].each do |specName, specId|
@@ -81,12 +92,12 @@ def insertLegendaries(templateFull, slots)
       if lego["covenant"]
         lego_entry["requires"]["covenant"] = lego["covenant"].clone
       end
-      templateFull["legendary"]["options"].push lego_entry
+      templateFull[slot]["options"].push lego_entry
     end
   end
 end
 
-insertLegendaries(templateFull, ["legendary"])
+insertLegendaries(templateFull, ["legendary", "covenantLegendary"], ["covenantLegendary"])
 insertLegendaries(templateEarly, ["legendary"])
 insertLegendaries(template1L, ["legendary"])
 

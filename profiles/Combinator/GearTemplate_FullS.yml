@@ -9,6 +9,7 @@ combinatorSlots:
   - soulbind5
   - soulbind6
   - legendary
+  - covenantLegendary
 covenant:
   simcSlot: covenant
   options:

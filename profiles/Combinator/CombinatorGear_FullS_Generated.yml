@@ -10,6 +10,7 @@ combinatorSlots:
 - soulbind5
 - soulbind6
 - legendary
+- covenantLegendary
 covenant:
   simcSlot: covenant
   options:
@@ -6020,7 +6021,6 @@ soulbind6:
       soulbind: Draven
 legendary:
   simcSlot: shirt
-  select: 1
   options:
   - name: Slick Ice
     simcString: sl_legendary,bonus_id=6823
@@ -7084,8 +7084,11 @@ legendary:
       - holy
       - protection
       - retribution
+covenantLegendary:
+  simcSlot: shirt
+  options:
   - name: Rampant Transference
-    simcString: sl_legendary,bonus_id=7466
+    simcString: '7466'
     requires:
       spec:
       - blood
@@ -7093,7 +7096,7 @@ legendary:
       - unholy
       covenant: Night Fae
   - name: Final Sentence
-    simcString: sl_legendary,bonus_id=7467
+    simcString: '7467'
     requires:
       spec:
       - blood
@@ -7101,7 +7104,7 @@ legendary:
       - unholy
       covenant: Kyrian
   - name: Insatiable Hunger
-    simcString: sl_legendary,bonus_id=7468
+    simcString: '7468'
     requires:
       spec:
       - blood
@@ -7109,7 +7112,7 @@ legendary:
       - unholy
       covenant: Venthyr
   - name: Abomination's Frenzy
-    simcString: sl_legendary,bonus_id=7458
+    simcString: '7458'
     requires:
       spec:
       - blood
@@ -7117,7 +7120,7 @@ legendary:
       - unholy
       covenant: Necrolord
   - name: Glory
-    simcString: sl_legendary,bonus_id=7469
+    simcString: '7469'
     requires:
       spec:
       - arms
@@ -7125,7 +7128,7 @@ legendary:
       - protection
       covenant: Necrolord
   - name: Sinful Surge
-    simcString: sl_legendary,bonus_id=7470
+    simcString: '7470'
     requires:
       spec:
       - arms
@@ -7133,7 +7136,7 @@ legendary:
       - protection
       covenant: Venthyr
   - name: Nature's Fury
-    simcString: sl_legendary,bonus_id=7471
+    simcString: '7471'
     requires:
       spec:
       - arms
@@ -7141,7 +7144,7 @@ legendary:
       - protection
       covenant: Night Fae
   - name: Locust Swarm
-    simcString: sl_legendary,bonus_id=7472
+    simcString: '7472'
     requires:
       spec:
       - balance
@@ -7150,7 +7153,7 @@ legendary:
       - restoration
       covenant: Necrolord
   - name: Harmonic Echo
-    simcString: sl_legendary,bonus_id=7473
+    simcString: '7473'
     requires:
       spec:
       - arcane
@@ -7158,7 +7161,7 @@ legendary:
       - frost
       covenant: Kyrian
   - name: Sinful Hysteria
-    simcString: sl_legendary,bonus_id=7474
+    simcString: '7474'
     requires:
       spec:
       - balance
@@ -7167,7 +7170,7 @@ legendary:
       - restoration
       covenant: Venthyr
   - name: Death's Fathom
-    simcString: sl_legendary,bonus_id=7475
+    simcString: '7475'
     requires:
       spec:
       - arcane
@@ -7175,7 +7178,7 @@ legendary:
       - frost
       covenant: Necrolord
   - name: Sinful Delight
-    simcString: sl_legendary,bonus_id=7476
+    simcString: '7476'
     requires:
       spec:
       - arcane
@@ -7183,7 +7186,7 @@ legendary:
       - frost
       covenant: Venthyr
   - name: Kindred Affinity
-    simcString: sl_legendary,bonus_id=7477
+    simcString: '7477'
     requires:
       spec:
       - balance
@@ -7192,7 +7195,7 @@ legendary:
       - restoration
       covenant: Kyrian
   - name: Toxic Onslaught
-    simcString: sl_legendary,bonus_id=7478
+    simcString: '7478'
     requires:
       spec:
       - assassination
@@ -7200,7 +7203,7 @@ legendary:
       - subtlety
       covenant: Night Fae
   - name: Celestial Spirits
-    simcString: sl_legendary,bonus_id=7571
+    simcString: '7571'
     requires:
       spec:
       - balance
@@ -7209,7 +7212,7 @@ legendary:
       - restoration
       covenant: Night Fae
   - name: Splintered Elements
-    simcString: sl_legendary,bonus_id=7570
+    simcString: '7570'
     requires:
       spec:
       - elemental
@@ -7217,7 +7220,7 @@ legendary:
       - restoration
       covenant: Necrolord
   - name: Obedience
-    simcString: sl_legendary,bonus_id=7572
+    simcString: '7572'
     requires:
       spec:
       - assassination
@@ -7225,7 +7228,7 @@ legendary:
       - subtlety
       covenant: Venthyr
   - name: Deathspike
-    simcString: sl_legendary,bonus_id=7573
+    simcString: '7573'
     requires:
       spec:
       - assassination
@@ -7233,7 +7236,7 @@ legendary:
       - subtlety
       covenant: Necrolord
   - name: Resounding Clarity
-    simcString: sl_legendary,bonus_id=7577
+    simcString: '7577'
     requires:
       spec:
       - assassination
@@ -7241,7 +7244,7 @@ legendary:
       - subtlety
       covenant: Kyrian
   - name: Divine Resonance
-    simcString: sl_legendary,bonus_id=7679
+    simcString: '7679'
     requires:
       spec:
       - holy
@@ -7249,7 +7252,7 @@ legendary:
       - retribution
       covenant: Kyrian
   - name: Duty-Bound Gavel
-    simcString: sl_legendary,bonus_id=7680
+    simcString: '7680'
     requires:
       spec:
       - holy
@@ -7257,35 +7260,35 @@ legendary:
       - retribution
       covenant: Necrolord
   - name: Agony Gaze
-    simcString: sl_legendary,bonus_id=7681
+    simcString: '7681'
     requires:
       spec:
       - havoc
       - vengeance
       covenant: Venthyr
   - name: Blazing Slaughter
-    simcString: sl_legendary,bonus_id=7698
+    simcString: '7698'
     requires:
       spec:
       - havoc
       - vengeance
       covenant: Night Fae
   - name: Blind Faith
-    simcString: sl_legendary,bonus_id=7699
+    simcString: '7699'
     requires:
       spec:
       - havoc
       - vengeance
       covenant: Kyrian
   - name: Demonic Oath
-    simcString: sl_legendary,bonus_id=7700
+    simcString: '7700'
     requires:
       spec:
       - havoc
       - vengeance
       covenant: Necrolord
   - name: Radiant Embers
-    simcString: sl_legendary,bonus_id=7701
+    simcString: '7701'
     requires:
       spec:
       - holy
@@ -7293,7 +7296,7 @@ legendary:
       - retribution
       covenant: Venthyr
   - name: Seasons of Plenty
-    simcString: sl_legendary,bonus_id=7702
+    simcString: '7702'
     requires:
       spec:
       - holy
@@ -7301,7 +7304,7 @@ legendary:
       - retribution
       covenant: Night Fae
   - name: Bwonsamdi's Pact
-    simcString: sl_legendary,bonus_id=7703
+    simcString: '7703'
     requires:
       spec:
       - discipline
@@ -7309,7 +7312,7 @@ legendary:
       - shadow
       covenant: Night Fae
   - name: 'Shadow Word: Manipulation'
-    simcString: sl_legendary,bonus_id=7704
+    simcString: '7704'
     requires:
       spec:
       - discipline
@@ -7317,7 +7320,7 @@ legendary:
       - shadow
       covenant: Venthyr
   - name: Bountiful Brew
-    simcString: sl_legendary,bonus_id=7707
+    simcString: '7707'
     requires:
       spec:
       - brewmaster
@@ -7325,7 +7328,7 @@ legendary:
       - mistweaver
       covenant: Necrolord
   - name: Seeds of Rampant Growth
-    simcString: sl_legendary,bonus_id=7708
+    simcString: '7708'
     requires:
       spec:
       - elemental
@@ -7333,7 +7336,7 @@ legendary:
       - restoration
       covenant: Night Fae
   - name: Elemental Conduit
-    simcString: sl_legendary,bonus_id=7709
+    simcString: '7709'
     requires:
       spec:
       - elemental
@@ -7341,7 +7344,7 @@ legendary:
       - restoration
       covenant: Venthyr
   - name: Languishing Soul Detritus
-    simcString: sl_legendary,bonus_id=7710
+    simcString: '7710'
     requires:
       spec:
       - affliction
@@ -7349,7 +7352,7 @@ legendary:
       - destruction
       covenant: Kyrian
   - name: Shard of Annihilation
-    simcString: sl_legendary,bonus_id=7711
+    simcString: '7711'
     requires:
       spec:
       - affliction
@@ -7357,7 +7360,7 @@ legendary:
       - destruction
       covenant: Necrolord
   - name: Decaying Soul Satchel
-    simcString: sl_legendary,bonus_id=7712
+    simcString: '7712'
     requires:
       spec:
       - affliction
@@ -7365,7 +7368,7 @@ legendary:
       - destruction
       covenant: Night Fae
   - name: Contained Perpetual Explosion
-    simcString: sl_legendary,bonus_id=7713
+    simcString: '7713'
     requires:
       spec:
       - affliction
@@ -7373,7 +7376,7 @@ legendary:
       - destruction
       covenant: Venthyr
   - name: Pact of the Soulstalkers
-    simcString: sl_legendary,bonus_id=7714
+    simcString: '7714'
     requires:
       spec:
       - beast_mastery
@@ -7381,7 +7384,7 @@ legendary:
       - survival
       covenant: Kyrian
   - name: Bag of Munitions
-    simcString: sl_legendary,bonus_id=7715
+    simcString: '7715'
     requires:
       spec:
       - beast_mastery
@@ -7389,7 +7392,7 @@ legendary:
       - survival
       covenant: Necrolord
   - name: Fragments of the Elder Antlers
-    simcString: sl_legendary,bonus_id=7716
+    simcString: '7716'
     requires:
       spec:
       - beast_mastery
@@ -7397,7 +7400,7 @@ legendary:
       - survival
       covenant: Night Fae
   - name: Pouch of Razor Fragments
-    simcString: sl_legendary,bonus_id=7717
+    simcString: '7717'
     requires:
       spec:
       - beast_mastery
@@ -7405,7 +7408,7 @@ legendary:
       - survival
       covenant: Venthyr
   - name: Call to Arms
-    simcString: sl_legendary,bonus_id=7718
+    simcString: '7718'
     requires:
       spec:
       - brewmaster
@@ -7413,7 +7416,7 @@ legendary:
       - mistweaver
       covenant: Kyrian
   - name: Faeline Harmony
-    simcString: sl_legendary,bonus_id=7721
+    simcString: '7721'
     requires:
       spec:
       - brewmaster
@@ -7421,7 +7424,7 @@ legendary:
       - mistweaver
       covenant: Night Fae
   - name: Raging Vesper Vortex
-    simcString: sl_legendary,bonus_id=7722
+    simcString: '7722'
     requires:
       spec:
       - elemental
@@ -7429,7 +7432,7 @@ legendary:
       - restoration
       covenant: Kyrian
   - name: Sinister Teachings
-    simcString: sl_legendary,bonus_id=7726
+    simcString: '7726'
     requires:
       spec:
       - brewmaster
@@ -7437,7 +7440,7 @@ legendary:
       - mistweaver
       covenant: Venthyr
   - name: Heart of the Fae
-    simcString: sl_legendary,bonus_id=7727
+    simcString: '7727'
     requires:
       spec:
       - arcane
@@ -7445,7 +7448,7 @@ legendary:
       - frost
       covenant: Night Fae
   - name: Spheres' Harmony
-    simcString: sl_legendary,bonus_id=7728
+    simcString: '7728'
     requires:
       spec:
       - discipline
@@ -7453,7 +7456,7 @@ legendary:
       - shadow
       covenant: Kyrian
   - name: Pallid Command
-    simcString: sl_legendary,bonus_id=7729
+    simcString: '7729'
     requires:
       spec:
       - discipline
@@ -7461,7 +7464,7 @@ legendary:
       - shadow
       covenant: Necrolord
   - name: Elysian Might
-    simcString: sl_legendary,bonus_id=7730
+    simcString: '7730'
     requires:
       spec:
       - arms
