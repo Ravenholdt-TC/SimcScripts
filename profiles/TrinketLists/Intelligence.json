@@ -1,5 +1,54 @@
 {
     "trinkets": [
+        // Sepulcher of the First Ones
+        {
+            "name": "Scars of Fraternal Strife",
+            "itemId": 188253,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Elegy of the Eternals",
+            "itemId": 188270,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "The First Sigil",
+            "itemId": 188271,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Architect's Ingenuity Core",
+            "itemId": 188268,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Grim Eclipse",
+            "itemId": 188254,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Resonant Reservoir",
+            "itemId": 188272,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // Sanctum of Domination Raid
         {
             "name": "Ebonsoul Vise",
@@ -64,7 +113,7 @@
             "additionalInput": []
         },
         // Castle Nathria Raid
-        {
+        /*{
             "name": "Dreadfire Vessel",
             "itemId": 184030,
             "itemLevels": [207, 220, 233],
@@ -123,20 +172,20 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
             "itemId": 179350,
-            "itemLevels": [226,233],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
             "name": "So'leah's Secret Technique",
-            "itemId": 185818,
-            "itemLevels": [226,233],
+            "itemId": 190958,
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -144,7 +193,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -152,7 +201,7 @@
         {
             "name": "Unbound Changeling (All)",
             "itemId": 178708,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"all\""]
@@ -160,7 +209,7 @@
         {
             "name": "Unbound Changeling (Crit)",
             "itemId": 178708,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"crit\""]
@@ -168,7 +217,7 @@
         {
             "name": "Unbound Changeling (Haste)",
             "itemId": 178708,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"haste\""]
@@ -176,7 +225,7 @@
         {
             "name": "Unbound Changeling (Mastery)",
             "itemId": 178708,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"mastery\""]
@@ -184,7 +233,7 @@
         {
             "name": "Soulletting Ruby",
             "itemId": 178809,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -192,7 +241,7 @@
         {
             "name": "Overflowing Anima Cage",
             "itemId": 178849,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -200,7 +249,7 @@
         {
             "name": "Satchel of Misbegotten Minions",
             "itemId": 178772,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -208,7 +257,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -216,7 +265,7 @@
         {
             "name": "Empyreal Ordnance",
             "itemId": 180117,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -224,7 +273,7 @@
         {
             "name": "Sunblood Amethyst",
             "itemId": 178826,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -288,7 +337,7 @@
         },
         {
             "name": "Instructor's Divine Bell",
-            "itemId": 184842,
+            "itemId": 190641, //was 184842,
             "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
@@ -320,33 +369,17 @@
         },
         // PvP
         {
-            "name": "Sinful Aspirant's Badge of Ferocity",
-            "itemId": 175884,
-            "itemLevels": [177, 197, 216],
+            "name": "Unchained Gladiator's Badge of Ferocity",
+            "itemId": 185197,
+            "itemLevels": [246, 259, 272],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Sinful Gladiator's Badge of Ferocity",
-            "itemId": 175921,
-            "itemLevels": [220, 233, 246],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Sinful Aspirant's Insignia of Alacrity",
-            "itemId": 178298,
-            "itemLevels": [177, 197, 216],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Sinful Gladiator's Insignia of Alacrity",
-            "itemId": 178386,
-            "itemLevels": [220, 233, 246],
+            "name": "Unchained Gladiator's Insignia of Alacrity",
+            "itemId": 185278,
+            "itemLevels": [246, 259, 272],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -355,7 +388,7 @@
         {
             "name": "Darkmoon Deck: Putrescence",
             "itemId": 173069,
-            "itemLevels": [200],
+            "itemLevels": [233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -363,7 +396,7 @@
         {
             "name": "Spiritual Alchemy Stone",
             "itemId": 171323,
-            "itemLevels": [200, 230],
+            "itemLevels": [233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

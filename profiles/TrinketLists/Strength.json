@@ -1,5 +1,70 @@
 {
     "trinkets": [
+        // Sepulcher of the First Ones
+        {
+            "name": "Scars of Fraternal Strife",
+            "itemId": 188253,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Heart of the Swarm",
+            "itemId": 188255,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Bells of the Endless Feast",
+            "itemId": 188267,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Chains of Domination",
+            "itemId": 188252,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Earthbreaker's Impact",
+            "itemId": 188264,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Intrusive Thoughtcage",
+            "itemId": 188261,
+            "itemLevels": [259, 272, 285],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "Elegy of the Eternals",
+            "itemId": 188270,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        {
+            "name": "The First Sigil",
+            "itemId": 188271,
+            "itemLevels": [252, 265, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // Sanctum of Domination Raid
         {
             "name": "Titanic Ocular Gland (100%)",
@@ -72,7 +137,7 @@
             "additionalInput": []
         },
         // Castle Nathria Raid
-        {
+        /*{
             "name": "Dreadfire Vessel",
             "itemId": 184030,
             "itemLevels": [207, 220, 233],
@@ -131,20 +196,20 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // Dungeons
         {
             "name": "Ticking Sack of Terror",
-            "itemId": 185844,
-            "itemLevels": [226,233],
+            "itemId": 190652,
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
             "name": "So'leah's Secret Technique",
-            "itemId": 185818,
-            "itemLevels": [226,233],
+            "itemId": 190958,
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -152,7 +217,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -160,7 +225,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -168,7 +233,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -176,7 +241,7 @@
         {
             "name": "Spare Meat Hook",
             "itemId": 178751,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -184,7 +249,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -192,7 +257,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -200,7 +265,7 @@
         {
             "name": "Anima Field Emitter",
             "itemId": 180118,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -208,7 +273,7 @@
         {
             "name": "Overwhelming Power Crystal",
             "itemId": 179342,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -216,7 +281,7 @@
         {
             "name": "Viscera of Coalesced Hatred",
             "itemId": 178808,
-            "itemLevels": [236, 246, 252],
+            "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -288,7 +353,7 @@
         },
         {
             "name": "Instructor's Divine Bell",
-            "itemId": 184842,
+            "itemId": 190641, //was 184842,
             "itemLevels": [184, 198, 203],
             "bonusIds": [],
             "enchants": [],
@@ -312,33 +377,17 @@
         },
         // PvP
         {
-            "name": "Sinful Aspirant's Badge of Ferocity",
-            "itemId": 175884,
-            "itemLevels": [177, 197, 216],
+            "name": "Unchained Gladiator's Badge of Ferocity",
+            "itemId": 185197,
+            "itemLevels": [246, 259, 272],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         {
-            "name": "Sinful Gladiator's Badge of Ferocity",
-            "itemId": 175921,
-            "itemLevels": [220, 233, 246],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Sinful Aspirant's Insignia of Alacrity",
-            "itemId": 178298,
-            "itemLevels": [177, 197, 216],
-            "bonusIds": [],
-            "enchants": [],
-            "additionalInput": []
-        },
-        {
-            "name": "Sinful Gladiator's Insignia of Alacrity",
-            "itemId": 178386,
-            "itemLevels": [220, 233, 246],
+            "name": "Unchained Gladiator's Insignia of Alacrity",
+            "itemId": 185278,
+            "itemLevels": [246, 259, 272],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -347,7 +396,7 @@
         {
             "name": "Darkmoon Deck: Voracity",
             "itemId": 173087,
-            "itemLevels": [200],
+            "itemLevels": [233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -355,7 +404,7 @@
         {
             "name": "Spiritual Alchemy Stone",
             "itemId": 171323,
-            "itemLevels": [200, 230],
+            "itemLevels": [233],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
