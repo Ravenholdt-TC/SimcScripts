@@ -65,6 +65,7 @@ def insertLegendaries(templateFull, slots, covenantSplitSlots = [])
     }
     LegoList.each do |lego|
       next if lego["specs"].count > 10 #Cheap hack to ignore multiclass legendaries
+      next if lego["legendaryName"].eql?("Unity") #Skip unity since we generate for cov specifics already
       # Split covenant legos if specified
       if covenantSplitSlots.count > 0
         if lego["covenant"] && !covenantSplitSlots.include?(slot) || !lego["covenant"] && covenantSplitSlots.include?(slot)

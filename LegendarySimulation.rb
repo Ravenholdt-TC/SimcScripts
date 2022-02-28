@@ -88,34 +88,43 @@ legoList += JSONParser.ReadFile("#{SimcConfig["ProfilesFolder"]}/LegendariesAddi
 # TODO: Possibly refactor this into more customizable json input
 LegoStatMap = {
   "Head/Chest/Legs Stats" => {
-    "1" => "58str_58agi_58int_58crit_58versatility",
-    "2" => "70str_70agi_70int_65crit_65versatility",
-    "3" => "80str_80agi_80int_71crit_71versatility",
-    "4" => "88str_88agi_88int_74crit_74versatility",
+    "190" => "58str_58agi_58int_58crit_58versatility",
+    "210" => "70str_70agi_70int_65crit_65versatility",
+    "225" => "80str_80agi_80int_71crit_71versatility",
+    "235" => "88str_88agi_88int_74crit_74versatility",
+    "249" => "101str_101agi_101int_79crit_79versatility",
+    "262" => "114str_114agi_114int_84crit_84versatility",
   },
   "Shoulders/Waist/Hands/Boots Stats" => {
-    "1" => "44str_44agi_44int_43crit_43versatility",
-    "2" => "53str_53agi_53int_48crit_48versatility",
-    "3" => "60str_60agi_60int_52crit_52versatility",
-    "4" => "66str_66agi_66int_55crit_55versatility",
+    "190" => "44str_44agi_44int_43crit_43versatility",
+    "210" => "53str_53agi_53int_48crit_48versatility",
+    "225" => "60str_60agi_60int_52crit_52versatility",
+    "235" => "66str_66agi_66int_55crit_55versatility",
+    "249" => "76str_76agi_76int_59crit_59versatility",
+    "262" => "85str_85agi_85int_63crit_63versatility",
   },
   "Back/Wrists Stats" => {
-    "1" => "33str_33agi_33int_32crit_32versatility",
-    "2" => "39str_39agi_39int_36crit_36versatility",
-    "3" => "45str_45agi_45int_39crit_39versatility",
-    "4" => "50str_50agi_50int_41crit_41versatility",
+    "190" => "33str_33agi_33int_32crit_32versatility",
+    "210" => "39str_39agi_39int_36crit_36versatility",
+    "225" => "45str_45agi_45int_39crit_39versatility",
+    "235" => "50str_50agi_50int_41crit_41versatility",
+    "249" => "57str_57agi_57int_45crit_45versatility",
+    "262" => "64str_64agi_64int_47crit_47versatility",
   },
   "Neck/Finger Stats" => {
-    "1" => "77crit_77versatility",
-    "2" => "95crit_95versatility",
-    "3" => "106crit_106versatility",
-    "4" => "115crit_115versatility",
+    "190" => "77crit_77versatility",
+    "210" => "95crit_95versatility",
+    "225" => "106crit_106versatility",
+    "235" => "115crit_115versatility",
+    "249" => "126crit_126versatility",
+    "262" => "137crit_137versatility",
   },
 }
 
 combinationOverrides.each do |optionsString, overrides|
   legoList.each do |lego|
     next unless lego["specs"].include?(specId)
+    next if lego["legendaryName"].eql?("Unity")
     name = "#{lego["legendaryName"]}#{"--" if optionsString}#{optionsString}"
     name += "_#{lego["covenant"]}" if lego["covenant"]
     name += "_1"
