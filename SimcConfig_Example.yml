@@ -63,8 +63,7 @@ ProfilesFolder: profiles
 # Additional template sources in the SimC source
 SimcProfileFolders:
 - profiles/DungeonSlice/
-- profiles/PreRaids/
-- profiles/Tier27/
+- profiles/Tier28/
 
 # Where archiver puts packed reports, logs and input
 ArchivesFolder: archives
