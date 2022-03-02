@@ -12,8 +12,8 @@ to_run = {
     ],
     "Demon-Hunter" => [
       "T28_Demon_Hunter_Havoc",
-      "T28_Demon_Hunter_Havoc_Momentum",
-      "T28_Demon_Hunter_Vengeance",
+      #"T28_Demon_Hunter_Havoc_Momentum",
+      #"T28_Demon_Hunter_Vengeance",
     ],
     "Druid" => [
       "T28_Druid_Balance",
@@ -36,7 +36,7 @@ to_run = {
       "T28_Monk_Windwalker_Serenity",
     ],
     "Paladin" => [
-      "T28_Paladin_Protection",
+      #"T28_Paladin_Protection",
       "T28_Paladin_Retribution",
     ],
     "Priest" => [
@@ -60,7 +60,7 @@ to_run = {
     "Warrior" => [
       "T28_Warrior_Arms",
       "T28_Warrior_Fury",
-      "T28_Warrior_Protection",
+      #"T28_Warrior_Protection",
     ],
   },
   "Combinator" => {
@@ -73,8 +73,9 @@ to_run = {
       "T28_Death_Knight_Unholy !!SetSL!! xx0x0xx",
     ],
     "Demon-Hunter" => [
-      #"T28_Demon_Hunter_Havoc !!SetSL!! xxx0x2[13]",
-      #"T28_Demon_Hunter_Havoc_Momentum !!SetSL!! xxx0x22",
+      "T28_Demon_Hunter_Havoc !!SetSL!! xxx0x2x",
+      #"T28_Demon_Hunter_Havoc !!SetSL!! xxx0x2[13]", MOMENTUM SPLIT BACKUP
+      #"T28_Demon_Hunter_Havoc_Momentum !!SetSL!! xxx0x22", MOMENTUM SPLIT BACKUP
       #"T28_Demon_Hunter_Vengeance !!SetSL!! xxxx1x1",
     ],
     "Druid" => [
@@ -98,7 +99,7 @@ to_run = {
       "T28_Monk_Windwalker_Serenity !!SetSL!! x0x20x3",
     ],
     "Paladin" => [
-      "T28_Paladin_Protection !!SetSL!! xx01x3x",
+      #"T28_Paladin_Protection !!SetSL!! xx01x3x",
       "T28_Paladin_Retribution !!SetSL!! xx01x0x",
     ],
     "Priest" => [
@@ -122,7 +123,7 @@ to_run = {
     "Warrior" => [
       "T28_Warrior_Arms !!SetSL!! x3x2xxx",
       "T28_Warrior_Fury !!SetSL!! x3x2xxx",
-      "T28_Warrior_Protection !!SetSL!! x0x00xx",
+      #"T28_Warrior_Protection !!SetSL!! x0x00xx",
     ],
   },
   "TrinketSimulation" => {
@@ -133,8 +134,8 @@ to_run = {
     ],
     "Demon-Hunter" => [
       "T28_Demon_Hunter_Havoc Agility",
-      "T28_Demon_Hunter_Havoc_Momentum Agility",
-      "T28_Demon_Hunter_Vengeance Agility",
+      #"T28_Demon_Hunter_Havoc_Momentum Agility",
+      #"T28_Demon_Hunter_Vengeance Agility",
     ],
     "Druid" => [
       "T28_Druid_Balance Intelligence",
