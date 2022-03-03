@@ -176,7 +176,7 @@
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
-            "itemId": 179350,
+            "itemId": 185846,
             "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],

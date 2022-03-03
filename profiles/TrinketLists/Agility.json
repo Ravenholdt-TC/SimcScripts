@@ -200,7 +200,7 @@
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
-            "itemId": 179350,
+            "itemId": 185846,
             "itemLevels": [246, 252, 262, 278],
             "bonusIds": [],
             "enchants": [],
@@ -322,6 +322,15 @@
             "name": "Overcharged Anima Battery",
             "itemId": 180116,
             "itemLevels": [246, 252, 262, 278],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
+        // Legion Timewalking (added on a case by case basis)
+        {
+            "name": "Faulty Countermeasure",
+            "itemId": 137539,
+            "itemLevels": [246, 252, 262, 272],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []

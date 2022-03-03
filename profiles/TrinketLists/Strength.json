@@ -286,6 +286,15 @@
             "enchants": [],
             "additionalInput": []
         },
+        // Legion Timewalking (added on a case by case basis)
+        {
+            "name": "Faulty Countermeasure",
+            "itemId": 137539,
+            "itemLevels": [246, 252, 262, 272],
+            "bonusIds": [],
+            "enchants": [],
+            "additionalInput": []
+        },
         // World Quests / Adventures
         {
             "name": "Wakener's Frond",
