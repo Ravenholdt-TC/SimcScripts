@@ -4,7 +4,7 @@
         {
             "name": "Scars of Fraternal Strife",
             "itemId": 188253,
-            "itemLevels": [259, 272, 285],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -12,7 +12,7 @@
         {
             "name": "Elegy of the Eternals",
             "itemId": 188270,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -20,7 +20,7 @@
         {
             "name": "The First Sigil",
             "itemId": 188271,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -28,7 +28,7 @@
         {
             "name": "Architect's Ingenuity Core",
             "itemId": 188268,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -36,7 +36,7 @@
         {
             "name": "Grim Eclipse",
             "itemId": 188254,
-            "itemLevels": [259, 272, 285],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -44,7 +44,7 @@
         {
             "name": "Resonant Reservoir",
             "itemId": 188272,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -53,7 +53,7 @@
         {
             "name": "Ebonsoul Vise",
             "itemId": 186431,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -61,7 +61,7 @@
         {
             "name": "Titanic Ocular Gland (100%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -71,7 +71,7 @@
         {
             "name": "Titanic Ocular Gland (75%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -81,7 +81,7 @@
         {
             "name": "Titanic Ocular Gland (50%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -91,7 +91,7 @@
         {
             "name": "Forbidden Necromantic Tome",
             "itemId": 186421,
-            "itemLevels": [233, 246, 259],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -99,7 +99,7 @@
         {
             "name": "Tome of Monstrous Constructions",
             "itemId": 186422,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -107,16 +107,16 @@
         {
             "name": "Shadowed Orb of Torment",
             "itemId": 186428,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Castle Nathria Raid
-        /*{
+        {
             "name": "Dreadfire Vessel",
             "itemId": 184030,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -124,7 +124,7 @@
         {
             "name": "Cabalist's Hymnal",
             "itemId": 184028,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -132,7 +132,7 @@
         {
             "name": "Cabalist's Hymnal (1 Ally)",
             "itemId": 184028,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -142,7 +142,7 @@
         {
             "name": "Cabalist's Hymnal (2 Allies)",
             "itemId": 184028,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -152,7 +152,7 @@
         {
             "name": "Macabre Sheet Music",
             "itemId": 184024,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -160,7 +160,7 @@
         {
             "name": "Glyph of Assimilation",
             "itemId": 184021,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -168,16 +168,16 @@
         {
             "name": "Soul Igniter",
             "itemId": 184019,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },*/
+        },
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
             "itemId": 185846,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -185,7 +185,7 @@
         {
             "name": "So'leah's Secret Technique",
             "itemId": 190958,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -193,7 +193,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -201,7 +201,7 @@
         {
             "name": "Unbound Changeling (All)",
             "itemId": 178708,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"all\""]
@@ -209,7 +209,7 @@
         {
             "name": "Unbound Changeling (Crit)",
             "itemId": 178708,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"crit\""]
@@ -217,7 +217,7 @@
         {
             "name": "Unbound Changeling (Haste)",
             "itemId": 178708,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"haste\""]
@@ -225,7 +225,7 @@
         {
             "name": "Unbound Changeling (Mastery)",
             "itemId": 178708,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": ["shadowlands.unbound_changeling_stat_type=\"mastery\""]
@@ -233,7 +233,7 @@
         {
             "name": "Soulletting Ruby",
             "itemId": 178809,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -241,7 +241,7 @@
         {
             "name": "Overflowing Anima Cage",
             "itemId": 178849,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -249,7 +249,7 @@
         {
             "name": "Satchel of Misbegotten Minions",
             "itemId": 178772,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -257,7 +257,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -265,7 +265,7 @@
         {
             "name": "Empyreal Ordnance",
             "itemId": 180117,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -273,13 +273,13 @@
         {
             "name": "Sunblood Amethyst",
             "itemId": 178826,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // World Quests / Adventures
-        {
+        /*{
             "name": "Wakener's Frond",
             "itemId": 181457,
             "itemLevels": [184, 198, 203],
@@ -366,9 +366,9 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // PvP
-        {
+        /*{
             "name": "Unchained Gladiator's Badge of Ferocity",
             "itemId": 185197,
             "itemLevels": [246, 259, 272],
@@ -383,7 +383,7 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // Professions
         {
             "name": "Darkmoon Deck: Putrescence",

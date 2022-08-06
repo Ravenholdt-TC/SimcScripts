@@ -4,7 +4,7 @@
         {
             "name": "Scars of Fraternal Strife",
             "itemId": 188253,
-            "itemLevels": [259, 272, 285],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -12,7 +12,7 @@
         {
             "name": "Cache of Acquired Treasures",
             "itemId": 188265,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -20,7 +20,7 @@
         {
             "name": "Bells of the Endless Feast",
             "itemId": 188267,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -28,7 +28,7 @@
         {
             "name": "Chains of Domination",
             "itemId": 188252,
-            "itemLevels": [259, 272, 285],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -36,7 +36,7 @@
         {
             "name": "Earthbreaker's Impact",
             "itemId": 188264,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -44,7 +44,7 @@
         {
             "name": "Intrusive Thoughtcage",
             "itemId": 188261,
-            "itemLevels": [259, 272, 285],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -52,7 +52,7 @@
         {
             "name": "Elegy of the Eternals",
             "itemId": 188270,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -60,7 +60,7 @@
         {
             "name": "The First Sigil",
             "itemId": 188271,
-            "itemLevels": [252, 265, 278],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -69,7 +69,7 @@
         {
             "name": "Titanic Ocular Gland (100%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -79,7 +79,7 @@
         {
             "name": "Titanic Ocular Gland (75%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -89,7 +89,7 @@
         {
             "name": "Titanic Ocular Gland (50%)",
             "itemId": 186423,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -99,7 +99,7 @@
         {
             "name": "Relic of the Frozen Wastes",
             "itemId": 186437,
-            "itemLevels": [233, 246, 259],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -107,7 +107,7 @@
         {
             "name": "Salvaged Fusion Amplifier",
             "itemId": 186432,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -115,7 +115,7 @@
         {
             "name": "Tormented Rack Fragment",
             "itemId": 186430,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -123,16 +123,16 @@
         {
             "name": "Decanter of Endless Howling",
             "itemId": 186429,
-            "itemLevels": [226, 239, 252],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // Castle Nathria Raid
-        /*{
+        {
             "name": "Dreadfire Vessel",
             "itemId": 184030,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -140,7 +140,7 @@
         {
             "name": "Stone Legion Heraldry",
             "itemId": 184027,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -148,7 +148,7 @@
         {
             "name": "Stone Legion Heraldry (1 Ally)",
             "itemId": 184027,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -158,7 +158,7 @@
         {
             "name": "Stone Legion Heraldry (2 Allies)",
             "itemId": 184027,
-            "itemLevels": [207, 220, 233],
+            "itemLevels": [285, 298, 311],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": [
@@ -168,7 +168,7 @@
         {
             "name": "Macabre Sheet Music",
             "itemId": 184024,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -176,7 +176,7 @@
         {
             "name": "Skulker's Wing",
             "itemId": 184016,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -184,7 +184,7 @@
         {
             "name": "Hateful Chain",
             "itemId": 184026,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -192,16 +192,16 @@
         {
             "name": "Memory of Past Sins",
             "itemId": 184025,
-            "itemLevels": [200, 213, 226],
+            "itemLevels": [278, 292, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },*/
+        },
         // Dungeons
         {
             "name": "Miniscule Mailemental in an Envelope",
             "itemId": 185846,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -209,7 +209,7 @@
         {
             "name": "Ticking Sack of Terror",
             "itemId": 190652,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -217,7 +217,7 @@
         {
             "name": "So'leah's Secret Technique",
             "itemId": 190958,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -225,7 +225,7 @@
         {
             "name": "Inscrutable Quantum Device",
             "itemId": 179350,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -233,7 +233,7 @@
         {
             "name": "Blood-Spattered Scale",
             "itemId": 179331,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -241,7 +241,7 @@
         {
             "name": "Phial of Putrefaction",
             "itemId": 178771,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -249,7 +249,7 @@
         {
             "name": "Bottled Flayedwing Toxin",
             "itemId": 178742,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -257,7 +257,7 @@
         {
             "name": "Grim Codex",
             "itemId": 178811,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -265,7 +265,7 @@
         {
             "name": "Decanter of Anima-Charged Winds",
             "itemId": 178861,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -273,7 +273,7 @@
         {
             "name": "Infinitely Divisible Ooze",
             "itemId": 178769,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -281,7 +281,7 @@
         {
             "name": "Mistcaller Ocarina (Crit)",
             "itemId": 178715,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [6920],
             "enchants": [],
             "additionalInput": []
@@ -289,7 +289,7 @@
         {
             "name": "Mistcaller Ocarina (Haste)",
             "itemId": 178715,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [6921],
             "enchants": [],
             "additionalInput": []
@@ -297,7 +297,7 @@
         {
             "name": "Mistcaller Ocarina (Mastery)",
             "itemId": 178715,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [6922],
             "enchants": [],
             "additionalInput": []
@@ -305,7 +305,7 @@
         {
             "name": "Mistcaller Ocarina (Versa)",
             "itemId": 178715,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [6923],
             "enchants": [],
             "additionalInput": []
@@ -313,7 +313,7 @@
         {
             "name": "Shadowgrasp Totem",
             "itemId": 179356,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -321,7 +321,7 @@
         {
             "name": "Overcharged Anima Battery",
             "itemId": 180116,
-            "itemLevels": [246, 252, 262, 278],
+            "itemLevels": [288, 298, 304],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
@@ -330,13 +330,13 @@
         {
             "name": "Faulty Countermeasure",
             "itemId": 137539,
-            "itemLevels": [246, 252, 262, 272],
+            "itemLevels": [298],
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
         },
         // World Quests / Adventures
-        {
+        /*{
             "name": "Wakener's Frond",
             "itemId": 181457,
             "itemLevels": [184, 198, 203],
@@ -423,9 +423,9 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // PvP
-        {
+        /*{
             "name": "Unchained Gladiator's Badge of Ferocity",
             "itemId": 185197,
             "itemLevels": [246, 259, 272],
@@ -440,7 +440,7 @@
             "bonusIds": [],
             "enchants": [],
             "additionalInput": []
-        },
+        },*/
         // Professions
         {
             "name": "Darkmoon Deck: Voracity",
